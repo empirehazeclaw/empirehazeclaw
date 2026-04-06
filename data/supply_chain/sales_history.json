@@ -1,0 +1,866 @@
+[
+  {
+    "sku": "SKU-101",
+    "date": "2024-03-01",
+    "quantity": 192,
+    "revenue": 3336.25
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-04-01",
+    "quantity": 222,
+    "revenue": 3339.88
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-05-01",
+    "quantity": 248,
+    "revenue": 11196.72
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-06-01",
+    "quantity": 189,
+    "revenue": 1684.41
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-07-01",
+    "quantity": 246,
+    "revenue": 3650.32
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-08-01",
+    "quantity": 241,
+    "revenue": 6685.58
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-09-01",
+    "quantity": 238,
+    "revenue": 8150.26
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-10-01",
+    "quantity": 181,
+    "revenue": 5343.55
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-11-01",
+    "quantity": 166,
+    "revenue": 6876.45
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2024-12-01",
+    "quantity": 211,
+    "revenue": 1116.71
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-01-01",
+    "quantity": 182,
+    "revenue": 3696.65
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-02-01",
+    "quantity": 106,
+    "revenue": 1271.64
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-03-01",
+    "quantity": 255,
+    "revenue": 2339.26
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-04-01",
+    "quantity": 232,
+    "revenue": 2169.72
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-05-01",
+    "quantity": 308,
+    "revenue": 12726.8
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-06-01",
+    "quantity": 223,
+    "revenue": 8437.86
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-07-01",
+    "quantity": 141,
+    "revenue": 3106.8
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-08-01",
+    "quantity": 219,
+    "revenue": 6535.36
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-09-01",
+    "quantity": 251,
+    "revenue": 10987.98
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-10-01",
+    "quantity": 125,
+    "revenue": 3872.61
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-11-01",
+    "quantity": 158,
+    "revenue": 2410.36
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2025-12-01",
+    "quantity": 140,
+    "revenue": 2523.14
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2026-01-01",
+    "quantity": 196,
+    "revenue": 1870.83
+  },
+  {
+    "sku": "SKU-101",
+    "date": "2026-02-01",
+    "quantity": 207,
+    "revenue": 3624.32
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-03-01",
+    "quantity": 131,
+    "revenue": 2837.22
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-04-01",
+    "quantity": 129,
+    "revenue": 1861.19
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-05-01",
+    "quantity": 143,
+    "revenue": 4885.11
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-06-01",
+    "quantity": 222,
+    "revenue": 7195.22
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-07-01",
+    "quantity": 176,
+    "revenue": 2174.15
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-08-01",
+    "quantity": 196,
+    "revenue": 4326.8
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-09-01",
+    "quantity": 197,
+    "revenue": 5922.36
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-10-01",
+    "quantity": 152,
+    "revenue": 5442.76
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-11-01",
+    "quantity": 184,
+    "revenue": 2816.52
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2024-12-01",
+    "quantity": 113,
+    "revenue": 728.23
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-01-01",
+    "quantity": 148,
+    "revenue": 2145.15
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-02-01",
+    "quantity": 179,
+    "revenue": 8490.14
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-03-01",
+    "quantity": 177,
+    "revenue": 6105.57
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-04-01",
+    "quantity": 141,
+    "revenue": 3215.28
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-05-01",
+    "quantity": 189,
+    "revenue": 3197.81
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-06-01",
+    "quantity": 144,
+    "revenue": 2318.15
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-07-01",
+    "quantity": 140,
+    "revenue": 4382.89
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-08-01",
+    "quantity": 153,
+    "revenue": 6946.51
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-09-01",
+    "quantity": 146,
+    "revenue": 7283.82
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-10-01",
+    "quantity": 176,
+    "revenue": 4915.45
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-11-01",
+    "quantity": 172,
+    "revenue": 1708.68
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2025-12-01",
+    "quantity": 170,
+    "revenue": 5649.96
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2026-01-01",
+    "quantity": 174,
+    "revenue": 1367.42
+  },
+  {
+    "sku": "SKU-102",
+    "date": "2026-02-01",
+    "quantity": 136,
+    "revenue": 3015.51
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-03-01",
+    "quantity": 622,
+    "revenue": 30290.48
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-04-01",
+    "quantity": 630,
+    "revenue": 27553.1
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-05-01",
+    "quantity": 795,
+    "revenue": 28363.19
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-06-01",
+    "quantity": 519,
+    "revenue": 15135.94
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-07-01",
+    "quantity": 362,
+    "revenue": 3627.18
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-08-01",
+    "quantity": 521,
+    "revenue": 12798.07
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-09-01",
+    "quantity": 277,
+    "revenue": 12302.51
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-10-01",
+    "quantity": 723,
+    "revenue": 12184.36
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-11-01",
+    "quantity": 592,
+    "revenue": 27272.41
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2024-12-01",
+    "quantity": 522,
+    "revenue": 23058.48
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-01-01",
+    "quantity": 345,
+    "revenue": 11179.26
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-02-01",
+    "quantity": 526,
+    "revenue": 6247.71
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-03-01",
+    "quantity": 539,
+    "revenue": 21580.59
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-04-01",
+    "quantity": 546,
+    "revenue": 15760.79
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-05-01",
+    "quantity": 762,
+    "revenue": 4477.86
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-06-01",
+    "quantity": 537,
+    "revenue": 25136.67
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-07-01",
+    "quantity": 536,
+    "revenue": 10097.24
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-08-01",
+    "quantity": 271,
+    "revenue": 2061.4
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-09-01",
+    "quantity": 719,
+    "revenue": 6366.32
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-10-01",
+    "quantity": 521,
+    "revenue": 13999.05
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-11-01",
+    "quantity": 846,
+    "revenue": 33385.32
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2025-12-01",
+    "quantity": 623,
+    "revenue": 6714.45
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2026-01-01",
+    "quantity": 285,
+    "revenue": 4824.35
+  },
+  {
+    "sku": "SKU-103",
+    "date": "2026-02-01",
+    "quantity": 432,
+    "revenue": 19120.1
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-03-01",
+    "quantity": 67,
+    "revenue": 1960.98
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-04-01",
+    "quantity": 86,
+    "revenue": 3254.83
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-05-01",
+    "quantity": 86,
+    "revenue": 4281.23
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-06-01",
+    "quantity": 97,
+    "revenue": 3321.72
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-07-01",
+    "quantity": 59,
+    "revenue": 616.27
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-08-01",
+    "quantity": 91,
+    "revenue": 1375.14
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-09-01",
+    "quantity": 68,
+    "revenue": 1044.15
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-10-01",
+    "quantity": 105,
+    "revenue": 1565.53
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-11-01",
+    "quantity": 108,
+    "revenue": 1652.66
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2024-12-01",
+    "quantity": 95,
+    "revenue": 4345.67
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-01-01",
+    "quantity": 88,
+    "revenue": 1382.5
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-02-01",
+    "quantity": 78,
+    "revenue": 2738.11
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-03-01",
+    "quantity": 87,
+    "revenue": 4097.54
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-04-01",
+    "quantity": 95,
+    "revenue": 2916.21
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-05-01",
+    "quantity": 51,
+    "revenue": 2108.21
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-06-01",
+    "quantity": 91,
+    "revenue": 1234.73
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-07-01",
+    "quantity": 103,
+    "revenue": 2478.29
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-08-01",
+    "quantity": 98,
+    "revenue": 2549.58
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-09-01",
+    "quantity": 83,
+    "revenue": 4090.86
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-10-01",
+    "quantity": 57,
+    "revenue": 537.44
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-11-01",
+    "quantity": 73,
+    "revenue": 3195.59
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2025-12-01",
+    "quantity": 98,
+    "revenue": 1586.57
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2026-01-01",
+    "quantity": 96,
+    "revenue": 2302.53
+  },
+  {
+    "sku": "SKU-104",
+    "date": "2026-02-01",
+    "quantity": 109,
+    "revenue": 1911.26
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-03-01",
+    "quantity": 120,
+    "revenue": 2992.91
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-04-01",
+    "quantity": 229,
+    "revenue": 10021.2
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-05-01",
+    "quantity": 140,
+    "revenue": 6995.48
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-06-01",
+    "quantity": 154,
+    "revenue": 6563.67
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-07-01",
+    "quantity": 243,
+    "revenue": 10495.49
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-08-01",
+    "quantity": 123,
+    "revenue": 1535.53
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-09-01",
+    "quantity": 95,
+    "revenue": 2189.45
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-10-01",
+    "quantity": 108,
+    "revenue": 824.97
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-11-01",
+    "quantity": 8,
+    "revenue": 135.47
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2024-12-01",
+    "quantity": 167,
+    "revenue": 6727.29
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-01-01",
+    "quantity": 52,
+    "revenue": 2500.12
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-02-01",
+    "quantity": 119,
+    "revenue": 5925.49
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-03-01",
+    "quantity": 67,
+    "revenue": 801.71
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-04-01",
+    "quantity": 125,
+    "revenue": 2293.98
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-05-01",
+    "quantity": 213,
+    "revenue": 6261.94
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-06-01",
+    "quantity": 157,
+    "revenue": 6069.45
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-07-01",
+    "quantity": 212,
+    "revenue": 5857.19
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-08-01",
+    "quantity": 168,
+    "revenue": 7286.56
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-09-01",
+    "quantity": 186,
+    "revenue": 1600.53
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-10-01",
+    "quantity": 196,
+    "revenue": 2618.98
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-11-01",
+    "quantity": 48,
+    "revenue": 748.04
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2025-12-01",
+    "quantity": 59,
+    "revenue": 613.3
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2026-01-01",
+    "quantity": 121,
+    "revenue": 3842.16
+  },
+  {
+    "sku": "SKU-105",
+    "date": "2026-02-01",
+    "quantity": 94,
+    "revenue": 3089.98
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-03-01",
+    "quantity": 207,
+    "revenue": 5904.72
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-04-01",
+    "quantity": 431,
+    "revenue": 20283.63
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-05-01",
+    "quantity": 260,
+    "revenue": 4092.63
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-06-01",
+    "quantity": 426,
+    "revenue": 9717.21
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-07-01",
+    "quantity": 353,
+    "revenue": 6787.47
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-08-01",
+    "quantity": 168,
+    "revenue": 6524.1
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-09-01",
+    "quantity": 388,
+    "revenue": 19373.01
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-10-01",
+    "quantity": 430,
+    "revenue": 21424.47
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-11-01",
+    "quantity": 280,
+    "revenue": 4741.53
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2024-12-01",
+    "quantity": 338,
+    "revenue": 15884.88
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-01-01",
+    "quantity": 517,
+    "revenue": 11182.05
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-02-01",
+    "quantity": 122,
+    "revenue": 1476.03
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-03-01",
+    "quantity": 380,
+    "revenue": 12359.69
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-04-01",
+    "quantity": 294,
+    "revenue": 14531.09
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-05-01",
+    "quantity": 231,
+    "revenue": 9648.8
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-06-01",
+    "quantity": 314,
+    "revenue": 5800.22
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-07-01",
+    "quantity": 310,
+    "revenue": 3423.36
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-08-01",
+    "quantity": 79,
+    "revenue": 805.35
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-09-01",
+    "quantity": 406,
+    "revenue": 7005.8
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-10-01",
+    "quantity": 477,
+    "revenue": 15367.67
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-11-01",
+    "quantity": 233,
+    "revenue": 7814.98
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2025-12-01",
+    "quantity": 278,
+    "revenue": 4692.44
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2026-01-01",
+    "quantity": 246,
+    "revenue": 10596.37
+  },
+  {
+    "sku": "SKU-106",
+    "date": "2026-02-01",
+    "quantity": 260,
+    "revenue": 2379.89
+  }
+]

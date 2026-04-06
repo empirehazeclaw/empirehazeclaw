@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "=== 🧠 MORNING MEMORY CHECK ==="
+echo ""
+echo "🔴 P1 (Must Know):"
+python3 -c "import sys; sys.path.insert(0,'scripts'); from memory_db import get_priority; [print(' - '+i[:100]) for i in get_priority('P1')[:3]]"
+echo ""
+echo "🟡 P2 (Check):"
+python3 -c "import sys; sys.path.insert(0,'scripts'); from memory_db import get_priority; [print(' - '+i[:100]) for i in get_priority('P2')[:2]]"
+echo ""
+echo "=== READY FOR THE DAY ==="

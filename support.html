@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - EmpireHazeClaw</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #16161f;
+            --accent: #00ff88;
+            --text: #ffffff;
+            --text-secondary: #8b8b9a;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2em;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 16px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1em;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--accent);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.02);
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .success {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--accent);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .success h3 {
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        
+        .ticket-id {
+            font-family: monospace;
+            font-size: 1.2em;
+            background: var(--bg-secondary);
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎫 Support</h1>
+            <p>Wir helfen dir schnellstmöglich!</p>
+        </div>
+        
+        <div class="card" id="formCard">
+            <form id="supportForm">
+                <div class="form-group">
+                    <label>Deine Email *</label>
+                    <input type="email" id="email" required placeholder="deine@email.de">
+                </div>
+                
+                <div class="form-group">
+                    <label>Dein Name *</label>
+                    <input type="text" id="name" required placeholder="Max Mustermann">
+                </div>
+                
+                <div class="form-group">
+                    <label>Betreff *</label>
+                    <input type="text" id="subject" required placeholder="Worum geht es?">
+                </div>
+                
+                <div class="form-group">
+                    <label>Priorität</label>
+                    <select id="priority">
+                        <option value="medium">Normal</option>
+                        <option value="high">Hoch</option>
+                        <option value="urgent">Dringend</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Beschreibung *</label>
+                    <textarea id="description" required placeholder="Beschreibe dein Problem so detailliert wie möglich..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn" id="submitBtn">Ticket erstellen</button>
+            </form>
+        </div>
+        
+        <div class="card" id="successCard" style="display: none;">
+            <div class="success">
+                <h3>✅ Ticket erstellt!</h3>
+                <p>Wir haben deine Anfrage erhalten und melden uns bald bei dir.</p>
+                <div class="ticket-id" id="ticketId">SUP-0000</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>EmpireHazeClaw - AI & Automation für jeden</p>
+            <p><a href="/datenschutz.html">Datenschutz</a> | <a href="/impressum.html">Impressum</a></p>
+        </div>
+    </div>
+    
+    <script>
+        const API_URL = "http://187.124.11.27:8898";
+        
+        document.getElementById('supportForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.textContent = 'Wird gesendet...';
+            
+            const data = {
+                email: document.getElementById('email').value,
+                name: document.getElementById('name').value,
+                subject: document.getElementById('subject').value,
+                description: document.getElementById('description').value,
+                priority: document.getElementById('priority').value
+            };
+            
+            try {
+                const res = await fetch(`${API_URL}/support/create`, {
+                    method: 'POST', headers: { 'Content-Type': 'application/json', 'X-API-Key': 'empire_haze_claw_2026_secure_key' },
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                });
+                
+                const ticket = await res.json();
+                
+                document.getElementById('formCard').style.display = 'none';
+                document.getElementById('successCard').style.display = 'block';
+                document.getElementById('ticketId').textContent = ticket.id;
+                
+            } catch (err) {
+                alert('Fehler: ' + err.message);
+                btn.disabled = false;
+                btn.textContent = 'Ticket erstellen';
+            }
+        });
+    </script>
+</body>
+</html>

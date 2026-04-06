@@ -1,0 +1,50 @@
+[
+  {
+    "route_id": "RT-03271402",
+    "stops": [
+      {
+        "id": "DEP-01",
+        "name": "Warehouse Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "address": "Berlin, Germany",
+        "time_window_start": "07:00",
+        "time_window_end": "12:00",
+        "service_time_minutes": 22,
+        "priority": 2
+      },
+      {
+        "id": "CUST-03",
+        "name": "Warehouse Hamburg",
+        "lat": 53.5511,
+        "lng": 9.9937,
+        "address": "Hamburg, Germany",
+        "time_window_start": "10:00",
+        "time_window_end": "18:00",
+        "service_time_minutes": 17,
+        "priority": 1
+      },
+      {
+        "id": "CUST-01",
+        "name": "Retail Frankfurt",
+        "lat": 50.1109,
+        "lng": 8.6821,
+        "address": "Frankfurt, Germany",
+        "time_window_start": "09:00",
+        "time_window_end": "17:00",
+        "service_time_minutes": 16,
+        "priority": 3
+      }
+    ],
+    "total_distance_km": 875.1,
+    "total_time_hours": 14.38,
+    "cost_eur": 682.53,
+    "carrier": "DHL Freight",
+    "co2_kg": 554.5,
+    "sequence": [
+      "DEP-01",
+      "CUST-03",
+      "CUST-01"
+    ]
+  }
+]

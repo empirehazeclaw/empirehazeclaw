@@ -1,0 +1,124 @@
+{
+  "_comment": "EmpireHazeClaw AI Employee - Generic Konfiguration",
+  "version": "1.0.0",
+  "setup_date": "",
+  
+  "business": {
+    "name": "Ihr Firmenname",
+    "website": "https://ihrefirma.de",
+    "email": "info@ihrefirma.de",
+    "phone": "+49 XXX XXXXXXX",
+    "address": "Ihre Adresse"
+  },
+  
+  "agents": {
+    "email": {
+      "enabled": true,
+      "schedule": "*/15 * * * *",
+      "config": {
+        "imap_server": "imap.gmail.com",
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "check_interval_minutes": 15,
+        "max_emails_per_run": 20,
+        "auto_response_enabled": true,
+        "forward_rules": [
+          {"from": "*@gmail.com", "to": "team@ihrefirma.de"}
+        ]
+      },
+      "response_templates": {
+        "greeting": "Sehr geehrte/r {name},",
+        "closing": "Mit freundlichen Grüßen",
+        "vacation": "Wir sind vom XX.XX. bis XX.XX. im Urlaub und nur eingeschränkt erreichbar.",
+        "out_of_office": "Vielen Dank für Ihre Nachricht. Wir werden uns nach unserer Rückkehr bei Ihnen melden."
+      }
+    },
+    
+    "support": {
+      "enabled": true,
+      "schedule": "*/30 * * * *",
+      "config": {
+        "response_tone": "professional",
+        "escalation_threshold": 3,
+        "max_faq_matches": 1
+      },
+      "faq_categories": [
+        {
+          "category": "General",
+          "items": [
+            {"keywords": ["öffnungszeit", "geöffnet", "offen"], "answer": "Unsere Öffnungszeiten finden Sie auf unserer Website."},
+            {"keywords": ["adresse", "wo", "finden"], "answer": "Sie finden uns unter folgender Adresse: [Ihre Adresse]."},
+            {"keywords": ["telefon", "anrufen", "erreichbar"], "answer": "Sie erreichen uns telefonisch unter: +49 XXX XXXXXXX"}
+          ]
+        },
+        {
+          "category": "Services", 
+          "items": [
+            {"keywords": ["preis", "kostet", "was kostet"], "answer": "Unsere aktuellen Preise finden Sie auf unserer Website oder kontaktieren Sie uns für ein individuelles Angebot."},
+            {"keywords": ["termin", "buchen", "vereinbaren"], "answer": "Sie können gerne einen Termin über unsere Website oder telefonisch vereinbaren."}
+          ]
+        }
+      ]
+    },
+    
+    "scheduler": {
+      "enabled": true,
+      "config": {
+        "timezone": "Europe/Berlin",
+        "slot_duration_minutes": 30,
+        "buffer_between_slots": 10,
+        "max_days_advance": 30,
+        "working_hours": {
+          "monday": {"start": "09:00", "end": "18:00"},
+          "tuesday": {"start": "09:00", "end": "18:00"},
+          "wednesday": {"start": "09:00", "end": "18:00"},
+          "thursday": {"start": "09:00", "end": "18:00"},
+          "friday": {"start": "09:00", "end": "18:00"},
+          "saturday": {"start": "10:00", "end": "14:00"},
+          "sunday": null
+        },
+        "reminder_hours_before": 24,
+        "confirmation_email_enabled": true
+      }
+    },
+    
+    "analytics": {
+      "enabled": true,
+      "config": {
+        "report_schedule": "0 9 * * *",
+        "weekly_report_day": "monday",
+        "metrics": [
+          "emails_processed",
+          "appointments_booked", 
+          "faq_answered",
+          "tickets_opened",
+          "response_time_avg"
+        ],
+        "report_recipients": ["info@ihrefirma.de"]
+      }
+    }
+  },
+  
+  "integrations": {
+    "gmail": {
+      "enabled": true,
+      "oauth": "required",
+      "labels": ["AI-Processed", "AI-Escalated"]
+    },
+    "calendar": {
+      "enabled": false,
+      "provider": "google"
+    },
+    "sms": {
+      "enabled": false,
+      "provider": "twilio"
+    }
+  },
+  
+  "security": {
+    "allowed_senders": [],
+    "blocked_senders": ["noreply@*", "no-reply@*"],
+    "attachment_max_size_mb": 10,
+    "block_attachments": [".exe", ".zip", ".bat"]
+  }
+}

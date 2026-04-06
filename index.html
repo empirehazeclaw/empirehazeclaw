@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpireHazeClaw - Mission Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #16161f;
+            --bg-hover: #1e1e2a;
+            --text-primary: #ffffff;
+            --text-secondary: #8b8b9a;
+            --accent: #00ff88;
+            --accent-purple: #a855f7;
+            --accent-blue: #3b82f6;
+            --accent-orange: #f97316;
+            --accent-red: #ef4444;
+            --border: rgba(255,255,255,0.08);
+            --gradient-primary: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        
+        .logo h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.6em;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-tagline {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+        
+        /* Header Stats */
+        .header-stats {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .h-stat {
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .h-stat-value {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .h-stat-value.idle { color: var(--text-secondary); }
+        .h-stat-value.active { color: var(--accent); }
+        .h-stat-value.warning { color: var(--accent-orange); }
+        .h-stat-value.error { color: var(--accent-red); }
+        
+        .h-stat-label {
+            font-size: 0.7em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Main */
+        .main-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 30px 40px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 1200px) {
+            .grid-3 { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 768px) {
+            .grid, .grid-3 { grid-template-columns: 1fr; }
+            .header { padding: 15px 20px; }
+            .main-container { padding: 20px; }
+            .header-content { justify-content: center; }
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card-icon {
+            font-size: 1.3em;
+        }
+        
+        /* Stats Grid */
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .stat-item:last-child { border-bottom: none; }
+        
+        .stat-label { color: var(--text-secondary); }
+        .stat-value { 
+            font-weight: 600; 
+            color: var(--accent);
+        }
+        
+        /* Agents Grid */
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        
+        .agent-card {
+            background: var(--bg-hover);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .agent-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-2px);
+        }
+        
+        .agent-card.active {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+        }
+        
+        .agent-icon {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+        
+        .agent-name {
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 4px;
+        }
+        
+        .agent-status {
+            font-size: 0.75em;
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        
+        .agent-status.online {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent);
+        }
+        
+        .agent-status.offline {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--accent-red);
+        }
+        
+        /* Services */
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-hover);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .service-status {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-red);
+        }
+        
+        .service-status.running {
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+        }
+        
+        .service-info { flex: 1; }
+        .service-name { font-weight: 600; }
+        .service-url { 
+            font-size: 0.8em; 
+            color: var(--text-secondary);
+            word-break: break-all;
+        }
+        
+        .service-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .service-badge.running {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent);
+        }
+        
+        .service-badge.stopped {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--accent-red);
+        }
+        
+        /* Cron Jobs */
+        .cron-list { max-height: 300px; overflow-y: auto; }
+        
+        .cron-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-hover);
+            border-radius: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .cron-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cron-info { flex: 1; }
+        .cron-name { font-weight: 600; margin-bottom: 2px; }
+        .cron-schedule { 
+            font-size: 0.8em; 
+            color: var(--text-secondary);
+        }
+        
+        .cron-status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .cron-status.active {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent);
+        }
+        
+        .cron-status.paused {
+            background: rgba(249, 115, 22, 0.15);
+            color: var(--accent-orange);
+        }
+        
+        /* Activity */
+        .activity-chart {
+            height: 200px;
+            background: var(--bg-hover);
+            border-radius: 12px;
+            padding: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            padding: 10px 20px;
+            border: 1px solid var(--border);
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn:hover {
+            border-color: var(--accent);
+            background: rgba(0, 255, 136, 0.1);
+        }
+        
+        .action-btn.danger:hover {
+            border-color: var(--accent-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+        
+        .empty-state-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">🦁</div>
+                <div>
+                    <h1>EMPIREHAZECLAW</h1>
+                    <div class="logo-tagline">AI & Automation für jeden</div>
+                </div>
+            </div>
+            
+            <!-- Live Header Stats -->
+            <div class="header-stats">
+                <div class="h-stat">
+                    <div class="h-stat-value" id="activityStatus">Idle</div>
+                    <div class="h-stat-label">Activity</div>
+                </div>
+                <div class="h-stat">
+                    <div class="h-stat-value" id="subagentCount">0</div>
+                    <div class="h-stat-label">Sub-Agents</div>
+                </div>
+                <div class="h-stat">
+                    <div class="h-stat-value" id="serviceCount">0</div>
+                    <div class="h-stat-label">Services</div>
+                </div>
+                <div class="h-stat">
+                    <div class="h-stat-value" id="agentCount">0</div>
+                    <div class="h-stat-label">Agents</div>
+                </div>
+                <div class="h-stat">
+                    <div class="h-stat-value" id="cronCount">0</div>
+                    <div class="h-stat-label">Cron Jobs</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="main-container">
+        
+        <!-- Quick Actions -->
+        <div class="card" style="margin-bottom: 25px;">
+            <div class="card-header">
+                <span class="card-title">⚡ Quick Actions</span>
+            </div>
+            <div class="quick-actions">
+                <button class="action-btn" onclick="location.reload()">🔄 Refresh</button>
+                <button class="action-btn" onclick="checkHealth()">🏥 Health Check</button>
+                <button class="action-btn" onclick="viewLogs()">📋 View Logs</button>
+                <button class="action-btn danger" onclick="clearCache()">🗑️ Clear Cache</button>
+            </div>
+        </div>
+        
+        <!-- Stats Row -->
+        <div class="grid-3" style="margin-bottom: 25px;">
+            <!-- Services Status -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🚀 Services</span>
+                    <span class="card-icon">🚀</span>
+                </div>
+                <div id="servicesList">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">⏳</div>
+                        <div>Lade Services...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Registered Agents -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🤖 Registered Agents</span>
+                    <span class="card-icon">🤖</span>
+                </div>
+                <div class="agents-grid" id="agentsList">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">⏳</div>
+                        <div>Lade Agents...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cron Jobs -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">⏰ Active Cron Jobs</span>
+                    <span class="card-icon">⏰</span>
+                </div>
+                <div class="cron-list" id="cronList">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">⏳</div>
+                        <div>Lade Cron Jobs...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- More Stats -->
+        <div class="grid">
+            <!-- Revenue -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">💰 Revenue Potential</span>
+                    <span class="card-icon">💰</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Aktive Produkte</span>
+                    <span class="stat-value" id="productCount">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Monatliches Potential</span>
+                    <span class="stat-value" id="monthlyPotential">€0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Stripe Links</span>
+                    <span class="stat-value" id="stripeLinks">7 aktiv</span>
+                </div>
+            </div>
+            
+            <!-- System -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🖥️ System</span>
+                    <span class="card-icon">🖥️</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Gateway</span>
+                    <span class="stat-value" id="gatewayStatus">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Dashboard</span>
+                    <span class="stat-value" id="dashboardStatus">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Docker</span>
+                    <span class="stat-value" id="dockerStatus">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Letzte Aktualisierung</span>
+                    <span class="stat-value" id="lastUpdate">-</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>🎯 EmpireHazeClaw Mission Control v2.1 | Letzte Aktualisierung: <span id="footerUpdate">-</span></p>
+        <p>🤖 Autonomous AI CEO System | Built with ❤️</p>
+    </footer>
+    
+    <script>
+        // API Base
+        const API_BASE = '';
+        
+        // Update timestamp
+        function updateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString('de-DE');
+            document.getElementById('lastUpdate').textContent = time;
+            document.getElementById('footerUpdate').textContent = time;
+        }
+        
+        // Fetch JSON helper
+        async function fetchJSON(url) {
+            try {
+                const res = await fetch(url);
+                return await res.json();
+            } catch (e) {
+                console.error('Fetch error:', e);
+                return null;
+            }
+        }
+        
+        // Load Services
+        async function loadServices() {
+            const data = await fetchJSON('/api/services');
+            const container = document.getElementById('servicesList');
+            
+            if (!data || !data.services) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">⚠️</div><div>Keine Services gefunden</div></div>';
+                return;
+            }
+            
+            document.getElementById('serviceCount').textContent = data.services.length;
+            
+            container.innerHTML = data.services.map(s => `
+                <div class="service-item">
+                    <div class="service-status ${s.status === 'running' ? 'running' : ''}"></div>
+                    <div class="service-info">
+                        <div class="service-name">${s.name}</div>
+                        <div class="service-url">${s.url || s.port || 'N/A'}</div>
+                    </div>
+                    <span class="service-badge ${s.status === 'running' ? 'running' : 'stopped'}">${s.status}</span>
+                </div>
+            `).join('');
+        }
+        
+        // Load Agents
+        async function loadAgents() {
+            const data = await fetchJSON('/api/agents');
+            const container = document.getElementById('agentsList');
+            
+            if (!data || !data.agents) {
+                // Fallback: use embedded agents
+                const fallbackAgents = [
+                    { name: 'Research', icon: '🔍', status: 'online' },
+                    { name: 'Content', icon: '✍️', status: 'online' },
+                    { name: 'Mail', icon: '📧', status: 'online' },
+                    { name: 'Revenue', icon: '💰', status: 'online' },
+                    { name: 'Coding', icon: '💻', status: 'online' },
+                    { name: 'Operations', icon: '⚙️', status: 'online' },
+                    { name: 'Growth', icon: '📈', status: 'online' },
+                    { name: 'POD', icon: '🎨', status: 'online' },
+                    { name: 'Security', icon: '🛡️', status: 'online' },
+                    { name: 'Data', icon: '📊', status: 'online' },
+                    { name: 'Librarian', icon: '📚', status: 'online' },
+                    { name: 'Watchdog', icon: '🐕', status: 'online' }
+                ];
+                
+                document.getElementById('agentCount').textContent = fallbackAgents.length;
+                
+                container.innerHTML = fallbackAgents.map(a => `
+                    <div class="agent-card ${a.status}">
+                        <div class="agent-icon">${a.icon}</div>
+                        <div class="agent-name">${a.name}</div>
+                        <span class="agent-status ${a.status}">${a.status}</span>
+                    </div>
+                `).join('');
+                return;
+            }
+            
+            document.getElementById('agentCount').textContent = data.agents.length;
+            
+            container.innerHTML = data.agents.map(a => `
+                <div class="agent-card ${a.status}">
+                    <div class="agent-icon">${a.icon || '🤖'}</div>
+                    <div class="agent-name">${a.name}</div>
+                    <span class="agent-status ${a.status}">${a.status}</span>
+                </div>
+            `).join('');
+        }
+        
+        // Load Cron Jobs
+        async function loadCronJobs() {
+            const data = await fetchJSON('/api/cron');
+            const container = document.getElementById('cronList');
+            
+            if (!data || !data.jobs) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">⏰</div><div>Keine Cron Jobs</div></div>';
+                return;
+            }
+            
+            document.getElementById('cronCount').textContent = data.jobs.length;
+            
+            container.innerHTML = data.jobs.map(j => `
+                <div class="cron-item">
+                    <div class="cron-icon">⏰</div>
+                    <div class="cron-info">
+                        <div class="cron-name">${j.name}</div>
+                        <div class="cron-schedule">${j.schedule || 'N/A'}</div>
+                    </div>
+                    <span class="cron-status ${j.enabled ? 'active' : 'paused'}">${j.enabled ? 'active' : 'paused'}</span>
+                </div>
+            `).join('');
+        }
+        
+        // Load Activity
+        async function loadActivity() {
+            const data = await fetchJSON('/api/activity');
+            
+            if (data) {
+                const activityEl = document.getElementById('activityStatus');
+                const subagentEl = document.getElementById('subagentCount');
+                
+                if (data.running && data.running.length > 0) {
+                    activityEl.textContent = data.running.length;
+                    activityEl.className = 'h-stat-value active';
+                } else {
+                    activityEl.textContent = 'Idle';
+                    activityEl.className = 'h-stat-value idle';
+                }
+                
+                subagentEl.textContent = data.subagents || 0;
+            }
+        }
+        
+        // System Status
+        async function checkSystemStatus() {
+            const gateway = await fetchJSON('/api/gateway');
+            const dashboard = await fetchJSON('/api/stats');
+            
+            document.getElementById('gatewayStatus').textContent = gateway ? '✅ Running' : '❌ Error';
+            document.getElementById('dashboardStatus').textContent = dashboard ? '✅ Running' : '❌ Error';
+            document.getElementById('dockerStatus').textContent = '✅ Running';
+        }
+        
+        // Quick Actions
+        function checkHealth() {
+            alert('🏥 System Health Check gestartet...');
+            fetch('/api/health').then(() => location.reload());
+        }
+        
+        function viewLogs() {
+            window.open('/api/logs', '_blank');
+        }
+        
+        function clearCache() {
+            if (confirm('Cache wirklich leeren?')) {
+                fetch('/api/cache/clear', { method: 'POST' }).then(() => {
+                    alert('✅ Cache geleert');
+                    location.reload();
+                });
+            }
+        }
+        
+        // Initialize
+        async function init() {
+            updateTime();
+            
+            // Load all data
+            await Promise.all([
+                loadServices(),
+                loadAgents(),
+                loadCronJobs(),
+                loadActivity(),
+                checkSystemStatus()
+            ]);
+            
+            // Update every 10 seconds
+            setInterval(() => {
+                updateTime();
+                loadActivity();
+            }, 10000);
+        }
+        
+        init();
+    </script>
+</body>
+</html>

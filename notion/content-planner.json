@@ -1,0 +1,22 @@
+{
+  "title": "Content Planner",
+  "icon": "📝",
+  "properties": [
+    {"name": "Topic", "type": "title"},
+    {"name": "Platform", "type": "select", "options": ["Blog", "Twitter", "LinkedIn", "Instagram"]},
+    {"name": "Status", "type": "select", "options": ["Idea", "Drafting", "Published"]},
+    {"name": "Date", "type": "date"}
+  ],
+  "database_content": [
+    {"Topic": "KI Guide", "Platform": "Blog", "Status": "Published"},
+    {"Topic": "Trading Tips", "Platform": "Twitter", "Status": "Published"},
+    {"Topic": "Productivity", "Platform": "LinkedIn", "Status": "Drafting"},
+    {"Topic": "New Feature", "Platform": "Blog", "Status": "Idea"},
+    {"Topic": "Tutorial", "Platform": "YouTube", "Status": "Idea"},
+    {"Topic": "Case Study", "Platform": "Blog", "Status": "Drafting"},
+    {"Topic": "Review", "Platform": "Twitter", "Status": "Published"},
+    {"Topic": "News", "Platform": "LinkedIn", "Status": "Idea"},
+    {"Topic": "Tips", "Platform": "Instagram", "Status": "Idea"},
+    {"Topic": "Comparison", "Platform": "Blog", "Status": "Drafting"}
+  ]
+}

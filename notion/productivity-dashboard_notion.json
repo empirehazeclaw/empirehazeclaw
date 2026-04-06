@@ -1,0 +1,53 @@
+{
+  "title": "Productivity Dashboard",
+  "icon": "💡",
+  "cover": null,
+  "properties": [
+    {
+      "name": "Task Name",
+      "type": "title"
+    },
+    {
+      "name": "Status",
+      "type": "select",
+      "options": ["Not Started", "In Progress", "Done", "Blocked"]
+    },
+    {
+      "name": "Priority",
+      "type": "select",
+      "options": ["Low", "Medium", "High", "Urgent"]
+    },
+    {
+      "name": "Due Date",
+      "type": "date"
+    },
+    {
+      "name": "Tags",
+      "type": "multi_select",
+      "options": ["work", "personal", "learning", "health", "finance", "projects"]
+    },
+    {
+      "name": "Time Estimate",
+      "type": "number",
+      "options": {"unit": "minutes"}
+    },
+    {
+      "name": "Completed At",
+      "type": "date"
+    }
+  ],
+  "database_content": [
+    {"name": "Research new AI tools", "Status": "Done", "Priority": "High", "Tags": ["learning", "work"], "Time Estimate": 60},
+    {"name": "Update website content", "Status": "In Progress", "Priority": "Medium", "Tags": ["work"], "Time Estimate": 120},
+    {"name": "Write blog post", "Status": "Not Started", "Priority": "High", "Tags": ["work"], "Time Estimate": 180},
+    {"name": "Review analytics", "Status": "Done", "Priority": "Low", "Tags": ["work"], "Time Estimate": 30},
+    {"name": "Plan next week", "Status": "Not Started", "Priority": "Medium", "Tags": ["personal"], "Time Estimate": 45},
+    {"name": "Exercise routine", "Status": "In Progress", "Priority": "High", "Tags": ["health"], "Time Estimate": 30},
+    {"name": "Pay bills", "Status": "Done", "Priority": "Urgent", "Tags": ["finance"], "Time Estimate": 15},
+    {"name": "Read 30 minutes", "Status": "Not Started", "Priority": "Low", "Tags": ["learning", "personal"], "Time Estimate": 30},
+    {"name": "Client call", "Status": "In Progress", "Priority": "High", "Tags": ["work"], "Time Estimate": 60},
+    {"name": "Backup data", "Status": "Not Started", "Priority": "Medium", "Tags": ["work"], "Time Estimate": 45},
+    {"name": "Learn new skill", "Status": "Not Started", "Priority": "Low", "Tags": ["learning"], "Time Estimate": 60},
+    {"name": "Network outreach", "Status": "Not Started", "Priority": "Medium", "Tags": ["work"], "Time Estimate": 30}
+  ]
+}

@@ -1,0 +1,975 @@
+{
+  "entities": {
+    "EmpireHazeClaw": {
+      "type": "business",
+      "category": "business",
+      "facts": [
+        {
+          "content": "B2B Managed AI Hosting f\u00fcr deutsche KMUs. Produkt: KI-Mitarbeiter statt technisches Produkt. Preise: \u20ac99/\u20ac199/\u20ac499/Monat. Differenzierung: Deutsche Server (Hetzner), DSGVO, Managed Service",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445908",
+          "category": "business"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445896",
+      "last_accessed": "2026-04-06T06:42:36.445906",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "KI-Mitarbeiter": {
+      "type": "product",
+      "category": "product",
+      "facts": [
+        {
+          "content": "Unsere Hauptprodukt-Kategorie. KI-Mitarbeiter f\u00fcr: Emails, Social Media, Kundensupport, Recherche, Terminbuchung. Nicht technisches Tool sondern digitaler Mitarbeiter.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445914",
+          "category": "product"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445910",
+      "last_accessed": "2026-04-06T06:42:36.445912",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Zielgruppe-KMU": {
+      "type": "business",
+      "category": "business",
+      "facts": [
+        {
+          "content": "Deutsche KMUs: B\u00e4ckereien, Restaurants, Arztpraxen, Handwerk. Haben keine Zeit f\u00fcr Marketing, wollen einfach 'es funktioniert'. Kein Technical Skill n\u00f6tig.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445919",
+          "category": "business"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445917",
+      "last_accessed": "2026-04-06T06:42:36.445917",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Managed-AI-Hosting": {
+      "type": "product",
+      "category": "product",
+      "facts": [
+        {
+          "content": "AI Hosting mit Management: Wir k\u00fcmmern uns um alles, Kunde bekommt Ergebnis. Im Gegensatz zu 'Self-Service' wo Kunde selbst konfigurieren muss.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445921",
+          "category": "product"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445920",
+      "last_accessed": "2026-04-06T06:42:36.445920",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Starter-Plan": {
+      "type": "product",
+      "category": "product",
+      "facts": [
+        {
+          "content": "\u20ac149 Setup, \u20ac99/Monat. F\u00fcr kleine Businesses und Developer. Basis AI Mitarbeiter f\u00fcr Emails und Social Media.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445924",
+          "category": "product"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445922",
+      "last_accessed": "2026-04-06T06:42:36.445923",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Professional-Plan": {
+      "type": "product",
+      "category": "product",
+      "facts": [
+        {
+          "content": "\u20ac299 Setup, \u20ac199/Monat. F\u00fcr Agencies und Mittelstand. Erweiterte AI F\u00e4higkeiten, mehrere Bereiche.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445930",
+          "category": "product"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445925",
+      "last_accessed": "2026-04-06T06:42:36.445926",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Enterprise-Plan": {
+      "type": "product",
+      "category": "product",
+      "facts": [
+        {
+          "content": "\u20ac499 Setup, \u20ac499/Monat. F\u00fcr Large Companies. Volle AI Integration, dedizierter Support.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445932",
+          "category": "product"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445931",
+      "last_accessed": "2026-04-06T06:42:36.445931",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Email-Management": {
+      "type": "usecase",
+      "category": "usecase",
+      "facts": [
+        {
+          "content": "KI liest, filtert, beantwortet und eskaliert Emails. Spart 2-3 Stunden/Tag f\u00fcr typische KMUs.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445935",
+          "category": "usecase"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445933",
+      "last_accessed": "2026-04-06T06:42:36.445934",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Social-Media-Automation": {
+      "type": "usecase",
+      "category": "usecase",
+      "facts": [
+        {
+          "content": "KI erstellt und postet Content auf Instagram, TikTok, LinkedIn. Inkl. Engagement Management.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445937",
+          "category": "usecase"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445936",
+      "last_accessed": "2026-04-06T06:42:36.445936",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Kunden-Support": {
+      "type": "usecase",
+      "category": "usecase",
+      "facts": [
+        {
+          "content": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445940",
+          "category": "usecase"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445938",
+      "last_accessed": "2026-04-06T06:42:36.445939",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Recherche-Marketing": {
+      "type": "usecase",
+      "category": "usecase",
+      "facts": [
+        {
+          "content": "KI analysiert Wettbewerb, Markttrends, Keywords. F\u00fcr SEO und Marketing Strategie.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445942",
+          "category": "usecase"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445940",
+      "last_accessed": "2026-04-06T06:42:36.445941",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Reservierungs-Automatisierung": {
+      "type": "usecase",
+      "category": "usecase",
+      "facts": [
+        {
+          "content": "Besonders f\u00fcr Restaurants: Automatische Termin- und Reservierungsverwaltung via Chat/Telefon.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445945",
+          "category": "usecase"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445943",
+      "last_accessed": "2026-04-06T06:42:36.445944",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "OpenClaw-Gateway": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Unser Core Framework - l\u00e4uft auf Port :18789. Prim\u00e4rmodell: MiniMax-M2.7. Fallbacks: GPT-4o-mini, Nemotron, Qwen3.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445947",
+          "category": "system"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445946",
+      "last_accessed": "2026-04-06T06:42:36.445946",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "LCM-Compaction": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Lossless-Claw-Memory - komprimiert Context bei 85% Threshold. Verhindert Context-Verlust w\u00e4hrend Sessions.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445949",
+          "category": "system"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445948",
+      "last_accessed": "2026-04-06T06:42:36.445949",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "GOG-CLI": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Google Workspace CLI f\u00fcr Gmail, Calendar, Drive. Nutzen wir f\u00fcr Email-Outreach. Token in secrets.env gespeichert.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445952",
+          "category": "system"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445950",
+      "last_accessed": "2026-04-06T06:42:36.445951",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Stripe-Integration": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Payment Processing f\u00fcr Shop. Auto-Fulfillment funktioniert komplett automatisch. Keys in secrets.env.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445954",
+          "category": "system"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445953",
+      "last_accessed": "2026-04-06T06:42:36.445954",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Vercel-Deployment": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Hosting f\u00fcr alle Websites: empirehazeclaw.com, .de, .store, .info. Token: vcp_... in secrets.env.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445957",
+          "category": "system"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445955",
+      "last_accessed": "2026-04-06T06:42:36.445956",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Content-Marketing": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Blog Posts auf empirehazeclaw.info f\u00fcr SEO. 16 Artikel zu KI f\u00fcr verschiedene Branchen. DE und EN.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445962",
+          "category": "marketing"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445958",
+      "last_accessed": "2026-04-06T06:42:36.445961",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "TikTok-Marketing": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Video Content f\u00fcr Reichweite. Script + Posting Automation. Gepostet \u00fcber Buffer.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445965",
+          "category": "marketing"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445963",
+      "last_accessed": "2026-04-06T06:42:36.445964",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "LinkedIn-Marketing": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Professionelles B2B Networking. Blog Posts werden auf LinkedIn geteilt.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445970",
+          "category": "marketing"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.445968",
+      "last_accessed": "2026-04-06T06:42:36.445969",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "B2B-Whitepaper": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Lead Magnet f\u00fcr B2B Leads. '40% LLM API Kosten sparen' - Angeh\u00e4ngt an Outreach Emails.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445972",
+          "category": "marketing"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445971",
+      "last_accessed": "2026-04-06T06:42:36.445971",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Email-Outreach": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Personalierte B2B Emails an IT-Firmen und KMUs. Zielgruppe identifiziert via Lead Intelligence. Aktuell 73 Emails gesendet, 0 Responses.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445975",
+          "category": "marketing"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445973",
+      "last_accessed": "2026-04-06T06:42:36.445974",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Lead-Intelligence": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "CRM mit 4,088 Leads. Script: scripts/lead_generator.py. Qualifiziert nach Branch, Company Size, Conversion Chance.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445977",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445976",
+      "last_accessed": "2026-04-06T06:42:36.445976",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Email-Drip-Sequence": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "4-Step Auto-Follow-up Sequence. Script: scripts/email_sequence.py. 5 Emails pro Lead, 5 Tage Abstand.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445980",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445978",
+      "last_accessed": "2026-04-06T06:42:36.445979",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Demo-Portal": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Free Trial / Live Demo f\u00fcr Interessenten. Muss interaktiver werden f\u00fcr bessere Conversion.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445982",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445981",
+      "last_accessed": "2026-04-06T06:42:36.445982",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Pipeline-Metrics": {
+      "type": "metrics",
+      "category": "metrics",
+      "facts": [
+        {
+          "content": "Stand 30.03.2026: 4,088 Leads, 73 Emails gesendet, 0 Responses, 0 Customers, \u20ac0 Revenue. Outreach floppt.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445985",
+          "category": "metrics"
+        }
+      ],
+      "priority": "CRITICAL",
+      "created": "2026-04-06T06:42:36.445983",
+      "last_accessed": "2026-04-06T06:42:36.445984",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Conversion-Rate": {
+      "type": "metrics",
+      "category": "metrics",
+      "facts": [
+        {
+          "content": "Aktuell 0% Conversion (0 Responses / 73 Emails). Ziel: 2-5% Response Rate, 10% Conversion.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445991",
+          "category": "metrics"
+        }
+      ],
+      "priority": "CRITICAL",
+      "created": "2026-04-06T06:42:36.445986",
+      "last_accessed": "2026-04-06T06:42:36.445986",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Revenue-Ziel": {
+      "type": "metrics",
+      "category": "metrics",
+      "facts": [
+        {
+          "content": "Q2 2026 Ziel: Erste Kunden gewinnen. Minimum \u20ac100 Revenue um AI Agent zu bezahlen.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445996",
+          "category": "metrics"
+        }
+      ],
+      "priority": "CRITICAL",
+      "created": "2026-04-06T06:42:36.445994",
+      "last_accessed": "2026-04-06T06:42:36.445995",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Outreach-Dummy-Problem": {
+      "type": "learning",
+      "category": "learning",
+      "facts": [
+        {
+          "content": "FR\u00dcHER: Outreach verwendete Dummy-E-Mails statt echte Leads \u2192 keine Responses. JETZT: Echte Leads via Lead Intelligence.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.445998",
+          "category": "learning"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445997",
+      "last_accessed": "2026-04-06T06:42:36.445998",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Trading-Bot-Nicht-Profitabel": {
+      "type": "learning",
+      "category": "learning",
+      "facts": [
+        {
+          "content": "Trading Bot produziert +0.55% aber nach Geb\u00fchren negativ. NICHT WEITER INVESTIEREN.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446001",
+          "category": "learning"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.445999",
+      "last_accessed": "2026-04-06T06:42:36.446000",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Buffer-API-Limitation": {
+      "type": "learning",
+      "category": "learning",
+      "facts": [
+        {
+          "content": "Buffer API unterst\u00fctzt KEINE Video-Uploads. Workaround: Direkter Upload zu TikTok/LinkedIn.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446003",
+          "category": "learning"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.446002",
+      "last_accessed": "2026-04-06T06:42:36.446002",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Gateway-Restart-Problem": {
+      "type": "learning",
+      "category": "learning",
+      "facts": [
+        {
+          "content": "Gateway Restart killt alle Child-Prozesse. Cron Jobs m\u00fcssen nach Restart neu gestartet werden.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446006",
+          "category": "learning"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.446004",
+      "last_accessed": "2026-04-06T06:42:36.446005",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Hetzner-Server": {
+      "type": "infrastructure",
+      "category": "infrastructure",
+      "facts": [
+        {
+          "content": "Deutsche Server f\u00fcr DSGVO-Konformit\u00e4t. Standort Deutschland. Wichtigster Infrastructure-Partner.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446008",
+          "category": "infrastructure"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.446007",
+      "last_accessed": "2026-04-06T06:42:36.446007",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "DSGVO-Compliance": {
+      "type": "infrastructure",
+      "category": "infrastructure",
+      "facts": [
+        {
+          "content": "Deutsche Server (Hetzner), DSGVO-konformes Hosting. Haupt-Differenziator gegen\u00fcber US-Cloud-Anbietern.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446011",
+          "category": "infrastructure"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.446009",
+      "last_accessed": "2026-04-06T06:42:36.446010",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "OpenRouter-API": {
+      "type": "infrastructure",
+      "category": "infrastructure",
+      "facts": [
+        {
+          "content": "API f\u00fcr Fallback Models: Nemotron 120B, Qwen3 Coder, Step-3.5 Flash. Alle kostenlos. Key in secrets.env.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446016",
+          "category": "infrastructure"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.446012",
+      "last_accessed": "2026-04-06T06:42:36.446012",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Tavily-API": {
+      "type": "infrastructure",
+      "category": "infrastructure",
+      "facts": [
+        {
+          "content": "Research API f\u00fcr Web-Suchen. Nutzen wir f\u00fcr Lead Intelligence und Market Research. Key in secrets.env.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446019",
+          "category": "infrastructure"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.446017",
+      "last_accessed": "2026-04-06T06:42:36.446018",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "empirehazeclaw-store": {
+      "type": "domain",
+      "category": "domain",
+      "facts": [
+        {
+          "content": "Shop Domain mit Stripe. Produkte: Managed AI Hosting Plans. URL: https://empirehazeclaw.store",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446021",
+          "category": "domain"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.446020",
+      "last_accessed": "2026-04-06T06:42:36.446021",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "empirehazeclaw-info": {
+      "type": "domain",
+      "category": "domain",
+      "facts": [
+        {
+          "content": "Blog Domain mit 16 Artikeln. SEO optimiert f\u00fcr 'KI f\u00fcr B\u00e4ckereien/Restaurants/etc.' URL: https://empirehazeclaw.info",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446024",
+          "category": "domain"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:42:36.446022",
+      "last_accessed": "2026-04-06T06:42:36.446023",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "empirehazeclaw-de": {
+      "type": "domain",
+      "category": "domain",
+      "facts": [
+        {
+          "content": "Deutsche Corporate Website. URL: https://empirehazeclaw.de",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446026",
+          "category": "domain"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.446025",
+      "last_accessed": "2026-04-06T06:42:36.446025",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "empirehazeclaw-com": {
+      "type": "domain",
+      "category": "domain",
+      "facts": [
+        {
+          "content": "Englische Corporate Website. URL: https://empirehazeclaw.com",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:42:36.446028",
+          "category": "domain"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:42:36.446027",
+      "last_accessed": "2026-04-06T06:42:36.446028",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Sales-Pipeline": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Unsere Sales Pipeline: Lead \u2192 Qualifiziert \u2192 Kontaktiert \u2192 Demo \u2192 Angebot \u2192 Kunde. Aktuell bei Lead \u2192 Qualifiziert h\u00e4ngen.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.321980",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.321962",
+      "last_accessed": "2026-04-06T06:44:59.321977",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Lead-Qualifizierung": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "CRM mit 4,088 Leads. Qualifizierung nach: Branche (Gastro, Gesundheit, Handwerk), Company Size, Online Presence, Conversion Chance.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.321985",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.321982",
+      "last_accessed": "2026-04-06T06:44:59.321983",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Demo-Call": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Live Demo f\u00fcr Interessenten zeigt AI Mitarbeiter in Aktion. Scripts f\u00fcr: Email Demo, Social Demo, Full Demo. Call-to-Action: 'Kostenlose Testwoche'.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.321991",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.321987",
+      "last_accessed": "2026-04-06T06:44:59.321988",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Angebots-Erstellung": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Angebot basiert auf gew\u00e4hltem Plan (Starter/Professional/Enterprise). Setup Fee + Monatliche Fee. Stripe Checkout Link.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.321995",
+          "category": "sales"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.321992",
+      "last_accessed": "2026-04-06T06:44:59.321993",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Kunden-Onboarding": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Nach Payment: Setup within 24h, Account Erstellung, Onboarding Call, First AI Employee deployed.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.321999",
+          "category": "sales"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.321996",
+      "last_accessed": "2026-04-06T06:44:59.321997",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Competitor-Other-AI-Tools": {
+      "type": "competition",
+      "category": "competition",
+      "facts": [
+        {
+          "content": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSGVO.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322003",
+          "category": "competition"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322000",
+      "last_accessed": "2026-04-06T06:44:59.322001",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Competitor-Agency": {
+      "type": "competition",
+      "category": "competition",
+      "facts": [
+        {
+          "content": "Agenturen: Bieten humans-only Service. Wir: AI-first mit Human-in-the-Loop. G\u00fcnstiger und skalierbarer.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322010",
+          "category": "competition"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322004",
+      "last_accessed": "2026-04-06T06:44:59.322005",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Pricing-Psychology": {
+      "type": "business",
+      "category": "business",
+      "facts": [
+        {
+          "content": "Starter \u20ac99 = 'probier es aus', Professional \u20ac199 = 'echter Business Nutzen', Enterprise \u20ac499 = 'Premium'. Anchor Pricing mit Enterprise.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322015",
+          "category": "business"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322012",
+      "last_accessed": "2026-04-06T06:44:59.322013",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "ROI-Calculator": {
+      "type": "marketing",
+      "category": "marketing",
+      "facts": [
+        {
+          "content": "Tool auf Website: 'Berechne deinen ROI mit KI-Mitarbeiter'. Zeigt Zeitersparnis und Kosten vs. menschlichem Mitarbeiter.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322022",
+          "category": "marketing"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.322019",
+      "last_accessed": "2026-04-06T06:44:59.322020",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Objection-Keine-Zeit": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Einwand: 'Keine Zeit f\u00fcr AI'. Antwort: 'AI spart 2-3h/Tag, Sie m\u00fcssen nur approve/reject'. Zeitersparnis quantifizieren.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322026",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.322023",
+      "last_accessed": "2026-04-06T06:44:59.322024",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Objection-Zu-Teuer": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Einwand: '\u20ac199/Monat zu teuer'. Antwort: 'Kostet weniger als 1h/Tag intern, und Sie sparen 2-3h'. ROI klar machen.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322033",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.322027",
+      "last_accessed": "2026-04-06T06:44:59.322028",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Objection-DSGVO": {
+      "type": "sales",
+      "category": "sales",
+      "facts": [
+        {
+          "content": "Einwand: 'DSGVO Bedenken'. Antwort: 'Deutsche Server, 100% DSGVO-konform, wir k\u00fcmmern uns um alles'. Unser Vorteil!",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322037",
+          "category": "sales"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-06T06:44:59.322034",
+      "last_accessed": "2026-04-06T06:44:59.322035",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Multi-Tenant-Architektur": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Jeder Kunde bekommt isolierte AI Instanz. Shared Resources aber getrennte Daten. Kubernetes-basiert auf Hetzner.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322041",
+          "category": "system"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322038",
+      "last_accessed": "2026-04-06T06:44:59.322039",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Support-Prozess": {
+      "type": "operations",
+      "category": "operations",
+      "facts": [
+        {
+          "content": "Managed Service = Wir k\u00fcmmern uns um alles. Email Support innerhalb 24h, Emergency Support via Telegram.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322044",
+          "category": "operations"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322042",
+      "last_accessed": "2026-04-06T06:44:59.322043",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "SLA-Garantie": {
+      "type": "operations",
+      "category": "operations",
+      "facts": [
+        {
+          "content": "Professional: 99.5% Uptime, Enterprise: 99.9%. Monitoring via Watchdog Script.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322051",
+          "category": "operations"
+        }
+      ],
+      "priority": "LOW",
+      "created": "2026-04-06T06:44:59.322049",
+      "last_accessed": "2026-04-06T06:44:59.322050",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Referral-Program": {
+      "type": "growth",
+      "category": "growth",
+      "facts": [
+        {
+          "content": "Kunden werben Kunden: 1 Monat gratis bei erfolgreichem Referral. Viral Growth Mechanismus.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322055",
+          "category": "growth"
+        }
+      ],
+      "priority": "LOW",
+      "created": "2026-04-06T06:44:59.322052",
+      "last_accessed": "2026-04-06T06:44:59.322053",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Upsell-Crosssell": {
+      "type": "growth",
+      "category": "growth",
+      "facts": [
+        {
+          "content": "Starter \u2192 Professional \u2192 Enterprise. Crosssell: Mehr AI Mitarbeiter, Additional Channels (Email+Social+Phone).",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-06T06:44:59.322058",
+          "category": "growth"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-06T06:44:59.322056",
+      "last_accessed": "2026-04-06T06:44:59.322057",
+      "access_count": 0,
+      "decay_score": 1.0
+    }
+  },
+  "last_updated": "2026-04-06T06:44:59.322060",
+  "created": "2026-04-05T15:11:33.367596"
+}

@@ -1,0 +1,44 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Architect",
+      "role": "System Architecture Expert",
+      "focus": "Technical infrastructure, scalability, integration",
+      "personality": "Analytical, thorough, sees big picture",
+      "color": "#00ff88"
+    },
+    {
+      "id": 2,
+      "name": "Marketer", 
+      "role": "Growth & Revenue Specialist",
+      "focus": "User acquisition, conversion, pricing, positioning",
+      "personality": "Creative, data-driven, persuasive",
+      "color": "#00ccff"
+    },
+    {
+      "id": 3,
+      "name": "Product",
+      "role": "UX & Feature Specialist",
+      "focus": "User experience, features, product-market fit",
+      "personality": "User-focused, practical, innovative",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": 4,
+      "name": "Operations",
+      "role": "Process & Automation Expert",
+      "focus": "Efficiency, automation, workflows, scaling",
+      "personality": "Systematic, pragmatic, optimization-minded",
+      "color": "#ffd93d"
+    },
+    {
+      "id": 5,
+      "name": "Visionary",
+      "role": "Future Trends & Innovation",
+      "focus": "Emerging tech, market trends, long-term strategy",
+      "personality": "Forward-thinking, disruptive, bold",
+      "color": "#ff00ff"
+    }
+  ]
+}

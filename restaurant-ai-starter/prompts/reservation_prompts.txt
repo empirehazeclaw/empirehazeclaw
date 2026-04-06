@@ -1,0 +1,522 @@
+# Restaurant Reservation Prompts
+# 30 ChatGPT Prompts für Reservierungs-Management
+# Erstellt mit KI + Manual Review
+
+---
+
+## 📋 RESERVIERUNGS-MANAGEMENT
+
+### Prompt 1: Tagesübersicht erstellen
+```
+Erstelle mir eine Tagesübersicht aller Reservierungen für [Datum].
+
+Format:
+- Uhrzeit | Name | Personen | Telefon | Special | Status
+- farbliche Codierung nach Status (bestätigt=grün, offen=gelb, storniert=rot)
+
+Zusätzlich:
+- Gesamtzahl Personen
+- Peak-Hour Analyse
+- Special Events vermerken
+```
+
+### Prompt 2: Reservierung bestätigen
+```
+Schreibe eine Bestätigungs-SMS für:
+
+Reservierung:
+- Datum: [Datum]
+- Uhrzeit: [Zeit]
+- Name: [Name]
+- Personen: [Anzahl]
+- Telefon: [Nr]
+
+Inklusive:
+- Adresse des Restaurants
+- Parkmöglichkeiten
+- Rückfrage-Callback
+```
+
+### Prompt 3: Tisch-Zuweisung optimieren
+```
+Hilf mir bei der Tischzuweisung für heute Abend.
+
+Reservierungen:
+[Liste mit Uhrzeit, Personenzahl, Name, Special Requests]
+
+Verfügbare Tische:
+- Tisch 1: 2 Personen, Fenster
+- Tisch 2: 4 Personen, Nebenzimmer
+- Tisch 3: 6 Personen, Hauptraum
+- Tisch 4: 4 Personen, Terrace
+- Tisch 5: 2 Personen, Bar-Bereich
+
+Berücksichtige:
+- Gruppen zusammenlegen wo möglich
+- Special Requests (Geburtstag, romantisches Dinner)
+- Raucher/Nichtraucher
+```
+
+### Prompt 4: Waitlist-Management
+```
+Wir haben aktuell [Anzahl] Warteliste-Einträge für [Datum].
+
+Reservierte Personen: [Anzahl]
+Verfügbare Plätze: [Anzahl]
+
+Erstelle eine Prioritätsliste wen ich zuerst kontaktieren sollte wenn Plätze frei werden.
+
+Kriterien:
+- Stammgäste priorisieren
+- Special Events (Geburtstage) priorisieren
+- Zeit seit Wartelisten-Eintrag
+```
+
+### Prompt 5: No-Show Analyse
+```
+Analysiere unsere Reservierungen der letzten 30 Tage.
+
+Daten:
+- Gesamtzahl Reservierungen: [Anzahl]
+- No-Shows: [Anzahl]
+- Stornierungen: [Anzahl]
+- Tatsächliche Gäste: [Anzahl]
+
+Gib mir:
+- No-Show-Rate in %
+- Häufigste No-Show-Zeiten
+- Muster (bestimmte Tage, Uhrzeiten)
+- Empfehlungen zur Reduktion
+```
+
+---
+
+## 📱 KOMMUNIKATION
+
+### Prompt 6: SMS-Erinnerung (Vortag)
+```
+Schreibe eine SMS-Erinnerung für morgen 18:00 Uhr.
+
+Name: [Gast]
+Personen: [Anzahl]
+Reservierungs-Nr: [Nummer]
+
+Kurz, freundlich, mit Rückfrage-Link oder Callback-Nummer.
+Max 160 Zeichen.
+```
+
+### Prompt 7: SMS-Erinnerung (2h vorher)
+```
+Kurze SMS-Erinnerung 2 Stunden vor Reservierung.
+
+Name: [Gast]
+Uhrzeit: [Zeit]
+
+Nur:
+- Freundliche Erinnerung
+- Kurze Bestätigung der Zeit
+- Bei Bedarf kurz anrufen
+```
+
+### Prompt 8: Gruppen-Reservierung Bestätigung
+```
+Schreibe eine ausführliche Bestätigung für Gruppen-Reservierung.
+
+Details:
+- Firma/Gruppe: [Name]
+- Datum: [Datum]
+- Uhrzeit: [Zeit]
+- Personen: [Anzahl]
+- Raum: [Privat/Semi-privat]
+- Kontaktperson: [Name]
+- Telefon: [Nr]
+- Special: [Menüwünsche, Dekoration, etc.]
+
+Enthält:
+- Vollständige Details
+- Anfahrtsbeschreibung
+- Parken
+- Dresscode falls vorhanden
+- Stornierungsbedingungen
+- Anzahlung-Erinnerung falls nötig
+```
+
+### Prompt 9: Walk-in Anfrage ablehnen
+```
+Schreibe eine höfliche SMS für kurzfristigen Walk-in der abgelehnt werden muss.
+
+Grund: [Ausbucht / Vorbereitungszeit / Küchenschluss]
+
+Biete an:
+- Alternative Zeit heute
+- Warteliste für heute Abend
+- Reservierung für morgen
+```
+
+### Prompt 10: Kurzfristige Verfügbarkeit anbieten
+```
+SMS an Warteliste-Gast: Wir haben plötzlich 2 Plätze frei!
+
+Datum: [Datum]
+Uhrzeit: [Zeit]
+Personen: [Anzahl]
+Angebot: Falls interessant, bitte bis [Uhrzeit] bestätigen.
+
+Nett, nicht verzweifelt klingend.
+```
+
+---
+
+## 🎉 SPECIAL REQUESTS
+
+### Prompt 11: Geburtstags-Überraschung planen
+```
+Plane eine Geburtstags-Überraschung für [Name].
+
+Reservierung:
+- Datum: [Datum]
+- Uhrzeit: [Zeit]
+- Personen: [Anzahl]
+- Alter: [Falls bekannt]
+
+Budget-Optionen:
+- Basis: Kerze + Gesang (kostenlos)
+- Mittel: Spezial-Dessert mit Kerze + personalisierter Nachricht
+- Premium: Personalisierter Kuchen + Sekt
+
+Was sollte ich noch wissen / vorschlagen?
+```
+
+### Prompt 12: Junggesellenabschied / Junggesellinnenabschied
+```
+Organisiere einen Tisch für [JGA] mit [Anzahl] Personen.
+
+Info:
+- Name: [Gast]
+- Art: [Junggesellenabschied / Junggesellinnenabschied]
+- Datum: [Datum]
+- Uhrzeit: [Zeit]
+
+Optionen vorschlagen:
+- Dekoration
+- Special Drinks
+- Private Zone
+- Aktivitäten (Fotoecke, etc.)
+- Musik
+```
+
+### Prompt 13: Hochzeitsjubiläum
+```
+Gestalte ein besonderes Erlebnis für [X]. Hochzeitstag.
+
+Gäste:
+- Name: [Beide Namen]
+- Datum: [Datum]
+- Jahr: [X Jahre]
+
+Vorschläge:
+- Spezialmenü
+- Wein-Pairing
+- Romantische Dekoration
+- Personalisierte Speisekarte
+- Foto-Service
+```
+
+### Prompt 14: Firmenevent Koordination
+```
+Erstelle einen Ablaufplan für Firmenevent.
+
+Event:
+- Firma: [Name]
+- Art: [Weihnachtsfeier / Teambuilding / Business Lunch]
+- Datum: [Datum]
+- Uhrzeit: [Von-Bis]
+- Personen: [Anzahl]
+- Budget p.P.: [Betrag]
+
+Benötige:
+- Zeitplan / Ablauf
+- Menü-Vorschläge
+- Raumeinteilung
+- Technik (Beamer, Mikrofon, etc.)
+- Parken
+```
+
+### Prompt 15: Kindermenü-Anfrage
+```
+Antoworte auf Email mit Frage nach Kindermenü.
+
+Enthalten:
+- Ja, wir haben Kindermenü
+- Altersempfehlung
+- Typische Gerichte
+- Preise
+- Babystuhl/Kindersitz verfügbar
+- Spielecke/Materialien
+```
+
+---
+
+## 📊 FORECASTING & PLANNING
+
+### Prompt 16: Wochen-Prognose erstellen
+```
+Erstelle eine Prognose für [Kalenderwoche].
+
+Historische Daten (letzte 4 Wochen gleiche Woche):
+- Ø Reservierungen pro Tag: [Anzahl]
+- Ø Personen pro Tag: [Anzahl]
+- Peak Days: [Welche]
+- Slow Days: [Welche]
+
+Wettervorhersage: [Kurz]
+Events in der Stadt: [Falls bekannt]
+
+Erwartete Reservierungen:
+- Montag: [Prognose]
+- Dienstag: [Prognose]
+- usw.
+
+ staffing-Empfehlung:
+- Küche
+- Service
+```
+
+### Prompt 17: Stoßzeit-Analyse
+```
+Analysiere unsere Stoßzeiten der letzten 3 Monate.
+
+Daten:
+[Liste mit Datum, Uhrzeit, Anzahl Personen, Wartezeit, Tischwechsel]
+
+Finde:
+- Regular Peak Hours
+- Ungewöhnliche Muster
+- Durchschnittliche Verweildauer pro Gast
+- Optimale Schicht-Länge
+```
+
+### Prompt 18: Saisonale Anpassung
+```
+Plane die Speisekarte für [Saison/Event].
+
+Aktuelle Saison: [Sommer/Winter/Übergang]
+Lokale Events: [Falls bekannt]
+Saisonale Zutaten: [Verfügbare]
+
+Erstelle:
+- Empfehlung: Welche Gerichte behalten
+- Neue Gerichte für Saison
+- Welche entfernen
+- Preis-Anpassungen
+```
+
+### Prompt 19: Mitarbeiter-Stärken zuweisen
+```
+Erstelle optimalen Service-Plan für [Abend/Tag].
+
+Team:
+- [Name 1]: Stärken [z.B. Wein, große Gruppen, Neuling]
+- [Name 2]: Stärken [...]
+- [Name 3]: Stärken [...]
+
+Reservierungen:
+[Liste mit Uhrzeit, Personenzahl, Besonderheiten]
+
+Zuweisung:
+- Tischbereiche
+- Wer bedient welche Reservierungen
+- Backup-Plan bei Ausfall
+```
+
+### Prompt 20: Überlauf-Management
+```
+Erstelle Notfall-Plan bei unerwartet hohem Andrang.
+
+Szenario: [Anzahl] unerwartete Gäste, normale Kapazität [Anzahl]
+
+Optionen:
+1. Zusätzliche Tische aufbauen
+2. Bar-Bereich nutzen
+3. Wartezeit-Strategie mit Getränken
+4. Parallel-Service erhöhen
+5. Küchen-Pacing anpassen
+
+Erstelle Schritt-für-Schritt Plan.
+```
+
+---
+
+## 💼 BUSINESS-KOMMUNIKATION
+
+### Prompt 21: Anfrage für große Gruppe (10+)
+```
+Beantworte Anfrage für Gruppe mit [Anzahl] Personen.
+
+Benötigt:
+- Bestätigung der Verfügbarkeit
+- Raumeinteilung Optionen
+- Menu-Vorschläge
+- Getränkepaket-Optionen
+- Deposit-Erklärung
+- Stornierungsbedingungen
+- Special Requests Erfragen
+
+Antwort-Timeframe: [Wann können wir bestätigen]
+```
+
+### Prompt 22: Catering-Angebot erstellen
+```
+Erstelle Catering-Angebot für [Event].
+
+Event:
+- Art: [Art]
+- Datum: [Datum]
+- Uhrzeit: [Zeit]
+- Ort: [Adresse]
+- Personen: [Anzahl]
+- Budget: [Betrag]
+- Kontakt: [Name/Email]
+
+Enthält:
+- 3 Optionen (Low/Mid/High Budget)
+- Serviceleistungen (Lieferung, Aufbau, Personal)
+- Menu-Vorschläge
+- Getränke-Optionen
+- Referenz-Bilder
+- Gültigkeit des Angebots
+```
+
+### Prompt 23: Lieferanten-Bestellung optimieren
+```
+Optimiere unsere Wochenbestellung bei [Lieferant].
+
+Historie letzte 4 Wochen:
+[Liste mit Produkt, durchschnittliche Menge, Schwund/Ausschuss]
+
+Diese Woche:
+- Erwartete Covers: [Anzahl]
+- Special Events: [Falls vorhanden]
+- Wetter: [Prognose]
+
+Bestellvorschlag mit:
+- Produkt
+- Menge
+- Begründung
+```
+
+### Prompt 24: Bewerbungsantwort (positiv)
+```
+Lade Bewerber für [Position] zum Probearbeiten ein.
+
+Position: [Job]
+Name: [Bewerber]
+Termin: [Datum/Zeit]
+Dauer: [Stunden]
+Kleidung: [Dresscode]
+Was mitbringen: [Dokumente, etc.]
+```
+
+### Prompt 25: Bewerbungsantwort (negativ)
+```
+Lehne Bewerbung höflich ab ohne zu verletzen.
+
+Position: [Job]
+Name: [Bewerber]
+Grund: [Keine Erfahrung / Überqualifiziert / andere Preferenz]
+
+Mache Hoffnung auf zukünftige Öffnungen.
+```
+
+---
+
+## 🛠️ OPERATIONS
+
+### Prompt 26: Tisch-Reservierungsplan für Woche
+```
+Erstelle Woche-Plan für Tischreservierungen.
+
+Verfügbare Tische:
+[Liste mit Tisch-Nr, Kapazität, Position, Besonderheiten]
+
+Reservierungen für [Woche]:
+[Liste pro Tag mit Uhrzeit, Personenzahl, Name, Special]
+
+Output:
+- Optimaler Belegungsplan
+- Tischauslastung %
+- Überschneidungen identifizieren
+```
+
+### Prompt 27: Notfall-Hotline Script
+```
+Schreibe Telefon-Script für Notfall außerhalb der Öffnungszeiten.
+
+Szenarien:
+1. Krankheitsausbruch (Lebensmittelvergiftung?)
+2. Wasserrohrbruch
+3. Feuer
+4. Einbruch
+5. Bewerber-Anfrage außerhalb der Zeit
+
+Pro Szenario:
+- Sofort-Maßnahmen
+- Wen kontaktieren
+- Gästekommunikation
+```
+
+### Prompt 28: Hygiene-Checkliste erstellen
+```
+Erstelle tägliche Hygiene-Checkliste für Restaurant.
+
+Bereiche:
+- Küche (Kühlung, Arbeitsflächen, Geräte)
+- Service (Gläser, Besteck, Tische)
+- Bar
+- Toiletten
+- Außenbereich
+
+Standards:
+- HACCP-Anforderungen
+- Lokale Hygienevorschriften
+```
+
+### Prompt 29: Tagesbericht Vorlage
+```
+Erstelle strukturierte Tagesbericht-Vorlage.
+
+Abschnitte:
+1. Wetter & Events
+2. Reservierungen (Anzahl, особые)
+3. Walk-ins (Anzahl, totale Personen)
+4. Umsatz (Speisen, Getränke, total)
+5. Durchschnittsbon
+6. No-Shows & Stornierungen
+7. Beschwerden & Lösungen
+8. Personal (Anwesend, gefehlt)
+9. Bemerkungen
+
+Feld für Notizen.
+```
+
+### Prompt 30: Übergabe-Dokumentation
+```
+Erstelle Schicht-Übergabe-Template.
+
+Frühschicht → Spätschicht:
+- Reservierungen heute Abend
+- Laufende Bestellungen
+- Probleme/Offene Punkte
+- Personal-Änderungen
+- Special Requests
+
+Spätschicht → Frühschicht (für nächsten Tag):
+- Was wurde nicht fertig
+- Morgen-Anlieferungen
+- Vorbereitungen für morgen
+```
+
+---
+
+*Erstellt: 2026-03-26*
+*Für: EmpireHazeClaw Restaurant AI Starter Kit*

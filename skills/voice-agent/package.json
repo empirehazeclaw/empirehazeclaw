@@ -1,0 +1,43 @@
+{
+  "name": "local-voice-agent",
+  "version": "1.0.0",
+  "description": "Complete offline voice-to-voice AI assistant for OpenClaw (Whisper.cpp STT + Pocket-TTS). 100% local, no cloud APIs, no costs. Custom voice cloning support.",
+  "author": "Peter Karki <pinologicall>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinologicall/voice-agent"
+  },
+  "keywords": [
+    "openclaw",
+    "voice",
+    "offline",
+    "local",
+    "speech-to-text",
+    "text-to-speech",
+    "whisper",
+    "pocket-tts",
+    "tts",
+    "stt",
+    "ai-assistant",
+    "accessibility"
+  ],
+  "scripts": {
+    "install": "./install.sh",
+    "test": "echo \"Testing voice-agent...\" && ./bin/voice-agent --help"
+  },
+  "dependencies": {
+    "whisper.cpp": ">=1.0.0",
+    "pocket-tts": ">=0.1.0",
+    "ffmpeg": ">=6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.10.0"
+  },
+  "openclaw": {
+    "skill": "voice-agent",
+    "version": "1.0.0",
+    "compatibility": ">=2026.3.0"
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+source /home/clawbot/.config/gogcli/token.env
+exec /home/clawbot/.linuxbrew/bin/gog "$@"

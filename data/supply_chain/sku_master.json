@@ -1,0 +1,44 @@
+[
+  {
+    "sku": "SKU-101",
+    "name": "Widget-A",
+    "lead_time_days": 34,
+    "reorder_interval_days": 30,
+    "unit_cost": 83.79
+  },
+  {
+    "sku": "SKU-102",
+    "name": "Widget-B",
+    "lead_time_days": 9,
+    "reorder_interval_days": 30,
+    "unit_cost": 5.34
+  },
+  {
+    "sku": "SKU-103",
+    "name": "Gadget-X",
+    "lead_time_days": 15,
+    "reorder_interval_days": 30,
+    "unit_cost": 65.53
+  },
+  {
+    "sku": "SKU-104",
+    "name": "Part-Alpha",
+    "lead_time_days": 23,
+    "reorder_interval_days": 30,
+    "unit_cost": 20.35
+  },
+  {
+    "sku": "SKU-105",
+    "name": "Assembly-Kit",
+    "lead_time_days": 35,
+    "reorder_interval_days": 30,
+    "unit_cost": 57.41
+  },
+  {
+    "sku": "SKU-106",
+    "name": "Gizmo-Beta",
+    "lead_time_days": 34,
+    "reorder_interval_days": 30,
+    "unit_cost": 58.29
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "template_federal",
+    "name": "Federal Grant Application",
+    "description": "NSF, NIH, federal agencies",
+    "grant_type": "federal",
+    "sections": [
+      {
+        "title": "Project Summary",
+        "prompt": "Comprehensive summary of project objectives, methods, and expected outcomes.",
+        "word_limit": 500,
+        "required": true
+      },
+      {
+        "title": "Project Description",
+        "prompt": "Detailed project description including background, specific aims, and methodology.",
+        "word_limit": 3000,
+        "required": true
+      },
+      {
+        "title": "Budget Justification",
+        "prompt": "Explain each budget item and its necessity.",
+        "word_limit": 1000,
+        "required": true
+      },
+      {
+        "title": "Timeline",
+        "prompt": "Detailed project timeline with milestones.",
+        "word_limit": 500,
+        "required": true
+      },
+      {
+        "title": "Evaluation Plan",
+        "prompt": "How will project success be measured?",
+        "word_limit": 800,
+        "required": true
+      },
+      {
+        "title": "Sustainability",
+        "prompt": "How will project continue after funding ends?",
+        "word_limit": 500,
+        "required": false
+      },
+      {
+        "title": "Organizational Capacity",
+        "prompt": "Organization's ability to conduct proposed work.",
+        "word_limit": 600,
+        "required": true
+      }
+    ],
+    "budget_template": "",
+    "common_questions": [],
+    "tips": [
+      "Be specific about measurable outcomes",
+      "Align sections with review criteria"
+    ]
+  },
+  {
+    "id": "template_foundation",
+    "name": "Foundation Grant Application",
+    "description": "Private and community foundations",
+    "grant_type": "foundation",
+    "sections": [
+      {
+        "title": "Executive Summary",
+        "prompt": "Overview of organization and funding request.",
+        "word_limit": 250,
+        "required": true
+      },
+      {
+        "title": "Statement of Need",
+        "prompt": "Problem your organization addresses and why intervention is needed.",
+        "word_limit": 800,
+        "required": true
+      },
+      {
+        "title": "Program Description",
+        "prompt": "Program or project to be funded.",
+        "word_limit": 1200,
+        "required": true
+      },
+      {
+        "title": "Population Served",
+        "prompt": "Who benefits? Demographics and numbers.",
+        "word_limit": 400,
+        "required": true
+      },
+      {
+        "title": "Outcomes & Evaluation",
+        "prompt": "Expected outcomes and measurement approach.",
+        "word_limit": 600,
+        "required": true
+      },
+      {
+        "title": "Organizational Info",
+        "prompt": "History, mission, and capacity.",
+        "word_limit": 400,
+        "required": true
+      },
+      {
+        "title": "Budget Overview",
+        "prompt": "Total budget and amount requested.",
+        "word_limit": 300,
+        "required": true
+      }
+    ],
+    "budget_template": "",
+    "common_questions": [],
+    "tips": [
+      "Tell a compelling story",
+      "Focus on impact not activities"
+    ]
+  },
+  {
+    "id": "template_corporate",
+    "name": "Corporate Sponsorship Request",
+    "description": "Corporate sponsorships",
+    "grant_type": "corporate",
+    "sections": [
+      {
+        "title": "Organization Overview",
+        "prompt": "Brief introduction.",
+        "word_limit": 200,
+        "required": true
+      },
+      {
+        "title": "Sponsorship Opportunity",
+        "prompt": "Describe opportunity and benefits.",
+        "word_limit": 500,
+        "required": true
+      },
+      {
+        "title": "Alignment",
+        "prompt": "How does this align with corporate values?",
+        "word_limit": 300,
+        "required": true
+      },
+      {
+        "title": "Impact",
+        "prompt": "Expected impact.",
+        "word_limit": 400,
+        "required": true
+      },
+      {
+        "title": "Recognition",
+        "prompt": "How will sponsor be recognized?",
+        "word_limit": 300,
+        "required": false
+      }
+    ],
+    "budget_template": "",
+    "common_questions": [],
+    "tips": [
+      "Emphasize mutual benefit",
+      "Quantify reach"
+    ]
+  }
+]

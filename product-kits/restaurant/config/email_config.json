@@ -1,0 +1,64 @@
+{
+  "_comment": "EmpireHazeClaw AI Employee - Restaurant Konfiguration",
+  "version": "1.0.0",
+  "business_type": "restaurant",
+  
+  "business": {
+    "name": "Restaurant Name",
+    "cuisine": "Deutsch",
+    "tables": 40,
+    "seats": 120
+  },
+  
+  "agents": {
+    "email": {
+      "enabled": true,
+      "response_templates": {
+        "reservation_request": "Vielen Dank für Ihre Reservierungsanfrage. Wir melden uns innerhalb von 2 Stunden bei Ihnen.",
+        "opening_hours": "Unsere Öffnungszeiten finden Sie auf unserer Website.",
+        "special_event": "Gerne! Für Special Events kontaktieren Sie uns bitte telefonisch."
+      }
+    },
+    
+    "support": {
+      "enabled": true,
+      "faq_categories": [
+        {
+          "category": "Reservierung",
+          "items": [
+            {"keywords": ["reservierung", "tisch", "buchen"], "answer": "Sie können gerne telefonisch unter [Telefonnummer] reservieren oder uns eine Email senden."},
+            {"keywords": ["änderung", "stornierung", "absagen"], "answer": "Bitte kontaktieren Sie uns mindestens 24 Stunden vor Ihrem Termin für Änderungen oder Stornierungen."},
+            {"keywords": ["groß gruppe", "feier", "geburtstag"], "answer": "Für Gruppen ab 10 Personen erstellen wir gerne ein individuelles Angebot. Kontaktieren Sie uns!"}
+          ]
+        },
+        {
+          "category": "Allgemein",
+          "items": [
+            {"keywords": ["parken", "parkhaus"], "answer": "In der Nähe befindet sich ein Parkhaus [Adresse]."},
+            {"keywords": ["kinder", "familien"], "answer": "Kinder sind bei uns herzlich willkommen! Wir haben einen Kinderstuhl und eine Kinderecke."},
+            {"keywords": ["rauchen", "terrasse"], "answer": "Rauchen ist nur auf unserer Außenterrasse gestattet."}
+          ]
+        }
+      ]
+    },
+    
+    "scheduler": {
+      "enabled": true,
+      "config": {
+        "slot_duration_minutes": 90,
+        "working_hours": {
+          "monday": {"start": "11:00", "end": "22:00"},
+          "tuesday": {"start": "11:00", "end": "22:00"},
+          "wednesday": {"start": "11:00", "end": "22:00"},
+          "thursday": {"start": "11:00", "end": "22:00"},
+          "friday": {"start": "11:00", "end": "23:00"},
+          "saturday": {"start": "11:00", "end": "23:00"},
+          "sunday": {"start": "11:00", "end": "21:00"}
+        },
+        "advance_booking_days": 14,
+        "min_party_size": 1,
+        "max_party_size": 20
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "name": "Restaurant Management Dashboard",
+  "version": "1.0",
+  "created": "2026-03-26",
+  "description": "All-in-One Restaurant Management Template for Notion Import",
+  
+  "database": {
+    "name": "Restaurant Dashboard",
+    "properties": {
+      "Name": {"type": "title"},
+      "Status": {"type": "select", "options": ["Active", "Completed", "Cancelled"]},
+      "Priority": {"type": "select", "options": ["High", "Medium", "Low"]},
+      "Due Date": {"type": "date"},
+      "Category": {"type": "select", "options": ["Operations", "Marketing", "Finance", "HR", "Events"]},
+      "Assigned To": {"type": "people"},
+      "Tags": {"type": "multi_select", "options": ["urgent", "weekly", "monthly", "seasonal"]}
+    }
+  },
+  
+  "views": [
+    {
+      "name": "Weekly Tasks",
+      "type": "table",
+      "filters": [{"property": "Category", "select": {"equals": "Operations"}}],
+      "sorts": [{"property": "Due Date", "direction": "ascending"}]
+    },
+    {
+      "name": "Marketing Calendar",
+      "type": "calendar",
+      "filters": [{"property": "Category", "select": {"equals": "Marketing"}}]
+    }
+  ],
+  
+  "pages": [
+    {
+      "name": "📊 Daily Dashboard",
+      "content": [
+        {"type": "heading_1", "text": "Today's Overview"},
+        {"type": "metrics_grid", "items": [
+          {"label": "Reservations", "emoji": "📅"},
+          {"label": "Expected Guests", "emoji": "👥"},
+          {"label": "Revenue Target", "emoji": "💰"},
+          {"label": "Special Events", "emoji": "🎉"}
+        ]},
+        {"type": "heading_2", "text": "Today's Reservations"},
+        {"type": "table", "database": "reservations"},
+        {"type": "heading_2", "text": "Notes & Reminders"},
+        {"type": "to_do_list"}
+      ]
+    },
+    {
+      "name": "📅 Reservations",
+      "content": [
+        {"type": "heading_1", "text": "Reservation Management"},
+        {"type": "database_view", "database": "reservations"},
+        {"type": "heading_2", "text": "Quick Stats"},
+        {"type": "stats", "items": [
+          "Total this week",
+          "No-shows",
+          "Cancellations",
+          "Avg party size"
+        ]}
+      ]
+    },
+    {
+      "name": "📦 Inventory",
+      "content": [
+        {"type": "heading_1", "text": "Inventory Tracker"},
+        {"type": "database_view", "database": "inventory"},
+        {"type": "heading_2", "text": "Low Stock Alerts"},
+        {"type": "filter", "condition": "quantity < 10"}
+      ]
+    },
+    {
+      "name": "💰 Finance",
+      "content": [
+        {"type": "heading_1", "text": "Financial Overview"},
+        {"type": "metrics_grid", "items": [
+          {"label": "Today's Revenue", "emoji": "💵"},
+          {"label": "Weekly Total", "emoji": "📊"},
+          {"label": "Avg per Cover", "emoji": "🍽️"},
+          {"label": "Cost %", "emoji": "📈"}
+        ]},
+        {"type": "heading_2", "text": "Recent Transactions"},
+        {"type": "table", "database": "transactions"}
+      ]
+    },
+    {
+      "name": "👥 Staff Schedule",
+      "content": [
+        {"type": "heading_1", "text": "Team Schedule"},
+        {"type": "calendar_view", "database": "shifts"},
+        {"type": "heading_2", "text": "Staff Directory"},
+        {"type": "gallery", "database": "staff"}
+      ]
+    },
+    {
+      "name": "📋 Menu Management",
+      "content": [
+        {"type": "heading_1", "text": "Menu Items"},
+        {"type": "table", "database": "menu_items"},
+        {"type": "heading_2", "text": "Seasonal Specials"},
+        {"type": "board", "database": "seasonal_items", "group_by": "season"}
+      ]
+    },
+    {
+      "name": "🎉 Events",
+      "content": [
+        {"type": "heading_1", "text": "Upcoming Events"},
+        {"type": "calendar_view", "database": "events"},
+        {"type": "heading_2", "text": "Past Events Archive"},
+        {"type": "table", "database": "past_events"}
+      ]
+    },
+    {
+      "name": "⭐ Reviews & Feedback",
+      "content": [
+        {"type": "heading_1", "text": "Customer Feedback"},
+        {"type": "metrics_grid", "items": [
+          {"label": "Google Rating", "emoji": "⭐"},
+          {"label": "Reviews this month", "emoji": "📝"},
+          {"label": "Response rate", "emoji": "📬"},
+          {"label": "Sentiment", "emoji": "😊"}
+        ]},
+        {"type": "heading_2", "text": "Recent Reviews"},
+        {"type": "table", "database": "reviews"}
+      ]
+    },
+    {
+      "name": "📧 Marketing",
+      "content": [
+        {"type": "heading_1", "text": "Marketing Calendar"},
+        {"type": "calendar_view", "database": "marketing_campaigns"},
+        {"type": "heading_2", "text": "Active Campaigns"},
+        {"type": "gallery", "database": "campaigns"},
+        {"type": "heading_2", "text": "Social Media Schedule"},
+        {"type": "table", "database": "social_posts"}
+      ]
+    },
+    {
+      "name": "⚙️ Settings",
+      "content": [
+        {"type": "heading_1", "text": "Restaurant Settings"},
+        {"type": "toggle_list", "items": [
+          "Restaurant Name",
+          "Opening Hours",
+          "Contact Information",
+          "Integrations",
+          "Team Members",
+          "Custom Fields"
+        ]}
+      ]
+    }
+  ],
+  
+  "import_instructions": {
+    "step_1": "Copy this JSON structure",
+    "step_2": "Go to Notion and create a new page",
+    "step_3": "Use Notion API or third-party tool like 'Notion Import' to create databases",
+    "step_4": "Alternatively: Manually recreate the structure using the JSON as reference",
+    "alternative": "Use our Notion Template link (coming soon) for one-click install"
+  }
+}

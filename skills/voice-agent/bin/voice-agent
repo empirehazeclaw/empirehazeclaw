@@ -1,0 +1,197 @@
+#!/bin/bash
+# Voice Agent - Complete voice-to-voice AI assistant (Edge TTS Version)
+# Usage: voice-agent "Your command" [--interactive|--file <audio-file>]
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WHISPER_DIR="${WHISPER_DIR:-$HOME/.local/whisper.cpp}"
+EDGE_TTS_VOICE="${EDGE_TTS_VOICE:-de-DE-SeraphinaMultilingualNeural}"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+# Temporary files
+TEMP_DIR=$(mktemp -d)
+trap "rm -rf $TEMP_DIR" EXIT
+
+usage() {
+    echo "🎤 Voice Agent - Voice-to-Voice AI Assistant (Edge TTS)"
+    echo ""
+    echo "Usage: $0 \"<command>\" [options]"
+    echo ""
+    echo "Options:"
+    echo "  --interactive    Enter conversation mode"
+    echo "  --file <file>    Process audio file instead of text command"
+    echo "  --no-voice       Text output only (no TTS)"
+    echo "  --voice <name>   Use specific voice (default: de-DE-SeraphinaMultilingualNeural)"
+    echo "  --help           Show this help message"
+    echo ""
+    echo "Examples:"
+    echo "  $0 \"What's the weather today?\""
+    echo "  $0 --interactive"
+    echo "  $0 --file recording.wav"
+    exit 1
+}
+
+log() {
+    echo -e "${BLUE}🤖 $1${NC}"
+}
+
+error() {
+    echo -e "${RED}❌ $1${NC}"
+}
+
+success() {
+    echo -e "${GREEN}✅ $1${NC}"
+}
+
+# Text to Speech using Edge TTS
+text_to_speech() {
+    local text="$1"
+    local output_file="$2"
+    
+    edge-tts --voice "$EDGE_TTS_VOICE" --text "$text" --write-media "$output_file" 2>/dev/null
+}
+
+# Speech to Text using Whisper
+speech_to_text() {
+    local audio_file="$1"
+    
+    if [ ! -f "$audio_file" ]; then
+        error "Audio file not found: $audio_file"
+        return 1
+    fi
+    
+    whisper "$audio_file" --language German --model small 2>/dev/null
+}
+
+# Parse arguments
+INTERACTIVE=false
+AUDIO_FILE=""
+NO_VOICE=false
+COMMAND=""
+VOICE_CHOICE=""
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --interactive)
+            INTERACTIVE=true
+            shift
+            ;;
+        --file)
+            AUDIO_FILE="$2"
+            shift 2
+            ;;
+        --no-voice)
+            NO_VOICE=true
+            shift
+            ;;
+        --voice)
+            VOICE_CHOICE="$2"
+            shift 2
+            ;;
+        --help)
+            usage
+            ;;
+        *)
+            COMMAND="$1"
+            shift
+            ;;
+    esac
+done
+
+# Set voice
+if [ -n "$VOICE_CHOICE" ]; then
+    EDGE_TTS_VOICE="$VOICE_CHOICE"
+fi
+
+log "🎤 Voice Agent (Edge TTS)"
+
+# Handle audio file input
+if [ -n "$AUDIO_FILE" ]; then
+    log "📝 Processing audio file: $AUDIO_FILE"
+    
+    TEXT=$(speech_to_text "$AUDIO_FILE")
+    
+    if [ -z "$TEXT" ]; then
+        error "Could not transcribe audio"
+        exit 1
+    fi
+    
+    log "📝 Transcribed: $TEXT"
+    COMMAND="$TEXT"
+fi
+
+# Handle text command
+if [ -z "$COMMAND" ] && [ "$INTERACTIVE" = false ]; then
+    error "No command specified. Use: $0 \"<command>\""
+    exit 1
+fi
+
+# Process command
+if [ "$INTERACTIVE" = true ]; then
+    log "🎯 Interactive mode (Ctrl+C to exit)"
+    while true; do
+        echo -n -e "${YELLOW}You: ${NC}"
+        read -r COMMAND
+        
+        if [ -z "$COMMAND" ]; then
+            continue
+        fi
+        
+        if [ "$COMMAND" = "exit" ] || [ "$COMMAND" = "quit" ]; then
+            log "Goodbye!"
+            exit 0
+        fi
+        
+        # Simulated response (in production, this would call OpenClaw)
+        RESPONSE="Echo: $COMMAND"
+        echo -e "${GREEN}ClawMaster: $RESPONSE${NC}"
+        
+        # TTS output
+        if [ "$NO_VOICE" = false ]; then
+            AUDIO_OUT="$TEMP_DIR/response.mp3"
+            if text_to_speech "$RESPONSE" "$AUDIO_OUT"; then
+                log "🔊 Playing response..."
+                # Use afplay on mac, mpv on linux
+                if command -v afplay &> /dev/null; then
+                    afplay "$AUDIO_OUT"
+                elif command -v mpv &> /dev/null; then
+                    mpv --no-terminal "$AUDIO_OUT" 2>/dev/null &
+                elif command -v aplay &> /dev/null; then
+                    aplay "$AUDIO_OUT" 2>/dev/null &
+                else
+                    log "⚠️ No audio player found (install mpv or aplay)"
+                fi
+            fi
+        fi
+    done
+else
+    # Single command mode
+    log "📝 Command: $COMMAND"
+    
+    # Simulated response (in production, this would call OpenClaw)
+    RESPONSE="Echo: $COMMAND"
+    
+    log "💬 Response: $RESPONSE"
+    
+    # TTS output
+    if [ "$NO_VOICE" = false ]; then
+        AUDIO_OUT="$TEMP_DIR/response.mp3"
+        if text_to_speech "$RESPONSE" "$AUDIO_OUT"; then
+            log "🔊 Playing response..."
+            if command -v mpv &> /dev/null; then
+                mpv --no-terminal "$AUDIO_OUT" 2>/dev/null &
+            elif command -v aplay &> /dev/null; then
+                aplay "$AUDIO_OUT" 2>/dev/null &
+            fi
+        fi
+    fi
+    
+    success "Complete!"
+fi
