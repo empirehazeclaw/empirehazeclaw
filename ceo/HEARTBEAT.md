@@ -1,14 +1,15 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-07 08:04*
+*Last updated: 2026-04-07 11:46*
 
 ---
 
 ## 🔴 PRIORITÄT 1 - OFFENE BLOCKER
 
-- [ ] Gateway restart (Nico muss manuell: `systemctl --user restart openclaw-gateway.service`)
-- [ ] GitHub Token rotieren (wurde beim Push exponiert)
-- [ ] 6 Security Keys rotieren (Liste in /home/clawbot/.openclaw/secrets/SECURITY_ROTATION.md)
+- [x] GitHub Token rotieren ✅ (Token erneuert am 2026-04-07)
+- [ ] 4 Security Keys rotieren (Buffer, Leonardo, Google AIza, SECRET_KEY)
+- [x] Gateway Token + Brave API Key ✅ (redacted)
+- [ ] Data Manager isolated Session Bug (OpenClaw Issue) — Modelle timeout in isolated Sessions
 
 ---
 
@@ -17,6 +18,8 @@
 - [ ] Resend Pro kaufen
 - [ ] Twitter OAuth erneuern
 - [ ] Reddit API Keys beantragen
+- [x] Lobster + acpx installiert (acpx nicht nutzbar für lokale Gateways)
+- [ ] Workspace Aufräumen (~400 orphaned Scripts)
 
 ---
 
@@ -70,6 +73,7 @@
 4. Falls alles erledigt → "HEARTBEAT_OK" antworten
 5. Prüfe Task-Reports in /home/clawbot/.openclaw/workspace/ceo/task_reports/
 6. Falls neue Reports vorhanden → Zusammenfassung für Nico
+7. Prüfe Learnings/Decisions → falls neue vorhanden → archivieren
 
 **Task-Reports Check (SOVEREIGN ARCHITECTURE):**
 Bei jedem Heartbeat prüfen:
@@ -78,6 +82,15 @@ Bei jedem Heartbeat prüfen:
 - builder_daily.json → Builder Status
 - research_daily.json → Research Status
 - qc_weekly.json → QC Validation (Freitags)
+
+**Learnings Check:**
+- /home/clawbot/.openclaw/workspace/builder/learnings/ → neue Learnings?
+- /home/clawbot/.openclaw/workspace/security/learnings/ → neue Learnings?
+- Wenn neue Learnings → in Memory/ archivieren
+
+**Decisions Check:**
+- /home/clawbot/.openclaw/decisions/ → neue Decisions?
+- Bei wichtigen Decisions → in memory/LEGACY_KNOWLEDGE_BASE.md eintragen
 
 Falls neue Reports seit letztem Check:
 → An Nico weiterleiten mit kurzer Zusammenfassung

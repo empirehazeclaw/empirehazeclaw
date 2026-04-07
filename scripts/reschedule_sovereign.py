@@ -22,7 +22,7 @@ The script:
 import json
 import sys
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # Agent configurations — adjust times as needed
@@ -73,7 +73,7 @@ def read_report(report_path: str) -> dict:
 def get_next_run_time(agent: str, status: str) -> datetime:
     """Calculate the next run time based on agent and status."""
     config = AGENT_CONFIGS.get(agent, {})
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     
     if status == "done":
         # Schedule for same time tomorrow
@@ -109,11 +109,8 @@ def reschedule_job(agent: str, next_run: datetime) -> bool:
         "--name", job_name,
         "--session", "isolated",
         "--message", config.get("script", ""),
-        "--timeout", "1800",
-        "--deliver", "announce",
-        "--channel", "telegram",
-        "--at", schedule_time,
-        "--delete-after-run"
+        "--timeout-seconds", "1800",
+        "--at", schedule_time
     ]
     
     try:
