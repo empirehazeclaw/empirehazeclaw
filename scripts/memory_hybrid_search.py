@@ -50,7 +50,7 @@ def calculate_keyword_score(query_words: List[str], filepath: Path) -> float:
             score += content.count(word) * 0.5
         
         return score / max(len(content) / 1000, 1)
-    except:
+    except Exception:
         return 0
 
 def semantic_search(query: str, kg_path: str) -> List[Tuple[str, float]]:
@@ -77,7 +77,7 @@ def semantic_search(query: str, kg_path: str) -> List[Tuple[str, float]]:
                 if any(word in fact_content for word in query_words):
                     if f"entity:{entity}" not in [r[0] for r in results]:
                         results.append((f"entity:{entity}", 0.5))
-    except:
+    except Exception:
         pass
     
     return results
@@ -129,7 +129,7 @@ def hybrid_search(query: str, limit: int = 5) -> List[Dict]:
                     content = f.read()
                 snippet = content[:150].replace('\n', ' ')
                 output.append({'type': 'file', 'source': filepath.replace(WORKSPACE, ''), 'score': round(score, 3), 'snippet': snippet})
-            except:
+            except Exception:
                 pass
     
     return output

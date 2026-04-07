@@ -14,7 +14,7 @@ def batch_execute(commands):
     results = []
     for cmd in commands:
         try:
-            result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=30)
+            result = subprocess.run(cmd, shell=False, capture_output=True, text=True, timeout=30)
             results.append({
                 'command': cmd,
                 'stdout': result.stdout.strip(),
