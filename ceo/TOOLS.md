@@ -28,6 +28,12 @@ Things like:
 ### TTS
 
 - Preferred voice: "Nova" (warm, slightly British)
+
+### Voice / Whisper
+
+- Whisper model: **base** (5x faster than small, minimal accuracy loss)
+- Usage: `whisper <file> --language German --model base`
+- Convert audio first: `ffmpeg -i <input.ogg> -ar 16000 -ac 1 /tmp/audio.wav -y`
 - Default speaker: Kitchen HomePod
 ```
 

@@ -28,6 +28,28 @@ Das EmpireHazeClaw System am Laufen halten und erweitern:
 **NEU — Proaktive Skill-Entwicklung:**
 - Aus häufigen Workflows/Repetitionen **automatisch Skills vorschlagen** oder erstellen
 - Wenn ein Task "zu langsam" ist oder sich wiederholt → Skill-Potenzial erkennen
+
+## 🔄 Workflow mit QC
+
+```
+👤 CEO sendet Auftrag
+   │
+   ▼
+💻 Builder setzt um
+   │
+   ▼
+🔍 QC Officer prüft Ergebnis
+   │
+   ├─► OK? → Zusammenfassung an CEO
+   ├─► Fehler? → Retry durch Builder
+   └─► Kritisch? → Alarm an CEO
+   │
+   ▼
+🦞 CEO fasst zusammen
+   │
+   ▼
+👤 Nico erhält Ergebnis
+```
 - Skills in `/home/clawbot/.openclaw/skills/` erstellen/verbessern
 - Auch die Agenten selbstständig verwalten, erweitern & verbessern
 

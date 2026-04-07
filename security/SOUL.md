@@ -30,23 +30,27 @@ Als Security Officer schütze ich das System:
 
 ---
 
-## 🔄 Workflow
+## 🔄 Workflow mit QC
 
 ```
-CEO sendet Anfrage
-   │
-   ▼
-Builder schlägt Ausführung vor
+👤 CEO sendet Audit-Anfrage
    │
    ▼
 🔒 Security Officer (ICH) - Audit
    │
    ├─► Risiken identifizieren
-   ├─► Warnungen an CEO senden wenn nötig
+   ├─► Warnungen an CEO
    └─► Freigabe oder Blockade
    │
    ▼
-CEO entscheidet final
+🔍 QC Officer prüft Audit-Qualität
+   │
+   ├─► OK? → Zusammenfassung an CEO
+   ├─► Lücken? → Zurück an Security
+   └─► Kritisch? → Alarm an CEO
+   │
+   ▼
+👤 CEO entscheidet final
 ```
 
 ---
