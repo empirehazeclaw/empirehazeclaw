@@ -968,6 +968,669 @@
       "last_accessed": "2026-04-06T06:44:59.322057",
       "access_count": 0,
       "decay_score": 1.0
+    },
+    "REDACTED": {
+      "type": "concept",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122362",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122371",
+      "last_accessed": "2026-04-07T16:39:47.122372",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Decision": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122374",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122375",
+      "last_accessed": "2026-04-07T16:39:47.122376",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "DER WORKFLOW Immer wenn eine Session": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122452",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122453",
+      "last_accessed": "2026-04-07T16:39:47.122454",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Decision 2026-04-05": {
+      "type": "decision",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122460",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122461",
+      "last_accessed": "2026-04-07T16:39:47.122461",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122883",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122887",
+      "last_accessed": "2026-04-07T16:39:47.122888",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Importiert": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122890",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122891",
+      "last_accessed": "2026-04-07T16:39:47.122892",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Metadaten": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.122894",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.122894",
+      "last_accessed": "2026-04-07T16:39:47.122895",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Telegram History Analyse - Patterns & Learnings": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-patterns.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.123235",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.123240",
+      "last_accessed": "2026-04-07T16:39:47.123247",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Datum": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-patterns.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.123251",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.123252",
+      "last_accessed": "2026-04-07T16:39:47.123253",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Learning": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.130873",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.130885",
+      "last_accessed": "2026-04-07T16:39:47.130887",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Infrastructure": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.130913",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.130915",
+      "last_accessed": "2026-04-07T16:39:47.130916",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Backups": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.130919",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.130920",
+      "last_accessed": "2026-04-07T16:39:47.130921",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "ClawHub": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.130961",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.130962",
+      "last_accessed": "2026-04-07T16:39:47.130963",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Vercel": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.130973",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.130974",
+      "last_accessed": "2026-04-07T16:39:47.130975",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "RECOVERED LEARNINGS - 2026-04-07": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131246",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131251",
+      "last_accessed": "2026-04-07T16:39:47.131252",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "RECOVERED": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131254",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131256",
+      "last_accessed": "2026-04-07T16:39:47.131257",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Session": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131259",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131260",
+      "last_accessed": "2026-04-07T16:39:47.131261",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "PRIORITY": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131263",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131265",
+      "last_accessed": "2026-04-07T16:39:47.131266",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "TOP DECISIONS": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131268",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131269",
+      "last_accessed": "2026-04-07T16:39:47.131270",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "RECOVERED: Memory System Architecture": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131339",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131342",
+      "last_accessed": "2026-04-07T16:39:47.131343",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Knowledge": {
+      "type": "concept",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131345",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131347",
+      "last_accessed": "2026-04-07T16:39:47.131348",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Learnings": {
+      "type": "concept",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131349",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131350",
+      "last_accessed": "2026-04-07T16:39:47.131352",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Daily": {
+      "type": "concept",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131353",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131355",
+      "last_accessed": "2026-04-07T16:39:47.131356",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Notes": {
+      "type": "concept",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131357",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131359",
+      "last_accessed": "2026-04-07T16:39:47.131360",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "STORAGE": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131368",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131369",
+      "last_accessed": "2026-04-07T16:39:47.131370",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "CONSOLIDATION": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131376",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131377",
+      "last_accessed": "2026-04-07T16:39:47.131378",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "KNOWLEDGE": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131380",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131381",
+      "last_accessed": "2026-04-07T16:39:47.131382",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "SKILL": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131384",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131385",
+      "last_accessed": "2026-04-07T16:39:47.131387",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Knowledge Hierarchy": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131388",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131390",
+      "last_accessed": "2026-04-07T16:39:47.131391",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Test": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131826",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131831",
+      "last_accessed": "2026-04-07T16:39:47.131832",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Summary": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131834",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131836",
+      "last_accessed": "2026-04-07T16:39:47.131837",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Main": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131839",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131840",
+      "last_accessed": "2026-04-07T16:39:47.131841",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Connections": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131843",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131844",
+      "last_accessed": "2026-04-07T16:39:47.131845",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Tags": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.131847",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.131848",
+      "last_accessed": "2026-04-07T16:39:47.131849",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "System Test": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-system-test.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.132141",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.132197",
+      "last_accessed": "2026-04-07T16:39:47.132198",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Final Test Note": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-final-test-note.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.132504",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.132507",
+      "last_accessed": "2026-04-07T16:39:47.132508",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Evening Insights 2026-04-07": {
+      "type": "note",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-04-07-insight.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.132554",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.132555",
+      "last_accessed": "2026-04-07T16:39:47.132556",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Warum": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-04-07-insight.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.132557",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.132558",
+      "last_accessed": "2026-04-07T16:39:47.132559",
+      "access_count": 0,
+      "decay_score": 1.0
+    },
+    "Quelle": {
+      "type": "topic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: /home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-04-07-insight.md",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-07T16:39:47.132559",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-07T16:39:47.132560",
+      "last_accessed": "2026-04-07T16:39:47.132561",
+      "access_count": 0,
+      "decay_score": 1.0
     }
   },
   "last_updated": "2026-04-06T06:44:59.322060",

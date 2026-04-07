@@ -1,6 +1,6 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-07 11:46*
+*Last updated: 2026-04-07 16:42*
 
 ---
 
@@ -19,7 +19,21 @@
 - [ ] Twitter OAuth erneuern
 - [ ] Reddit API Keys beantragen
 - [x] Lobster + acpx installiert (acpx nicht nutzbar für lokale Gateways)
-- [ ] Workspace Aufräumen (~400 orphaned Scripts)
+- [x] Workspace Aufräumen ✅ (2026-04-07 16:11 — 391 orphaned Scripts archiviert, 648→244 Items)
+- [x] MEMORY.md komprimiert ✅ (438KB→4.5KB, Chat-Dumps archiviert)
+- [x] LCM/ContextEngine aktiviert ✅ (plugins.slots.contextEngine=lossless-claw, 41 messages)
+- [x] CEO Briefing Timeout gefixt ✅ (300→600s + Fallbacks)
+- [x] MetaClaw Auto-Restart ✅ (crontab @reboot)
+- [x] Session Cleanup Cron ✅ (4 AM, >7 Tage)
+- [x] SQLite VACUUM Cron ✅ (3 AM nightly)
+- [x] Zettelkasten Workflow ✅
+- [x] Knowledge Graph Auto-Population ✅ (57→96 entities, +39 auto-extracted)
+  - kg_auto_populate.py: Daily 06:00 UTC scan
+  - kg_quick_add.py: Quick-entry für einzelne Entities (2026-04-07 16:40)
+  - Workflow dokumentiert: memory/zettelkasten-workflow.md
+  - Evening Capture Cron: 21:00 UTC (scripts/evening_capture.py)
+  - Weekly Review Cron: Sonntag 22:00 UTC
+  - main.sqlite optimiert: 630MB→380MB (-250MB)
 
 ---
 
