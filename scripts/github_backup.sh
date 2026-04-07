@@ -8,7 +8,7 @@ set -e
 WORKSPACE="/home/clawbot/.openclaw/workspace"
 GIT_DIR="$WORKSPACE/.git"
 REMOTE="origin"
-BRANCH="master"
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 cd "$WORKSPACE"
 

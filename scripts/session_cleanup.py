@@ -2,30 +2,40 @@
 """Session Cleanup - Delete sessions older than 7 days."""
 import os
 import time
+import shutil
 from pathlib import Path
 
-SESSIONS_DIR = Path("/home/clawbot/.openclaw/sessions")
+# Sessions stored per agent
+SESSIONS_DIRS = [
+    Path("/home/clawbot/.openclaw/agents/ceo/sessions"),
+    Path("/home/clawbot/.openclaw/agents/builder/sessions"),
+    Path("/home/clawbot/.openclaw/agents/main/sessions"),
+]
 MAX_AGE_DAYS = 7
 CUTOFF = time.time() - (MAX_AGE_DAYS * 86400)
 
 deleted = 0
 kept = 0
 
-for session_dir in SESSIONS_DIR.iterdir():
-    if not session_dir.is_dir():
+for sessions_base in SESSIONS_DIRS:
+    if not sessions_base.exists():
         continue
-    mtime = session_dir.stat().st_mtime
-    if mtime < CUTOFF:
-        # Check if session is currently active
-        session_key = session_dir.name
-        # Don't delete if it's a known active session
-        if "telegram" in session_key or "ceo" in session_key:
-            kept += 1
+    for session_file in sessions_base.glob("*.jsonl"):
+        # Skip deleted files
+        if ".deleted." in session_file.name:
             continue
-        import shutil
-        shutil.rmtree(session_dir)
-        deleted += 1
-    else:
-        kept += 1
+        try:
+            mtime = session_file.stat().st_mtime
+            session_key = session_file.stem
+            # Keep very recent and active sessions
+            if mtime > CUTOFF:
+                kept += 1
+                continue
+            # Delete old sessions
+            session_file.unlink()
+            deleted += 1
+            print(f"  Deleted: {session_file.name}")
+        except Exception as e:
+            print(f"  Error: {e}")
 
 print(f"Session cleanup: deleted={deleted}, kept={kept}")

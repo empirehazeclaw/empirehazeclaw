@@ -1,110 +1,72 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-07 16:42*
+*Last updated: 2026-04-07 16:55*
 
 ---
 
 ## 🔴 PRIORITÄT 1 - OFFENE BLOCKER
 
-- [x] GitHub Token rotieren ✅ (Token erneuert am 2026-04-07)
-- [ ] 4 Security Keys rotieren (Buffer, Leonardo, Google AIza, SECRET_KEY)
-- [x] Gateway Token + Brave API Key ✅ (redacted)
-- [ ] Data Manager isolated Session Bug (OpenClaw Issue) — Modelle timeout in isolated Sessions
+| # | Task | Status |
+|---|------|--------|
+| 1 | 4 Security Keys rotieren (Buffer, Leonardo, Google AIza, SECRET_KEY) | ⏳ Nico manuell |
+| 2 | GitHub Backup aktivieren (Secrets-Blocker) | ⏳ |
+| 3 | Data Manager isolated Session Bug (OpenClaw Issue) | ⏳ |
 
 ---
 
 ## 🟡 PRIORITÄT 2 - DIESE WOCHE
 
-- [ ] Resend Pro kaufen
-- [ ] Twitter OAuth erneuern
-- [ ] Reddit API Keys beantragen
-- [x] Lobster + acpx installiert (acpx nicht nutzbar für lokale Gateways)
-- [x] Workspace Aufräumen ✅ (2026-04-07 16:11 — 391 orphaned Scripts archiviert, 648→244 Items)
-- [x] MEMORY.md komprimiert ✅ (438KB→4.5KB, Chat-Dumps archiviert)
-- [x] LCM/ContextEngine aktiviert ✅ (plugins.slots.contextEngine=lossless-claw, 41 messages)
-- [x] CEO Briefing Timeout gefixt ✅ (300→600s + Fallbacks)
-- [x] MetaClaw Auto-Restart ✅ (crontab @reboot)
-- [x] Session Cleanup Cron ✅ (4 AM, >7 Tage)
-- [x] SQLite VACUUM Cron ✅ (3 AM nightly)
-- [x] Zettelkasten Workflow ✅
-- [x] Knowledge Graph Auto-Population ✅ (57→96 entities, +39 auto-extracted)
-  - kg_auto_populate.py: Daily 06:00 UTC scan
-  - kg_quick_add.py: Quick-entry für einzelne Entities (2026-04-07 16:40)
-  - Workflow dokumentiert: memory/zettelkasten-workflow.md
-  - Evening Capture Cron: 21:00 UTC (scripts/evening_capture.py)
-  - Weekly Review Cron: Sonntag 22:00 UTC
-  - main.sqlite optimiert: 630MB→380MB (-250MB)
+| # | Task | Status |
+|---|------|--------|
+| 1 | Resend Pro kaufen | ⏳ |
+| 2 | Twitter OAuth erneuern | ⏳ |
+| 3 | Reddit API Keys beantragen | ⏳ |
+| 4 | Buffer + Leonardo Token erneuern | ⏳ |
 
 ---
 
-## ✅ ZULETZT ERLEDIGT (NICHT LÖSCHEN - ZUR REFERENZ)
+## ✅ HEUTE ERLEDIGT (2026-04-07)
 
-- [x] Todo-Liste konsolidiert (2026-04-07 08:01)
-- [x] 4 Skills erstellt (security-hardening, memory-maintain, system-health-check, voice-processing)
-- [x] Dreaming konfiguriert für alle 6 Agenten
-- [x] MEMORY.md komprimiert (4MB → 429KB)
-- [x] API Keys redacted
-- [x] GitHub History bereinigt
-- [x] **Workspace PURGE (2026-04-07 09:24)** — archive/ gelöscht, Logs geleert, 23 alte Files entfernt
-- [x] LEGACY_KNOWLEDGE_BASE.md erstellt (7KB Wissens-Rettung)
-- [x] MASTER_TODO.md erstellt
-- [x] QC-Workflow in alle Agenten SOUL.md eingebaut
-- [x] 6 Agenten SOUL.md mit QC-Step aktualisiert
-- [x] System Health & Integrity Audit bestanden
-- [x] Heartbeat auf 1 Minute gesetzt
+| Task | Result |
+|------|--------|
+| Workspace Cleanup | 648→244 Items (-62%) |
+| MEMORY.md Komprimiert | 438KB→4.5KB (-99%) |
+| LCM Aktiviert | 0→41 messages |
+| main.sqlite Optimiert | 630MB→380MB (-40%) |
+| Knowledge Graph | 57→96 entities (+39) |
+| Zettelkasten Workflow | ✅ Daily/Weekly Crons |
+| Cron Optimierung | 17→11 Crons (-400 Runs/day) |
+| Session Cleanup | 13 old sessions deleted |
+| MetaClaw | 36 Skills, Auto-Restart |
 
 ---
 
-## 📝 MEMORY FÜR HEARTBEAT
+## 📅 AKTIVE CRONS (12)
 
-**WICHTIG - Warteschleifen-Modus:**
-- Wenn ein Task läuft und Nico schickt neue Message:
-  → NICHT abbrechen
-  → Erst laufenden Task zuende bringen
-  → Checkpoint setzen
-  → Status-Meldung an Nico
+| Time | Job | Type |
+|------|-----|------|
+| 03:00 | sqlite_vacuum.sh | System |
+| 04:00 | session_cleanup.py | System |
+| 06:00 | kg_auto_populate.py | System |
+| 06:00 | semantic_search.py | System |
+| 09:00 | CEO Briefing | Agent |
+| 10:00 | Security Officer | Agent |
+| 11:31 | Data Manager | Agent |
+| 13:00 | Research | Agent |
+| 21:00 | evening_capture.py | System |
+| 22:00 Sun | weekly_review_zettel.py | System |
+| 23:00 | github_backup.sh | System |
+| @reboot | MetaClaw | System |
 
-**NEUE ARCHITEKTUR (CEO v2 - SOVEREIGN AGENT):**
-- Delegiere NIE an isolierte Subagents ohne SOUL-Injection
-- Nutze Sovereign Session Cron Jobs (siehe unten)
-- Nach jedem Task: QC Officer Validierung
-- Agenten schreiben Results → task_report.json
-- CEO Heartbeat liest Reports und informiert Nico
+---
 
-**SOVEREIGN SESSIONS (aktive Cron-Jobs):**
-| Zeit | Agent | Cron ID | Report File |
-|------|-------|---------|-------------|
-| 10:00 UTC | Security | c45ab6af... | security_daily.json |
-| 11:00 UTC | Data Manager | ca455fd8... | data_daily.json |
-| 12:00 UTC | Builder | 66d474ae... | builder_daily.json |
-| 13:00 UTC | Research | 777b5332... | research_daily.json |
-| 14:00 UTC | QC Officer | f7e10385... | qc_weekly.json |
+## 📝 HEARTBEAT RULES
 
-**Wenn der CEO aufwacht:**
-1. Lese HEARTBEAT.md
-2. Prüfe ob Tasks offen sind
-3. Falls JA → Sende Nico eine Erinnerung
-4. Falls alles erledigt → "HEARTBEAT_OK" antworten
-5. Prüfe Task-Reports in /home/clawbot/.openclaw/workspace/ceo/task_reports/
-6. Falls neue Reports vorhanden → Zusammenfassung für Nico
-7. Prüfe Learnings/Decisions → falls neue vorhanden → archivieren
+1. Lese HEARTBEAT.md bei Wake-up
+2. Prüfe PRIORITÄT 1 Tasks
+3. Falls keine → "HEARTBEAT_OK"
+4. Falls neue Task-Reports → Zusammenfassung an Nico
 
-**Task-Reports Check (SOVEREIGN ARCHITECTURE):**
-Bei jedem Heartbeat prüfen:
-- security_daily.json → Security Status
-- data_daily.json → Memory/Data Status
-- builder_daily.json → Builder Status
-- research_daily.json → Research Status
-- qc_weekly.json → QC Validation (Freitags)
+---
 
-**Learnings Check:**
-- /home/clawbot/.openclaw/workspace/builder/learnings/ → neue Learnings?
-- /home/clawbot/.openclaw/workspace/security/learnings/ → neue Learnings?
-- Wenn neue Learnings → in Memory/ archivieren
-
-**Decisions Check:**
-- /home/clawbot/.openclaw/decisions/ → neue Decisions?
-- Bei wichtigen Decisions → in memory/LEGACY_KNOWLEDGE_BASE.md eintragen
-
-Falls neue Reports seit letztem Check:
-→ An Nico weiterleiten mit kurzer Zusammenfassung
+*Alte "ZULETZT ERLEDIGT" History → memory/archive/HEARTBEAT-history.md*
