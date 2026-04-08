@@ -7,11 +7,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # === METACLAW (Reboot watchdog) ===
 @reboot sleep 10 && /home/clawbot/.local/bin/metaclaw start --mode skills_only --port 30000 >> /home/clawbot/.metaclaw/restart.log 2>&1
 
-# === MEMORY CLEANUP (Täglich 02:00 - vor Vacuum) ===
-0 2 * * * python3 /home/clawbot/.openclaw/workspace/scripts/memory_cleanup.py >> /home/clawbot/.openclaw/logs/memory_cleanup.log 2>&1
-
 # === SQLITE VACUUM (Täglich 03:00 - DB Optimierung) ===
 0 3 * * * /home/clawbot/.openclaw/workspace/scripts/sqlite_vacuum.sh >> /home/clawbot/.openclaw/logs/vacuum.log 2>&1
+
+# === MEMORY CLEANUP (Täglich 03:30 - NACH Backup, vor Session Cleanup) ===
+30 3 * * * python3 /home/clawbot/.openclaw/workspace/scripts/memory_cleanup.py >> /home/clawbot/.openclaw/logs/memory_cleanup.log 2>&1
 
 # === SESSION CLEANUP (Täglich 04:00 - alte Sessions löschen) ===
 0 4 * * * python3 /home/clawbot/.openclaw/workspace/scripts/session_cleanup.py >> /home/clawbot/.openclaw/logs/session_cleanup.log 2>&1
