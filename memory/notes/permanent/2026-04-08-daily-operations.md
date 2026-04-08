@@ -92,6 +92,37 @@
 2. **Cron Fallbacks** — Wenn Primary + Fallback dasselbe Model sind, ist das kein echtes Fallback.
 3. **Delivery Target** — Telegram @heartbeat ist kein gültiger Chat-ID. Immer numerische IDs nutzen.
 4. **Wiki Wachstum** — Das System ist nur so gut wie die Notes die wir erstellen. Needs active curation.
+5. **Knowledge Graph** — Hat 113 Entities, nicht 0! (HEARTBEAT war falsch)
+6. **Wiki-Pflege** — Die Cron-Jobs laufen, aber füllen sich nicht automatisch. evening_capture.py erstellt nur leere Templates.
+
+---
+
+## 🧠 Memory System Session (20:06-20:09 UTC)
+
+### Nico's Fragen:
+- "Wie viel haben wir verloren?" → MEMORY.md: 4MB→4.5KB (99% reduziert), ABER Wissen ist in archive/
+- "Wird das Wiki automatisch gepflegt?" → NEIN, nur halb-automatisch
+
+### Entscheidung: **Beides** — Heute-Note + Workflow etablieren
+
+### Was verloren ging (aber archiviert):
+- MEMORY.md: 4MB komprimiert → in memory/archive/ (3.8MB)
+- 371 deprecated Scripts/Agents gelöscht
+- 6 alte Test-Notes gelöscht
+
+### Was NICHT verloren ging:
+- Wissen liegt in memory/archive/ (3.8MB)
+- EXTRACTION_BATCH*.md保留了 alles
+
+### Wiki-Auto-Pflege Status:
+| Script | Macht | Automatisch? |
+|--------|-------|-------------|
+| evening_capture.py (21:00) | Leere Template-Datei | ✅ Ja, aber Inhalt manuell |
+| kg_auto_populate.py (06:00) | Entities zum KG hinzufügen | ✅ Ja, aus existierenden Files |
+| Wiki Notes erstellen | - | ❌ Manuell |
+
+### Workflow-Entscheidung:
+**Option 3** — Beides: Heute-Note + Workflow etablieren
 
 ---
 

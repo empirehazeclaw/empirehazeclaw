@@ -6,6 +6,17 @@
 
 ---
 
+## [2026-04-08] setup | Wiki Growth Workflow Etabliert
+- **Type:** setup
+- **Action:** Automatische Wiki-Pflege beschlossen und dokumentiert
+- **Pages Created:**
+  - `notes/permanent/2026-04-08-wiki-growth-workflow.md` (3KB)
+- **Decision:** Option 3 — Both: Heute-Note + Workflow etablieren
+- **Workflow:** Nach jeder Session → Note erstellen (CEO, Builder, Security, etc.)
+- **Next:** Builder Script für Auto-Capture delegiert
+
+---
+
 ## [2026-04-08] ingest | Daily Operations + Wiki Cleanup
 - **Type:** ingest
 - **Pages Added:**

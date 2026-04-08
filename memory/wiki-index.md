@@ -10,6 +10,7 @@
 | Page | Summary | Category | Last Updated |
 |------|---------|----------|-------------|
 | [2026-04-08 Daily Operations](../notes/permanent/2026-04-08-daily-operations.md) | System Status, Cron Fixes, University, Security Audit, Memory System State | Operations | 2026-04-08 |
+| [2026-04-08 Wiki Growth Workflow](../notes/permanent/2026-04-08-wiki-growth-workflow.md) | Automatische Wiki-Pflege etabliert, 2-Wege-System | System | 2026-04-08 |
 | [Memory System Recovery](../notes/permanent/2026-04-07-RECOVERED-memory-system.md) | Storage Layers, Knowledge Hierarchy, Recovery Notes | System | 2026-04-07 |
 
 ---
