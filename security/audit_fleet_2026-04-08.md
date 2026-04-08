@@ -189,17 +189,52 @@ Keinerlei Pattern-Matching oder Input-Filtering aktiv. User-Input wird ungeprüf
 
 ## 📋 Priorisierte Maßnahmen-Liste
 
-| # | Maßnahme | Priorität | Aufwand | Status |
-|---|----------|-----------|---------|--------|
-| 1 | Least Privilege: Tool-Allowlists | 🔴 Kritisch | 1-2 Tage | ⚠️ OFFEN |
-| 2 | Tool-Input-Validation | 🔴 Kritisch | 2-3 Tage | ⚠️ OFFEN |
-| 3 | Approval Workflows | 🟡 Hoch | 1 Tag | ⚠️ OFFEN |
-| 4 | Keyword-Filter (Prompt Injection) | 🔴 Kritisch | 1-2 Tage | ⚠️ OFFEN |
-| 5 | Workspace-Isolation | 🟡 Hoch | 1 Tag | ⚠️ OFFEN |
-| 6 | MCP / Typed Interfaces | 🟡 Hoch | 1-2 Wochen | ⚠️ OFFEN |
-| 7 | Secrets Vault | 🟡 Hoch | 1 Tag | ⚠️ OFFEN |
-| 8 | Audit-Logging | 🟢 Mittel | 1-2 Wochen | ⚠️ OFFEN |
-| 9 | Sandbox-Hardening | 🟢 Mittel | 2-4 Wochen | ⚠️ OFFEN |
+| # | Maßnahme | Priorität | Aufwand | Status | Notes |
+|---|----------|-----------|---------|--------|-------|
+| 1 | Least Privilege: Tool-Allowlists | 🔴 Kritisch | 1-2 Tage | 🟡 TEILWEISE | RBAC-Matrix existiert in builder/ (nicht aktiv in Config) |
+| 2 | Tool-Input-Validation | 🔴 Kritisch | 2-3 Tage | 🟡 TEILWEISE | input_validation.js existiert in builder/ (nicht aktiv) |
+| 3 | Approval Workflows | 🟡 Hoch | 1 Tag | ⚠️ OFFEN | — |
+| 4 | Keyword-Filter (Prompt Injection) | 🔴 Kritisch | 1-2 Tage | 🟡 TEILWEISE | Scanner mit PI-Patterns existieren (safe_scanner.py, email_scanner.py) |
+| 5 | Workspace-Isolation | 🟡 Hoch | 1 Tag | ⚠️ OFFEN | Dokumentiert in RBAC-Matrix |
+| 6 | MCP / Typed Interfaces | 🟡 Hoch | 1-2 Wochen | ⚠️ OFFEN | — |
+| 7 | Secrets Vault | 🟡 Hoch | 1 Tag | ⚠️ OFFEN | — |
+| 8 | Audit-Logging | 🟢 Mittel | 1-2 Wochen | ⚠️ OFFEN | — |
+| 9 | Sandbox-Hardening | 🟢 Mittel | 2-4 Wochen | ⚠️ OFFEN | — |
+
+---
+
+## 🔍 Implementierungs-Status Detail
+
+### ✅ BEREITS EXISTIEREND (als Files, nicht aktiv im Gateway):
+
+1. **RBAC Matrix** — `/home/clawbot/.openclaw/workspace/builder/rbac_matrix.json`
+   - Definiert Tool-Allowlists pro Agent
+   - Workspace-Isolation dokumentiert
+   - Cross-Workspace-Zugriffe spezifiziert
+   - ⚠️ **NICHT aktiv in openclaw.json — nur Referenz**
+
+2. **Input Validation Layer** — `/home/clawbot/.openclaw/workspace/builder/input_validation.js`
+   - PATTERNS für exec, shell metacharacters, path traversal, XSS
+   - validateExecCommand(), validatePath(), validateMessageContent(), validateToolInput()
+   - Sanitizers für Display und Paths
+   - ⚠️ **NICHT aktiv im Gateway — nur Referenz**
+
+3. **Code Security Scanner** — `/home/clawbot/.openclaw/workspace/security/safe_scanner.py`
+   - 11 Kategorien: CRITICAL, SHELL, FILESYSTEM, NETWORK, SQL, XSS, INJECTION, LFI, MINING, ENV, SERIALIZATION
+   - PROMPT_INJECTION patterns: "ignore all previous", "disregard", "you are now", "jailbreak", "DAN", "developer mode", etc.
+   - 🟢 **Lauffähig — muss in Gateway integriert werden**
+
+4. **Email Security Scanner** — `/home/clawbot/.openclaw/workspace/security/email_scanner.py`
+   - PHISHING, SCAM, URGENCY, TOO_GOOD, ADULT, MALWARE, XSS_EMAIL, DATA_COLLECTION, SUSPICIOUS_TLD, IP_ADDRESS, OBFUSCATION
+   - PROMPT_INJECTION patterns (20+), AI_MANIPULATION patterns
+   - 🟢 **Lauffähig — muss in Gateway integriert werden**
+
+### ⚠️ NOCH ZU IMPLEMENTIEREN:
+
+1. **Approval Workflows** — Kein System vorhanden
+2. **MCP / Typed Interfaces** — Nicht begonnen
+3. **Aktive Gateway-Integration** — RBAC + Input-Validation müssen in openclaw.json aktiviert werden
+4. **Workspace-Isolation Config** — Muss in openclaw.json konfiguriert werden
 
 ---
 

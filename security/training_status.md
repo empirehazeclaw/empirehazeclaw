@@ -20,10 +20,13 @@
 ## 🎓 ANSTEHEND
 
 ### Module Training (nach Basic):
-- [ ] Module 1 (Prompt Injection) — Lektionen 1.1, 1.2, 1.3 + Quiz
-- [ ] Module 2 (OWASP Top 10) — Lektionen 2.1-2.4 + Quiz
-- [ ] Module 5 (Security Audits) — Lektionen 5.1-5.4 + Quiz
-- [ ] Module 6.1 (Agentic AI Hijacking)
+- [x] Module 1 (Prompt Injection) — Lektionen 1.1, 1.2, 1.3 ✅ GELEST
+- [x] Module 2 (OWASP Top 10) — Lektionen 2.1-2.4 ✅ GELEST
+- [x] Module 5 (Security Audits) — Lektionen 5.1-5.4 ✅ GELEST
+- [ ] Quiz Module 1 (Prompt Injection) — STEHT AUS
+- [ ] Quiz Module 2 (OWASP Top 10) — STEHT AUS
+- [ ] Quiz Module 5 (Security Audits) — STEHT AUS
+- [ ] Module 6.1 (Agentic AI Hijacking) — Lektionen 6.1 + Quiz
 
 ### Zertifizierung:
 - "Fleet Ready" — angefordert
