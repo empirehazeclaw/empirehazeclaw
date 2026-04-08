@@ -104,7 +104,7 @@
 
 ## 🔄 Wöchentliche Reflection
 
-Jeden Sonntag um 18:00 UTC wird geprüft:
+Jeden Abend um 23:00 UTC wird geprüft:
 1. Welche Träume sind näher gekommen?
 2. Welche Checkpoints wurden erreicht?
 3. Neue Träume hinzugefügt?

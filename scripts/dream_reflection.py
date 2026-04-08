@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Dream Reflection — Wöchentliche Traum-Reflexion
-Läuft jeden Sonntag um 18:00 UTC
+Dream Reflection — Tägliche Traum-Reflexion
+Läuft jeden Abend um 23:00 UTC (vor dem Schlafengehen)
 """
 import os
 import json
