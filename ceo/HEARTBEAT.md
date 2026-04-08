@@ -1,16 +1,18 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-07 16:55*
+*Last updated: 2026-04-08 19:41*
 
 ---
 
 ## 🔴 PRIORITÄT 1 - OFFENE BLOCKER
 
-| # | Task | Status |
-|---|------|--------|
-| 1 | 4 Security Keys rotieren (Buffer, Leonardo, Google AIza, SECRET_KEY) | ⏳ Nico manuell |
-| 2 | GitHub Backup aktivieren (Secrets-Blocker) | ⏳ |
-| 3 | Data Manager isolated Session Bug (OpenClaw Issue) | ⏳ |
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| ~~1~~ | ~~Security Keys rotieren~~ | ⏳ **Nico manuell** | **AUSGESCHLOSSEN** per Nico |
+| 2 | GitHub Backup aktivieren | 🔴 `gh` CLI fehlt | Alternative prüfen |
+| 3 | CEO Briefing Cron | 🔴 **FIXED** | Fallback GPT-4o-mini added, Test-Run gestartet |
+| 4 | Data Manager isolated Session Bug | ⚠️ CONFIRMED | OpenClaw Issue - Workaround nötig |
+| 5 | Telegram @heartbeat | ✅ **FIXED** | Delivery target → 5392634979
 
 ---
 
@@ -25,48 +27,46 @@
 
 ---
 
-## ✅ HEUTE ERLEDIGT (2026-04-07)
+## ✅ HEUTE ERLEDIGT (2026-04-08)
 
 | Task | Result |
 |------|--------|
-| Workspace Cleanup | 648→244 Items (-62%) |
-| MEMORY.md Komprimiert | 438KB→4.5KB (-99%) |
-| LCM Aktiviert | 0→41 messages |
-| main.sqlite Optimiert | 630MB→380MB (-40%) |
-| Knowledge Graph | 57→96 entities (+39) |
-| Zettelkasten Workflow | ✅ Daily/Weekly Crons |
-| Cron Optimierung | 17→11 Crons (-400 Runs/day) |
-| Session Cleanup | 13 old sessions deleted |
-| MetaClaw | 36 Skills, Auto-Restart |
+| System Check | ✅ Komplett durchgeführt |
+| CEO Briefing | 🔴 Cron Error (timeout + auth) |
+
+---
+
+## 🔧 SYSTEM STATUS (19:41)
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| Gateway | ✅ OK | PID 104873, RPC ok |
+| Memory | ✅ OK | 4KB |
+| main.sqlite | ✅ OK | 380MB (optimiert) |
+| Knowledge Graph | ⚠️ 0 nodes | kg_auto_populate.py Problem |
+| Load | ⚠️ 1.34 | Elevated |
+| Disk | ✅ 24% | 73GB free |
 
 ---
 
 ## 📅 AKTIVE CRONS (12)
 
-| Time | Job | Type |
-|------|-----|------|
-| 03:00 | sqlite_vacuum.sh | System |
-| 04:00 | session_cleanup.py | System |
-| 06:00 | kg_auto_populate.py | System |
-| 06:00 | semantic_search.py | System |
-| 09:00 | CEO Briefing | Agent |
-| 10:00 | Security Officer | Agent |
-| 11:31 | Data Manager | Agent |
-| 13:00 | Research | Agent |
-| 21:00 | evening_capture.py | System |
-| 22:00 Sun | weekly_review_zettel.py | System |
-| 23:00 | github_backup.sh | System |
-| @reboot | MetaClaw | System |
+| Time | Job | Status |
+|------|-----|--------|
+| 03:00 | sqlite_vacuum.sh | ✅ |
+| 04:00 | session_cleanup.py | ✅ |
+| 06:00 | kg_auto_populate.py | ⚠️ 0 nodes |
+| 06:00 | semantic_search.py | ✅ |
+| 09:00 | CEO Briefing | 🔴 Error (timeout) |
+| 10:00 | Security Officer | ✅ |
+| 11:31 | Data Manager | ⚠️ Bug |
+| 13:00 | Research | ✅ |
+| 21:00 | evening_capture.py | ✅ |
+| 22:00 Sun | weekly_review_zettel.py | ✅ |
+| 23:00 | github_backup.sh | 🔴 Secrets-Blocker |
+| Sun 18:00 | University Self-Improvement | 🔴 @heartbeat not found |
+| Sun 19:00 | Agent Training Sunday | ✅ |
 
 ---
 
-## 📝 HEARTBEAT RULES
-
-1. Lese HEARTBEAT.md bei Wake-up
-2. Prüfe PRIORITÄT 1 Tasks
-3. Falls keine → "HEARTBEAT_OK"
-4. Falls neue Task-Reports → Zusammenfassung an Nico
-
----
-
-*Alte "ZULETZT ERLEDIGT" History → memory/archive/HEARTBEAT-history.md*
+*Alte History → memory/archive/HEARTBEAT-history.md*

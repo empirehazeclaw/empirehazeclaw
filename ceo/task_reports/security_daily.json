@@ -1,79 +1,88 @@
 {
   "agent": "security_officer",
-  "timestamp": "2026-04-07T10:17:00Z",
+  "timestamp": "2026-04-08T16:03:00Z",
   "status": "warning",
   "findings": [
     {
       "severity": "high",
       "category": "secrets_management",
-      "title": "SECURITY_ROTATION.md Keys noch zu rotieren",
-      "details": "6 kritische Keys (Telegram, RESTIC_PASSWORD, GitHub, Buffer, Google AIza, SECRET_KEY) warten noch auf Rotation. Nur Gateway Auth Token + Brave API Key wurden bisher gesichert.",
+      "title": "6 kritische Keys noch ausstehend (unverändert seit 2026-04-07)",
+      "details": "Telegram Bot Token, RESTIC_PASSWORD, GitHub Token, Buffer Token (INVALID), Google AIza Key, SECRET_KEY — alle noch auf Rotation wartend. Buffer Token war bereits INVALID.",
       "files_affected": [
-        "MEMORY.md (mehrfach)",
         "secrets/SECURITY_ROTATION.md"
       ]
     },
     {
-      "severity": "medium",
-      "category": "code_exposure",
-      "title": "API Keys in Archiv-Dateien",
-      "details": "memory/archive/2026-03.md enthält множественные Erwähnungen von API Keys (OpenAI, MiniMax). Diese sind zwar的历史档案，但 sollten überprüft werden.",
+      "severity": "high",
+      "category": "invalid_credentials",
+      "title": "Buffer Token — INVALID (401) — Muss erneuert werden",
+      "details": "Buffer API Token liefert 401 Unauthorized. Dienste die Buffer nutzen (social_pipeline.py) funktionieren nicht.",
       "files_affected": [
-        "memory/archive/2026-03.md"
+        "social_pipeline.py"
       ]
     },
     {
-      "severity": "low",
-      "category": "code_quality",
-      "title": "Buffer Script Referenz",
-      "details": "buffer-post.sh nutzt BUFFER_API_KEY als Variable, nicht als Hardcoded Key - das ist korrekt. social-media-automation.md referenziert nur Template-Syntax.",
-      "files_affected": [
-        "buffer-post.sh",
-        "workflows/social-media-automation.md"
-      ]
+      "severity": "high",
+      "category": "invalid_credentials",
+      "title": "Leonardo AI API Key — INVALID (HTML Response)",
+      "details": "Leonardo AI Key liefert HTML statt JSON — API Key ist invalide und muss in der Leonardo Cloud Console erneuert werden.",
+      "files_affected": []
+    },
+    {
+      "severity": "medium",
+      "category": "workspace_scanning",
+      "title": "Workspace-Scan: Keine frischen unverschlüsselten Secrets",
+      "details": "Grep-Scan auf Workspace-Dateien zeigt keine frischen Hardcoded Secrets. Alle gefundenen Keys sind korrekt redacted. .gitignore schützt secrets/ und .env.",
+      "files_affected": []
     }
   ],
   "positive_findings": [
     {
       "title": ".gitignore korrekt konfiguriert",
-      "details": "secrets/ und .env Dateien sind korrekt ausgeschlossen. Archive, node_modules, logs, media und data/*.json ebenfalls."
+      "details": "secrets/, .env, archive/, node_modules/, logs/, media/, data/*.json — alle korrekt ausgeschlossen."
     },
     {
-      "title": "secrets.env als zentrale Key-Speicher",
-      "details": "Alle API Keys sind in /home/clawbot/.openclaw/secrets/secrets.env zentralisiert (nicht in Workspace)."
+      "title": "secrets.env als zentrale Key-Speicher vorhanden",
+      "details": "API Keys sind in /home/clawbot/.openclaw/secrets/secrets.env zentralisiert."
     },
     {
       "title": "Gateway Auth Token + Brave API Key gesichert",
-      "details": "Diese beiden Keys wurden erfolgreich rotiert und in secrets.env gesichert."
+      "details": "Diese beiden Keys wurden erfolgreich rotiert (2026-04-07) und in secrets.env gesichert."
     },
     {
-      "title": "Keine frischen unverschlüsselten Secrets im Workspace",
-      "details": "Scan zeigt keine aktuellen Hardcoded Secrets in aktiven Workspace-Dateien."
+      "title": "Kein frischer Secret-Leak im Workspace",
+      "details": "Workspace-Scan zeigt keine aktuellen Hardcoded Secrets in aktiven Dateien."
     }
   ],
   "next_actions": [
     {
       "priority": "critical",
+      "action": "Buffer Token erneuern (INVALID — 401)",
+      "method": "buffer.com → Settings → Apps → Regenerate",
+      "status": "pending"
+    },
+    {
+      "priority": "critical",
+      "action": "Leonardo AI API Key erneuern (INVALID — HTML Response)",
+      "method": "cloud.leonardo.ai → API → New Key generieren",
+      "status": "pending"
+    },
+    {
+      "priority": "high",
       "action": "Telegram Bot Token rotieren",
       "method": "@BotFather → /mybots → Token erneuern",
       "status": "pending"
     },
     {
-      "priority": "critical",
+      "priority": "high",
       "action": "RESTIC_PASSWORD neu generieren",
       "method": "openssl rand -hex 32",
       "status": "pending"
     },
     {
-      "priority": "critical",
+      "priority": "high",
       "action": "GitHub Token regenerieren",
       "method": "GitHub Settings → Personal Access Tokens → Regenerate",
-      "status": "pending"
-    },
-    {
-      "priority": "high",
-      "action": "Buffer Token erneuern",
-      "method": "buffer.com → Settings → Apps → Regenerate",
       "status": "pending"
     },
     {
@@ -87,13 +96,7 @@
       "action": "SECRET_KEY in api_auth.py neu generieren",
       "method": "openssl rand -hex 64",
       "status": "pending"
-    },
-    {
-      "priority": "medium",
-      "action": "Archive-Dateien auf alte API-Keys prüfen",
-      "method": "Manuelle Überprüfung der的历史档案",
-      "status": "pending"
     }
   ],
-  "summary": "Security Audit vom 2026-04-07: .gitignore ✅ korrekt, secrets.env ✅ zentralisiert, Gateway+Brave Keys ✅ gesichert. Hauptaugenmerk liegt auf den 6 ausstehenden Key-Rotationen (Telegram, RESTIC, GitHub, Buffer, Google AIza, SECRET_KEY). Keine frischen Leaks im Workspace gefunden."
+  "summary": "Security Audit vom 2026-04-08 16:03 UTC: .gitignore ✅ korrekt, secrets.env ✅ vorhanden, Gateway+Brave Keys ✅ gesichert. STATUS: WARNING — 2 INVALID Credentials (Buffer Token, Leonardo AI Key) erfordern sofortige Aufmerksamkeit. 6 weitere Keys warten auf Rotation (unverändert seit 2026-04-07). Kein frischer Leak im Workspace."
 }

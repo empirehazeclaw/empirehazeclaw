@@ -3,7 +3,7 @@
 - **Name:** Nico
 - **What to call them:** Nico
 - **Pronouns:** er/ihm
-- **Timezone:** UTC
+- **Timezone:** Europe/Berlin (MESZ / UTC+2)
 - **Notes:** Boss der Flotte. Er spricht Deutsch.
 
 ## Context
