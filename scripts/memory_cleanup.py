@@ -146,29 +146,36 @@ def prune_knowledge_graph():
         log("⚠️ KG: Konnte knowledge_graph.json nicht lesen")
         return
     
-    entities = kg_data.get('entities', [])
-    if not entities:
+    entities_dict = kg_data.get('entities', {})
+    if not entities_dict:
         return
     
-    # Find entities with no references (orphan entities)
+    # Find entities with no facts (orphan entities)
     orphaned = []
-    for entity in entities:
-        refs = entity.get('references', [])
-        if not refs or len(refs) == 0:
-            orphaned.append(entity.get('name', 'unknown'))
+    valid_entities = {}
+    for name, entity in entities_dict.items():
+        if isinstance(entity, dict):
+            facts = entity.get('facts', [])
+            if not facts or len(facts) == 0:
+                orphaned.append(name)
+            else:
+                valid_entities[name] = entity
+        else:
+            # Skip non-dict entities (malformed)
+            orphaned.append(name)
     
-    if len(orphaned) > 50:
+    original_count = len(entities_dict)
+    
+    if len(orphaned) > 10:
         # Only prune if we have lots of orphans (avoid over-pruning)
-        original_count = len(entities)
-        pruned_entities = [e for e in entities if e.get('references', [])]
-        kg_data['entities'] = pruned_entities
+        kg_data['entities'] = valid_entities
         
         with open(KG_FILE, 'w') as f:
             json.dump(kg_data, f, indent=2)
         
-        log(f"🧠 KG Pruning: {original_count} → {len(pruned_entities)} Entities ({len(orphaned)} Orphaned entfernt)")
+        log(f"🧠 KG Pruning: {original_count} → {len(valid_entities)} Entities ({len(orphaned)} Orphaned entfernt)")
     else:
-        log(f"🧠 KG Status: {len(entities)} Entities, {len(orphaned)} ohne Referenzen (OK)")
+        log(f"🧠 KG Status: {len(valid_entities)} Entities, {len(orphaned)} ohne Fakten (OK)")
 
 def rotate_logs():
     """Löscht Log-Dateien älter als 30 Tage."""

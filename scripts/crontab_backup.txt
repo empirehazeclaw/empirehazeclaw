@@ -1,0 +1,1 @@
+0 23 * * * bash /home/clawbot/.openclaw/workspace/scripts/github_backup.sh >> /home/clawbot/.openclaw/logs/github_backup.log 2>&1

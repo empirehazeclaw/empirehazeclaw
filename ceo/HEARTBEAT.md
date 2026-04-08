@@ -1,6 +1,6 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-08 19:41*
+*Last updated: 2026-04-08 20:20 UTC*
 
 ---
 
@@ -8,11 +8,12 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| ~~1~~ | ~~Security Keys rotieren~~ | ⏳ **Nico manuell** | **AUSGESCHLOSSEN** per Nico |
-| 2 | GitHub Backup aktivieren | ✅ **WORKING** | Git direct push aktiv, 158 files gepusht
-| 3 | CEO Briefing Cron | 🔴 **FIXED** | Fallback GPT-4o-mini added, Test-Run gestartet |
-| 4 | Data Manager isolated Session Bug | ⚠️ CONFIRMED | OpenClaw Issue - Workaround nötig |
-| 5 | Telegram @heartbeat | ✅ **FIXED** | Delivery target → 5392634979
+| 1 | Buffer Token INVALID | 🔴 **KRITISCH** | 401 Unauthorized — social_pipeline.py betroffen |
+| 2 | Leonardo AI API Key INVALID | 🔴 **KRITISCH** | Gibt HTML statt JSON zurück |
+| 3 | GitHub Backup | ⚠️ Secrets-Blocker | GitHub Token muss erneuert werden |
+| 4 | 6 weitere API Keys warten | ⚠️ HOCH | Telegram, RESTIC_PASSWORD, Google AIza, SECRET_KEY etc. |
+| 5 | Workspace Aufräumen | ⚠️ Approval nötig | KILL_LIST.md wartet auf CEO-Approval |
+| 6 | Data Manager isolated Session Bug | ⚠️ OpenClaw Issue | Workaround nötig |
 
 ---
 
@@ -23,7 +24,6 @@
 | 1 | Resend Pro kaufen | ⏳ |
 | 2 | Twitter OAuth erneuern | ⏳ |
 | 3 | Reddit API Keys beantragen | ⏳ |
-| 4 | Buffer + Leonardo Token erneuern | ⏳ |
 
 ---
 
@@ -31,41 +31,65 @@
 
 | Task | Result |
 |------|--------|
-| System Check | ✅ Komplett durchgeführt |
-| CEO Briefing | 🔴 Cron Error (timeout + auth) |
+| CEO Briefing | ✅ Endlich durchgelaufen (19:55 UTC) |
+| Heartbeat Storm | ✅ Gefixt (30m Intervall) |
+| Gateway Auth + Brave API | ✅ Gestern rotiert |
 
 ---
 
-## 🔧 SYSTEM STATUS (19:41)
+## 🔧 SYSTEM STATUS (20:19 UTC)
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Gateway | ✅ OK | PID 104873, RPC ok |
-| Memory | ✅ OK | 4KB |
-| main.sqlite | ✅ OK | 380MB (optimiert) |
-| Knowledge Graph | ⚠️ 0 nodes | kg_auto_populate.py Problem |
-| Load | ⚠️ 1.34 | Elevated |
-| Disk | ✅ 24% | 73GB free |
+| Gateway | ✅ Running | PID 104873, RPC ok |
+| Memory | ✅ OK | 7.7GB used |
+| Disk | ✅ OK | 73GB free (24%) |
+| Knowledge Graph | ✅ 63 entities | data/knowledge_graph.json |
 
 ---
 
-## 📅 AKTIVE CRONS (12)
+## 📅 AKTIVE CRONS (11 Crontab + 4 OpenClaw Agent Jobs)
 
-| Time | Job | Status |
-|------|-----|--------|
-| 03:00 | sqlite_vacuum.sh | ✅ |
-| 04:00 | session_cleanup.py | ✅ |
-| 06:00 | kg_auto_populate.py | ⚠️ 0 nodes |
-| 06:00 | semantic_search.py | ✅ |
-| 09:00 | CEO Briefing | 🔴 Error (timeout) |
-| 10:00 | Security Officer | ✅ |
-| 11:31 | Data Manager | ⚠️ Bug |
-| 13:00 | Research | ✅ |
-| 21:00 | evening_capture.py | ✅ |
-| 22:00 Sun | weekly_review_zettel.py | ✅ |
-| 23:00 | github_backup.sh | 🔴 Secrets-Blocker |
-| Sun 18:00 | University Self-Improvement | 🔴 @heartbeat not found |
-| Sun 19:00 | Agent Training Sunday | ✅ |
+### Crontab Scripts (10 Jobs)
+| Zeit | Script | Funktion |
+|------|--------|----------|
+| @reboot | MetaClaw | Skills Gateway |
+| 02:00 | memory_cleanup.py | Memory aufräumen (NEU!) |
+| 03:00 | sqlite_vacuum.sh | DB VACUUM |
+| 04:00 | session_cleanup.py | Sessions >7 Tage |
+| 06:00 | kg_auto_populate.py | Knowledge Graph |
+| 06:30 | semantic_search.py | Index bauen |
+| 21:00 | evening_capture.py | Fleeting Template |
+| 21:30 | auto_session_capture.py | Session Insights |
+| 23:00 | dream_reflection.py | Traum-Reflexion |
+| 23:00 | github_backup.sh | GitHub Backup (NEU!) |
+| So 22:00 | weekly_review_zettel.py | Wochenreview |
+
+### OpenClaw Agent Jobs (4 Jobs)
+| Zeit | Job | Status | Notes |
+|------|-----|--------|-------|
+| 09:00 UTC | CEO Daily Briefing | ✅ OK | Isolated, mit Fallback |
+| 09:00 UTC | Daily Flashcards | ✅ OK | Jetzt an Telegram 5392634979 |
+| So 18:00 UTC | University Self-Improvement | ✅ OK | - |
+| So 19:00 UTC | Agent Training Sunday | ✅ OK | Fallback gpt-4o-mini |
+
+---
+
+## ⚠️ SECURITY OFFICER REPORT (19:56 UTC)
+
+**KRITISCH — 2 Credentials INVALID:**
+- ❌ Buffer Token → 401 Unauthorized
+- ❌ Leonardo AI API Key → Gibt HTML statt JSON zurück
+
+**HOCH — 6 Keys warten auf Rotation:**
+- Telegram Bot Token
+- RESTIC_PASSWORD
+- GitHub Token
+- Google AIza
+- SECRET_KEY
+- (evtl. weitere)
+
+**Positiv:** Gateway Auth + Brave API wurden gestern rotiert ✅
 
 ---
 
