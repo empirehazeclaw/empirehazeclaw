@@ -6,6 +6,21 @@
 
 ---
 
+## [2026-04-08] ingest | Daily Operations + Wiki Cleanup
+- **Type:** ingest
+- **Pages Added:**
+  - `notes/permanent/2026-04-08-daily-operations.md` (3.4KB) — System Status, Cron Fixes, University Status, Security Audit
+- **Pages Removed:**
+  - Alte Test-Notes vom 29.3 (6 Files gelöscht: concepts/2026-03-29-*.md)
+- **Wiki-Index:** Komplett überarbeitet (12→8 Pages)
+- **Key Learnings:**
+  - GitHub Backup nutzt Git direct (Token im Remote URL), nicht `gh` CLI
+  - Cron Fallbacks müssen verschieden sein (sonst circular)
+  - Telegram Delivery: Numerische Chat-IDs statt @usernames
+- **Problem erkannt:** Wiki war 2 Tage nicht aktiv. CEO muss nach jeder Session Notes erstellen.
+
+---
+
 ## [2026-04-07] lint | Initial Wiki Setup
 
 - **Type:** lint

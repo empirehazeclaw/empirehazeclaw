@@ -9,7 +9,7 @@
 | # | Task | Status | Notes |
 |---|------|--------|-------|
 | ~~1~~ | ~~Security Keys rotieren~~ | ⏳ **Nico manuell** | **AUSGESCHLOSSEN** per Nico |
-| 2 | GitHub Backup aktivieren | 🔴 `gh` CLI fehlt | Alternative prüfen |
+| 2 | GitHub Backup aktivieren | ✅ **WORKING** | Git direct push aktiv, 158 files gepusht
 | 3 | CEO Briefing Cron | 🔴 **FIXED** | Fallback GPT-4o-mini added, Test-Run gestartet |
 | 4 | Data Manager isolated Session Bug | ⚠️ CONFIRMED | OpenClaw Issue - Workaround nötig |
 | 5 | Telegram @heartbeat | ✅ **FIXED** | Delivery target → 5392634979

@@ -9,7 +9,8 @@
 
 | Page | Summary | Category | Last Updated |
 |------|---------|----------|-------------|
-| [Memory System](../notes/permanent/2026-04-07-RECOVERED-memory-system.md) | Storage Layers, Knowledge Hierarchy, Recovery Notes | System | 2026-04-07 |
+| [2026-04-08 Daily Operations](../notes/permanent/2026-04-08-daily-operations.md) | System Status, Cron Fixes, University, Security Audit, Memory System State | Operations | 2026-04-08 |
+| [Memory System Recovery](../notes/permanent/2026-04-07-RECOVERED-memory-system.md) | Storage Layers, Knowledge Hierarchy, Recovery Notes | System | 2026-04-07 |
 
 ---
 
@@ -18,9 +19,6 @@
 | Page | Summary | Category | Last Updated |
 |------|---------|----------|-------------|
 | [Knowledge Graph Idee](../notes/concepts/2026-03-29-knowledge-graph-idee.md) | Erste Ideen zum Knowledge Graph | Concept | 2026-03-29 |
-| [Test Notes](../notes/concepts/2026-03-29-test.md) | Test-Dokumentation | Test | 2026-03-29 |
-| [System Test](../notes/concepts/2026-03-29-system-test.md) | System-Test Ergebnisse | Test | 2026-03-29 |
-| [Final Test Note](../notes/concepts/2026-03-29-final-test-note.md) | Test-Abschluss | Test | 2026-03-29 |
 
 ---
 
@@ -54,11 +52,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Pages | 12 |
-| Permanent | 1 |
-| Concepts | 4 |
-| Research | 1 |
-| Fleeting | 2 |
+| Total Pages | 8 |
+| Permanent | 2 |
+| Concepts | 1 |
+| Research | 2 |
+| Fleeting | 1 |
 | Archived/Learnings | 2 |
 
 ---
@@ -80,4 +78,13 @@ grep "| [" wiki-index.md         # Alle Pages mit Links
 
 ---
 
+## 🧠 Knowledge Graph
+
+- **Entities:** 113
+- **Auto-populated:** Daily via kg_auto_populate.py (06:00 UTC)
+- **Storage:** `knowledge_graph.json` (63KB)
+
+---
+
 *Erstellt: 2026-04-07 nach Karpathys LLM Wiki Pattern*
+*Letzte große Aktualisierung: 2026-04-08*
