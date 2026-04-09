@@ -1,0 +1,30 @@
+{
+  "last_updated": "2026-04-09T10:59:00Z",
+  "fleeting_notes": {
+    "latest": "2026-04-09-insight.md",
+    "count": 3,
+    "status": "active"
+  },
+  "cron_status": {
+    "evening_capture": "configured",
+    "schedule": "0 21 * * *",
+    "script": "/home/clawbot/.openclaw/workspace/scripts/evening_capture.py",
+    "log": "/home/clawbot/.openclaw/logs/evening_capture.log"
+  },
+  "notes": [
+    {
+      "file": "2026-03-29-knowledge-graph-idee.md",
+      "date": "2026-03-29",
+      "note": "Knowledge Graph Idee"
+    },
+    {
+      "file": "2026-04-07-insight.md",
+      "date": "2026-04-07"
+    },
+    {
+      "file": "2026-04-09-insight.md",
+      "date": "2026-04-09",
+      "status": "ready_to_fill"
+    }
+  ]
+}

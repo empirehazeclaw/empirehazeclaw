@@ -1,45 +1,39 @@
 {
-  "date": "2026-04-09T08:52:00Z",
+  "date": "2026-04-09T11:27:00Z",
   "kg_entities": 150,
-  "kg_relations": 0,
+  "kg_relations": 4628,
+  "kg_last_updated": "2026-04-09T10:11:09.551658",
   "memory_stats": {
     "fleeting": {
-      "count": 2,
-      "files": ["2026-04-07-insight.md", "2026-03-29-knowledge-graph-idee.md"]
+      "files": 3,
+      "latest": "2026-04-09-insight.md",
+      "status": "✅ OK"
     },
     "permanent": {
-      "count": 6,
-      "files": [
-        "2026-04-08-daily-operations.md",
-        "2026-04-08-weekly-reflection.md",
-        "2026-04-08-wiki-growth-workflow.md",
-        "2026-04-07-RECOVERED-memory-system.md",
-        "2026-03-29-final-test-note.md",
-        "2026-03-29-test-note.md"
-      ]
+      "files": 5,
+      "recent": ["2026-04-08-wiki-growth-workflow.md", "2026-04-08-daily-operations.md", "2026-04-08-weekly-reflection.md"]
     },
     "concepts": {
-      "count": 3,
-      "files": ["2026-03-29-test.md", "2026-03-29-system-test.md", "2026-03-29-final-test-note.md"]
-    },
-    "research": {
-      "count": 2,
-      "files": ["2026-04-07-ai-agent-trends-2026.md", "2026-04-07-openclaw-multiagent-security-research.md"]
+      "files": 2
     }
   },
-  "index_status": {
-    "semantic_index": {
-      "documents": 51,
-      "embeddings": 51,
-      "size_bytes": 471040
-    },
-    "vector_store_entries": "unknown (dir exists but empty/unknown)"
+  "db_status": {
+    "lcm_db_size_mb": 39,
+    "lcm_last_modified": "2026-04-08 21:28"
   },
+  "index_status": {
+    "knowledge_graph": "✅ 150 entities, 4628 relations",
+    "semantic_search_index": "✅ BUILT - 51 chunks, 466KB",
+    "wiki_index": "✅ vorhanden"
+  },
+  "cron_status": {
+    "evening_capture": "✅ bereits konfiguriert (21:00 UTC)"
+  },
+  "status": "🟢 GREEN",
   "recommendations": [
-    "KG hat 150 Entities aber 0 Relations — Relations-Parsing scheint broken, das Knowledge Graph Build-Skript prüfen",
-    "Fleeting Notes seit 2026-04-07 nicht aktualisiert — tägliches Insight-Capture wieder aufnehmen",
-    "Semantic Index mit 51 Einträgen healthy, aber embeddings.size = 0 im JSON — ggf. verwaiste Doc-Einträge ohne Embeddings bereinigen",
-    "Memory System Docs (RECOVERED) vom 2026-04-07 und daily operations vom 2026-04-08 — aktuelle Notes werden fleißig geschrieben, gut!",
-    "Concepts-Dir nur 3 alte Test-Notes — Überführung der relevanten Test-Notes in permanent oder Löschen prüfen"
+    "✅ Semantic Search Index gebaut (51 chunks, 466KB)",
+    "✅ evening_capture cron konfiguriert",
+    "✅ Knowledge Graph aktuell (150 entities, 4628 relations)",
+    "✅ Fleeting Notes heute OK"
   ]
 }

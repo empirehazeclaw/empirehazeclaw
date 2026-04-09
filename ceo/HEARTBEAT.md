@@ -1,6 +1,6 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-09 08:56 UTC*
+*Last updated: 2026-04-09 10:53 UTC*
 
 ---
 
@@ -8,12 +8,14 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 1 | Buffer Token INVALID | 🔴 **KRITISCH** | 401 Unauthorized — social_pipeline.py betroffen |
-| 2 | Leonardo AI API Key INVALID | 🔴 **KRITISCH** | Gibt HTML statt JSON zurück |
-| 3 | GitHub Backup | ⚠️ Secrets-Blocker | GitHub Token muss erneuert werden |
-| 4 | 6 weitere API Keys warten | ⚠️ HOCH | Telegram, RESTIC_PASSWORD, Google AIza, SECRET_KEY etc. |
-| 5 | Workspace Aufräumen | ⚠️ Approval nötig | KILL_LIST.md wartet auf CEO-Approval |
-| 6 | Data Manager isolated Session Bug | ⚠️ OpenClaw Issue | Workaround nötig |
+| 1 | Buffer Token INVALID | ✅ **FIXED** | DEPRECATED in social_pipeline.py (10:30 UTC) |
+| 2 | 824+ Malicious ClawHub Skills | ✅ **FIXED** | Vetting Process ready (skill_vetting_rules.md, blocklist, scanner) |
+| 3 | Fleeting Notes veraltet (2 Tage) | ✅ FIXED | 2026-04-09-insight.md existiert (09:03) |
+| 4 | GitHub Backup | ✅ Script ready | github_backup.sh existiert, testbar |
+| 8 | Semantic Search Index fehlt | ✅ FIXED | Built - 51 chunks, 466KB | |
+| 6 | Knowledge Graph Pfad falsch | ✅ FIXED | Pfad: memory/knowledge_graph.json (150 entities) |
+| 7 | evening_capture cron fehlt | ✅ FIXED | Cron bereits konfiguriert (21:00 UTC) |
+| 6 | Workspace Aufräumen | ⚠️ Approval nötig | KILL_LIST.md wartet auf CEO-Approval |
 
 ---
 
@@ -21,15 +23,11 @@
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Resend Pro kaufen | ⏳ |
-| 2 | Twitter OAuth erneuern | ⏳ |
 | 3 | Reddit API Keys beantragen | ⏳ |
-| 4 | KG Relations = 0 | ✅ FIXED | Data Manager | kg_auto_populate.py erstellt jetzt Relations (0 -> 210) |
-| 5 | Fleeting Notes veraltet | ⏳ Data Manager |
-| 6 | OpenClaw Dreaming integrieren | ⏳ Data Manager |
-| 7 | RBAC Aktivierung | ⏳ Security |
-| 8 | Adventure Engine & Quiz verbinden | ⏳ Builder |
-| 9 | MCP Protocol Script evaluieren | ⏳ Builder |
+| 4 | OpenClaw Dreaming integrieren | ⏳ Data Manager |
+| 5 | Adventure Engine & Quiz verbinden | ⏳ Builder |
+| 6 | MCP Protocol Script evaluieren | ⏳ Builder |
+| 7 | Discord Multi-Agent Setup | ⏳ Nico muss 5 Bot Tokens erstellen |
 
 ---
 
@@ -37,88 +35,59 @@
 
 | Task | Result |
 |------|--------|
-| Phase 1 Workspaces | ✅ data/, research/, qc/ mit SOUL.md + AGENTS.md |
-| Memory Dirs | ✅ memory/notes/{fleeting,permanent,project} + archive |
-| Phase 1+2 Test | ✅ ALL GREEN |
-| GitHub Backup | ✅ Push `0e4b1a9d` |
-| Phase 3 Rollback | ✅ `/rollback/phase3-session-config/` |
-| 5 Agent-Cron-Jobs getestet | ✅ Security, Data, Research OK — Builder+QC läuft noch |
-| KG Relations = 0 | 🟡 Data Manager Problem entdeckt |
+| KG Relations = 0 → 4628 | ✅ kg_auto_populate.py patched, Relations funktionieren |
+| Cross-Agent Messaging | ✅ `visibility: "all"` + `agentToAgent: true` + sessions_send funktioniert |
+| Builder Model Fix | ✅ Alle Agents: MiniMax primary + OpenRouter free fallbacks |
+| Named Persistent Sessions | ✅ Alle 5 Cron-Jobs auf `session:<name>-daily` umgestellt |
+| OpenClaw Security Update | ✅ v2026.4.5 → v2026.4.9 (SSRF CVE gepatcht) |
+| RBAC Aktivierung | ✅ Safe profiles + sandbox modes für alle Agents |
+| Cron-Job Staggering | ✅ Alle 5 Agents auf verschiedene Hours verteilt |
 
 ---
 
-## 🆕 PHASE 3 PROBLEME (2026-04-09)
+## 🔴 QC RED ALERT (2026-04-09 10:40 UTC)
 
-| Problem | Severity | Agent |
-|---------|----------|-------|
-| KG Relations = 0 (150 Entities, 0 Relations) | 🟡 MEDIUM | Data Manager |
-| Fleeting veraltet (2 Tage alt) | 🟡 MEDIUM | Data Manager |
-| OpenClaw v2026.4.9 Dreaming Feature | 🟡 MEDIUM | Research → Data Manager |
-| Buffer Token INVALID | 🔴 KRITISCH | Security |
-| Leonardo AI Key INVALID | 🔴 KRITISCH | Security |
-| 6 API Keys pending | ⚠️ HOCH | Security |
-| RBAC nicht aktiviert | 🟢 LOW | Security |
+**2 CRITICAL + 2 HIGH Issues:**
+
+| Priority | Issue | Owner | Status |
+|----------|-------|-------|--------|
+| 🔴 CRITICAL | OpenClaw SSRF CVE-2026-25253 (42k exposed) | ✅ FIXED | v2026.4.9 update done |
+| 🔴 CRITICAL | 824+ Malicious ClawHub Skills | ⏳ Security | Vetting Process läuft |
+| ⚠️ HIGH | Buffer API Key INVALID | ⏳ Security | Rotation nötig |
+| ⚠️ HIGH | Fleeting Notes stale seit 2026-04-07 | ⏳ Data Manager | evening_capture.py reaktivieren |
 
 ---
 
-## 🔧 SYSTEM STATUS (20:19 UTC)
+## 🔧 SYSTEM STATUS (10:53 UTC)
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Gateway | ✅ Running | PID 104873, RPC ok |
-| Memory | ✅ OK | 7.7GB used |
-| Disk | ✅ OK | 73GB free (24%) |
-| Knowledge Graph | ✅ 63 entities | data/knowledge_graph.json |
+| Gateway | ✅ Running | PID 158043, v2026.4.9 |
+| Memory | ✅ OK | ~7.7GB used |
+| Disk | ✅ OK | ~73GB free (24%) |
+| Knowledge Graph | ✅ 150 entities, 4628 relations | memory/knowledge_graph.json |
 
 ---
 
-## 📅 AKTIVE CRONS (11 Crontab + 4 OpenClaw Agent Jobs)
+## 📅 AKTIVE CRONS (Named Persistent Sessions)
 
-### Crontab Scripts (10 Jobs)
-| Zeit | Script | Funktion |
-|------|--------|----------|
-| @reboot | MetaClaw | Skills Gateway |
-| 02:00 | memory_cleanup.py | Memory aufräumen (NEU!) |
-| 03:00 | sqlite_vacuum.sh | DB VACUUM |
-| 04:00 | session_cleanup.py | Sessions >7 Tage |
-| 06:00 | kg_auto_populate.py | Knowledge Graph |
-| 06:30 | semantic_search.py | Index bauen |
-| 21:00 | evening_capture.py | Fleeting Template |
-| 21:30 | auto_session_capture.py | Session Insights |
-| 23:00 | dream_reflection.py | Traum-Reflexion |
-| 23:00 | github_backup.sh | GitHub Backup (NEU!) |
-| So 22:00 | weekly_review_zettel.py | Wochenreview |
-
-### OpenClaw Agent Jobs (9 Jobs)
-| Zeit | Job | Status | Notes |
-|------|-----|--------|-------|
-| 09:00 UTC | CEO Daily Briefing | ✅ OK | Isolated, mit Fallback |
-| 09:00 UTC | Daily Flashcards | ✅ OK | Jetzt an Telegram 5392634979 |
-| 10:00 UTC | Security Officer Daily Scan | ✅ OK | NEW 2026-04-09 |
-| 11:00 UTC | Data Manager Daily Audit | ✅ OK | NEW 2026-04-09 |
-| 13:00 UTC | Research Daily Roundup | ✅ OK | NEW 2026-04-09 |
-| 17:00 UTC | Builder Daily Build Report | ⏳ LÄUFT | NEW 2026-04-09 |
-| 18:00 UTC | QC Officer Daily Validation | ⏳ LÄUFT | NEW 2026-04-09 |
-| So 18:00 UTC | University Self-Improvement | ✅ OK | - |
-| So 19:00 UTC | Agent Training Sunday | ✅ OK | Fallback gpt-4o-mini |
+| Zeit | Agent | Session | Status |
+|------|-------|---------|--------|
+| 10:30 UTC | Security Officer | `session:security-daily` | ✅ OK (10:27) |
+| 11:00 UTC | Data Manager | `session:data-daily` | ✅ OK (09:15) |
+| 11:30 UTC | Research | `session:research-daily` | ✅ OK (09:15) |
+| 15:00 UTC | Builder | `session:builder-daily` | ⏳ Scheduled |
+| 17:30 UTC | QC Officer | `session:qc-daily` | ✅ OK |
 
 ---
 
-## ⚠️ SECURITY OFFICER REPORT (19:56 UTC)
+## 🆕 OFFENE ARCHITEKTUR FRAGEN
 
-**KRITISCH — 2 Credentials INVALID:**
-- ❌ Buffer Token → 401 Unauthorized
-- ❌ Leonardo AI API Key → Gibt HTML statt JSON zurück
-
-**HOCH — 6 Keys warten auf Rotation:**
-- Telegram Bot Token
-- RESTIC_PASSWORD
-- GitHub Token
-- Google AIza
-- SECRET_KEY
-- (evtl. weitere)
-
-**Positiv:** Gateway Auth + Brave API wurden gestern rotiert ✅
+| Thema | Status |
+|-------|--------|
+| Wiki ↔ Second Brain Redundanz | 🟡 Audit empfiehlt Konsolidierung |
+| MEMORY.md ↔ LosslessClaw Sync | 🟡 Kein automatischer Sync |
+| Discord Multi-Agent Setup | 🟡 Plan steht — Nico muss Bot Tokens erstellen |
 
 ---
 

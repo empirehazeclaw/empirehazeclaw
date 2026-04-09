@@ -28,6 +28,7 @@ class KnowledgeGraph:
             return json.load(open(self.path))
         return {
             "entities": {},
+            "relations": [],
             "last_updated": None,
             "created": datetime.now().isoformat()
         }
@@ -155,10 +156,50 @@ class KnowledgeGraph:
         return {
             "total_entities": len(self.data["entities"]),
             "total_facts": sum(len(d.get("facts", [])) for d in self.data["entities"].values()),
+            "total_relations": len(self.data.get("relations", [])),
             "priorities": priorities,
             "para_distribution": para,
             "last_updated": self.data.get("last_updated")
         }
+    
+    def add_relation(self, from_entity: str, to_entity: str, rel_type: str, weight: float = 0.5):
+        """Add a relation between two entities"""
+        if "relations" not in self.data:
+            self.data["relations"] = []
+        
+        # Avoid duplicates
+        for rel in self.data["relations"]:
+            if rel["from"] == from_entity and rel["to"] == to_entity:
+                return  # Already exists
+        
+        self.data["relations"].append({
+            "from": from_entity,
+            "to": to_entity,
+            "type": rel_type,
+            "weight": weight,
+            "created_at": datetime.now().isoformat()
+        })
+        self.save()
+    
+    def get_relations(self, entity: str = None) -> List[dict]:
+        """Get relations, optionally filtered by entity"""
+        relations = self.data.get("relations", [])
+        if entity:
+            return [r for r in relations if r["from"] == entity or r["to"] == entity]
+        return relations
+    
+    def find_related_entities(self, entity: str, rel_type: str = None, limit: int = 10) -> List[dict]:
+        """Find entities related to given entity"""
+        results = []
+        for rel in self.data.get("relations", []):
+            if rel["from"] == entity:
+                if rel_type is None or rel["type"] == rel_type:
+                    results.append({"entity": rel["to"], "type": rel["type"], "weight": rel["weight"]})
+            elif rel["to"] == entity:
+                if rel_type is None or rel["type"] == rel_type:
+                    results.append({"entity": rel["from"], "type": rel["type"], "weight": rel["weight"]})
+        results.sort(key=lambda x: x["weight"], reverse=True)
+        return results[:limit]
 
 # CLI
 if __name__ == "__main__":
