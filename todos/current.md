@@ -52,8 +52,8 @@
 
 | Task | Status | Wer | Notes |
 |------|--------|-----|-------|
-| KG Relations = 0 | 🟡 Offen | Data Manager | Knowledge Graph hat 150 Entities aber 0 Relations — Build-Skript prüfen |
-| Fleeting Notes veraltet | 🟡 Offen | Data Manager | Letzte Note vom 2026-04-07 — wieder aufnehmen |
+| KG Relations = 0 | ✅ FIXED | Data Manager | kg_auto_populate.py erstellt jetzt 210 Relations |
+| Fleeting Notes veraltet | ✅ FIXED | Data Manager | today's note created, script gefixt |
 | OpenClaw Dreaming integrieren | 🟡 Offen | Data Manager | v2026.4.9 neues Feature — Data Manager sollte integrieren |
 | RBAC Aktivierung | 🟡 Offen | Security | Approval Workflows fehlen noch |
 | Adventure Engine & Quiz verbinden | 🟡 Offen | Builder | Module könnten modular verbunden werden |

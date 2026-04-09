@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-09T08:52:00Z",
+  "kg_entities": 150,
+  "kg_relations": 0,
+  "memory_stats": {
+    "fleeting": {
+      "count": 2,
+      "files": ["2026-04-07-insight.md", "2026-03-29-knowledge-graph-idee.md"]
+    },
+    "permanent": {
+      "count": 6,
+      "files": [
+        "2026-04-08-daily-operations.md",
+        "2026-04-08-weekly-reflection.md",
+        "2026-04-08-wiki-growth-workflow.md",
+        "2026-04-07-RECOVERED-memory-system.md",
+        "2026-03-29-final-test-note.md",
+        "2026-03-29-test-note.md"
+      ]
+    },
+    "concepts": {
+      "count": 3,
+      "files": ["2026-03-29-test.md", "2026-03-29-system-test.md", "2026-03-29-final-test-note.md"]
+    },
+    "research": {
+      "count": 2,
+      "files": ["2026-04-07-ai-agent-trends-2026.md", "2026-04-07-openclaw-multiagent-security-research.md"]
+    }
+  },
+  "index_status": {
+    "semantic_index": {
+      "documents": 51,
+      "embeddings": 51,
+      "size_bytes": 471040
+    },
+    "vector_store_entries": "unknown (dir exists but empty/unknown)"
+  },
+  "recommendations": [
+    "KG hat 150 Entities aber 0 Relations — Relations-Parsing scheint broken, das Knowledge Graph Build-Skript prüfen",
+    "Fleeting Notes seit 2026-04-07 nicht aktualisiert — tägliches Insight-Capture wieder aufnehmen",
+    "Semantic Index mit 51 Einträgen healthy, aber embeddings.size = 0 im JSON — ggf. verwaiste Doc-Einträge ohne Embeddings bereinigen",
+    "Memory System Docs (RECOVERED) vom 2026-04-07 und daily operations vom 2026-04-08 — aktuelle Notes werden fleißig geschrieben, gut!",
+    "Concepts-Dir nur 3 alte Test-Notes — Überführung der relevanten Test-Notes in permanent oder Löschen prüfen"
+  ]
+}

@@ -24,7 +24,7 @@
 | 1 | Resend Pro kaufen | ⏳ |
 | 2 | Twitter OAuth erneuern | ⏳ |
 | 3 | Reddit API Keys beantragen | ⏳ |
-| 4 | KG Relations = 0 | ⏳ Data Manager |
+| 4 | KG Relations = 0 | ✅ FIXED | Data Manager | kg_auto_populate.py erstellt jetzt Relations (0 -> 210) |
 | 5 | Fleeting Notes veraltet | ⏳ Data Manager |
 | 6 | OpenClaw Dreaming integrieren | ⏳ Data Manager |
 | 7 | RBAC Aktivierung | ⏳ Security |
