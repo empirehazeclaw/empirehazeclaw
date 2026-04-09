@@ -8,12 +8,16 @@ import requests
 import json
 from datetime import datetime
 
-# API Keys
+# API Keys - SECURITY: Only read from environment, NEVER hardcode
 KEYS = {
-    "LEONARDO": os.getenv("LEONARDO_API_KEY", "45ac842f-e8b8-44f9-bd8e-0ce9ad9dd599"),
+    "LEONARDO": os.getenv("LEONARDO_API_KEY", ""),
     "OPENAI": os.getenv("OPENAI_API_KEY", ""),
     "GEMINI": os.getenv("GEMINI_API_KEY", ""),
 }
+
+# Validate at startup
+if not KEYS["LEONARDO"]:
+    raise ValueError("LEONARDO_API_KEY environment variable not set")
 
 LOG_FILE = "/home/clawbot/.openclaw/logs/api_monitor.json"
 
