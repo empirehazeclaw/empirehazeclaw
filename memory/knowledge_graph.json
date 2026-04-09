@@ -2552,5 +2552,1477 @@
     }
   },
   "last_updated": "2026-04-06T06:44:59.322060",
-  "created": "2026-04-05T15:11:33.367596"
+  "created": "2026-04-05T15:11:33.367596",
+  "relationships": [
+    {
+      "from": "REDACTED",
+      "to": "Decision",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "DER WORKFLOW Immer wenn eine Session",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Decision",
+      "to": "DER WORKFLOW Immer wenn eine Session",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Decision",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "DER WORKFLOW Immer wenn eine Session",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-decisions.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "to": "Importiert",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "to": "Metadaten",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Importiert",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Metadaten",
+      "to": "Decision 2026-04-05",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/decisions/2026-04-05-telegram-top10.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Telegram History Analyse - Patterns & Learnings",
+      "to": "Datum",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-patterns.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "Learning",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "Infrastructure",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "Backups",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "ClawHub",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "REDACTED",
+      "to": "Vercel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-05-telegram-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED LEARNINGS - 2026-04-07",
+      "to": "RECOVERED",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED LEARNINGS - 2026-04-07",
+      "to": "Session",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED LEARNINGS - 2026-04-07",
+      "to": "PRIORITY",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED LEARNINGS - 2026-04-07",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED",
+      "to": "Session",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Session",
+      "to": "PRIORITY",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "PRIORITY",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Summary",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Main",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Connections",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Related",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Source",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Summary",
+      "to": "Source",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Summary",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Summary",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Main",
+      "to": "Source",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Main",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Main",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Connections",
+      "to": "Source",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Connections",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Connections",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Related",
+      "to": "Source",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Related",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Related",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Source",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Tags",
+      "to": "Key Point",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Tags",
+      "to": "Related Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Wiki Growth Workflow \u2014 Automatische Wiki-Pflege",
+      "to": "Cron",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-wiki-growth-workflow.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Wiki Growth Workflow \u2014 Automatische Wiki-Pflege",
+      "to": "Weg",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-wiki-growth-workflow.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Beides",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "System",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Cron",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Fixes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "University",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Curriculum",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Nico",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Entscheidung",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Wiki",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Workflow",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "System Status",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Cron Jobs",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Fixes Durchgef",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "CEO Briefing Cron Error",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "University Self",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Agent Certification System",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Was verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Was NICHT verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "System",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Cron",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Fixes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "University",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Curriculum",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Nico",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Entscheidung",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Wiki",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Workflow",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "System Status",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Cron Jobs",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Fixes Durchgef",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "CEO Briefing Cron Error",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "University Self",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Agent Certification System",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Was verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Beides",
+      "to": "Was NICHT verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Curriculum",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Nico",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Entscheidung",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Wiki",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Workflow",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "System Status",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Cron Jobs",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Fixes Durchgef",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "CEO Briefing Cron Error",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "University Self",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Agent Certification System",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Was verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System",
+      "to": "Was NICHT verloren ging",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-daily-operations.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TITLE_PLACEHOLDER",
+      "to": "Summary",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TITLE_PLACEHOLDER",
+      "to": "Main",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TITLE_PLACEHOLDER",
+      "to": "Connections",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "TITLE_PLACEHOLDER",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Weekly Reflection \u2014 2026-04-08",
+      "to": "Erreichte",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Weekly Reflection \u2014 2026-04-08",
+      "to": "Neue",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Weekly Reflection \u2014 2026-04-08",
+      "to": "Metrics",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Weekly Reflection \u2014 2026-04-08",
+      "to": "Erreichte Checkpoints",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Weekly Reflection \u2014 2026-04-08",
+      "to": "Neue Erkenntnisse",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Erreichte",
+      "to": "Erreichte Checkpoints",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Erreichte",
+      "to": "Neue Erkenntnisse",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Neue",
+      "to": "Erreichte Checkpoints",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Neue",
+      "to": "Neue Erkenntnisse",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Metrics",
+      "to": "Erreichte Checkpoints",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Metrics",
+      "to": "Neue Erkenntnisse",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "Knowledge",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "Learnings",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "Daily",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "STORAGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "CONSOLIDATION",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "KNOWLEDGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "SKILL",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "RECOVERED: Memory System Architecture",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Knowledge",
+      "to": "Learnings",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Knowledge",
+      "to": "Daily",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Knowledge",
+      "to": "Notes",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Knowledge",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Learnings",
+      "to": "STORAGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Learnings",
+      "to": "CONSOLIDATION",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Learnings",
+      "to": "KNOWLEDGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Learnings",
+      "to": "SKILL",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Learnings",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily",
+      "to": "STORAGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily",
+      "to": "CONSOLIDATION",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily",
+      "to": "KNOWLEDGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily",
+      "to": "SKILL",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Daily",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Notes",
+      "to": "STORAGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Notes",
+      "to": "CONSOLIDATION",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Notes",
+      "to": "KNOWLEDGE",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Notes",
+      "to": "SKILL",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Notes",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "STORAGE",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "CONSOLIDATION",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "KNOWLEDGE",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "SKILL",
+      "to": "Knowledge Hierarchy",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Test",
+      "to": "Summary",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Test",
+      "to": "Main",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Test",
+      "to": "Connections",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Test",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System Test",
+      "to": "Summary",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-system-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System Test",
+      "to": "Main",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-system-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System Test",
+      "to": "Connections",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-system-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "System Test",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-system-test.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Final Test Note",
+      "to": "Summary",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Final Test Note",
+      "to": "Main",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Final Test Note",
+      "to": "Connections",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Final Test Note",
+      "to": "Tags",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/concepts/2026-03-29-final-test-note.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "AI Agent Trends 2026 \u2014 Research Notes",
+      "to": "NVIDIA",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-ai-agent-trends-2026.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "AI Agent Trends 2026 \u2014 Research Notes",
+      "to": "OpenAI",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-ai-agent-trends-2026.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "AI Agent Trends 2026 \u2014 Research Notes",
+      "to": "LangChain",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-ai-agent-trends-2026.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "AI Agent Trends 2026 \u2014 Research Notes",
+      "to": "Microsoft",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-ai-agent-trends-2026.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Monitoring",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Quellen",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "OpenClaw",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Gateway",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Memory",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Security",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Skills",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw Multi-Agent & Security Research",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Monitoring",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Monitoring",
+      "to": "Memory",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Monitoring",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Monitoring",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Monitoring",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Quellen",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Quellen",
+      "to": "Memory",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Quellen",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Quellen",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Quellen",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Memory",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Gateway",
+      "to": "Agent",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Gateway",
+      "to": "Memory",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Gateway",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Gateway",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Gateway",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Agent",
+      "to": "Security",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Agent",
+      "to": "Skills",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Memory",
+      "to": "Security",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Memory",
+      "to": "Skills",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Security",
+      "to": "Multi",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Security",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Security",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Multi",
+      "to": "Skills",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Skills",
+      "to": "Gateway als Kernel",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Skills",
+      "to": "Top",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/research/2026-04-07-openclaw-multiagent-security-research.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Evening Insights 2026-04-07",
+      "to": "Warum",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-04-07-insight.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "Evening Insights 2026-04-07",
+      "to": "Quelle",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-04-07-insight.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Original",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-03-29-knowledge-graph-idee.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Keywords",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-03-29-knowledge-graph-idee.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Connected",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-03-29-knowledge-graph-idee.md",
+      "confidence": 0.5
+    },
+    {
+      "from": "{title}",
+      "to": "Next",
+      "type": "co_occurs_in",
+      "source": "/home/clawbot/.openclaw/workspace/memory/notes/fleeting/2026-03-29-knowledge-graph-idee.md",
+      "confidence": 0.5
+    }
+  ]
 }

@@ -32,7 +32,7 @@ def load_kg():
 def save_kg(kg):
     with open(KG_FILE, 'w') as f:
         json.dump(kg, f, indent=2)
-    print(f"✅ Knowledge Graph updated: {len(kg['entities'])} entities")
+    print(f"✅ Knowledge Graph updated: {len(kg['entities'])} entities, {len(kg.get('relationships', []))} relations")
 
 def extract_entities_from_file(filepath):
     """Extract potential entities from a markdown file."""
@@ -103,12 +103,54 @@ def add_to_kg(kg, new_entities):
     
     return added
 
+def extract_relations_from_file(filepath, entities_in_file):
+    """Extract relations between entities based on co-occurrence in same file."""
+    relations = []
+    entity_names = list(entities_in_file.keys())
+    
+    # Create relations between entities in same file
+    for i, e1 in enumerate(entity_names):
+        for e2 in entity_names[i+1:]:
+            # Skip if same type (too many weak relations)
+            if entities_in_file[e1]['type'] == entities_in_file[e2]['type']:
+                continue
+            relations.append({
+                "from": e1,
+                "to": e2,
+                "type": "co_occurs_in",
+                "source": str(filepath),
+                "confidence": 0.5
+            })
+    
+    return relations[:50]  # Limit to 50 relations per file
+
+def add_relations_to_kg(kg, new_relations):
+    """Add new relations to knowledge graph."""
+    added = 0
+    existing = set((r.get('from'), r.get('to')) for r in kg.get('relationships', []))
+    
+    if 'relationships' not in kg:
+        kg['relationships'] = []
+    
+    for rel in new_relations:
+        key = (rel.get('from'), rel.get('to'))
+        if key not in existing:
+            kg['relationships'].append(rel)
+            existing.add(key)
+            added += 1
+    
+    return added
+
 def scan_and_update():
     """Main function to scan and update knowledge graph."""
     print("=== 🧠 Knowledge Graph Auto-Population ===\n")
     
     kg = load_kg()
+    if 'relationships' not in kg:
+        kg['relationships'] = []
+    
     print(f"Current entities: {len(kg['entities'])}")
+    print(f"Current relations: {len(kg['relationships'])}")
     
     # Scan new files (last 7 days)
     new_files = []
@@ -123,19 +165,29 @@ def scan_and_update():
     
     print(f"New files (last 7 days): {len(new_files)}")
     
-    total_added = 0
+    total_added_entities = 0
+    total_added_relations = 0
     for filepath in new_files:
         entities = extract_entities_from_file(filepath)
         added = add_to_kg(kg, entities)
         if added > 0:
             print(f"  + {added} entities from {filepath.name}")
-        total_added += added
+        total_added_entities += added
+        
+        # Also extract relations from this file
+        entities_in_file = {e['name']: e for e in entities if e['name'] in kg['entities']}
+        if len(entities_in_file) >= 2:
+            relations = extract_relations_from_file(filepath, entities_in_file)
+            rel_added = add_relations_to_kg(kg, relations)
+            if rel_added > 0:
+                print(f"  + {rel_added} relations from {filepath.name}")
+            total_added_relations += rel_added
     
-    if total_added > 0:
+    if total_added_entities > 0 or total_added_relations > 0:
         save_kg(kg)
-        print(f"\n✅ Added {total_added} new entities")
+        print(f"\n✅ Added {total_added_entities} new entities, {total_added_relations} new relations")
     else:
-        print("\nℹ️  No new entities to add")
+        print("\nℹ️  No new entities or relations to add")
 
 if __name__ == "__main__":
     scan_and_update()
