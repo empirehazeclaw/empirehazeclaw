@@ -1,0 +1,17 @@
+{
+  "ban_status": {
+    "active": false,
+    "detected_at": null,
+    "notes": ""
+  },
+  "twitter": {
+    "auto_follow": false,
+    "auto_like": false,
+    "auto_retweet": false,
+    "max_follows_per_day": 50,
+    "max_likes_per_day": 100
+  },
+  "reddit": {
+    "enabled": false
+  }
+}

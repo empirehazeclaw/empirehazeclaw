@@ -1,0 +1,23 @@
+{
+  "title": "Finance Tracker",
+  "icon": "💰",
+  "properties": [
+    {"name": "Transaction", "type": "title"},
+    {"name": "Amount", "type": "number", "options": {"unit": "EUR"}},
+    {"name": "Category", "type": "select", "options": ["Income", "Expense", "Investment"]},
+    {"name": "Date", "type": "date"},
+    {"name": "Status", "type": "select", "options": ["Pending", "Completed"]}
+  ],
+  "database_content": [
+    {"Transaction": "Salary", "Amount": 3000, "Category": "Income", "Status": "Completed"},
+    {"Transaction": "Rent", "Amount": -800, "Category": "Expense", "Status": "Completed"},
+    {"Transaction": "Groceries", "Amount": -150, "Category": "Expense", "Status": "Completed"},
+    {"Transaction": "Utilities", "Amount": -120, "Category": "Expense", "Status": "Completed"},
+    {"Transaction": "Internet", "Amount": -30, "Category": "Expense", "Status": "Completed"},
+    {"Transaction": "Freelance Project", "Amount": 500, "Category": "Income", "Status": "Completed"},
+    {"Transaction": "Stock Investment", "Amount": -200, "Category": "Investment", "Status": "Completed"},
+    {"Transaction": "Transport", "Amount": -80, "Category": "Expense", "Status": "Completed"},
+    {"Transaction": "Entertainment", "Amount": -50, "Category": "Expense", "Status": "Pending"},
+    {"Transaction": "Health", "Amount": -50, "Category": "Expense", "Status": "Completed"}
+  ]
+}

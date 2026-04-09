@@ -1,0 +1,19 @@
+{
+  "limited": {
+    "minimax/MiniMax-M2.7": {
+      "lastHitAt": 1775563892,
+      "nextAvailableAt": 1775581892,
+      "reason": "outbound error observed",
+      "lastProbeAt": 1775566083
+    }
+  },
+  "pendingBackups": {},
+  "whatsapp": {},
+  "cron": {
+    "failCounts": {},
+    "lastIssueCreatedAt": {}
+  },
+  "plugins": {
+    "lastDisableAt": {}
+  }
+}

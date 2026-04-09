@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-04-05T10:07:41.364993",
+  "domains": [
+    {
+      "domain": "de",
+      "url": "https://empirehazeclaw.de",
+      "lang": "de",
+      "issues": [],
+      "warnings": [
+        "Meta Description kurz (101 chars)"
+      ],
+      "passed": [
+        "Title OK (44 chars)",
+        "H1 gefunden: KI, die Ihrem Unternehmen dien...",
+        "Alle 0 Bilder haben Alt-Tags",
+        "Scripts OK (4)",
+        "Favicon vorhanden",
+        "Canonical URL vorhanden",
+        "Alle OG Tags vorhanden"
+      ],
+      "score": 95,
+      "timestamp": "2026-04-05T10:07:41.203972"
+    },
+    {
+      "domain": "com",
+      "url": "https://empirehazeclaw.com",
+      "lang": "en",
+      "issues": [],
+      "warnings": [
+        "Meta Description kurz (74 chars)"
+      ],
+      "passed": [
+        "Title OK (32 chars)",
+        "H1 gefunden: AI That Serves Your Business...",
+        "Alle 0 Bilder haben Alt-Tags",
+        "Scripts OK (0)",
+        "Favicon vorhanden",
+        "Canonical URL vorhanden",
+        "Alle OG Tags vorhanden"
+      ],
+      "score": 95,
+      "timestamp": "2026-04-05T10:07:41.255646"
+    },
+    {
+      "domain": "info",
+      "url": "https://empirehazeclaw.info",
+      "lang": "de/en",
+      "issues": [],
+      "warnings": [
+        "Meta Description kurz (52 chars)",
+        "KEIN Favicon gefunden",
+        "KEIN Canonical Tag",
+        "Fehlende OG Tags: og:title, og:description, og:image, og:url"
+      ],
+      "passed": [
+        "Title OK (31 chars)",
+        "H1 gefunden: \ud83d\udcf0 Blog (DE/EN)...",
+        "Alle 0 Bilder haben Alt-Tags",
+        "Scripts OK (0)"
+      ],
+      "score": 80,
+      "timestamp": "2026-04-05T10:07:41.304318"
+    },
+    {
+      "domain": "store",
+      "url": "https://empirehazeclaw.store",
+      "lang": "de/en",
+      "issues": [
+        "KEINE Meta Description!"
+      ],
+      "warnings": [],
+      "passed": [
+        "Title OK (49 chars)",
+        "H1 gefunden: KI-Mitarbeiter f\u00fcr dein Busine...",
+        "Alle 0 Bilder haben Alt-Tags",
+        "Scripts OK (4)",
+        "Favicon vorhanden",
+        "Canonical URL vorhanden",
+        "Alle OG Tags vorhanden"
+      ],
+      "score": 80,
+      "timestamp": "2026-04-05T10:07:41.364817"
+    }
+  ],
+  "summary": {
+    "avg_score": 87.5,
+    "total_issues": 1,
+    "total_warnings": 6
+  }
+}

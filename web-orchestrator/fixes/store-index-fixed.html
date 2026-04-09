@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 EmpireHazeClaw Store - KI-Produkte und Services</title>
+
+    <!-- SEO Essentials -->
+    <link rel="canonical" href="https://empirehazeclaw.store">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="🛒 EmpireHazeClaw Store - KI-Produkte und Services">
+    <meta property="og:description" content="Kaufe KI-Produkte: Managed AI Hosting, Trading Bots, Discord Bots. DSGVO-konform, deutsche Server, 30-Tage Geld-zurück.">
+    <meta property="og:url" content="https://empirehazeclaw.store">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://empirehazeclaw.store/og-image.png">
+    <meta name="description" data-de="Kaufe KI-Produkte: Managed AI Hosting, Trading Bots, Discord Bots. DSGVO-konform, deutsche Server, 30-Tage Geld-zurück." data-en="Buy AI Products: Managed AI Hosting, Trading Bots, Discord Bots. DSGVO compliant, German servers, 30-day money-back.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00ff88;
+            --primary-glow: rgba(0, 255, 136, 0.4);
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --text: #ffffff;
+            --text-muted: #8888aa;
+            --gradient: linear-gradient(135deg, #00ff88 0%, #00ccff 100%);
+            --warning: #ffaa00;
+            --success: #00ff88;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(ellipse at 20% 20%, rgba(0, 255, 136, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(0, 204, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        h1, h2, h3 { font-family: 'Syne', sans-serif; font-weight: 700; line-height: 1.1; }
+        
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+        }
+        
+        .logo { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary); }
+        
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .lang-toggle {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        .lang-btn {
+            padding: 0.3rem 0.6rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: transparent;
+            color: var(--text-muted);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary { background: var(--primary); color: var(--bg-dark); }
+        .btn-primary:hover { box-shadow: 0 0 30px var(--primary-glow); transform: translateY(-2px); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: var(--bg-dark); }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+        }
+        
+        .hero-content { max-width: 900px; }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-badges { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--primary);
+        }
+        
+        /* SOCIAL PROOF BAR */
+        .social-proof-bar {
+            background: var(--bg-card);
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .social-proof-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .proof-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .proof-item .number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        /* GUARANTEE BADGE */
+        .guarantee {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 204, 255, 0.1));
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .guarantee-icon {
+            font-size: 3rem;
+            flex-shrink: 0;
+        }
+        
+        .guarantee-text {
+            text-align: left;
+        }
+        
+        .guarantee-text strong {
+            color: var(--primary);
+            display: block;
+            font-size: 1.1rem;
+        }
+        
+        .guarantee-text span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .features { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        
+        .feature-icon {
+            width: 60px; height: 60px;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 204, 255, 0.1));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card h3 { color: var(--text); }
+        .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
+        
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, transparent, rgba(0, 255, 136, 0.02));
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            padding-top: 1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #00ccff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--bg-dark);
+        }
+        
+        .testimonial-info strong {
+            display: block;
+            color: var(--text);
+        }
+        
+        .testimonial-info span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+        
+        .pricing { padding: 6rem 2rem; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+        
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover { border-color: var(--primary); transform: scale(1.02); }
+        .pricing-card.featured { border-color: var(--primary); background: linear-gradient(180deg, rgba(0, 255, 136, 0.1), var(--bg-card)); }
+        
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: var(--bg-dark);
+            padding: 0.3rem 1rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .price { font-size: 3rem; font-weight: 700; margin: 1rem 0; }
+        .price span { font-size: 1rem; color: var(--text-muted); }
+        
+        .pricing-features { list-style: none; margin: 1.5rem 0; text-align: left; }
+        .pricing-features li { padding: 0.5rem 0; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+        .pricing-features li::before { content: '✓'; color: var(--primary); font-weight: bold; }
+        
+        .pricing-footer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .pricing-footer span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        /* TRUST BADGES */
+        .trust-badges {
+            padding: 3rem 2rem;
+            background: var(--bg-card);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .trust-badges-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .trust-badge-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .trust-badge-text strong {
+            display: block;
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+        
+        .trust-badge-text span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        footer { padding: 3rem 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; color: var(--text-muted); }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero { padding: 4rem 1rem; }
+            .features-grid, .pricing-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .btn { width: 100%; margin-bottom: 0.5rem; justify-content: center; }
+            .social-proof-content { gap: 1.5rem; }
+            .trust-badges-grid { gap: 1.5rem; }
+        }
+        
+        /* Language specific styling */
+        [data-lang="en"] .de-only,
+        [data-lang="de"] .en-only { display: none !important; }
+        
+        .de-only, .en-only { display: inline; }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0, 255, 136, 0.05), transparent);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo"><span>Empire</span>HazeClaw</a>
+        <ul class="nav-links">
+            <li><a href="#features" data-de="Features" data-en="Features">Features</a></li>
+            <li><a href="#testimonials" data-de="Bewertungen" data-en="Reviews">Reviews</a></li>
+            <li><a href="#pricing" data-de="Preise" data-en="Pricing">Pricing</a></li>
+            <li><a href="/produkte.html" data-de="📦 Produkte" data-en="📦 Products">📦 Products</a></li>
+        </ul>
+        <div class="lang-toggle">
+            <button class="lang-btn" onclick="setLang('de')">DE</button>
+            <button class="lang-btn" onclick="setLang('en')">EN</button>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badges">
+                <span class="badge">🇩🇪 <span data-de="Deutsche Server" data-en="German Servers">Deutsche Server</span></span>
+                <span class="badge">🔒 <span data-de="DSGVO-konform" data-en="DSGVO Compliant">DSGVO-konform</span></span>
+                <span class="badge">⭐ <span data-de="30-Tage Geld-zurück" data-en="30-Day Money-Back">30-Tage Geld-zurück</span></span>
+            </div>
+            
+            <h1 data-de="KI-Mitarbeiter für dein Business" data-en="AI Employees for Your Business">KI-Mitarbeiter für dein Business</h1>
+            
+            <p data-de="Automatisierte KI-Agents die für dich arbeiten: Kundenservice, Lead-Generierung, Buchhaltung, Social Media - 24/7 ohne Pausen."
+               data-en="Automated AI agents working for you: Customer service, lead generation, accounting, social media - 24/7 without breaks.">
+                Automatisierte KI-Agents die für dich arbeiten
+            </p>
+            
+            <!-- GUARANTEE -->
+            <div class="guarantee">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-text">
+                    <strong data-de="30-Tage Geld-zurück-Garantie" data-en="30-Day Money-Back Guarantee">30-Tage Geld-zurück-Garantie</strong>
+                    <span data-de="Kein Risiko. Nicht zufrieden = volle Rückerstattung." data-en="No risk. Not satisfied = full refund.">Kein Risiko. Nicht zufrieden = volle Rückerstattung.</span>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#pricing" class="btn btn-primary" data-de="Jetzt starten →" data-en="Get Started →">Jetzt starten →</a>
+                <a href="#testimonials" class="btn btn-outline" data-de="Kundenstimmen" data-en="Customer Reviews">Kundenstimmen</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SOCIAL PROOF BAR -->
+    <section class="social-proof-bar">
+        <div class="social-proof-content">
+            <div class="proof-item">
+                <span class="number">50+</span>
+                <span data-de="KI-Produkte verkauft" data-en="AI Products Sold">KI-Produkte verkauft</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">98%</span>
+                <span data-de="Kundenzufriedenheit" data-en="Customer Satisfaction">Kundenzufriedenheit</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">24/7</span>
+                <span data-de="Support verfügbar" data-en="Support Available">Support verfügbar</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">🇩🇪</span>
+                <span data-de="100% Deutschland" data-en="100% Germany">100% Deutschland</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 data-de="Warum EmpireHazeClaw?" data-en="Why EmpireHazeClaw?">Warum EmpireHazeClaw?</h2>
+            <p data-de="Mehr als nur Software - wir liefern Ergebnisse" data-en="More than software - we deliver results">Mehr als nur Software</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 data-de="Echte KI-Mitarbeiter" data-en="Real AI Employees">Echte KI-Mitarbeiter</h3>
+                <p data-de="Nicht nur ein Chatbot - echte Agents die Aufgaben erledigen, Entscheidungen treffen und lernen." data-en="Not just a chatbot - real agents that complete tasks, make decisions and learn.">Echte Agents</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🇩🇪</div>
+                <h3 data-de="Deutsche Qualität" data-en="German Quality">Deutsche Qualität</h3>
+                <p data-de="Deutsche Server, DSGVO-konform, keine Daten in die USA. Für Unternehmen die Wert auf Datenschutz legen." data-en="German servers, DSGVO compliant, no data to the USA. For companies that value data privacy.">Deutsche Server</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 data-de="Sofort einsatzbereit" data-en="Ready to Use Immediately">Sofort einsatzbereit</h3>
+                <p data-de="Kein kompliziertes Setup. Innerhalb von 24h läuft dein KI-Mitarbeiter." data-en="No complicated setup. Within 24h your AI employee is running.">24h Start</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 data-de="Messbare Ergebnisse" data-en="Measurable Results">Messbare Ergebnisse</h3>
+                <p data-de="Dashboard zeigt dir genau was dein KI-Mitarbeiter für dich tut. Keine Black Box." data-en="Dashboard shows exactly what your AI employee does for you. No black box.">Volle Transparenz</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2 data-de="Das sagen unsere Kunden" data-en="What Our Customers Say">Das sagen unsere Kunden</h2>
+            <p data-de="Echte Ergebnisse von echten Kunden" data-en="Real results from real customers">Echte Ergebnisse</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text" data-de="Unser KI-Chatbot hat unsere Support-Anfragen um 80% reduziert. Die Kunden sind zufriedener und wir sparen Zeit und Geld." data-en="Our AI chatbot reduced support requests by 80%. Customers are happier and we save time and money.">
+                    Unser KI-Chatbot hat unsere Support-Anfragen um 80% reduziert.
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MK</div>
+                    <div class="testimonial-info">
+                        <strong>Marco K.</strong>
+                        <span data-de="Restaurant-Besitzer, München" data-en="Restaurant Owner, Munich">Restaurant-Besitzer, München</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text" data-de="Endlich ein Trading-Bot der funktioniert! Ruhig, analytisch, keine Emotionen. Mein Portfolio läuft besser seit ich ihn nutze." data-en="Finally a trading bot that works! Calm, analytical, no emotions. My portfolio performs better since I started using it.">
+                    Endlich ein Trading-Bot der funktioniert!
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">TS</div>
+                    <div class="testimonial-info">
+                        <strong>Thomas S.</strong>
+                        <span data-de="Trader, Frankfurt" data-en="Trader, Frankfurt">Trader, Frankfurt</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text" data-de="Die Einrichtung war super einfach und der Support antwortet innerhalb von Minuten. Absolut empfehlenswert für jedes KMU!" data-en="Setup was super easy and support responds within minutes. Absolutely recommended for any SME!">
+                    Die Einrichtung war super einfach...
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SB</div>
+                    <div class="testimonial-info">
+                        <strong>Sarah B.</strong>
+                        <span data-de="Marketing-Agentur, Berlin" data-en="Marketing Agency, Berlin">Marketing-Agentur, Berlin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2 data-de="Wähle deinen KI-Mitarbeiter" data-en="Choose Your AI Employee">Wähle deinen KI-Mitarbeiter</h2>
+            <p data-de="Alle Pakete inklusive 30-Tage Geld-zurück" data-en="All packages include 30-day money-back">Alle Pakete inklusive Geld-zurück</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 data-de="Starter" data-en="Starter">Starter</h3>
+                <div class="price">€99<span>/<span data-de="Monat" data-en="month">Monat</span></span></div>
+                <p data-de="+ €149 Einrichtung" data-en="+ €149 Setup">+ €149 Einrichtung</p>
+                <ul class="pricing-features">
+                    <li data-de="1 KI-Mitarbeiter" data-en="1 AI Employee">1 KI-Mitarbeiter</li>
+                    <li data-de="1.000 Aufgaben/Monat" data-en="1,000 tasks/month">1.000 Aufgaben/Monat</li>
+                    <li data-de="Email Support" data-en="Email Support">Email Support</li>
+                    <li data-de="Basis Dashboard" data-en="Basic Dashboard">Basis Dashboard</li>
+                </ul>
+                <a href="https://checkout.stripe.com/g/pay/cs_live_a19hziBm99XL9Tx2gBW3ewLl6ktlKSgEDY35w9iUGdEc" class="btn btn-outline" target="_blank" data-de="Jetzt starten" data-en="Get Started">Jetzt starten</a>
+                <div class="pricing-footer">
+                    <span data-de="✓ 30-Tage Geld-zurück" data-en="✓ 30-Day Money-Back">✓ 30-Tage Geld-zurück</span>
+                </div>
+            </div>
+            
+            <div class="pricing-card featured">
+                <h3 data-de="Professional" data-en="Professional">Professional</h3>
+                <div class="price">€199<span>/<span data-de="Monat" data-en="month">Monat</span></span></div>
+                <p data-de="+ €299 Einrichtung" data-en="+ €299 Setup">+ €299 Einrichtung</p>
+                <ul class="pricing-features">
+                    <li data-de="5 KI-Mitarbeiter" data-en="5 AI Employees">5 KI-Mitarbeiter</li>
+                    <li data-de="10.000 Aufgaben/Monat" data-en="10,000 tasks/month">10.000 Aufgaben/Monat</li>
+                    <li data-de="Priority Support" data-en="Priority Support">Priority Support</li>
+                    <li data-de="Premium Dashboard" data-en="Premium Dashboard">Premium Dashboard</li>
+                    <li data-de="Custom Training" data-en="Custom Training">Custom Training</li>
+                </ul>
+                <a href="https://checkout.stripe.com/g/pay/cs_live_a1I6R47rrCkqBD8HlGCFh6MrubrbZA6RmvcKC6Q5G66" class="btn btn-primary" target="_blank" data-de="Jetzt starten" data-en="Get Started">Jetzt starten</a>
+                <div class="pricing-footer">
+                    <span data-de="✓ 30-Tage Geld-zurück" data-en="✓ 30-Day Money-Back">✓ 30-Tage Geld-zurück</span>
+                </div>
+            </div>
+            
+            <div class="pricing-card">
+                <h3 data-de="Enterprise" data-en="Enterprise">Enterprise</h3>
+                <div class="price">€499<span>/<span data-de="Monat" data-en="month">Monat</span></span></div>
+                <p data-de="+ €499 Einrichtung" data-en="+ €499 Setup">+ €499 Einrichtung</p>
+                <ul class="pricing-features">
+                    <li data-de="Unbegrenzte KI-Mitarbeiter" data-en="Unlimited AI Employees">Unbegrenzte KI-Mitarbeiter</li>
+                    <li data-de="Unbegrenzte Aufgaben" data-en="Unlimited tasks">Unbegrenzte Aufgaben</li>
+                    <li data-de="Dedicated Account Manager" data-en="Dedicated Account Manager">Dedicated Account Manager</li>
+                    <li data-de="Custom Integration" data-en="Custom Integration">Custom Integration</li>
+                    <li data-de="SLA Garantie" data-en="SLA Guarantee">SLA Garantie</li>
+                </ul>
+                <a href="mailto:empirehazeclaw@gmail.com?subject=Enterprise%20Anfrage" class="btn btn-outline" data-de="Kontakt" data-en="Contact">Kontakt</a>
+                <div class="pricing-footer">
+                    <span data-de="✓ 30-Tage Geld-zurück" data-en="✓ 30-Day Money-Back">✓ 30-Tage Geld-zurück</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TRUST BADGES -->
+    <section class="trust-badges">
+        <div class="trust-badges-grid">
+            <div class="trust-badge">
+                <div class="trust-badge-icon">🔒</div>
+                <div class="trust-badge-text">
+                    <strong data-de="SSL Verschlüsselt" data-en="SSL Encrypted">SSL Verschlüsselt</strong>
+                    <span data-de="256-bit encryption" data-en="256-bit encryption">256-bit encryption</span>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">💳</div>
+                <div class="trust-badge-text">
+                    <strong data-de="Sichere Zahlung" data-en="Secure Payment">Sichere Zahlung</strong>
+                    <span data-de="via Stripe" data-en="via Stripe">via Stripe</span>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">🇩🇪</div>
+                <div class="trust-badge-text">
+                    <strong data-de="Deutsche Server" data-en="German Servers">Deutsche Server</strong>
+                    <span data-de="Hetzner, Nürnberg" data-en="Hetzner, Nuremberg">Hetzner, Nürnberg</span>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">⏱️</div>
+                <div class="trust-badge-text">
+                    <strong data-de="99.9% Uptime" data-en="99.9% Uptime">99.9% Uptime</strong>
+                    <span data-de="Guaranteed" data-en="Guaranteed">Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section" id="contact">
+        <h2 data-de="Bereit für KI-Mitarbeiter?" data-en="Ready for AI Employees?">Bereit für KI-Mitarbeiter?</h2>
+        <p data-de="Starte heute und profitiere 30 Tage risikofrei" data-en="Start today and benefit 30 days risk-free" style="color: var(--text-muted); margin: 1rem 0 2rem;">Starte heute</p>
+        <a href="mailto:empirehazeclaw@gmail.com" class="btn btn-primary" data-de="📧 Kontakt aufnehmen" data-en="📧 Contact Us">📧 Kontakt aufnehmen</a>
+    </section>
+    
+    <footer>
+        <div class="sites" style="display:flex;justify-content:center;gap:1rem;margin-bottom:1rem;padding:1rem;background:var(--bg-card);border-radius:12px;">
+            <a href="https://empirehazeclaw.de" style="padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;color:var(--text-muted);">🇩🇪 DE</a>
+            <a href="https://empirehazeclaw.com" style="padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;color:var(--text-muted);">🇺🇸 EN</a>
+            <a href="https://empirehazeclaw.store" style="padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;background:var(--primary);color:var(--bg-dark);">🛒 Store</a>
+            <a href="https://empirehazeclaw.info" style="padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;color:var(--text-muted);">📰 Blog</a>
+        </div>
+        <p>© 2026 EmpireHazeClaw. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+        <p style="margin-top: 1rem;">
+            <a href="/datenschutz.html" data-de="Datenschutz" data-en="Privacy" data-en="Privacy">Datenschutz</a> · 
+            <a href="/agb.html" data-de="AGB" data-en="Terms">AGB</a> · 
+            <a href="/impressum.html" data-de="Impressum" data-en="Imprint">Impressum</a>
+        </p>
+    </footer>
+    
+    <script>
+        const STORAGE_KEY = 'empirehazeclaws_store_lang';
+        
+        function getDefaultLang() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (stored) return stored;
+            const browserLang = navigator.language || navigator.userLanguage || '';
+            if (browserLang.toLowerCase().startsWith('de')) return 'de';
+            return 'en';
+        }
+        
+        function setLang(lang) {
+            localStorage.setItem(STORAGE_KEY, lang);
+            applyLang(lang);
+        }
+        
+        function applyLang(lang) {
+            document.body.setAttribute('data-lang', lang);
+            const elements = document.querySelectorAll('[data-de]');
+            elements.forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = text;
+                    } else {
+                        el.textContent = text;
+                    }
+                }
+            });
+            const titleEl = document.querySelector('title');
+            if (titleEl) {
+                const title = titleEl.getAttribute(`data-${lang}`);
+                if (title) titleEl.textContent = title;
+            }
+            const descEl = document.querySelector('meta[name="description"]');
+            if (descEl) {
+                const desc = descEl.getAttribute(`data-${lang}`);
+                if (desc) descEl.content = desc;
+            }
+            document.documentElement.lang = lang;
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase() === lang) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const lang = getDefaultLang();
+            applyLang(lang);
+        });
+    </script>
+</body>
+</html>

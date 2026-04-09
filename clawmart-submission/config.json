@@ -1,0 +1,36 @@
+{
+  "name": "memory-system",
+  "version": "3.1.0",
+  "description": "Production-ready memory with PARA knowledge graph, automatic fact extraction, decay, priority management",
+  "author": "ClawBot",
+  "price": 0,
+  "category": "ops",
+  "tags": ["memory", "knowledge-graph", "PARA", "fact-extraction", "decay", "priority", "free"],
+  "features": [
+    "PARA Knowledge Graph (Projects, Areas, Resources, Archives)",
+    "Automatic Fact Extraction (preference, goal, learning, pattern)",
+    "Memory Decay (9% per week)",
+    "Recency Weighting",
+    "Daily Note Timeline",
+    "Access Tracking",
+    "Priority Management (CRITICAL, HIGH, MEDIUM, LOW, ARCHIVE)",
+    "Tacit Knowledge (user patterns)",
+    "Auto-Learning System"
+  ],
+  "architecture": {
+    "layer_1": "Knowledge Graph - PARA organized entities with atomic facts",
+    "layer_2": "Daily Notes - Chronological timeline",
+    "layer_3": "Tacit Knowledge - User patterns and preferences"
+  },
+  "installation": {
+    "step1": "Copy memory-skill to workspace",
+    "step2": "Create memory/ directory structure",
+    "step3": "Import MemorySystem class",
+    "step4": "Configure priority levels"
+  },
+  "why_free": "Build customer base, earn reviews, upsell to POD Agent ($19-29)",
+  "upcoming_products": {
+    "pod_agent": {"price": 19, "description": "Full POD business agent"},
+    "etsy_seo": {"price": 15, "description": "Etsy SEO optimization"}
+  }
+}

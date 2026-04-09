@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "Master": {
+      "type": "Areas",
+      "category": "preference",
+      "facts": [
+        {
+          "content": "Ich hei\u00dfe Nico und will \u20ac100 pro Monat",
+          "confidence": 0.9,
+          "extracted_at": "2026-03-05T15:45:54.460301",
+          "category": "preference"
+        },
+        {
+          "content": "Ich hei\u00dfe Nico und will \u20ac100 pro Monat mit POD verdienen",
+          "confidence": 0.9,
+          "extracted_at": "2026-03-05T15:45:54.460543",
+          "category": "goal"
+        },
+        {
+          "content": "d will \u20ac100 pro Monat mit POD verdienen",
+          "confidence": 0.6,
+          "extracted_at": "2026-03-05T15:45:54.460728",
+          "category": "goal"
+        },
+        {
+          "content": "Ich hei\u00dfe Nico und will \u20ac100 pro Monat mit POD verdienen",
+          "confidence": 0.9,
+          "extracted_at": "2026-03-05T15:45:54.461476",
+          "category": "goal"
+        },
+        {
+          "content": "o und will \u20ac100 pro Monat mit POD verdienen",
+          "confidence": 0.6,
+          "extracted_at": "2026-03-05T15:45:54.461870",
+          "category": "project"
+        }
+      ],
+      "priority": "CRITICAL",
+      "created": "2026-03-05T15:45:54.460298",
+      "last_accessed": "2026-03-05T15:45:54.460299",
+      "access_count": 0,
+      "decay_score": 1.0
+    }
+  },
+  "last_updated": "2026-03-05T15:45:54.461876",
+  "created": "2026-03-05T15:45:54.458805"
+}

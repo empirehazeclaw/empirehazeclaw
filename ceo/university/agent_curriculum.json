@@ -1,0 +1,252 @@
+{
+  "version": "1.1",
+  "description": "Agent University Curriculum — Which agent needs which modules",
+  "last_updated": "2026-04-08",
+  
+  "agents": {
+    "ALL_AGENTS": {
+      "name": "ALL AGENTS (Grund-Training)",
+      "required_modules": [
+        {
+          "module": "basic_1",
+          "lessons": ["lesson_basic_1"],
+          "quiz": "quiz_basic_foundation",
+          "reason": "MUSS ALLE Module ABSOLVIEREN vor Fleet-Einsatz"
+        },
+        {
+          "module": "basic_2",
+          "lessons": ["lesson_basic_2"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_3",
+          "lessons": ["lesson_basic_3"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_4",
+          "lessons": ["lesson_basic_4"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_5",
+          "lessons": ["lesson_basic_5"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_6",
+          "lessons": ["lesson_basic_6"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_7",
+          "lessons": ["lesson_basic_7"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_8",
+          "lessons": ["lesson_basic_8"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_9",
+          "lessons": ["lesson_basic_9"],
+          "quiz": "quiz_basic_foundation"
+        },
+        {
+          "module": "basic_10",
+          "lessons": ["lesson_basic_10"],
+          "quiz": "quiz_basic_foundation"
+        }
+      ],
+      "certification": "Fleet Ready",
+      "exam": "quiz_basic_foundation",
+      "passing_score": 49,
+      "total_questions": 50,
+      "permissions_on_certification": [
+        "may_join_fleet",
+        "may_receive_tasks"
+      ]
+    },
+    
+    "security_officer": {
+      "name": "Security Officer",
+      "required_modules": [
+        {
+          "module": "basic",
+          "lessons": ["lesson_basic_1"],
+          "quiz": "quiz_basic_foundation",
+          "reason": "Grund-Training für alle Agenten zuerst"
+        },
+        {
+          "module": "1",
+          "lessons": ["lesson_1_1", "lesson_1_2", "lesson_1_3"],
+          "quiz": "quiz_module_1",
+          "reason": "Must understand Prompt Injection to defend against it"
+        },
+        {
+          "module": "2",
+          "lessons": ["lesson_2_1", "lesson_2_2", "lesson_2_3", "lesson_2_4"],
+          "quiz": "quiz_module_2",
+          "reason": "Must know OWASP ML Top 10 to audit systems"
+        },
+        {
+          "module": "5",
+          "lessons": ["lesson_5_1", "lesson_5_2", "lesson_5_3", "lesson_5_4"],
+          "quiz": "quiz_module_5",
+          "reason": "Must be able to conduct security audits"
+        },
+        {
+          "module": "6.1",
+          "lessons": ["lesson_6_1"],
+          "quiz": "quiz_module_6",
+          "reason": "Must understand Agentic AI Hijacking to protect fleet"
+        }
+      ],
+      "certification": "Security Expert",
+      "permissions_on_certification": [
+        "conduct_audit",
+        "approve_tool",
+        "flag_security_incident"
+      ]
+    },
+    
+    "builder": {
+      "name": "Builder",
+      "required_modules": [
+        {
+          "module": "3",
+          "lessons": ["lesson_3_1", "lesson_3_2", "lesson_3_3"],
+          "quiz": "quiz_module_3",
+          "reason": "Must implement secure tools with proper validation"
+        },
+        {
+          "module": "7",
+          "lessons": ["lesson_7_1"],
+          "quiz": "quiz_module_7_1",
+          "reason": "Must understand OpenClaw internals to build properly"
+        },
+        {
+          "module": "1",
+          "lessons": ["lesson_1_1", "lesson_1_2", "lesson_1_3"],
+          "quiz": "quiz_module_1",
+          "reason": "Must understand Prompt Injection to prevent vulnerabilities"
+        }
+      ],
+      "certification": "Tool Architect",
+      "permissions_on_certification": [
+        "create_tool",
+        "deploy_to_production",
+        "approve_own_code"
+      ]
+    },
+    
+    "data_manager": {
+      "name": "Data Manager",
+      "required_modules": [
+        {
+          "module": "6.2",
+          "lessons": ["lesson_6_2"],
+          "quiz": "quiz_module_6_2",
+          "reason": "Must understand RAG Poisoning to protect knowledge bases"
+        },
+        {
+          "module": "7",
+          "lessons": ["lesson_7_1"],
+          "quiz": "quiz_module_7_1",
+          "reason": "Must understand memory system architecture"
+        },
+        {
+          "module": "4",
+          "lessons": ["lesson_4_2", "lesson_4_3"],
+          "quiz": "quiz_module_4",
+          "reason": "Must understand RBAC and secure data channels"
+        }
+      ],
+      "certification": "Data Security Specialist",
+      "permissions_on_certification": [
+        "manage_memory",
+        "create_backup",
+        "configure_rbac"
+      ]
+    },
+    
+    "research": {
+      "name": "Research Agent",
+      "required_modules": [
+        {
+          "module": "6.1",
+          "lessons": ["lesson_6_1"],
+          "quiz": "quiz_module_6",
+          "reason": "Must identify Agentic AI Hijacking patterns"
+        },
+        {
+          "module": "6.3",
+          "lessons": ["lesson_6_3"],
+          "quiz": "quiz_module_6_3",
+          "reason": "Must understand Model Extraction threats"
+        },
+        {
+          "module": "2",
+          "lessons": ["lesson_2_1", "lesson_2_2"],
+          "quiz": "quiz_module_2",
+          "reason": "Must know OWASP threats for thorough research"
+        }
+      ],
+      "certification": "AI Threats Analyst",
+      "permissions_on_certification": [
+        "threat_research",
+        "publish_findings",
+        "recommend_security_measures"
+      ]
+    },
+    
+    "ceo": {
+      "name": "CEO (ClawMaster)",
+      "required_modules": [
+        {
+          "module": "all",
+          "lessons": "all",
+          "quiz": "all",
+          "reason": "Must understand entire fleet to orchestrate effectively"
+        }
+      ],
+      "certification": "Fleet Commander",
+      "permissions_on_certification": [
+        "orchestrate_fleet",
+        "approve_any_agent",
+        "modify_permissions"
+      ]
+    }
+  },
+  
+  "learning_order": {
+    "description": "Recommended order for agents to complete modules",
+    "steps": [
+      {
+        "step": 1,
+        "agent": "security_officer",
+        "module": "1",
+        "reason": "Foundation: Prompt Injection is the most common attack"
+      },
+      {
+        "step": 2,
+        "agent": "security_officer", 
+        "module": "2",
+        "reason": "Must know OWASP ML Top 10"
+      },
+      {
+        "step": 3,
+        "agent": "builder",
+        "module": "3",
+        "reason": "Tool Security is foundation for safe implementation"
+      },
+      {
+        "step": 4,
+        "agent": "all",
+        "module": "7",
+        "reason": "Everyone must understand OpenClaw internals"
+      }
+    ]
+  }
+}

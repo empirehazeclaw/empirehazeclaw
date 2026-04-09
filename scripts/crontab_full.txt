@@ -1,0 +1,38 @@
+# EMPIREHAZECLAW - Production Crontab
+# Last updated: 2026-04-08 by CEO Agent
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# === METACLAW (Reboot watchdog) ===
+@reboot sleep 10 && /home/clawbot/.local/bin/metaclaw start --mode skills_only --port 30000 >> /home/clawbot/.metaclaw/restart.log 2>&1
+
+# === SQLITE VACUUM (Täglich 03:00 - DB Optimierung) ===
+0 3 * * * /home/clawbot/.openclaw/workspace/scripts/sqlite_vacuum.sh >> /home/clawbot/.openclaw/logs/vacuum.log 2>&1
+
+# === MEMORY CLEANUP (Täglich 03:30 - NACH Backup, vor Session Cleanup) ===
+30 3 * * * python3 /home/clawbot/.openclaw/workspace/scripts/memory_cleanup.py >> /home/clawbot/.openclaw/logs/memory_cleanup.log 2>&1
+
+# === SESSION CLEANUP (Täglich 04:00 - alte Sessions löschen) ===
+0 4 * * * python3 /home/clawbot/.openclaw/workspace/scripts/session_cleanup.py >> /home/clawbot/.openclaw/logs/session_cleanup.log 2>&1
+
+# === KNOWLEDGE GRAPH (Täglich 06:00 - KG befüllen) ===
+0 6 * * * python3 /home/clawbot/.openclaw/workspace/memory/scripts/kg_auto_populate.py >> /home/clawbot/.openclaw/logs/kg_auto.log 2>&1
+
+# === SEMANTIC SEARCH (Täglich 06:30 - Index bauen) ===
+30 6 * * * python3 /home/clawbot/.openclaw/workspace/scripts/semantic_search.py build >> /home/clawbot/.openclaw/logs/semantic_search.log 2>&1
+
+# === EVENING CAPTURE (Täglich 21:00 - Fleeting Template) ===
+0 21 * * * python3 /home/clawbot/.openclaw/workspace/scripts/evening_capture.py >> /home/clawbot/.openclaw/logs/evening_capture.log 2>&1
+
+# === AUTO SESSION CAPTURE (Täglich 21:30 - Session Insights mit Inhalt!) ===
+30 21 * * * python3 /home/clawbot/.openclaw/workspace/scripts/auto_session_capture.py >> /home/clawbot/.openclaw/logs/auto_session_capture.log 2>&1
+
+# === DREAM REFLECTION (Täglich 23:00 - Traum-Reflexion) ===
+0 23 * * * python3 /home/clawbot/.openclaw/workspace/scripts/dream_reflection.py >> /home/clawbot/.openclaw/logs/dream_reflection.log 2>&1
+
+# === GITHUB BACKUP (Täglich 23:00 - Workspace zu GitHub) ===
+0 23 * * * bash /home/clawbot/.openclaw/workspace/scripts/github_backup.sh >> /home/clawbot/.openclaw/logs/github_backup.log 2>&1
+
+# === WEEKLY ZETTELKASTEN (Sonntag 22:00 - Wochenreview) ===
+0 22 * * 0 python3 /home/clawbot/.openclaw/workspace/scripts/weekly_review_zettel.py >> /home/clawbot/.openclaw/logs/weekly_review.log 2>&1

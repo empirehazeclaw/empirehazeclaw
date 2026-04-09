@@ -1,0 +1,102 @@
+#!/bin/bash
+# Voice-to-Text - Convert speech to text using Whisper.cpp
+# Usage: voice-to-text <audio-file> [language]
+
+set -e
+
+WHISPER_DIR="${WHISPER_DIR:-$HOME/.local/whisper.cpp}"
+MODEL="$WHISPER_DIR/models/ggml-tiny.bin"
+CLI="$WHISPER_DIR/build/bin/whisper-cli"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+usage() {
+    echo "🎤 Voice-to-Text - Speech Recognition"
+    echo ""
+    echo "Usage: $0 <audio-file> [language]"
+    echo ""
+    echo "Arguments:"
+    echo "  audio-file    Path to audio file (WAV, MP3, OGG, MP4, etc.)"
+    echo "  language      Optional, default=en (use 'ne' for Nepali, 'hi' for Hindi)"
+    echo ""
+    echo "Examples:"
+    echo "  $0 recording.wav"
+    echo "  $0 recording.ogg"
+    echo "  $0 video.mp4"
+    echo "  $0 nepali-audio.wav ne"
+    exit 1
+}
+
+if [ -z "$1" ]; then
+    usage
+fi
+
+AUDIO="$1"
+LANG="${2:-en}"
+
+# Check if file exists
+if [ ! -f "$AUDIO" ]; then
+    echo -e "${RED}❌ Error: File not found: $AUDIO${NC}"
+    exit 1
+fi
+
+# Check if Whisper CLI exists
+if [ ! -f "$CLI" ]; then
+    echo -e "${RED}❌ Error: Whisper CLI not found at $CLI${NC}"
+    echo -e "${YELLOW}💡 Install Whisper.cpp:${NC}"
+    echo "   git clone https://github.com/ggerganov/whisper.cpp ~/.local/whisper.cpp"
+    echo "   cd ~/.local/whisper.cpp && make -j4"
+    echo "   bash ./models/download-ggml-model.sh tiny"
+    exit 1
+fi
+
+# Convert to WAV if needed (ffmpeg required)
+CONVERTED="$AUDIO"
+if [[ ! "$AUDIO" =~ \.wav$ ]]; then
+    if ! command -v ffmpeg &> /dev/null; then
+        echo -e "${RED}❌ Error: ffmpeg required for non-WAV formats${NC}"
+        echo -e "${YELLOW}💡 Install ffmpeg:${NC}"
+        echo "   sudo apt-get install -y ffmpeg"
+        exit 1
+    fi
+    
+    BASENAME="${AUDIO%.*}"
+    CONVERTED="${BASENAME}.wav"
+    
+    echo -e "${YELLOW}⏳ Converting $(basename $AUDIO) → WAV...${NC}"
+    ffmpeg -i "$AUDIO" -ar 16000 -ac 1 -y "$CONVERTED" 2>/dev/null
+fi
+
+# Transcribe
+echo -e "${YELLOW}🎤 Transcribing: $(basename $AUDIO)${NC}"
+echo -e "${YELLOW}🌐 Language: $LANG${NC}"
+
+OUTPUT="${CONVERTED%.wav}.txt"
+
+$CLI -m "$MODEL" -f "$CONVERTED" -otxt -l "$LANG" --no-timestamps 2>/dev/null
+
+# Wait for file to be written
+sleep 1
+
+if [ -f "$OUTPUT" ]; then
+    echo ""
+    echo -e "${GREEN}✅ Transcription complete!${NC}"
+    echo -e "${GREEN}📄 Output: $OUTPUT${NC}"
+    echo ""
+    echo "--- TRANSCRIPT ---"
+    cat "$OUTPUT"
+    echo ""
+    echo "--- END ---"
+    
+    # Clean up converted file if it was temporary
+    if [ "$CONVERTED" != "$AUDIO" ]; then
+        rm -f "$CONVERTED"
+    fi
+else
+    echo -e "${RED}❌ Transcription failed${NC}"
+    exit 1
+fi

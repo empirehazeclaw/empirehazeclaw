@@ -1,0 +1,621 @@
+[
+  {
+    "lot_id": "LOT-2000",
+    "product": "Widget-B",
+    "quantity": 125,
+    "timestamp": "2026-02-25T14:02:55.673737",
+    "measurements": {
+      "length_mm": 93.293,
+      "weight_g": 83.005,
+      "hardness_hrc": 53.253,
+      "diameter_mm": 122.376
+    },
+    "defects_found": 0,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 93.293 < LSL",
+      "weight_g: 83.005 < LSL",
+      "hardness_hrc: 53.253 < LSL",
+      "diameter_mm: 122.376 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2001",
+    "product": "Gadget-X",
+    "quantity": 130,
+    "timestamp": "2026-02-25T16:02:55.673737",
+    "measurements": {
+      "length_mm": 106.853,
+      "weight_g": 178.559,
+      "hardness_hrc": 125.171,
+      "diameter_mm": 131.575
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "weight_g: 178.559 > USL",
+      "hardness_hrc: 125.171 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2002",
+    "product": "Widget-B",
+    "quantity": 282,
+    "timestamp": "2026-02-25T18:02:55.673737",
+    "measurements": {
+      "length_mm": 112.991,
+      "weight_g": 106.784,
+      "hardness_hrc": 103.038,
+      "diameter_mm": 57.764
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 112.991 < LSL",
+      "weight_g: 106.784 < LSL",
+      "hardness_hrc: 103.038 < LSL",
+      "diameter_mm: 57.764 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2003",
+    "product": "Gadget-X",
+    "quantity": 137,
+    "timestamp": "2026-02-25T20:02:55.673737",
+    "measurements": {
+      "length_mm": 62.868,
+      "weight_g": 66.838,
+      "hardness_hrc": 168.706,
+      "diameter_mm": 149.34
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 62.868 < LSL",
+      "weight_g: 66.838 > USL",
+      "hardness_hrc: 168.706 > USL",
+      "diameter_mm: 149.340 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2004",
+    "product": "Gadget-X",
+    "quantity": 477,
+    "timestamp": "2026-02-25T22:02:55.673737",
+    "measurements": {
+      "length_mm": 86.563,
+      "weight_g": 73.105,
+      "hardness_hrc": 120.585,
+      "diameter_mm": 114.892
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 86.563 < LSL",
+      "weight_g: 73.105 > USL",
+      "hardness_hrc: 120.585 > USL",
+      "diameter_mm: 114.892 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2005",
+    "product": "Widget-B",
+    "quantity": 387,
+    "timestamp": "2026-02-26T00:02:55.673737",
+    "measurements": {
+      "length_mm": 148.579,
+      "weight_g": 108.403,
+      "hardness_hrc": 100.548,
+      "diameter_mm": 199.107
+    },
+    "defects_found": 0,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 148.579 < LSL",
+      "weight_g: 108.403 < LSL",
+      "hardness_hrc: 100.548 < LSL",
+      "diameter_mm: 199.107 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2006",
+    "product": "Gadget-X",
+    "quantity": 235,
+    "timestamp": "2026-02-26T02:02:55.673737",
+    "measurements": {
+      "length_mm": 101.016,
+      "weight_g": 76.747,
+      "hardness_hrc": 115.53,
+      "diameter_mm": 126.579
+    },
+    "defects_found": 0,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 101.016 < LSL",
+      "weight_g: 76.747 > USL",
+      "hardness_hrc: 115.530 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2007",
+    "product": "Widget-A",
+    "quantity": 76,
+    "timestamp": "2026-02-26T04:02:55.673737",
+    "measurements": {
+      "length_mm": 119.242,
+      "weight_g": 108.546,
+      "hardness_hrc": 167.819,
+      "diameter_mm": 65.268
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "weight_g: 108.546 < LSL",
+      "hardness_hrc: 167.819 < LSL",
+      "diameter_mm: 65.268 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2008",
+    "product": "Widget-A",
+    "quantity": 345,
+    "timestamp": "2026-02-26T06:02:55.673737",
+    "measurements": {
+      "length_mm": 136.643,
+      "weight_g": 175.441,
+      "hardness_hrc": 95.08,
+      "diameter_mm": 133.895
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 136.643 > USL",
+      "weight_g: 175.441 > USL",
+      "hardness_hrc: 95.080 < LSL",
+      "diameter_mm: 133.895 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2009",
+    "product": "Widget-B",
+    "quantity": 195,
+    "timestamp": "2026-02-26T08:02:55.673737",
+    "measurements": {
+      "length_mm": 117.401,
+      "weight_g": 176.753,
+      "hardness_hrc": 160.244,
+      "diameter_mm": 119.616
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 117.401 < LSL",
+      "weight_g: 176.753 > USL",
+      "hardness_hrc: 160.244 < LSL",
+      "diameter_mm: 119.616 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2010",
+    "product": "Widget-B",
+    "quantity": 290,
+    "timestamp": "2026-02-26T10:02:55.673737",
+    "measurements": {
+      "length_mm": 97.958,
+      "weight_g": 166.316,
+      "hardness_hrc": 75.283,
+      "diameter_mm": 119.097
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 97.958 < LSL",
+      "weight_g: 166.316 > USL",
+      "hardness_hrc: 75.283 < LSL",
+      "diameter_mm: 119.097 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2011",
+    "product": "Gadget-X",
+    "quantity": 441,
+    "timestamp": "2026-02-26T12:02:55.673737",
+    "measurements": {
+      "length_mm": 107.772,
+      "weight_g": 61.344,
+      "hardness_hrc": 133.036,
+      "diameter_mm": 57.174
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "weight_g: 61.344 > USL",
+      "hardness_hrc: 133.036 > USL",
+      "diameter_mm: 57.174 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2012",
+    "product": "Widget-B",
+    "quantity": 204,
+    "timestamp": "2026-02-26T14:02:55.673737",
+    "measurements": {
+      "length_mm": 91.024,
+      "weight_g": 190.93,
+      "hardness_hrc": 91.698,
+      "diameter_mm": 142.976
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 91.024 < LSL",
+      "weight_g: 190.930 > USL",
+      "hardness_hrc: 91.698 < LSL",
+      "diameter_mm: 142.976 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2013",
+    "product": "Widget-A",
+    "quantity": 376,
+    "timestamp": "2026-02-26T16:02:55.673737",
+    "measurements": {
+      "length_mm": 149.745,
+      "weight_g": 101.71,
+      "hardness_hrc": 137.529,
+      "diameter_mm": 182.691
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 149.745 > USL",
+      "weight_g: 101.710 < LSL",
+      "hardness_hrc: 137.529 < LSL",
+      "diameter_mm: 182.691 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2014",
+    "product": "Gadget-X",
+    "quantity": 333,
+    "timestamp": "2026-02-26T18:02:55.673737",
+    "measurements": {
+      "length_mm": 175.857,
+      "weight_g": 59.292,
+      "hardness_hrc": 111.456,
+      "diameter_mm": 119.282
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 175.857 > USL",
+      "weight_g: 59.292 > USL",
+      "hardness_hrc: 111.456 > USL",
+      "diameter_mm: 119.282 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2015",
+    "product": "Widget-B",
+    "quantity": 421,
+    "timestamp": "2026-02-26T20:02:55.673737",
+    "measurements": {
+      "length_mm": 113.262,
+      "weight_g": 73.089,
+      "hardness_hrc": 79.877,
+      "diameter_mm": 186.119
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 113.262 < LSL",
+      "weight_g: 73.089 < LSL",
+      "hardness_hrc: 79.877 < LSL",
+      "diameter_mm: 186.119 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2016",
+    "product": "Widget-A",
+    "quantity": 128,
+    "timestamp": "2026-02-26T22:02:55.673737",
+    "measurements": {
+      "length_mm": 110.747,
+      "weight_g": 73.121,
+      "hardness_hrc": 176.498,
+      "diameter_mm": 150.972
+    },
+    "defects_found": 4,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 110.747 < LSL",
+      "weight_g: 73.121 < LSL",
+      "hardness_hrc: 176.498 < LSL",
+      "diameter_mm: 150.972 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2017",
+    "product": "Widget-A",
+    "quantity": 330,
+    "timestamp": "2026-02-27T00:02:55.673737",
+    "measurements": {
+      "length_mm": 67.215,
+      "weight_g": 73.952,
+      "hardness_hrc": 138.715,
+      "diameter_mm": 144.886
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 67.215 < LSL",
+      "weight_g: 73.952 < LSL",
+      "hardness_hrc: 138.715 < LSL",
+      "diameter_mm: 144.886 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2018",
+    "product": "Gadget-X",
+    "quantity": 260,
+    "timestamp": "2026-02-27T02:02:55.673737",
+    "measurements": {
+      "length_mm": 122.452,
+      "weight_g": 125.794,
+      "hardness_hrc": 195.315,
+      "diameter_mm": 196.46
+    },
+    "defects_found": 5,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 122.452 > USL",
+      "weight_g: 125.794 > USL",
+      "hardness_hrc: 195.315 > USL",
+      "diameter_mm: 196.460 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2019",
+    "product": "Gadget-X",
+    "quantity": 107,
+    "timestamp": "2026-02-27T04:02:55.673737",
+    "measurements": {
+      "length_mm": 199.219,
+      "weight_g": 163.918,
+      "hardness_hrc": 174.722,
+      "diameter_mm": 139.515
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 199.219 > USL",
+      "weight_g: 163.918 > USL",
+      "hardness_hrc: 174.722 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2020",
+    "product": "Widget-A",
+    "quantity": 403,
+    "timestamp": "2026-02-27T06:02:55.673737",
+    "measurements": {
+      "length_mm": 51.17,
+      "weight_g": 93.016,
+      "hardness_hrc": 93.313,
+      "diameter_mm": 109.777
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 51.170 < LSL",
+      "weight_g: 93.016 < LSL",
+      "hardness_hrc: 93.313 < LSL",
+      "diameter_mm: 109.777 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2021",
+    "product": "Widget-A",
+    "quantity": 323,
+    "timestamp": "2026-02-27T08:02:55.673737",
+    "measurements": {
+      "length_mm": 140.811,
+      "weight_g": 111.711,
+      "hardness_hrc": 78.464,
+      "diameter_mm": 168.259
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 140.811 > USL",
+      "weight_g: 111.711 < LSL",
+      "hardness_hrc: 78.464 < LSL",
+      "diameter_mm: 168.259 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2022",
+    "product": "Gadget-X",
+    "quantity": 302,
+    "timestamp": "2026-02-27T10:02:55.673737",
+    "measurements": {
+      "length_mm": 122.495,
+      "weight_g": 143.012,
+      "hardness_hrc": 175.836,
+      "diameter_mm": 140.931
+    },
+    "defects_found": 5,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 122.495 > USL",
+      "weight_g: 143.012 > USL",
+      "hardness_hrc: 175.836 > USL",
+      "diameter_mm: 140.931 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2023",
+    "product": "Widget-A",
+    "quantity": 311,
+    "timestamp": "2026-02-27T12:02:55.673737",
+    "measurements": {
+      "length_mm": 58.457,
+      "weight_g": 154.218,
+      "hardness_hrc": 57.875,
+      "diameter_mm": 148.661
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 58.457 < LSL",
+      "weight_g: 154.218 > USL",
+      "hardness_hrc: 57.875 < LSL",
+      "diameter_mm: 148.661 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2024",
+    "product": "Widget-B",
+    "quantity": 168,
+    "timestamp": "2026-02-27T14:02:55.673737",
+    "measurements": {
+      "length_mm": 50.575,
+      "weight_g": 153.13,
+      "hardness_hrc": 92.175,
+      "diameter_mm": 103.312
+    },
+    "defects_found": 0,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 50.575 < LSL",
+      "weight_g: 153.130 > USL",
+      "hardness_hrc: 92.175 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2025",
+    "product": "Gadget-X",
+    "quantity": 78,
+    "timestamp": "2026-02-27T16:02:55.673737",
+    "measurements": {
+      "length_mm": 122.484,
+      "weight_g": 124.388,
+      "hardness_hrc": 188.56,
+      "diameter_mm": 69.279
+    },
+    "defects_found": 4,
+    "inspector": "Alice",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 122.484 > USL",
+      "weight_g: 124.388 > USL",
+      "hardness_hrc: 188.560 > USL",
+      "diameter_mm: 69.279 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2026",
+    "product": "Widget-B",
+    "quantity": 222,
+    "timestamp": "2026-02-27T18:02:55.673737",
+    "measurements": {
+      "length_mm": 170.09,
+      "weight_g": 126.628,
+      "hardness_hrc": 78.179,
+      "diameter_mm": 97.53
+    },
+    "defects_found": 5,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 170.090 < LSL",
+      "weight_g: 126.628 > USL",
+      "hardness_hrc: 78.179 < LSL",
+      "diameter_mm: 97.530 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2027",
+    "product": "Gadget-X",
+    "quantity": 137,
+    "timestamp": "2026-02-27T20:02:55.673737",
+    "measurements": {
+      "length_mm": 105.261,
+      "weight_g": 171.468,
+      "hardness_hrc": 93.908,
+      "diameter_mm": 49.11
+    },
+    "defects_found": 0,
+    "inspector": "Charlie",
+    "status": "inspected",
+    "failures": [
+      "weight_g: 171.468 > USL",
+      "diameter_mm: 49.110 < LSL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2028",
+    "product": "Widget-B",
+    "quantity": 446,
+    "timestamp": "2026-02-27T22:02:55.673737",
+    "measurements": {
+      "length_mm": 113.561,
+      "weight_g": 121.113,
+      "hardness_hrc": 90.439,
+      "diameter_mm": 129.591
+    },
+    "defects_found": 0,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "length_mm: 113.561 < LSL",
+      "hardness_hrc: 90.439 < LSL",
+      "diameter_mm: 129.591 > USL"
+    ]
+  },
+  {
+    "lot_id": "LOT-2029",
+    "product": "Widget-B",
+    "quantity": 94,
+    "timestamp": "2026-02-28T00:02:55.673737",
+    "measurements": {
+      "length_mm": 183.951,
+      "weight_g": 86.958,
+      "hardness_hrc": 50.756,
+      "diameter_mm": 169.806
+    },
+    "defects_found": 0,
+    "inspector": "Bob",
+    "status": "inspected",
+    "failures": [
+      "weight_g: 86.958 < LSL",
+      "hardness_hrc: 50.756 < LSL",
+      "diameter_mm: 169.806 > USL"
+    ]
+  }
+]

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎛️ EmpireHazeClaw Command Center</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --bg-card: #1a1a24;
+            --primary: #00ff88;
+            --secondary: #ff3366;
+            --accent: #7c3aed;
+            --text: #fff;
+            --text-dim: #888;
+            --text-muted: #555;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #1a1a24 0%, #0a0a0f 100%);
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0,255,136,0.1);
+            border: 1px solid var(--primary);
+            border-radius: 50px;
+            font-size: 0.875rem;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .grid-full {
+            grid-column: 1 / -1;
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .card-title {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+        }
+        
+        .card-icon {
+            font-size: 1.25rem;
+        }
+        
+        /* Stats */
+        .stat {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-dim);
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        /* Services */
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .service {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        
+        .service-name {
+            font-weight: 500;
+        }
+        
+        .service-port {
+            color: var(--text-dim);
+            font-size: 0.875rem;
+        }
+        
+        .service-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .status-ok {
+            background: rgba(0,255,136,0.2);
+            color: var(--primary);
+        }
+        
+        .status-error {
+            background: rgba(255,51,102,0.2);
+            color: var(--secondary);
+        }
+        
+        /* Agents */
+        .agent-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .agent {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        
+        .agent-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        
+        .agent-info {
+            flex: 1;
+        }
+        
+        .agent-name {
+            font-weight: 600;
+        }
+        
+        .agent-task {
+            font-size: 0.875rem;
+            color: var(--text-dim);
+        }
+        
+        /* Quick Actions */
+        .actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--bg);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: var(--text);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Products */
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        
+        .product-info h4 {
+            margin-bottom: 0.25rem;
+        }
+        
+        .product-price {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .product-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+        }
+        
+        /* Timestamp */
+        .timestamp {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-align: right;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🎛️ EmpireHazeClaw</div>
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            <span>System Online</span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Stats Row -->
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">💰 Revenue Heute</span>
+                    <span class="card-icon">💵</span>
+                </div>
+                <div class="stat">€0</div>
+                <div class="stat-label">0 Transaktionen</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🤖 Aktive Agenten</span>
+                    <span class="card-icon">🤖</span>
+                </div>
+                <div class="stat">0</div>
+                <div class="stat-label">von 10 verfügbar</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🛍️ Produkte Live</span>
+                    <span class="card-icon">🚀</span>
+                </div>
+                <div class="stat">4</div>
+                <div class="stat-label">1 SaaS + 3 Content</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">⚡ Events Heute</span>
+                    <span class="card-icon">📡</span>
+                </div>
+                <div class="stat">28</div>
+                <div class="stat-label">Alle verarbeitet</div>
+            </div>
+        </div>
+        
+        <!-- Services & Agents -->
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🟢 Live Services</span>
+                    <span class="card-icon">🔌</span>
+                </div>
+                <div class="service-list">
+                    <div class="service">
+                        <div>
+                            <div class="service-name">AI Chatbot SaaS</div>
+                            <div class="service-port">Port 8896</div>
+                        </div>
+                        <span class="service-status status-ok">Online</span>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <div class="service-name">Trading Bot</div>
+                            <div class="service-port">Port 8001</div>
+                        </div>
+                        <span class="service-status status-ok">Online</span>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <div class="service-name">Discord Bot</div>
+                            <div class="service-port">Port 8892</div>
+                        </div>
+                        <span class="service-status status-ok">Online</span>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <div class="service-name">AI Pet Generator</div>
+                            <div class="service-port">Port 5000</div>
+                        </div>
+                        <span class="service-status status-ok">Online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🤖 Agenten Status</span>
+                    <span class="card-icon">🧠</span>
+                </div>
+                <div class="agent-list">
+                    <div class="agent">
+                        <div class="agent-icon">🔍</div>
+                        <div class="agent-info">
+                            <div class="agent-name">Researcher</div>
+                            <div class="agent-task">Letzte: POD Trends</div>
+                        </div>
+                        <span class="service-status status-ok">Idle</span>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">✍️</div>
+                        <div class="agent-info">
+                            <div class="agent-name">Content</div>
+                            <div class="agent-task">Letzte: Blog Post</div>
+                        </div>
+                        <span class="service-status status-ok">Idle</span>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">💻</div>
+                        <div class="agent-info">
+                            <div class="agent-name">Dev</div>
+                            <div class="agent-task">Letzte: SaaS Deployment</div>
+                        </div>
+                        <span class="service-status status-ok">Idle</span>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">🎨</div>
+                        <div class="agent-info">
+                            <div class="agent-name">POD</div>
+                            <div class="agent-task">Wartet auf Ideas</div>
+                        </div>
+                        <span class="service-status status-ok">Idle</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">🚀 Live Produkte</span>
+                    <span class="card-icon">🛍️</span>
+                </div>
+                <div class="product-list">
+                    <div class="product">
+                        <div class="product-info">
+                            <h4>AI Pet Name Generator</h4>
+                            <span class="product-price">€29-99/Monat</span>
+                        </div>
+                        <span class="product-status status-ok">SaaS</span>
+                    </div>
+                    <div class="product">
+                        <div class="product-info">
+                            <h4>KI für Anfänger</h4>
+                            <span class="product-price">€14.99</span>
+                        </div>
+                        <span class="product-status status-ok">eBook</span>
+                    </div>
+                    <div class="product">
+                        <div class="product-info">
+                            <h4>Productivity Dashboard</h4>
+                            <span class="product-price">€9.99</span>
+                        </div>
+                        <span class="product-status status-ok">Notion</span>
+                    </div>
+                    <div class="product">
+                        <div class="product-info">
+                            <h4>Fitness Tracker App</h4>
+                            <span class="product-price">€19.99</span>
+                        </div>
+                        <span class="product-status status-ok">App</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">⚙️ Quick Actions</span>
+                    <span class="card-icon">🎯</span>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-primary" onclick="runAgent('research')">🔍 Research</button>
+                    <button class="btn btn-secondary" onclick="runAgent('content')">✍️ Content</button>
+                    <button class="btn btn-secondary" onclick="runAgent('dev')">💻 Dev</button>
+                    <button class="btn btn-secondary" onclick="runAgent('pod')">🎨 POD</button>
+                    <button class="btn btn-secondary" onclick="refresh()">🔄 Refresh</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Websites -->
+        <div class="grid">
+            <div class="card grid-full">
+                <div class="card-header">
+                    <span class="card-title">🌐 Websites Status</span>
+                </div>
+                <div class="service-list">
+                    <div class="service">
+                        <div class="service-name">empirehazeclaw.de</div>
+                        <span class="service-status status-ok">✅ Online</span>
+                    </div>
+                    <div class="service">
+                        <div class="service-name">empirehazeclaw.com</div>
+                        <span class="service-status status-ok">✅ Online</span>
+                    </div>
+                    <div class="service">
+                        <div class="service-name">empirehazeclaw.store</div>
+                        <span class="service-status status-ok">✅ Online</span>
+                    </div>
+                    <div class="service">
+                        <div class="service-name">empirehazeclaw.info</div>
+                        <span class="service-status status-ok">✅ Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="timestamp">Stand: 21.03.2026 16:01 UTC | Autonomy Score: 8/10</p>
+    </div>
+    
+    <script>
+        function runAgent(agent) {
+            alert('Agent ' + agent + ' wird gestartet...');
+            // Would trigger the agent via API
+        }
+        
+        function refresh() {
+            location.reload();
+        }
+        
+        // Auto refresh every 60 seconds
+        setTimeout(refresh, 60000);
+    </script>
+</body>
+</html>

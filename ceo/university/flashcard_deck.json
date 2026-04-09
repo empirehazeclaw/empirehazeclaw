@@ -1,0 +1,185 @@
+{
+  "cards": [
+    {
+      "id": "oc_001",
+      "topic": "Prompt Injection",
+      "question": "Was ist der Unterschied zwischen Direct und Indirect Prompt Injection?",
+      "answer": "Direct: Angreifer fügt bösartigen Prompt direkt in User-Input ein. Indirect: Bösartiger Text wird in externen Daten (Web, DB) versteckt und dann vom Model als Teil des Kontexts interpretiert.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_002",
+      "topic": "Prompt Injection",
+      "question": "Nenne 3 Verteidigungsstrategien gegen Prompt Injection",
+      "answer": "1) Input-Validation & Sanitization, 2) Kontext-Isolation, 3) Prompt/Ausgabe-Filtering, 4) Least Privilege für Tool-Nutzung",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_003",
+      "topic": "RBAC",
+      "question": "Was bedeutet RBAC und wofür steht es?",
+      "answer": "Role-Based Access Control. Ein Sicherheitsmodell das Zugriffsrechte anhand von Rollen vergibt statt an einzelne User.",
+      "difficulty": 1,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_004",
+      "topic": "RBAC",
+      "question": "Was ist das Principle of Least Privilege?",
+      "answer": "Jeder Agent/User erhält nur die minimalen Rechte die nötig sind um seine Aufgabe zu erledigen.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_005",
+      "topic": "Tool Security",
+      "question": "Was ist Tool-Input-Validation?",
+      "answer": "Die Prüfung und Bereinigung von Eingabeparametern BEVOR sie an ein Tool übergeben werden. Verhindert Injection-Angriffe.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_006",
+      "topic": "Tool Security",
+      "question": "Nenne die 5 Schritte für sichere Tool-Nutzung",
+      "answer": "1) Input validieren, 2) Allowlist für Tools, 3) Rate-Limiting, 4) Output sanitizen, 5) Audit-Logging",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_007",
+      "topic": "Sessions",
+      "question": "Was ist Context Compaction in OpenClaw?",
+      "answer": "Wenn der Conversation Context zu groß wird, komprimiert OpenClaw ihn zu einer Zusammenfassung. Wichtige Infos bleiben, Details gehen verloren.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_008",
+      "topic": "Sessions",
+      "question": "Was ist der Unterschied zwischen main, isolated und subagent Sessions?",
+      "answer": "main: Normale User-Konversation. isolated: Isolierte Bootstrap-Umgebung (kein Context Leak). subagent: Child-Session für parallele Tasks.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_009",
+      "topic": "Memory",
+      "question": "Welche Memory-Tools gibt es in OpenClaw?",
+      "answer": "memory_search (semantische Suche), memory_get (Lesen), lcm_grep (regex), lcm_expand_query (tiefe Rekursion), lcm_describe (Summary)",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_010",
+      "topic": "Memory",
+      "question": "Wann nutzt man lcm_expand_query statt lcm_grep?",
+      "answer": "lcm_expand_query bei komplexen Fragen wo tiefe Rekursion nötig ist + Quellen-Zitation. lcm_grep für schnelle regex/text-Suchen.",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_011",
+      "topic": "Multi-Agent",
+      "question": "Was ist die Sovereign Architecture in OpenClaw?",
+      "answer": "Der CEO (ClawMaster) ist der zentrale Orchestrator. Andere Agents sind spezialisierte Worker. CEO analysiert, delegiert, validiert — baut selbst nichts direkt.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_012",
+      "topic": "Multi-Agent",
+      "question": "Was ist das Handshake-Protokoll im Multi-Agent Workflow?",
+      "answer": "Task → Agent arbeitet → Report an CEO → QC validiert → CEO markiert Done → Nico informiert. KEIN Task gilt als erledigt bis QC!",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_013",
+      "topic": "Multi-Agent",
+      "question": "Wie kommunizieren Agents in OpenClaw?",
+      "answer": "sessions_send(sessionKey, message) sendet an andere Session. NICHT sessions_spawn für Agent-to-Agent — das ist verboten!",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_014",
+      "topic": "Security",
+      "question": "Was ist Context Splitting Attack?",
+      "answer": "Wenn während eines laufenden Tasks eine neue Nachricht kommt, 'vergisst' der Agent den aktuellen Stand. Lösung: Checkpoint-Regel — NIEMALS abbrechen!",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_015",
+      "topic": "Security",
+      "question": "Was sind Exec Security Modes in OpenClaw?",
+      "answer": "deny: Alles verboten was nicht explizit erlaubt. allowlist: Nur was auf der Allowlist steht. full: Voller Zugriff (unsicher!).",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_016",
+      "topic": "Security",
+      "question": "Was ist Memory Poisoning?",
+      "answer": "Ein Angriff bei dem bösartige Daten ins Memory/Long-term Storage eingeschleust werden. Agent könnte später schädlichen Anweisungen folgen.",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_017",
+      "topic": "Cron",
+      "question": "Was ist der Unterschied zwischen at, cron und every?",
+      "answer": "at: Einmalig zu bestimmter Zeit. cron: Wiederholt nach Expression (z.B. So 18:00). every: Wiederholt in Intervallen (z.B. alle 10min).",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_018",
+      "topic": "Cron",
+      "question": "Was bedeutet 'wakeMode: now' bei Cron-Jobs?",
+      "answer": "Der Cron-Job startet sofort und läuft durch bis zum Abschluss (nicht nur kurzer Heartbeat). Wichtig für längere Tasks wie University Loops.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_019",
+      "topic": "Workflow",
+      "question": "Was ist die QC-Pflicht Checkpoint-Regel?",
+      "answer": "KEIN Task gilt als 'Erledigt' bis: 1) Agent Report gesendet, 2) QC Officer validiert, 3) CEO 'Done' markiert.",
+      "difficulty": 2,
+      "last_shown": null,
+      "wrong_count": 0
+    },
+    {
+      "id": "oc_020",
+      "topic": "Workflow",
+      "question": "Was ist der Zettelkasten Workflow?",
+      "answer": "Atomic Notes System: Jede Idee = eine Note mit Datum-Tag. Weekly Reviews vernetzen Wissen. Daily Capture (21:00) + Weekly Review (So 22:00).",
+      "difficulty": 3,
+      "last_shown": null,
+      "wrong_count": 0
+    }
+  ],
+  "deck_version": "1.0"
+}
