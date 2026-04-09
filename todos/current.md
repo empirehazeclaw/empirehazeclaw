@@ -48,6 +48,19 @@
 
 ---
 
+## 🟡 OFFEN - MITTEL (HEUTE)
+
+| Task | Status | Wer | Notes |
+|------|--------|-----|-------|
+| KG Relations = 0 | 🟡 Offen | Data Manager | Knowledge Graph hat 150 Entities aber 0 Relations — Build-Skript prüfen |
+| Fleeting Notes veraltet | 🟡 Offen | Data Manager | Letzte Note vom 2026-04-07 — wieder aufnehmen |
+| OpenClaw Dreaming integrieren | 🟡 Offen | Data Manager | v2026.4.9 neues Feature — Data Manager sollte integrieren |
+| RBAC Aktivierung | 🟡 Offen | Security | Approval Workflows fehlen noch |
+| Adventure Engine & Quiz verbinden | 🟡 Offen | Builder | Module könnten modular verbunden werden |
+| MCP Protocol Script evaluieren | 🟡 Offen | Builder | Potential für Flotten-Bridge |
+
+---
+
 ## 🟢 OFFEN - PRIORITÄT 3 (NÄCHSTE WOCHEN)
 
 | Task | Status | Wer |

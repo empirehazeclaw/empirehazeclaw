@@ -1,6 +1,6 @@
 # HEARTBEAT.md - CEO Active Tasks
 
-*Last updated: 2026-04-08 20:20 UTC*
+*Last updated: 2026-04-09 08:56 UTC*
 
 ---
 
@@ -24,16 +24,40 @@
 | 1 | Resend Pro kaufen | ⏳ |
 | 2 | Twitter OAuth erneuern | ⏳ |
 | 3 | Reddit API Keys beantragen | ⏳ |
+| 4 | KG Relations = 0 | ⏳ Data Manager |
+| 5 | Fleeting Notes veraltet | ⏳ Data Manager |
+| 6 | OpenClaw Dreaming integrieren | ⏳ Data Manager |
+| 7 | RBAC Aktivierung | ⏳ Security |
+| 8 | Adventure Engine & Quiz verbinden | ⏳ Builder |
+| 9 | MCP Protocol Script evaluieren | ⏳ Builder |
 
 ---
 
-## ✅ HEUTE ERLEDIGT (2026-04-08)
+## ✅ HEUTE ERLEDIGT (2026-04-09)
 
 | Task | Result |
 |------|--------|
-| CEO Briefing | ✅ Endlich durchgelaufen (19:55 UTC) |
-| Heartbeat Storm | ✅ Gefixt (30m Intervall) |
-| Gateway Auth + Brave API | ✅ Gestern rotiert |
+| Phase 1 Workspaces | ✅ data/, research/, qc/ mit SOUL.md + AGENTS.md |
+| Memory Dirs | ✅ memory/notes/{fleeting,permanent,project} + archive |
+| Phase 1+2 Test | ✅ ALL GREEN |
+| GitHub Backup | ✅ Push `0e4b1a9d` |
+| Phase 3 Rollback | ✅ `/rollback/phase3-session-config/` |
+| 5 Agent-Cron-Jobs getestet | ✅ Security, Data, Research OK — Builder+QC läuft noch |
+| KG Relations = 0 | 🟡 Data Manager Problem entdeckt |
+
+---
+
+## 🆕 PHASE 3 PROBLEME (2026-04-09)
+
+| Problem | Severity | Agent |
+|---------|----------|-------|
+| KG Relations = 0 (150 Entities, 0 Relations) | 🟡 MEDIUM | Data Manager |
+| Fleeting veraltet (2 Tage alt) | 🟡 MEDIUM | Data Manager |
+| OpenClaw v2026.4.9 Dreaming Feature | 🟡 MEDIUM | Research → Data Manager |
+| Buffer Token INVALID | 🔴 KRITISCH | Security |
+| Leonardo AI Key INVALID | 🔴 KRITISCH | Security |
+| 6 API Keys pending | ⚠️ HOCH | Security |
+| RBAC nicht aktiviert | 🟢 LOW | Security |
 
 ---
 
@@ -65,11 +89,16 @@
 | 23:00 | github_backup.sh | GitHub Backup (NEU!) |
 | So 22:00 | weekly_review_zettel.py | Wochenreview |
 
-### OpenClaw Agent Jobs (4 Jobs)
+### OpenClaw Agent Jobs (9 Jobs)
 | Zeit | Job | Status | Notes |
 |------|-----|--------|-------|
 | 09:00 UTC | CEO Daily Briefing | ✅ OK | Isolated, mit Fallback |
 | 09:00 UTC | Daily Flashcards | ✅ OK | Jetzt an Telegram 5392634979 |
+| 10:00 UTC | Security Officer Daily Scan | ✅ OK | NEW 2026-04-09 |
+| 11:00 UTC | Data Manager Daily Audit | ✅ OK | NEW 2026-04-09 |
+| 13:00 UTC | Research Daily Roundup | ✅ OK | NEW 2026-04-09 |
+| 17:00 UTC | Builder Daily Build Report | ⏳ LÄUFT | NEW 2026-04-09 |
+| 18:00 UTC | QC Officer Daily Validation | ⏳ LÄUFT | NEW 2026-04-09 |
 | So 18:00 UTC | University Self-Improvement | ✅ OK | - |
 | So 19:00 UTC | Agent Training Sunday | ✅ OK | Fallback gpt-4o-mini |
 
