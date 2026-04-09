@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "created": "2026-04-09",
+  "description": "Blocked packages from ClawHub due to malicious activity",
+  "blockedCount": 824,
+  "packages": [
+    "env-stealer", "dotenv-grab", "secrets-extract", "api-key-hunter",
+    "token-robot", "creds-ninja", "env-grab", "secret-puller",
+    "key-theft", "npm-creds", "dotenv-theft", "shell-inject",
+    "exec-runner", "bash-grab", "code-exec", "eval-agent",
+    "dynamic-load", "require-inject", "module-inject", "import-grab",
+    "remote-code", "shell_exec", "system-command", "os-exec",
+    "cmd-runner", "bash-exec", "sh-execute", "data-exfil",
+    "info-collect", "telemetry-steal", "log-grab", "file-steal",
+    "data-pull", "network-grab", "http-exfil", "curl-steal",
+    "wget-data", "fetch-exfil", "credential-grab", "token-extract",
+    "aws-key-hunt", "gcp-creds", "azure-secrets", "secret-extract-npm",
+    "env-confiscator", "keysniper", "creds-snatcher", "dotenv-robber"
+  ],
+  "patterns": [
+    "^env-stealer", "^dotenv-grab", "^secrets-", "^api-key-",
+    "^token-", "^creds-", "^key-", "^shell-", "^exec-",
+    "^bash-", "^code-", "^eval-", "^remote-", "^system-",
+    "stealer$", "grab$", "injector$", "exfiltrat", "exfil$"
+  ],
+  "allowedOrigins": [
+    "clawhub.ai/official/*"
+  ],
+  "requireVetting": true
+}
