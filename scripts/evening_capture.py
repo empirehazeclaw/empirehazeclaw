@@ -37,6 +37,7 @@ def create_daily_note():
     today = datetime.now().strftime("%Y-%m-%d")
     filename = NOTES_DIR / f"{today}-insight.md"
     
+    # Check if file actually exists on disk
     if filename.exists():
         print(f"Note for {today} already exists: {filename}")
         return
@@ -46,6 +47,9 @@ def create_daily_note():
         date=today,
         tags="insight,evening,capture"
     )
+    
+    # Ensure directory exists
+    NOTES_DIR.mkdir(parents=True, exist_ok=True)
     
     with open(filename, 'w') as f:
         f.write(content)
