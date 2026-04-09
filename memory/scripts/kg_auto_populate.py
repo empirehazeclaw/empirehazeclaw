@@ -34,8 +34,20 @@ def save_kg(kg):
         json.dump(kg, f, indent=2)
     print(f"✅ Knowledge Graph updated: {len(kg['entities'])} entities, {len(kg.get('relationships', []))} relations")
 
+def validate_path(filepath):
+    """Validate filepath to prevent path traversal attacks"""
+    # SECURITY: Block path traversal
+    if '..' in str(filepath):
+        raise ValueError(f"Path traversal detected: {filepath}")
+    # SECURITY: Only allow within memory workspace
+    resolved = os.path.realpath(filepath)
+    if not resolved.startswith(str(MEMORY_DIR)):
+        raise ValueError(f"Path outside memory dir: {filepath}")
+    return filepath
+
 def extract_entities_from_file(filepath):
     """Extract potential entities from a markdown file."""
+    validate_path(filepath)  # SECURITY: Validate path
     entities = []
     try:
         with open(filepath, 'r') as f:

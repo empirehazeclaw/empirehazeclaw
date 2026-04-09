@@ -27,8 +27,21 @@ CHANNELS = {
     "instagram": "69bbe5e67be9f8b171711108"
 }
 
+def validate_prompt(prompt):
+    """Input validation for prompts - prevents prompt injection"""
+    if not prompt or len(prompt) > 1000:
+        raise ValueError("Prompt must be 1-1000 characters")
+    # Block common injection patterns
+    blocked = ["ignore", "disregard", "previous instructions", "[system]"]
+    prompt_lower = prompt.lower()
+    for pattern in blocked:
+        if pattern in prompt_lower:
+            raise ValueError(f"Prompt contains blocked pattern: {pattern}")
+    return prompt
+
 def fal_image(prompt):
     """Generate image with fal.ai"""
+    prompt = validate_prompt(prompt)  # SECURITY: Validate input
     print(f"🎨 Generating image: {prompt[:50]}...")
     
     import requests
