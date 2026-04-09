@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-09T13:25:00Z",
+  "task": "LCM ↔ MEMORY.md Sync Setup",
+  "status": "✅ COMPLETE",
+  "components_created": {
+    "MEMORY.md": {
+      "path": "/home/clawbot/.openclaw/workspace/memory/MEMORY.md",
+      "size": "1506 bytes",
+      "contents": "Central fleet memory hub with decisions, architecture, credentials refs, system status"
+    },
+    "lcm_memory_sync.py": {
+      "path": "/home/clawbot/.openclaw/workspace/memory/scripts/lcm_memory_sync.py",
+      "function": "Extracts key decisions from LCM summaries (last 2h) and appends to MEMORY.md",
+      "sync_interval": "2 hours (configurable)"
+    }
+  },
+  "sync_logic": {
+    "trigger": "Every 2 hours via cron",
+    "source": "LCM summaries table (lcm.db)",
+    "extraction": "Lines with ✅ 🔴 ⚠️ ** Decision: Action: markers",
+    "max_per_sync": "20 decisions",
+    "dedup": "By appending with date stamps"
+  },
+  "cron_needed": {
+    "schedule": "Every 2 hours",
+    "command": "python3 /home/clawbot/.openclaw/workspace/memory/scripts/lcm_memory_sync.py",
+    "note": "Cron not yet created - needs to be added"
+  },
+  "next_steps": [
+    "Add cron job: `0 */2 * * * python3 /home/clawbot/.openclaw/workspace/memory/scripts/lcm_memory_sync.py`",
+    "Test sync with recent summaries (wait for new LCM compaction)"
+  ],
+  "recommendations": [
+    "✅ MEMORY.md zentralisiert und durchsuchbar",
+    "✅ Sync-Script extrahiert Decisions automatisch",
+    "⚠️ Cron für 2h Sync noch hinzufügen",
+    "ℹ️ MEMORY.md jetzt im workspace/memory/ statt root"
+  ]
+}

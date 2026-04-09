@@ -1,0 +1,72 @@
+{
+  "agent": "security",
+  "timestamp": "2026-04-09T18:22:37.411880Z",
+  "status": "alive",
+  "checks": {
+    "gateway": {
+      "status": "reachable",
+      "port": 18789
+    },
+    "memory": {
+      "percent": 16.6,
+      "used_gb": 1.29,
+      "total_gb": 7.75,
+      "warning": false
+    },
+    "disk": {
+      "/": {
+        "percent": 27.2,
+        "free_gb": 69.72,
+        "warning": false
+      },
+      "/home": {
+        "percent": 27.2,
+        "free_gb": 69.72,
+        "warning": false
+      },
+      "/tmp": {
+        "percent": 27.2,
+        "free_gb": 69.72,
+        "warning": false
+      }
+    },
+    "open_ports": {
+      "ports": [
+        {
+          "port": 40933,
+          "address": "127.0.0.1",
+          "warning": true
+        },
+        {
+          "port": 65529,
+          "address": "127.0.0.1",
+          "warning": true
+        }
+      ],
+      "safe_ports": [
+        18789,
+        18792,
+        6379,
+        2222,
+        80,
+        22,
+        3000,
+        5432,
+        443
+      ]
+    },
+    "failed_logins": {
+      "total_historical": 0,
+      "recent_24h_approx": 0,
+      "warning": false
+    },
+    "security_alerts": [],
+    "critical_files": {
+      "/home/clawbot/.openclaw/workspace/security/SOUL.md": true,
+      "/home/clawbot/.openclaw/workspace/security/AGENTS.md": true,
+      "/home/clawbot/.openclaw/workspace/security/skill_blocklist.json": true
+    }
+  },
+  "health": "ok",
+  "alert_count": 0
+}
