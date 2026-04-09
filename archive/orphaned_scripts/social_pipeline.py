@@ -19,7 +19,8 @@ import json
 
 # Config
 FAL_KEY = open('/home/clawbot/.keys/fal_key').read().strip()
-BUFFER_TOKEN = "***REDACTED***"
+# DEPRECATED: Buffer API Key is INVALID (401 OIDC rejected) — 2026-04-09
+# BUFFER_TOKEN = "***REDACTED***"
 ORG_ID = "69bab5f4723eb2195f93ba4c"
 CHANNELS = {
     "tiktok": "69bbdd587be9f8b17170ef0b",
