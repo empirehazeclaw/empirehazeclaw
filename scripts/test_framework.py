@@ -320,6 +320,24 @@ TESTS = {
         'test_func': 'get_notes',
         'description': 'Weekly Review Zettel'
     },
+    'evolve': {
+        'script': 'evolve.py',
+        'type': 'import_no_args',
+        'test_func': 'CapabilityEvolver',
+        'description': 'Capability Evolver'
+    },
+    'semantic_search': {
+        'script': 'semantic_search.py',
+        'type': 'import_no_args',
+        'test_func': 'load_documents',
+        'description': 'Semantic Search'
+    },
+    'vault': {
+        'script': 'vault.py',
+        'type': 'import_no_args',
+        'test_func': 'load_vault',
+        'description': 'Vault'
+    },
 }
 
 def load_script(script_name):
