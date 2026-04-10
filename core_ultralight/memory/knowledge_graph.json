@@ -2930,6 +2930,140 @@
         "quality",
         "daily"
       ]
+    },
+    "Sir-HazeClaw-Scripts": {
+      "type": "category",
+      "facts": [
+        {
+          "content": "Test Framework: 18 Tests, alle passing",
+          "source": "test_framework.py"
+        },
+        {
+          "content": "Habit Tracker: 8 habits, streak tracking",
+          "source": "habit_tracker.py"
+        },
+        {
+          "content": "Morning Routine: Automatisiert 6 morning checks",
+          "source": "morning_routine.py"
+        },
+        {
+          "content": "Evening Routine: Automatisiert evening workflow",
+          "source": "evening_routine.py"
+        },
+        {
+          "content": "Self-Evaluation: Trackt goals vs current state",
+          "source": "self_eval.py"
+        },
+        {
+          "content": "Quality Metrics: Commit/Backup tracking",
+          "source": "quality_metrics.py"
+        },
+        {
+          "content": "Deep Reflection: 10 deep questions f\u00fcr improvement",
+          "source": "deep_reflection.py"
+        }
+      ]
+    },
+    "Self-Improvement-Patterns": {
+      "type": "pattern",
+      "facts": [
+        {
+          "content": "Test Coverage: Ziel >80%, aktuell 29%",
+          "source": "self_eval.py"
+        },
+        {
+          "content": "Quality Score: 70/100 - Test Coverage ist Schwachstelle",
+          "source": "self_eval.py"
+        },
+        {
+          "content": "Commit Rhythm: 100+ commits/Tag m\u00f6glich bei Fokus",
+          "source": "quality_metrics.py"
+        },
+        {
+          "content": "Habit Streaks: Automatisch getrackt seit 2026-04-10",
+          "source": "habit_tracker.py"
+        }
+      ]
+    },
+    "Sir-HazeClaw-Capabilities": {
+      "type": "category",
+      "facts": [
+        {
+          "content": "Solo Fighter Mode: CEO als Hauptagent",
+          "source": "AGENTS.md"
+        },
+        {
+          "content": "Proaktiv: Handelt ohne zu warten",
+          "source": "SOUL.md"
+        },
+        {
+          "content": "Ehrlichkeit: Fehler sind OK, L\u00fcgen nicht",
+          "source": "SOUL.md"
+        },
+        {
+          "content": "Pr\u00e4vention: Probleme verhindern BEVOR sie passieren",
+          "source": "SOUL.md"
+        }
+      ]
+    },
+    "System-Architektur": {
+      "type": "knowledge",
+      "facts": [
+        {
+          "content": "Gateway: Port 18789, OpenClaw service",
+          "source": "HEARTBEAT.md"
+        },
+        {
+          "content": "Memory: KG mit 175 entities, 4649 relations",
+          "source": "KG stats"
+        },
+        {
+          "content": "Crons: 8 aktiv, 24 deaktiviert",
+          "source": "cron_monitor.py"
+        },
+        {
+          "content": "Scripts: 61 total, 18 getestet (29% coverage)",
+          "source": "test_framework.py"
+        }
+      ]
+    },
+    "Bad-Patterns-SirHazeClaw": {
+      "type": "pattern",
+      "facts": [
+        {
+          "content": "Loop Prevention: Niemals denselben Task 2x starten",
+          "source": "LOOP_PREVENTION.md"
+        },
+        {
+          "content": "Quality \u00fcber Quantit\u00e4t: Nicht mehr Commits um der Commits willen",
+          "source": "SOUL.md"
+        },
+        {
+          "content": "NIEMALS ClawHub Skills installieren - selbst bauen",
+          "source": "SOUL.md"
+        }
+      ]
+    },
+    "Good-Patterns-SirHazeClaw": {
+      "type": "pattern",
+      "facts": [
+        {
+          "content": "Morning/Evening Routines: Automatisiert",
+          "source": "morning_routine.py"
+        },
+        {
+          "content": "Test-Framework: 18 tests, alle passend",
+          "source": "test_framework.py"
+        },
+        {
+          "content": "Self-Evaluation: T\u00e4glich aktuell",
+          "source": "self_eval.py"
+        },
+        {
+          "content": "HEARTBEAT.md: Aktiver Stand der Tasks",
+          "source": "HEARTBEAT.md"
+        }
+      ]
     }
   },
   "last_updated": "2026-04-10T23:00:44.530817",
@@ -68022,6 +68156,56 @@
       "type": "implements",
       "weight": 0.7,
       "created_at": "2026-04-10T21:33:20.792830"
+    },
+    {
+      "from": "Sir-HazeClaw",
+      "to": "Sir-HazeClaw-Scripts",
+      "type": "created"
+    },
+    {
+      "from": "Sir-HazeClaw",
+      "to": "Self-Improvement-Patterns",
+      "type": "uses"
+    },
+    {
+      "from": "Sir-HazeClaw",
+      "to": "System-Architektur",
+      "type": "manages"
+    },
+    {
+      "from": "Sir-HazeClaw",
+      "to": "Good-Patterns-SirHazeClaw",
+      "type": "follows"
+    },
+    {
+      "from": "Sir-HazeClaw",
+      "to": "Bad-Patterns-SirHazeClaw",
+      "type": "avoids"
+    },
+    {
+      "from": "Test-Framework",
+      "to": "Sir-HazeClaw-Scripts",
+      "type": "tests"
+    },
+    {
+      "from": "Self-Evaluation",
+      "to": "Self-Improvement-Patterns",
+      "type": "tracks"
+    },
+    {
+      "from": "Habit-Tracker",
+      "to": "Sir-HazeClaw",
+      "type": "supports"
+    },
+    {
+      "from": "Morning-Routine",
+      "to": "Sir-HazeClaw",
+      "type": "supports"
+    },
+    {
+      "from": "Evening-Routine",
+      "to": "Sir-HazeClaw",
+      "type": "supports"
     }
   ]
 }
