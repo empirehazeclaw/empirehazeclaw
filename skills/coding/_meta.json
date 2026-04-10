@@ -1,0 +1,16 @@
+{
+  "name": "Coding Assistant",
+  "description": "AI Coding Assistance für Python, JavaScript, und Shell Scripts",
+  "version": "1.0.0",
+  "created": "2026-04-08",
+  "updated": "2026-04-10",
+  "ownerId": "ceo",
+  "capabilities": [
+    "Python coding",
+    "JavaScript/TypeScript",
+    "Shell scripting",
+    "Code review",
+    "Debugging"
+  ],
+  "status": "active"
+}
