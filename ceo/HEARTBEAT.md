@@ -30,7 +30,7 @@
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 | 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
 | 14 | Quick Check | 🟢 LOW | ✅ scripts/quick_check.py erstellt + getestet |
-| 17 | Cron Watchdog | 🟢 LOW | ✅ scripts/cron_watchdog.py erstellt + Cron eingerichtet |
+| 18 | System Report | 🟢 LOW | ✅ scripts/system_report.py erstellt + getestet |
 
 ---
 
