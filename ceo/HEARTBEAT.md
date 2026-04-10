@@ -19,12 +19,12 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Morning Brief verbessern | 🔴 HIGH | ✅ DONE |
+| - | Daily Scripts verbessert | 🔴 HIGH | ✅ DONE |
 
 ### Geplant (Next)
 | # | Task | Priorität |
 |---|------|-----------|
-| 1 | OpenRouter Known Limitation | 🟡 MED | Doc only |
+| 1 | kg_updater.py verbessern | 🟡 MED | Low priority |
 
 ---
 
@@ -32,11 +32,15 @@
 
 | # | Task | Datum |
 |---|------|-------|
+| 56 | 8 Daily Scripts verbessert (morning_brief, weekly_review, self_check, evening_summary, health_monitor, cron_monitor, daily_summary, auto_backup) | 2026-04-10 |
+| 55 | Auto Backup mit Verify + Stats | 2026-04-10 |
+| 54 | Cron Monitor verbessert (Telegram, Failed-only) | 2026-04-10 |
+| 53 | Health Monitor verbessert (KG, DB, Trends) | 2026-04-10 |
+| 52 | Evening Summary verbessert (Highlights, Trends, KG) | 2026-04-10 |
+| 51 | Daily Summary verbessert (Telegram, KG, Trends) | 2026-04-10 |
+| 50 | Weekly Review verbessert (Trends, KG, Insights) | 2026-04-10 |
+| 49 | Morning Brief verbessert (KG, Blockers, Trends) | 2026-04-10 |
 | 48 | 3 Skills erstellt (loop-prevention, qa-enforcer, backup-advisor) | 2026-04-10 |
-| 47 | Self-Management etabliert | 2026-04-10 |
-| 46 | Loop-Erkennung in self_check.py | 2026-04-10 |
-| 45 | Backup-Paranoia Logik verbessert | 2026-04-10 |
-| 44 | Scripts verbessert + getestet (16x) | 2026-04-10 |
 
 ---
 
