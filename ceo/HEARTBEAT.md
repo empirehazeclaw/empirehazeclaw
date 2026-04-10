@@ -30,7 +30,7 @@
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 | 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
 | 14 | Quick Check | 🟢 LOW | ✅ scripts/quick_check.py erstellt + getestet |
-| 22 | Weekly Review | 🟢 LOW | ✅ scripts/weekly_review.py erstellt + getestet |
+| 23 | KG Updater | 🟢 LOW | ✅ scripts/kg_updater.py erstellt + getestet |
 
 ---
 
