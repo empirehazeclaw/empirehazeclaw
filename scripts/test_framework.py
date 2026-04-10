@@ -132,6 +132,25 @@ TESTS = {
         'test_args': (True,),  # skip_reflection=True
         'description': 'Evening Routine'
     },
+    'kg_updater': {
+        'script': 'kg_updater.py',
+        'type': 'import_no_args',
+        'test_func': 'list_entities',
+        'description': 'KG Updater'
+    },
+    'kg_enhancer': {
+        'script': 'kg_enhancer.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'KG Enhancer'
+    },
+    'health_alert': {
+        'script': 'health_alert.py',
+        'type': 'import_with_args',
+        'test_func': 'should_alert',
+        'test_args': ('disk',),
+        'description': 'Health Alert'
+    },
 }
 
 def load_script(script_name):
@@ -202,7 +221,7 @@ def run_test(test_name, test_def):
             result = result[0]  # Take the first element (the report/string)
         
         # Functions that print but return None are OK
-        cli_functions = ['report', 'summary', 'main', 'routine', 'check', 'show']
+        cli_functions = ['report', 'summary', 'main', 'routine', 'check', 'show', 'list', 'stats']
         is_cli_function = any(x in test_func_name.lower() for x in cli_functions)
         
         if result is None:
