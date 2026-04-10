@@ -19,7 +19,7 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | System optimieren | 🔴 HIGH | 🔄 IN PROGRESS |
+| - | Morning Brief verbessern | 🔴 HIGH | ✅ DONE |
 
 ### Geplant (Next)
 | # | Task | Priorität |

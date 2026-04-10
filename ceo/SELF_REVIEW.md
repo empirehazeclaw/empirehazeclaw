@@ -62,6 +62,23 @@
 - pip cache gelegentlich cleanen
 - Alte Scripts archivieren statt behalten
 
+### 2026-04-10 (22:xx)
+**Task-Rhythmus eingeführt:**
+- PLAN → DOC → BACKUP → CHANGE → QC → TEST → FINAL DOC
+- Nicht mehr hopfen zwischen Tasks
+- Immer tief durcharbeiten
+
+**Morning Brief verbessert:**
+- KG stats hinzugefügt
+- Blockers aus HEARTBEAT
+- Trends (heute vs gestern)
+- Recommendations
+
+**Memory System vereinfacht:**
+- 7 unnötige Scripts gelöscht
+- Falsches kg.json gelöscht
+- Documentation aktualisiert
+
 **Nächste Schritte:**
 - SOUL v2 als Solo-Fighter leben
 - AUTONOMOUS_TRIGGERS befolgen
