@@ -119,21 +119,27 @@ def get_script_stats():
     scripts_dir = WORKSPACE / "scripts"
     scripts = list(scripts_dir.glob("*.py"))
     
-    tested = 0
-    for s in scripts:
-        if s.name.startswith('test_') or s.name.startswith('_'):
-            continue
-        test_path = scripts_dir / 'test' / f'test_{s.stem}.py'
-        if test_path.exists():
-            tested += 1
+    total = len([s for s in scripts if not s.name.startswith('_') and s.name != '__init__.py' and s.name != 'test_framework.py' and s.name != 'self_eval.py'])
     
-    total = len([s for s in scripts if not s.name.startswith('_') and s.name != '__init__.py'])
+    # Count unique scripts tested by test_framework
+    # Parse test_framework.py to extract tested scripts
+    test_framework_path = scripts_dir / 'test_framework.py'
+    tested = set()
+    
+    if test_framework_path.exists():
+        content = test_framework_path.read_text()
+        import re
+        # Find all 'script': 'xxx.py' patterns
+        matches = re.findall(r"'script': '(\w+\.py)'", content)
+        tested = set(matches)
+    
+    tested_count = len(tested)
     
     return {
         'total': total,
-        'tested': tested,
-        'untested': total - tested,
-        'test_rate': tested / total if total > 0 else 0
+        'tested': tested_count,
+        'untested': total - tested_count,
+        'test_rate': tested_count / total if total > 0 else 0
     }
 
 def evaluate_metric(metric_def, current_value):
