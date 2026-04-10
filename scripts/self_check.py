@@ -23,6 +23,11 @@ CRON_PATH = WORKSPACE.parent / "cron/jobs.json"
 # Bad patterns to avoid
 BAD_PATTERNS = [
     {
+        'name': 'Kolloquiale Ausdrücke',
+        'pattern': 'unter Brötchen, Quark, etc.',
+        'reason': 'Immer professionelle Sprache - kein Slang'
+    },
+    {
         'name': 'Warten nach Zusammenfassung',
         'pattern': 'Ich warte auf deine Antwort',
         'reason': 'Sollte nicht warten, sondern weitermachen'
