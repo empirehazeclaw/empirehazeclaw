@@ -1,53 +1,76 @@
-# 🔴 OPENROUTER API KEY ISSUE
+# 🔴 OPENROUTER ISSUE — UPDATED
 
-**Datum:** 2026-04-10
-**Status:** ⚠️ HIGH PRIORITY
-
----
-
-## PROBLEM
-
-5/6 OpenRouter Fallback-Modelle geben 401 Unauthorized Errors zurück.
+**Datum:** 2026-04-10 21:35 UTC
+**Status:** ⚠️ KNOWN LIMITATION (not blocker)
 
 ---
 
-## MÖGLICHE URSACHEN
+## ACTUAL SITUATION
 
-1. **API Key invalide** — Key wurde gelöscht oder zurückgesetzt
-2. **API Key expired** — OpenRouter Subscription abgelaufen
-3. **API Key ausgetauscht** — Neuer Key wurde generiert aber nicht eingetragen
-4. **Rate Limit** — Zu viele Anfragen
+After investigation:
+- **OpenRouter has NO API key configured**
+- Environment variable `OPENROUTER_API_KEY` is NOT SET
+- OpenRouter free models require a key to access
+- This is NOT an expired/invalid key — there was never one set (or it was removed)
 
----
-
-## LÖSUNG
-
-Master muss:
-
-1. **OpenRouter Dashboard öffnen:** https://openrouter.ai/keys
-2. **API Key prüfen** — Ist der Key noch aktiv?
-3. **Neuen Key generieren** wenn nötig
-4. **Key in vault.py speichern:**
-   ```bash
-   python3 scripts/vault.py set openrouter_key "sk-or-..."
-   ```
+**Impact:**
+- Fallback chain to OpenRouter is non-functional
+- System relies solely on MiniMax (primary model)
+- **This is fine** — MiniMax is working properly
 
 ---
 
-## TEMPORÄRE LÖSUNG
+## MINIMAX IS PRIMARY
 
-Bis der Key erneuert ist:
-- System nutzt nur das primäre Model
-- Fallback-Modelle sind deaktiviert
-
----
-
-## KONTEXT
-
-OpenRouter wird für AI Completions verwendet wenn das primäre Model fehlschlägt.
-
-Die 401 Errors zeigen dass der OpenRouter API Key nicht mehr funktioniert.
+```
+Default model: minimax/MiniMax-M2.7
+Status: ✅ WORKING
+Fallback: openrouter/* (non-functional without API key)
+```
 
 ---
 
-*Sir HazeClaw — 2026-04-10*
+## OPTIONS
+
+### Option A: Do Nothing (Recommended)
+- MiniMax is working fine
+- No critical functionality lost
+- Document as "known limitation"
+
+### Option B: Get OpenRouter API Key
+- Cost: ~$5-20/month for light usage
+- Would enable free models as fallback
+- Not necessary while MiniMax works
+
+### Option C: Remove Broken Fallbacks
+- Clean up config by removing non-functional OpenRouter entries
+- Reduces confusion
+
+---
+
+## CURRENT CONFIG
+
+```json
+{
+  "models": {
+    "providers": ["minimax", "openai", "openrouter"],
+    "fallbacks": [
+      "openrouter/google/gemma-4-31b-a4b-it:free",
+      "openrouter/google/gemma-3-27b-it:free", 
+      "openrouter/qwen/qwen3-coder:free"
+    ]
+  }
+}
+```
+
+---
+
+## RECOMMENDATION
+
+**Option A** — MiniMax works, no action needed.
+
+If Master wants OpenRouter fallbacks to work, provide an API key.
+
+---
+
+*Sir HazeClaw — Updated 2026-04-10 21:35 UTC*

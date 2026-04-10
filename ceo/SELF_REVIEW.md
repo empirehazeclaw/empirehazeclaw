@@ -48,6 +48,20 @@
 - Cron-Fehler früher erkennen
 - mehr proaktiv handeln
 
+### 2026-04-10 (Evening)
+**Erkenntnisse:**
+- OpenRouter Free Models brauchen API Key (kein Blocker, nur Limitation)
+- Knowledge Graph nur 15 Nodes mit 0 Edges (viel zu dünn)
+- pip cache: 3.3GB ungenutzt (bereits gefreed)
+- 5 dead scripts identifiziert (whisper_daemon, humanize_content, etc.)
+- 3 Skills autonom erstellt: loop-prevention, qa-enforcer, backup-advisor
+- KG jetzt 24 Nodes, 26 Edges
+
+**Was ich besser machen kann:**
+- KG regelmäßig mit neuen Learnings füllen
+- pip cache gelegentlich cleanen
+- Alte Scripts archivieren statt behalten
+
 **Nächste Schritte:**
 - SOUL v2 als Solo-Fighter leben
 - AUTONOMOUS_TRIGGERS befolgen
