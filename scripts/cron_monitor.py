@@ -50,8 +50,18 @@ def main():
             name = job.get('name', 'unnamed')
             schedule = job.get('schedule', {})
             cron_expr = schedule.get('expr', '?')
-            next_run = schedule.get('next', '?')
-            print(f"  - {name}: {cron_expr}")
+            state = job.get('state', {})
+            last_run = state.get('lastRunStatus', '?')
+            
+            # Status emoji
+            if last_run == 'ok':
+                status = '✅'
+            elif last_run == 'error':
+                status = '❌'
+            else:
+                status = '⚠️'
+            
+            print(f"  {status} {name}: {cron_expr}")
         print()
     
     if disabled:
