@@ -13,6 +13,7 @@ from datetime import datetime
 
 # Patterns die ich vermeiden sollte
 BAD_PATTERNS = [
+    # Alte Patterns
     {
         'name': 'Warten nach Zusammenfassung',
         'pattern': 'Ich warte auf deine Antwort',
@@ -27,6 +28,27 @@ BAD_PATTERNS = [
         'name': 'Quality Check vergessen',
         'pattern': 'Script als fertig markiert ohne Test',
         'reason': 'Jedes Script muss getestet werden'
+    },
+    # Neue Patterns (Master Feedback 20:43 UTC)
+    {
+        'name': 'Triviales KG-Füllen',
+        'pattern': 'person_nico, concept_continuous_improvement',
+        'reason': 'Nur echtes, nützliches Wissen in KG speichern'
+    },
+    {
+        'name': 'Backup-Paranoia',
+        'pattern': 'Backup nach jeder Kleinigkeit',
+        'reason': 'Backup NACH wichtigen Änderungen, nicht alle 2 Minuten'
+    },
+    {
+        'name': 'Task-Hopping',
+        'pattern': 'Viele kleine Tasks, nichts tief gemacht',
+        'reason': 'Eine Aufgabe tief machen, nicht 10 anfangen'
+    },
+    {
+        'name': 'Halbfertige Scripts',
+        'pattern': '16 neue Scripts, keines richtig getestet',
+        'reason': '1 perfektes Script > 10 halbfertige'
     }
 ]
 
