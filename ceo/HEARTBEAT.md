@@ -19,12 +19,12 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Self-Improvement Sprint | 🔴 HIGH | ✅ DONE |
+| - | Self-Improvement Sprint v2 | 🔴 HIGH | 🔄 IN PROGRESS |
 
 ### Geplant (Next)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| 1 | kg_updater.py verbessern | 🟡 MED | Low priority |
+| 1 | Skills erweitern | 🟡 MED | Planned |
 
 ---
 
@@ -58,11 +58,13 @@
 
 | # | Task | Datum |
 |---|------|-------|
+| 67 | Test-Framework erstellt (11 Tests, 11 PASS) | 2026-04-10 |
+| 66 | Self-Eval Script (Score 69/100) | 2026-04-10 |
+| 65 | Auto-Doc Generator (README.md generiert) | 2026-04-10 |
+| 64 | Self-Improvement Sprint v2 | 2026-04-10 |
+| 63 | Capability Evolver Cycle 6 | 2026-04-10 |
+| 62 | Never Abort Early + Pattern Erkennung | 2026-04-10 |
 | 61 | Bad Patterns aktualisiert (kolleguial, unvollständig) | 2026-04-10 |
-| 60 | TASK_RHYTHM: NEVER ABORT EARLY Regeln | 2026-04-10 |
-| 59 | Research: Super Agent Patterns | 2026-04-10 |
-| 58 | 9 Daily Scripts verbessert | 2026-04-10 |
-| 57 | memory_cleanup.py verbessert | 2026-04-10 |
 | 56 | 8 Daily Scripts verbessert (morning_brief, etc.) | 2026-04-10 |
 
 ---
