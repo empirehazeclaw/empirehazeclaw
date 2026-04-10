@@ -151,6 +151,30 @@ TESTS = {
         'test_args': ('disk',),
         'description': 'Health Alert'
     },
+    'common_issues_check': {
+        'script': 'common_issues_check.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Common Issues Check'
+    },
+    'idempotency_check': {
+        'script': 'idempotency_check.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Idempotency Check'
+    },
+    'model_config': {
+        'script': 'model_config.py',
+        'type': 'import_no_args',
+        'test_func': 'get_fallback_chain',
+        'description': 'Model Config'
+    },
+    'cron_watchdog': {
+        'script': 'cron_watchdog.py',
+        'type': 'import_no_args',
+        'test_func': 'load_jobs',
+        'description': 'Cron Watchdog'
+    },
 }
 
 def load_script(script_name):
