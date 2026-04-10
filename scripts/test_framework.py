@@ -344,6 +344,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Improved Outreach'
     },
+    'discord_report_forwarder': {
+        'script': 'discord_report_forwarder.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Discord Report Forwarder'
+    },
     'automated_outreach': {
         'script': 'automated_outreach.py',
         'type': 'import_no_args',
