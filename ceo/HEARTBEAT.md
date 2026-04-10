@@ -58,13 +58,11 @@
 
 | # | Task | Datum |
 |---|------|-------|
+| 70 | Morning Routine Automation | 2026-04-10 |
+| 69 | Habit Tracker (8 habits, streaks) | 2026-04-10 |
+| 68 | Skill: self-improvement erstellt | 2026-04-10 |
 | 67 | Test-Framework erstellt (11 Tests, 11 PASS) | 2026-04-10 |
 | 66 | Self-Eval Script (Score 69/100) | 2026-04-10 |
-| 65 | Auto-Doc Generator (README.md generiert) | 2026-04-10 |
-| 64 | Self-Improvement Sprint v2 | 2026-04-10 |
-| 63 | Capability Evolver Cycle 6 | 2026-04-10 |
-| 62 | Never Abort Early + Pattern Erkennung | 2026-04-10 |
-| 61 | Bad Patterns aktualisiert (kolleguial, unvollständig) | 2026-04-10 |
 | 56 | 8 Daily Scripts verbessert (morning_brief, etc.) | 2026-04-10 |
 
 ---
