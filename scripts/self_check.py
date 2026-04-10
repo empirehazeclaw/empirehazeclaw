@@ -28,6 +28,11 @@ BAD_PATTERNS = [
         'reason': 'Immer professionelle Sprache - kein Slang'
     },
     {
+        'name': 'Unvollständige Nachrichten',
+        'pattern': 'Abgeschnittene/halbe Sätze',
+        'reason': 'Nachricht muss komplett sein bevor senden'
+    },
+    {
         'name': 'Warten nach Zusammenfassung',
         'pattern': 'Ich warte auf deine Antwort',
         'reason': 'Sollte nicht warten, sondern weitermachen'
