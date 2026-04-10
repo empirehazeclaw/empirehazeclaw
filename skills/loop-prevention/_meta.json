@@ -1,0 +1,28 @@
+{
+  "name": "Loop Prevention",
+  "description": "Erkennt und verhindert repetitive Loops ohne echten Fortschritt",
+  "version": "1.0.0",
+  "created": "2026-04-10",
+  "updated": "2026-04-10",
+  "ownerId": "ceo",
+  "capabilities": [
+    "Loop-Erkennung",
+    "Progress-Tracking",
+    "Auto-Stop bei Loop"
+  ],
+  "status": "active",
+  "lastUsed": "2026-04-10",
+  "usageCount": 1,
+  "pattern": {
+    "triggers": [
+      ">3x 'Ich fahre fort' ohne Änderung",
+      ">8 Backups, <5 Commits",
+      "<2 Commits in letzter Stunde"
+    ],
+    "action": "Warnung ausgeben + Master informieren"
+  },
+  "files": {
+    "index.py": "Main script"
+  },
+  "notes": "Erkennt Loop-Pattern basierend auf Commits, Backups und Output"
+}

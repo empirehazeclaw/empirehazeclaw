@@ -294,3 +294,35 @@ Master will dass ich diese Files selbst verwalte:
 ---
 
 *Pattern Recognition Updated: 2026-04-10 21:06 UTC*
+
+---
+
+## 🎯 SKILL-CREATION REGEL (2026-04-10 21:12)
+
+Master will dass ich Skills SELBST erstelle.
+
+### Wann Skills erstellen:
+| Pattern/Situation | Skill-Idee |
+|------------------|------------|
+| Loop ohne Output erkannt | Loop-Prevention Skill |
+| Backup-Paranoia | Backup-Advisor Skill |
+| Task-Hopping | Task-Fokus Skill |
+| Triviales KG-Füllen | KG-Quality Skill |
+| Quality vergessen | QA-Enforcer Skill |
+
+### Skill-Creation Workflow:
+1. **Problem erkennen** → Aus Patterns
+2. **Skill-Konzept** → Was soll der Skill tun?
+3. **Implementieren** → Script + _meta.json
+4. **Testen** → Sicherstellen dass es funktioniert
+5. **Dokumentieren** → In SKILLS_INVENTORY
+
+### Skill-Typen die ich erstellen sollte:
+- **Monitoring** — System health, cron watchdog
+- **Quality** — QA, testing, validation
+- **Prevention** — Loop detection, backup advisor
+- **Automation** — Routine tasks automatisieren
+
+---
+
+*Pattern Recognition Updated: 2026-04-10 21:12 UTC*
