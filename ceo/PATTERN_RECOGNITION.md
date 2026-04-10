@@ -255,3 +255,42 @@ Wenn Count > 3 für gleiches Pattern → Eskalation an Master.
 ---
 
 *Pattern Recognition Updated: 2026-04-10 21:02 UTC*
+
+---
+
+## ⚠️ NEUES PATTERN: Loop ohne Output (2026-04-10 21:06)
+
+| Feld | Wert |
+|------|------|
+| Erkennung | "Ich fahre fort" ohne echte Änderung, wiederholt |
+| Root Cause | Keine klare nächste Aufgabe, Unsicherheit |
+| Prävention | Wenn keine sinnvolle Aufgabe → Master fragen ODER aufhören |
+| Master Feedback | "Loop verhindern" |
+
+### Automatische Loop-Erkennung:
+```python
+# In self_check.py:
+# - Tracke "Ich fahre fort" Nachrichten
+# - Wenn >3x ohne Änderung → Loop erkannt
+# - Lösung: Aufhören oder nachfragen
+```
+
+---
+
+## 🎯 NEUE REGEL: Self-Management (2026-04-10 21:06)
+
+Master will dass ich diese Files selbst verwalte:
+- HEARTBEAT.md
+- SOUL.md
+- IDENTITY.md
+- Skills
+
+**Das bedeutet:**
+- Regelmäßig verbessern (nicht nur einmal)
+- Patterns aktualisieren wenn ich lerne
+- Skills testen und erweitern
+- Meta-Dateien pflegen
+
+---
+
+*Pattern Recognition Updated: 2026-04-10 21:06 UTC*

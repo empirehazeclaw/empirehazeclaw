@@ -96,6 +96,44 @@ def check_workflow():
     
     return issues
 
+def check_loop_pattern():
+    """Erkennt ob ich in einem Loop bin ohne echten Fortschritt."""
+    issues = []
+    
+    # Check: Viele "Ich fahre fort" Nachrichten im Log?
+    # Wenn ich keine commits mache und Load niedrig ist...
+    
+    import glob
+    backup_dir = "/home/clawbot/.openclaw/backups"
+    today = datetime.now().strftime("%Y%m%d")
+    backups_today = sorted(glob.glob(f"{backup_dir}/backup_{today}_*.tar.gz"))
+    
+    # Check git commits
+    import subprocess
+    result = subprocess.run(
+        ["git", "log", "--oneline", "--since='today 00:00'"],
+        cwd="/home/clawbot/.openclaw/workspace",
+        capture_output=True,
+        text=True
+    )
+    commits = [c for c in result.stdout.strip().split('\n') if c]
+    
+    # Loop erkennung: Viele Backups, keine/wenig Commits in letzter Stunde
+    if len(backups_today) > 8 and len(commits) < 5:
+        # Check commits in letzter Stunde
+        result2 = subprocess.run(
+            ["git", "log", "--oneline", "--since='1 hour ago'"],
+            cwd="/home/clawbot/.openclaw/workspace",
+            capture_output=True,
+            text=True
+        )
+        recent_commits = [c for c in result2.stdout.strip().split('\n') if c]
+        
+        if len(recent_commits) < 2:
+            issues.append('⚠️  Loop erkannt: Keine echten Änderungen, nur "Ich fahre fort" wiederholt?')
+    
+    return issues
+
 def main():
     print(f"Sir HazeClaw Self-Check — {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
     print("=" * 60)
@@ -111,9 +149,12 @@ def main():
     
     print("\n## Workflow Check")
     issues = check_workflow()
+    loop_issues = check_loop_pattern()
+    issues.extend(loop_issues)
+    
     if issues:
         for issue in issues:
-            print(f"  ⚠️  {issue}")
+            print(f"  {issue}")
     else:
         print("  ✅ Workflow OK")
     
