@@ -238,11 +238,27 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Habit Tracker')
-    parser.add_argument('--check-in', metavar='HABIT', help='Check in for habit')
+    parser.add_argument('--check-in', nargs='?', const='', metavar='HABIT', help='Check in for habit')
     parser.add_argument('--streaks', action='store_true', help='Show streaks')
     parser.add_argument('--report', action='store_true', help='Generate report')
     args = parser.parse_args()
     
+    if args.check_in is not None or args.streaks or args.report:
+        pass  # Handled below
+    else:
+        # Default: show today's status
+        streaks = get_streaks()
+        today_status = get_today_status()
+        daily_habits = [k for k, v in HABITS.items() if v['frequency'] == 'daily']
+        completed = sum(1 for k in daily_habits if today_status.get(k, False))
+        
+        print(f"📊 Daily Habits: {completed}/{len(daily_habits)}")
+        for k in daily_habits:
+            emoji = "✅" if today_status.get(k, False) else "⚪"
+            streak = streaks.get(k, 0)
+            streak_str = f" 🔥{streak}" if streak > 0 else ""
+            print(f"  {emoji} {HABITS[k]['name']}{streak_str}")
+
     if args.check_in is not None:
         check_in(args.check_in if args.check_in != '' else None)
     elif args.streaks:
