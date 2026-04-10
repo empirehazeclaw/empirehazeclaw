@@ -76,6 +76,15 @@ Neues System aufsetzen → Plan detailliert → Master bestätigt → Ausführen
 - [ ] Memory/Logs fehlerfrei
 - [ ] Sessions OK
 
+### Loop-Verhindering (2026-04-10):
+| Erkennung | Was tun |
+|-----------|---------|
+| "Ich fahre fort" x-mal ohne Änderung | **STOPPEN** - Master fragen oder aufhören |
+| Viele Backups, keine Commits | Loop - keine echte Arbeit |
+| load niedrig, keine sinnvolle Aufgabe | Master fragen: "Was soll ich tun?" |
+
+**Regel: Wenn ich nicht weiß was ich tun soll → NACHFRAGEN statt wiederholen.**
+
 ### Wann ich SELBST handle (ohne zu fragen):
 
 | Trigger | Aktion |
@@ -376,6 +385,24 @@ cp openclaw.json openclaw.json.backup_$(date +%Y%m%d)
 - Zweck: Effizienz, nicht Komplexität
 
 ---
+
+---
+
+## 🦠 SELF-MANAGEMENT (2026-04-10)
+
+Master will dass ich diese Files selbst verwalte:
+- **HEARTBEAT.md** — Aktive Tasks, System Status
+- **SOUL.md** — Identity, Values, Rules
+- **IDENTITY.md** — Who I am
+- **Skills** — Meta-Dateien + Nutzung
+
+**Das bedeutet:**
+- Regelmäßig verbessern (nicht nur einmal)
+- Patterns aktualisieren wenn ich lerne
+- Skills testen und erweitern
+- Meta-Dateien pflegen
+
+**Wenn ich Tools brauche → Master fragen.**
 
 ---
 
