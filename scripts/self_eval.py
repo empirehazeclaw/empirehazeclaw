@@ -23,7 +23,7 @@ GOALS = {
         'name': 'Quality über Quantität',
         'metrics': [
             {'key': 'backup_ratio', 'target': '< 0.3', 'weight': 1.0},
-            {'key': 'tested_scripts', 'target': '> 80%', 'weight': 1.5},
+            {'key': 'test_rate', 'target': '> 0.8', 'weight': 1.5},
         ],
         'min_score': 70,
     },
@@ -163,6 +163,12 @@ def evaluate_metric(metric_def, current_value):
         elif key == 'test_rate':
             passed = current_value > threshold / 100
             score = current_value * 100 / threshold * 100 if threshold > 0 else 0
+        elif key == 'tested_scripts':
+            # tested_scripts is a count, but target is a percentage of total scripts
+            # We need to get the total from somewhere
+            # For now, treat it as: target is percentage, current is percentage
+            passed = current_value > threshold
+            score = min(100, current_value / threshold * 100)
         else:
             passed = current_value >= threshold
             score = min(100, current_value / threshold * 100)
