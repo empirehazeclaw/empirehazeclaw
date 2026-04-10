@@ -1,0 +1,110 @@
+{
+  "last_run": {
+    "run_id": "run_1775861169474",
+    "created_at": "2026-04-10T22:46:09.489Z",
+    "parent_event_id": null,
+    "selected_gene_id": null,
+    "selected_capsule_id": null,
+    "selector": {
+      "selected": null,
+      "reason": [
+        "no matching gene found; new gene may be required",
+        "signals: session_logs_missing",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors",
+        "drift_intensity: 0.577"
+      ],
+      "alternatives": []
+    },
+    "signals": [
+      "session_logs_missing"
+    ],
+    "mutation": {
+      "type": "Mutation",
+      "id": "mut_1775861169472",
+      "category": "optimize",
+      "trigger_signals": [
+        "session_logs_missing"
+      ],
+      "target": "behavior:protocol",
+      "expected_effect": "improve success rate and reduce repeated operational cost",
+      "risk_level": "low"
+    },
+    "mutation_id": "mut_1775861169472",
+    "personality_state": {
+      "type": "PersonalityState",
+      "rigor": 0.7,
+      "creativity": 0.35,
+      "verbosity": 0.25,
+      "risk_tolerance": 0.4,
+      "obedience": 0.85
+    },
+    "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "personality_known": false,
+    "personality_mutations": [],
+    "drift": false,
+    "selected_by": "memory_graph+selector",
+    "source_type": "generated",
+    "reused_asset_id": null,
+    "reused_source_node": null,
+    "reused_chain_id": null,
+    "baseline_untracked": [
+      "assets/gep/candidates.jsonl",
+      "assets/gep/capsules.json",
+      "assets/gep/events.jsonl",
+      "assets/gep/failed_capsules.json",
+      "assets/gep/genes.json",
+      "assets/gep/genes.jsonl",
+      "memory/evolution/evolution_solidify_state.json",
+      "memory/evolution/evolution_state.json",
+      "memory/evolution/memory_graph.jsonl",
+      "memory/evolution/memory_graph_state.json",
+      "memory/evolution/personality_state.json",
+      "memory/skills_list_cache.json",
+      "skills/capability-evolver/memory/evolution/reflection_log.jsonl"
+    ],
+    "baseline_git_head": "114f8d6557cb24edba6d7b82363bf7a9fd997090",
+    "blast_radius_estimate": {
+      "files": 12,
+      "lines": 960
+    },
+    "strategy_policy": {
+      "name": "early-stabilize",
+      "label": "Early Stabilization",
+      "description": "First cycles. Prioritize fixing existing issues before innovating.",
+      "forceInnovate": false,
+      "cautiousExecution": false,
+      "highRiskGene": false,
+      "repairStreak": 0,
+      "failureStreak": 0,
+      "blastRadiusMaxFiles": 12,
+      "directives": [
+        "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",
+        "Target max files for this cycle: 12."
+      ]
+    },
+    "active_task_id": null,
+    "active_task_title": null,
+    "worker_assignment_id": null,
+    "worker_pending": false,
+    "commitment_deadline": null,
+    "applied_lessons": [],
+    "hub_lessons": []
+  },
+  "last_solidify": {
+    "run_id": "run_1775861169474",
+    "at": "2026-04-10T22:46:20.674Z",
+    "event_id": "evt_1775861180674",
+    "capsule_id": null,
+    "outcome": {
+      "status": "failed",
+      "score": 0.67
+    }
+  },
+  "last_validation_failure": {
+    "cmd": "node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/gep/assetStore",
+    "stderr": "node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scripts/validate-modules.js'\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    a",
+    "retries_attempted": 2,
+    "at": "2026-04-10T22:46:20.674Z"
+  },
+  "solidify_count": 1
+}
