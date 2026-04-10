@@ -105,9 +105,29 @@ Die meisten Skills haben keine Metadaten. Das macht es schwer zu tracken:
 - Wann wurde es zuletzt verwendet?
 - Funktioniert es noch?
 
-**Empfehlung:** Für jeden Skill eine _meta.json erstellen.
+**Status:** 10/10 Skills haben jetzt _meta.json ✅
+
+**Empfehlung:** Für jeden Skill regelmäßig prüfen ob er funktioniert.
+
+---
+
+## 🎯 NÄCHSTE SCHRITTE
+
+1. ⏳ Skills testen
+2. ⏳ Skills in KG dokumentieren
+3. ⏳ Skill-Nutzung tracken
+
+---
+
+## 📊 SKILL USAGE TRACKING
+
+| Skill | Last Used | Status |
+|-------|-----------|--------|
+| capability-evolver | 2026-04-09 | ✅ Active |
+| coding | - | ⏳ Unused |
+| semantic-search | - | ⏳ Unused |
 
 ---
 
 *Sir HazeClaw — Skills Inventory*
-*Erstellt: 2026-04-10*
+*Updated: 2026-04-10*
