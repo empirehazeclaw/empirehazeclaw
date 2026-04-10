@@ -2,7 +2,7 @@
 
 **Datum:** 2026-04-10
 **Agent:** Sir HazeClaw / CEO
-**Zeit:** 20:10 UTC
+**Zeit:** 20:34 UTC
 
 ---
 
@@ -24,10 +24,27 @@
 - [x] Session Cleanup (12MB freed)
 - [x] ClawHub Config bereinigt
 - [x] Empty Files entfernt
+- [x] orphaned_scripts archiviert (3.8MB freed)
 
-### Neue Scripts (10+)
+### Neue Scripts (12+)
 | Script | Purpose |
 |--------|---------|
+| vault.py | Encrypted secrets |
+| kgml_summary.py | KG als Markdown |
+| health_monitor.py | Health Report |
+| backup_verify.py | Backup Validierung |
+| health_alert.py | Alert System |
+| quick_check.py | Schneller Check |
+| daily_summary.py | Tageszusammenfassung |
+| cron_monitor.py | Cron Status |
+| cron_watchdog.py | Cron Watchdog |
+| system_report.py | Master Report |
+| openrouter_monitor.py | OpenRouter Monitor |
+| morning_brief.py | Morning Brief |
+| evening_summary.py | Evening Summary |
+| weekly_review.py | Weekly Review |
+| self_check.py | Self-Check |
+| kg_updater.py | KG Management |
 | vault.py | Encrypted secrets |
 | kgml_summary.py | KG als Markdown |
 | health_monitor.py | Health Report |
