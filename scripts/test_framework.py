@@ -344,6 +344,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Improved Outreach'
     },
+    'automated_outreach': {
+        'script': 'automated_outreach.py',
+        'type': 'import_no_args',
+        'test_func': 'get_pending_leads',
+        'description': 'Automated Outreach'
+    },
 }
 
 def load_script(script_name):
