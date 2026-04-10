@@ -217,6 +217,79 @@ TESTS = {
         'test_func': 'get_pending_sequences',
         'description': 'Email Sequence'
     },
+    'self_check': {
+        'script': 'self_check.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Self Check'
+    },
+    'health_monitor': {
+        'script': 'health_monitor.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Health Monitor'
+    },
+    'cron_monitor': {
+        'script': 'cron_monitor.py',
+        'type': 'import_with_args',
+        'test_func': 'generate_report',
+        'test_args': ('text',),
+        'description': 'Cron Monitor'
+    },
+    'weekly_review': {
+        'script': 'weekly_review.py',
+        'type': 'import_no_args',
+        'test_func': 'get_week_commits',
+        'description': 'Weekly Review'
+    },
+    'openrouter_monitor': {
+        'script': 'openrouter_monitor.py',
+        'type': 'import_no_args',
+        'test_func': 'get_openrouter_config',
+        'description': 'OpenRouter Monitor'
+    },
+    'vercel_monitor': {
+        'script': 'vercel_monitor.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Vercel Monitor'
+    },
+    'system_report': {
+        'script': 'system_report.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'System Report'
+    },
+    'revenue_forecaster': {
+        'script': 'revenue_forecaster.py',
+        'type': 'import_no_args',
+        'test_func': 'get_quick_forecast',
+        'description': 'Revenue Forecaster'
+    },
+    'session_memory_manager': {
+        'script': 'session_memory_manager.py',
+        'type': 'import_no_args',
+        'test_func': 'get_recent_sessions',
+        'description': 'Session Memory Manager'
+    },
+    'priority_filter': {
+        'script': 'priority_filter.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Priority Filter'
+    },
+    'auto_doc': {
+        'script': 'auto_doc.py',
+        'type': 'import_no_args',
+        'test_func': 'update_script_docs',
+        'description': 'Auto Doc'
+    },
+    'response_tracker': {
+        'script': 'response_tracker.py',
+        'type': 'import_no_args',
+        'test_func': 'get_sent_emails',
+        'description': 'Response Tracker'
+    },
 }
 
 def load_script(script_name):
