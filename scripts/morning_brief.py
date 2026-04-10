@@ -84,19 +84,41 @@ def get_backup_status():
     
     return False, "No backup today"
 
+def get_git_commits_today():
+    """Holt Git Commits von heute."""
+    import subprocess
+    
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    date_str = today.strftime('%Y-%m-%d')
+    
+    try:
+        result = subprocess.run(
+            ["git", "log", "--oneline", f"--since={date_str}T00:00:00Z"],
+            cwd="/home/clawbot/.openclaw/workspace",
+            capture_output=True,
+            text=True,
+            timeout=5
+        )
+        commits = [c for c in result.stdout.strip().split('\n') if c]
+        return len(commits)
+    except:
+        return 0
+
 def get_git_commits_yesterday():
     """Holt Git Commits von gestern."""
     import subprocess
+    from datetime import timedelta
     
-    yesterday = datetime.now().replace(hour=0, minute=0, second=0)
+    yesterday = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1)
     date_str = yesterday.strftime('%Y-%m-%d')
     
     try:
         result = subprocess.run(
-            ["git", "log", "--oneline", f"--since='{date_str} 00:00'", "--until='today 00:00'"],
+            ["git", "log", "--oneline", f"--since={date_str}T00:00:00Z", f"--until={date_str}T23:59:59Z"],
             cwd="/home/clawbot/.openclaw/workspace",
             capture_output=True,
-            text=True
+            text=True,
+            timeout=5
         )
         commits = [c for c in result.stdout.strip().split('\n') if c]
         return len(commits)
@@ -110,7 +132,8 @@ def generate_brief(format='text'):
     system = get_system_status()
     cron, cron_error = get_cron_status()
     backup_ok, backup_msg = get_backup_status()
-    commits = get_git_commits_yesterday()
+    commits_today = get_git_commits_today()
+    commits_yesterday = get_git_commits_yesterday()
     
     if format == 'telegram':
         msg = f"""🌅 **Morning Brief — {now.strftime('%Y-%m-%d %H:%M')}**
@@ -128,8 +151,9 @@ def generate_brief(format='text'):
 **Backup:**
 • {'✅' if backup_ok else '❌'} {backup_msg}
 
-**Gestern:**
-• {commits} Git Commits
+**Commits:**
+• Heute: {commits_today}
+• Gestern: {commits_yesterday}
 
 ---
 🦞 Sir HazeClaw"""
@@ -151,8 +175,9 @@ def generate_brief(format='text'):
 ## Backup
 - {backup_msg}
 
-## Gestern
-- {commits} Git Commits
+## Commits
+- Heute: {commits_today}
+- Gestern: {commits_yesterday}
 
 ---
 Sir HazeClaw"""
