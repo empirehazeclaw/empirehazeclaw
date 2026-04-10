@@ -16,7 +16,7 @@ import sqlite3
 from datetime import datetime
 from pathlib import Path
 
-KG_PATH = Path("/home/clawbot/.openclaw/memory/kg.json")
+KG_PATH = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
 KG_DB = Path("/home/clawbot/.openclaw/memory/main.sqlite")
 
 def init_kg():

@@ -16,7 +16,7 @@ from sentence_transformers import SentenceTransformer
 
 WORKSPACE = "/home/clawbot/.openclaw/workspace"
 VECTOR_STORE = f"{WORKSPACE}/memory/vector_store"
-KG_PATH = f"{WORKSPACE}/memory/knowledge_graph.json"
+KG_PATH = "/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json"
 
 class MemoryVectorStore:
     """Semantic memory store with embeddings"""

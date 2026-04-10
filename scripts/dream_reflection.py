@@ -60,7 +60,7 @@ def parse_dreams():
 
 def get_kg_count():
     """Zählt Knowledge Graph Entities."""
-    kg_file = WORKSPACE / "memory/knowledge_graph.json"
+    kg_file = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
     if kg_file.exists():
         try:
             with open(kg_file, 'r') as f:

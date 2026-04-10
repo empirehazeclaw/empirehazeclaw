@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-def generate_kgml(kg_path: str = "knowledge_graph.json", 
+def generate_kgml(kg_path: str = "/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json", 
                   output_path: str = "kg-summary.md") -> str:
     """Generiert KGML Summary aus KG JSON."""
     
@@ -98,7 +98,7 @@ Relations: {len(edges)}
     return md
 
 def main():
-    kg_path = sys.argv[1] if len(sys.argv) > 1 else "knowledge_graph.json"
+    kg_path = sys.argv[1] if len(sys.argv) > 1 else "/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json"
     output = sys.argv[2] if len(sys.argv) > 2 else "kg-summary.md"
     
     print(f"Generating KGML from {kg_path}...")

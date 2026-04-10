@@ -105,7 +105,7 @@ def hybrid_search(query: str, limit: int = 5) -> List[Dict]:
             all_files.append(str(path))
     
     keyword_results = keyword_search(query, all_files)
-    semantic_results = semantic_search(query, str(Path(WORKSPACE) / 'memory/knowledge_graph.json'))
+    semantic_results = semantic_search(query, '/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json')
     
     combined = {}
     for filepath, score in keyword_results:

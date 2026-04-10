@@ -21,7 +21,7 @@ ARCHIVE_DIR = MEMORY_DIR / "archive"
 LOG_DIR = WORKSPACE.parent / "logs"
 FLEETING_DIR = MEMORY_DIR / "notes/fleeting"
 PERMANENT_DIR = MEMORY_DIR / "notes/permanent"
-KG_FILE = MEMORY_DIR / "knowledge_graph.json"
+KG_FILE = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
 
 # Config
 MAX_FLEETING_AGE_DAYS = 7
