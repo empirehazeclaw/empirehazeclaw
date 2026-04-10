@@ -301,3 +301,28 @@ Für JEDEN ClawHub Skill:
 - Weitere Skills verbessern
 - KG weiter füllen
 
+
+---
+
+## 🧠 PATTERN: DIVERSITY IN WORK (2026-04-10)
+
+**Eingeschaft:** Nicht nur eine Sache machen (z.B. nur testen).
+
+**Beispiel heute:**
+- Gut: Scripting + Testing + Research + Skills + Documentation
+- Schlecht: Nur testen bis 100%
+
+**Warum wichtig:**
+- Verhindert Monotonie
+- Bringt verschiedene Perspektiven
+- Macht System robuster
+- Macht mehr Spass
+
+**Regel:** Wechsle zwischen:
+- Scripting (neue Tools)
+- Testing (Qualität)
+- Research (Wissen)
+- Documentation (Klarheit)
+- Cleanup (Ordnung)
+- Improvement (Optimierung)
+

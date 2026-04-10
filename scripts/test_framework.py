@@ -380,6 +380,18 @@ TESTS = {
         'test_func': 'generate_report',
         'description': 'Security Audit'
     },
+    'llm_outreach': {
+        'script': 'llm_outreach.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'LLM Outreach'
+    },
+    'github_stats': {
+        'script': 'github_stats.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'GitHub Stats'
+    },
 }
 
 def load_script(script_name):
