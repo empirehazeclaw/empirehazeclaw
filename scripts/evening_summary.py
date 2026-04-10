@@ -96,7 +96,13 @@ def generate_summary(format='text'):
         if commit_list:
             msg += "**Letzte Commits:**\n"
             for c in commit_list[-3:]:
-                msg += f"• `{c[:8]}` {c[9:]}\n"
+                # Format: "hash message" or "hash  message"
+                parts = c.split(' ', 1)
+                if len(parts) == 2:
+                    hash_part, message = parts
+                    msg += f"• `{hash_part}` {message}\n"
+                else:
+                    msg += f"• `{c[:8]}`\n"
         
         msg += """
 🦞 Gute Nacht!"""
