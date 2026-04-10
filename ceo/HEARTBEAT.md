@@ -19,15 +19,12 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Self-Improvement Sprint | 🔴 HIGH | 🔄 IN PROGRESS |
+| - | Self-Improvement Sprint | 🔴 HIGH | ✅ DONE |
 
 ### Geplant (Next)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| 1 | Reflection vertiefen | 🔴 HIGH | Planned |
-| 2 | Quality Metrics System | 🔴 HIGH | Planned |
-| 3 | Memory Retrieval verbessern | 🟡 MED | Planned |
-| 4 | kg_updater.py verbessern | 🟡 MED | Low priority |
+| 1 | kg_updater.py verbessern | 🟡 MED | Low priority |
 
 ---
 
@@ -51,9 +48,9 @@
 ### Phase 3: Memory Retrieval verbessern
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 1 | memory_hybrid_search.py analysieren | 🔲 | Current state |
-| 2 | Retrieval verbessern | 🔲 | Bessere Matches |
-| 3 | Kontext-Relevanz | 🔲 | Aktuelle Situation |
+| 1 | memory_hybrid_search.py analysieren | ✅ | Bestehende Funktionalität |
+| 2 | Recency weighting | ✅ | Jüngere Dateien = höherer Score |
+| 3 | Context-awareness | ✅ | Snippet extraction verbessert |
 
 ---
 
