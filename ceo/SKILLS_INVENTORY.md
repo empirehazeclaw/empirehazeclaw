@@ -123,3 +123,25 @@
 - **Checks:** Syntax, --help, README, Git-Commit
 - **Status:** ✅ Getestet und funktioniert
 
+
+### backup-advisor ✅ (NEW)
+- **Version:** 1.0.0
+- **Erstellt:** 2026-04-10
+- **Funktion:** Erkennt Backup-Paranoia und berät wann backupen
+- **Commands:** should-backup, status, recommend
+- **Status:** ✅ Getestet und funktioniert
+
+---
+
+## 📊 SKILLS GESAMT
+
+| Skill | Status | Erstellt |
+|-------|--------|-----------|
+| loop-prevention | ✅ | 2026-04-10 |
+| qa-enforcer | ✅ | 2026-04-10 |
+| backup-advisor | ✅ | 2026-04-10 |
+| capability-evolver | ✅ | 2026-04-08 |
+| coding | ✅ | 2026-04-08 |
+
+**Total Skills:** 13 (3 heute erstellt)
+
