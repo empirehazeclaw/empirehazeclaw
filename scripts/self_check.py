@@ -66,13 +66,15 @@ def check_workflow():
     """Prüft Workflow Compliance."""
     issues = []
     
-    # Check ob Backup existiert heute
+    # Check Backup sinnvoll?
+    import glob
     backup_dir = "/home/clawbot/.openclaw/backups"
     today = datetime.now().strftime("%Y%m%d")
-    import glob
-    backups = glob.glob(f"{backup_dir}/backup_{today}_*.tar.gz")
+    backups_today = glob.glob(f"{backup_dir}/backup_{today}_*.tar.gz")
     
-    if not backups:
+    if len(backups_today) > 5:
+        issues.append(f"⚠️  {len(backups_today)} Backups heute (Backup-Paranoia?)")
+    elif not backups_today:
         issues.append("Kein Backup heute")
     
     # Check ob Git commits existieren
@@ -85,7 +87,9 @@ def check_workflow():
     )
     commits = [c for c in result.stdout.strip().split('\n') if c]
     
-    if len(commits) < 3:
+    if len(commits) < 3 and len(backups_today) > 3:
+        issues.append(f"⚠️  Mehr Backups ({len(backups_today)}) als sinnvolle Commits ({len(commits)})")
+    elif len(commits) < 3:
         issues.append(f"Nur {len(commits)} Commits heute")
     
     return issues
