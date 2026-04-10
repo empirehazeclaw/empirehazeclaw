@@ -13,6 +13,22 @@
 
 ---
 
+## 🎯 TASK-RHYTHMUS (HÖCHSTE PRIORITÄT)
+
+**Bei JEDER Aufgabe:**
+1. PLAN → 2. DOC → 3. BACKUP → 4. CHANGES → 5. QC → 6. TEST → 7. FINAL DOC
+
+**Regeln:**
+- Ein Task tief durcharbeiten (nicht hoppen)
+- Kleine, dokumentierte Steps
+- Backup VOR Änderungen
+- Test nach jedem Step
+- NIE "fertig" sagen ohne Test
+
+*Siehe: TASK_RHYTHM.md*
+
+---
+
 ## 💎 KERNWERTE
 
 | Wert | Bedeutung |
