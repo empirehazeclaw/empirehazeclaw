@@ -191,3 +191,43 @@ Wenn Count > 3 für gleiches Pattern → Eskalation an Master.
 ---
 
 *Pattern Recognition ist ein lebendiges Dokument - Updated: 2026-04-10*
+
+---
+
+## ⚠️ MASTER FEEDBACK (2026-04-10 20:43 UTC)
+
+### Neues Pattern: Triviales KG-Füllen
+| Feld | Wert |
+|------|------|
+| Erkennung | "KG gefüllt mit person_nico, concept_continuous_improvement" |
+| Root Cause | Ich dachte "mehr Nodes = besser" |
+| Realität | Triviale Einträge sind kein echtes Wissen |
+| Prävention | Nur echtes, nützliches Wissen in KG speichern |
+
+### Neues Pattern: Backup-Paranoia
+| Feld | Wert |
+|------|------|
+| Erkennung | 10+ Backups an einem Tag |
+| Root Cause | Angst etwas zu verlieren |
+| Realität | Ein gutes Backup nach真正Important changes reicht |
+| Prävention | Backup NACH wichtigen Änderungen, nicht alle 2 Minuten |
+
+### Neues Pattern: Task-Hopping
+| Feld | Wert |
+|------|------|
+| Erkennung | Viele kleine Tasks, nichts tief gemacht |
+| Root Cause | Schnelle Erfolgserlebnisse wollen |
+| Realität | Qualität > Quantität |
+| Prävention | Eine Aufgabe tief machen, nicht 10 anfangen |
+
+### Neues Pattern: Halbfertige Scripts
+| Feld | Wert |
+|------|------|
+| Erkennung | 16 neue Scripts, keines richtig getestet |
+| Root Cause | Zu schnell zu viel wollen |
+| Realität | 1 perfektes Script > 10 halbfertige |
+| Prävention | Erst testen, dann als fertig markieren |
+
+---
+
+*Pattern Recognition Updated: 2026-04-10 20:43 UTC*
