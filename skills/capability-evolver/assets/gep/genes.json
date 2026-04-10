@@ -55,18 +55,42 @@
           "learning_signals": [
             "perf_bottleneck"
           ]
+        },
+        {
+          "at": "2026-04-10T17:42:19.235Z",
+          "outcome": "failed",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "retryable": false,
+          "learning_signals": [
+            "problem:performance",
+            "action:optimize",
+            "risk:validation"
+          ]
         }
       ],
       "epigenetic_marks": [
         {
           "context": "linux/x64/v22.22.2",
-          "boost": 0.15000000000000002,
-          "reason": "reinforced_by_success",
-          "created_at": "2026-04-09T22:55:14.693Z"
+          "boost": 0.05000000000000002,
+          "reason": "suppressed_by_failure",
+          "created_at": "2026-04-10T17:42:19.235Z"
         }
       ],
       "schema_version": "1.6.0",
-      "asset_id": "sha256:5e6828f4205de498a6b9e549fc8a840f7da2693f50165370b2f1f867795fe0fd"
+      "asset_id": "sha256:5e6828f4205de498a6b9e549fc8a840f7da2693f50165370b2f1f867795fe0fd",
+      "anti_patterns": [
+        {
+          "at": "2026-04-10T17:42:19.235Z",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "learning_signals": [
+            "problem:performance",
+            "action:optimize",
+            "risk:validation"
+          ]
+        }
+      ]
     },
     {
       "type": "Gene",

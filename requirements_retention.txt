@@ -1,0 +1,27 @@
+# requirements_retention.txt
+# Minimal dependencies für system-kritische Scripts
+# Stand: 2026-04-10
+# Für: evening_capture.py, nightly_dreaming.py
+
+# Standard Library (keine Installation nötig):
+# - os
+# - json
+# - datetime
+# - timedelta
+# - pathlib.Path
+# - subprocess (für health_monitor.py)
+
+# Externe Dependencies (falls vorhanden):
+# Keine für evening_capture.py (nur stdlib)
+# Keine für nightly_dreaming.py (nur stdlib)
+
+# ---- Für health_monitor.py ----
+psutil>=5.9.0
+
+# ---- Für semantic_search.py (optional, RAG) ----
+# sentence-transformers>=2.2.0
+# numpy>=1.24.0
+
+# ---- Für kg_auto_populate.py ----
+# (keine externen deps, nutzt kg_quick_add.py Logik)
+

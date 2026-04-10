@@ -170,7 +170,7 @@ OpenClaw Gateway (:18789)
 
 ---
 
-## 🦞 CEO AGENT (ClawMaster)
+## 🦞 Sir HazeClaw (CEO)
 
 - Sovereign Orchestrator für alle Agents
 - Routing: Security → Security Officer, Data → Data Manager, Code → Builder

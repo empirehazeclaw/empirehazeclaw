@@ -63,4 +63,4 @@
 
 ---
 
-*Letzte Aktualisierung: 2026-04-06 21:52 UTC — ClawMaster CEO Subagent*
+*Letzte Aktualisierung: 2026-04-06 21:52 UTC — Sir HazeClaw CEO Subagent*

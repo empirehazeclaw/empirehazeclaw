@@ -228,4 +228,4 @@ systemctl --user restart openclaw-gateway
 ---
 
 *Zuletzt aktualisiert: 2026-04-08 21:58 UTC*
-*Erstellt von: CEO ClawMaster*
+*Erstellt von: CEO Sir HazeClaw*

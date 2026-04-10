@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-10T12:13:59.753663Z",
+  "overall": "warning",
+  "checks": {
+    "disk": {
+      "status": "ok",
+      "free_gb": 70.4
+    },
+    "memory": {
+      "status": "ok",
+      "used_percent": 26.2
+    },
+    "gateway": {
+      "status": "ok",
+      "running": true
+    },
+    "agents": {
+      "status": "warning",
+      "alive": 0,
+      "total": 8
+    },
+    "cron_jobs": {
+      "status": "ok",
+      "errors": 0
+    }
+  }
+}

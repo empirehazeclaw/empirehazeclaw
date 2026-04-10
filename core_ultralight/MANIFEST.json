@@ -1,0 +1,27 @@
+{
+  "name": "EmpireHazeClaw Ultra-Light Core",
+  "version": "2.0",
+  "created": "2026-04-10T15:25:00.000000Z",
+  "description": "Minimal portable backup for AI agent system migration",
+  "structure": {
+    "core/memory/": "Anonymized knowledge base",
+    "core/memory/notes/": "Permanent notes (8 files)",
+    "core/security/": "Security rules",
+    "core/scripts/": "2 core scripts (evening_capture, nightly_dreaming)",
+    "core/requirements.txt": "Python dependencies (none required)"
+  },
+  "import_instructions": {
+    "step_1": "Copy /core/ directory to new AI environment",
+    "step_2": "Place memory/ files in target system's memory/ directory",
+    "step_3": "Place scripts/ files in target system's scripts/ directory",
+    "step_4": "Install requirements: pip install -r requirements.txt (none required for core)",
+    "step_5": "Start evening_capture.py cron at 21:00 UTC",
+    "step_6": "Start nightly_dreaming.py cron at 02:00 UTC"
+  },
+  "core_scripts": {
+    "evening_capture.py": "Creates daily fleeting note template at 21:00 UTC",
+    "nightly_dreaming.py": "Analyzes KG + Memory, generates insights at 02:00 UTC"
+  },
+  "dependencies": "NONE - Core scripts use only Python stdlib",
+  "notes": "No SOUL.md, no agent workspaces, no logs, no personal data"
+}

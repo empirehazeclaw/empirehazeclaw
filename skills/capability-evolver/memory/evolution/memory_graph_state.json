@@ -1,11 +1,12 @@
 {
   "last_action": {
-    "action_id": "act_1775775302435_2a7026fe",
-    "signal_key": "perf_bottleneck",
+    "action_id": "act_1775843038519_3a3d4715",
+    "signal_key": "evolution_stagnation_detected|stable_success_plateau",
     "signals": [
-      "perf_bottleneck"
+      "evolution_stagnation_detected",
+      "stable_success_plateau"
     ],
-    "mutation_id": "mut_1775775302434",
+    "mutation_id": "mut_1775843038518",
     "mutation_category": "innovate",
     "mutation_risk_level": "medium",
     "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
@@ -15,16 +16,14 @@
       "creativity": 0.35,
       "verbosity": 0.25,
       "risk_tolerance": 0.4,
-      "obedience": 0.85
+      "obedience": 0.9
     },
     "gene_id": "gene_gep_repair_from_errors",
     "gene_category": "repair",
-    "hypothesis_id": "hyp_1775775302435_2a7026fe",
-    "capsules_used": [
-      "capsule_1770477654236"
-    ],
+    "hypothesis_id": "hyp_1775843038518_f03a9400",
+    "capsules_used": [],
     "had_error": false,
-    "created_at": "2026-04-09T22:55:02.435Z",
+    "created_at": "2026-04-10T17:43:58.519Z",
     "outcome_recorded": false,
     "baseline_observed": {
       "agent": "main",
@@ -32,17 +31,17 @@
       "drift_enabled": false,
       "review_mode": false,
       "dry_run": false,
-      "system_health": "Uptime: 105.1h | Node: v22.22.2 | Agent RSS: 57.0MB | Disk: 27% (69.7G free) | Node Processes: 1 | Integrations: Nominal",
+      "system_health": "Uptime: 123.9h | Node: v22.22.2 | Agent RSS: 56.9MB | Disk: 28% (69.2G free) | Node Processes: 1 | Integrations: Nominal",
       "mood": "Mood: Unknown",
-      "scan_ms": 52,
+      "scan_ms": 24,
       "memory_size_bytes": 737,
       "recent_error_count": 0,
       "node": "v22.22.2",
       "platform": "linux",
-      "cwd": "/home/clawbot/.openclaw/workspace/ceo",
+      "cwd": "/home/clawbot/.openclaw/workspace/skills/capability-evolver",
       "evidence": {
         "recent_session_tail": "[NO SESSION LOGS FOUND]",
-        "today_log_tail": "# 2026-04-09 — Daily Memory\n\n## Tags\n#daily #flotte #openclaw\n\n## Events\n- Discord Multi-Agent Setup completed (6/6)\n- Security Pre-Build Audit implementiert\n- Peer-to-Peer Failover aktiviert\n- University erweitert mit 6 neuen Items\n\n## Learnings\n- Timeout-Handling: message() vs sessions_send()\n- Alle 6 Agenten SOUL.md mit Timeout-Handling aktualisiert\n- Capability Evolver ausgeführt\n\n## Open\n- Security Vetting läuft noch\n- University Kurse müssen noch implementiert werden\n\n*Created: 2026-04-09 22:52 UTC*"
+        "today_log_tail": "[MISSING] /home/clawbot/.openclaw/workspace/skills/capability-evolver/memory/2026-04-10.md"
       }
     }
   }

@@ -1,0 +1,335 @@
+{
+  "generated": "2026-04-10T14:53:54.782082Z",
+  "total_files": 47,
+  "files": [
+    {
+      "path": "memory/MEMORY.md",
+      "priority": "P1",
+      "purpose": "Zentraler Hub + Entscheidungen",
+      "size_bytes": 24206,
+      "modified": "2026-04-10T14:48:41.516270Z"
+    },
+    {
+      "path": "memory/SOUL.md",
+      "priority": "P1",
+      "purpose": "System-Persona Definition",
+      "size_bytes": 1294,
+      "modified": "2026-04-09T13:20:54.025681Z"
+    },
+    {
+      "path": "memory/META_SCHEMA.md",
+      "priority": "P1",
+      "purpose": "Knowledge Graph Rosetta Stone",
+      "size_bytes": 9094,
+      "modified": "2026-04-10T14:53:20.541558Z"
+    },
+    {
+      "path": "memory/CORE_KNOWLEDGE_BASE.md",
+      "priority": "P1",
+      "purpose": "Top 50 Erkenntnisse extrahiert",
+      "size_bytes": 3598,
+      "modified": "2026-04-10T14:53:40.522646Z"
+    },
+    {
+      "path": "memory/CHRONOLOGY.md",
+      "priority": "P1",
+      "purpose": "System-Evolutions-Historie",
+      "size_bytes": 3218,
+      "modified": "2026-04-10T14:53:40.497646Z"
+    },
+    {
+      "path": "memory/knowledge_graph.json",
+      "priority": "P1",
+      "purpose": "Haupt-Wissensgraph (157 entities)",
+      "size_bytes": 1319924,
+      "modified": "2026-04-10T14:51:24.847038Z"
+    },
+    {
+      "path": "memory/semantic_index.json",
+      "priority": "P1",
+      "purpose": "Vektor-Embeddings (81 chunks)",
+      "size_bytes": 466356,
+      "modified": "2026-04-09T13:20:54.057682Z"
+    },
+    {
+      "path": "memory/wiki-index.md",
+      "priority": "P2",
+      "purpose": "Wiki-Verzeichnis",
+      "size_bytes": 3058,
+      "modified": "2026-04-09T22:52:26.007402Z"
+    },
+    {
+      "path": "memory/wiki-log.md",
+      "priority": "P3",
+      "purpose": "Wiki-\u00c4nderungslog",
+      "size_bytes": 4497,
+      "modified": "2026-04-09T13:20:54.058681Z"
+    },
+    {
+      "path": "memory/notes/fleeting/2026-03-29-knowledge-graph-idee.md",
+      "priority": "P3",
+      "purpose": "Fleeting Note",
+      "size_bytes": 286,
+      "modified": "2026-04-08T21:56:27.735427Z"
+    },
+    {
+      "path": "memory/notes/fleeting/2026-04-07-insight.md",
+      "priority": "P3",
+      "purpose": "Fleeting Note",
+      "size_bytes": 275,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/notes/fleeting/2026-04-09-auto-insight.md",
+      "priority": "P3",
+      "purpose": "Fleeting Note",
+      "size_bytes": 406,
+      "modified": "2026-04-09T21:30:02.412211Z"
+    },
+    {
+      "path": "memory/notes/fleeting/2026-04-09-insight.md",
+      "priority": "P3",
+      "purpose": "Fleeting Note",
+      "size_bytes": 275,
+      "modified": "2026-04-09T22:52:26.007402Z"
+    },
+    {
+      "path": "memory/notes/fleeting/2026-04-10-insight.md",
+      "priority": "P3",
+      "purpose": "Fleeting Note",
+      "size_bytes": 275,
+      "modified": "2026-04-10T14:35:04.427084Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-03-29-final-test-note.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 377,
+      "modified": "2026-04-08T21:56:27.735427Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-03-29-test-note.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 465,
+      "modified": "2026-04-08T21:56:27.735427Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-07-RECOVERED-memory-system.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 1446,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-08-daily-operations.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 4722,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-08-weekly-reflection.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 1001,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-08-wiki-growth-workflow.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 3095,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-09-lcm-wiki.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 141064,
+      "modified": "2026-04-09T14:07:25.346962Z"
+    },
+    {
+      "path": "memory/notes/permanent/2026-04-09-weekly-reflection.md",
+      "priority": "P2",
+      "purpose": "Permanent Note",
+      "size_bytes": 1001,
+      "modified": "2026-04-09T23:00:01.738843Z"
+    },
+    {
+      "path": "memory/learnings/2026-03-29.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 1191,
+      "modified": "2026-03-29T20:35:21.176250Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-05-telegram-learnings.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 436481,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-05-telegram-patterns.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 1682,
+      "modified": "2026-04-05T14:53:23.157053Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-07-RECOVERED-learnings.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 1836,
+      "modified": "2026-04-09T13:20:54.055681Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-09-learning-1.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 606,
+      "modified": "2026-04-09T14:07:25.355962Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-09-learning-2.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 618,
+      "modified": "2026-04-09T14:07:25.355962Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-09-learning-3.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 664,
+      "modified": "2026-04-09T14:07:25.346962Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-09-learning-4.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 605,
+      "modified": "2026-04-09T14:07:25.343962Z"
+    },
+    {
+      "path": "memory/learnings/2026-04-09-learning-5.md",
+      "priority": "P2",
+      "purpose": "Learning aus Agent-Logs",
+      "size_bytes": 568,
+      "modified": "2026-04-09T14:07:25.343962Z"
+    },
+    {
+      "path": "memory/shared/insights/.template.md",
+      "priority": "P2",
+      "purpose": "Shared Insight",
+      "size_bytes": 132,
+      "modified": "2026-04-09T17:15:42.305444Z"
+    },
+    {
+      "path": "memory/shared/insights/2026-04-09_dreaming-aktiviert.md",
+      "priority": "P2",
+      "purpose": "Shared Insight",
+      "size_bytes": 698,
+      "modified": "2026-04-09T20:27:40.234958Z"
+    },
+    {
+      "path": "memory/shared/insights/2026-04-09_shared-insights-system.md",
+      "priority": "P2",
+      "purpose": "Shared Insight",
+      "size_bytes": 842,
+      "modified": "2026-04-09T18:12:09.921384Z"
+    },
+    {
+      "path": "memory/shared/insights/nightly_dreaming_2026-04-09.md",
+      "priority": "P2",
+      "purpose": "Shared Insight",
+      "size_bytes": 705,
+      "modified": "2026-04-09T20:28:35.404134Z"
+    },
+    {
+      "path": "memory/shared/insights/nightly_dreaming_2026-04-10.md",
+      "priority": "P2",
+      "purpose": "Shared Insight",
+      "size_bytes": 771,
+      "modified": "2026-04-10T07:56:44.068521Z"
+    },
+    {
+      "path": "builder/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: builder",
+      "size_bytes": 2060,
+      "modified": "2026-04-09T22:52:25.996402Z"
+    },
+    {
+      "path": "ceo/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: ceo",
+      "size_bytes": 8011,
+      "modified": "2026-04-09T22:52:25.997402Z"
+    },
+    {
+      "path": "data/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: data",
+      "size_bytes": 2435,
+      "modified": "2026-04-09T23:09:28.945420Z"
+    },
+    {
+      "path": "examiner/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: examiner",
+      "size_bytes": 1747,
+      "modified": "2026-04-08T13:18:26.453346Z"
+    },
+    {
+      "path": "memory/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: memory",
+      "size_bytes": 1294,
+      "modified": "2026-04-09T13:20:54.025681Z"
+    },
+    {
+      "path": "qc/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: qc",
+      "size_bytes": 1615,
+      "modified": "2026-04-09T22:52:26.007402Z"
+    },
+    {
+      "path": "research/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: research",
+      "size_bytes": 1809,
+      "modified": "2026-04-09T22:52:26.008402Z"
+    },
+    {
+      "path": "security/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: security",
+      "size_bytes": 2189,
+      "modified": "2026-04-09T23:48:06.764358Z"
+    },
+    {
+      "path": "uni-curriculum/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: uni-curriculum",
+      "size_bytes": 1045,
+      "modified": "2026-04-09T13:20:54.071681Z"
+    },
+    {
+      "path": "uni-examiner/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: uni-examiner",
+      "size_bytes": 782,
+      "modified": "2026-04-09T13:20:54.071681Z"
+    },
+    {
+      "path": "uni-research/SOUL.md",
+      "priority": "P1",
+      "purpose": "Agent Persona: uni-research",
+      "size_bytes": 753,
+      "modified": "2026-04-09T13:20:54.071681Z"
+    }
+  ]
+}
