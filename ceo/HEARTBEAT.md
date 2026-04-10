@@ -30,7 +30,7 @@
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 | 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
 | 14 | Quick Check | 🟢 LOW | ✅ scripts/quick_check.py erstellt + getestet |
-| 24 | Evening Summary | 🟢 LOW | ✅ scripts/evening_summary.py erstellt + getestet |
+| 25 | Self Check | 🟢 LOW | ✅ scripts/self_check.py erstellt + getestet |
 
 ---
 

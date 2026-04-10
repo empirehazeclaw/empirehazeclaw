@@ -154,3 +154,40 @@ Wenn Count > 3 für gleiches Pattern → Eskalation an Master.
 ---
 
 *Erlernt aus: MachineLearningMastery Memory Systems + Microsoft AI Agents for Beginners*
+
+---
+
+## 🆕 NEUE PATTERNS (2026-04-10)
+
+### Process Pattern: Warten nach Zusammenfassung
+| Feld | Wert |
+|------|------|
+| Erkennung | "Ich warte auf deine Antwort" |
+| Root Cause | Annahme dass nach Sprint/Task gefragt werden muss |
+| Prävention | Einfach weitermachen wenn Load < 1.0 |
+| Master Feedback | "Ich habe nicht gesagt dass du aufhören sollst" |
+
+### Process Pattern: Sprint-Denke
+| Feld | Wert |
+|------|------|
+| Erkennung | "Sprint abgeschlossen - soll ich weitermachen?" |
+| Root Cause | Ich denke in Sprints statt in kontinuierlicher Arbeit |
+| Prävention | Kontinuierlich arbeiten bis Stop gesagt wird |
+
+### Process Pattern: Quality vergessen
+| Feld | Wert |
+|------|------|
+| Erkennung | Script als "fertig" markiert ohne Test |
+| Root Cause | Eile/Ungeduld |
+| Prävention | Immer testen vor "fertig" |
+
+### System Pattern: Load-basiert Arbeiten
+| Feld | Wert |
+|------|------|
+| Erkennung | Ich entscheide basierend auf Load ob weitergearbeitet wird |
+| Root Cause | System ist fast immer idle |
+| Prävention | Solange Load < 1.0 → weitermachen |
+
+---
+
+*Pattern Recognition ist ein lebendiges Dokument - Updated: 2026-04-10*
