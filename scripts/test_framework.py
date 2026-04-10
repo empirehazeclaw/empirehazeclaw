@@ -175,6 +175,48 @@ TESTS = {
         'test_func': 'load_jobs',
         'description': 'Cron Watchdog'
     },
+    'auto_session_capture': {
+        'script': 'auto_session_capture.py',
+        'type': 'import_no_args',
+        'test_func': 'find_recent_sessions',
+        'description': 'Auto Session Capture'
+    },
+    'health_dashboard': {
+        'script': 'health_dashboard.py',
+        'type': 'import_no_args',
+        'test_func': 'check_disk',
+        'description': 'Health Dashboard'
+    },
+    'batch_exec': {
+        'script': 'batch_exec.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Batch Exec'
+    },
+    'deploy_safety': {
+        'script': 'deploy_safety.py',
+        'type': 'import_no_args',
+        'test_func': 'check_env_vars',
+        'description': 'Deploy Safety'
+    },
+    'kgml_summary': {
+        'script': 'kgml_summary.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_kgml',
+        'description': 'KGML Summary'
+    },
+    'lcm_wiki_sync': {
+        'script': 'lcm_wiki_sync.py',
+        'type': 'import_no_args',
+        'test_func': 'get_existing_notes',
+        'description': 'LCM Wiki Sync'
+    },
+    'email_sequence': {
+        'script': 'email_sequence.py',
+        'type': 'import_no_args',
+        'test_func': 'get_pending_sequences',
+        'description': 'Email Sequence'
+    },
 }
 
 def load_script(script_name):
