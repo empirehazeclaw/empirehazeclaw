@@ -2961,6 +2961,22 @@
         {
           "content": "Deep Reflection: 10 deep questions f\u00fcr improvement",
           "source": "deep_reflection.py"
+        },
+        {
+          "content": "Test Framework: 54 Tests, alle passing",
+          "source": "test_framework.py"
+        },
+        {
+          "content": "Self-Evaluation: Trackt goals vs current state (Score 95/100)",
+          "source": "self_eval.py"
+        },
+        {
+          "content": "Reflection Loop: Analysiert patterns, self-corrects",
+          "source": "reflection_loop.py"
+        },
+        {
+          "content": "Security Audit: Pr\u00fcft auf code injection risks",
+          "source": "security_audit.py"
         }
       ]
     },
@@ -3062,6 +3078,48 @@
         {
           "content": "HEARTBEAT.md: Aktiver Stand der Tasks",
           "source": "HEARTBEAT.md"
+        }
+      ]
+    },
+    "AI-Agent-Prompt-Patterns": {
+      "type": "pattern",
+      "facts": [
+        {
+          "content": "Pattern 1: Role + Constraints - Definiere wer und was NICHT",
+          "source": "research 2026-04-10"
+        },
+        {
+          "content": "Pattern 2: Chain of Verification - Output vor Aktion pr\u00fcfen",
+          "source": "research 2026-04-10"
+        },
+        {
+          "content": "Pattern 3: Structured Output - Klare Kommunikation",
+          "source": "research 2026-04-10"
+        },
+        {
+          "content": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
+          "source": "research 2026-04-10"
+        },
+        {
+          "content": "Pattern 5: Guard Rails - Sicherheitsgrenzen",
+          "source": "research 2026-04-10"
+        }
+      ]
+    },
+    "Research-Skill": {
+      "type": "skill",
+      "facts": [
+        {
+          "content": "Web Search: Brave Search API integration",
+          "source": "skills/research"
+        },
+        {
+          "content": "Web Fetch: URL content extraction",
+          "source": "skills/research"
+        },
+        {
+          "content": "Pattern: Quick Research -> Deep Research -> Document",
+          "source": "skills/research"
         }
       ]
     }

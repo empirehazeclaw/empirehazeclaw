@@ -16,13 +16,33 @@ NEW_ENTITIES = {
     "Sir-HazeClaw-Scripts": {
         "type": "category",
         "facts": [
-            {"content": "Test Framework: 18 Tests, alle passing", "source": "test_framework.py"},
+            {"content": "Test Framework: 54 Tests, alle passing", "source": "test_framework.py"},
             {"content": "Habit Tracker: 8 habits, streak tracking", "source": "habit_tracker.py"},
             {"content": "Morning Routine: Automatisiert 6 morning checks", "source": "morning_routine.py"},
             {"content": "Evening Routine: Automatisiert evening workflow", "source": "evening_routine.py"},
-            {"content": "Self-Evaluation: Trackt goals vs current state", "source": "self_eval.py"},
+            {"content": "Self-Evaluation: Trackt goals vs current state (Score 95/100)", "source": "self_eval.py"},
             {"content": "Quality Metrics: Commit/Backup tracking", "source": "quality_metrics.py"},
             {"content": "Deep Reflection: 10 deep questions für improvement", "source": "deep_reflection.py"},
+            {"content": "Reflection Loop: Analysiert patterns, self-corrects", "source": "reflection_loop.py"},
+            {"content": "Security Audit: Prüft auf code injection risks", "source": "security_audit.py"},
+        ]
+    },
+    "AI-Agent-Prompt-Patterns": {
+        "type": "pattern",
+        "facts": [
+            {"content": "Pattern 1: Role + Constraints - Definiere wer und was NICHT", "source": "research 2026-04-10"},
+            {"content": "Pattern 2: Chain of Verification - Output vor Aktion prüfen", "source": "research 2026-04-10"},
+            {"content": "Pattern 3: Structured Output - Klare Kommunikation", "source": "research 2026-04-10"},
+            {"content": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung", "source": "research 2026-04-10"},
+            {"content": "Pattern 5: Guard Rails - Sicherheitsgrenzen", "source": "research 2026-04-10"},
+        ]
+    },
+    "Research-Skill": {
+        "type": "skill",
+        "facts": [
+            {"content": "Web Search: Brave Search API integration", "source": "skills/research"},
+            {"content": "Web Fetch: URL content extraction", "source": "skills/research"},
+            {"content": "Pattern: Quick Research -> Deep Research -> Document", "source": "skills/research"},
         ]
     },
     "Self-Improvement-Patterns": {
