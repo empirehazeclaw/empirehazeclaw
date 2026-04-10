@@ -100,7 +100,7 @@
 | 1 | Entity Types erweitern (18→19) | 🟡 MED | ✅ Konzept done|
 | 2 | Depth Tracking im KG | 🟡 MED | ✅ Konzept done|
 | 3 | Encrypted Vault für Secrets | 🔴 HIGH | ✅ Script + Doku done|
-| 4 | KGML Summary Format evaluieren | 🟢 LOW | ⏳ ToDo |
+| 4 | KGML Summary Format evaluieren | 🟢 LOW | ✅ KGML_SUMMARY.md erstellt |
 
 ### Details:
 

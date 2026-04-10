@@ -28,6 +28,8 @@
 | 8 | KGML Summary | 🟢 LOW | ✅ Konzept done |
 | 9 | Dependency Scanner | 🟡 MED | ✅ security-audit.sh erweitert + quality check done |
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
+| 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
+| 12 | Health Alert | 🟢 LOW | ✅ scripts/health_alert.py erstellt + getestet |
 
 ---
 
