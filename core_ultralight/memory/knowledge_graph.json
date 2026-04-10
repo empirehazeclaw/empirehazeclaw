@@ -2532,9 +2532,369 @@
       "last_accessed": "2026-04-09T06:00:01.144105",
       "access_count": 0,
       "decay_score": 1.0
+    },
+    "skill_health_monitoring_20260410": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "System health monitoring scripts",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:25:05.588034",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:25:05.588034",
+      "last_accessed": ""
+    },
+    "skill_backup_automation_20260410": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "Automated backup scripts",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:25:10.401249",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:25:10.401249",
+      "last_accessed": ""
+    },
+    "skill_morning_brief_20260410": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "Morning brief generator",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:25:10.449528",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:25:10.449528",
+      "last_accessed": ""
+    },
+    "system_health_monitoring_20260410": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "System health monitoring scripts created today",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:33:04.124829",
+          "category": "system"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:33:04.124829",
+      "last_accessed": ""
+    },
+    "system_backup_system_20260410": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Automated backup system with cron jobs",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:33:08.724425",
+          "category": "system"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:33:08.724425",
+      "last_accessed": ""
+    },
+    "concept_solo_fighter_mode_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Single agent mode - CEO only, no sub-agents",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:33:13.333515",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:33:13.333515",
+      "last_accessed": ""
+    },
+    "concept_quality_assurance_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Every script must be tested before marking as done",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:33:18.551649",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:33:18.551649",
+      "last_accessed": ""
+    },
+    "concept_pattern_recognition_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Recognizing and preventing repeated mistakes",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:33:23.442828",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:33:23.442828",
+      "last_accessed": ""
+    },
+    "person_nico_20260410": {
+      "type": "person",
+      "category": "person",
+      "facts": [
+        {
+          "content": "Master - der Boss von Sir HazeClaw",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:35:33.625292",
+          "category": "person"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:35:33.625292",
+      "last_accessed": ""
+    },
+    "agent_sir_hazeclaw_20260410": {
+      "type": "agent",
+      "category": "agent",
+      "facts": [
+        {
+          "content": "CEO Agent - Solo Fighter Mode",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:35:38.334022",
+          "category": "agent"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:35:38.334022",
+      "last_accessed": ""
+    },
+    "system_openclaw_gateway_20260410": {
+      "type": "system",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Gateway service on port 18789",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:35:42.326285",
+          "category": "system"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:35:42.326285",
+      "last_accessed": ""
+    },
+    "project_empirehazeclaw_fleet_20260410": {
+      "type": "project",
+      "category": "project",
+      "facts": [
+        {
+          "content": "Das Projekt von Nico und Sir HazeClaw",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:35:46.923434",
+          "category": "project"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:35:46.923434",
+      "last_accessed": ""
+    },
+    "concept_continuous_improvement_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Immer weiterarbeiten bis Master Stop sagt",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:38:05.771285",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:38:05.771285",
+      "last_accessed": ""
+    },
+    "concept_quality_first_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Jedes Script testen bevor als fertig markieren",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:38:10.344747",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:38:10.344747",
+      "last_accessed": ""
+    },
+    "concept_qualityoverquantity_20260410": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "Ein perfektes Script ist besser als 10 halbfertige",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10T20:48:34.571650",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10T20:48:34.571650",
+      "last_accessed": ""
+    },
+    "pattern_loop_detection": {
+      "type": "pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Identifies repetitive behavior without progress: >8 similar operations, <5 commits/hour, repeated crons",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "pattern"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "pattern_backup_paranoia": {
+      "type": "pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Backups > 3x commits indicates unnecessary duplication. Rule: Backup when commits > backups*2",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "pattern"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "pattern_quality_first": {
+      "type": "pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "1 perfect script > 10 half-finished. Always test before marking done.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "pattern"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "script_self_check": {
+      "type": "script",
+      "category": "script",
+      "facts": [
+        {
+          "content": "Main health check script with loop detection and pattern monitoring",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "script"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "script_morning_brief": {
+      "type": "script",
+      "category": "script",
+      "facts": [
+        {
+          "content": "Daily 09:00 UTC briefing with git commits, health status, active tasks",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "script"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "concept_openrouter_limitation": {
+      "type": "concept",
+      "category": "concept",
+      "facts": [
+        {
+          "content": "OpenRouter free models require API key. Current fallbacks non-functional. Primary MiniMax works fine.",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "concept"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "skill_loop_prevention": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "Autonomously created skill that detects and prevents loops based on pattern recognition",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "skill_qa_enforcer": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "Ensures quality standards: syntax check, --help test, README verify, git commit check",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
+    },
+    "skill_backup_advisor": {
+      "type": "skill",
+      "category": "skill",
+      "facts": [
+        {
+          "content": "Advises on when to backup based on commit frequency and backup ratio patterns",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-10",
+          "category": "skill"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-10",
+      "last_accessed": ""
     }
   },
-  "last_updated": "2026-04-10T15:02:00.000000Z",
+  "last_updated": "2026-04-10T21:33:20.792834",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -34897,6 +35257,188 @@
       "type": "related_terms",
       "weight": 0.32,
       "created_at": "2026-04-09T10:11:09.551645"
+    },
+    {
+      "from": "skill_health_monitoring_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792752"
+    },
+    {
+      "from": "skill_backup_automation_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792759"
+    },
+    {
+      "from": "skill_morning_brief_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792761"
+    },
+    {
+      "from": "concept_solo_fighter_mode_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "enables",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792763"
+    },
+    {
+      "from": "concept_quality_assurance_20260410",
+      "to": "concept_quality_first_20260410",
+      "type": "specializes",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792764"
+    },
+    {
+      "from": "concept_pattern_recognition_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "enables",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792765"
+    },
+    {
+      "from": "concept_qualityoverquantity_20260410",
+      "to": "concept_quality_first_20260410",
+      "type": "same_as",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792766"
+    },
+    {
+      "from": "person_nico_20260410",
+      "to": "agent_sir_hazeclaw_20260410",
+      "type": "owns",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792767"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "follows",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792768"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "follows",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792769"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_openclaw_gateway_20260410",
+      "type": "manages",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792771"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_health_monitoring_20260410",
+      "type": "created",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792772"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_backup_system_20260410",
+      "type": "created",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792773"
+    },
+    {
+      "from": "system_health_monitoring_20260410",
+      "to": "skill_health_monitoring_20260410",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792774"
+    },
+    {
+      "from": "system_backup_system_20260410",
+      "to": "skill_backup_automation_20260410",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792775"
+    },
+    {
+      "from": "project_empirehazeclaw_fleet_20260410",
+      "to": "agent_sir_hazeclaw_20260410",
+      "type": "employs",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792776"
+    },
+    {
+      "from": "project_empirehazeclaw_fleet_20260410",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "based_on",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792777"
+    },
+    {
+      "from": "pattern_loop_detection",
+      "to": "skill_loop_prevention",
+      "type": "solves",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792782"
+    },
+    {
+      "from": "pattern_backup_paranoia",
+      "to": "skill_backup_advisor",
+      "type": "solves",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792783"
+    },
+    {
+      "from": "pattern_quality_first",
+      "to": "skill_qa_enforcer",
+      "type": "enforces",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792784"
+    },
+    {
+      "from": "script_self_check",
+      "to": "skill_loop_prevention",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792785"
+    },
+    {
+      "from": "script_morning_brief",
+      "to": "skill_qa_enforcer",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792786"
+    },
+    {
+      "from": "concept_openrouter_limitation",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "affects",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792823"
+    },
+    {
+      "from": "skill_loop_prevention",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792825"
+    },
+    {
+      "from": "skill_qa_enforcer",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792828"
+    },
+    {
+      "from": "skill_backup_advisor",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792830"
     }
   ],
   "relations": [
@@ -67260,6 +67802,188 @@
       "type": "related_terms",
       "weight": 0.32,
       "created_at": "2026-04-09T10:11:09.551645"
+    },
+    {
+      "from": "skill_health_monitoring_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792752"
+    },
+    {
+      "from": "skill_backup_automation_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792759"
+    },
+    {
+      "from": "skill_morning_brief_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792761"
+    },
+    {
+      "from": "concept_solo_fighter_mode_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "enables",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792763"
+    },
+    {
+      "from": "concept_quality_assurance_20260410",
+      "to": "concept_quality_first_20260410",
+      "type": "specializes",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792764"
+    },
+    {
+      "from": "concept_pattern_recognition_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "enables",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792765"
+    },
+    {
+      "from": "concept_qualityoverquantity_20260410",
+      "to": "concept_quality_first_20260410",
+      "type": "same_as",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792766"
+    },
+    {
+      "from": "person_nico_20260410",
+      "to": "agent_sir_hazeclaw_20260410",
+      "type": "owns",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792767"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "follows",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792768"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "follows",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792769"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_openclaw_gateway_20260410",
+      "type": "manages",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792771"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_health_monitoring_20260410",
+      "type": "created",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792772"
+    },
+    {
+      "from": "agent_sir_hazeclaw_20260410",
+      "to": "system_backup_system_20260410",
+      "type": "created",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792773"
+    },
+    {
+      "from": "system_health_monitoring_20260410",
+      "to": "skill_health_monitoring_20260410",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792774"
+    },
+    {
+      "from": "system_backup_system_20260410",
+      "to": "skill_backup_automation_20260410",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792775"
+    },
+    {
+      "from": "project_empirehazeclaw_fleet_20260410",
+      "to": "agent_sir_hazeclaw_20260410",
+      "type": "employs",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792776"
+    },
+    {
+      "from": "project_empirehazeclaw_fleet_20260410",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "based_on",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792777"
+    },
+    {
+      "from": "pattern_loop_detection",
+      "to": "skill_loop_prevention",
+      "type": "solves",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792782"
+    },
+    {
+      "from": "pattern_backup_paranoia",
+      "to": "skill_backup_advisor",
+      "type": "solves",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792783"
+    },
+    {
+      "from": "pattern_quality_first",
+      "to": "skill_qa_enforcer",
+      "type": "enforces",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792784"
+    },
+    {
+      "from": "script_self_check",
+      "to": "skill_loop_prevention",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792785"
+    },
+    {
+      "from": "script_morning_brief",
+      "to": "skill_qa_enforcer",
+      "type": "uses",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792786"
+    },
+    {
+      "from": "concept_openrouter_limitation",
+      "to": "concept_solo_fighter_mode_20260410",
+      "type": "affects",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792823"
+    },
+    {
+      "from": "skill_loop_prevention",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792825"
+    },
+    {
+      "from": "skill_qa_enforcer",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792828"
+    },
+    {
+      "from": "skill_backup_advisor",
+      "to": "concept_continuous_improvement_20260410",
+      "type": "implements",
+      "weight": 0.7,
+      "created_at": "2026-04-10T21:33:20.792830"
     }
   ]
 }

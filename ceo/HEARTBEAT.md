@@ -68,7 +68,7 @@
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Gateway | ✅ Running | v2026.4.9, Port 18789 |
-| Knowledge Graph | ⚠️ SPARSE | 15 nodes, 0 edges |
+| Knowledge Graph | ✅ ACTIVE | 173 entities, 4649 relations |
 | Semantic Index | ✅ OK | 51 docs |
 | Disk | ✅ OK | ~72% free |
 | Memory | ✅ OK | 87% free |
