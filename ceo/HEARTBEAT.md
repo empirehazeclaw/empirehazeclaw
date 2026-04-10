@@ -8,7 +8,7 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 1 | OpenRouter Fallback Auth (401 Errors) | ⚠️ HIGH | 5/6 Fallback-Modelle failed |
+| 1 | OpenRouter Fallback Auth (401 Errors) | ⚠️ HIGH | 5/6 Fallback-Modelle failed - API Key invalide/expired |
 | 2 | RBAC & Input Validation OFF | 🔴 HIGH | Security Officer disabled |
 | 3 | Capability Evolver jiti.cjs missing | 🟡 DEP | ✅ genes.json hat 13KB - System funktioniert |
 
@@ -30,7 +30,7 @@
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 | 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
 | 14 | Quick Check | 🟢 LOW | ✅ scripts/quick_check.py erstellt + getestet |
-| 16 | Cron Monitor | 🟢 LOW | ✅ scripts/cron_monitor.py erstellt + getestet |
+| 17 | Cron Watchdog | 🟢 LOW | ✅ scripts/cron_watchdog.py erstellt + Cron eingerichtet |
 
 ---
 
