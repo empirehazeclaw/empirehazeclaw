@@ -139,48 +139,37 @@ Alle Scripts wurden getestet:
 - [x] Dokumentiert
 - [x] Git committed
 
-### Test Results (2026-04-10 20:48-20:49 UTC)
+### Test Results (2026-04-10 20:48-20:53 UTC)
 
 | Script | Status | Notes |
 |--------|--------|-------|
 | morning_brief.py | ✅ | Git commits fixed, shows today+yesterday |
 | weekly_review.py | ✅ | Works correctly |
-| self_check.py | ✅ | Found 3 patterns to avoid |
+| self_check.py | ✅ | 7 Patterns + Backup-Paranoia detection |
 | kg_updater.py | ✅ | add/list/stats work |
-| evening_summary.py | ✅ | Works correctly |
+| evening_summary.py | ✅ | Commit formatting fixed |
 | health_monitor.py | ✅ | System healthy |
 | backup_verify.py | ✅ | Integrity OK |
-| cron_monitor.py | ✅ | 8 enabled, 24 disabled |
+| cron_monitor.py | ✅ | Shows status per cron (✅/⚠️/❌) |
 | quick_check.py | ✅ | All checks passed |
 | daily_summary.py | ✅ | Works correctly |
 | openrouter_monitor.py | ✅ | API responding |
-| system_report.py | ✅ | Works correctly |
+| system_report.py | ✅ | Shows status for all 8 active crons |
 | auto_backup.py | ✅ | Backup created |
 | cron_watchdog.py | ✅ | All healthy |
 | common_issues_check.py | ✅ | Found 2 issues (expected) |
 
 ---
 
-## 📊 SCRIPTS TODAY
+## 📊 SCRIPTS TODAY (Verbessert 20:51-20:53)
 
-| Script | Zweck | Status |
-|--------|-------|--------|
-| morning_brief.py | Morning Brief | ✅ Getestet |
-| weekly_review.py | Weekly Review | ✅ Getestet |
-| evening_summary.py | Evening Summary | ✅ Getestet |
-| self_check.py | Self-Check | ✅ Getestet |
-| kg_updater.py | KG Management | ✅ Getestet |
-| quick_check.py | Rapid Check | ✅ Getestet |
-| health_monitor.py | Health Report | ✅ Getestet |
-| backup_verify.py | Backup Verify | ✅ Getestet |
-| cron_monitor.py | Cron Status | ✅ Getestet |
-| cron_watchdog.py | Cron Watchdog | ✅ Getestet |
-| daily_summary.py | Daily Summary | ✅ Getestet |
-| system_report.py | System Report | ✅ Getestet |
-| openrouter_monitor.py | OpenRouter Monitor | ✅ Getestet |
-| auto_backup.py | Auto Backup | ✅ Getestet |
-| common_issues_check.py | Issues Check | ✅ Getestet |
-| idempotency_check.py | Script Safety | ✅ Created |
+| Script | Improvement | Status |
+|--------|-------------|--------|
+| morning_brief.py | Git commits zeigen heute + gestern | ✅ |
+| self_check.py | 7 Patterns + Backup-Paranoia Erkennung | ✅ |
+| evening_summary.py | Commit formatting gefixt | ✅ |
+| cron_monitor.py | Zeigt Status (✅/⚠️/❌) pro Cron | ✅ |
+| system_report.py | Zeigt Status für alle aktiven Crons | ✅ |
 
 ---
 
