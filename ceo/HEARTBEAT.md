@@ -19,12 +19,12 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Skills autonom erstellen | 🔴 HIGH | ✅ DONE (3 Skills) |
+| - | System optimieren | 🔴 HIGH | 🔄 IN PROGRESS |
 
 ### Geplant (Next)
 | # | Task | Priorität |
 |---|------|-----------|
-| 1 | OpenRouter API Key | 🔴 HIGH |
+| 1 | OpenRouter Known Limitation | 🟡 MED | Doc only |
 
 ---
 
@@ -68,7 +68,7 @@
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Gateway | ✅ Running | v2026.4.9, Port 18789 |
-| Knowledge Graph | ✅ OK | 15 entities |
+| Knowledge Graph | ⚠️ SPARSE | 15 nodes, 0 edges |
 | Semantic Index | ✅ OK | 51 docs |
 | Disk | ✅ OK | ~72% free |
 | Memory | ✅ OK | 87% free |
