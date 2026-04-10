@@ -1,0 +1,24 @@
+{
+  "name": "Backup Advisor",
+  "description": "Berät wann ein Backup sinnvoll ist und erkennt Backup-Paranoia",
+  "version": "1.0.0",
+  "created": "2026-04-10",
+  "updated": "2026-04-10",
+  "ownerId": "ceo",
+  "capabilities": [
+    "Backup-Empfehlung",
+    "Paranoia-Erkennung",
+    "Backup-Hygiene"
+  ],
+  "status": "active",
+  "lastUsed": null,
+  "usageCount": 0,
+  "rules": {
+    "should_backup": "Commits > Backups * 2",
+    "should_not_backup": "Backups > Commits * 3"
+  },
+  "files": {
+    "index.py": "Main script"
+  },
+  "notes": "Verhindert Backup-Paranoia"
+}
