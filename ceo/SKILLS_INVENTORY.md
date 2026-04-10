@@ -88,3 +88,30 @@
 *Sir HazeClaw — Skills Inventory*
 *Auto-managed: YES*
 *Updated: 2026-04-10 21:10 UTC*
+---
+
+## 🆕 NEUE SKILLS (2026-04-10)
+
+### loop-prevention ✅ (NEW)
+- **Version:** 1.0.0
+- **Erstellt:** 2026-04-10
+- **Funktion:** Erkennt Loops ohne echten Fortschritt
+- **Triggers:**
+  - >8 Backups, <5 Commits
+  - <2 Commits in letzter Stunde
+- **Status:** ✅ Getestet und funktioniert
+
+---
+
+## 💡 SKILL-IDEEN (Basierend auf Patterns)
+
+| Pattern | Skill-Idee | Priorität |
+|---------|------------|-----------|
+| Backup-Paranoia | backup-advisor | 🟡 MED |
+| Task-Hopping | task-fokus | 🟡 MED |
+| Triviales KG-Füllen | kg-quality | 🟢 LOW |
+| Quality vergessen | qa-enforcer | 🔴 HIGH |
+
+---
+
+*Skills Inventory Updated: 2026-04-10 21:13 UTC*

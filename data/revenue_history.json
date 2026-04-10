@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-04-10T21:15:00.299748",
+  "period": "30_days",
+  "metrics": {
+    "available_balance": 0,
+    "mrr": 0,
+    "total_30d": 0,
+    "daily_avg_7": 0,
+    "daily_avg_30": 0
+  },
+  "forecast": {
+    "predicted_revenue": 0,
+    "trend_pct": 0,
+    "trend_direction": "no_data"
+  },
+  "daily_breakdown": {}
+}
