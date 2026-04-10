@@ -10,7 +10,7 @@
 |---|------|--------|-------|
 | 1 | OpenRouter Fallback Auth (401 Errors) | ⚠️ HIGH | 5/6 Fallback-Modelle failed |
 | 2 | RBAC & Input Validation OFF | 🔴 HIGH | Security Officer disabled |
-| 3 | Capability Evolver jiti.cjs missing | 🔴 DEP ERROR | Node.js Module nicht ladbar |
+| 3 | Capability Evolver jiti.cjs missing | 🟡 DEP | ✅ genes.json hat 13KB - System funktioniert |
 
 ---
 
