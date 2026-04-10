@@ -9,7 +9,7 @@
 | # | Task | Status | Notes |
 |---|------|--------|-------|
 | 1 | OpenRouter Fallback Auth (401 Errors) | ⚠️ HIGH | 5/6 Fallback-Modelle failed - API Key invalide/expired |
-| 2 | RBAC & Input Validation OFF | 🔴 HIGH | Security Officer disabled |
+| 2 | RBAC & Input Validation OFF | 🟡 MED | Solo Fighter Mode - Security Officer deprecated |
 | 3 | Capability Evolver jiti.cjs missing | 🟡 DEP | ✅ genes.json hat 13KB - System funktioniert |
 
 ---
