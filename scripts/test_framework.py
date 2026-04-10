@@ -368,6 +368,18 @@ TESTS = {
         'test_func': 'get_pending_leads',
         'description': 'Automated Outreach'
     },
+    'reflection_loop': {
+        'script': 'reflection_loop.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_reflection',
+        'description': 'Reflection Loop'
+    },
+    'security_audit': {
+        'script': 'security_audit.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Security Audit'
+    },
 }
 
 def load_script(script_name):
