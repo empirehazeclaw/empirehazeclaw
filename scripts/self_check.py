@@ -70,14 +70,9 @@ def check_workflow():
     import glob
     backup_dir = "/home/clawbot/.openclaw/backups"
     today = datetime.now().strftime("%Y%m%d")
-    backups_today = glob.glob(f"{backup_dir}/backup_{today}_*.tar.gz")
+    backups_today = sorted(glob.glob(f"{backup_dir}/backup_{today}_*.tar.gz"))
     
-    if len(backups_today) > 5:
-        issues.append(f"⚠️  {len(backups_today)} Backups heute (Backup-Paranoia?)")
-    elif not backups_today:
-        issues.append("Kein Backup heute")
-    
-    # Check ob Git commits existieren
+    # Check git commits
     import subprocess
     result = subprocess.run(
         ["git", "log", "--oneline", "--since='today 00:00'"],
@@ -87,10 +82,17 @@ def check_workflow():
     )
     commits = [c for c in result.stdout.strip().split('\n') if c]
     
-    if len(commits) < 3 and len(backups_today) > 3:
-        issues.append(f"⚠️  Mehr Backups ({len(backups_today)}) als sinnvolle Commits ({len(commits)})")
-    elif len(commits) < 3:
-        issues.append(f"Nur {len(commits)} Commits heute")
+    # Echte Backup-Paranoia: Viele Backups, wenig Änderungen
+    if len(backups_today) > 5:
+        # Check ob sich wirklich etwas geändert hat
+        if len(commits) <= 3 and len(backups_today) > len(commits) * 3:
+            issues.append(f"⚠️  {len(backups_today)} Backups, aber nur {len(commits)} Commits (Backup-Paranoia?)")
+        
+    if not backups_today:
+        issues.append("Kein Backup heute")
+    
+    if len(commits) < 3:
+        issues.append(f"⚠️  Nur {len(commits)} Commits heute")
     
     return issues
 

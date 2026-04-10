@@ -27,16 +27,28 @@ def check_server_backup():
     
     # Check for today's backup
     pattern = f"backup_{today}_*.tar.gz"
-    backups = list(BACKUP_DIR.glob(pattern))
+    backups = sorted(BACKUP_DIR.glob(pattern))
     
     if backups:
         latest = max(backups, key=os.path.getmtime)
         size = os.path.getsize(latest) / (1024*1024)
         age_hours = (datetime.now() - datetime.fromtimestamp(os.path.getmtime(latest))).seconds / 3600
         
-        # Check for backup-paranoia
+        # Check for backup-paranoia: Viele Backups, wenig Änderungen
         if len(backups) > 5:
-            return True, f"✅ Server Backup: {latest.name} ({size:.1f}MB, {age_hours:.1f}h alt) - ⚠️  {len(backups)} Backups heute (Backup-Paranoia?)"
+            # Check git commits today
+            import subprocess
+            result = subprocess.run(
+                ["git", "log", "--oneline", "--since='today 00:00'"],
+                cwd="/home/clawbot/.openclaw/workspace",
+                capture_output=True,
+                text=True
+            )
+            commits = [c for c in result.stdout.strip().split('\n') if c]
+            
+            # Echte Paranoia: Viel mehr Backups als Commits
+            if len(backups) > len(commits) * 3:
+                return True, f"✅ Server Backup: {latest.name} ({size:.1f}MB, {age_hours:.1f}h alt) - ⚠️  {len(backups)} Backups, {len(commits)} Commits"
         
         return True, f"✅ Server Backup: {latest.name} ({size:.1f}MB, {age_hours:.1f}h alt)"
     else:
