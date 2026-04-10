@@ -290,6 +290,36 @@ TESTS = {
         'test_func': 'get_sent_emails',
         'description': 'Response Tracker'
     },
+    'crm_manager': {
+        'script': 'crm_manager.py',
+        'type': 'import_no_args',
+        'test_func': 'load_leads',
+        'description': 'CRM Manager'
+    },
+    'demo_scheduler': {
+        'script': 'demo_scheduler.py',
+        'type': 'import_no_args',
+        'test_func': 'load_demos',
+        'description': 'Demo Scheduler'
+    },
+    'meeting_scheduler': {
+        'script': 'meeting_scheduler.py',
+        'type': 'import_no_args',
+        'test_func': 'MeetingScheduler',
+        'description': 'Meeting Scheduler'
+    },
+    'quick_outreach': {
+        'script': 'quick_outreach.py',
+        'type': 'import_no_args',
+        'test_func': 'load_sent',
+        'description': 'Quick Outreach'
+    },
+    'weekly_review_zettel': {
+        'script': 'weekly_review_zettel.py',
+        'type': 'import_no_args',
+        'test_func': 'get_notes',
+        'description': 'Weekly Review Zettel'
+    },
 }
 
 def load_script(script_name):
