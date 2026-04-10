@@ -115,3 +115,11 @@
 ---
 
 *Skills Inventory Updated: 2026-04-10 21:13 UTC*
+
+### qa-enforcer ✅ (NEW)
+- **Version:** 1.0.0
+- **Erstellt:** 2026-04-10
+- **Funktion:** Stellt Quality Checks für Scripts sicher
+- **Checks:** Syntax, --help, README, Git-Commit
+- **Status:** ✅ Getestet und funktioniert
+
