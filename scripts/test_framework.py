@@ -89,6 +89,36 @@ TESTS = {
         'test_func': 'calculate_scores',
         'description': 'Self Evaluation'
     },
+    'deep_reflection': {
+        'script': 'deep_reflection.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_deep_reflection',
+        'description': 'Deep Reflection'
+    },
+    'memory_cleanup': {
+        'script': 'memory_cleanup.py',
+        'type': 'import_no_args',
+        'test_func': 'show_report',
+        'description': 'Memory Cleanup'
+    },
+    'backup_verify': {
+        'script': 'backup_verify.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Backup Verify'
+    },
+    'habit_tracker': {
+        'script': 'habit_tracker.py',
+        'type': 'import_no_args',
+        'test_func': 'generate_report',
+        'description': 'Habit Tracker'
+    },
+    'quick_check': {
+        'script': 'quick_check.py',
+        'type': 'import_no_args',
+        'test_func': 'check',
+        'description': 'Quick Check'
+    },
 }
 
 def load_script(script_name):
