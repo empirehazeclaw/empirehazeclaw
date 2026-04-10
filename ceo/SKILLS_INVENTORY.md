@@ -2,29 +2,30 @@
 
 **Stand:** 2026-04-10
 **Anzahl:** 10 Skills
+**Auto-managed:** YES
 
 ---
 
 ## 📋 SKILLS LISTE
 
-| Skill | Version | Status | Notes |
-|-------|---------|--------|-------|
-| backend-api | 1.0.0 | ✅ _meta.json | |
-| capability-evolver | 1.40.0 | ✅ Aktiv | Gene-based evolution |
-| coding | 1.0.0 | ✅ _meta.json | |
-| content-creator | 1.0.0 | ✅ _meta.json | |
-| email-outreach | 1.0.0 | ✅ _meta.json | |
-| frontend | 1.0.0 | ✅ _meta.json | |
-| lead-intelligence | 1.0.0 | ✅ _meta.json | |
-| semantic-search | 1.0.0 | ✅ _meta.json | |
-| video-renderer | 1.0.0 | ✅ _meta.json | |
-| voice-agent | 1.0.0 | ✅ _meta.json | |
+| Skill | Version | Status | Letzte Nutzung | Notes |
+|-------|---------|--------|----------------|-------|
+| backend-api | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| capability-evolver | 1.40.0 | ✅ Active | 2026-04-10 | 8 Genes, funktioniert |
+| coding | 1.0.0 | ✅ Active | 2026-04-10 | 16x verwendet heute |
+| content-creator | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| email-outreach | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| frontend | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| lead-intelligence | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| semantic-search | 1.0.0 | ⏳ Unused | - | Potential für KG |
+| video-renderer | 1.0.0 | ⏳ Unused | - | Ungetestet |
+| voice-agent | 1.0.0 | ⏳ Unused | - | Ungetestet |
 
 ---
 
 ## 🔍 DETAILS
 
-### capability-evolver
+### capability-evolver ✅
 - **Version:** 1.40.0
 - **Pfad:** skills/capability-evolver/
 - **Funktion:** Gene-based prompt evolution
@@ -34,100 +35,56 @@
   - events.jsonl (8 Events)
   - index.js (31KB)
 
-### backend-api
-- **Version:** Unbekannt
-- **Pfad:** skills/backend-api/
-- **Funktion:** Backend API Development
-- **Status:** ⚠️ Ungetestet
-
-### coding
-- **Version:** Unbekannt
+### coding ✅
+- **Version:** 1.0.0
 - **Pfad:** skills/coding/
 - **Funktion:** Coding Assistance
-- **Status:** ⚠️ Ungetestet
+- **Status:** ✅ Active
+- **Verwendung:** 16 Scripts heute erstellt/verbessert
+- **Notes:** Wird für alle Script-Erstellungen verwendet
 
-### content-creator
-- **Version:** Unbekannt
-- **Pfad:** skills/content-creator/
-- **Funktion:** Content Creation
-- **Status:** ⚠️ Ungetestet
-
-### email-outreach
-- **Version:** Unbekannt
-- **Pfad:** skills/email-outreach/
-- **Funktion:** Email Outreach
-- **Status:** ⚠️ Ungetestet
-
-### frontend
-- **Version:** Unbekannt
-- **Pfad:** skills/frontend/
-- **Funktion:** Frontend Development
-- **Status:** ⚠️ Ungetestet
-
-### lead-intelligence
-- **Version:** Unbekannt
-- **Pfad:** skills/lead-intelligence/
-- **Funktion:** Lead Analysis
-- **Status:** ⚠️ Ungetestet
-
-### semantic-search
-- **Version:** Unbekannt
+### semantic-search ⏳
+- **Version:** 1.0.0
 - **Pfad:** skills/semantic-search/
 - **Funktion:** Semantic Search
-- **Status:** ⚠️ Ungetestet
-
-### video-renderer
-- **Version:** Unbekannt
-- **Pfad:** skills/video-renderer/
-- **Funktion:** Video Rendering
-- **Status:** ⚠️ Ungetestet
-
-### voice-agent
-- **Version:** Unbekannt
-- **Pfad:** skills/voice-agent/
-- **Funktion:** Voice Agent
-- **Status:** ⚠️ Ungetestet
+- **Status:** ⏳ Unused
+- **Potential:** Könnte für KG-Abfragen verwendet werden
 
 ---
 
-## 🎯 NÄCHSTE SCHRITTE
+## 📊 NUTZUNG TRACKING
 
-1. ⏳ _meta.json für alle Skills erstellen
-2. ⏳ Skills testen
-3. ⏳ Skills in KG dokumentieren
+| Skill | Verwendung | Notes |
+|-------|------------|-------|
+| coding | 16x | Heute für Scripts verwendet |
+| capability-evolver | 1x | Gene evolution |
+| semantic-search | 0x | - |
+| Andere | 0x | Ungetestet |
+
+---
+
+## 🎯 SELF-MANAGEMENT STATUS
+
+- [x] _meta.json für alle 10 Skills erstellt
+- [x] Meta-Dateien verbessert (coding, capability-evolver, semantic-search)
+- [ ] Skills testen
+- [ ] Skills in KG dokumentieren
+- [ ] Usage Tracking implementieren
 
 ---
 
 ## 📝 NOTIZEN
 
-Die meisten Skills haben keine Metadaten. Das macht es schwer zu tracken:
-- Welche Version ist installiert?
-- Wann wurde es zuletzt verwendet?
-- Funktioniert es noch?
+### Was ich tun sollte:
+1. **Skills testen** — Schauen ob sie wirklich funktionieren
+2. **KG erweitern** — Jeden Skill dort dokumentieren
+3. **Usage tracken** — Automatisch tracken wann welcher Skill verwendet wird
 
-**Status:** 10/10 Skills haben jetzt _meta.json ✅
-
-**Empfehlung:** Für jeden Skill regelmäßig prüfen ob er funktioniert.
-
----
-
-## 🎯 NÄCHSTE SCHRITTE
-
-1. ⏳ Skills testen
-2. ⏳ Skills in KG dokumentieren
-3. ⏳ Skill-Nutzung tracken
-
----
-
-## 📊 SKILL USAGE TRACKING
-
-| Skill | Last Used | Status |
-|-------|-----------|--------|
-| capability-evolver | 2026-04-09 | ✅ Active |
-| coding | - | ⏳ Unused |
-| semantic-search | - | ⏳ Unused |
+### ClawHub Regel (2026-04-10):
+**NIEMALS ClawHub Skills installieren** — Selbst bauen nach Bedarf.
 
 ---
 
 *Sir HazeClaw — Skills Inventory*
-*Updated: 2026-04-10*
+*Auto-managed: YES*
+*Updated: 2026-04-10 21:10 UTC*
