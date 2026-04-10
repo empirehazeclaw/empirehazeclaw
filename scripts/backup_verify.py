@@ -34,6 +34,10 @@ def check_server_backup():
         size = os.path.getsize(latest) / (1024*1024)
         age_hours = (datetime.now() - datetime.fromtimestamp(os.path.getmtime(latest))).seconds / 3600
         
+        # Check for backup-paranoia
+        if len(backups) > 5:
+            return True, f"✅ Server Backup: {latest.name} ({size:.1f}MB, {age_hours:.1f}h alt) - ⚠️  {len(backups)} Backups heute (Backup-Paranoia?)"
+        
         return True, f"✅ Server Backup: {latest.name} ({size:.1f}MB, {age_hours:.1f}h alt)"
     else:
         return False, f"❌ Kein Server Backup heute (Pattern: {pattern})"
