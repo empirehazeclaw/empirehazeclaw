@@ -1,7 +1,7 @@
 # Sir HazeClaw Scripts
 
 **Stand:** 2026-04-10
-**Scripts:** 55 total, 9 heute erstellt
+**Scripts:** 55 total, 16 heute verbessert/getestet
 
 ---
 
@@ -25,10 +25,16 @@ Alert-System bei Problemen.
 python3 scripts/health_alert.py
 ```
 
-### cron_monitor.py ⭐
-Cron Job Status anzeigen.
+### cron_monitor.py ⭐ (verbessert)
+Cron Job Status anzeigen - jetzt mit ✅/⚠️/❌ Status.
 ```bash
 python3 scripts/cron_monitor.py
+```
+
+### system_report.py ⭐ (verbessert)
+Umfassender System-Report - zeigt alle aktiven Crons mit Status.
+```bash
+python3 scripts/system_report.py
 ```
 
 ### cron_watchdog.py ⭐
@@ -65,8 +71,8 @@ python3 scripts/vault.py list
 
 ## 💾 BACKUP SCRIPTS
 
-### backup_verify.py ⭐
-Backup Validierung.
+### backup_verify.py ⭐ (verbessert)
+Backup Validierung - erkennt jetzt Backup-Paranoia.
 ```bash
 python3 scripts/backup_verify.py
 ```
@@ -94,23 +100,35 @@ Tägliche Zusammenfassung.
 python3 scripts/daily_summary.py
 ```
 
-### morning_brief.py ⭐
-Telegram-formatierter Morning Brief.
+### morning_brief.py ⭐ (verbessert)
+Telegram-formatierter Morning Brief - zeigt jetzt heute + gestern Commits.
 ```bash
 python3 scripts/morning_brief.py
 python3 scripts/morning_brief.py --format telegram
 ```
 
-### kgml_summary.py
-Knowledge Graph als Markdown.
+### evening_summary.py ⭐ (verbessert)
+Evening Summary - Commit formatting gefixt.
 ```bash
-python3 scripts/kgml_summary.py [kg_json] [output_md]
+python3 scripts/evening_summary.py
 ```
 
-### openrouter_monitor.py ⭐
-OpenRouter API Monitor.
+### weekly_review.py ⭐
+Weekly Review Report.
 ```bash
-python3 scripts/openrouter_monitor.py
+python3 scripts/weekly_review.py
+```
+
+### daily_summary.py ⭐ (verbessert)
+Daily Summary - zeigt jetzt Pattern Status.
+```bash
+python3 scripts/daily_summary.py
+```
+
+### self_check.py ⭐ (verbessert)
+Self-Check Script - 7 Patterns + Backup-Paranoia Erkennung.
+```bash
+python3 scripts/self_check.py
 ```
 
 ---
