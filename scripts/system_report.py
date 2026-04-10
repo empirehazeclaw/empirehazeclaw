@@ -140,9 +140,21 @@ def generate_report():
     else:
         enabled = [j for j in jobs if j.get('enabled', True)]
         report += f"Total: {len(jobs)} | Enabled: {len(enabled)}\n\n"
-        for job in enabled[:5]:
-            name = job.get('name', 'unnamed')
-            report += f"- {name}\n"
+        for job in enabled:
+            name = job.get('name', 'unknown')
+            schedule = job.get('schedule', {})
+            cron_expr = schedule.get('expr', '?')
+            state = job.get('state', {})
+            last_run = state.get('lastRunStatus', '?')
+            
+            if last_run == 'ok':
+                status = '✅'
+            elif last_run == 'error':
+                status = '❌'
+            else:
+                status = '⚠️'
+            
+            report += f"{status} {name}: {cron_expr}\n"
     
     report += "\n## 📝 Git Commits Today\n\n"
     commits = get_git_commits_today()
