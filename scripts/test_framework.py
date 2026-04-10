@@ -392,6 +392,12 @@ TESTS = {
         'test_func': 'generate_report',
         'description': 'GitHub Stats'
     },
+    'outreach_optimizer': {
+        'script': 'outreach_optimizer.py',
+        'type': 'import_no_args',
+        'test_func': 'OutreachOptimizer',
+        'description': 'Outreach Optimizer'
+    },
 }
 
 def load_script(script_name):
