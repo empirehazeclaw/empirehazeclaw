@@ -122,3 +122,38 @@ VERCEL_TOKEN=vcp_xxx
 2. **Testing** - Vor Deploy testen
 3. **Logging** - Logging für Fehlerbehebung
 4. **Backup** - Git regelmäßig committen
+
+---
+
+## 🆕 Coding Patterns (gelernt 2026-04-10)
+
+### Pattern: Test-Driven Scripting
+1. Schreibe zuerst das Script
+2. Baue dann Tests dafür
+3. Nutze `test_framework.py` für automatische Tests
+
+### Pattern: CLI mit zwei Modus
+```python
+# Modus 1: Import (für Tests/Tools)
+def main_logic():
+    return data
+
+# Modus 2: CLI (für direkten Aufruf)
+if __name__ == "__main__":
+    print(main_logic())
+```
+
+### Pattern: Strukturierte Outputs
+- Scripts sollen sowohl `return` als auch `print` können
+- Für Integration mit anderen Tools
+
+### Pattern: Error Handling
+- Keine `except: pass`
+- Explizite Fehlerbehandlung
+- Logging für Debugging
+
+### Pattern: Security First
+- Keine `exec()` wo nicht nötig
+- Input Validation
+- Secrets aus Env Vars
+
