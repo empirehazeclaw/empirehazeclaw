@@ -9,16 +9,16 @@
 
 | Skill | Version | Status | Notes |
 |-------|---------|--------|-------|
-| backend-api | ? | ⚠️ Keine Metadaten | |
+| backend-api | 1.0.0 | ✅ _meta.json | |
 | capability-evolver | 1.40.0 | ✅ Aktiv | Gene-based evolution |
-| coding | ? | ⚠️ Keine Metadaten | |
-| content-creator | ? | ⚠️ Keine Metadaten | |
-| email-outreach | ? | ⚠️ Keine Metadaten | |
-| frontend | ? | ⚠️ Keine Metadaten | |
-| lead-intelligence | ? | ⚠️ Keine Metadaten | |
-| semantic-search | ? | ⚠️ Keine Metadaten | |
-| video-renderer | ? | ⚠️ Keine Metadaten | |
-| voice-agent | ? | ⚠️ Keine Metadaten | |
+| coding | 1.0.0 | ✅ _meta.json | |
+| content-creator | 1.0.0 | ✅ _meta.json | |
+| email-outreach | 1.0.0 | ✅ _meta.json | |
+| frontend | 1.0.0 | ✅ _meta.json | |
+| lead-intelligence | 1.0.0 | ✅ _meta.json | |
+| semantic-search | 1.0.0 | ✅ _meta.json | |
+| video-renderer | 1.0.0 | ✅ _meta.json | |
+| voice-agent | 1.0.0 | ✅ _meta.json | |
 
 ---
 
