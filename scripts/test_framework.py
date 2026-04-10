@@ -356,6 +356,12 @@ TESTS = {
         'test_func': 'create_daily_note',
         'description': 'Evening Capture'
     },
+    'telegram_alert': {
+        'script': 'telegram_alert.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Telegram Alert'
+    },
     'automated_outreach': {
         'script': 'automated_outreach.py',
         'type': 'import_no_args',
