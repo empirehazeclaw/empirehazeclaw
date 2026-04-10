@@ -231,3 +231,27 @@ Wenn Count > 3 für gleiches Pattern → Eskalation an Master.
 ---
 
 *Pattern Recognition Updated: 2026-04-10 20:43 UTC*
+
+---
+
+## ⚠️ NEUES PATTERN: Loop ohne echten Fortschritt
+
+| Feld | Wert |
+|------|------|
+| Erkennung | "Ich fahre fort" x-mal wiederholt ohne echte Änderung |
+| Root Cause | Ich wusste nicht was ich tun sollte, also habe ich nichts sinnvolles getan |
+| Master Feedback | "Du bist in einen Loop gefallen" |
+| Prävention | Wenn ich nicht weiß was ich tun soll, NACHFRAGEN statt wiederholen |
+
+### Wann passiert:
+- Nach einer langen Arbeitssession wenn ich müde/bin unsicher
+- Wenn ich keine klare nächste Aufgabe habe
+
+### Was tun:
+1. **Stoppen** und nachdenken
+2. **Master fragen** was als nächstes
+3. **Odler** eine wirklich sinnvolle Aufgabe finden die noch nicht dokumentiert ist
+
+---
+
+*Pattern Recognition Updated: 2026-04-10 21:02 UTC*
