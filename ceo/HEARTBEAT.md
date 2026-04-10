@@ -1,40 +1,64 @@
 # HEARTBEAT.md - 🦞 Sir HazeClaw Active Tasks
 
-*Last updated: 2026-04-10 20:57 UTC*
+*Last updated: 2026-04-10 21:07 UTC*
+*Auto-managed: YES - Sir HazeClaw updates this file autonomously*
 
 ---
 
 ## 🔴 OFFENE BLOCKER
 
-| # | Task | Status | Notes |
-|---|------|--------|-------|
-| 1 | OpenRouter Fallback Auth (401 Errors) | ⚠️ HIGH | 5/6 Fallback-Modelle failed - API Key invalide/expired |
-| 2 | RBAC & Input Validation OFF | 🟡 MED | Solo Fighter Mode - Security Officer deprecated |
+| # | Task | Priorität | Status | Notes |
+|---|------|-----------|--------|-------|
+| 1 | OpenRouter API Key | 🔴 HIGH | ⚠️ | Master muss API Key erneuern |
+| 2 | RBAC & Input Validation | 🟡 MED | 🟡 | Solo Fighter Mode - Security deprecated |
 
 ---
 
-## 🟢 FERTIG (Self-Improvement Sprint)
+## 🎯 AKTIVE TASKS
 
-| # | Task | Status |
-|---|------|--------|
-| 1 | Encrypted Vault | ✅ Script + Doku done |
-| 2 | Entity Types erweitern | ✅ Konzept done |
-| 3 | Depth Tracking im KG | ✅ Konzept done |
-| 4 | Reflexion-Prompt | ✅ DONE |
-| 5 | Self-Evaluation | ✅ DONE |
-| 6 | Pattern Recognition | ✅ DONE |
-| 7 | Memory Struktur | ✅ Konzept done |
-| 8 | KGML Summary | ✅ DONE |
-| 9 | Dependency Scanner | ✅ security-audit.sh done |
-| 10 | Health Monitor | ✅ scripts/health_monitor.py |
-| 11 | Backup Verify | ✅ scripts/backup_verify.py |
-| 12 | Quick Check | ✅ scripts/quick_check.py |
-| 13 | Self Check | ✅ scripts/self_check.py |
-| 14 | Morning Brief | ✅ scripts/morning_brief.py |
-| 15 | Weekly Review | ✅ scripts/weekly_review.py |
-| 16 | Evening Summary | ✅ scripts/evening_summary.py |
-| 17 | Cron Monitor Verbesserung | ✅ Status pro Cron |
-| 18 | System Report Verbesserung | ✅ Alle Crons mit Status |
+### aktuell (Working)
+| # | Task | Priorität | Status |
+|---|------|-----------|--------|
+| - | Self-Management etablieren | 🔴 HIGH | 🔄 In Progress |
+
+### Geplant (Next)
+| # | Task | Priorität |
+|---|------|-----------|
+| 1 | Skills真正nutzen | 🟡 MED |
+| 2 | HEARTBEAT/SOUL/IDENTITY selbst verwalten | 🟡 MED |
+
+---
+
+## 🟢 FERTIG (Latest)
+
+| # | Task | Datum |
+|---|------|-------|
+| 47 | Loop-Erkennung in self_check.py | 2026-04-10 |
+| 46 | Backup-Paranoia Logik verbessert | 2026-04-10 |
+| 45 | Scripts verbessert + getestet (16x) | 2026-04-10 |
+| 44 | HEARTBEAT aufgeräumt | 2026-04-10 |
+
+---
+
+## 🧠 PATTERN LEARNINGS
+
+### ❌ Vermeiden (Known Bad Patterns)
+| Pattern | Erkennung | Prävention |
+|---------|-----------|-------------|
+| Loop ohne Output | "Ich fahre fort" x-mal | Master fragen wenn unsicher |
+| Warten nach Zusammenfassung | "Ich warte auf deine Antwort" | Einfach weitermachen |
+| Backup-Paranoia | Backups > 3x Commits | Backup NACH echten Änderungen |
+| Task-Hopping | Viele kleine Tasks | Eine Aufgabe tief machen |
+| Triviales KG-Füllen | Nutzlose Nodes | Nur echtes Wissen speichern |
+| Halbfertige Scripts | Nicht getestet | Erst testen, dann als fertig |
+
+### ✅ Anwenden (Good Patterns)
+| Pattern | Beschreibung |
+|---------|--------------|
+| Quality over Quantity | 1 perfektes Script > 10 halbfertige |
+| Loop-Erkennung | Bei Unsicherheit: Stop oder Nachfragen |
+| Backup-Regel | Backup wenn Backups > Commits |
+| Test vor "Fertig" | Immer testen bevor fertig markieren |
 
 ---
 
@@ -43,38 +67,65 @@
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Gateway | ✅ Running | v2026.4.9, Port 18789 |
-| Memory | ✅ OK | KG: 15 entities |
-| Semantic Index | ✅ OK | 51 docs, 160 embedded chunks |
+| Knowledge Graph | ✅ OK | 15 entities |
+| Semantic Index | ✅ OK | 51 docs |
 | Disk | ✅ OK | ~72% free |
-| Agents | ✅ SOLO FIGHTER | CEO = Hauptagent. |
+| Memory | ✅ OK | 87% free |
+| Load | ✅ OK | 0.04 |
 
 ---
 
 ## 📅 AKTIVE CRONS (8)
 
-| Zeit | Script | Zweck |
-|------|--------|-------|
-| 08:00 | security-audit.sh | Daily Security Check |
-| 09:00 | morning_brief.py | Daily Morning Brief |
-| 21:00 | evening_capture | Fleeting Note |
-| 22:00* | weekly_review.py | Weekly Review |
-| Periodisch | session_cleanup | Session Cleanup |
-| Periodisch | kg_auto_populate | KG Auto-Update |
-| Hourly | quick_check.py | Quick Health Check |
-| Every 6h | cron_watchdog.py | Cron Watchdog |
+| Zeit | Script | Status | Letzter Run |
+|------|--------|--------|-------------|
+| 08:00 | security-audit.sh | ✅ | OK |
+| 09:00 | morning_brief.py | ✅ | OK |
+| 21:00 | evening_capture | ✅ | OK |
+| 22:00* | weekly_review.py | ✅ | - |
+| Hourly | quick_check.py | ✅ | OK |
+| Every 6h | cron_watchdog.py | ✅ | OK |
+| 03:00 | auto_backup.py | ✅ | OK |
+| Periodisch | session_cleanup | ✅ | OK |
 
 ---
 
-## 🧠 PATTERN LEARNINGS (2026-04-10)
+## 📊 SCRIPTS
 
-### ❌ Vermeiden:
-- **Warten nach Zusammenfassung** — Einfach weitermachen
-- **Triviales KG-Füllen** — Nur echtes Wissen
-- **Backup-Paranoia** — Backup nur wenn nötig
-- **Task-Hopping** — Eine Aufgabe tief machen
-- **Halbfertige Scripts** — Erst testen, dann als fertig
+| Script | Status | Notes |
+|--------|--------|-------|
+| self_check.py | ✅ | Loop-Erkennung + 8 Patterns |
+| quick_check.py | ✅ | Alle Checks OK |
+| health_monitor.py | ✅ | System healthy |
+| backup_verify.py | ✅ | Backup OK |
+| cron_monitor.py | ✅ | 8 enabled, Status pro Cron |
+| morning_brief.py | ✅ | Git commits heute + gestern |
+| daily_summary.py | ✅ | Pattern Status |
+| system_report.py | ✅ | Alle Crons mit Status |
+| evening_summary.py | ✅ | Commit formatting OK |
 
 ---
 
-*HEARTBEAT.md — Sir HazeClaw Active Tasks*
-*Letztes Update: 2026-04-10 20:57 UTC*
+## 🎯 SELF-MANAGEMENT CHECKLIST
+
+- [x] HEARTBEAT.md auto-update (2026-04-10)
+- [x] Patterns dokumentiert
+- [x] Loop-Erkennung eingebaut
+- [ ] SOUL.md verbessern
+- [ ] IDENTITY.md verbessern
+- [ ] Skills selbst verwalten
+
+---
+
+## 📝 NOTIZEN
+
+### 2026-04-10
+- Master Feedback: Loop verhindern, Self-Management etablieren
+- Scripts: 16 verbessert + getestet
+- Backup-Paranoia: Logik verbessert (Backups > 3x Commits)
+
+---
+
+*HEARTBEAT.md — Sir HazeClaw*
+*Auto-managed: YES*
+*Letztes Update: 2026-04-10 21:07 UTC*
