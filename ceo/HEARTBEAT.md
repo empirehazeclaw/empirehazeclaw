@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 🦞 Sir HazeClaw Active Tasks
 
-*Last updated: 2026-04-10 21:16 UTC*
+*Last updated: 2026-04-10 22:39 UTC*
 *Auto-managed: YES - Sir HazeClaw updates this file autonomously*
 
 ---
@@ -19,12 +19,41 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Daily Scripts verbessert | 🔴 HIGH | ✅ DONE |
+| - | Self-Improvement Sprint | 🔴 HIGH | 🔄 IN PROGRESS |
 
 ### Geplant (Next)
-| # | Task | Priorität |
-|---|------|-----------|
-| 1 | kg_updater.py verbessern | 🟡 MED | Low priority |
+| # | Task | Priorität | Status |
+|---|------|-----------|--------|
+| 1 | Reflection vertiefen | 🔴 HIGH | Planned |
+| 2 | Quality Metrics System | 🔴 HIGH | Planned |
+| 3 | Memory Retrieval verbessern | 🟡 MED | Planned |
+| 4 | kg_updater.py verbessern | 🟡 MED | Low priority |
+
+---
+
+## 📋 SELF-IMPROVEMENT TODO (2026-04-10)
+
+### Phase 1: Reflection vertiefen
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 1 | dream_reflection.py analysieren | 🔲 | Current state prüfen |
+| 2 | Reflection Fragen erweitern | 🔲 | Tiefere Selbst-Analyse |
+| 3 | Reflection Output strukturieren | 🔲 | strukturierte Learnings |
+| 4 | Reflection in KG speichern | 🔲 | Für Retrieval |
+
+### Phase 2: Quality Metrics System
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 1 | Quality Metriken definieren | 🔲 | Was messen wir? |
+| 2 | metrics_tracker.py erstellen | 🔲 | Tracken pro Task |
+| 3 | Success Rate berechnen | 🔲 | Commits vs Plans |
+
+### Phase 3: Memory Retrieval verbessern
+| # | Task | Status | Notes |
+|---|------|--------|-------|
+| 1 | memory_hybrid_search.py analysieren | 🔲 | Current state |
+| 2 | Retrieval verbessern | 🔲 | Bessere Matches |
+| 3 | Kontext-Relevanz | 🔲 | Aktuelle Situation |
 
 ---
 
@@ -32,15 +61,12 @@
 
 | # | Task | Datum |
 |---|------|-------|
-| 56 | 8 Daily Scripts verbessert (morning_brief, weekly_review, self_check, evening_summary, health_monitor, cron_monitor, daily_summary, auto_backup) | 2026-04-10 |
-| 55 | Auto Backup mit Verify + Stats | 2026-04-10 |
-| 54 | Cron Monitor verbessert (Telegram, Failed-only) | 2026-04-10 |
-| 53 | Health Monitor verbessert (KG, DB, Trends) | 2026-04-10 |
-| 52 | Evening Summary verbessert (Highlights, Trends, KG) | 2026-04-10 |
-| 51 | Daily Summary verbessert (Telegram, KG, Trends) | 2026-04-10 |
-| 50 | Weekly Review verbessert (Trends, KG, Insights) | 2026-04-10 |
-| 49 | Morning Brief verbessert (KG, Blockers, Trends) | 2026-04-10 |
-| 48 | 3 Skills erstellt (loop-prevention, qa-enforcer, backup-advisor) | 2026-04-10 |
+| 61 | Bad Patterns aktualisiert (kolleguial, unvollständig) | 2026-04-10 |
+| 60 | TASK_RHYTHM: NEVER ABORT EARLY Regeln | 2026-04-10 |
+| 59 | Research: Super Agent Patterns | 2026-04-10 |
+| 58 | 9 Daily Scripts verbessert | 2026-04-10 |
+| 57 | memory_cleanup.py verbessert | 2026-04-10 |
+| 56 | 8 Daily Scripts verbessert (morning_brief, etc.) | 2026-04-10 |
 
 ---
 
@@ -55,6 +81,8 @@
 | Task-Hopping | Viele kleine Tasks | Eine Aufgabe tief machen |
 | Triviales KG-Füllen | Nutzlose Nodes | Nur echtes Wissen speichern |
 | Halbfertige Scripts | Nicht getestet | Erst testen, dann als fertig |
+| Kolloquiale Ausdrücke | "unter Brötchen" | Professionelle Sprache |
+| Unvollständige Nachrichten | Abgeschnittene Sätze | Komplett senden |
 
 ### ✅ Anwenden (Good Patterns)
 | Pattern | Beschreibung |
@@ -64,6 +92,7 @@
 | Backup-Regel | Backup wenn Backups > Commits |
 | Test vor "Fertig" | Immer testen bevor fertig markieren |
 | Skill-Creation | Eigenständig Skills erstellen basierend auf Patterns |
+| NEVER ABORT EARLY | Ganze Steps complete machen |
 
 ---
 
@@ -95,58 +124,19 @@
 
 ---
 
-## 📊 SCRIPTS
-
-| Script | Status | Notes |
-|--------|--------|-------|
-| self_check.py | ✅ | Loop-Erkennung + 8 Patterns |
-| quick_check.py | ✅ | Alle Checks OK |
-| health_monitor.py | ✅ | System healthy |
-| backup_verify.py | ✅ | Backup OK |
-| cron_monitor.py | ✅ | 8 enabled, Status pro Cron |
-| morning_brief.py | ✅ | Git commits heute + gestern |
-| daily_summary.py | ✅ | Pattern Status |
-| system_report.py | ✅ | Alle Crons mit Status |
-| evening_summary.py | ✅ | Commit formatting OK |
-| loop-prevention (skill) | ✅ | Loop-Erkennung |
-| qa-enforcer (skill) | ✅ | Quality Checks |
-| backup-advisor (skill) | ✅ | Backup-Empfehlung |
-
----
-
-## 🎯 SELF-MANAGEMENT CHECKLIST
+## 🎯 SELF-MANAGEMENT CHECK
 
 - [x] HEARTBEAT.md auto-update ✅
 - [x] Patterns dokumentiert ✅
 - [x] Loop-Erkennung eingebaut ✅
 - [x] SOUL.md verbessern ✅
 - [x] IDENTITY.md verbessern ✅
-- [x] Skills selbst verwalten ✅ (3 Skills erstellt)
-- [x] Skill-Creation dokumentiert ✅
-
----
-
-## 💡 SKILL-CREATION (2026-04-10)
-
-| Skill | Löst Pattern | Status |
-|-------|-------------|--------|
-| loop-prevention | Loop ohne Output | ✅ |
-| qa-enforcer | Quality vergessen | ✅ |
-| backup-advisor | Backup-Paranoia | ✅ |
-
----
-
-## 📝 NOTIZEN
-
-### 2026-04-10
-- Master Feedback: Loop verhindern, Self-Management etablieren
-- Scripts: 16 verbessert + getestet
-- Backup-Paranoia: Logik verbessert (Backups > 3x Commits)
-- **3 Skills autonom erstellt** basierend auf Patterns
-- Self-Management etabliert (SOUL, IDENTITY, HEARTBEAT)
+- [x] Skills selbst verwalten ✅
+- [x] TASK_RHYTHM mit NEVER ABORT EARLY ✅
+- [x] Super Agent Research ✅
 
 ---
 
 *HEARTBEAT.md — Sir HazeClaw*
 *Auto-managed: YES*
-*Letztes Update: 2026-04-10 21:16 UTC*
+*Letztes Update: 2026-04-10 22:39 UTC*
