@@ -1,9 +1,17 @@
 {
-  "name": "semantic-search",
-  "description": "Skill für semantic-search",
+  "name": "Semantic Search",
+  "description": "Semantic search für Knowledge Graph und Documents",
   "version": "1.0.0",
   "created": "2026-04-08",
   "updated": "2026-04-10",
   "ownerId": "ceo",
-  "status": "unknown"
+  "capabilities": [
+    "Semantic search",
+    "Embedding generation",
+    "Similarity search"
+  ],
+  "status": "active",
+  "lastUsed": null,
+  "usageCount": 0,
+  "notes": "Noch nicht verwendet - potential für KG-Abfragen"
 }
