@@ -30,7 +30,7 @@
 | 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 | 11 | Backup Verify | 🟢 LOW | ✅ scripts/backup_verify.py erstellt + getestet |
 | 14 | Quick Check | 🟢 LOW | ✅ scripts/quick_check.py erstellt + getestet |
-| 19 | Auto Backup | 🟢 LOW | ✅ scripts/auto_backup.py + Cron (03:00 UTC) |
+| 20 | OpenRouter Monitor | 🟢 LOW | ✅ scripts/openrouter_monitor.py erstellt + getestet |
 
 ---
 
