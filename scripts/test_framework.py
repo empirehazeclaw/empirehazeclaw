@@ -350,6 +350,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Discord Report Forwarder'
     },
+    'evening_capture': {
+        'script': 'evening_capture.py',
+        'type': 'import_no_args',
+        'test_func': 'create_daily_note',
+        'description': 'Evening Capture'
+    },
     'automated_outreach': {
         'script': 'automated_outreach.py',
         'type': 'import_no_args',
@@ -426,7 +432,7 @@ def run_test(test_name, test_def):
             result = result[0]  # Take the first element (the report/string)
         
         # Functions that print but return None are OK
-        cli_functions = ['report', 'summary', 'main', 'routine', 'check', 'show', 'list', 'stats']
+        cli_functions = ['report', 'summary', 'main', 'routine', 'check', 'show', 'list', 'stats', 'note', 'capture']
         is_cli_function = any(x in test_func_name.lower() for x in cli_functions)
         
         if result is None:
