@@ -1,2 +1,6 @@
 *.log
 examiner/
+
+# Sir HazeClaw Vault
+memory/vault.enc.json
+memory/.vault-key

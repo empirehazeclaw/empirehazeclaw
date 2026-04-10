@@ -363,3 +363,46 @@ cp openclaw.json openclaw.json.backup_$(date +%Y%m%d)
 ---
 
 *Dokumentiert: 2026-04-10 — Master's Anweisung*
+
+---
+
+## 🦞 SOLO FIGHTER — KORREKTUR (2026-04-10)
+
+**Solo Fighter = 1 Haupt-Agent (CEO). Subagents bei Bedarf erlaubt.**
+
+- CEO ist der Hauptagent
+- Subagents können bei Bedarf gespawnt werden
+- Aber: NICHT ständig laufen lassen
+- Zweck: Effizienz, nicht Komplexität
+
+---
+
+---
+
+## ✅ QUALITY ASSURANCE REGEL (2026-04-10)
+
+**Master's Anweisung: Jedes Script/Dokument MUSS getestet werden bevor als "fertig" markiert.**
+
+### Vor "Fertig":
+1. **Funktioniert** — Script läuft ohne Fehler
+2. **Qualität** — Entspricht Anforderungen
+3. **Getestet** — Echte Tests durchgeführt
+4. **Dokumentiert** — Usage/Probleme notiert
+
+### Test-Checkliste:
+```
+□ Script ausführen und Output prüfen
+□ Echte Daten nutzen (nicht nur --help)
+□ Fehlerfälle testen
+□ Performance checken
+□ Security impliciations prüfen
+```
+
+### Wenn etwas nicht geht:
+- Sofort dokumentieren
+- Known Issues notieren
+- Nicht als "fertig" markieren bis gefixt
+
+---
+
+*Ergänzt: 2026-04-10 — Master's Qualitäts-Anforderung*

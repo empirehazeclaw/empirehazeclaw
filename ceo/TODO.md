@@ -97,9 +97,9 @@
 
 | # | Task | Priority | Status |
 |---|------|----------|--------|
-| 1 | Entity Types erweitern (18→19) | 🟡 MED | ⏳ ToDo |
-| 2 | Depth Tracking im KG implementieren | 🟡 MED | ⏳ ToDo |
-| 3 | Encrypted Vault für Secrets (statt Klartext) | 🔴 HIGH | ⏳ ToDo |
+| 1 | Entity Types erweitern (18→19) | 🟡 MED | ✅ Konzept done|
+| 2 | Depth Tracking im KG | 🟡 MED | ✅ Konzept done|
+| 3 | Encrypted Vault für Secrets | 🔴 HIGH | ✅ Script + Doku done|
 | 4 | KGML Summary Format evaluieren | 🟢 LOW | ⏳ ToDo |
 
 ### Details:
@@ -207,10 +207,10 @@ Quelle: Internet Research über AI Agent Selbstverbesserung
 
 | # | Idee | Priority | Status |
 |---|------|----------|--------|
-| 1 | Reflexion-Prompt nach Fehlern | 🟢 LOW | ⏳ ToDo |
-| 2 | Memory strukturieren (Semantic/Episodic) | 🟡 MED | ⏳ ToDo |
-| 3 | Self-Evaluation nach Tasks | 🟢 LOW | ⏳ ToDo |
-| 4 | Pattern Recognition für Fehler | 🟡 MED | ⏳ ToDo |
+| 1 | Reflexion-Prompt nach Fehlern | 🟢 LOW | ✅ DONE| |
+| 2 | Memory strukturieren (Semantic/Episodic) | 🟡 MED | ✅ Konzept done|
+| 3 | Self-Evaluation nach Tasks | 🟢 LOW | ✅ DONE| |
+| 4 | Pattern Recognition für Fehler | 🟡 MED | ✅ DONE| |
 
 Details in: SELF_IMPROVEMENT_RESEARCH.md
 

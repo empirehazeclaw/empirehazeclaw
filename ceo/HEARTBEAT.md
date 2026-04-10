@@ -14,13 +14,20 @@
 
 ---
 
-## 🟡 AKTIVE TASKS
+## 🟡 AKTIVE TASKS (Self-Improvement Sprint)
 
 | # | Task | Priority | Status |
 |---|------|----------|--------|
-| 1 | Encrypted Vault für Secrets | 🔴 HIGH | ⏳ ToDo |
-| 2 | Entity Types erweitern (18→19) | 🟡 MED | ⏳ ToDo |
-| 3 | Depth Tracking im KG | 🟡 MED | ⏳ ToDo |
+| 1 | Encrypted Vault | 🔴 HIGH | ✅ Script + Doku done |
+| 2 | Entity Types erweitern | 🟡 MED | ✅ Konzept done |
+| 3 | Depth Tracking im KG | 🟡 MED | ✅ Konzept done |
+| 4 | Reflexion-Prompt | 🟢 LOW | ✅ DONE |
+| 5 | Self-Evaluation | 🟢 LOW | ✅ DONE |
+| 6 | Pattern Recognition | 🟡 MED | ✅ DONE |
+| 7 | Memory Struktur | 🟡 MED | ✅ Konzept done |
+| 8 | KGML Summary | 🟢 LOW | ✅ Konzept done |
+| 9 | Dependency Scanner | 🟡 MED | ✅ security-audit.sh erweitert + quality check done |
+| 10 | Health Monitor | 🟢 LOW | ✅ scripts/health_monitor.py erstellt + getestet |
 
 ---
 
@@ -32,7 +39,7 @@
 | Memory | ✅ OK | KG: 158 entities, 4661 relations |
 | Semantic Index | ✅ OK | 51 docs, 160 embedded chunks |
 | Disk | ✅ OK | ~70GB free |
-| Agents | ✅ SINGLE CORE | Nur CEO aktiv |
+| Agents | ✅ SOLO FIGHTER | CEO = Hauptagent. Subagents bei Bedarf.
 
 ---
 
@@ -50,3 +57,21 @@
 ---
 
 *HEARTBEAT.md — Nur aktive Tasks + System Status. Keine Completion Logs.*
+
+---
+
+## 🧠 SELF-IMPROVEMENT SPRINT (2026-04-10)
+
+| Task | Status |
+|------|--------|
+| Reflexion-Prompt | ✅ DONE |
+| Self-Evaluation | ✅ DONE |
+| Pattern Recognition | ✅ DONE |
+| Memory Struktur | ✅ Konzept |
+| Encrypted Vault | ✅ Script + Doku |
+| Entity Types Extension | ✅ Konzept |
+| Depth Tracking KG | ✅ Konzept |
+
+**Backup:** ✅ Server + GitHub + Rollback
+**Docs:** IMPROVEMENT_WORKFLOW.md
+
