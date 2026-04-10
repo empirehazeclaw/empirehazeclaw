@@ -24,7 +24,7 @@
 ### Geplant (Next)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| 1 | Skills erweitern | 🟡 MED | Planned |
+| 1 | KG erweitern | 🟡 MED | Planned |
 
 ---
 
