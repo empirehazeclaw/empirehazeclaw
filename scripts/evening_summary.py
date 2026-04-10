@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Sir HazeClaw Evening Summary
-Generiert einen Abend-Zusammenfassung.
+Sir HazeClaw Evening Summary — IMPROVED
+Generiert einen Abend-Zusammenfassung mit echten Highlights.
 
 Usage:
     python3 evening_summary.py
@@ -12,25 +12,51 @@ import os
 import sys
 import json
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 WORKSPACE_DIR = Path("/home/clawbot/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE_DIR / "memory"
+KG_PATH = WORKSPACE_DIR / "core_ultralight/memory/knowledge_graph.json"
+HEARTBEAT_PATH = WORKSPACE_DIR / "ceo/HEARTBEAT.md"
 
 def get_today_commits():
     """Holt Git Commits von heute."""
     try:
         result = subprocess.run(
-            ["git", "log", "--oneline", "--since='today 00:00'"],
-            cwd=WORKSPACE_DIR,
+            ["git", "log", "--oneline", "--since='today 00:00'", "--format=%H %s"],
+            cwd=str(WORKSPACE_DIR),
             capture_output=True,
-            text=True
+            text=True,
+            timeout=10
         )
-        commits = [c for c in result.stdout.strip().split('\n') if c]
+        commits = []
+        for line in result.stdout.strip().split('\n'):
+            if line:
+                parts = line.split(' ', 1)
+                if len(parts) == 2:
+                    commits.append({'hash': parts[0][:8], 'msg': parts[1]})
+                else:
+                    commits.append({'hash': line[:8], 'msg': ''})
         return len(commits), commits
     except:
         return 0, []
+
+def get_yesterday_commits():
+    """Holt Git Commits von gestern."""
+    try:
+        yesterday = datetime.now() - timedelta(days=1)
+        date_str = yesterday.strftime('%Y-%m-%d')
+        result = subprocess.run(
+            ["git", "log", "--oneline", f"--since={date_str}T00:00:00Z", f"--until={date_str}T23:59:59Z"],
+            cwd=str(WORKSPACE_DIR),
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        return len([c for c in result.stdout.strip().split('\n') if c])
+    except:
+        return 0
 
 def get_today_memory():
     """Holt Memory Notes von heute."""
@@ -39,8 +65,28 @@ def get_today_memory():
     
     if note_file.exists():
         content = note_file.read_text()
-        return len(content), content[:200]
-    return 0, ""
+        lines = [l for l in content.split('\n') if l.strip()]
+        return len(content), lines[-5:] if len(lines) > 5 else lines
+    return 0, []
+
+def get_kg_today():
+    """Holt KG Stats und Änderungen heute."""
+    if not KG_PATH.exists():
+        return None
+    
+    try:
+        with open(KG_PATH) as f:
+            kg = json.load(f)
+        
+        entities = len(kg.get('entities', {}))
+        relations = len(kg.get('relations', []))
+        
+        return {
+            'entities': entities,
+            'relations': relations
+        }
+    except:
+        return None
 
 def get_system_status():
     """Holt aktuellen System Status."""
@@ -62,65 +108,165 @@ def get_system_status():
     
     # Memory
     mem = psutil.virtual_memory()
-    mem_free = f"{100-mem.percent:.0f}%"
+    mem_pct = 100 - mem.percent
     
     # Disk
     disk = psutil.disk_usage('/')
-    disk_free = f"{100-disk.percent:.0f}%"
+    disk_pct = 100 - disk.percent
     
-    return gateway, load, mem_free, disk_free
+    return {
+        'gateway': gateway,
+        'load': load,
+        'mem_pct': mem_pct,
+        'disk_pct': disk_pct
+    }
+
+def get_blockers():
+    """Liest Blockers aus HEARTBEAT."""
+    if not HEARTBEAT_PATH.exists():
+        return []
+    
+    content = HEARTBEAT_PATH.read_text()
+    blockers = []
+    
+    lines = content.split('\n')
+    in_blocker = False
+    
+    for line in lines:
+        if 'OFFENE BLOCKER' in line:
+            in_blocker = True
+            continue
+        elif in_blocker:
+            if line.startswith('##') and '---' not in line:
+                break
+            if '|' in line and ('🔴' in line or '🟡' in line):
+                parts = [p.strip() for p in line.split('|')]
+                if len(parts) > 2:
+                    task = parts[2].strip()
+                    if task and task not in ['#', 'Task', '---']:
+                        blockers.append(task)
+    
+    return blockers[:3]
+
+def get_highlights(commits):
+    """Extrahiert Highlights aus Commits."""
+    if not commits:
+        return []
+    
+    # Keywords that indicate significant work
+    keywords = ['improve', 'fix', 'add', 'create', 'implement', 'update', 'enhance', 'optimize']
+    highlights = []
+    
+    for c in commits[-10:]:  # Last 10 commits
+        msg = c.get('msg', '').lower()
+        for kw in keywords:
+            if kw in msg:
+                highlights.append(c)
+                break
+    
+    return highlights[-3:]  # Top 3
 
 def generate_summary(format='text'):
     """Generiert Evening Summary."""
     now = datetime.now()
-    today = now.strftime("%Y-%m-%d")
+    today_str = now.strftime("%Y-%m-%d")
     
-    commits, commit_list = get_today_commits()
-    memory_size, memory_preview = get_today_memory()
-    gateway, load, mem_free, disk_free = get_system_status()
+    # Gather data
+    commits_today, commit_list = get_today_commits()
+    commits_yesterday = get_yesterday_commits()
+    memory_size, memory_lines = get_today_memory()
+    system = get_system_status()
+    kg = get_kg_today()
+    blockers = get_blockers()
+    highlights = get_highlights(commit_list)
+    
+    # Calculate trends
+    if commits_yesterday > 0:
+        trend = ((commits_today - commits_yesterday) / commits_yesterday) * 100
+        trend_str = f"+{trend:.0f}%" if trend >= 0 else f"{trend:.0f}%"
+    else:
+        trend_str = "N/A"
     
     if format == 'telegram':
         msg = f"""🌙 **Evening Summary — {now.strftime('%H:%M')}**
 
-**System:**
-• Gateway: {'✅' if gateway else '❌'}
-• Load: {load:.2f}
-• Memory: {mem_free} free
-• Disk: {disk_free} free
+━━━━━━━━━━━━━━━━━━━
+**📊 HEUTE**
+• {commits_today} Commits ({trend_str} vs gestern: {commits_yesterday})
+• Memory: {memory_size} chars"""
 
-**Heute:**
-• {commits} Git Commits
-• Memory: {memory_size} chars
+        if highlights:
+            msg += f"\n\n**🔥 Highlights:**"
+            for h in highlights:
+                msg += f"\n• `{h['hash']}` {h['msg'][:50]}"
 
-"""
-        if commit_list:
-            msg += "**Letzte Commits:**\n"
-            for c in commit_list[-3:]:
-                # Format: "hash message" or "hash  message"
-                parts = c.split(' ', 1)
-                if len(parts) == 2:
-                    hash_part, message = parts
-                    msg += f"• `{hash_part}` {message}\n"
-                else:
-                    msg += f"• `{c[:8]}`\n"
-        
+        msg += f"""
+
+━━━━━━━━━━━━━━━━━━━
+**🖥️ SYSTEM**
+• Gateway: {'✅' if system['gateway'] else '❌'}
+• Load: {system['load']:.2f}
+• Memory: {system['mem_pct']:.0f}% free
+• Disk: {system['disk_pct']:.0f}% free"""
+
+        if kg:
+            msg += f"""
+
+━━━━━━━━━━━━━━━━━━━
+**🧠 KNOWLEDGE GRAPH**
+• {kg['entities']} entities
+• {kg['relations']} relations"""
+
+        if blockers:
+            msg += f"""
+
+━━━━━━━━━━━━━━━━━━━
+**⚠️ AKTIVE BLOCKER**"""
+            for b in blockers:
+                msg += f"\n• {b}"
+
         msg += """
+
+━━━━━━━━━━━━━━━━━━━
 🦞 Gute Nacht!"""
+    
     else:
-        msg = f"""# 🌙 Evening Summary
+        msg = f"""# 🌙 Evening Summary — {now.strftime('%Y-%m-%d %H:%M')}
 
-**{now.strftime('%Y-%m-%d %H:%M')}**
+## 📊 Today
+| Metric | Value |
+|--------|-------|
+| Commits | {commits_today} ({trend_str} vs yesterday: {commits_yesterday}) |
+| Memory Notes | {memory_size} chars |
+"""
 
-## System
-- Gateway: {'OK' if gateway else 'DOWN'}
-- Load: {load:.2f}
-- Memory: {mem_free} free
-- Disk: {disk_free} free
+        if highlights:
+            msg += "### 🔥 Highlights\n"
+            for h in highlights:
+                msg += f"- `{h['hash']}` {h['msg']}\n"
+            msg += "\n"
 
-## Heute
-- {commits} Git Commits
-- Memory: {memory_size} chars
+        msg += f"""## 🖥️ System
+| Metric | Status |
+|--------|--------|
+| Gateway | {'✅ OK' if system['gateway'] else '❌ DOWN'} |
+| Load | {system['load']:.2f} |
+| Memory | {system['mem_pct']:.0f}% free |
+| Disk | {system['disk_pct']:.0f}% free |
+"""
 
+        if kg:
+            msg += f"""## 🧠 Knowledge Graph
+- Entities: {kg['entities']}
+- Relations: {kg['relations']}
+"""
+
+        if blockers:
+            msg += "## ⚠️ Active Blockers\n"
+            for b in blockers:
+                msg += f"- {b}\n"
+
+        msg += """
 ---
 🦞 Sir HazeClaw"""
     
@@ -132,7 +278,6 @@ def save_to_memory():
     MEMORY_DIR.mkdir(parents=True, exist_ok=True)
     
     note_file = MEMORY_DIR / f"{today}.md"
-    
     summary = generate_summary('text')
     
     with open(note_file, "a") as f:
@@ -144,7 +289,7 @@ def save_to_memory():
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='Evening Summary')
+    parser = argparse.ArgumentParser(description='Evening Summary - Improved')
     parser.add_argument('--format', choices=['text', 'telegram'], default='telegram')
     parser.add_argument('--save', action='store_true', help='Save to memory')
     args = parser.parse_args()
