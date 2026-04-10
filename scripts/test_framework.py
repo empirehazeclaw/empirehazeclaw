@@ -338,6 +338,12 @@ TESTS = {
         'test_func': 'load_vault',
         'description': 'Vault'
     },
+    'improved_outreach': {
+        'script': 'improved_outreach.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Improved Outreach'
+    },
 }
 
 def load_script(script_name):
