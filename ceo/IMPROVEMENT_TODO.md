@@ -143,12 +143,13 @@ TASK:
 
 ### Already DONE:
 - [x] IMPROVEMENT_TODO.md erstellt
-- [x] Token Efficiency in Coordinator integriert ✅ (10:43 UTC)
+- [x] Token Efficiency in Coordinator integriert ✅
 - [x] Gateway Check gefixt (curl statt openclaw status)
 - [x] Learning Coordinator: ALL ✅
+- [x] MCP Server erstellt ✅ (tested, 8 tools)
 
 ### Working ON:
-- [ ] MCP Server für Scripts
+- [ ] MCP Server in openclaw.json eintragen (Master braucht Config-Zugriff)
 - [ ] Tool Analytics Integration
 
 ### OFFEN:
