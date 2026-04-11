@@ -25,11 +25,12 @@
 |---|---|
 | **Impact** | 73% token reduction |
 | **Effort** | MEDIUM |
-| **Status** | 📋 NEXT |
+| **Status** | ✅ DONE |
 | **Description** | Cache LLM responses for semantically similar queries |
-| **Script** | `token_cache.py` (to create) |
+| **Script** | `token_cache.py` |
 | **Expected Result** | Faster responses, lower API costs |
 | **Reference** | Redis LangCache pattern |
+| **Commit** | cb09e4f |
 
 #### 3. Session Compression
 | | |

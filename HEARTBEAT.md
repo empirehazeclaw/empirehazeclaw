@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-11 17:33 UTC
+## Last Update: 2026-04-11 17:35 UTC
 
 ## ✅ System Overview
 | Metric | Status |
@@ -44,7 +44,7 @@
 | # | Task | Impact | Status |
 |---|------|--------|--------|
 | 1 | **Reflection Pattern** | -20% errors | ✅ DONE |
-| 2 | Token Caching (Redis-style) | -70% tokens | 📋 NEXT |
+| 2 | **Token Caching** | -70% tokens | ✅ DONE |
 | 3 | Session Compression | -90% tokens | 📋 PENDING |
 | 4 | Multi-Agent Loop | -15% errors | 📋 PENDING |
 

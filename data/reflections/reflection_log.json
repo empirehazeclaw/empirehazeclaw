@@ -58,6 +58,26 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 230
+    },
+    {
+      "timestamp": "2026-04-11T17:38:15.801261+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 232
+    },
+    {
+      "timestamp": "2026-04-11T17:38:21.043521+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 234
     }
   ],
   "success_patterns": [
@@ -100,6 +120,32 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-11T17:32:37.403967+00:00",
       "confidence": 0.7858576186780266
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T17:38:15.801261+00:00",
+      "confidence": 0.7694968577130441
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T17:38:21.043521+00:00",
+      "confidence": 0.892163734430049
     }
   ],
   "error_fixes": [
