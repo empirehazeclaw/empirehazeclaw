@@ -137,12 +137,12 @@ def send_review():
     
     # Send via openclaw (if allowed) or print
     try:
-        subprocess.run(timeout=60, [
+        subprocess.run([
             "openclaw", "send",
             "--channel", "telegram",
             "--to", "5392634979",
             "--message", message
-        ], check=True, stderr=subprocess.DEVNULL)
+        ], check=True, timeout=60, stderr=subprocess.DEVNULL)
         print(f"[{now}] Review sent to Master")
     except:
         # Fallback: Print to stdout (will be captured by cron)

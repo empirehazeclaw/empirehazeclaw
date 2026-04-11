@@ -3165,12 +3165,12 @@
         {
           "content": "## arXiv: When Agent Markets Arrive\nAI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the econ\n\n## arXiv: Reimagining RAN Automation in 6G: An Agentic AI Framework with Hierarchical Onli\nIn this paper, we propose an Agentic Artificial Intelligence (AI) framework for wireless networks. The framework coordinates a pool of AI agents guided by Natural Language (NL) inputs from a human ope\n\n## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User\nThe development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, th\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousRes...",
           "confidence": 0.8,
-          "extracted_at": "2026-04-11T21:04:45.605807",
+          "extracted_at": "2026-04-11T20:57:04.828989",
           "category": "innovation_research"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-11T21:04:45.605817",
+      "created": "2026-04-11T20:57:04.828999",
       "tags": [
         "innovation",
         "research",
@@ -3405,6 +3405,396 @@
         "2026"
       ]
     },
+    "timeout_handling_pattern": {
+      "id": "timeout_handling_pattern",
+      "type": "pattern",
+      "name": "Timeout Handling Pattern",
+      "description": "Adding timeout to subprocess calls prevents hanging",
+      "source": "internal",
+      "created": "2026-04-11T16:48:47.894320",
+      "tags": [
+        "timeout",
+        "error-prevention",
+        "subprocess"
+      ]
+    },
+    "retry_loop_prevention_pattern": {
+      "id": "retry_loop_prevention_pattern",
+      "type": "pattern",
+      "name": "Retry Loop Prevention",
+      "description": "Adding loop detection before retry prevents infinite loops",
+      "source": "internal",
+      "created": "2026-04-11T16:48:47.937381",
+      "tags": [
+        "retry",
+        "loop-detection",
+        "error-prevention"
+      ]
+    },
+    "error_pattern_20260411_164954": {
+      "id": "error_pattern_20260411_164954",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_164954",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:49:54.507999",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_164954": {
+      "id": "improvement_action_20260411_164954",
+      "type": "action",
+      "name": "Improvement Action 20260411_164954",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:49:54.508008",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_164959": {
+      "id": "error_pattern_20260411_164959",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_164959",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:49:59.132796",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_164959": {
+      "id": "improvement_action_20260411_164959",
+      "type": "action",
+      "name": "Improvement Action 20260411_164959",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:49:59.132804",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165611_9900": {
+      "id": "error_pattern_20260411_165611_9900",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165611",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:11.697126",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165611_9900": {
+      "id": "improvement_action_20260411_165611_9900",
+      "type": "action",
+      "name": "Improvement Action 20260411_165611",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:11.697133",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165611_9900": {
+      "id": "learning_insight_20260411_165611_9900",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165611",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:11.697135",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165617_9415": {
+      "id": "error_pattern_20260411_165617_9415",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165617",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:17.773848",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165617_9415": {
+      "id": "improvement_action_20260411_165617_9415",
+      "type": "action",
+      "name": "Improvement Action 20260411_165617",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:17.773855",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165617_9415": {
+      "id": "learning_insight_20260411_165617_9415",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165617",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:17.773857",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165618_3982": {
+      "id": "error_pattern_20260411_165618_3982",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165618",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.106124",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165618_3982": {
+      "id": "improvement_action_20260411_165618_3982",
+      "type": "action",
+      "name": "Improvement Action 20260411_165618",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.106134",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165618_3982": {
+      "id": "learning_insight_20260411_165618_3982",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165618",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.106136",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165618_6022": {
+      "id": "error_pattern_20260411_165618_6022",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165618",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.394590",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165618_6022": {
+      "id": "improvement_action_20260411_165618_6022",
+      "type": "action",
+      "name": "Improvement Action 20260411_165618",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.394596",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165618_6022": {
+      "id": "learning_insight_20260411_165618_6022",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165618",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:18.394598",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165632_4882": {
+      "id": "error_pattern_20260411_165632_4882",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165632",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:32.846063",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165632_4882": {
+      "id": "improvement_action_20260411_165632_4882",
+      "type": "action",
+      "name": "Improvement Action 20260411_165632",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:32.846070",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165632_4882": {
+      "id": "learning_insight_20260411_165632_4882",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165632",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:32.846073",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165638_3499": {
+      "id": "error_pattern_20260411_165638_3499",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165638",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:38.068702",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165638_3499": {
+      "id": "improvement_action_20260411_165638_3499",
+      "type": "action",
+      "name": "Improvement Action 20260411_165638",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:38.068710",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165638_3499": {
+      "id": "learning_insight_20260411_165638_3499",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165638",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:38.068714",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_pattern_20260411_165643_5071": {
+      "id": "error_pattern_20260411_165643_5071",
+      "type": "pattern",
+      "name": "Error Pattern 20260411_165643",
+      "description": "Pattern learned from error analysis session",
+      "source": "internal",
+      "created": "2026-04-11T16:56:43.304091",
+      "tags": [
+        "error",
+        "analysis",
+        "learning"
+      ]
+    },
+    "improvement_action_20260411_165643_5071": {
+      "id": "improvement_action_20260411_165643_5071",
+      "type": "action",
+      "name": "Improvement Action 20260411_165643",
+      "description": "Action taken during autonomous improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:43.304101",
+      "tags": [
+        "improvement",
+        "action",
+        "autonomous"
+      ]
+    },
+    "learning_insight_20260411_165643_5071": {
+      "id": "learning_insight_20260411_165643_5071",
+      "type": "insight",
+      "name": "Learning Insight 20260411_165643",
+      "description": "Insight gained from improvement cycle",
+      "source": "internal",
+      "created": "2026-04-11T16:56:43.304104",
+      "tags": [
+        "learning",
+        "insight",
+        "autonomous"
+      ]
+    },
+    "error_fix_20260411_170123_9331": {
+      "id": "error_fix_20260411_170123_9331",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:01:23.121471",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
+    "error_fix_20260411_170316_1467": {
+      "id": "error_fix_20260411_170316_1467",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:03:16.318578",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
+    "error_fix_20260411_170316_8160": {
+      "id": "error_fix_20260411_170316_8160",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:03:16.559668",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_file_read_2290": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3503,6 +3893,19 @@
         "confidence": 0.8706835137293726
       }
     },
+    "error_fix_20260411_173237_2917": {
+      "id": "error_fix_20260411_173237_2917",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:32:37.278548",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_improvement_cycle_1_3828": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3531,6 +3934,19 @@
         "discovered_at": "2026-04-11T17:32:37.403967+00:00",
         "confidence": 0.7858576186780266
       }
+    },
+    "error_fix_20260411_173815_4868": {
+      "id": "error_fix_20260411_173815_4868",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:38:15.703472",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
     },
     "success_improvement_cycle_1_1941": {
       "type": "success_pattern",
@@ -3561,6 +3977,19 @@
         "confidence": 0.7694968577130441
       }
     },
+    "error_fix_20260411_173820_9086": {
+      "id": "error_fix_20260411_173820_9086",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:38:20.954742",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_improvement_cycle_2_7388": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3589,6 +4018,19 @@
         "discovered_at": "2026-04-11T17:38:21.043521+00:00",
         "confidence": 0.892163734430049
       }
+    },
+    "error_fix_20260411_173826_8645": {
+      "id": "error_fix_20260411_173826_8645",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:38:26.200275",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
     },
     "success_improvement_cycle_3_3745": {
       "type": "success_pattern",
@@ -3619,6 +4061,19 @@
         "confidence": 0.7777934220599604
       }
     },
+    "error_fix_20260411_192100_4086": {
+      "id": "error_fix_20260411_192100_4086",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T19:21:00.942391",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_improvement_cycle_1_7792": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3648,6 +4103,19 @@
         "confidence": 0.7931101076747589
       }
     },
+    "error_fix_20260411_192106_4052": {
+      "id": "error_fix_20260411_192106_4052",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T19:21:06.231789",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_improvement_cycle_2_8849": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3676,6 +4144,19 @@
         "discovered_at": "2026-04-11T19:21:06.328391+00:00",
         "confidence": 0.7040389352349861
       }
+    },
+    "error_fix_20260411_192111_8624": {
+      "id": "error_fix_20260411_192111_8624",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T19:21:11.484040",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
     },
     "success_improvement_cycle_3_5652": {
       "type": "success_pattern",
@@ -3713,7 +4194,7 @@
         {
           "content": "Research completed: 3 queries, 2 hypotheses generated",
           "confidence": 0.9,
-          "extracted_at": "2026-04-11T21:04:45.696010",
+          "extracted_at": "2026-04-11T20:57:04.928291",
           "category": "research"
         }
       ],
@@ -3736,11 +4217,24 @@
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-11T21:04:45.696019",
+      "created": "2026-04-11T20:57:04.928302",
       "tags": [
         "research",
         "coordinator",
         "daily"
+      ]
+    },
+    "error_fix_20260411_202131_5059": {
+      "id": "error_fix_20260411_202131_5059",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T20:21:31.723243",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
       ]
     },
     "success_improvement_cycle_1_2808": {
@@ -3772,6 +4266,19 @@
         "confidence": 0.7808920031963408
       }
     },
+    "error_fix_20260411_202136_3909": {
+      "id": "error_fix_20260411_202136_3909",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T20:21:36.970063",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
     "success_improvement_cycle_2_8119": {
       "type": "success_pattern",
       "category": "pattern",
@@ -3800,6 +4307,19 @@
         "discovered_at": "2026-04-11T20:21:37.059690+00:00",
         "confidence": 0.7507068927788318
       }
+    },
+    "error_fix_20260411_202142_8646": {
+      "id": "error_fix_20260411_202142_8646",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T20:21:42.224528",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
     },
     "success_improvement_cycle_3_2470": {
       "type": "success_pattern",
@@ -3831,7 +4351,7 @@
       }
     }
   },
-  "last_updated": "2026-04-11T21:04:45.605822",
+  "last_updated": "2026-04-11T20:57:04.829004",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
