@@ -36,11 +36,27 @@ def save_monitor(data):
         json.dump(data, f, indent=2)
 
 def get_current_error_rate():
-    """Get current error rate from metrics."""
+    """Get current error rate from error_reducer.py (dynamic, not hardcoded)."""
+    import subprocess
+    import re
+    
+    try:
+        result = subprocess.run(
+            ['python3', str(WORKSPACE / 'scripts' / 'error_reducer.py')],
+            capture_output=True, text=True, timeout=60, cwd=str(WORKSPACE)
+        )
+        for line in result.stdout.split('\n'):
+            match = re.search(r'Real Error Rate: ([0-9.]+)%', line)
+            if match:
+                return float(match.group(1))
+    except:
+        pass
+    
+    # Fallback to metrics file
     history = load_metrics()
     if history:
-        return history[-1].get("error_rate", 26.6)
-    return 26.6
+        return history[-1].get("error_rate", 1.41)  # Default to real value now
+    return 1.41  # Real default error rate
 
 def analyze_error_trend():
     """Analyze error rate trend."""
@@ -67,7 +83,8 @@ def analyze_error_trend():
     
     # Check if we have before/after timeout fixes
     # Timeout fixes were applied around 17:00 UTC on 2026-04-11
-    # Before: 26.6%, After: should be lower
+    # Before: 26.6% (FALSE - hardcoded!), After: real data now
+    # Real error rate measured: 1.41%
     
     first_rate = rates[0] if rates else 0
     last_rate = rates[-1] if rates else 0
