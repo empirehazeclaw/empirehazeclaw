@@ -34,6 +34,12 @@
 - Tests: 65+ passing
 - Self-Eval: 99/100
 
+## 🔄 Proactive Monitoring (NEW)
+| Cron | Status | Interval |
+|------|--------|----------|
+| Loop Check | ✅ ACTIVE | Every 15 min |
+| Learning Coordinator | ✅ ACTIVE | Hourly |
+
 ## 🚨 Open Issues
 - MCP Server Config: Master must add mcpServers to openclaw.json
 
