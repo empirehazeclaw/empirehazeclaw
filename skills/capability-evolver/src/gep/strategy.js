@@ -95,8 +95,9 @@ function resolveStrategy(opts) {
   // Auto-detection: when no explicit strategy is set (defaults to 'balanced'),
   // apply heuristics inspired by Echo-MingXuan's "fix first, innovate later" pattern.
   var isDefault = !process.env.EVOLVE_STRATEGY || name === 'balanced' || name === 'auto';
+  var forceInnovation = String(process.env.FORCE_INNOVATION || process.env.EVOLVE_FORCE_INNOVATION || '').toLowerCase();
 
-  if (isDefault) {
+  if (isDefault && forceInnovation !== 'true') {
     // Early-stabilize: first 5 cycles should focus on fixing existing issues.
     var cycleCount = _readCycleCount();
     if (cycleCount > 0 && cycleCount <= 5) {
