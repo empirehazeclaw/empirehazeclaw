@@ -143,6 +143,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Innovation Research'
     },
+    'autonomous_improvement': {
+        'script': 'autonomous_improvement.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Autonomous Improvement'
+    },
     'skill_creator': {
         'script': 'skill_creator.py',
         'type': 'import_no_args',
