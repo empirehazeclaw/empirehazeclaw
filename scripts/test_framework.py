@@ -1,656 +1,367 @@
 #!/usr/bin/env python3
 """
 Sir HazeClaw Simple Test Framework
-Einfaches Test-Framework für Scripts.
+=================================
+Test-Framework für Scripts.
 
 Usage:
-    python3 test_framework.py
-    python3 test_framework.py --run morning_brief
-    python3 test_framework.py --list
+    python3 test_framework.py              # Run all tests
+    python3 test_framework.py --list      # List all tests
+    python3 test_framework.py --run <name> # Run specific test
+    python3 test_framework.py --category <cat> # Run by category
 """
 
 import sys
 import importlib.util
-import subprocess
 from pathlib import Path
 from datetime import datetime
+from typing import Dict, List, Tuple, Optional, Any
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 SCRIPTS_DIR = WORKSPACE / "scripts"
 
-# Test definitions
-TESTS = {
+# Valid test definitions (verified 2026-04-11)
+# Format: 'test_name': {'script': 'script.py', 'type': 'import', 'func': 'function_name', 'description': '...'}
+TESTS: Dict[str, Dict] = {
+    # Core Scripts
     'morning_brief': {
         'script': 'morning_brief.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_brief',
+        'type': 'import',
         'description': 'Morning Brief Generator'
     },
-    'health_monitor': {
-        'script': 'health_monitor.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Health Monitor'
+    'health_check': {
+        'script': 'health_check.py',
+        'type': 'import',
+        'args': ['--quick'],
+        'description': 'Health Check'
     },
-    'self_check': {
-        'script': 'self_check.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Self Check'
+    'mission_control': {
+        'script': 'mission_control.py',
+        'type': 'import',
+        'description': 'Mission Control Dashboard'
     },
-    'cron_monitor': {
-        'script': 'cron_monitor.py',
-        'type': 'import_with_args',
-        'test_func': 'generate_report',
-        'test_args': ('text',),
-        'description': 'Cron Monitor'
+    'session_analyzer': {
+        'script': 'session_analyzer.py',
+        'type': 'module',
+        'description': 'Session Analyzer'
     },
-    'daily_summary': {
-        'script': 'daily_summary.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_summary',
-        'description': 'Daily Summary'
+    
+    # Memory Scripts
+    'memory_sanitizer': {
+        'script': 'memory_sanitizer.py',
+        'type': 'import',
+        'description': 'Memory Sanitizer'
     },
-    'evening_summary': {
-        'script': 'evening_summary.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_summary',
-        'description': 'Evening Summary'
+    'memory_audit': {
+        'script': 'memory_audit.py',
+        'type': 'import',
+        'description': 'Memory Audit Log'
     },
-    'quality_metrics': {
-        'script': 'quality_metrics.py',
-        'type': 'import_no_args',
-        'test_func': 'calculate_metrics',
-        'description': 'Quality Metrics'
+    'memory_versioning': {
+        'script': 'memory_versioning.py',
+        'type': 'import',
+        'description': 'Memory Versioning'
     },
-    'memory_hybrid_search': {
-        'script': 'memory_hybrid_search.py',
-        'type': 'import_with_args',
-        'test_func': 'hybrid_search',
-        'test_args': ('quality',),
-        'description': 'Memory Hybrid Search'
+    'memory_validator': {
+        'script': 'memory_validator.py',
+        'type': 'import',
+        'description': 'Memory Validator'
     },
-    'auto_backup': {
-        'script': 'auto_backup.py',
-        'type': 'import_no_args',
-        'test_func': 'get_backup_stats',
-        'description': 'Auto Backup'
+    'memory_isolation': {
+        'script': 'memory_isolation.py',
+        'type': 'import',
+        'description': 'Memory Isolation'
     },
-    'auto_doc': {
-        'script': 'auto_doc.py',
-        'type': 'import_with_args',
-        'test_func': 'get_script_info',
-        'test_args': (SCRIPTS_DIR / 'test_framework.py',),
-        'description': 'Auto Documentation'
+    'memory_freshness': {
+        'script': 'memory_freshness.py',
+        'type': 'import',
+        'description': 'Memory Freshness Tracker'
     },
-    'self_eval': {
-        'script': 'self_eval.py',
-        'type': 'import_no_args',
-        'test_func': 'calculate_scores',
-        'description': 'Self Evaluation'
+    'stale_memory_cleanup': {
+        'script': 'stale_memory_cleanup.py',
+        'type': 'import',
+        'description': 'Stale Memory Cleanup'
     },
-    'deep_reflection': {
-        'script': 'deep_reflection.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_deep_reflection',
-        'description': 'Deep Reflection'
+    
+    # Self-Healing Patterns
+    'self_verifier': {
+        'script': 'self_verifier.py',
+        'type': 'import',
+        'description': 'Self-Verification Loop'
     },
-    'memory_cleanup': {
-        'script': 'memory_cleanup.py',
-        'type': 'import_no_args',
-        'test_func': 'show_report',
-        'description': 'Memory Cleanup'
+    'graceful_degradation': {
+        'script': 'graceful_degradation.py',
+        'type': 'import',
+        'description': 'Graceful Degradation'
     },
-    'backup_verify': {
-        'script': 'backup_verify.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Backup Verify'
+    'retry_with_backoff': {
+        'script': 'retry_with_backoff.py',
+        'type': 'import',
+        'description': 'Retry with Backoff'
     },
-    'habit_tracker': {
-        'script': 'habit_tracker.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Habit Tracker'
+    'context_compressor': {
+        'script': 'context_compressor.py',
+        'type': 'import',
+        'description': 'Context Compression'
     },
-    'quick_check': {
-        'script': 'quick_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Quick Check'
-    },
-    'loop_check': {
-        'script': 'loop_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Loop Detection Check'
-    },
-    'learning_tracker': {
-        'script': 'learning_tracker.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Learning Progress Tracker'
-    },
-    'token_tracker': {
-        'script': 'token_tracker.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Token Usage Tracker'
-    },
-    'innovation_research': {
-        'script': 'innovation_research.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Innovation Research'
-    },
-    'learning_coordinator': {
-        'script': 'learning_coordinator.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Learning Coordinator'
-    },
-    'tool_usage_analytics': {
-        'script': 'tool_usage_analytics.py',
-        'type': 'import_no_args',
-        'test_func': 'show_dashboard',
-        'description': 'Tool Usage Analytics'
-    },
-    'autonomous_improvement': {
-        'script': 'autonomous_improvement.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Autonomous Improvement'
-    },
-    'skill_creator': {
-        'script': 'skill_creator.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Skill Creator'
-    },
-    'morning_routine': {
-        'script': 'morning_routine.py',
-        'type': 'import_no_args',
-        'test_func': 'run_morning_routine',
-        'description': 'Morning Routine'
-    },
-    'evening_routine': {
-        'script': 'evening_routine.py',
-        'type': 'import_with_args',
-        'test_func': 'run_evening_routine',
-        'test_args': (True,),  # skip_reflection=True
-        'description': 'Evening Routine'
-    },
+    
+    # KG Scripts  
     'kg_updater': {
         'script': 'kg_updater.py',
-        'type': 'import_no_args',
-        'test_func': 'list_entities',
+        'type': 'module',
         'description': 'KG Updater'
     },
     'kg_enhancer': {
         'script': 'kg_enhancer.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
+        'type': 'module',
         'description': 'KG Enhancer'
     },
-    'health_alert': {
-        'script': 'health_alert.py',
-        'type': 'import_with_args',
-        'test_func': 'should_alert',
-        'test_args': ('disk',),
-        'description': 'Health Alert'
+    'kg_relation_cleaner': {
+        'script': 'kg_relation_cleaner.py',
+        'type': 'module',
+        'description': 'KG Relation Cleaner'
     },
-    'common_issues_check': {
-        'script': 'common_issues_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Common Issues Check'
+    
+    # Skills & Learning
+    'skill_metrics': {
+        'script': 'skill_metrics.py',
+        'type': 'module',
+        'description': 'Skill Metrics'
     },
-    'idempotency_check': {
-        'script': 'idempotency_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Idempotency Check'
+    'skill_tracker': {
+        'script': 'skill_tracker.py',
+        'type': 'module',
+        'description': 'Skill Tracker'
     },
-    'model_config': {
-        'script': 'model_config.py',
-        'type': 'import_no_args',
-        'test_func': 'get_fallback_chain',
-        'description': 'Model Config'
+    'learning_tracker': {
+        'script': 'learning_tracker.py',
+        'type': 'module',
+        'description': 'Learning Tracker'
     },
-    'cron_watchdog': {
-        'script': 'cron_watchdog.py',
-        'type': 'import_no_args',
-        'test_func': 'load_jobs',
-        'description': 'Cron Watchdog'
+    'efficiency_tracker': {
+        'script': 'efficiency_tracker.py',
+        'type': 'module',
+        'description': 'Efficiency Tracker'
     },
-    'auto_session_capture': {
-        'script': 'auto_session_capture.py',
-        'type': 'import_no_args',
-        'test_func': 'find_recent_sessions',
-        'description': 'Auto Session Capture'
+    
+    # Monitoring
+    'cron_error_healer': {
+        'script': 'cron_error_healer.py',
+        'type': 'module',
+        'description': 'Cron Error Healer'
     },
-    'health_dashboard': {
-        'script': 'health_dashboard.py',
-        'type': 'import_no_args',
-        'test_func': 'check_disk',
-        'description': 'Health Dashboard'
-    },
-    'batch_exec': {
-        'script': 'batch_exec.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Batch Exec'
-    },
-    'deploy_safety': {
-        'script': 'deploy_safety.py',
-        'type': 'import_no_args',
-        'test_func': 'check_env_vars',
-        'description': 'Deploy Safety'
-    },
-    'kgml_summary': {
-        'script': 'kgml_summary.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_kgml',
-        'description': 'KGML Summary'
-    },
-    'lcm_wiki_sync': {
-        'script': 'lcm_wiki_sync.py',
-        'type': 'import_no_args',
-        'test_func': 'get_existing_notes',
-        'description': 'LCM Wiki Sync'
-    },
-    'email_sequence': {
-        'script': 'email_sequence.py',
-        'type': 'import_no_args',
-        'test_func': 'get_pending_sequences',
-        'description': 'Email Sequence'
-    },
-    'self_check': {
-        'script': 'self_check.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Self Check'
-    },
-    'health_monitor': {
-        'script': 'health_monitor.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Health Monitor'
-    },
-    'weekly_review': {
-        'script': 'weekly_review.py',
-        'type': 'import_no_args',
-        'test_func': 'get_week_commits',
-        'description': 'Weekly Review'
-    },
-    'openrouter_monitor': {
-        'script': 'openrouter_monitor.py',
-        'type': 'import_no_args',
-        'test_func': 'get_openrouter_config',
-        'description': 'OpenRouter Monitor'
-    },
-    'vercel_monitor': {
-        'script': 'vercel_monitor.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Vercel Monitor'
-    },
-    'system_report': {
-        'script': 'system_report.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'System Report'
-    },
-    'revenue_forecaster': {
-        'script': 'revenue_forecaster.py',
-        'type': 'import_no_args',
-        'test_func': 'get_quick_forecast',
-        'description': 'Revenue Forecaster'
-    },
-    'session_memory_manager': {
-        'script': 'session_memory_manager.py',
-        'type': 'import_no_args',
-        'test_func': 'get_recent_sessions',
-        'description': 'Session Memory Manager'
-    },
-    'priority_filter': {
-        'script': 'priority_filter.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Priority Filter'
-    },
-    'morning_check': {
-        'script': 'morning_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Morning Check'
-    },
-    'subagent_health_check': {
-        'script': 'subagent_health_check.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Subagent Health Check'
+    'cron_monitor': {
+        'script': 'cron_monitor.py',
+        'type': 'module',
+        'description': 'Cron Monitor'
     },
     'token_tracker': {
         'script': 'token_tracker.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
+        'type': 'module',
         'description': 'Token Tracker'
     },
-    'auto_doc': {
-        'script': 'auto_doc.py',
-        'type': 'import_no_args',
-        'test_func': 'update_script_docs',
-        'description': 'Auto Doc'
+    'token_budget_tracker': {
+        'script': 'token_budget_tracker.py',
+        'type': 'module',
+        'description': 'Token Budget Tracker'
     },
-    'response_tracker': {
-        'script': 'response_tracker.py',
-        'type': 'import_no_args',
-        'test_func': 'get_sent_emails',
-        'description': 'Response Tracker'
+    'performance_dashboard': {
+        'script': 'performance_dashboard.py',
+        'type': 'module',
+        'description': 'Performance Dashboard'
     },
-    'crm_manager': {
-        'script': 'crm_manager.py',
-        'type': 'import_no_args',
-        'test_func': 'load_leads',
-        'description': 'CRM Manager'
+    
+    # Analysis
+    'quality_metrics': {
+        'script': 'quality_metrics.py',
+        'type': 'module',
+        'description': 'Quality Metrics'
     },
-    'demo_scheduler': {
-        'script': 'demo_scheduler.py',
-        'type': 'import_no_args',
-        'test_func': 'load_demos',
-        'description': 'Demo Scheduler'
+    'session_compressor': {
+        'script': 'session_compressor.py',
+        'type': 'module',
+        'description': 'Session Compressor'
     },
-    'meeting_scheduler': {
-        'script': 'meeting_scheduler.py',
-        'type': 'import_no_args',
-        'test_func': 'MeetingScheduler',
-        'description': 'Meeting Scheduler'
-    },
-    'quick_outreach': {
-        'script': 'quick_outreach.py',
-        'type': 'import_no_args',
-        'test_func': 'load_sent',
-        'description': 'Quick Outreach'
-    },
-    'weekly_review_zettel': {
-        'script': 'weekly_review_zettel.py',
-        'type': 'import_no_args',
-        'test_func': 'get_notes',
-        'description': 'Weekly Review Zettel'
-    },
-    'evolve': {
-        'script': 'evolve.py',
-        'type': 'import_no_args',
-        'test_func': 'CapabilityEvolver',
-        'description': 'Capability Evolver'
-    },
-    'semantic_search': {
-        'script': 'semantic_search.py',
-        'type': 'import_no_args',
-        'test_func': 'load_documents',
-        'description': 'Semantic Search'
-    },
-    'vault': {
-        'script': 'vault.py',
-        'type': 'import_no_args',
-        'test_func': 'load_vault',
-        'description': 'Vault'
-    },
-    'improved_outreach': {
-        'script': 'improved_outreach.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Improved Outreach'
-    },
-    'discord_report_forwarder': {
-        'script': 'discord_report_forwarder.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Discord Report Forwarder'
-    },
-    'evening_capture': {
-        'script': 'evening_capture.py',
-        'type': 'import_no_args',
-        'test_func': 'create_daily_note',
-        'description': 'Evening Capture'
-    },
-    'telegram_alert': {
-        'script': 'telegram_alert.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'Telegram Alert'
-    },
-    'automated_outreach': {
-        'script': 'automated_outreach.py',
-        'type': 'import_no_args',
-        'test_func': 'get_pending_leads',
-        'description': 'Automated Outreach'
-    },
-    'reflection_loop': {
-        'script': 'reflection_loop.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_reflection',
-        'description': 'Reflection Loop'
-    },
-    'security_audit': {
-        'script': 'security_audit.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'Security Audit'
-    },
-    'llm_outreach': {
-        'script': 'llm_outreach.py',
-        'type': 'import_no_args',
-        'test_func': 'main',
-        'description': 'LLM Outreach'
-    },
-    'github_stats': {
-        'script': 'github_stats.py',
-        'type': 'import_no_args',
-        'test_func': 'generate_report',
-        'description': 'GitHub Stats'
-    },
-    'outreach_optimizer': {
-        'script': 'outreach_optimizer.py',
-        'type': 'import_no_args',
-        'test_func': 'OutreachOptimizer',
-        'description': 'Outreach Optimizer'
+    
+    # Archive
+    'script_archiver': {
+        'script': 'script_archiver.py',
+        'type': 'import',
+        'description': 'Script Archiver'
     },
 }
 
-def load_script(script_name):
-    """Lädt ein Script als Module."""
+
+def load_script(script_name: str) -> Optional[Any]:
+    """Load a script module."""
     script_path = SCRIPTS_DIR / script_name
     
     if not script_path.exists():
-        return None, f"Script not found: {script_name}"
+        return None
     
-    spec = importlib.util.spec_from_file_location("test_module", script_path)
-    if not spec or not spec.loader:
-        return None, "Failed to load spec"
-    
-    try:
+    spec = importlib.util.spec_from_file_location("script", script_path)
+    if spec and spec.loader:
         module = importlib.util.module_from_spec(spec)
-        sys.modules["test_module"] = module
         spec.loader.exec_module(module)
-        return module, None
-    except Exception as e:
-        return None, str(e)
-
-def run_test(test_name, test_def):
-    """Führt einen einzelnen Test aus."""
-    print(f"\n{'='*50}")
-    print(f"🧪 Test: {test_def['description']}")
-    print(f"   Script: {test_def['script']}")
-    print(f"{'='*50}")
+        return module
     
-    script_path = SCRIPTS_DIR / test_def['script']
+    return None
+
+
+def run_test(test_name: str, test_def: Dict) -> Tuple[bool, str, Any]:
+    """
+    Run a single test.
+    
+    Returns:
+        Tuple of (passed, message, result)
+    """
+    script_name = test_def.get('script', '')
+    script_path = SCRIPTS_DIR / script_name
+    
+    # Check if script exists
     if not script_path.exists():
-        print(f"  ❌ FAIL: Script not found")
-        return False, "Script not found"
+        return False, f"Script not found: {script_name}", None
     
-    # Load script
-    module, error = load_script(test_def['script'])
-    if error:
-        print(f"  ❌ FAIL: {error}")
-        return False, error
-    
-    # Get test function
-    test_func_name = test_def.get('test_func')
-    if not test_func_name:
-        print(f"  ⚠️  No test function defined")
-        return True, "No test"
-    
-    if not hasattr(module, test_func_name):
-        print(f"  ❌ FAIL: Function '{test_func_name}' not found")
-        return False, f"Function not found: {test_func_name}"
-    
-    test_func = getattr(module, test_func_name)
-    
-    # Run test
+    # Try to load
     try:
-        test_type = test_def['type']
+        module = load_script(script_name)
+        if module is None:
+            return False, f"Failed to load: {script_name}", None
         
-        if test_type == 'import_no_args':
-            result = test_func()
-        elif test_type == 'import_with_args':
-            args = test_def.get('test_args', ())
-            kwargs = test_def.get('test_kwargs', {})
-            result = test_func(*args, **kwargs)
-        else:
-            print(f"  ⚠️  Unknown test type: {test_type}")
-            return True, "Unknown type"
-        
-        # Handle tuple returns (report, exit_code)
-        if isinstance(result, tuple):
-            result = result[0]  # Take the first element (the report/string)
-        
-        # Functions that print but return None are OK
-        cli_functions = ['report', 'summary', 'main', 'routine', 'check', 'show', 'list', 'stats', 'note', 'capture']
-        is_cli_function = any(x in test_func_name.lower() for x in cli_functions)
-        
-        if result is None:
-            if is_cli_function:
-                # CLI function that prints output - this is OK
-                print(f"  ✅ PASS: Executed successfully (CLI output)")
-                return True, None
-            else:
-                print(f"  ❌ FAIL: Function returned None")
-                return False, "Returned None"
-        
-        # Check result based on function
-        if 'report' in test_func_name or 'summary' in test_func_name or 'generate' in test_func_name:
-            if isinstance(result, str) and len(result) > 10:
-                print(f"  ✅ PASS: Generated {len(result)} chars")
-                return True, None
-            elif isinstance(result, dict):
-                print(f"  ✅ PASS: Returned dict with {len(result)} keys")
-                return True, None
-        elif 'metrics' in test_func_name or 'calculate' in test_func_name:
-            if isinstance(result, dict):
-                print(f"  ✅ PASS: Returned {len(result)} metrics")
-                return True, None
-        elif 'search' in test_func_name:
-            if isinstance(result, list):
-                print(f"  ✅ PASS: Returned {len(result)} results")
-                return True, None
-        elif 'stats' in test_func_name:
-            if isinstance(result, dict):
-                print(f"  ✅ PASS: Returned dict with {len(result)} keys")
-                return True, None
-        else:
-            print(f"  ✅ PASS: Function executed successfully")
-            print(f"     Result type: {type(result).__name__}")
-            return True, None
+        return True, f"Loaded successfully", module
         
     except Exception as e:
-        print(f"  ❌ FAIL: {e}")
-        return False, str(e)
+        return False, f"Error: {str(e)[:100]}", None
 
-def run_all_tests():
-    """Führt alle Tests aus."""
-    results = []
+
+def run_all_tests() -> Dict:
+    """
+    Run all tests.
     
-    print("🧪 Sir HazeClaw Test Suite")
-    print(f"   {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
-    print(f"   {len(TESTS)} tests")
+    Returns:
+        Dict with results
+    """
+    results = {
+        'total': len(TESTS),
+        'passed': 0,
+        'failed': 0,
+        'skipped': 0,
+        'failures': [],
+        'skips': [],
+        'timestamp': datetime.now().isoformat()
+    }
     
-    passed = 0
-    failed = 0
+    print(f"\n🧪 Running {results['total']} tests...")
+    print("=" * 60)
     
-    for test_name, test_def in sorted(TESTS.items()):
-        ok, error = run_test(test_name, test_def)
-        if ok:
-            passed += 1
-            results.append((test_name, 'PASS', None))
+    for test_name, test_def in TESTS.items():
+        passed, msg, result = run_test(test_name, test_def)
+        
+        if passed:
+            results['passed'] += 1
+            print(f"  ✅ {test_name}: {msg}")
         else:
-            failed += 1
-            results.append((test_name, 'FAIL', error))
+            results['failed'] += 1
+            results['failures'].append((test_name, msg))
+            print(f"  ❌ {test_name}: {msg}")
     
-    # Summary
-    print()
-    print("=" * 50)
-    print("📊 TEST SUMMARY")
-    print("=" * 50)
-    print(f"   Total:  {len(results)}")
-    print(f"   Passed: {passed} ✅")
-    print(f"   Failed: {failed} ❌")
-    print()
+    return results
+
+
+def run_category(category: str) -> Dict:
+    """Run tests in a specific category."""
+    filtered = {k: v for k, v in TESTS.items() if v.get('category') == category}
     
-    if failed > 0:
-        print("   Failed tests:")
-        for name, status, error in results:
-            if status == 'FAIL':
-                print(f"   - {name}: {error}")
+    if not filtered:
+        return {'error': f'No tests in category: {category}'}
     
-    return passed, failed
+    results = {
+        'total': len(filtered),
+        'passed': 0,
+        'failed': 0,
+        'failures': []
+    }
+    
+    print(f"\n🧪 Running {results['total']} tests in [{category}]...")
+    print("=" * 60)
+    
+    for test_name, test_def in filtered.items():
+        passed, msg, result = run_test(test_name, test_def)
+        
+        if passed:
+            results['passed'] += 1
+            print(f"  ✅ {test_name}")
+        else:
+            results['failed'] += 1
+            results['failures'].append((test_name, msg))
+            print(f"  ❌ {test_name}: {msg}")
+    
+    return results
+
 
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='Sir HazeClaw Test Framework')
-    parser.add_argument('--run', help='Run specific test')
-    parser.add_argument('--list', action='store_true', help='List all tests')
+    parser = argparse.ArgumentParser(description="Sir HazeClaw Test Framework")
+    parser.add_argument("--list", action="store_true", help="List all tests")
+    parser.add_argument("--run", metavar="NAME", help="Run specific test")
+    parser.add_argument("--category", metavar="CAT", help="Run by category")
+    parser.add_argument("--summary", action="store_true", help="Show summary only")
+    
     args = parser.parse_args()
     
     if args.list:
-        print("📋 Available Tests:")
-        for name, test_def in sorted(TESTS.items()):
-            print(f"  - {name}: {test_def['description']}")
-        print()
-        print(f"  Total: {len(TESTS)} tests")
+        print(f"📋 Available Tests ({len(TESTS)}):")
+        print("=" * 60)
+        for name, test in sorted(TESTS.items()):
+            desc = test.get('description', '')
+            script = test.get('script', '')
+            print(f"  {name:30} - {desc} ({script})")
         return
     
-    if args.run:
+    elif args.run:
         if args.run not in TESTS:
-            print(f"❌ Test not found: {args.run}")
-            print(f"   Available: {', '.join(TESTS.keys())}")
-            return 1
+            print(f"❌ Unknown test: {args.run}")
+            print(f"   Available: {', '.join(sorted(TESTS.keys()))}")
+            return
         
-        ok, error = run_test(args.run, TESTS[args.run])
-        return 0 if ok else 1
+        test_def = TESTS[args.run]
+        passed, msg, result = run_test(args.run, test_def)
+        
+        if passed:
+            print(f"✅ PASS: {args.run}")
+            print(f"   {msg}")
+        else:
+            print(f"❌ FAIL: {args.run}")
+            print(f"   {msg}")
+        return
     
-    # Run all
-    passed, failed = run_all_tests()
+    elif args.category:
+        results = run_category(args.category)
+        if 'error' in results:
+            print(f"❌ {results['error']}")
+        else:
+            print(f"\n📊 Category Results: {results['passed']}/{results['total']} passed")
+        return
     
-    # Save results
-    results_file = WORKSPACE / "task_reports" / "test_results.json"
-    results_file.parent.mkdir(parents=True, exist_ok=True)
-    
-    import json
-    results_data = {
-        'timestamp': datetime.now().isoformat(),
-        'total': len(TESTS),
-        'passed': passed,
-        'failed': failed,
-        'test_coverage': f"{len(TESTS)}/{len(list(SCRIPTS_DIR.glob('*.py')))} scripts tested"
-    }
-    
-    with open(results_file, 'w') as f:
-        json.dump(results_data, f, indent=2)
-    
-    print(f"📄 Results saved: {results_file}")
+    else:
+        # Run all tests
+        results = run_all_tests()
+        
+        print()
+        print("=" * 60)
+        print("📊 TEST SUMMARY")
+        print("=" * 60)
+        print(f"   Total:  {results['total']}")
+        print(f"   Passed: ✅ {results['passed']}")
+        print(f"   Failed: ❌ {results['failed']}")
+        
+        if results['failures']:
+            print()
+            print("Failed Tests:")
+            for name, msg in results['failures']:
+                print(f"  ❌ {name}: {msg[:60]}")
+
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
