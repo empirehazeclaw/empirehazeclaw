@@ -15,6 +15,37 @@ from pathlib import Path
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "memory"
 TOKEN_STATE = WORKSPACE / "memory" / "token_budget.json"
+SESSION_DIR = Path("/home/clawbot/.openclaw/agents/ceo/sessions")
+
+
+def get_session_stats() -> dict:
+    """Hole Session Stats von heute."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    sessions = list(SESSION_DIR.glob("*.jsonl"))
+    today_sessions = 0
+    errors = 0
+    
+    ERROR_PATTERNS = ["status: error", "failed", "crash"]
+    
+    for s in sessions:
+        if ".checkpoint." in s.name:
+            continue
+        if today in s.name or datetime.fromtimestamp(s.stat().st_mtime).strftime("%Y-%m-%d") == today:
+            today_sessions += 1
+            try:
+                content = open(s).read().lower()
+                for p in ERROR_PATTERNS:
+                    if p in content:
+                        errors += 1
+                        break
+            except:
+                pass
+    
+    return {
+        "sessions": today_sessions,
+        "errors": errors,
+        "error_rate": round(errors / today_sessions * 100, 1) if today_sessions > 0 else 0
+    }
 
 
 def get_today_memory() -> list:
@@ -67,6 +98,7 @@ def send_review():
     cron = get_cron_summary()
     token = get_token_today()
     today_memories = get_today_memory()
+    session_stats = get_session_stats()
     
     # Build message
     message = f"""🦞 **Evening Review** — {now.split()[0]}
@@ -76,6 +108,11 @@ def send_review():
 • Errors: {cron['errors']}
 • Idle: {cron['idle']}
 • Token Usage: {token['percentage']:.0%}
+
+**📊 Session Stats:**
+• Sessions heute: {session_stats['sessions']}
+• Errors: {session_stats['errors']}
+• Error Rate: {session_stats['error_rate']}%
 
 **📝 Today's Memories:** {len(today_memories)} files
 
