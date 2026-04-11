@@ -220,22 +220,28 @@ def run_quality_gates():
         print(f"  ⚠️ Self Eval failed: {e}")
         has_warnings = True
     
-    # Error Rate Check
+    # Error Rate Check (uses real data from error_reducer.py)
     try:
-        metrics_file = WORKSPACE / "memory" / "session_metrics_history.json"
-        if metrics_file.exists():
-            data = load_json(metrics_file)
-            history = data.get('history', [])
-            if history:
-                error_rate = history[-1].get('error_rate', 0)
-                if error_rate > 20:
-                    issues_detected.append({
-                        'type': 'high_error_rate',
-                        'severity': 'HIGH',
-                        'description': f'Error rate: {error_rate}%',
-                        'suggestion': 'Run error reduction cycle'
-                    })
-                    has_warnings = True
+        # Run error_reducer for real-time error analysis
+        result = subprocess.run(
+            ['python3', str(SCRIPTS_DIR / 'error_reducer.py')],
+            capture_output=True, text=True, timeout=60, cwd=str(WORKSPACE)
+        )
+        # Parse output for error rate
+        for line in result.stdout.split('\n'):
+            if 'Real Error Rate:' in line:
+                match = re.search(r'Real Error Rate: ([0-9.]+)%', line)
+                if match:
+                    error_rate = float(match.group(1))
+                    if error_rate > 5:  # REAL threshold, not hardcoded 20
+                        issues_detected.append({
+                            'type': 'high_error_rate',
+                            'severity': 'HIGH',
+                            'description': f'Error rate: {error_rate}% (real data)',
+                            'suggestion': 'Run error reduction cycle'
+                        })
+                        has_warnings = True
+                    break
     except:
         pass
     
