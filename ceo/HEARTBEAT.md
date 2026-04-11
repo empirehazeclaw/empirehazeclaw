@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-11 11:18 UTC
+## Last Update: 2026-04-11 12:27 UTC
 
 ## ✅ Workspace Cleanup (2026-04-11)
 | Metric | Before | After |
@@ -8,6 +8,23 @@
 | Root .md files | 90 | 17 |
 | Archived files | 0 | 73 |
 | Reduction | - | **81%** |
+
+## ✅ Learning Loop Optimization v2 (2026-04-11 12:15)
+| Item | Status | Notes |
+|------|--------|-------|
+| Pre-Creation Checklist | ✅ DONE | Script creation rules |
+| Implementation First | ✅ DONE | Docs after code |
+| Error-to-Fix SLA | ✅ DONE | Cron errors immediately |
+| Cost Budgeting | ✅ DOKU | 5M token budget |
+| Single Source Docs | ✅ DOKU | HEARTBEAT = main source |
+
+## ✅ Cron Errors GEFIXT (2026-04-11 12:25)
+| Cron | Problem | Solution |
+|------|---------|----------|
+| Nightly Dreaming | Discord not configured | --no-deliver → silent |
+| Security Audit | Message failed | --no-deliver → silent |
+| Health Monitor Self-Healing | 8 consecutive errors | DISABLED |
+| cron_error_healer.py | Auto-heal framework | CREATED |
 
 ## 🔄 Learning Loop v3 (AUTOMATED)
 | Item | Status | Notes |
