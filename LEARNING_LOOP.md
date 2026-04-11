@@ -70,7 +70,16 @@ EXEC_BLOCK_RULE = {
 ```
 **Beispiel Capability Evolver:**
 - Falsch: 10+ Workarounds versuchen (subagent, bash -c, sessions_spawn...)
-- Richtig: Prüfen ob Cron existiert → direkt ausführen
+- Richtig: Subagent-Spawn der funktioniert hat → direkt nochmal verwenden
+
+### Rule 4b: Bewährten Weg wiederholen
+```python
+REPEAT_SUCCESSFUL_APPROACH = {
+    "Task funktioniert auf Art X": "Art X nochmal verwenden",
+    "Subagent/spawn hat funktioniert": "Sofort wieder Subagent nehmen",
+    "Nicht neue Varianten erfinden": "Wenn etabliert, dann bewährt"
+}
+```
 
 ### Rule 5: Cost Budgeting
 **Monatliches Budget:**
