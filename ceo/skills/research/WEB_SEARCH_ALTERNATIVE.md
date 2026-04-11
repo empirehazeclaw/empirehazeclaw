@@ -38,3 +38,8 @@ Modify `innovation_research.py` to call agent with web_search capability instead
 - **Cognee**: Open-source memory/knowledge graph layer for AI
 - **Always On Memory Agent** (Google, 2026-03): LLM-driven persistent memory, no vector DBs, uses Gemini 3.1 Flash-Lite
 - **mem0**: Universal memory layer for AI Agents (GitHub: mem0ai/mem0)
+
+### Multi-Agent Self-Improvement Frameworks
+- **LangGraph**: State machine for agents, cyclic graphs for iterative self-correcting reasoning
+- **Microsoft Agent Framework**: Merged AutoGen + Semantic Kernel (GA end Q1 2026)
+- **EvoAI**: Self-evolving agents, 3 evolution modes (FIX/DERIVED/CAPTURED), 46% token reduction, SQLite + open-space.cloud community

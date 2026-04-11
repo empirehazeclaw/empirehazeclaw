@@ -3203,9 +3203,31 @@
         "google",
         "mem0"
       ]
+    },
+    "multiagent_frameworks_20260411": {
+      "type": "research",
+      "category": "multi_agent_frameworks",
+      "facts": [
+        {
+          "content": "Multi-Agent Frameworks 2026: LangGraph (state machine, cyclic self-correcting graphs), Microsoft Agent Framework (AutoGen+SemanticKernel merged, GA Q1 2026), EvoAI (self-evolving, 3 evolution modes, 46% token reduction via FIX/DERIVED/CAPTURED)",
+          "confidence": 0.85,
+          "extracted_at": "2026-04-11T10:00:29.502760",
+          "category": "multi_agent"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-11T10:00:29.502770",
+      "tags": [
+        "multi_agent",
+        "self_improving",
+        "2026",
+        "langgraph",
+        "microsoft",
+        "evoai"
+      ]
     }
   },
-  "last_updated": "2026-04-11T09:59:42.389614",
+  "last_updated": "2026-04-11T10:00:29.502774",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
