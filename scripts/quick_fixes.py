@@ -9,6 +9,7 @@ Usage:
     python3 quick_fixes.py --check
     python3 quick_fixes.py --apply
 """
+import sys
 
 import subprocess
 from datetime import datetime
@@ -96,7 +97,7 @@ def main():
         print("⚠️ Einige Skills fehlen - bitte erstellen!")
     
     # Apply fixes
-    if "--apply" in __import__('sys').argv:
+    if "--apply" in sys.argv:
         print()
         print("🔧 APPLYING FIXES...")
         # Would apply fixes here
