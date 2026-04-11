@@ -8,10 +8,10 @@
 **Problem:** 4.4x drift (88 files actual vs 20 estimated)
 
 ### Tasks:
-- [ ] Create blast_radius_estimator.py
-- [ ] Track estimated vs actual for all changes
-- [ ] Calculate accuracy ratio per evolution
-- [ ] Alert if drift > 2x
+- [x] Create blast_radius_estimator.py ✅
+- [x] Track estimated vs actual for all changes ✅
+- [x] Calculate accuracy ratio per evolution ✅
+- [x] Alert if drift > 2x ✅
 - [ ] Retrain estimation model if accuracy < 70%
 
 ---
@@ -21,10 +21,10 @@
 **Problem:** gene_gep_repair_from_errors selected 4x+ times (stagnation)
 
 ### Tasks:
-- [ ] Log gene usage per evolution
-- [ ] Track gene selection history
-- [ ] Force different gene if same selected 3x+
-- [ ] Add "try different gene" rule to evolver
+- [x] Log gene usage per evolution ✅
+- [x] Track gene selection history ✅
+- [x] Force different gene if same selected 3x+ ✅ (via --check)
+- [x] Add "try different gene" rule to evolver ✅ (via --suggest)
 - [ ] Research new genes to diversify pool
 
 ---
