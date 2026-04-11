@@ -1,0 +1,34 @@
+{
+  "TEST_MEMORY.md": [
+    {
+      "version_id": "v1_f4d065",
+      "file_name": "TEST_MEMORY.md",
+      "timestamp": "2026-04-11T22:50:36.200677",
+      "content_hash": "f4d06521d522",
+      "content_length": 23,
+      "change_type": "update",
+      "user": "test",
+      "comment": "Initial"
+    },
+    {
+      "version_id": "v2_bebb18",
+      "file_name": "TEST_MEMORY.md",
+      "timestamp": "2026-04-11T22:50:36.201382",
+      "content_hash": "bebb180372c8",
+      "content_length": 32,
+      "change_type": "update",
+      "user": "test",
+      "comment": "Update"
+    },
+    {
+      "version_id": "v3_6bab7d",
+      "file_name": "TEST_MEMORY.md",
+      "timestamp": "2026-04-11T22:50:36.201848",
+      "content_hash": "6bab7d8be63e",
+      "content_length": 22,
+      "change_type": "update",
+      "user": "test",
+      "comment": "Update 2"
+    }
+  ]
+}

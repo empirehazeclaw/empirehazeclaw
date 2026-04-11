@@ -2,177 +2,6 @@
   "improvements": [
     {
       "cycle": 1,
-      "timestamp": "2026-04-11T16:48:23.679251",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 194,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:48:23.679257",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164823_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164823_2",
-        "timestamp": "2026-04-11T16:48:23.721059",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 194,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:23.721064",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 194,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:23.818983",
-          "session_count": 153
-        },
-        "actual_impact": 0.0,
-        "change_made": "path_verification_enabled, auto_fixer_checked, \u26a0\ufe0f 1 Issues gefunden:, - Viele Sessions: 153 (Cleanup empfohlen)",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-11T16:48:47.828500",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 194,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:48:47.828507",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164847_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164847_2",
-        "timestamp": "2026-04-11T16:48:47.868397",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 194,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:47.868403",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 196,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:48.002403",
-          "session_count": 153
-        },
-        "actual_impact": 4,
-        "change_made": "kg_entities_added:2, path_verification_enabled",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-11T16:48:55.106413",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 196,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:48:55.106418",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164855_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164855_2",
-        "timestamp": "2026-04-11T16:48:55.148148",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 196,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:55.148155",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 196,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:48:55.178960",
-          "session_count": 153
-        },
-        "actual_impact": 0.0,
-        "change_made": "kg_entities_added:0, path_verification_enabled",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 1,
       "timestamp": "2026-04-11T16:49:54.450914",
       "metrics_before": {
         "error_rate": 26.6,
@@ -2590,13 +2419,184 @@
         }
       ],
       "validated": 2
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T22:21:29.564232",
+      "metrics_before": {
+        "error_rate": 1.46,
+        "sessions_today": 286,
+        "friction_events": 0,
+        "kg_entities": 209,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T22:21:29.564237",
+        "session_count": 293
+      },
+      "hypothesis": {
+        "id": "hyp_222129_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_222129_8",
+        "timestamp": "2026-04-11T22:21:29.595708",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:29.595713",
+          "session_count": 293
+        },
+        "metrics_after": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:29.610570",
+          "session_count": 293
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-11T22:21:34.644486",
+      "metrics_before": {
+        "error_rate": 1.46,
+        "sessions_today": 286,
+        "friction_events": 0,
+        "kg_entities": 209,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T22:21:34.644495",
+        "session_count": 293
+      },
+      "hypothesis": {
+        "id": "hyp_222134_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_222134_8",
+        "timestamp": "2026-04-11T22:21:34.678233",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:34.678240",
+          "session_count": 293
+        },
+        "metrics_after": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:34.691444",
+          "session_count": 293
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-11T22:21:39.715037",
+      "metrics_before": {
+        "error_rate": 1.46,
+        "sessions_today": 286,
+        "friction_events": 0,
+        "kg_entities": 209,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T22:21:39.715048",
+        "session_count": 293
+      },
+      "hypothesis": {
+        "id": "hyp_222139_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_222139_8",
+        "timestamp": "2026-04-11T22:21:39.749265",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:39.749270",
+          "session_count": 293
+        },
+        "metrics_after": {
+          "error_rate": 1.46,
+          "sessions_today": 286,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T22:21:39.765653",
+          "session_count": 293
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 33,
+    "total": 36,
     "successful": 23,
-    "failed": 10,
+    "failed": 13,
     "current_streak": 0,
     "best_streak": 20
   }
