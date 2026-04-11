@@ -77,14 +77,33 @@
       ]
     },
     "workflow": {
+      "uses": 2,
+      "successes": 2,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:22:33.386764",
+      "tasks": [
+        {
+          "task": "First Attempt + Problem Decomposition Skills erstellt",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "All 3 Level 2 skills complete",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
+    },
+    "learning": {
       "uses": 1,
       "successes": 1,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:20:43.823866",
+      "last_used": "2026-04-11T15:22:33.353377",
       "tasks": [
         {
-          "task": "First Attempt + Problem Decomposition Skills erstellt",
+          "task": "Complete skill library created",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -93,8 +112,8 @@
   },
   "daily": {
     "2026-04-11": {
-      "uses": 9,
-      "successes": 9,
+      "uses": 11,
+      "successes": 11,
       "failures": 0
     }
   }
