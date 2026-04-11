@@ -1,14 +1,19 @@
 {
   "skills": {
     "debugging": {
-      "uses": 1,
-      "successes": 1,
+      "uses": 2,
+      "successes": 2,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:06:04.053602",
+      "last_used": "2026-04-11T15:19:57.889361",
       "tasks": [
         {
           "task": "Fixed Capability Evolver path bug",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Error Recovery + Tool Failure Skills erstellt",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -29,28 +34,38 @@
       ]
     },
     "research": {
-      "uses": 1,
-      "successes": 1,
+      "uses": 2,
+      "successes": 2,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:06:04.120640",
+      "last_used": "2026-04-11T15:19:57.919369",
       "tasks": [
         {
           "task": "Self-improvement research",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Error Analysis for Learning Plan",
           "outcome": "success",
           "at": "2026-04-11"
         }
       ]
     },
     "automation": {
-      "uses": 1,
-      "successes": 1,
+      "uses": 2,
+      "successes": 2,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:06:04.152566",
+      "last_used": "2026-04-11T15:19:57.949331",
       "tasks": [
         {
           "task": "Implemented Evening Review + Session Analysis",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Skill Library erweitert",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -59,8 +74,8 @@
   },
   "daily": {
     "2026-04-11": {
-      "uses": 4,
-      "successes": 4,
+      "uses": 7,
+      "successes": 7,
       "failures": 0
     }
   }

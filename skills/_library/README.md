@@ -1,47 +1,56 @@
-# 🧠 Skill Library Index
-**Created:** 2026-04-11
-**Purpose:** Wiederverwendbare Workflow-Templates
+# 🧠 Skill Library — Sir HazeClaw
+
+## 📚 Skills Index
+
+### 🔧 Debugging
+| Skill | Status | Priority |
+|-------|--------|----------|
+| timeout_handling | ✅ | HIGH |
+| retry_loop_prevention | ✅ | HIGH |
+| error_recovery | ✅ NEW | HIGH |
+| tool_failure_handling | ✅ NEW | HIGH |
+| debugging_workflow | ✅ | MEDIUM |
+
+### 🔄 Workflow
+| Skill | Status | Priority |
+|-------|--------|----------|
+| coding_workflow | ✅ | MEDIUM |
+| research_workflow | ✅ | MEDIUM |
+
+### 📖 Learning
+| Skill | Status | Priority |
+|-------|--------|----------|
+| (Pattern Extraction via pattern_extractor.py) | ✅ | HIGH |
 
 ---
 
-## Verfügbare Skills
+## 🎯 Usage
 
-| Skill | Category | Beschreibung |
-|-------|----------|---------------|
-| [debugging_workflow.md](debugging_workflow.md) | debugging | Error Debugging流程 |
-| [research_workflow.md](research_workflow.md) | research | Recherche流程 |
-| [coding_workflow.md](coding_workflow.md) | coding | Script Erstellung |
-
----
-
-## Usage
-
-### Nach einem Task:
 ```bash
+# Pattern extrahieren
 python3 scripts/pattern_extractor.py \
     --task "Was ich getan habe" \
     --outcome "✅ Erfolg" \
-    --category debugging
+    --category "workflow"
+
+# Skill Metrics
+python3 scripts/skill_metrics.py
+python3 scripts/skill_tracker.py --report
 ```
 
-### Skill laden:
-Beim Debugging: Nutze `debugging_workflow.md` als Checkliste
+---
+
+## 📊 Skill Scoreboard
+
+| Skill | Score | Uses | Success |
+|-------|-------|------|---------|
+| debugging | 100/100 | 2 | 100% |
+| coding | 100/100 | 1 | 100% |
+| research | 100/100 | 2 | 100% |
+| automation | 100/100 | 2 | 100% |
+
+**Today:** 7 uses, 100% success rate
 
 ---
 
-## Pattern Checkliste
-
-Nach jedem Task frage ich mich:
-1. ✅ Was habe ich gelernt?
-2. ✅ Was könnte ich wiederverwenden?
-3. ✅ Was sollte ich beim nächsten Mal anders machen?
-
-→ Falls wichtig: `pattern_extractor.py` mit Learnings
-
----
-
-## Neue Skills hinzufügen
-
-1. Neues `.md` File in `/skills/_library/`
-2. Index hier aktualisieren
-3. Pattern nach Template dokumentieren
+*Last Updated: 2026-04-11 15:19 UTC*
