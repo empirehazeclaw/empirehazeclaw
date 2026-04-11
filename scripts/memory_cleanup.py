@@ -109,10 +109,16 @@ def check_ceo_memory_structure():
         log(f"   📚 learnings/: {len(learnings_files)} files", "📚")
     
     # Check for orphaned files outside structure
+    # Allow: INDEX.md, todo-tomorrow.md, and date-named files (YYYY-MM-DD*.md)
     orphaned = []
+    import re
+    date_pattern = re.compile(r'^\d{4}-\d{2}-\d{2}')
     for f in CEO_MEMORY_DIR.glob("*.md"):
-        if f.name not in ["INDEX.md", "todo-tomorrow.md"]:
-            orphaned.append(f)
+        if f.name in ["INDEX.md", "todo-tomorrow.md"]:
+            continue
+        if date_pattern.match(f.name):
+            continue  # Date-named files are valid (session flushes)
+        orphaned.append(f)
     
     if orphaned:
         log(f"⚠️  Orphaned CEO memory files: {len(orphaned)}", "⚠️")
