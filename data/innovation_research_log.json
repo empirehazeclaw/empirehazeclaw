@@ -1240,7 +1240,181 @@
           }
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-11T20:16:57.542337",
+      "mode": "daily",
+      "queries": 3,
+      "results": [
+        {
+          "source": "arXiv",
+          "query": "self-improving AI agents",
+          "paper": {
+            "title": "When Agent Markets Arrive",
+            "summary": "AI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the economic infrastructure of these emerging platforms is being built ad-hoc, yet early design choices tend...",
+            "published": "2026-04-08",
+            "url": "http://arxiv.org/abs/2604.06688v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "self-improving AI agents",
+          "paper": {
+            "title": "Reimagining RAN Automation in 6G: An Agentic AI Framework with Hierarchical Online Decision Transformer",
+            "summary": "In this paper, we propose an Agentic Artificial Intelligence (AI) framework for wireless networks. The framework coordinates a pool of AI agents guided by Natural Language (NL) inputs from a human operator. At its core, the super agent is powered by a Hierarchical Online Decision Transformer (H-ODT)...",
+            "published": "2026-04-05",
+            "url": "http://arxiv.org/abs/2604.03908v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "autonomous AI agent learning",
+          "paper": {
+            "title": "Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey",
+            "summary": "The rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for continuous adaptation. While unlocking transformative applications in mobile edge computing, autonom...",
+            "published": "2026-04-09",
+            "url": "http://arxiv.org/abs/2604.07857v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "autonomous AI agent learning",
+          "paper": {
+            "title": "PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent",
+            "summary": "The development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, the dynamic and uncertain nature of user demands poses a significant challenge; agents must not only i...",
+            "published": "2026-04-08",
+            "url": "http://arxiv.org/abs/2604.07645v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "LLM agent self-modification",
+          "paper": {
+            "title": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+            "summary": "Large language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codebase navigation with effective context management for accurate localization, and (2) systematic appro...",
+            "published": "2026-03-01",
+            "url": "http://arxiv.org/abs/2603.01327v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "LLM agent self-modification",
+          "paper": {
+            "title": "Structured Prompt Language: Declarative Context Management for LLMs",
+            "summary": "We present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL provides explicit WITH BUDGET/LIMIT token management, an automatic query optimizer, EXPLAIN transpa...",
+            "published": "2026-02-23",
+            "url": "http://arxiv.org/abs/2602.21257v1"
+          }
+        },
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents",
+            "url": "https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning",
+            "points": 13,
+            "date": "2025-08-28"
+          }
+        },
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "Hermes Agent: The self-improving AI agent",
+            "url": "https://github.com/NousResearch/hermes-agent",
+            "points": 3,
+            "date": "2026-03-11"
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-11T20:19:00.064702",
+      "mode": "daily",
+      "queries": 3,
+      "results": [
+        {
+          "source": "arXiv",
+          "query": "self-improving AI agents",
+          "paper": {
+            "title": "When Agent Markets Arrive",
+            "summary": "AI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the economic infrastructure of these emerging platforms is being built ad-hoc, yet early design choices tend...",
+            "published": "2026-04-08",
+            "url": "http://arxiv.org/abs/2604.06688v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "self-improving AI agents",
+          "paper": {
+            "title": "Reimagining RAN Automation in 6G: An Agentic AI Framework with Hierarchical Online Decision Transformer",
+            "summary": "In this paper, we propose an Agentic Artificial Intelligence (AI) framework for wireless networks. The framework coordinates a pool of AI agents guided by Natural Language (NL) inputs from a human operator. At its core, the super agent is powered by a Hierarchical Online Decision Transformer (H-ODT)...",
+            "published": "2026-04-05",
+            "url": "http://arxiv.org/abs/2604.03908v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "autonomous AI agent learning",
+          "paper": {
+            "title": "Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey",
+            "summary": "The rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for continuous adaptation. While unlocking transformative applications in mobile edge computing, autonom...",
+            "published": "2026-04-09",
+            "url": "http://arxiv.org/abs/2604.07857v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "autonomous AI agent learning",
+          "paper": {
+            "title": "PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent",
+            "summary": "The development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, the dynamic and uncertain nature of user demands poses a significant challenge; agents must not only i...",
+            "published": "2026-04-08",
+            "url": "http://arxiv.org/abs/2604.07645v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "LLM agent self-modification",
+          "paper": {
+            "title": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+            "summary": "Large language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codebase navigation with effective context management for accurate localization, and (2) systematic appro...",
+            "published": "2026-03-01",
+            "url": "http://arxiv.org/abs/2603.01327v1"
+          }
+        },
+        {
+          "source": "arXiv",
+          "query": "LLM agent self-modification",
+          "paper": {
+            "title": "Structured Prompt Language: Declarative Context Management for LLMs",
+            "summary": "We present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL provides explicit WITH BUDGET/LIMIT token management, an automatic query optimizer, EXPLAIN transpa...",
+            "published": "2026-02-23",
+            "url": "http://arxiv.org/abs/2602.21257v1"
+          }
+        },
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents",
+            "url": "https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning",
+            "points": 13,
+            "date": "2025-08-28"
+          }
+        },
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "Hermes Agent: The self-improving AI agent",
+            "url": "https://github.com/NousResearch/hermes-agent",
+            "points": 3,
+            "date": "2026-03-11"
+          }
+        }
+      ]
     }
   ],
-  "last_full_research": "2026-04-11T20:13:22.700007"
+  "last_full_research": "2026-04-11T20:19:00.064714"
 }

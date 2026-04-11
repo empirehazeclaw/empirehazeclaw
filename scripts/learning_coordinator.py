@@ -26,6 +26,7 @@ import re
 from datetime import datetime, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import List, Dict, Optional, Tuple
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 SCRIPTS_DIR = WORKSPACE / "scripts"
@@ -326,7 +327,10 @@ def select_best_improvement(issues, hypotheses):
     return improvements[:3]  # Max 3 improvements
 
 def run_improvement_phase(improvements):
-    """Executes improvements and validates results."""
+    """Executes improvements and validates results.
+    
+    NOW USES SELF-PLAY PATTERN for research-based improvements!
+    """
     print("🚀 PHASE 4: Improvement Execution...")
     
     results = []
@@ -335,7 +339,7 @@ def run_improvement_phase(improvements):
         print(f"  {i}. {imp['title']}...")
         
         if imp.get('source') == 'issue' and imp.get('script'):
-            # Execute improvement script
+            # Execute issue-based improvement (direct script execution)
             result = execute_improvement_script(imp['script'], imp['title'])
             results.append({
                 'improvement': imp['title'],
@@ -344,14 +348,25 @@ def run_improvement_phase(improvements):
                 'output': result['output'][:100],
                 'validated': result['success']
             })
+        elif imp.get('source') == 'research':
+            # Research-based = use SELF-PLAY PATTERN!
+            print(f"     🎮 Using Self-Play (GVU Pattern)...")
+            sp_result = run_self_play_generation(imp)
+            results.append({
+                'improvement': imp['title'],
+                'script': 'self_play_improver.py',
+                'success': sp_result['success'],
+                'output': sp_result['insights'][:100],
+                'validated': sp_result['success']
+            })
         else:
-            # Research-based, needs investigation
-            print(f"     ⏭️ Research-based (needs manual review)")
+            # Unknown type, skip
+            print(f"     ⏭️ Unknown source type")
             results.append({
                 'improvement': imp['title'],
                 'script': None,
                 'success': None,
-                'output': 'Research-based, needs investigation',
+                'output': 'Unknown source',
                 'validated': False
             })
     
@@ -362,6 +377,47 @@ def run_improvement_phase(improvements):
     print(f"  ✅ {success_count}/{len(results)} improvements executed")
     
     return results
+
+def run_self_play_generation(research_imp: Dict) -> Dict:
+    """Runs self-play generation for a research-based improvement.
+    
+    Uses the GVU (Generator-Verifier-Updater) pattern to
+    autonomously improve based on research insights.
+    """
+    try:
+        # Map research category to self-play strategies
+        category = research_imp.get('category', '')
+        
+        # Run 2 generations of self-play
+        result = subprocess.run(
+            ['python3', str(SCRIPTS_DIR / 'self_play_improver.py'), '--generations', '2'],
+            capture_output=True,
+            text=True,
+            timeout=180,
+            cwd=str(WORKSPACE)
+        )
+        
+        success = result.returncode == 0
+        
+        # Extract insights
+        insights = []
+        for line in result.stdout.split('\n'):
+            if '💡' in line or '✅' in line or '❌' in line:
+                insights.append(line.strip())
+        
+        # Check if any improvement was made
+        improved = '✅' in result.stdout and '+' in result.stdout
+        
+        return {
+            'success': success and improved,
+            'insights': ' | '.join(insights[-3:]) if insights else 'No insights'
+        }
+        
+    except Exception as e:
+        return {
+            'success': False,
+            'insights': f'Self-play failed: {str(e)[:50]}'
+        }
 
 def execute_improvement_script(script_name, title):
     """Executes an improvement script and validates result."""
