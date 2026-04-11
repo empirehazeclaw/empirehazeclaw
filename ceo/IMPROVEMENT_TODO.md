@@ -5,7 +5,7 @@
 
 ---
 
-## ✅ COMPLETED TASKS (10/13)
+## ✅ COMPLETED TASKS (11/13)
 
 | Task | Status | Notes |
 |------|--------|-------|
@@ -18,7 +18,7 @@
 | MCP Server | ✅ DONE | mcp_server.py created, 8 tools |
 | Workspace Cleanup | ✅ DONE | 90 → 17 files, 73 archived |
 | System Documentation | ✅ DONE | Architecture, Inventory, Cron Index |
-| **Secrets/API Key finden** | ✅ DONE | Keys in secrets/secrets.env |
+| Secrets/API Key finden | ✅ DONE | Key in agents/ceo/agent/auth-profiles.json |
 
 ---
 

@@ -85,12 +85,12 @@ def dedupe_stm_ltm(stm_items, ltm_items):
 
 ## 📊 Implementation Status
 
-| Memory Type | Aktuell | Potential |
-|-------------|---------|-----------|
+| Memory Type | Aktuell | Status |
+|-------------|---------|--------|
 | Short-Term | memory/ | ✅ Gut |
 | Long-Term | KG | ✅ Gut |
 | Semantic Search | memory_hybrid_search | ✅ Gut |
-| **Reranking** | ❌ Fehlt | 🔴 PRIORITY |
+| **Reranking** | ✅ IMPLEMENTED | memory_reranker.py ✅ |
 
 ---
 

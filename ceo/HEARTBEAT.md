@@ -37,6 +37,7 @@
 | session_cleanup.py | ✅ CREATED |
 | git_maintenance.py | ✅ DONE |
 | Workspace Cleanup | ✅ DONE | 73 files archived |
+| Memory Reranker | ✅ DONE | scripts/memory_reranker.py |
 
 ## 📊 System Status
 - Gateway: ✅ Running (Port 18789)
@@ -64,6 +65,8 @@
 | Evening Capture | ✅ Once daily (9pm) |
 
 ## 🎯 Next Tasks
-1. Memory Reranker (original task)
+1. Scripts Tiefe-Analyse (archivieren was nicht genutzt wird)
+2. Skills Inventory (unbenutzte Skills archivieren)
+3. CEO Briefing Delivery Fix
 
 *Next Heartbeat: When issues detected or hourly*
