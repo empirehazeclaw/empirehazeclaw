@@ -129,13 +129,13 @@ Research → KG → Skills → Scripts → Test → Commit → Reflection → LE
 ## 🎯 AKTUELLER TODO
 
 ### Sofort (Nächste 30 Min)
-- [ ] `learning_coordinator.py` erstellen
-- [ ] Token Tracking in coordinator
-- [ ] Research → KG Auto-Update
+- [x] `learning_coordinator.py` erstellen
+- [x] Token Tracking vorbereitet
+- [x] Research → KG Auto-Update
 
 ### Diese Stunde
-- [ ] Test coordinator
-- [ ] Loop Check verbessern (mit action)
+- [ ] Test coordinator verbessern
+- [ ] Quality Gates komplett
 - [ ] Commit + Push
 
 ### Heute

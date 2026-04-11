@@ -143,6 +143,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Innovation Research'
     },
+    'learning_coordinator': {
+        'script': 'learning_coordinator.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Learning Coordinator'
+    },
     'autonomous_improvement': {
         'script': 'autonomous_improvement.py',
         'type': 'import_no_args',
