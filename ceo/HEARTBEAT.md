@@ -21,27 +21,19 @@
 | Task | Status |
 |------|--------|
 | Token Efficiency | ✅ DONE |
-| Gateway Check Fix | ✅ DONE |
-| MCP Server | ✅ CREATED |
 | Gateway Auto-Recovery | ✅ ACTIVE |
 | Performance Trends | ✅ CREATED |
+| auto_doc.py | ✅ CREATED |
 
 ## 📊 System Status
 - Gateway: ✅ Running (Port 18789)
 - Tests: 65+ passing
 - Self-Eval: 99/100
-
-## 📋 Neueste Dokumentation
-- `LEARNING_LOOP_ANALYSE.md` - Schwachstellen + Plan
-- `SIMPLIFIED_LEARNING_LOOP.md` - Architektur v1.0
-- `IMPROVEMENT_TODO.md` - 13 Tasks (Master Priority)
-
-## 🚨 Open Issues
-- MCP Server Config: Master must add mcpServers to openclaw.json
+- Scripts: 80 total, 49/100 documented
 
 ## 🎯 Next Tasks
-1. auto_doc.py (Auto-Script-Dokumentation)
-2. session_cleanup.py (Session Cleanup)
-3. git_maintenance.py (Git Branch Maintenance)
+1. session_cleanup.py (Session Cleanup) ← NOW
+2. git_maintenance.py (Git Branch Maintenance)
+3. Memory Reranker
 
 *Next Heartbeat: When issues detected or hourly*
