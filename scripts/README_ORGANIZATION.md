@@ -1,13 +1,30 @@
 # 📁 SCRIPTS ORGANIZATION
 ## Sir HazeClaw — Logical Structure
 **Created:** 2026-04-11 21:44 UTC
+**Updated:** 2026-04-11 23:10 UTC
 
 ---
 
 ## 🎯 GOAL: 83 → ~40 Scripts
 
-### Current Status: 83 scripts
+### Current Status: 96 scripts (after adding new patterns)
 ### Target: ~40 scripts (50% reduction)
+
+---
+
+## ✅ CONSOLIDATION PROGRESS
+
+### DONE:
+- [x] **health_check.py** — Consolidated from 4 scripts
+  - Replaces: health_monitor.py, health_alert.py, quick_check.py, self_check.py
+  - Modes: --quick, --full, --gateway, --disk, --memory, --crons, --kg, --alert
+
+### Pending:
+- [ ] error_analysis scripts (3 → 1)
+- [ ] metrics scripts (3 → 1)
+- [ ] Archive 14 unused scripts
+
+---
 
 ---
 
