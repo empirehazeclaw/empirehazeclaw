@@ -1,3 +1,4 @@
+# DEPRECATED - Use health_check.py
 #!/usr/bin/env python3
 """
 Sir HazeClaw Quick Check

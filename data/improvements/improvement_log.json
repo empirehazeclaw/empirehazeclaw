@@ -2,177 +2,6 @@
   "improvements": [
     {
       "cycle": 1,
-      "timestamp": "2026-04-11T16:49:54.450914",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 196,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:49:54.450922",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164954_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164954_2",
-        "timestamp": "2026-04-11T16:49:54.490611",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 196,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:54.490617",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 198,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:54.627938",
-          "session_count": 153
-        },
-        "actual_impact": 4,
-        "change_made": "kg_entities_added:2",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-11T16:49:59.074332",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 198,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:49:59.074339",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164959_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164959_2",
-        "timestamp": "2026-04-11T16:49:59.114482",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 198,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:59.114489",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 200,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:59.240354",
-          "session_count": 153
-        },
-        "actual_impact": 4,
-        "change_made": "kg_entities_added:2",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-11T16:49:59.304010",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 143,
-        "friction_events": 0,
-        "kg_entities": 200,
-        "skills_count": 25,
-        "scripts_without_timeout": 10,
-        "timestamp": "2026-04-11T16:49:59.304016",
-        "session_count": 153
-      },
-      "hypothesis": {
-        "id": "hyp_164959_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_164959_2",
-        "timestamp": "2026-04-11T16:49:59.340287",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 200,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:59.340293",
-          "session_count": 153
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 143,
-          "friction_events": 0,
-          "kg_entities": 200,
-          "skills_count": 25,
-          "scripts_without_timeout": 10,
-          "timestamp": "2026-04-11T16:49:59.369736",
-          "session_count": 153
-        },
-        "actual_impact": 0.0,
-        "change_made": "kg_entities_added:0",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 1,
       "timestamp": "2026-04-11T16:56:11.634923",
       "metrics_before": {
         "error_rate": 26.6,
@@ -2590,13 +2419,142 @@
         "error": null
       },
       "kept": false
+    },
+    {
+      "timestamp": "2026-04-11T23:04:52.175670",
+      "improvements": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 2
+    },
+    {
+      "timestamp": "2026-04-11T23:14:55.924871",
+      "improvements": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 2
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T23:21:30.024022",
+      "metrics_before": {
+        "error_rate": 1.48,
+        "sessions_today": 302,
+        "friction_events": 0,
+        "kg_entities": 209,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T23:21:30.024030",
+        "session_count": 308
+      },
+      "hypothesis": {
+        "id": "hyp_232130_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_232130_8",
+        "timestamp": "2026-04-11T23:21:30.059674",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.48,
+          "sessions_today": 302,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T23:21:30.059680",
+          "session_count": 308
+        },
+        "metrics_after": {
+          "error_rate": 1.48,
+          "sessions_today": 302,
+          "friction_events": 0,
+          "kg_entities": 209,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T23:21:30.075497",
+          "session_count": 308
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 36,
+    "total": 37,
     "successful": 23,
-    "failed": 13,
+    "failed": 14,
     "current_streak": 0,
     "best_streak": 20
   }
