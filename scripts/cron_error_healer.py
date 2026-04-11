@@ -32,6 +32,11 @@ STATE_FILE = Path("/home/clawbot/.openclaw/workspace/data/healer_state.json")
 MAX_GATEWAY_RESTARTS_PER_HOUR = 4
 CIRCUIT_BREAKER_COOLDOWN = 300  # 5 minutes
 
+# Retry with backoff config
+RETRY_BASE_DELAY = 2.0  # seconds
+RETRY_MAX_DELAY = 30.0  # seconds
+RETRY_JITTER = 0.5
+
 # Error categories (from Claude Lab Self-Healing research)
 ERROR_CATEGORIES = {
     "transient_api": ["429:", "500:", "503:", "timeout", "ECONNREFUSED", "Connection refused"],
@@ -65,9 +70,9 @@ HEALING_RULES = {
         "note": "Gateway draining is caused by restarts - STOP"
     },
     "ECONNREFUSED": {
-        "action": "restart_gateway",
+        "action": "retry_with_backoff",
         "category": "transient_api",
-        "note": "Connection refused - transient, restart"
+        "note": "Connection refused - retry with backoff first, then restart"
     },
 
     # ===== Discord/Message errors =====
@@ -209,6 +214,17 @@ def save_state(state):
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
+
+def calculate_backoff_delay(attempt: int) -> float:
+    """Calculate delay with exponential backoff and jitter.
+    
+    Formula: min(base_delay * 2^attempt + random * jitter, max_delay)
+    """
+    import random
+    exponential_delay = RETRY_BASE_DELAY * pow(2, attempt)
+    capped_delay = min(exponential_delay, RETRY_MAX_DELAY)
+    jitter = capped_delay * RETRY_JITTER * random.random()
+    return capped_delay + jitter
 
 def get_cron_state(job_id: str = None) -> Optional[Dict]:
     """Get cron state from openclaw."""
@@ -365,6 +381,56 @@ def determine_healing_action(job_id: str, job_name: str, error: str, consecutive
                             log(f"Gateway restart failed: {e}", "ERROR")
                     action_taken = True
                     continue
+
+            # ===== RETRY WITH BACKOFF (EXPONENTIAL BACKOFF) =====
+            elif action == "retry_with_backoff":
+                retry_count_key = f"retry_count_{job_id}"
+                retry_count = state.get(retry_count_key, 0)
+                
+                if retry_count >= 3:
+                    log(f"RETRY: Max retries ({retry_count}) exceeded - escalating to gateway restart", "WARN")
+                    state[retry_count_key] = 0  # Reset
+                    save_state(state)
+                    # Escalate to gateway restart
+                    if not check_gateway_restart_loop(state):
+                        log(f"Action: ESCALATE -> RESTART_GATEWAY", "INFO")
+                        record_gateway_restart(state)
+                        if not dry_run:
+                            try:
+                                subprocess.Popen(
+                                    ["openclaw", "gateway", "restart"],
+                                    stdout=subprocess.DEVNULL,
+                                    stderr=subprocess.DEVNULL
+                                )
+                                log(f"Gateway restart initiated after retry exhaustion", "INFO")
+                            except Exception as e:
+                                log(f"Gateway restart failed: {e}", "ERROR")
+                    else:
+                        log(f"CIRCUIT BREAKER: Can't restart, alerting master", "WARN")
+                        action = "alert_master"
+                else:
+                    delay = calculate_backoff_delay(retry_count)
+                    log(f"Action: RETRY_WITH_BACKOFF (attempt {retry_count + 1}/3, wait {delay:.1f}s)", "INFO")
+                    
+                    if not dry_run:
+                        # Wait with exponential backoff
+                        time.sleep(delay)
+                        
+                        # Trigger immediate retry of the cron job
+                        try:
+                            subprocess.run(
+                                ["openclaw", "cron", "run", job_id],
+                                capture_output=True, timeout=60
+                            )
+                            log(f"Cron job re-triggered: {job_name}", "INFO")
+                            state[retry_count_key] = retry_count + 1
+                            save_state(state)
+                        except Exception as e:
+                            log(f"Retry trigger failed: {e}", "ERROR")
+                            state[retry_count_key] = retry_count + 1
+                            save_state(state)
+                    action_taken = True
+                    continue  # VERIFY will happen in next cycle
 
             # ===== DISABLE CHANNEL =====
             elif action == "disable_channel":
