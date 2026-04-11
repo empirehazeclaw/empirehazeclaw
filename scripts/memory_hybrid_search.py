@@ -111,8 +111,12 @@ def calculate_keyword_score(query_words: List[str], filepath: Path) -> float:
         return 0
 
 def semantic_search(query: str, limit: int = 20) -> List[Tuple[str, float]]:
-    """Sucht semantisch im Knowledge Graph."""
+    """Sucht semantisch im Knowledge Graph.
+    
+    NOTE: After search, call update_kg_access() to track KG usage!
+    """
     results = []
+    accessed_entities = []  # Track accessed entities
     
     if not KG_PATH.exists():
         return results
@@ -147,13 +151,67 @@ def semantic_search(query: str, limit: int = 20) -> List[Tuple[str, float]]:
             
             if entity_score > 0:
                 results.append((f"entity:{entity_id}", entity_score))
+                accessed_entities.append(entity_id)  # Track for access_count update
         
         # Sort by score
         results.sort(key=lambda x: -x[1])
+        
+        # Update KG access tracking
+        if accessed_entities:
+            update_kg_access(accessed_entities)
+        
         return results[:limit]
     
     except Exception as e:
         return []
+
+
+def update_kg_access(entity_names: List[str], kg_path: Path = KG_PATH) -> None:
+    """Update access_count and last_accessed for KG entities.
+    
+    This is the VERIFY/闭环 phase - tracking KG usage!
+    Without this, KG access_count stays 0 forever.
+    """
+    if not kg_path.exists() or not entity_names:
+        return
+    
+    try:
+        with open(kg_path) as f:
+            kg = json.load(f)
+        
+        now = datetime.now().isoformat()
+        updated = 0
+        
+        for name in entity_names:
+            if name in kg.get('entities', {}):
+                entity = kg['entities'][name]
+                entity['last_accessed'] = now
+                entity['access_count'] = entity.get('access_count', 0) + 1
+                updated += 1
+        
+        if updated > 0:
+            # Save updated KG
+            with open(kg_path, 'w') as f:
+                json.dump(kg, f, indent=2)
+            
+            # Log KG hit rate
+            log_kg_hit_rate(updated, len(entity_names))
+    
+    except Exception as e:
+        pass  # Don't fail search if KG update fails
+
+
+KG_HIT_LOG = Path("/home/clawbot/.openclaw/workspace/logs/kg_hit_rate.log")
+
+def log_kg_hit_rate(hits: int, queried: int) -> None:
+    """Log KG usage for tracking."""
+    try:
+        KG_HIT_LOG.parent.mkdir(parents=True, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open(KG_HIT_LOG, 'a') as f:
+            f.write(f"[{timestamp}] KG hits: {hits}/{queried} entities accessed\n")
+    except:
+        pass
 
 def extract_snippet(filepath: str, query_words: List[str], max_len: int = 200) -> str:
     """Extrahiert relevanten Snippet aus Datei."""
