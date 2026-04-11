@@ -16,7 +16,7 @@ MEMORY_DIR = WORKSPACE / "memory"
 def get_recent_activity():
     """Holt recent Activity aus Git."""
     import subprocess
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "-20", "--since='8 hours ago'"],
         cwd=str(WORKSPACE),
         capture_output=True,

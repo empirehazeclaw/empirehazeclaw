@@ -137,7 +137,7 @@ def send_review():
     
     # Send via openclaw (if allowed) or print
     try:
-        subprocess.run([
+        subprocess.run(timeout=60, [
             "openclaw", "send",
             "--channel", "telegram",
             "--to", "5392634979",

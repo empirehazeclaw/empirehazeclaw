@@ -72,7 +72,7 @@ def get_cron_status():
 def get_git_commits_today():
     import subprocess
     try:
-        result = subprocess.run(
+        result = subprocess.run(timeout=60, 
             ["git", "log", "--oneline", "--since='today 00:00'"],
             cwd="/home/clawbot/.openclaw/workspace",
             capture_output=True,

@@ -362,41 +362,57 @@ def apply_hypothesis(hypothesis: dict) -> dict:
     return result
 
 def apply_error_reduction(hypothesis: dict) -> str:
-    """Apply error reduction patterns."""
+    """Apply error reduction patterns — REAL FIXES, not just analysis."""
     
     changes = []
     kg_added = 0
+    real_fixes = 0
     
-    # Add VARIETY of KG entities - unique each time with timestamp + random suffix
+    # Run the actual error reduction strategy
+    error_reducer = WORKSPACE / "scripts" / "error_reduction_strategy.py"
+    
+    if error_reducer.exists():
+        log("  → Running error_reduction_strategy.py --fix-all...", "STEP")
+        result = subprocess.run(
+            ["/usr/bin/python3", str(error_reducer), "--fix-all"],
+            capture_output=True, text=True, timeout=120
+        )
+        
+        # Parse output for results
+        output = result.stdout
+        
+        # Extract fixed counts
+        for line in output.split("\n"):
+            if "Timeouts fixed:" in line:
+                try:
+                    timeout_fixes = int(line.split(":")[1].strip())
+                    real_fixes += timeout_fixes
+                    log(f"  → Timeouts fixed: {timeout_fixes}", "SUCCESS")
+                except:
+                    pass
+            if "Loops fixed:" in line:
+                try:
+                    loop_fixes = int(line.split(":")[1].strip())
+                    real_fixes += loop_fixes
+                    log(f"  → Loops fixed: {loop_fixes}", "SUCCESS")
+                except:
+                    pass
+        
+        if real_fixes > 0:
+            changes.append(f"real_fixes:{real_fixes}")
+    
+    # Add KG entities for tracking (unique each time)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     random_suffix = random.randint(1000, 9999)
     new_entities = [
         {
-            "id": f"error_pattern_{timestamp}_{random_suffix}",
-            "type": "pattern",
-            "name": f"Error Pattern {timestamp}",
-            "description": "Pattern learned from error analysis session",
+            "id": f"error_fix_{timestamp}_{random_suffix}",
+            "type": "fix",
+            "name": f"Error Fix Applied",
+            "description": f"Real error fix applied: {real_fixes} issues resolved",
             "source": "internal",
             "created": datetime.now().isoformat(),
-            "tags": ["error", "analysis", "learning"]
-        },
-        {
-            "id": f"improvement_action_{timestamp}_{random_suffix}",
-            "type": "action",
-            "name": f"Improvement Action {timestamp}",
-            "description": "Action taken during autonomous improvement cycle",
-            "source": "internal",
-            "created": datetime.now().isoformat(),
-            "tags": ["improvement", "action", "autonomous"]
-        },
-        {
-            "id": f"learning_insight_{timestamp}_{random_suffix}",
-            "type": "insight",
-            "name": f"Learning Insight {timestamp}",
-            "description": "Insight gained from improvement cycle",
-            "source": "internal",
-            "created": datetime.now().isoformat(),
-            "tags": ["learning", "insight", "autonomous"]
+            "tags": ["error", "fix", "real-action"]
         }
     ]
     
@@ -410,9 +426,9 @@ def apply_error_reduction(hypothesis: dict) -> str:
                 with open(KG_FILE, "w") as f:
                     json.dump(kg, f, indent=2)
                 kg_added += 1
-                log(f"  → Added KG: {entity['id']}", "SUCCESS")
     
-    changes.append(f"kg_entities_added:{kg_added}")
+    changes.append(f"kg_added:{kg_added}")
+    log(f"  → Total real fixes: {real_fixes}", "SUCCESS")
     
     return ", ".join(changes) if changes else "no_changes_needed"
 

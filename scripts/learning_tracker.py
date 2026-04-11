@@ -69,7 +69,7 @@ def count_patterns_today():
 def get_commits_today():
     """Get commits today."""
     import subprocess
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "--since='today 00:00'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -81,7 +81,7 @@ def get_commits_today():
 def get_current_score():
     """Get current score from self_eval."""
     import subprocess
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["python3", str(WORKSPACE / "scripts/self_eval.py")],
         cwd=str(WORKSPACE),
         capture_output=True,

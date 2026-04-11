@@ -34,7 +34,7 @@ def save_log(data):
 def estimate_blast_radius():
     """Estimate blast radius of pending changes."""
     # Get git status
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "status", "--porcelain"],
         capture_output=True, text=True, cwd=WORKSPACE
     )

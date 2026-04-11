@@ -38,7 +38,7 @@ def check_server_backup():
         if len(backups) > 5:
             # Check git commits today
             import subprocess
-            result = subprocess.run(
+            result = subprocess.run(timeout=60, 
                 ["git", "log", "--oneline", "--since='today 00:00'"],
                 cwd="/home/clawbot/.openclaw/workspace",
                 capture_output=True,
@@ -61,7 +61,7 @@ def check_github_backup():
     
     # Check git log for today's commit
     import subprocess
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "-1", "--since='today 00:00'"],
         cwd=GITHUB_DIR.parent,
         capture_output=True,
@@ -179,7 +179,7 @@ def main():
         if not ok:
             print("Creating backup...")
             import subprocess
-            result = subprocess.run([
+            result = subprocess.run(timeout=60, [
                 'tar', '-czf', 
                 f'/home/clawbot/.openclaw/backups/backup_{datetime.now().strftime("%Y%m%d_%H%M")}.tar.gz',
                 'workspace/'

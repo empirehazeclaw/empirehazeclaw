@@ -16,7 +16,7 @@ def get_git_stats():
     stats = {}
     
     # Today
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "--since='today 00:00'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -25,7 +25,7 @@ def get_git_stats():
     stats['today'] = len([c for c in result.stdout.strip().split('\n') if c])
     
     # Yesterday
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "--since='yesterday 00:00' --until='today 00:00'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -34,7 +34,7 @@ def get_git_stats():
     stats['yesterday'] = len([c for c in result.stdout.strip().split('\n') if c])
     
     # This week
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "--since='7 days ago'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -43,7 +43,7 @@ def get_git_stats():
     stats['week'] = len([c for c in result.stdout.strip().split('\n') if c])
     
     # This month
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "log", "--oneline", "--since='30 days ago'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -52,7 +52,7 @@ def get_git_stats():
     stats['month'] = len([c for c in result.stdout.strip().split('\n') if c])
     
     # Files changed today
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "diff", "--stat", "--since='today 00:00'"],
         cwd=str(WORKSPACE),
         capture_output=True,
@@ -64,7 +64,7 @@ def get_git_stats():
 
 def get_branch_info():
     """Holt Branch Information."""
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         ["git", "branch", "-v"],
         cwd=str(WORKSPACE),
         capture_output=True,

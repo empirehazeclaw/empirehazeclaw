@@ -953,14 +953,71 @@
         "error": null
       },
       "kept": true
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T17:01:23.014051",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 145,
+        "friction_events": 0,
+        "kg_entities": 221,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T17:01:23.014057",
+        "session_count": 155
+      },
+      "hypothesis": {
+        "id": "hyp_170123_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_170123_2",
+        "timestamp": "2026-04-11T17:01:23.053873",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 145,
+          "friction_events": 0,
+          "kg_entities": 221,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:01:23.053880",
+          "session_count": 155
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 145,
+          "friction_events": 0,
+          "kg_entities": 222,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:01:23.178789",
+          "session_count": 155
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 17,
-    "successful": 10,
+    "total": 18,
+    "successful": 11,
     "failed": 7,
-    "current_streak": 7,
-    "best_streak": 7
+    "current_streak": 8,
+    "best_streak": 8
   }
 }

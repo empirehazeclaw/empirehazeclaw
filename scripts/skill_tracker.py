@@ -128,6 +128,9 @@ def main():
     
     i = 1
     while i < len(sys.argv):
+    max_iter = max_iter or 1000
+    if max_iter <= 0: break
+    max_iter -= 1
         if sys.argv[i] == "--skill" and i + 1 < len(sys.argv):
             skill = sys.argv[i + 1]
             i += 2

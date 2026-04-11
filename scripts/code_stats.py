@@ -14,7 +14,7 @@ WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 
 def count_files(pattern):
     """Count files matching pattern."""
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         f"find {WORKSPACE} -type f {pattern} 2>/dev/null | wc -l",
         shell=True, capture_output=True, text=True
     )
@@ -22,7 +22,7 @@ def count_files(pattern):
 
 def count_lines(pattern):
     """Count total lines matching pattern."""
-    result = subprocess.run(
+    result = subprocess.run(timeout=60, 
         f"find {WORKSPACE} -type f {pattern} -exec wc -l {{}} + 2>/dev/null | tail -1",
         shell=True, capture_output=True, text=True
     )
@@ -65,7 +65,7 @@ def main():
     print(f"   Avg Python file: {avg_py:.0f} lines")
     
     # Deep nesting detection (rough)
-    deep_nesting = subprocess.run(
+    deep_nesting = subprocess.run(timeout=60, 
         f"grep -r 'if.*if.*if.*if' {WORKSPACE}/scripts/*.py 2>/dev/null | wc -l",
         shell=True, capture_output=True, text=True
     )

@@ -130,7 +130,7 @@ class CapabilityEvolver:
     def suggest_fix(self, issue: Dict) -> str:
         """Suggest a fix for an issue"""
         if issue['type'] == 'Security' and 'shell=True' in issue.get('issue', ''):
-            return "Use list form: subprocess.run(['cmd', 'arg1', 'arg2']) instead"
+            return "Use list form: subprocess.run(timeout=60, ['cmd', 'arg1', 'arg2']) instead"
         elif issue['type'] == 'Error Handling':
             return "Wrap in try/except with specific exception type"
         elif issue['type'] == 'Technical Debt':
