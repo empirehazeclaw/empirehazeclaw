@@ -224,8 +224,12 @@ def check_and_act():
 
 def load_coordinator_log():
     if COORDINATOR_LOG.exists():
-        with open(COORDINATOR_LOG) as f:
-            return json.load(f)
+        try:
+            with open(COORDINATOR_LOG) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"  ⚠️ Corrupted log file, resetting: {e}")
+            return {"runs": [], "last_full_cycle": None}
     return {"runs": [], "last_full_cycle": None}
 
 def save_coordinator_log(log):

@@ -70,9 +70,12 @@ def format_status(emoji, text):
 def load_report(path):
     """Load a JSON report file"""
     try:
-        with open(path, 'r') as f:
+        p = Path(path)
+        if not p.exists():
+            return None
+        with open(p, 'r') as f:
             return json.load(f)
-    except:
+    except Exception:
         return None
 
 def generate_report_message(agent, report):
@@ -139,12 +142,22 @@ def main():
     """Main function - post all reports to Discord"""
     print("🔄 Discord Report Forwarder gestartet...")
     
+    posted_count = 0
+    skipped_count = 0
+    
     for agent in CHANNELS:
         report_path = REPORT_PATHS.get(agent)
         if not report_path:
             continue
             
         report = load_report(report_path)
+        
+        # Skip if no report available yet (agents may be disabled)
+        if report is None:
+            print(f"⏭️  {agent}: No report available (agent disabled?)")
+            skipped_count += 1
+            continue
+            
         message = generate_report_message(agent, report)
         
         # Post to thread
@@ -152,10 +165,11 @@ def main():
         
         if "id" in result:
             print(f"✅ {agent}: Report posted to thread")
+            posted_count += 1
         else:
             print(f"❌ {agent}: Failed - {result.get('error', 'unknown error')[:80]}")
     
-    print("✅ Discord Report Forwarder fertig!")
+    print(f"✅ Discord Report Forwarder fertig! ({posted_count} posted, {skipped_count} skipped)")
 
 if __name__ == "__main__":
     main()
