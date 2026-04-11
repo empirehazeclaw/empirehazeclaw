@@ -66,6 +66,11 @@ def run_innovation_research():
             cwd=str(WORKSPACE)
         )
         
+        # Track token usage for research
+        output = result.stdout
+        queries = len([l for l in output.split('\n') if 'Searching' in l])
+        track_token_usage('innovation_research', 2000 * queries, 1500 * queries)
+        
         # Parse output for insights
         output = result.stdout
         
@@ -123,6 +128,10 @@ def run_quality_gates():
             cwd=str(WORKSPACE)
         )
         results['loop_check'] = 'No loops detected' in result.stdout or '✅' in result.stdout
+        
+        # Track token usage for this task
+        track_token_usage('loop_check', 500, 300)
+        
         print(f"  {'✅' if results['loop_check'] else '⚠️'} Loop Check")
     except:
         print(f"  ⚠️ Loop Check failed")
@@ -137,11 +146,15 @@ def run_quality_gates():
             cwd=str(WORKSPACE)
         )
         results['self_eval'] = '99' in result.stdout or '100' in result.stdout
+        
+        # Track token usage for this task
+        track_token_usage('self_eval', 800, 400)
+        
         print(f"  {'✅' if results['self_eval'] else '⚠️'} Self Eval")
     except:
         print(f"  ⚠️ Self Eval failed")
     
-    return all(results.values())
+    return results['loop_check'] and results['self_eval']
 
 # ============ LOOP COORDINATION ============
 
@@ -179,8 +192,8 @@ def check_and_act():
     
     # Check 3: Gateway
     try:
-        result = subprocess.run(['openclaw', 'status'], capture_output=True, text=True, timeout=10)
-        if 'Gateway' in result.stdout and 'running' in result.stdout.lower():
+        result = subprocess.run(['curl', '-s', 'http://127.0.0.1:18789/health'], capture_output=True, text=True, timeout=5)
+        if '"ok":true' in result.stdout or 'live' in result.stdout:
             pass  # OK
         else:
             issues.append("Gateway möglicherweise down")
