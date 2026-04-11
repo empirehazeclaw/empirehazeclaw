@@ -11,7 +11,7 @@
 |---|------|-----------|--------|-------|
 | 1 | OpenRouter API Key | 🔴 HIGH | ⚠️ | Master muss API Key erneuern |
 | 2 | RBAC & Input Validation | 🟡 MED | 🟡 | Solo Fighter Mode - Security deprecated |
-| 3 | **Cron Watchdog alarmiert nicht proaktiv** | 🔴 HIGH | ⚠️ | Loggt nur, kein Telegram-Alert bei Errors |
+| 3 | **Cron Watchdog alarmiert nicht proaktiv** | 🔴 HIGH | 🔧 **IN PROGRESS** | Alert gesendet, Fix committed |
 
 ---
 
