@@ -1010,14 +1010,128 @@
         "error": null
       },
       "kept": true
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T17:03:16.205242",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 146,
+        "friction_events": 0,
+        "kg_entities": 222,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T17:03:16.205248",
+        "session_count": 156
+      },
+      "hypothesis": {
+        "id": "hyp_170316_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_170316_2",
+        "timestamp": "2026-04-11T17:03:16.245324",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 146,
+          "friction_events": 0,
+          "kg_entities": 222,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:03:16.245331",
+          "session_count": 156
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 146,
+          "friction_events": 0,
+          "kg_entities": 223,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:03:16.380671",
+          "session_count": 156
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T17:03:16.441806",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 146,
+        "friction_events": 0,
+        "kg_entities": 223,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T17:03:16.441813",
+        "session_count": 156
+      },
+      "hypothesis": {
+        "id": "hyp_170316_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_170316_2",
+        "timestamp": "2026-04-11T17:03:16.481381",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 146,
+          "friction_events": 0,
+          "kg_entities": 223,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:03:16.481389",
+          "session_count": 156
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 146,
+          "friction_events": 0,
+          "kg_entities": 224,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T17:03:16.636396",
+          "session_count": 156
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 18,
-    "successful": 11,
+    "total": 20,
+    "successful": 13,
     "failed": 7,
-    "current_streak": 8,
-    "best_streak": 8
+    "current_streak": 10,
+    "best_streak": 10
   }
 }
