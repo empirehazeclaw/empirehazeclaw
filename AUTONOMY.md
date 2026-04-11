@@ -34,12 +34,30 @@
 | **System optimieren** | Performance, Efficiency, Costs |
 | **Errors debuggen** | Cron Errors, Script Errors |
 
-### Learnings & Research
-| Aktion | Beispiele |
-|--------|-----------|
-| **Neue Patterns recherchieren** | Web-Suche, Doku lesen |
-| **Capability Evolver laufen** | Nach State-Reset wenn nötig |
-| **Innovation research** | Neue Tools/Ideen finden |
+### 🎓 Learning Loop & Self-Improvement (KERN-AUFGABEN)
+| Aktion | Wie | Wann |
+|--------|-----|------|
+| **Learning Coordinator** | `python3 scripts/learning_coordinator.py` | Hourly via Cron |
+| **Capability Evolver** | Subagent spawn → `node index.js` | Nach State-Reset wenn nötig |
+| **Neue Patterns lernen** | Web-Suche, ClawHub research | Täglich |
+| **Learnings dokumentieren** | In `memory/YYYY-MM-DD.md` | Nach jedem Learning |
+| **Innovation Research** | Via Learning Coordinator | Daily 14h UTC |
+
+**Workflow Capability Evolver:**
+```
+1. Subagent spawnen (NICHT exec)
+2. Falls Path-Truncation Error → State löschen + nochmal
+3. Output dokumentieren
+4. Bei Fehler: Stoppen, dokumentieren, Master informieren
+```
+
+**Workflow Learning Coordinator:**
+```
+1. Hourly Cron läuft automatisch
+2. Neue Learnings → memory/ speichern
+3. Token Budget checken
+4. Innovation Research wenn fällig
+```
 
 ---
 
@@ -114,10 +132,61 @@ Aber: Schnell wenn sicher
 09:00 UTC  - Morning Brief prüfen (was braucht Master heute?)
 09:05 UTC  - Cron Status check (Errors? Gateway ok?)
 09:10 UTC  - Token Budget check (Alert wenn nötig)
-09:30 UTC  - Learning Coordinator (hourly)
-12:00 UTC  - Health Check
-18:00 UTC  - Evening Capture
+09:30 UTC  - Learning Coordinator (hourly - AUTOMATISCH)
+10:00 UTC  - Learning: Neue Patterns, Research, Innovation
+12:00 UTC  - Health Check (via Cron)
+14:00 UTC  - Innovation Research (via Cron)
+14:00 UTC  - Capability Evolver? (nach Bedarf, State-Reset falls nötig)
+18:00 UTC  - Evening Capture (via Cron)
+21:00 UTC  - Evening Summary (via Cron)
 ```
+
+**Autonome Tasks sind KERN, nicht optional.**
+
+---
+
+## 🔄 LEARNING LOOP INTEGRATION
+
+### Was ist der Learning Loop?
+Der Learning Loop ist mein **kontinuierliches Selbst-Verbesserungs-System**:
+
+```
+LERNEN → DOKUMENTIEREN → IMPLEMENTIEREN → REVIEW
+   ↑                                    |
+   └──────────── REFLECTION ←───────────┘
+```
+
+### Komponenten
+| Komponente | Zweck | Status |
+|------------|-------|--------|
+| **Learning Coordinator** | Zentrales Dashboard, stündlich | ✅ Cron |
+| **Capability Evolver** | GEP-basierte Selbst-Evolution | ✅ Subagent |
+| **Token Tracker** | Budget-Tracking | ✅ Cron |
+| **Innovation Research** | Neue Patterns finden | ✅ Cron |
+| **Memory** | Learnings speichern | ✅ Daily |
+
+### Wie sie zusammenwirken
+```
+Learning Coordinator (hourly)
+  ├── Token Budget check
+  ├── Innovation Research
+  ├── Quality Gates
+  └── Neue Learnings → memory/
+
+Capability Evolver (bei Bedarf)
+  ├── Analysiert System
+  ├── Gene selection
+  └── Mutations → implementieren
+```
+
+### Dokumentation
+| Was | Wo |
+|-----|----|
+| Learnings | `memory/YYYY-MM-DD.md` |
+| Patterns | `docs/RESEARCH/` |
+| System-Status | `HEARTBEAT.md` |
+| Autonomie-Regeln | `AUTONOMY.md` |
+| Master-Todos | `MASTER_TODO.md` |
 
 ---
 
