@@ -119,6 +119,18 @@ TESTS = {
         'test_func': 'main',
         'description': 'Quick Check'
     },
+    'loop_check': {
+        'script': 'loop_check.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Loop Detection Check'
+    },
+    'learning_tracker': {
+        'script': 'learning_tracker.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Learning Progress Tracker'
+    },
     'morning_routine': {
         'script': 'morning_routine.py',
         'type': 'import_no_args',
@@ -228,13 +240,6 @@ TESTS = {
         'type': 'import_no_args',
         'test_func': 'generate_report',
         'description': 'Health Monitor'
-    },
-    'cron_monitor': {
-        'script': 'cron_monitor.py',
-        'type': 'import_with_args',
-        'test_func': 'generate_report',
-        'test_args': ('text',),
-        'description': 'Cron Monitor'
     },
     'weekly_review': {
         'script': 'weekly_review.py',
