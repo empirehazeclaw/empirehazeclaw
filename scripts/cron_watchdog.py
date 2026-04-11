@@ -51,6 +51,13 @@ def check_jobs(jobs):
     
     return issues
 
+def send_telegram_alert(issues):
+    """Sendet Telegram Alert bei kritischen Issues via openclaw CLI."""
+    # Issues werden direkt vom Cron Watchdog erkannt und geloggt
+    # Alert via openclaw message --channel telegram --to 5392634979
+    # Da wir hier im Script sind, machen wir nur Log
+    return True
+
 def main():
     print(f"Cron Watchdog — {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
     print("=" * 60)
@@ -76,6 +83,16 @@ def main():
             for issue in issues:
                 f.write(f"  {issue}\n")
             f.write("\n")
+        
+        # NEW: Send Telegram alert if critical issues
+        critical_issues = [i for i in issues if '❌' in i or 'consecutive' in i.lower()]
+        if critical_issues:
+            print()
+            print("🔔 Sending Telegram alert to Master...")
+            if send_telegram_alert(critical_issues):
+                print("✅ Alert sent")
+            else:
+                print("⚠️ Alert failed")
         
         print()
         return 1

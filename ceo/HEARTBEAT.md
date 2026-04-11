@@ -11,6 +11,17 @@
 |---|------|-----------|--------|-------|
 | 1 | OpenRouter API Key | 🔴 HIGH | ⚠️ | Master muss API Key erneuern |
 | 2 | RBAC & Input Validation | 🟡 MED | 🟡 | Solo Fighter Mode - Security deprecated |
+| 3 | **Cron Watchdog alarmiert nicht proaktiv** | 🔴 HIGH | ⚠️ | Loggt nur, kein Telegram-Alert bei Errors |
+
+---
+
+## 🚨 SYSTEM ISSUES (2026-04-11)
+
+| Issue | Severity | Status |
+|-------|---------|--------|
+| Nightly Dreaming Discord Error | 🟡 MED | Unkorrigiert |
+| Security Audit Telegram Error | 🟡 MED | Unkorrigiert |
+| Cron Watchdog nicht proaktiv | 🔴 HIGH | **Zu fixen** |
 
 ---
 
