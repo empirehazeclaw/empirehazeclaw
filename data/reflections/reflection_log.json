@@ -1,0 +1,118 @@
+{
+  "reflections": [
+    {
+      "timestamp": "2026-04-11T17:31:00.683156+00:00",
+      "action": "file_read",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 150,
+      "duration_ms": 200,
+      "pattern_stored": true,
+      "kg_entities": 225
+    },
+    {
+      "timestamp": "2026-04-11T17:31:00.730865+00:00",
+      "action": "exec_command",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 300,
+      "duration_ms": 500,
+      "pattern_stored": true,
+      "kg_entities": 226
+    },
+    {
+      "timestamp": "2026-04-11T17:31:00.799597+00:00",
+      "action": "api_call",
+      "success": false,
+      "error_type": "timeout",
+      "tokens_used": 100,
+      "duration_ms": 30000,
+      "fix_type": "generated_fix",
+      "fix": {
+        "description": "Increase timeout or add retry logic",
+        "action": "adjust_timeout",
+        "confidence": 0.6,
+        "error_type": "timeout",
+        "source": "generated"
+      },
+      "auto_applied": false,
+      "pattern_stored": true,
+      "kg_entities": 227
+    },
+    {
+      "timestamp": "2026-04-11T17:31:00.854162+00:00",
+      "action": "kg_update",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 200,
+      "duration_ms": 150,
+      "pattern_stored": true,
+      "kg_entities": 228
+    },
+    {
+      "timestamp": "2026-04-11T17:32:37.403967+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 230
+    }
+  ],
+  "success_patterns": [
+    {
+      "type": "success_pattern",
+      "action_type": "file_read",
+      "context": {},
+      "tokens_used": 150,
+      "efficiency": 1.3333333333333333,
+      "discovered_at": "2026-04-11T17:31:00.683156+00:00",
+      "confidence": 0.8657515757027927
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "exec_command",
+      "context": {},
+      "tokens_used": 300,
+      "efficiency": 1.6666666666666667,
+      "discovered_at": "2026-04-11T17:31:00.730865+00:00",
+      "confidence": 0.889315050087022
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "kg_update",
+      "context": {},
+      "tokens_used": 200,
+      "efficiency": 0.75,
+      "discovered_at": "2026-04-11T17:31:00.854162+00:00",
+      "confidence": 0.8706835137293726
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T17:32:37.403967+00:00",
+      "confidence": 0.7858576186780266
+    }
+  ],
+  "error_fixes": [
+    {
+      "error_type": "timeout",
+      "fix": {
+        "description": "Increase timeout or add retry logic",
+        "action": "adjust_timeout",
+        "confidence": 0.6,
+        "error_type": "timeout",
+        "source": "generated"
+      },
+      "timestamp": "2026-04-11T17:31:00.799597+00:00"
+    }
+  ]
+}

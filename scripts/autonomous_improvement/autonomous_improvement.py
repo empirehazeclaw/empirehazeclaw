@@ -37,6 +37,10 @@ LOGS_DIR = WORKSPACE / "logs" / "improvements"
 METRICS_FILE = WORKSPACE / "memory" / "session_metrics_history.json"
 KG_FILE = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
 
+# Import after WORKSPACE is defined
+sys.path.insert(0, str(WORKSPACE / "scripts"))
+from reflection_loop import ReflectionEngine
+
 # Thresholds
 IMPROVEMENT_THRESHOLD = 0.05  # 5% improvement minimum
 MAX_ATTEMPTS_PER_RUN = 3
@@ -624,6 +628,35 @@ def run_improvement_cycle(cycle_number: int) -> dict:
     
     improvement_log["improvements"] = improvement_log["improvements"][-50:]  # Keep last 50
     save_improvement_log(improvement_log)
+    
+    # Step 6: REFLECTION — Self-correct based on results
+    log("Step 6: Reflecting on cycle...", "STEP")
+    try:
+        reflection = ReflectionEngine()
+        
+        # Create action result for reflection
+        action_result = {
+            "action": f"improvement_cycle_{cycle_number}",
+            "success": applied.get("success", False),
+            "error_type": applied.get("error", "unknown"),
+            "error": applied.get("error"),
+            "tokens_used": 0,
+            "duration_ms": 0,
+            "context": {
+                "hypothesis": best.get("description", "unknown"),
+                "actual_impact": applied.get("actual_impact", 0),
+                "decision": decision
+            }
+        }
+        
+        reflection_result = reflection.reflect(action_result)
+        log(f"  Reflection stored: {reflection_result.get('pattern_stored', False)}", "INFO")
+        
+        # If we have a fix from reflection, apply it
+        if reflection_result.get("fix") and not applied.get("success", False):
+            log(f"  → Applying reflection fix: {reflection_result['fix'].get('description')}", "STEP")
+    except Exception as e:
+        log(f"  Reflection error (non-critical): {e}", "WARNING")
     
     return cycle_result
 

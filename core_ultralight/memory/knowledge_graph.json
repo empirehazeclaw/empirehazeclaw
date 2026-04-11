@@ -3793,6 +3793,146 @@
         "fix",
         "real-action"
       ]
+    },
+    "success_file_read_2290": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for file_read",
+          "confidence": 0.8657515757027927,
+          "extracted_at": "2026-04-11T17:31:00.683156+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-11T17:31:00.683156+00:00",
+      "last_accessed": "2026-04-11T17:31:00.683156+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "file_read",
+        "context": {},
+        "tokens_used": 150,
+        "efficiency": 1.3333333333333333,
+        "discovered_at": "2026-04-11T17:31:00.683156+00:00",
+        "confidence": 0.8657515757027927
+      }
+    },
+    "success_exec_command_7091": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for exec_command",
+          "confidence": 0.889315050087022,
+          "extracted_at": "2026-04-11T17:31:00.730865+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-11T17:31:00.730865+00:00",
+      "last_accessed": "2026-04-11T17:31:00.730865+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "exec_command",
+        "context": {},
+        "tokens_used": 300,
+        "efficiency": 1.6666666666666667,
+        "discovered_at": "2026-04-11T17:31:00.730865+00:00",
+        "confidence": 0.889315050087022
+      }
+    },
+    "error_timeout_7327": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: timeout - Request timeout",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-11T17:31:00.799597+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-11T17:31:00.799597+00:00",
+      "last_accessed": "2026-04-11T17:31:00.799597+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": "timeout",
+        "error_message": "Request timeout",
+        "occurrence_count": 1,
+        "first_seen": "2026-04-11T17:31:00.799597+00:00",
+        "fix_applied": "Increase timeout or add retry logic"
+      }
+    },
+    "success_kg_update_9649": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for kg_update",
+          "confidence": 0.8706835137293726,
+          "extracted_at": "2026-04-11T17:31:00.854162+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-11T17:31:00.854162+00:00",
+      "last_accessed": "2026-04-11T17:31:00.854162+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "kg_update",
+        "context": {},
+        "tokens_used": 200,
+        "efficiency": 0.75,
+        "discovered_at": "2026-04-11T17:31:00.854162+00:00",
+        "confidence": 0.8706835137293726
+      }
+    },
+    "error_fix_20260411_173237_2917": {
+      "id": "error_fix_20260411_173237_2917",
+      "type": "fix",
+      "name": "Error Fix Applied",
+      "description": "Real error fix applied: 0 issues resolved",
+      "source": "internal",
+      "created": "2026-04-11T17:32:37.278548",
+      "tags": [
+        "error",
+        "fix",
+        "real-action"
+      ]
+    },
+    "success_improvement_cycle_1_3828": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_1",
+          "confidence": 0.7858576186780266,
+          "extracted_at": "2026-04-11T17:32:37.403967+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-11T17:32:37.403967+00:00",
+      "last_accessed": "2026-04-11T17:32:37.403967+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_1",
+        "context": {
+          "hypothesis": "Fix timeout-related errors (61% of all errors)",
+          "actual_impact": 2,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-11T17:32:37.403967+00:00",
+        "confidence": 0.7858576186780266
+      }
     }
   },
   "last_updated": "2026-04-11T17:05:01.860724",
