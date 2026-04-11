@@ -1,35 +1,49 @@
 {
   "last_run": {
-    "run_id": "run_1775861169474",
-    "created_at": "2026-04-10T22:46:09.489Z",
-    "parent_event_id": null,
-    "selected_gene_id": null,
+    "run_id": "run_1775912920860",
+    "created_at": "2026-04-11T13:08:40.877Z",
+    "parent_event_id": "evt_1775861180674",
+    "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": null,
     "selector": {
-      "selected": null,
+      "selected": "gene_gep_repair_from_errors",
       "reason": [
-        "no matching gene found; new gene may be required",
-        "signals: session_logs_missing",
+        "signals match gene.signals_match",
+        "signals: perf_bottleneck, high_failure_ratio, force_innovation_after_repair_loop, retry_error_context, retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/, retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr",
         "memory_graph: memory_prefer:gene_gep_repair_from_errors",
-        "drift_intensity: 0.577"
+        "drift_intensity: 0.500"
       ],
-      "alternatives": []
+      "alternatives": [
+        "gene_gep_optimize_prompt_and_assets",
+        "gene_tool_integrity",
+        "gene_auto_b9a66a5c"
+      ]
     },
     "signals": [
-      "session_logs_missing"
+      "perf_bottleneck",
+      "high_failure_ratio",
+      "force_innovation_after_repair_loop",
+      "retry_error_context",
+      "retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/",
+      "retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr"
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1775861169472",
-      "category": "optimize",
+      "id": "mut_1775912920856",
+      "category": "innovate",
       "trigger_signals": [
-        "session_logs_missing"
+        "perf_bottleneck",
+        "high_failure_ratio",
+        "force_innovation_after_repair_loop",
+        "retry_error_context",
+        "retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/",
+        "retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr"
       ],
-      "target": "behavior:protocol",
-      "expected_effect": "improve success rate and reduce repeated operational cost",
-      "risk_level": "low"
+      "target": "gene:gene_gep_repair_from_errors",
+      "expected_effect": "explore new strategy combinations to escape local optimum",
+      "risk_level": "medium"
     },
-    "mutation_id": "mut_1775861169472",
+    "mutation_id": "mut_1775912920856",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -39,7 +53,7 @@
       "obedience": 0.85
     },
     "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
-    "personality_known": false,
+    "personality_known": true,
     "personality_mutations": [],
     "drift": false,
     "selected_by": "memory_graph+selector",
@@ -47,22 +61,8 @@
     "reused_asset_id": null,
     "reused_source_node": null,
     "reused_chain_id": null,
-    "baseline_untracked": [
-      "assets/gep/candidates.jsonl",
-      "assets/gep/capsules.json",
-      "assets/gep/events.jsonl",
-      "assets/gep/failed_capsules.json",
-      "assets/gep/genes.json",
-      "assets/gep/genes.jsonl",
-      "memory/evolution/evolution_solidify_state.json",
-      "memory/evolution/evolution_state.json",
-      "memory/evolution/memory_graph.jsonl",
-      "memory/evolution/memory_graph_state.json",
-      "memory/evolution/personality_state.json",
-      "memory/skills_list_cache.json",
-      "skills/capability-evolver/memory/evolution/reflection_log.jsonl"
-    ],
-    "baseline_git_head": "114f8d6557cb24edba6d7b82363bf7a9fd997090",
+    "baseline_untracked": [],
+    "baseline_git_head": "bdc4976a8e8db909aac555bf0a21709c31a1107f",
     "blast_radius_estimate": {
       "files": 12,
       "lines": 960
@@ -75,7 +75,7 @@
       "cautiousExecution": false,
       "highRiskGene": false,
       "repairStreak": 0,
-      "failureStreak": 0,
+      "failureStreak": 1,
       "blastRadiusMaxFiles": 12,
       "directives": [
         "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",

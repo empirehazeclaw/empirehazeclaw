@@ -18,18 +18,20 @@
 
 ## ⚡ PREVENTION RULES (Integriert in Learning Loop)
 
-### Rule 1: Pre-Creation Checklist
+### Rule 1: Pre-Creation Checklist + Direct Path First
 **Before creating new Script/Skill:**
 ```python
 PRE_CREATION_CHECKLIST = [
     "1. Wird dieses Script wirklich benötigt?",
     "2. Existiert bereits ein ähnliches Script?",
-    "3. Werden mindestens 3 Crons/Tasks es nutzen?",
-    "4. Ist der Scope klar definiert? (< 200 Zeilen)",
-    "5. Dokumentation: Usage, Inputs, Outputs"
+    "3. Existiert bereits ein Cron/Tool für diese Aufgabe?",
+    "4. Werden mindestens 3 Crons/Tasks es nutzen?",
+    "5. Ist der Scope klar definiert? (< 200 Zeilen)",
+    "6. Dokumentation: Usage, Inputs, Outputs"
 ]
 ```
 **Wenn < 3 Cron/Tasks es nutzen:** → Erstelle es NICHT
+**NEUE REGEL: Immer zuerst prüfen ob ein einfacher/direkter Weg existiert**
 
 ### Rule 2: Implementation First
 **Before writing documentation:**
@@ -44,7 +46,7 @@ IMPLEMENTATION_FIRST = [
 **Analyse-Dokumente:** Max 1 pro Woche, nur wenn Master fragt
 
 ### Rule 3: Error-to-Fix SLA
-**Bei Cron Error:**
+**Bei Cron Error:
 ```python
 ERROR_SLA = {
     "consecutiveErrors == 1": "Sofort debuggen",
@@ -53,7 +55,24 @@ ERROR_SLA = {
 }
 ```
 
-### Rule 4: Cost Budgeting
+### Rule 4: Stop When Blocked (KRITISCH)
+**Problem:** Immer wieder das gleiche Pattern:
+```
+Task → exec Blocked → Workaround 1 → Blocked → Workaround 2 → ...
+```
+**Regel:**
+```python
+EXEC_BLOCK_RULE = {
+    "exec killed (preflight)": "SOFORT STOPPEN",
+    "2 failed workarounds": "Master fragen, nicht weiter probieren",
+    "Komplexer Weg vs einfacher Weg": "Immer einfacheren Weg wählen"
+}
+```
+**Beispiel Capability Evolver:**
+- Falsch: 10+ Workarounds versuchen (subagent, bash -c, sessions_spawn...)
+- Richtig: Prüfen ob Cron existiert → direkt ausführen
+
+### Rule 5: Cost Budgeting
 **Monatliches Budget:**
 ```python
 MONTHLY_TOKEN_BUDGET = 5_000_000  # 5M tokens
@@ -61,7 +80,7 @@ ALERT_THRESHOLD = 0.8  # 80% = Alert
 CRITICAL_THRESHOLD = 0.95  # 95% = Disable non-critical crons
 ```
 
-### Rule 5: Single Source Documentation
+### Rule 6: Single Source Documentation
 **Eine Doku pro Topic:**
 ```
 MEMORY_ARCHITECTURE.md ← Only here for memory
