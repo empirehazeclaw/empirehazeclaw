@@ -59,26 +59,52 @@ class MemoryAPI:
     def get_entities(self, filter_str: str = None) -> List[Dict]:
         """Get all entities, optionally filtered."""
         kg = self.get_kg()
-        entities = kg.get("entities", [])
+        entities_dict = kg.get("entities", {})
+        
+        # KG uses dict structure: {entity_id: entity_data}
+        # Convert to list for compatibility
+        entities_list = []
+        for entity_id, entity_data in entities_dict.items():
+            # Add id to entity data for reference
+            entity_copy = dict(entity_data)
+            entity_copy['id'] = entity_id
+            # Use first fact content as title if no title
+            if 'title' not in entity_copy:
+                facts = entity_copy.get('facts', [])
+                entity_copy['title'] = facts[0].get('content', '')[:80] if facts else entity_id
+            entities_list.append(entity_copy)
         
         if filter_str:
             filter_lower = filter_str.lower()
-            entities = [e for e in entities if filter_lower in str(e).lower()]
+            entities_list = [e for e in entities_list if filter_lower in e.get('title', '').lower() or filter_lower in e.get('id', '').lower()]
         
-        return entities
+        return entities_list
     
     def add_knowledge(self, title: str, data: Dict) -> bool:
         """Add new entity to knowledge graph."""
         kg = self.get_kg(use_cache=False)
         
+        # Generate entity ID from title
+        entity_id = f"entity_{len(kg.get('entities', {})) + 1}"
+        timestamp = datetime.now().strftime('%Y%m%d')
+        entity_id_full = f"{entity_id}_{timestamp}"
+        
         entity = {
-            "id": f"entity_{len(kg.get('entities', [])) + 1}",
-            "title": title,
+            "type": data.get("type", "knowledge"),
+            "category": data.get("type", "knowledge"),
+            "facts": [{
+                "content": title,
+                "confidence": 0.9,
+                "extracted_at": datetime.now().isoformat(),
+                "category": data.get("type", "knowledge")
+            }],
+            "priority": data.get("priority", "MEDIUM"),
             "created": datetime.now().isoformat(),
-            **data
+            "last_accessed": "",
+            "access_count": 0
         }
         
-        kg.setdefault("entities", []).append(entity)
+        kg.setdefault("entities", {})[entity_id_full] = entity
         
         with open(self.KG_FILE, 'w') as f:
             json.dump(kg, f, indent=2)
@@ -140,21 +166,38 @@ class MemoryAPI:
         """Search all memory systems."""
         results = []
         
-        # Search KG entities
+        # Search KG entities (dict structure)
         kg = self.get_kg()
-        for entity in kg.get("entities", []):
-            title = entity.get("title", "")
-            if query.lower() in title.lower():
+        query_lower = query.lower()
+        
+        for entity_id, entity_data in kg.get("entities", {}).items():
+            # Check entity ID
+            if query_lower in entity_id.lower():
                 results.append({
                     "type": "entity",
                     "source": "knowledge_graph",
-                    "title": title,
-                    "data": entity
+                    "title": entity_id,
+                    "data": entity_data,
+                    "score": 1.0
                 })
+                continue
+            
+            # Check facts content
+            for fact in entity_data.get('facts', []):
+                content = fact.get('content', '').lower()
+                if query_lower in content:
+                    results.append({
+                        "type": "entity",
+                        "source": "knowledge_graph",
+                        "title": entity_id,
+                        "data": entity_data,
+                        "score": 0.8
+                    })
+                    break
         
         # Search daily notes (today)
         daily = self.get_daily_notes()
-        if query.lower() in daily.lower():
+        if query_lower in daily.lower():
             results.append({
                 "type": "file",
                 "source": "daily_notes",
@@ -183,12 +226,26 @@ class MemoryAPI:
     def get_status(self) -> Dict:
         """Get memory system status."""
         kg = self.get_kg()
+        entities_dict = kg.get("entities", {})
+        
+        # Calculate shares_category ratio
+        relations = kg.get("relations", [])
+        shares_cat = sum(1 for r in relations if r.get('type') == 'shares_category')
+        
+        # Calculate average access_count
+        access_counts = [e.get('access_count', 0) for e in entities_dict.values()]
+        avg_access = sum(access_counts) / len(access_counts) if access_counts else 0
+        max_access = max(access_counts) if access_counts else 0
         
         return {
             "knowledge_graph": {
-                "entities": len(kg.get("entities", [])),
-                "relations": len(kg.get("relations", [])),
-                "size_mb": self.KG_FILE.stat().st_size / (1024 * 1024) if self.KG_FILE.exists() else 0
+                "entities": len(entities_dict),
+                "relations": len(relations),
+                "shares_category_count": shares_cat,
+                "shares_category_ratio": f"{100*shares_cat/len(relations):.1f}%" if relations else "0%",
+                "size_mb": self.KG_FILE.stat().st_size / (1024 * 1024) if self.KG_FILE.exists() else 0,
+                "avg_access_count": round(avg_access, 2),
+                "max_access_count": max_access
             },
             "daily_notes": {
                 "today": (self.MEMORY_DIR / f"{datetime.now().strftime('%Y-%m-%d')}.md").exists()

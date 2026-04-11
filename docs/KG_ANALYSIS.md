@@ -60,10 +60,31 @@ access_count = 0 für ALLE 209 entities!
 
 ---
 
-## 🎯 PILLAR 4: KG QUALITY & USAGE ACTION PLAN
+## ✅ COMPLETED ACTIONS
+
+### Phase 1: KG Integration in Retrieval ✅ DONE
+- Fixed MEMORY_API.py KG interface (was broken: list vs dict mismatch)
+- Now properly reads KG entities as dict structure
+- Added proper search through entity_id and facts.content
+
+### Phase 2: Relation Quality Improvement ✅ DONE
+- Ran kg_relation_cleaner.py
+- Before: 4659 relations (4405 shares_category = 94.5%)
+- After: 816 relations (562 shares_category = 68.9%)
+- **Reduction: 82.5%** - significant quality improvement
+
+### Phase 3: Usage Tracking ✅ PARTIALLY DONE
+- KG access tracking IS WORKING (access_count updated)
+- 5 entities have access_count = 1 after testing
+- Average access_count: 0.03
+- Need to integrate KG more deeply into main retrieval
+
+---
+
+## 🎯 PILLAR 4: KG QUALITY & USAGE ACTION PLAN (REVISED)
 
 ### Phase 1: KG Integration in Retrieval ✅ IMMEDIATE
-**Problem:** access_count = 0
+**Problem:** access_count was 0, now tracking works
 
 1. **Integrate KG in memory_hybrid_search.py**
    - Add KG as primary source for entity lookups
@@ -75,31 +96,19 @@ access_count = 0 für ALLE 209 entities!
    - Don't clean entities that are frequently accessed
    - Track which entities are actually used
 
-### Phase 2: Relation Quality Improvement
-**Problem:** 95% shares_category
+### Phase 2: Relation Quality Improvement ✅ DONE
+- Cleaned 3843 low-quality relations (82.5% reduction)
+- shares_category ratio reduced from 94.5% to 68.9%
 
-1. **Stop automatic shares_category generation**
-   - Only create when truly meaningful
-   -KGUpdater sollte weniger aber wertvollere Relations erstellen
+### Phase 3: Usage Tracking ✅ PARTIALLY DONE
+- Access tracking is working
+- Need to increase KG usage in main retrieval
 
-2. **Add semantic relation types**
-   - causes, precedes, enables, prevents
-   - has_property, requires, produces
-   - Competitor, Alternative, Upgrade
-
-3. **Relation validation**
-   - Flag relations with only shares_category as "weak"
-   - Remove duplicate/ transitive relations
-
-### Phase 3: Usage Tracking
-1. **Add access_count tracking to KG queries**
-2. **Log KG hit rate**
-3. **Track which entity types are most useful**
-
-### Phase 4: Stale Entity Cleanup
-1. **Entities never accessed after 7 days → review**
-2. **Entities with only 1 relation → investigate**
-3. **orphans → delete**
+### Remaining Work:
+1. **Integrate KG deeper into main retrieval**
+2. **Stop automatic shares_category generation** in kg_updater
+3. **Add semantic relation types**: causes, precedes, enables, prevents
+4. **Stale entity cleanup**: entities with 0 relations or no access after 7 days
 
 ---
 

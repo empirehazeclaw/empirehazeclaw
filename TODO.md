@@ -77,10 +77,22 @@
 
 ## 📋 PILAR 5: SKILLS INTEGRATION
 
-- [ ] Audit all 18 skills
-- [ ] Create skills/INDEX.md
-- [ ] Archive unused skills
-- [ ] Document active skills
+### ✅ DONE
+- [x] Create skills/INDEX.md
+- [x] Identify 14 skills with SKILL.md
+- [x] Identify production vs deprecated skills
+
+### Problems Found:
+- [x] backup-advisor: EMPTY folder (0 files)
+- [x] email-outreach: UNUSED (no cron refs)
+- [x] lead-intelligence: UNUSED
+- [x] _library: 25 pattern files but NO SKILL.md
+
+### This Week
+- [ ] Delete empty backup-advisor folder
+- [ ] Move _library patterns to docs/patterns/
+- [ ] Mark email-outreach, lead-intelligence as deprecated
+- [ ] Audit each active skill for quality
 
 ---
 
