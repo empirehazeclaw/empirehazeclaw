@@ -1,145 +1,268 @@
-# 🔄 Autonomous Improvement Skill
-**Created:** 2026-04-11
-**Category:** learning
-**Priority:** HIGH
+# 🚀 Autonomous Improvement System
+**Based on Karpathy's AutoResearch Pattern**
 
-## Problem
-Ich soll mich selbst verbessern aber wie?
+**Created:** 2026-04-11  
+**Category:** core_system  
+**Priority:** CRITICAL  
+**Author:** Sir HazeClaw
 
-## Lösung
-**Der Autonomous Improvement Loop**
+---
+
+## 🎯 Concept
+
+Karpathy's insight: **AI kann sich selbst verbessern durch einen Loop von:**
+```
+Modify → Train/Eval → Check → Keep/Discard → Repeat
+```
+
+**Adaptiert für Sir HazeClaw:**
+```
+Analyze → Hypothesis → Change → Measure → Keep/Discard → Log → Repeat
+```
+
+---
+
+## 🔄 The Autonomous Improvement Loop
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    IMPROVEMENT LOOP                         │
+│                     AUTONOMOUS LOOP                        │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│   DETECT ──── ANALYZE ──── ACT ──── DOCUMENT ──── VERIFY   │
-│      ↑                                              │       │
-│      └────────────────────────┘                      │       │
-│                          (Feedback Loop)                  │       │
+│   ┌──────────┐                                             │
+│   │ ANALYZE  │ → Error Rate, KG, Skills, Metrics          │
+│   └────┬─────┘                                             │
+│        ▼                                                   │
+│   ┌──────────┐                                             │
+│   │HYPOTHESIS│ → Generate 5 improvement ideas             │
+│   └────┬─────┘                                             │
+│        ▼                                                   │
+│   ┌──────────┐                                             │
+│   │  APPLY   │ → Execute top hypothesis                    │
+│   └────┬─────┘                                             │
+│        ▼                                                   │
+│   ┌──────────┐                                             │
+│   │ MEASURE  │ → Compare before/after metrics              │
+│   └────┬─────┘                                             │
+│        ▼                                                   │
+│   ┌──────────┐                                             │
+│   │ KEEP/    │ → Improvement ≥5%? Keep : Discard           │
+│   │ DISCARD  │                                             │
+│   └────┬─────┘                                             │
+│        ▼                                                   │
+│   ┌──────────┐                                             │
+│   │   LOG    │ → Save to improvement_log.json              │
+│   └────┬─────┘                                             │
+│        │                                                   │
+│        └──────────── REPEAT ──────────────────────────────│
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Step 1: DETECT (Erkennen)
+## 📁 Components
 
-**Was ist das Problem?**
-- Error Rate gestiegen?
-- Friction Events?
-- Skill Score gefallen?
-- Cron Errors?
-
-**Tools:**
+### Core Script
 ```bash
-# Morning Metrics
-python3 scripts/session_analyzer.py --days 1
+scripts/autonomous_improvement/
+├── autonomous_improvement.py   # Main loop engine
+├── README.md                    # This file
+└── IMPLEMENTATION.md            # Technical details
+```
 
-# Skill Check
-python3 scripts/skill_tracker.py --report
+### Data Files
+```bash
+data/improvements/
+└── improvement_log.json         # History of all improvements
 
-# Cron Health
-openclaw cron list
+logs/improvements/
+└── autonomous_improvement.log   # Run logs
 ```
 
 ---
 
-## Step 2: ANALYZE (Analysieren)
+## 🎮 Usage
 
-**Warum ist es passiert?**
-- Root Cause finden
-- Similar past issues? (KG check)
-- Was sind die Daten?
+### Basic Usage
+```bash
+# Run single improvement cycle
+python3 autonomous_improvement.py
 
-**Fragen:**
-1. Wann ist das passiert?
-2. Warum ist es passiert?
-3. Wie kann ich es verhindern?
-4. Was habe ich ähnliches schon?
+# Analyze current state
+python3 autonomous_improvement.py --analyze
 
----
+# Generate hypotheses only
+python3 autonomous_improvement.py --hypothesis
 
-## Step 3: ACT (Handeln)
+# Apply best hypothesis
+python3 autonomous_improvement.py --apply
 
-**Was tue ich jetzt?**
-- Quick Fix: Sofort implementieren
-- Medium Fix: Sprint ansetzen
-- Long Fix: Capability Evolver nutzen
-
-**Regel:** 
-```
-Minimal First → Test → Verify → Dokumentieren
+# Review improvement history
+python3 autonomous_improvement.py --review
 ```
 
----
+### Overnight Mode (Cron)
+```bash
+# Run multiple cycles overnight
+python3 autonomous_improvement.py --overnight
 
-## Step 4: DOCUMENT (Dokumentieren)
-
-**Was habe ich gelernt?**
-- Pattern in Skill Library
-- KG Update (neue entity)
-- Memory Log
-- AUTONOMOUS_LEARNING_PLAN.md updaten wenn nötig
-
----
-
-## Step 5: VERIFY (Prüfen)
-
-**Hat es funktioniert?**
-- Nächste Session: Error Rate besser?
-- Skill Score höher?
-- Master Feedback?
-
-**Wenn Ja:** → Loop continue
-**Wenn Nein:** → Step 2 zurück
-
----
-
-## Priorisierung
-
-| Severity | Definition | Action Time |
-|----------|------------|-------------|
-| CRITICAL | System down | SOFORT |
-| HIGH | Error Rate > 30% | Heute |
-| MEDIUM | < 20% Error | Diese Woche |
-| LOW | Optimization | Sprint |
-
----
-
-## Quick Protocol
-
-```
-MORNING (06:00):
-  → session_analyzer.py
-  → skill_tracker.py --report
-  → If error > 20% → HIGH priority
-
-AFTER ANY SUCCESS:
-  → pattern_extractor.py
-  → KG update
-
-AFTER ANY ERROR:
-  → Root Cause
-  → Fix oder Document
-  → Skill Library update
-
-EVENING:
-  → Review was ich heute verbessert habe
-  → Memory Log
+# Setup cron (2 AM daily)
+0 2 * * * python3 /home/.../autonomous_improvement.py --overnight
 ```
 
 ---
 
-## Success Metrics
+## 📊 Hypotheses Generated
 
-| Metric | Baseline | Target | Week |
-|--------|----------|--------|------|
-| Error Rate | 28% | <15% | 4 |
-| Friction | 43 | <20 | 4 |
-| First-Attempt | ? | >80% | 4 |
-| Skills | 8 new | 15 total | 4 |
+Based on current metrics, the system generates hypotheses in categories:
+
+| Category | Priority | Description |
+|----------|----------|-------------|
+| `error_reduction` | HIGH | Reduce error rate below 20% |
+| `error_reduction` | HIGH | Fix timeout-related errors (61%) |
+| `knowledge` | MEDIUM | Grow KG to 200+ entities |
+| `skills` | MEDIUM | Expand skill library to 25+ |
+| `efficiency` | MEDIUM | Token optimization |
 
 ---
 
-*Sir HazeClaw — Autonomous Improver*
+## 📈 Success Criteria
+
+| Metric | Threshold | Action |
+|--------|-----------|--------|
+| Improvement | ≥5% | Keep change |
+| Improvement | <5% | Discard change |
+| Stagnation | 3 failed | Stop cycle |
+| Max Cycles | 3 per run | Prevent infinite loops |
+
+---
+
+## 🔧 Configuration
+
+```python
+# In autonomous_improvement.py
+IMPROVEMENT_THRESHOLD = 0.05  # 5% minimum
+MAX_ATTEMPTS_PER_RUN = 3      # Cycles per run
+STAGNATION_LIMIT = 3          # Stop after 3 fails
+```
+
+---
+
+## 📋 Example Run
+
+```
+================================================================
+CYCLE 1
+================================================================
+Step 1: Analyzing current state...
+  Error Rate: 26.6%
+  KG Entities: 194
+  Skills: 24
+Step 2: Generating hypotheses...
+  Generated 5 hypotheses
+  Selected: Reduce error rate below 20%
+  Expected Impact: 8%
+Step 3: Applying hypothesis...
+  → Verifying paths before exec...
+  → Found 3 scripts without timeout
+  → Running auto_fixer.py...
+Step 4: Evaluating...
+✅ KEEP: Improved by 6.2%
+Step 5: Logging...
+Improvement logged successfully
+```
+
+---
+
+## 🎓 Integration with Other Systems
+
+### With Capability Evolver
+- Share gene diversity data
+- Coordinate improvement strategies
+
+### With HEARTBEAT
+- Update status after improvements
+- Alert on stagnation
+
+### With KG
+- Extract patterns from improvements
+- Grow knowledge graph
+
+### With Performance Dashboard
+- Log to performance metrics
+- Track improvement trends
+
+---
+
+## 🚨 Error Handling
+
+| Error | Response |
+|-------|----------|
+| Script fails | Log error, continue to next cycle |
+| No hypotheses | Log "System may be optimal" |
+| Metrics unavailable | Use default values |
+| Improvement fails | Increment stagnation counter |
+
+---
+
+## 📝 Log Format (improvement_log.json)
+
+```json
+{
+  "improvements": [
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T16:30:00",
+      "hypothesis": {
+        "id": "hyp_163000_1",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Reduce error rate below 20%",
+        "expected_impact": 8
+      },
+      "applied": {
+        "success": true,
+        "metrics_before": {"error_rate": 26.6},
+        "metrics_after": {"error_rate": 20.4},
+        "actual_impact": 6.2
+      },
+      "kept": true
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "current_streak": 1,
+    "best_streak": 1
+  }
+}
+```
+
+---
+
+## ✅ TODO
+
+- [x] Create autonomous_improvement.py
+- [x] Create improvement_log.json structure
+- [x] Define hypothesis categories
+- [x] Implement keep/discard logic
+- [x] Add overnight mode
+- [ ] Setup cron job for overnight
+- [ ] Connect to Capability Evolver
+- [ ] Add web research integration
+
+---
+
+## 🎯 Next Steps
+
+1. **Setup Cron:** `0 2 * * * python3 ... --overnight`
+2. **Connect to Evolver:** Share gene diversity data
+3. **Add Research:** Auto-search for new patterns
+4. **Self-Modification:** Allow AI to modify own code
+
+---
+
+*Sir HazeClaw — Autonomous Improver 🚀*  
+*Based on Karpathy's AutoResearch Pattern*
