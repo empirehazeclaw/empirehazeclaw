@@ -79,9 +79,10 @@ class MemorySanitizer:
         ("additional instruction", "INJECTION: Additional instructions"),
         
         # DAN / Role-play attacks
-        ("DAN", "INJECTION: DAN prompt attack"),
+        (r"\bDAN\b", "INJECTION: DAN prompt attack"),
         ("do anything now", "INJECTION: DAN prompt attack"),
-        ("jailbreak", "INJECTION: Jailbreak attempt"),
+        (r"\bjailbreak\b", "INJECTION: Jailbreak attempt"),  # Matches jailbreak/Jailbreaking
+        (r"\bsudo\b", "PRIVILEGE: Escalation attempt"),
         ("bypass security", "INJECTION: Bypass attempt"),
         ("you are now", "INJECTION: Role-play attack"),
         ("act as", "INJECTION: Role-play attack"),
@@ -162,9 +163,24 @@ class MemorySanitizer:
         # Check 3: Injection patterns (CRITICAL) - case insensitive search
         content_lower = content.lower()
         for pattern, description in self.INJECTION_PATTERNS:
-            if pattern.lower() in content_lower:
-                injection_patterns_found.append(description)
-                blocked_reasons.append(f"INJECTION DETECTED: {description}")
+            # Check if pattern uses regex (has word boundaries or anchors)
+            # Use raw string check to avoid backspace confusion
+            if pattern.startswith(r'\b') or pattern.endswith(r'\b') or '^' in pattern or '$' in pattern:
+                # Regex pattern - use word boundaries
+                try:
+                    if re.search(pattern, content, re.IGNORECASE):
+                        injection_patterns_found.append(description)
+                        blocked_reasons.append(f"INJECTION DETECTED: {description}")
+                except re.error:
+                    # Fall back to simple match if regex fails
+                    if pattern.lower() in content_lower:
+                        injection_patterns_found.append(description)
+                        blocked_reasons.append(f"INJECTION DETECTED: {description}")
+            else:
+                # Simple substring match
+                if pattern.lower() in content_lower:
+                    injection_patterns_found.append(description)
+                    blocked_reasons.append(f"INJECTION DETECTED: {description}")
         
         # Check 4: Suspicious patterns (warnings)
         for pattern, description in self.SUSPICIOUS_PATTERNS:
