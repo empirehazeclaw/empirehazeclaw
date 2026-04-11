@@ -1,8 +1,8 @@
 {
-  "agent": "memory_cleanup",
-  "timestamp": "2026-04-11T20:59:58.879370",
+  "agent": "memory_cleanup_v2",
+  "timestamp": "2026-04-11T21:13:09.189051",
   "dry_run": false,
+  "changes": [],
   "deleted_files": [],
-  "archived_files": [],
-  "status": "done"
+  "archived_files": []
 }
