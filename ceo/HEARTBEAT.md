@@ -17,12 +17,15 @@
 | Quality Gates | ✅ AUTO | Via Coordinator |
 | Token Tracking | ✅ ACTIVE | In Coordinator integriert |
 
-## 🔄 Proactive Monitoring (NEW)
+## 🔄 Proactive Monitoring
 | Cron | Status | Interval |
 |------|--------|----------|
-| Loop Check | ✅ ACTIVE | Every 15 min |
 | Learning Coordinator | ✅ ACTIVE | Hourly |
 | Gateway Auto-Recovery | ✅ ACTIVE | Every 5 min |
+
+**⚠️ NO SPAM RULE:** Nur melden bei ERROR, WARNING, oder echter Verbesserung/Learning.
+- Loop Check (every 15min) → REMOVED (Spam)
+- Learning Loop Status (every 5min) → REMOVED (Spam)
 
 ## ✅ Improvement Progress (2026-04-11)
 | Task | Status |
