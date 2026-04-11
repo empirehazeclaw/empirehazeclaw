@@ -7,5 +7,32 @@
   "phase_3_details": "Loop Check triggered warning",
   "phase_4_tracking": "OK",
   "exit_code": 1,
-  "summary": "Full cycle completed with 1 warning (Loop Check). No critical issues."
+  "summary": "Full cycle completed with 1 warning (Loop Check). No critical issues.",
+  "runs": [
+    {
+      "timestamp": "2026-04-11T14:06:16.169949",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-11T14:06:19.195972",
+      "phase": "research",
+      "success": true,
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-11T14:06:19.401291",
+      "phase": "quality",
+      "success": false,
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-11T14:06:19.567505",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    }
+  ],
+  "last_full_cycle": "2026-04-11T14:06:19.567519"
 }

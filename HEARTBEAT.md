@@ -18,6 +18,8 @@
 | Token Budget Tracker | ✅ DAILY | Cron daily |
 | Gateway Auto-Recovery | ✅ 5min | Auto-restart if down |
 | Session Cleanup | ✅ DAILY | Cron daily |
+| **HEARTBEAT Auto-Update** | ✅ 3h | Cron ID: 1be06a3a |
+| **Evening Review** | ✅ 21h | Cron ID: cd64b36b |
 
 ## 📊 Quick Metrics
 - Memory: `/workspace/memory/`

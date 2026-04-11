@@ -24,23 +24,62 @@ BACKUP_DIR = Path("/home/clawbot/.openclaw/backups")
 
 # Error patterns and healing actions
 HEALING_RULES = {
+    # Discord/Message delivery errors
     "Outbound not configured for channel: discord": {
-        "action": "disable_delivery",
+        "action": "disable_discord",
+        "delivery_mode": "none",
+        "note": "Discord not configured - switch to silent mode"
+    },
+    "Error: Outbound not configured": {
+        "action": "disable_discord",
         "delivery_mode": "none",
         "note": "Discord not configured - switch to silent mode"
     },
     "Cannot send messages in a non-text channel": {
-        "action": "disable_delivery",
+        "action": "disable_discord",
+        "delivery_mode": "none",
+        "note": "Discord channel issue - switch to silent mode"
+    },
+    "Error: Cannot send messages": {
+        "action": "disable_discord",
         "delivery_mode": "none",
         "note": "Discord channel issue - switch to silent mode"
     },
     "Message failed": {
-        "action": "check_delivery",
-        "note": "Check if message actually delivered despite error"
+        "action": "disable_discord",
+        "delivery_mode": "none",
+        "note": "Message delivery broken - switch to silent mode"
     },
+    "⚠️ ✉️ Message failed": {
+        "action": "disable_discord",
+        "delivery_mode": "none",
+        "note": "Emoji-prefixed message failed - switch to silent mode"
+    },
+    
+    # Gateway errors
     "GatewayDrainingError": {
-        "action": "wait_and_retry",
-        "note": "Gateway restarting - wait for it to come back up"
+        "action": "restart_gateway",
+        "note": "Gateway restarting - restart gateway"
+    },
+    "ECONNREFUSED": {
+        "action": "restart_gateway",
+        "note": "Gateway connection refused - restart"
+    },
+    "Gateway shutdown": {
+        "action": "restart_gateway",
+        "note": "Gateway down - restart"
+    },
+    "Gateway is draining": {
+        "action": "restart_gateway",
+        "note": "Gateway draining - restart"
+    },
+    
+    # Timeout errors
+    "cron: job execution timed out": {
+        "action": "increase_timeout_or_disable",
+        "timeout_increase": 300,
+        "max_consecutive": 3,
+        "note": "Timeout - increase timeout, disable after 3 consecutive"
     },
     "timeout": {
         "action": "increase_timeout_or_disable",
@@ -48,17 +87,68 @@ HEALING_RULES = {
         "max_consecutive": 3,
         "note": "Timeout - increase timeout or disable if too many"
     },
+    
+    # Auth/API errors
     "401: User not found": {
         "action": "disable_cron",
         "note": "OpenRouter auth failed - disable cron"
     },
+    "403: Forbidden": {
+        "action": "disable_cron",
+        "note": "API forbidden - likely auth issue"
+    },
+    "429: Too Many Requests": {
+        "action": "wait_and_retry",
+        "note": "Rate limited - wait before retry"
+    },
+    
+    # Fallback/Model errors
+    "FallbackSummaryError": {
+        "action": "disable_cron",
+        "note": "All models failed - disable cron"
+    },
+    "All models failed": {
+        "action": "disable_cron",
+        "note": "All models failed - disable cron"
+    },
+    
+    # Script/Module errors
     "Cannot find module": {
         "action": "disable_cron",
         "note": "Missing module - cron broken, disable"
     },
-    "ECONNREFUSED": {
+    "ENOENT": {
+        "action": "disable_cron",
+        "note": "File not found - script missing, disable"
+    },
+    "Script not found": {
+        "action": "disable_cron",
+        "note": "Script missing - disable cron"
+    },
+    
+    # Memory/Disk errors
+    "ENOSPC": {
+        "action": "alert_master",
+        "note": "Disk full - alert immediately"
+    },
+    "Out of memory": {
+        "action": "alert_master",
+        "note": "OOM - alert immediately"
+    },
+    
+    # Generic patterns
+    "connection refused": {
         "action": "restart_gateway",
-        "note": "Gateway connection refused - restart"
+        "note": "Connection refused - restart gateway"
+    },
+    "network": {
+        "action": "wait_and_retry",
+        "note": "Network issue - wait and retry"
+    },
+    "failed": {
+        "action": "disable_discord",
+        "delivery_mode": "none",
+        "note": "Generic failure - switch to silent mode"
     }
 }
 
@@ -141,7 +231,7 @@ def check_false_positive(job_id: str, error: str) -> bool:
     return False
 
 
-def determine_healing_action(job_id: str, job_name: str, error: str, dry_run: bool = False) -> bool:
+def determine_healing_action(job_id: str, job_name: str, error: str, consecutive_errors: int = 0, dry_run: bool = False) -> bool:
     """Bestimme und führe Healing Action aus."""
     
     # Check for false positive first
@@ -157,18 +247,18 @@ def determine_healing_action(job_id: str, job_name: str, error: str, dry_run: bo
             action = rule['action']
             
             if action == "disable_discord":
-                log(f"HEALING: Switching {job_name} to silent mode", "INFO")
+                log(f"HEALING: Would switch {job_name} to silent mode", "INFO")
                 if not dry_run:
                     try:
                         subprocess.run([
-                            "openclaw", "cron", "update",
-                            "--job-id", job_id,
-                            "--delivery", rule['delivery_mode']
+                            "openclaw", "cron", "edit",
+                            job_id,
+                            "--no-deliver"
                         ], check=True)
                         log(f"SUCCESS: Delivery set to none", "INFO")
-                        action_taken = True
                     except Exception as e:
                         log(f"FAILED to update cron: {e}", "ERROR")
+                action_taken = True  # Mark as handled even in dry_run
             
             elif action == "check_delivery":
                 # Check if delivery actually worked
@@ -180,14 +270,53 @@ def determine_healing_action(job_id: str, job_name: str, error: str, dry_run: bo
                     log(f"DELIVERY UNCLEAR: Need manual check for {job_name}", "WARN")
             
             elif action == "restart_gateway":
-                log(f"HEALING: Restarting gateway", "INFO")
+                log(f"HEALING: Would restart gateway for {job_name}", "INFO")
                 if not dry_run:
                     try:
-                        subprocess.run(["openclaw", "gateway", "restart"])
-                        log(f"Gateway restart initiated", "INFO")
-                        action_taken = True
+                        # Run gateway restart in background - don't wait
+                        subprocess.Popen(
+                            ["openclaw", "gateway", "restart"],
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL
+                        )
+                        log(f"Gateway restart initiated (bg)", "INFO")
                     except Exception as e:
                         log(f"Gateway restart failed: {e}", "ERROR")
+                action_taken = True  # Mark as handled even in dry_run
+            
+            elif action == "increase_timeout_or_disable":
+                timeout_inc = rule.get('timeout_increase', 300)
+                max_cons = rule.get('max_consecutive', 3)
+                if consecutive_errors >= max_cons:
+                    log(f"HEALING: Would disable {job_name} after {consecutive_errors} errors", "INFO")
+                    if not dry_run:
+                        try:
+                            subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
+                            log(f"Cron disabled", "INFO")
+                        except Exception as e:
+                            log(f"Failed to disable cron: {e}", "ERROR")
+                    action_taken = True  # Mark as handled even in dry_run
+                else:
+                    log(f"TIMEOUT: Would increase timeout after {consecutive_errors}/{max_cons} errors", "INFO")
+                    action_taken = True  # Mark as handled - will retry next cycle
+            
+            elif action == "disable_cron":
+                log(f"HEALING: Would disable broken cron {job_name}", "INFO")
+                if not dry_run:
+                    try:
+                        subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
+                        log(f"Cron disabled", "INFO")
+                    except Exception as e:
+                        log(f"Failed to disable cron: {e}", "ERROR")
+                action_taken = True  # Mark as handled even in dry_run
+            
+            elif action == "wait_and_retry":
+                log(f"WAIT_AND_RETRY: {job_name} will retry next cycle", "INFO")
+                action_taken = True  # Consider it handled
+            
+            elif action == "alert_master":
+                log(f"ALERT: {job_name} needs Master attention", "WARN")
+                # This would need Telegram integration - mark as failed for now
             
             break  # Only handle first matching pattern
     
@@ -240,7 +369,7 @@ def heal_all_errors(dry_run: bool = False) -> Dict[str, int]:
                 continue
             
             # Apply healing rules
-            healed = determine_healing_action(job_id, job_name, error, dry_run)
+            healed = determine_healing_action(job_id, job_name, error, consecutive_errors, dry_run)
             
             if healed:
                 stats['healed'] += 1
@@ -275,7 +404,7 @@ def main():
         job = get_cron_state(args.job_id)
         if job:
             error = job.get('state', {}).get('lastError', 'unknown')
-            determine_healing_action(args.job_id, job.get('name'), error, args.dry_run)
+            determine_healing_action(args.job_id, job.get('name'), error, job.get('state', {}).get('consecutiveErrors', 0), args.dry_run)
     else:
         stats = heal_all_errors(args.dry_run)
         

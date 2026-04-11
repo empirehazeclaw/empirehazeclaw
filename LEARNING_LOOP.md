@@ -311,3 +311,8 @@ python3 learning_coordinator.py --full
 
 *Erstellt: 2026-04-11 10:15 UTC*
 *Simplified Architecture v1.0*
+
+## Rule #5: Exec Timeout (2026-04-11)
+**Problem:** exec Commands werden nach ~60-90s gekillt
+**Lösung:** Background mode (`&`, `nohup`) oder Cron Jobs
+**Context:** System-Level Limit, nicht OpenClaw

@@ -104,7 +104,7 @@ def archive_session(session_info):
 def delete_tmp_files():
     """Clean up tmp directory."""
     if not TMP_DIR.exists():
-        return 0
+        return 0, 0
     
     freed = 0
     count = 0
