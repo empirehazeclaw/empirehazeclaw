@@ -155,7 +155,7 @@ Health Checks × 240 = ~480K tokens
 | # | Regel | Warum |
 |---|-------|-------|
 | 1 | **Erst implementieren, dann dokumentieren** | Analysen ohne Taten = Zeitverschwendung |
-| 2 | **Max 3 neue Scripts/Woche** | Überblick behalten |
+| 2 | **ALLES ordentlich dokumentieren + organisieren** | Saubere Struktur über alles |
 | 3 | **Errors sofort fixen** | Nicht akkumulieren lassen |
 | 4 | **Eine Doku-Quelle** | Nicht 5 Versionen derselben Info |
 | 5 | **Cost Budgeting** | Token-Verbrauch tracken |
