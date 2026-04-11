@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-11 15:26 UTC
+## Last Update: 2026-04-11 15:43 UTC
 
 ## ✅ System Overview
 | Metric | Status |
@@ -10,38 +10,39 @@
 | Cron Errors | 9 |
 | Token Usage | 0% (0/5,000,000) |
 
-## 🔄 Autonomy Framework
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Learning Coordinator | ✅ HOURLY | Exit-Code Bug gefixt |
-| Capability Evolver | ✅ ON-DEMAND | Subagent when needed |
-| Token Budget Tracker | ✅ DAILY | Cron daily |
-| Gateway Auto-Recovery | ✅ 5min | Auto-restart if down |
-| Session Cleanup | ✅ DAILY | Cron daily |
+## 📊 Self-Improvement Status (Sprint 2026-04-11)
+
+### Metrics
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Skills | 17/20 | 20 | 🟡 85% |
+| Error Rate | 26.6% | <15% | ⚠️ Gap: 11.6% |
+| KG Entities | 192 | 250 | 🟡 77% |
+| Friction | 76 | <20 | ⚠️ High |
+
+### Phases
+- Phase 1 (Error < 20%): ⚠️ In Progress
+- Phase 2 (Error < 15%): ⚠️ Not Started  
+- Phase 3 (Error < 10%): ⚠️ Not Started
 
 ## ⚠️ EXEC TIMEOUT — KNOWN LIMITATION
-**System killt Prozesse nach ~60-90s (SIGTERM)**
-**Lösung:** Background mode (`&`) oder Cron Jobs für lange Tasks
-**Dokumentiert:** SYSTEM_TIMEOUT.md + timeout_handling skill
+**System kills processes after ~60-90s (SIGTERM)**
+**Solution:** Background mode (&) or Cron Jobs for long tasks
+**Documented:** SYSTEM_TIMEOUT.md + timeout_handling skill
 
-## 📈 Self-Improvement Sprint (2026-04-11) — 85% COMPLETE
-| Feature | Status | Value |
-|---------|--------|-------|
-| Skill Library | ✅ COMPLETE | 12 Skills (Level 1-3) |
-| Session Analyzer | ✅ | 121 Sessions |
-| Skill Tracker | ✅ | 100/100 scores |
-| Error Rate | ⚠️ 28% | Target <15% |
-| Learning Plan | ✅ | AUTONOMOUS_LEARNING_PLAN.md |
+## 📚 Skill Library (17 Skills)
+- Level 1: Error Handling ✅ 6 Skills
+- Level 2: Workflow ✅ 6 Skills
+- Level 3: Advanced ✅ 5 Skills
 
-## 📊 Quick Metrics
-- Memory: `/workspace/memory/`
-- Scripts: `/workspace/scripts/` (55 active)
-- Skills: `/workspace/skills/` (16 active)
-- KG Entities: ~188
+## 🛠️ Monitoring Tools
+- `self_improvement_monitor.py` — Dashboard
+- `efficiency_tracker.py` — FAS Rate Tracking
+- `session_analysis_cron.py` — Daily Analysis
 
 ## ⚠️ NO SPAM RULE
 Only report: ERROR, WARNING, or real improvement/learning.
 
 ---
-*Auto-updated: 2026-04-11 15:04 UTC*
+*Auto-updated: 2026-04-11 15:43 UTC*
 *Sir HazeClaw — Solo Fighter*
