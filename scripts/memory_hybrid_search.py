@@ -24,6 +24,14 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict, Tuple
 
+# Import reranker
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    from memory_reranker import rerank as rerank_candidates, deduplicate_results
+    RERANKER_AVAILABLE = True
+except ImportError:
+    RERANKER_AVAILABLE = False
+
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
 MEMORY_DIR = WORKSPACE / "memory"
@@ -265,6 +273,25 @@ def hybrid_search(query: str, limit: int = 5, days: int = 30) -> List[Dict]:
                 'snippet': snippet,
                 'relevance': 'high' if score > 0.4 else 'medium' if score > 0.2 else 'low'
             })
+    
+    # Load full content for reranking (files only)
+    if RERANKER_AVAILABLE:
+        for r in output:
+            if r['type'] == 'file':
+                filepath = WORKSPACE / r['source']
+                if filepath.exists():
+                    try:
+                        with open(filepath) as f:
+                            r['content'] = f.read()[:2000]  # First 2000 chars
+                    except:
+                        r['content'] = r.get('snippet', '')
+            else:
+                # For entities, use empty content (reranker will skip)
+                r['content'] = ''
+    
+    # Apply reranking if available
+    if RERANKER_AVAILABLE and output:
+        output = rerank_candidates(query, output)
     
     return output
 
