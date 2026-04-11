@@ -118,6 +118,36 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 242
+    },
+    {
+      "timestamp": "2026-04-11T20:21:31.808704+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 245
+    },
+    {
+      "timestamp": "2026-04-11T20:21:37.059690+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 247
+    },
+    {
+      "timestamp": "2026-04-11T20:21:42.325374+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 249
     }
   ],
   "success_patterns": [
@@ -238,6 +268,45 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-11T19:21:11.573012+00:00",
       "confidence": 0.7222698186362126
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T20:21:31.808704+00:00",
+      "confidence": 0.7808920031963408
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T20:21:37.059690+00:00",
+      "confidence": 0.7507068927788318
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Fix timeout-related errors (61% of all errors)",
+        "actual_impact": 2,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-11T20:21:42.325374+00:00",
+      "confidence": 0.7506527557615735
     }
   ],
   "error_fixes": [

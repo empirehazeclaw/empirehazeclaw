@@ -1623,14 +1623,235 @@
         }
       ],
       "validated": 3
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-11T20:21:31.600843",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 248,
+        "friction_events": 0,
+        "kg_entities": 243,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T20:21:31.600848",
+        "session_count": 258
+      },
+      "hypothesis": {
+        "id": "hyp_202131_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_202131_2",
+        "timestamp": "2026-04-11T20:21:31.642549",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 243,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:31.642556",
+          "session_count": 258
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 244,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:31.778620",
+          "session_count": 258
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-11T20:21:36.854378",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 248,
+        "friction_events": 0,
+        "kg_entities": 245,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T20:21:36.854398",
+        "session_count": 258
+      },
+      "hypothesis": {
+        "id": "hyp_202136_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_202136_2",
+        "timestamp": "2026-04-11T20:21:36.898122",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 245,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:36.898129",
+          "session_count": 258
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 246,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:37.026922",
+          "session_count": 258
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-11T20:21:42.112542",
+      "metrics_before": {
+        "error_rate": 26.6,
+        "sessions_today": 248,
+        "friction_events": 0,
+        "kg_entities": 247,
+        "skills_count": 25,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-11T20:21:42.112550",
+        "session_count": 258
+      },
+      "hypothesis": {
+        "id": "hyp_202142_2",
+        "category": "error_reduction",
+        "priority": "HIGH",
+        "description": "Fix timeout-related errors (61% of all errors)",
+        "approach": "Use background_or_cron for tasks >60s",
+        "expected_impact": 15,
+        "effort": "LOW",
+        "methods": [
+          "Identify >60s tasks in recent sessions",
+          "Convert to background execution",
+          "Add cron scheduling"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_202142_2",
+        "timestamp": "2026-04-11T20:21:42.149826",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 247,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:42.149833",
+          "session_count": 258
+        },
+        "metrics_after": {
+          "error_rate": 26.6,
+          "sessions_today": 248,
+          "friction_events": 0,
+          "kg_entities": 248,
+          "skills_count": 25,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-11T20:21:42.292070",
+          "session_count": 258
+        },
+        "actual_impact": 2,
+        "change_made": "kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "timestamp": "2026-04-11T20:23:17.433384",
+      "improvements": [
+        {
+          "title": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "expected_impact": "HIGH",
+          "reason": "Error rate: 26.6%",
+          "source": "issue"
+        },
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "success": true,
+          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:23 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
+          "validated": true
+        },
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u274c error_reduction: Failed (will try different approach) | \u2705 quality_improve: +50% impr",
+          "validated": true
+        }
+      ],
+      "validated": 3
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 27,
-    "successful": 20,
+    "total": 30,
+    "successful": 23,
     "failed": 7,
-    "current_streak": 17,
-    "best_streak": 17
+    "current_streak": 20,
+    "best_streak": 20
   }
 }

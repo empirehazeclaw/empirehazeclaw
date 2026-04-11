@@ -612,6 +612,32 @@ def run_full_cycle():
         log_run(log, "learning", False)
     print()
     
+    # PHASE 6: Meta-Improvement (Loop improving ITSELF)
+    # Only run every 5 cycles to save resources
+    cycle_count = len([r for r in log.get('runs', []) if r['phase'] == 'system_check'])
+    if cycle_count > 0 and cycle_count % 5 == 0:
+        print("🧠 PHASE 6: Meta-Improvement (Loop improving itself)")
+        try:
+            result = subprocess.run(
+                ['python3', str(SCRIPTS_DIR / 'meta_improver.py')],
+                capture_output=True,
+                text=True,
+                timeout=60,
+                cwd=str(WORKSPACE)
+            )
+            if '✅ HEALTHY' in result.stdout or 'Loop Health: ✅' in result.stdout:
+                print("  ✅ Meta-improvement complete (Loop healthy)")
+                log_run(log, "meta", True, "healthy")
+            else:
+                print("  ⚠️ Meta-improvement complete (Loop needs work)")
+                log_run(log, "meta", False, "needs_improvement")
+        except Exception as e:
+            print(f"  ⚠️ Meta-improvement failed: {e}")
+            log_run(log, "meta", False, str(e)[:50])
+    else:
+        print(f"  ⏭️ Meta-Improvement (runs every 5 cycles, currently cycle {cycle_count})")
+    print()
+    
     # Summary
     duration = (datetime.now() - start_time).total_seconds()
     validated = sum(1 for r in improvement_results if r.get('validated'))

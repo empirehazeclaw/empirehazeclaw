@@ -1,5 +1,5 @@
 {
-  "generation": 5,
+  "generation": 7,
   "best_improvements": [
     {
       "strategy": "quality_improve",
@@ -12,6 +12,12 @@
       "script": "efficiency_tracker.py",
       "improvement": 0.5,
       "timestamp": "2026-04-11T20:19:00.639724"
+    },
+    {
+      "strategy": "quality_improve",
+      "script": "quality_metrics.py",
+      "improvement": 0.5,
+      "timestamp": "2026-04-11T20:23:17.424931"
     }
   ],
   "attempts": [
@@ -69,6 +75,28 @@
       "success": false,
       "improvement": 0,
       "verified_at": "2026-04-11T20:19:00.710042"
+    },
+    {
+      "strategy": "error_reduction",
+      "script": "error_reducer.py",
+      "metric": "error_rate",
+      "direction": "lower",
+      "target": "< 15",
+      "timestamp": "2026-04-11T20:23:17.231933",
+      "success": false,
+      "improvement": 0,
+      "verified_at": "2026-04-11T20:23:17.278714"
+    },
+    {
+      "strategy": "quality_improve",
+      "script": "quality_metrics.py",
+      "metric": "score",
+      "direction": "higher",
+      "target": "> 95",
+      "timestamp": "2026-04-11T20:23:17.293128",
+      "success": true,
+      "improvement": 0.5,
+      "verified_at": "2026-04-11T20:23:17.424920"
     }
   ],
   "history": [
@@ -96,6 +124,16 @@
       "timestamp": "2026-04-11T20:19:00.710059",
       "insight": "\u274c error_reduction: Failed (will try different approach)",
       "generation": 5
+    },
+    {
+      "timestamp": "2026-04-11T20:23:17.278729",
+      "insight": "\u274c error_reduction: Failed (will try different approach)",
+      "generation": 6
+    },
+    {
+      "timestamp": "2026-04-11T20:23:17.424937",
+      "insight": "\u2705 quality_improve: +50% improvement",
+      "generation": 7
     }
   ]
 }
