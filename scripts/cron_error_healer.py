@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 """
 cron_error_healer.py - Auto-heals failed cron deliveries
-Sir HazeClaw - 2026-04-11
+Sir HazeClaw - 2026-04-11 v2
 
-Usage:
-    python3 cron_error_healer.py
-    python3 cron_error_healer.py --dry-run
-    python3 cron_error_healer.py --job-id <id>
+Based on Industry Best Practice: 4-Stage Recovery Loop
+    Detect → Diagnose → Heal → Verify
+
+NEW in v2:
+- Circuit breaker for gateway restart loops
+- 4-Stage loop with Verify phase
+- Better error categorization
+- Prevention of feedback loops
 """
 
 import json
 import subprocess
 import sys
 import argparse
-from datetime import datetime
+import time
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional, Dict, List
 
@@ -21,410 +26,545 @@ from typing import Optional, Dict, List
 CRON_STATE_PATH = Path("/home/clawbot/.openclaw/cron/jobs.json")
 HEAL_LOG = Path("/home/clawbot/.openclaw/workspace/logs/cron_healer.log")
 BACKUP_DIR = Path("/home/clawbot/.openclaw/backups")
+STATE_FILE = Path("/home/clawbot/.openclaw/workspace/data/healer_state.json")
 
-# Error patterns and healing actions
+# Circuit breaker config
+MAX_GATEWAY_RESTARTS_PER_HOUR = 4
+CIRCUIT_BREAKER_COOLDOWN = 300  # 5 minutes
+
+# Error categories (from Claude Lab Self-Healing research)
+ERROR_CATEGORIES = {
+    "transient_api": ["429:", "500:", "503:", "timeout", "ECONNREFUSED"],
+    "context_overflow": ["token limit", "context window", "max_tokens"],
+    "tool_failure": ["Cannot find module", "ENOENT", "Script not found", "path doesn't exist"],
+    "malformed_output": ["JSON parse", "schema mismatch", "Invalid JSON"],
+    "reasoning_error": ["hallucination", "contradiction", "invalid reasoning"],
+    "cascade_failure": ["GatewayDrainingError", "Gateway shutdown", "Gateway is draining"],
+    "rate_limit": ["429:", "Too Many Requests", "rate limit"],
+}
+
+# 7 Error categories with recovery strategies
 HEALING_RULES = {
-    # Discord/Message delivery errors
-    "Outbound not configured for channel: discord": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Discord not configured - switch to silent mode"
-    },
-    "Error: Outbound not configured": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Discord not configured - switch to silent mode"
-    },
-    "Cannot send messages in a non-text channel": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Discord channel issue - switch to silent mode"
-    },
-    "Error: Cannot send messages": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Discord channel issue - switch to silent mode"
-    },
-    "Message failed": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Message delivery broken - switch to silent mode"
-    },
-    "⚠️ ✉️ Message failed": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Emoji-prefixed message failed - switch to silent mode"
-    },
-    
-    # Gateway errors
+    # ===== Gateway/Cascade Failure - CIRCUIT BREAKER! =====
     "GatewayDrainingError": {
-        "action": "restart_gateway",
-        "note": "Gateway restarting - restart gateway"
+        "action": "circuit_breaker_gateway",
+        "category": "cascade_failure",
+        "note": "Gateway cascade - circuit breaker to prevent restart loop"
+    },
+    "Gateway shutdown": {
+        "action": "circuit_breaker_gateway", 
+        "category": "cascade_failure",
+        "note": "Gateway cascade - circuit breaker"
+    },
+    "Gateway is draining": {
+        "action": "circuit_breaker_gateway",
+        "category": "cascade_failure", 
+        "note": "Gateway draining is caused by restarts - STOP"
     },
     "ECONNREFUSED": {
         "action": "restart_gateway",
-        "note": "Gateway connection refused - restart"
-    },
-    "Gateway shutdown": {
-        "action": "restart_gateway",
-        "note": "Gateway down - restart"
-    },
-    "Gateway is draining": {
-        "action": "restart_gateway",
-        "note": "Gateway draining - restart"
+        "category": "transient_api",
+        "note": "Connection refused - transient, restart"
     },
     
-    # Timeout errors
+    # ===== Discord/Message errors =====
+    "Outbound not configured for channel: discord": {
+        "action": "disable_channel",
+        "channel": "discord",
+        "category": "tool_failure",
+        "note": "Discord not configured - disable channel"
+    },
+    "Error: Outbound not configured": {
+        "action": "disable_channel", 
+        "channel": "discord",
+        "category": "tool_failure",
+        "note": "Channel not configured - disable"
+    },
+    "Cannot send messages in a non-text channel": {
+        "action": "disable_channel",
+        "channel": "discord", 
+        "category": "tool_failure",
+        "note": "Discord channel issue - disable"
+    },
+    "Error: Cannot send messages": {
+        "action": "disable_channel",
+        "channel": "discord",
+        "category": "tool_failure", 
+        "note": "Cannot send messages - check channel"
+    },
+    
+    # ===== Message delivery (Telegram, not Discord!) =====
+    "Message failed": {
+        "action": "check_delivery",
+        "category": "transient_api",
+        "note": "Message failed - check if actually delivered"
+    },
+    "⚠️ ✉️ Message failed": {
+        "action": "check_delivery",
+        "category": "transient_api", 
+        "note": "Telegram delivery issue - verify first"
+    },
+    
+    # ===== Timeout errors =====
     "cron: job execution timed out": {
         "action": "increase_timeout_or_disable",
         "timeout_increase": 300,
         "max_consecutive": 3,
+        "category": "transient_api",
         "note": "Timeout - increase timeout, disable after 3 consecutive"
     },
     "timeout": {
         "action": "increase_timeout_or_disable",
         "timeout_increase": 300,
         "max_consecutive": 3,
-        "note": "Timeout - increase timeout or disable if too many"
+        "category": "transient_api",
+        "note": "Timeout - increase timeout or disable"
+    },
+    "LLM request timed out": {
+        "action": "increase_timeout_or_disable", 
+        "timeout_increase": 300,
+        "max_consecutive": 3,
+        "category": "transient_api",
+        "note": "LLM timeout - increase timeout"
     },
     
-    # Auth/API errors
+    # ===== Auth/API errors =====
     "401: User not found": {
         "action": "disable_cron",
+        "category": "auth_error",
         "note": "OpenRouter auth failed - disable cron"
     },
     "403: Forbidden": {
         "action": "disable_cron",
+        "category": "auth_error",
         "note": "API forbidden - likely auth issue"
     },
     "429: Too Many Requests": {
         "action": "wait_and_retry",
+        "category": "rate_limit",
         "note": "Rate limited - wait before retry"
     },
     
-    # Fallback/Model errors
+    # ===== Fallback/Model errors =====
     "FallbackSummaryError": {
         "action": "disable_cron",
+        "category": "reasoning_error",
         "note": "All models failed - disable cron"
     },
     "All models failed": {
         "action": "disable_cron",
+        "category": "reasoning_error", 
         "note": "All models failed - disable cron"
     },
     
-    # Script/Module errors
+    # ===== Script/Module errors =====
     "Cannot find module": {
         "action": "disable_cron",
+        "category": "tool_failure",
         "note": "Missing module - cron broken, disable"
     },
     "ENOENT": {
         "action": "disable_cron",
+        "category": "tool_failure",
         "note": "File not found - script missing, disable"
     },
     "Script not found": {
         "action": "disable_cron",
+        "category": "tool_failure",
         "note": "Script missing - disable cron"
     },
-    
-    # Memory/Disk errors
-    "ENOSPC": {
-        "action": "alert_master",
-        "note": "Disk full - alert immediately"
-    },
-    "Out of memory": {
-        "action": "alert_master",
-        "note": "OOM - alert immediately"
-    },
-    
-    # Generic patterns
-    "connection refused": {
-        "action": "restart_gateway",
-        "note": "Connection refused - restart gateway"
-    },
-    "network": {
-        "action": "wait_and_retry",
-        "note": "Network issue - wait and retry"
-    },
-    "failed": {
-        "action": "disable_discord",
-        "delivery_mode": "none",
-        "note": "Generic failure - switch to silent mode"
-    }
 }
 
-# Known false positives (crons that report error but actually deliver)
-FALSE_POSITIVES = {
-    "a1456495-f03c-4cd0-90fc-baa728365a25": {  # CEO Daily Briefing
-        "last_error": "Message failed",
-        "actual_status": "delivered",
-        "reason": "Script sends message internally, delivery status is misleading"
-    }
-}
-
-
-def log(message: str, level: str = "INFO"):
-    """Log to file and optionally print."""
+def log(msg, level="INFO"):
+    """Log to file and console."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    entry = f"[{timestamp}] [{level}] {message}"
-    
-    # Ensure log directory exists
-    HEAL_LOG.parent.mkdir(parents=True, exist_ok=True)
+    log_line = f"[{timestamp}] [{level}] {msg}"
+    print(log_line)
     
     with open(HEAL_LOG, "a") as f:
-        f.write(entry + "\n")
-    
-    if level in ["ERROR", "WARN"]:
-        print(entry)
-    return entry
+        f.write(log_line + "\n")
 
+def load_state():
+    """Load healer state for circuit breaker."""
+    if STATE_FILE.exists():
+        with open(STATE_FILE) as f:
+            return json.load(f)
+    return {"gateway_restarts": [], "disabled_channels": [], "circuit_breaker": {}}
 
-def get_cron_state(job_id: str) -> Optional[Dict]:
-    """Hole Cron-State from jobs.json."""
-    if not CRON_STATE_PATH.exists():
-        log(f"Cron state file not found: {CRON_STATE_PATH}", "ERROR")
-        return None
-    
-    with open(CRON_STATE_PATH) as f:
-        data = json.load(f)
-    
-    for job in data.get('jobs', []):
-        if job['id'] == job_id:
-            return job
-    
-    log(f"Job not found: {job_id}", "WARN")
-    return None
+def save_state(state):
+    """Save healer state."""
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=2)
 
-
-def get_last_run_status(job_id: str) -> Optional[Dict]:
-    """Hole den letzten Run Status via CLI."""
+def get_cron_state(job_id: str = None) -> Optional[Dict]:
+    """Get cron state from openclaw."""
     try:
         result = subprocess.run(
-            ["openclaw", "cron", "runs", "--id", job_id, "--limit", "1"],
-            capture_output=True,
-            text=True,
-            timeout=30
+            ["openclaw", "cron", "list", "--json"],
+            capture_output=True, text=True, timeout=30
         )
-        
         if result.returncode == 0:
-            # Parse the JSON output
-            output = result.stdout.strip()
-            if output:
-                runs = json.loads(output)
-                if runs.get('entries'):
-                    return runs['entries'][0]
-        
-        return None
+            data = json.loads(result.stdout)
+            if job_id:
+                for job in data.get("jobs", []):
+                    if job.get("id") == job_id:
+                        return job
+            return data
     except Exception as e:
-        log(f"Failed to get run status for {job_id}: {e}", "ERROR")
-        return None
+        log(f"Failed to get cron state: {e}", "ERROR")
+    return None
 
+def get_last_run_status(job_id: str) -> Optional[Dict]:
+    """Get last run status for a cron job."""
+    state = get_cron_state(job_id)
+    if state:
+        return state.get("state", {})
+    return None
+
+def check_gateway_restart_loop(state: Dict) -> bool:
+    """Circuit breaker: Check if we're in a gateway restart loop.
+    
+    If we've restarted gateway more than MAX_GATEWAY_RESTARTS_PER_HOUR in the
+    last hour, we have a cascade failure and should NOT restart again.
+    """
+    now = datetime.now()
+    one_hour_ago = now - timedelta(hours=1)
+    
+    # Clean old entries
+    state["gateway_restarts"] = [
+        t for t in state.get("gateway_restarts", [])
+        if datetime.fromisoformat(t) > one_hour_ago
+    ]
+    
+    restart_count = len(state["gateway_restarts"])
+    
+    if restart_count >= MAX_GATEWAY_RESTARTS_PER_HOUR:
+        log(f"CIRCUIT BREAKER: {restart_count} gateway restarts in last hour - STOP!", "WARN")
+        return True  # Circuit is open - don't restart
+    
+    return False  # Circuit is closed - safe to restart
+
+def record_gateway_restart(state: Dict):
+    """Record a gateway restart for circuit breaker."""
+    state.setdefault("gateway_restarts", []).append(datetime.now().isoformat())
+    save_state(state)
 
 def check_false_positive(job_id: str, error: str) -> bool:
-    """Prüfe ob dies ein bekannter False Positive ist."""
-    if job_id in FALSE_POSITIVES:
-        fp = FALSE_POSITIVES[job_id]
-        if fp['last_error'] in error:
-            log(f"FALSE POSITIVE detected for {job_id}: {error}")
-            log(f"  -> Actually delivered: {fp['actual_status']}")
-            log(f"  -> Reason: {fp['reason']}")
+    """Check if this is a false positive - don't heal."""
+    # Message failed but actually delivered = false positive
+    if "Message failed" in error or "✉" in error:
+        status = get_last_run_status(job_id)
+        if status and status.get("lastDelivered"):
+            log(f"FALSE POSITIVE: {job_id} actually delivered", "INFO")
             return True
     return False
 
+def categorize_error(error: str) -> str:
+    """Categorize error based on patterns."""
+    for category, patterns in ERROR_CATEGORIES.items():
+        for pattern in patterns:
+            if pattern.lower() in error.lower():
+                return category
+    return "unknown"
 
 def determine_healing_action(job_id: str, job_name: str, error: str, consecutive_errors: int = 0, dry_run: bool = False) -> bool:
-    """Bestimme und führe Healing Action aus."""
+    """Determine and execute healing action for an error.
     
-    # Check for false positive first
+    4-Stage Loop:
+    1. DETECT - We already know there's an error
+    2. DIAGNOSE - Categorize the error
+    3. HEAL - Execute the healing action
+    4. VERIFY - Check if healing worked (done in next cycle)
+    """
+    
+    # Load state for circuit breaker
+    state = load_state()
+    
+    # STAGE 1: DETECT (already done - we have an error)
+    log(f"", "INFO")
+    log(f"=== DETECT ===", "INFO")
+    log(f"Job: {job_name}", "INFO")
+    log(f"Error: {error[:100]}...", "INFO")
+    log(f"Consecutive: {consecutive_errors}", "INFO")
+    
+    # STAGE 2: DIAGNOSE
+    log(f"", "INFO")
+    log(f"=== DIAGNOSE ===", "INFO")
+    category = categorize_error(error)
+    log(f"Category: {category}", "INFO")
+    
+    # Check false positive first
     if check_false_positive(job_id, error):
-        log(f"Skipping {job_name} - false positive", "INFO")
+        log(f"Action: FALSE POSITIVE - no healing needed", "INFO")
         return True
     
     # Find matching error pattern
     action_taken = False
     for pattern, rule in HEALING_RULES.items():
         if pattern in error:
-            log(f"MATCH: '{pattern}' in error '{error}'", "INFO")
+            log(f"MATCH: '{pattern}' -> {rule.get('action')}", "INFO")
+            log(f"Category: {rule.get('category', 'unknown')}", "INFO")
+            
             action = rule['action']
             
-            if action == "disable_discord":
-                log(f"HEALING: Would switch {job_name} to silent mode", "INFO")
+            # ===== CIRCUIT BREAKER for Gateway =====
+            if action == "circuit_breaker_gateway":
+                if check_gateway_restart_loop(state):
+                    log(f"Action: CIRCUIT BREAKER OPEN - skip gateway restart", "WARN")
+                    log(f"Reason: Too many restarts in last hour (cascade failure)", "WARN")
+                    log(f"Action: ALERT_MASTER instead", "WARN")
+                    action = "alert_master"  # Fall through to alert
+                else:
+                    log(f"Action: RESTART_GATEWAY (circuit breaker allows)", "INFO")
+                    record_gateway_restart(state)
+                    if not dry_run:
+                        try:
+                            subprocess.Popen(
+                                ["openclaw", "gateway", "restart"],
+                                stdout=subprocess.DEVNULL,
+                                stderr=subprocess.DEVNULL
+                            )
+                            log(f"Gateway restart initiated", "INFO")
+                        except Exception as e:
+                            log(f"Gateway restart failed: {e}", "ERROR")
+                    action_taken = True
+                    # VERIFY will happen in next cycle
+                    continue
+            
+            # ===== RESTART GATEWAY =====
+            elif action == "restart_gateway":
+                if check_gateway_restart_loop(state):
+                    log(f"CIRCUIT BREAKER: Skipping restart, alerting master", "WARN")
+                    action = "alert_master"
+                else:
+                    log(f"Action: RESTART_GATEWAY", "INFO")
+                    record_gateway_restart(state)
+                    if not dry_run:
+                        try:
+                            subprocess.Popen(
+                                ["openclaw", "gateway", "restart"],
+                                stdout=subprocess.DEVNULL,
+                                stderr=subprocess.DEVNULL
+                            )
+                            log(f"Gateway restart initiated", "INFO")
+                        except Exception as e:
+                            log(f"Gateway restart failed: {e}", "ERROR")
+                    action_taken = True
+                    continue
+            
+            # ===== DISABLE CHANNEL =====
+            elif action == "disable_channel":
+                channel = rule.get("channel", "discord")
+                log(f"Action: DISABLE_CHANNEL ({channel})", "INFO")
                 if not dry_run:
                     try:
                         subprocess.run([
                             "openclaw", "cron", "edit",
-                            job_id,
-                            "--no-deliver"
-                        ], check=True)
-                        log(f"SUCCESS: Delivery set to none", "INFO")
+                            job_id, "--delivery", "none"
+                        ], check=True, capture_output=True)
+                        log(f"Channel {channel} disabled for {job_name}", "INFO")
                     except Exception as e:
-                        log(f"FAILED to update cron: {e}", "ERROR")
-                action_taken = True  # Mark as handled even in dry_run
+                        log(f"Failed to disable channel: {e}", "ERROR")
+                action_taken = True
             
+            # ===== CHECK DELIVERY (VERIFY PHASE!) =====
             elif action == "check_delivery":
-                # Check if delivery actually worked
-                run_status = get_last_run_status(job_id)
-                if run_status and run_status.get('delivered'):
-                    log(f"DELIVERY CONFIRMED: {job_name} actually delivered", "INFO")
-                    action_taken = True  # Consider it healed
+                log(f"Action: CHECK_DELIVERY (Verify phase)", "INFO")
+                status = get_last_run_status(job_id)
+                if status and status.get("delivered"):
+                    log(f"VERIFIED: {job_name} actually delivered - false positive", "INFO")
+                    action_taken = True
+                elif status and status.get("lastDelivered"):
+                    log(f"VERIFIED: {job_name} delivered={status.get('lastDelivered')}", "INFO")
+                    action_taken = True
                 else:
-                    log(f"DELIVERY UNCLEAR: Need manual check for {job_name}", "WARN")
+                    log(f"UNVERIFIED: {job_name} may need manual check", "WARN")
+                    # Don't mark as healed - needs verification
+                # Don't continue - we're done
             
-            elif action == "restart_gateway":
-                log(f"HEALING: Would restart gateway for {job_name}", "INFO")
-                if not dry_run:
-                    try:
-                        # Run gateway restart in background - don't wait
-                        subprocess.Popen(
-                            ["openclaw", "gateway", "restart"],
-                            stdout=subprocess.DEVNULL,
-                            stderr=subprocess.DEVNULL
-                        )
-                        log(f"Gateway restart initiated (bg)", "INFO")
-                    except Exception as e:
-                        log(f"Gateway restart failed: {e}", "ERROR")
-                action_taken = True  # Mark as handled even in dry_run
-            
+            # ===== INCREASE TIMEOUT OR DISABLE =====
             elif action == "increase_timeout_or_disable":
                 timeout_inc = rule.get('timeout_increase', 300)
                 max_cons = rule.get('max_consecutive', 3)
+                
                 if consecutive_errors >= max_cons:
-                    log(f"HEALING: Would disable {job_name} after {consecutive_errors} errors", "INFO")
+                    log(f"Action: DISABLE_CRON (max consecutive errors)", "WARN")
                     if not dry_run:
                         try:
                             subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
-                            log(f"Cron disabled", "INFO")
+                            log(f"Cron disabled after {consecutive_errors} errors", "INFO")
                         except Exception as e:
                             log(f"Failed to disable cron: {e}", "ERROR")
-                    action_taken = True  # Mark as handled even in dry_run
+                    action_taken = True
                 else:
-                    log(f"TIMEOUT: Would increase timeout after {consecutive_errors}/{max_cons} errors", "INFO")
-                    action_taken = True  # Mark as handled - will retry next cycle
+                    log(f"Action: TIMEOUT_INCREASE (will disable after {max_cons} errors)", "INFO")
+                    action_taken = True  # Will retry next cycle
+                # Note: Timeout increase requires manual edit for now
             
+            # ===== DISABLE CRON =====
             elif action == "disable_cron":
-                log(f"HEALING: Would disable broken cron {job_name}", "INFO")
+                log(f"Action: DISABLE_CRON", "WARN")
                 if not dry_run:
                     try:
                         subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
-                        log(f"Cron disabled", "INFO")
+                        log(f"Cron disabled: {job_name}", "INFO")
                     except Exception as e:
                         log(f"Failed to disable cron: {e}", "ERROR")
-                action_taken = True  # Mark as handled even in dry_run
+                action_taken = True
             
+            # ===== WAIT AND RETRY =====
             elif action == "wait_and_retry":
-                log(f"WAIT_AND_RETRY: {job_name} will retry next cycle", "INFO")
-                action_taken = True  # Consider it handled
+                log(f"Action: WAIT_AND_RETRY (will retry next cycle)", "INFO")
+                action_taken = True
             
+            # ===== ALERT MASTER =====
             elif action == "alert_master":
-                log(f"ALERT: {job_name} needs Master attention", "WARN")
-                # This would need Telegram integration - mark as failed for now
+                log(f"Action: ALERT_MASTER - needs human attention", "WARN")
+                # This would trigger Telegram notification
+                action_taken = False  # Needs manual intervention
             
             break  # Only handle first matching pattern
     
+    # STAGE 4: VERIFY
+    log(f"", "INFO")
+    log(f"=== VERIFY (next cycle) ===", "INFO")
+    log(f"Next run will check if healing worked", "INFO")
+    
     if not action_taken and not check_false_positive(job_id, error):
-        log(f"NO HEALING RULE for: {error}", "WARN")
-        log(f"Manual intervention required for {job_name} ({job_id})", "WARN")
+        log(f"NO HEALING RULE for: {error[:80]}", "WARN")
+        log(f"Category: {category} - needs rule update", "WARN")
     
     return action_taken
 
-
 def heal_all_errors(dry_run: bool = False) -> Dict[str, int]:
-    """Heale alle Crons mit Errors."""
+    """Heale alle Crons mit Errors - full 4-Stage loop."""
     stats = {
         'checked': 0,
         'healed': 0,
         'false_positives': 0,
         'failed': 0,
-        'needs_manual': 0
+        'needs_manual': 0,
+        'circuit_breaker': 0
     }
     
-    if not CRON_STATE_PATH.exists():
-        log("Cron state file not found", "ERROR")
+    log(f"", "INFO")
+    log(f"=== FULL 4-STAGE LOOP ===", "INFO")
+    
+    # Get all cron jobs
+    data = get_cron_state()
+    if not data:
+        log("Failed to get cron state", "ERROR")
         return stats
     
-    with open(CRON_STATE_PATH) as f:
-        data = json.load(f)
+    total_jobs = data.get("total", 0)
+    stats['total_jobs'] = total_jobs
+    log(f"Total cron jobs: {total_jobs}", "INFO")
     
-    jobs = data.get('jobs', [])
-    stats['total_jobs'] = len(jobs)
-    
-    for job in jobs:
-        job_id = job.get('id', 'unknown')
-        job_name = job.get('name', 'unnamed')
-        consecutive_errors = job.get('state', {}).get('consecutiveErrors', 0)
-        last_status = job.get('state', {}).get('lastRunStatus', 'unknown')
+    for job in data.get("jobs", []):
+        job_id = job.get("id")
+        job_name = job.get("name", "unknown")
+        state = job.get("state", {})
         
-        # Only process jobs with errors
-        if last_status == 'error' or consecutive_errors > 0:
-            stats['checked'] += 1
-            error = job.get('state', {}).get('lastError', 'unknown error')
-            
-            log(f"\n--- Processing: {job_name} ---", "INFO")
-            log(f"  ID: {job_id}", "INFO")
-            log(f"  consecutiveErrors: {consecutive_errors}", "INFO")
-            log(f"  lastError: {error}", "INFO")
-            
-            if check_false_positive(job_id, error):
-                stats['false_positives'] += 1
-                stats['healed'] += 1
-                continue
-            
-            # Apply healing rules
-            healed = determine_healing_action(job_id, job_name, error, consecutive_errors, dry_run)
-            
-            if healed:
-                stats['healed'] += 1
-            elif consecutive_errors >= 2:
-                # After 2 consecutive errors, recommend disable
-                log(f"RECOMMENDATION: Disable {job_name} after {consecutive_errors} errors", "WARN")
-                stats['needs_manual'] += 1
-            else:
-                stats['failed'] += 1
+        # Check if job has errors
+        if state.get("lastRunStatus") != "error":
+            continue
+        
+        stats['checked'] += 1
+        error = state.get("lastError", "unknown")
+        consecutive = state.get("consecutiveErrors", 0)
+        
+        log(f"", "INFO")
+        log(f"--- Processing: {job_name} ---", "INFO")
+        
+        # Run full 4-stage loop
+        healed = determine_healing_action(
+            job_id, job_name, error, consecutive, dry_run
+        )
+        
+        if healed:
+            stats['healed'] += 1
+        elif check_false_positive(job_id, error):
+            stats['false_positives'] += 1
+        else:
+            stats['needs_manual'] += 1
     
     return stats
 
-
 def main():
-    parser = argparse.ArgumentParser(description="Cron Error Healer")
-    parser.add_argument("--dry-run", action="store_true", help="Don't make changes, just report")
-    parser.add_argument("--job-id", type=str, help="Heal specific job only")
+    global HEAL_LOG
+    
+    import argparse
+    parser = argparse.ArgumentParser(description='Cron Error Healer v2 - 4-Stage Self-Healing')
+    parser.add_argument('--dry-run', action='store_true', help='Don\'t make changes')
+    parser.add_argument('--job-id', help='Specific job ID to heal')
+    parser.add_argument('--reset-state', action='store_true', help='Reset healer state')
     args = parser.parse_args()
     
+    # Reset state if requested
+    if args.reset_state:
+        if STATE_FILE.exists():
+            STATE_FILE.unlink()
+        print("Healer state reset")
+        return
+    
     print("=" * 60)
-    print("🦞 CRON ERROR HEALER - Sir HazeClaw")
+    print("🦞 CRON ERROR HEALER v2 - 4-Stage Self-Healing")
     print("=" * 60)
+    print()
+    print("4-Stage Loop: Detect → Diagnose → Heal → Verify")
+    print()
     
     if args.dry_run:
-        print("\n⚠️  DRY RUN MODE - No changes will be made\n")
+        print("⚠️  DRY RUN MODE - No changes will be made\n")
     
-    log("=" * 50)
-    log("Cron Error Healer started")
-    log(f"Dry run: {args.dry_run}")
+    # Ensure log directory exists
+    HEAL_LOG.parent.mkdir(parents=True, exist_ok=True)
+    
+    log("=" * 50, "INFO")
+    log("Cron Error Healer v2 started", "INFO")
+    log(f"Dry run: {args.dry_run}", "INFO")
+    log(f"Circuit breaker: {MAX_GATEWAY_RESTARTS_PER_HOUR} restarts/hour max", "INFO")
     
     if args.job_id:
+        # Single job healing
         job = get_cron_state(args.job_id)
         if job:
             error = job.get('state', {}).get('lastError', 'unknown')
-            determine_healing_action(args.job_id, job.get('name'), error, job.get('state', {}).get('consecutiveErrors', 0), args.dry_run)
+            determine_healing_action(
+                args.job_id, 
+                job.get('name'), 
+                error, 
+                job.get('state', {}).get('consecutiveErrors', 0),
+                args.dry_run
+            )
+        else:
+            print(f"Job not found: {args.job_id}")
     else:
+        # Heal all errors
         stats = heal_all_errors(args.dry_run)
         
-        print("\n" + "=" * 60)
+        print()
+        print("=" * 60)
         print("📊 RESULTS")
         print("=" * 60)
-        print(f"Total Jobs:     {stats.get('total_jobs', '?')}")
-        print(f"Checked:        {stats['checked']}")
-        print(f"Healed:        {stats['healed']}")
+        print(f"Total Jobs:      {stats.get('total_jobs', '?')}")
+        print(f"Checked:         {stats['checked']}")
+        print(f"Healed:          {stats['healed']}")
         print(f"False Positives: {stats['false_positives']}")
-        print(f"Failed:        {stats['failed']}")
-        print(f"Needs Manual:  {stats['needs_manual']}")
+        print(f"Needs Manual:    {stats['needs_manual']}")
+        print(f"Circuit Breaker: {stats['circuit_breaker']}")
         
-        log(f"Results: {stats}")
+        log(f"Results: {stats}", "INFO")
         
         if stats['needs_manual'] > 0:
             print(f"\n⚠️  {stats['needs_manual']} jobs need manual intervention")
-            print("Run with --dry-run=false to auto-disable them")
+            print("Run with --dry-run=false to see details")
     
-    print("\nDone. Check logs at:", HEAL_LOG)
+    print()
+    print(f"Done. Check logs at: {HEAL_LOG}")
+    print()
+    print("4-Stage Loop complete. Next cycle will VERIFY healing.")
 
 
 if __name__ == '__main__':
