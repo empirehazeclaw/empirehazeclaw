@@ -1,8 +1,9 @@
-# Sir HazeClaw Learning Loop v2
+# Sir HazeClaw Learning Loop v3
 
-**Version:** 2.0  
+**Version:** 3.0 (mit INNOVATION)  
 **Created:** 2026-04-11  
-**Based on:** AI Agent Self-Improvement 2026 Patterns
+**Updated:** 2026-04-11  
+**Based on:** AI Agent Self-Improvement 2026 Patterns + Capability Evolver Research
 
 ---
 
@@ -14,37 +15,35 @@ Der Learning Loop ist NICHT nur Tracking - er ist ein **geschlossenes Verbesseru
 
 ---
 
-## 🔄 The Improvement Loop
+## 🔄 The Improvement Loop v3
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                     IMPROVEMENT LOOP v2                         │
+│                     LEARNING LOOP v3                         │
+│                  MIT INNOVATION                               │
 ├──────────────────────────────────────────────────────────────┤
 │                                                               │
-│   ┌─────────┐    ┌──────────┐    ┌──────────┐                │
-│   │ OBSERVE │───▶│ RESEARCH │───▶│ APPLY    │                │
-│   └─────────┘    └──────────┘    └──────────┘                │
-│        │              │              │                        │
-│        │              │              ▼                        │
-│        │              │         ┌──────────┐                   │
-│        │              │         │ TEST     │                   │
-│        │              │         └──────────┘                   │
-│        │              │              │                        │
-│        │              ▼              ▼                        │
-│        │         ┌──────────┐    ┌──────────┐                  │
-│        │         │ DOCU-    │◀───│ KEEP /   │                  │
-│        │         │ MENT     │    │ DISCARD  │                  │
-│        │         └──────────┘    └──────────┘                  │
-│        │              │                                           │
-│        │              ▼                                           │
-│        │         ┌──────────┐                                      │
-│        └────────▶│ IMPROVE │◀──────┐                             │
-│                  └──────────┘       │                             │
-│                                     │                             │
-└─────────────────────────────────────┘
-                    │
-                    ▼
-            (Back to OBSERVE)
+│   ┌─────────┐    ┌──────────┐    ┌──────────┐             │
+│   │ OBSERVE │───▶│ RESEARCH │───▶│ APPLY    │             │
+│   └─────────┘    └──────────┘    └──────────┘             │
+│        │              │              │                       │
+│        │              │              ▼                       │
+│        │              │         ┌──────────┐                │
+│        │              │         │ TEST     │                │
+│        │              │         └──────────┘                │
+│        │              │              │                       │
+│        │              ▼              ▼                       │
+│        │         ┌──────────┐  ┌──────────┐               │
+│        │         │ DOCU-    │  │ KEEP /   │               │
+│        │         │ MENT     │◀─│ DISCARD  │               │
+│        │         └──────────┘  └──────────┘               │
+│        │              │              │                       │
+│        │              ▼              ▼                       │
+│        │         ┌──────────┐  ┌──────────┐               │
+│        └────────▶│ IMPROVE  │  │ **INNOVATE** │            │
+│                  └──────────┘  └──────────┘               │
+│                                │                            │
+└────────────────────────────────┴────────────────────────────┘
 ```
 
 ---
@@ -128,6 +127,51 @@ Task fertig → Pattern extrahieren → Skills aktualisieren
 KG für Langzeitwissen
 memory/ für Session-Wissen
 Skills für wiederkehrende Tasks
+```
+
+### Pattern 5: INNOVATION (NEW!)
+**Was:** Proaktiv NEUES erschaffen
+**Warum:** Nicht nur verbessern - innovatorisch sein
+**Anwendung:**
+```
+- Täglich 30 Min Innovation Time
+- Neue Patterns ausprobieren
+- Skills aus wiederkehrenden Tasks erstellen
+- Risiko: Neue Implementation wagen
+```
+
+---
+
+## 🆕 INNOVATE Phase (NEU in v3)
+
+### Was ist INNOVATE?
+**Die Phase in der ich NEUES erschaffe - nicht nur lerne und verbessere.**
+
+### INNOVATE Aktivitäten:
+
+1. **Neue Patterns entwickeln**
+   - Aus bestehenden Patterns neue Kombinationen
+   - Ungetestete Ansätze ausprobieren
+
+2. **Skill-Kreation**
+   - Neue Skills aus wiederkehrenden Tasks erstellen
+   - OpenSpace Pattern: "Jeder Task macht alle Agents klüger"
+
+3. **Proaktive Forschung**
+   - Täglich neue AI Agent Patterns suchen
+   - Communities beobachten
+
+4. **System-Erweiterungen**
+   - Neue Scripts die Probleme lösen
+   - Architecture Improvements
+
+### Innovation Time Block (Täglich)
+```
+14:00-14:30: INNOVATION TIME
+├── Web Research: Neue AI Agent Patterns
+├── Experimentieren: Neue Ansätze testen
+├── Skill Creation: Aus wiederkehrenden Tasks
+└── Proactor: Probleme lösen bevor sie entstehen
 ```
 
 ---
