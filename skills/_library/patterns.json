@@ -1,0 +1,17 @@
+{
+  "patterns": [
+    {
+      "id": "pat_20260411145123",
+      "task": "Capability Evolver Debugging",
+      "outcome": "\u2705 Fixed path truncation bug",
+      "category": "debugging",
+      "created": "2026-04-11T14:51:23.086505",
+      "success": "success"
+    }
+  ],
+  "by_category": {
+    "debugging": [
+      "pat_20260411145123"
+    ]
+  }
+}
