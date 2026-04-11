@@ -45,20 +45,24 @@ def save_research_log(log):
     with open(RESEARCH_LOG, 'w') as f:
         json.dump(log, f, indent=2)
 
+BRAVE_API_KEY = "BSADT0yI63aadkLD5_FsICaVkuZ8Y44"
+
 def web_search(query):
-    """Führt Web Search durch via openclaw."""
+    """Führt Web Search durch via Brave Search API."""
+    import urllib.parse
     try:
-        result = subprocess.run(
-            ['openclaw', 'search', '--query', query, '--count', '3'],
-            capture_output=True,
-            text=True,
-            timeout=60
-        )
-        if result.returncode == 0:
-            return result.stdout[:500]
-        return f"Search failed: {result.stderr[:200]}"
+        import urllib.request
+        url = f"https://api.search.brave.com/res/v1/search?q={urllib.parse.quote(query)}&count=3"
+        req = urllib.request.Request(url, headers={
+            "X-Subscription-Token": BRAVE_API_KEY,
+            "Accept": "application/json"
+        })
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = json.loads(response.read())
+            results = data.get('results', [])
+            return "\n".join([f"- {r.get('title', 'N/A')}: {r.get('url', 'N/A')}" for r in results[:3]])
     except Exception as e:
-        return f"Error: {str(e)[:200]}"
+        return f"Search error: {str(e)[:100]}"
 
 def add_to_kg(insights):
     """Fügt Innovation Insights zum Knowledge Graph hinzu."""
