@@ -51,9 +51,19 @@
 - `docs/FILE_ANALYSIS.md` - Archive Decision Guide
 - `archive/old_docs/` - 73 archived files
 
+## ✅ NO SPAM Policy (2026-04-11)
+| Cron | Action |
+|------|--------|
+| Loop Check (15min) | ❌ REMOVED - Spam |
+| Learning Loop Status (5min) | ❌ REMOVED - Spam |
+| Nightly Dreaming | 🔕 Silent mode |
+| Security Audit | 🔕 Silent mode |
+| Innovation Research | 🔕 Silent mode |
+| CEO Weekly Review | ✅ Announce if real improvements |
+| CEO Daily Briefing | ✅ Once daily (11am Berlin) |
+| Evening Capture | ✅ Once daily (9pm) |
+
 ## 🎯 Next Tasks
-1. CEO Briefing delivery fix
-2. Nightly Dreaming fix (Discord → Telegram)
-3. Memory Reranker
+1. Memory Reranker (original task)
 
 *Next Heartbeat: When issues detected or hourly*

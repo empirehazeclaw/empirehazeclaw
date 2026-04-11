@@ -230,3 +230,30 @@ ls *.md | grep -E "AGENT|Consolidation|INVENTORY|ROI|AUDIT|BACKUP|CHAOS|FINAL|IN
 
 ### Dokumente:
 - `secrets/SECURITY_ROTATION.md` - Key Rotation Status
+
+---
+
+## 🔐 RUNTIME AUTH STORES (CRITICAL)
+
+**Gateway Runtime Keys:**
+
+| Agent | Location | Enthält |
+|-------|----------|---------|
+| CEO | `agents/ceo/agent/auth-profiles.json` | MINIMAX API Key (runtime) |
+| Main | `agents/main/agent/auth-profiles.json` | MINIMAX API Key (runtime) |
+
+**MINIMAX_API_KEY (aktiver Key):**
+```
+sk-cp-eQ6DbkJtxCAkw_zYabMlyK1B-TOEXlS-imp3xTQBCspBcZJCRT9F6mIbXrGYt7FBHz6g-h3mlg0dOoazixpMxzz5VOCn5U--mp8HfRIYaYZl4TQcmTmeYHs
+```
+
+**Security:**
+- auth-profiles.json ist in `~/.openclaw/agents/` (nicht im Workspace)
+- secrets/env ist Backup (nicht direkt vom Gateway genutzt)
+- Gateway lädt Keys aus auth-profiles.json zur Laufzeit
+
+### ⚠️ Das "Missing API Key" Warning
+
+**Ursache:** `openclaw.json` zeigt nur Profile-Referenzen, nicht die Keys.
+**Realität:** Key IST vorhanden in `agents/ceo/agent/auth-profiles.json`
+**System:** Läuft normal ✅

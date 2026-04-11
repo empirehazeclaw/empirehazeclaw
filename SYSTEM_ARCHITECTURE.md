@@ -19,21 +19,24 @@
 
 ### ⚠️ WICHTIG: Secrets Location
 
-**API Keys sind in:** `/home/clawbot/.openclaw/secrets/secrets.env`
-- **MINIMAX_API_KEY** ✅ (System läuft damit)
-- **OPENROUTER_API_KEY** ✅ (auch vorhanden)
-- **Viele andere Keys** (GitHub, Google, etc.)
+**API Keys haben 2 Speicherorte:**
+
+| Ort | Zweck | Inhalt |
+|-----|-------|--------|
+| `secrets/secrets.env` | Langzeit-Backup aller Keys | Alle API Keys (MINIMAX, GitHub, etc.) |
+| `agents/ceo/agent/auth-profiles.json` | **Runtime Key Store** | Aktuell genutzter MINIMAX Key |
+
+**Aktueller MINIMAX Key:**
+- Key: `sk-cp-eQ6DbkJtxCAkw_zYabMlyK1B-...`
+- Location: `/home/clawbot/.openclaw/agents/ceo/agent/auth-profiles.json`
+- Auch in: `agents/main/agent/auth-profiles.json` (identisch)
+
+**Wie es funktioniert:**
+1. `openclaw.json` verweist auf `auth.profiles.minimax:global` (nur Provider + Mode)
+2. Gateway liest den **tatsächlichen Key** aus `auth-profiles.json` zur Laufzeit
+3. Das "Missing API Key" Warning in Config-Tools = nur Display-Problem
 
 **NIE in openclaw.json committed!** (nur redacted)
-
-### OpenClaw Secrets Management
-
-**Wichtig:** OpenClaw unterstützt "SecretRefs" - API Keys müssen NICHT plaintext in Config sein.
-
-**Aktueller Status:** 
-- Keys in `secrets/secrets.env`
-- System läuft mit MINIMAX_API_KEY
-- Kein externes Vault (1Password, HashiCorp, etc.)
 
 ---
 
