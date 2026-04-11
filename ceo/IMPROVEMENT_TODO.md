@@ -142,20 +142,19 @@ TASK:
 ## ✅ FORTschritt
 
 ### Already DONE:
-- [x] tool_usage_analytics.py erstellt
-- [x] RESEARCH_TODO.md erstellt
-- [x] Learning Coordinator Cron aktiv
-- [x] Innovation Research automatisiert
+- [x] IMPROVEMENT_TODO.md erstellt
+- [x] Token Efficiency in Coordinator integriert ✅ (10:43 UTC)
+- [x] Gateway Check gefixt (curl statt openclaw status)
+- [x] Learning Coordinator: ALL ✅
 
 ### Working ON:
-- [ ] Token Efficiency (starting now)
-- [ ] MCP Server
+- [ ] MCP Server für Scripts
+- [ ] Tool Analytics Integration
 
 ### OFFEN:
 - [ ] Memory Reranker
 - [ ] Autonomous Cron
 - [ ] Prävention
-- [ ] Tool Analytics Integration
 
 ---
 
