@@ -18,13 +18,14 @@
 | Cost Budgeting | ✅ DOKU | 5M token budget |
 | Single Source Docs | ✅ DOKU | HEARTBEAT = main source |
 
-## ✅ Cron Errors GEFIXT (2026-04-11 12:25)
-| Cron | Problem | Solution |
-|------|---------|----------|
-| Nightly Dreaming | Discord not configured | --no-deliver → silent |
-| Security Audit | Message failed | --no-deliver → silent |
-| Health Monitor Self-Healing | 8 consecutive errors | DISABLED |
-| cron_error_healer.py | Auto-heal framework | CREATED |
+## ✅ Script Konsolidierung (2026-04-11 12:37)
+| Metric | Before | After |
+|--------|--------|-------|
+| Total Scripts | 83 | 55 |
+| Archiviert | 0 | 28 |
+| Review offen | 19 | 0 |
+
+**Archiviert:** demo_scheduler, deploy_safety, idempotency_check, kgml_summary, loop_check, model_config, morning_check, morning_routine, evening_routine, semantic_search, session_memory_manager, skill_loader, subagent_health_check, telegram_alert, telegram_parser, telegram_memory_extractor, vault, vercel_monitor, verify_delivery, weekly_review_zettel, outreach_optimizer, lead_generator, response_tracker, revenue_forecaster, health_dashboard, meeting_scheduler, priority_filter, reschedule_sovereign
 
 ## 🔄 Learning Loop v3 (AUTOMATED)
 | Item | Status | Notes |
