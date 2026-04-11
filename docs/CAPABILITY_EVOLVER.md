@@ -1,24 +1,27 @@
 # 🧬 CAPABILITY EVOLVER — Fix & Documentation
-**Datum:** 2026-04-11 13:15 UTC
-**Status:** Running via Subagent
+**Datum:** 2026-04-11 14:40 UTC
+**Status:** ✅ FIXED & RUNNING
 
 ---
 
-## Problem
+## Problem (2026-04-11)
 
 **Symptom:**
 - Evolver meldet: `Cannot find module '/home/clawbot/.openclaw/workspace/scr'`
-- Path wird truncated beim Retry
+- Oder: `Cannot find module '/home/clawbot/.openclaw/workspace/scripts/validate-modules.js'`
 
 **Root Cause:**
-- Evolver speichert Retry-Context mit truncated Pfad
-- Evolver-State war corrupted
+- Evolver sucht `scripts/validate-modules.js` in `$REPO_ROOT/scripts/`
+- `$REPO_ROOT` = `/home/clawbot/.openclaw/workspace/`
+- Script lag nur in `/skills/capability-evolver/scripts/`
 
-**Lösung:**
-- Evolver State gelöscht:
-  - `memory/evolution/evolution_state.json`
-  - `memory/evolution/evolution_solidify_state.json`
-- Frischer Start via Subagent
+**Lösung (Permanent):**
+```bash
+cp /home/clawbot/.openclaw/workspace/skills/capability-evolver/scripts/validate-modules.js \
+   /home/clawbot/.openclaw/workspace/scripts/
+```
+
+**Prevention:** Bei Evolver-Updates Script synchronisieren.
 
 ---
 

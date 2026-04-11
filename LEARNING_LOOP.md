@@ -316,3 +316,10 @@ python3 learning_coordinator.py --full
 **Problem:** exec Commands werden nach ~60-90s gekillt
 **Lösung:** Background mode (`&`, `nohup`) oder Cron Jobs
 **Context:** System-Level Limit, nicht OpenClaw
+
+## Rule #6: Capability Evolver Path Bug (2026-04-11)
+**Symptom:** "Cannot find module '/home/clawbot/.openclaw/workspace/scr'" (truncated path)
+**Root Cause:** validate-modules.js fehlte in /workspace/scripts/
+**Fix:** Script nach /workspace/scripts/ kopieren
+**Prevention:** Bei Evolver-Updates Scripts synchronisieren
+**Context:** Evolver sucht in $REPO_ROOT/scripts/ = /workspace/scripts/
