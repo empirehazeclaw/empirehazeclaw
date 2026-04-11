@@ -1,11 +1,11 @@
 {
   "skills": {
     "debugging": {
-      "uses": 3,
-      "successes": 3,
+      "uses": 4,
+      "successes": 4,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:20:43.854964",
+      "last_used": "2026-04-11T15:36:23.920867",
       "tasks": [
         {
           "task": "Fixed Capability Evolver path bug",
@@ -19,6 +19,11 @@
         },
         {
           "task": "Level 2 Skills fertig",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Error Reducer + Loop Detection",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -77,11 +82,11 @@
       ]
     },
     "workflow": {
-      "uses": 2,
-      "successes": 2,
+      "uses": 3,
+      "successes": 3,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:22:33.386764",
+      "last_used": "2026-04-11T15:36:23.954060",
       "tasks": [
         {
           "task": "First Attempt + Problem Decomposition Skills erstellt",
@@ -90,6 +95,11 @@
         },
         {
           "task": "All 3 Level 2 skills complete",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Loop Prevention Skill",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -126,8 +136,8 @@
   },
   "daily": {
     "2026-04-11": {
-      "uses": 12,
-      "successes": 12,
+      "uses": 14,
+      "successes": 14,
       "failures": 0
     }
   }
