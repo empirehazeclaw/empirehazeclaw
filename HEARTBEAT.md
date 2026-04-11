@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-11 16:08 UTC
+## Last Update: 2026-04-11 16:13 UTC
 
 ## ✅ System Overview
 | Metric | Status |
@@ -10,37 +10,34 @@
 | Cron Errors | 9 |
 | Token Usage | 0% (0/5,000,000) |
 
-## 📊 Self-Improvement Sprint (2026-04-11) — MILESTONE!
+## 📊 Self-Improvement Sprint (2026-04-11)
 
-### 🎉 SKILL LIBRARY: 20/20 COMPLETE (100%)!
+### 📚 Skills: 22/20 (EXCEEDED!) ✅
 | Level | Skills | Status |
 |-------|--------|--------|
 | Level 1: Error Handling | 6 | ✅ |
-| Level 2: Workflow | 8 | ✅ |
-| Level 3: Advanced | 6 | ✅ |
+| Level 2: Workflow | 9+ | ✅ |
+| Level 3: Advanced | 7+ | ✅ |
+
+### 🎯 NEW PATTERNS RESEARCHED:
+
+**Self-Healing Pattern (CRITICAL)**
+- Classify failure → Apply type-specific recovery
+- Explicit success criteria (not "is answer good?")
+- Max 3 recovery attempts per task
+
+**Human-in-the-Loop (HITL) Pattern**
+- Autonomy Levels 0-3
+- Escalation triggers
+- When to ask Master (Confidence < 70%, Security, Budget)
 
 ### Metrics
-| Metric | Current | Target | Gap |
-|--------|---------|--------|-----|
-| Skills | 20/20 | 20 | ✅ COMPLETE |
-| Error Rate | 26.6% | <15% | 11.6% |
-| KG Entities | 193 | 250 | 57 |
-| Friction | 76 | <20 | 56 |
-
-### 🎯 Phase Status
-| Phase | Target | Status |
-|-------|--------|--------|
-| Phase 1 | Error < 20% | ⚠️ Ready to achieve |
-| Phase 2 | Error < 15% | ⚠️ Long-term |
-| Phase 3 | Error < 10% | ⚠️ Long-term |
-
-### 📋 Action Plan
-**IMMEDIATE (Apply these NOW):**
-1. ✅ Timeout handling → -54 errors
-2. ✅ Path verification → -19 errors  
-3. ✅ Loop detection → -26 friction
-
-**PROJECTED:** Error Rate 26.6% → 15%
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Skills | 22/20 | 20 | ✅ EXCEEDED |
+| Error Rate | 26.6% | <15% | ⚠️ Gap: 11.6% |
+| KG Entities | 194 | 250 | 78% |
+| Friction | 76 | <20 | ⚠️ High |
 
 ## 🛠️ Monitoring Tools
 - `self_improvement_monitor.py` — Dashboard
@@ -52,5 +49,5 @@
 **Solution:** Background mode (&) or Cron Jobs
 
 ---
-*Auto-updated: 2026-04-11 16:08 UTC*
-*Sir HazeClaw — Skill Library Complete! 🎉*
+*Auto-updated: 2026-04-11 16:13 UTC*
+*Sir HazeClaw — 22 Skills! 🎉*
