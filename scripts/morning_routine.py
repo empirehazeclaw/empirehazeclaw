@@ -56,11 +56,13 @@ def run_morning_routine(quick=False):
         ('backup_verify.py', 'Backup Verify', None),
         ('cron_monitor.py', 'Cron Status', '--failed-only'),
         ('habit_tracker.py', 'Habit Tracker', '--report'),
+        ('loop_check.py', 'Loop Check', None),
     ]
     
     if not quick:
         # Extended checks
         checks.extend([
+            ('learning_tracker.py', 'Learning Progress', None),
             ('quality_metrics.py', 'Quality Metrics', '--days 7'),
             ('self_eval.py', 'Self-Evaluation', '--report'),
         ])
