@@ -65,13 +65,14 @@ def extract_loop_metrics() -> Dict:
     
     # Analyze recent cycles
     cycles = []
-    current_cycle = {}
+    current_cycle = None
     for run in runs[-30:]:  # Last 30 runs
         if run["phase"] == "system_check":
             if current_cycle:
                 cycles.append(current_cycle)
             current_cycle = {"phases": [], "timestamp": run["timestamp"]}
-        current_cycle["phases"].append(run)
+        if current_cycle:
+            current_cycle["phases"].append(run)
     
     if current_cycle:
         cycles.append(current_cycle)
