@@ -108,12 +108,26 @@
           "at": "2026-04-11"
         }
       ]
+    },
+    "verification": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:32:00.989701",
+      "tasks": [
+        {
+          "task": "Path Verification + Auto Fixer",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
     }
   },
   "daily": {
     "2026-04-11": {
-      "uses": 11,
-      "successes": 11,
+      "uses": 12,
+      "successes": 12,
       "failures": 0
     }
   }
