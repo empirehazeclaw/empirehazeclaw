@@ -2977,6 +2977,22 @@
         {
           "content": "Security Audit: Pr\u00fcft auf code injection risks",
           "source": "security_audit.py"
+        },
+        {
+          "content": "Test Framework: 62 Tests, alle passing",
+          "source": "test_framework.py"
+        },
+        {
+          "content": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
+          "source": "fast_test.py"
+        },
+        {
+          "content": "Morning Check: Quick morning status",
+          "source": "morning_check.py"
+        },
+        {
+          "content": "Self-Evaluation: Trackt goals vs current state (Score 84/100)",
+          "source": "self_eval.py"
         }
       ]
     },

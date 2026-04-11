@@ -16,11 +16,13 @@ NEW_ENTITIES = {
     "Sir-HazeClaw-Scripts": {
         "type": "category",
         "facts": [
-            {"content": "Test Framework: 54 Tests, alle passing", "source": "test_framework.py"},
+            {"content": "Test Framework: 62 Tests, alle passing", "source": "test_framework.py"},
+            {"content": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded", "source": "fast_test.py"},
+            {"content": "Morning Check: Quick morning status", "source": "morning_check.py"},
             {"content": "Habit Tracker: 8 habits, streak tracking", "source": "habit_tracker.py"},
             {"content": "Morning Routine: Automatisiert 6 morning checks", "source": "morning_routine.py"},
             {"content": "Evening Routine: Automatisiert evening workflow", "source": "evening_routine.py"},
-            {"content": "Self-Evaluation: Trackt goals vs current state (Score 95/100)", "source": "self_eval.py"},
+            {"content": "Self-Evaluation: Trackt goals vs current state (Score 84/100)", "source": "self_eval.py"},
             {"content": "Quality Metrics: Commit/Backup tracking", "source": "quality_metrics.py"},
             {"content": "Deep Reflection: 10 deep questions für improvement", "source": "deep_reflection.py"},
             {"content": "Reflection Loop: Analysiert patterns, self-corrects", "source": "reflection_loop.py"},
