@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 🦞 Sir HazeClaw Active Tasks
 
-*Last updated: 2026-04-10 22:39 UTC*
+*Last updated: 2026-04-11 07:55 UTC*
 *Auto-managed: YES - Sir HazeClaw updates this file autonomously*
 
 ---
@@ -19,12 +19,14 @@
 ### aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Self-Improvement Sprint v2 | 🔴 HIGH | ✅ 94/100 🟢 |
+| - | Self-Improvement Sprint v3 | 🔴 HIGH | 🔄 84/100 |
 
 ### Geplant (Next)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| 1 | Push to 100/100 | 🟡 MED | In Progress |
+| 1 | Push to 95/100+ | 🟡 MED | Today |
+| 2 | Backup Ratio Fix | 🟡 MED | Less backups |
+| 3 | Test-Framework Timeout Fix | ✅ | fast_test.py done |
 
 ---
 
@@ -58,9 +60,8 @@
 
 | # | Task | Datum |
 |---|------|-------|
+| 81 | fast_test.py: 17 tests in 30s | 2026-04-11 |
 | 80 | Self-Evaluation Score: 94/100 🟢 | 2026-04-10 |
-| 79 | Test Coverage: 85% (51/60 scripts) | 2026-04-10 |
-| 78 | Test Framework: 51 tests, all passing | 2026-04-10 |
 | 77 | Skills erstellt: self-improvement, system-manager | 2026-04-10 |
 | 76 | Scripts dokumentiert: README.md | 2026-04-10 |
 | 66 | Self-Eval Script (Score 69/100) | 2026-04-10 |
@@ -99,7 +100,7 @@
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Gateway | ✅ Running | v2026.4.9, Port 18789 |
-| Knowledge Graph | ✅ ACTIVE | 173 entities, 4649 relations |
+| Knowledge Graph | ✅ ACTIVE | 183 entities, 4659 relations |
 | Semantic Index | ✅ OK | 51 docs |
 | Disk | ✅ OK | ~72% free |
 | Memory | ✅ OK | 87% free |
@@ -137,4 +138,4 @@
 
 *HEARTBEAT.md — Sir HazeClaw*
 *Auto-managed: YES*
-*Letztes Update: 2026-04-10 22:39 UTC*
+*Letztes Update: 2026-04-11 07:55 UTC*
