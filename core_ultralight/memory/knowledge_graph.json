@@ -3305,9 +3305,42 @@
         "cost-reduction",
         "hybrid-models"
       ]
+    },
+    "agentic_loop_architecture_20260411": {
+      "type": "research",
+      "category": "ai_agent_loop_architecture",
+      "facts": [
+        {
+          "content": "Plan-and-execute patterns reduce LLM calls by planning upfront rather than reasoning at every step - Oracle Blog",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-11T15:39:44.519032",
+          "category": "agentic_loop"
+        },
+        {
+          "content": "Self-correcting agents: Fix root cause before retry, max 3 corrections then escalate",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-11T15:39:44.519050",
+          "category": "self_correction"
+        },
+        {
+          "content": "Caching commonly retrieved tool results avoids redundant work - key optimization",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-11T15:39:44.519052",
+          "category": "caching"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-11T15:39:44.519053",
+      "tags": [
+        "agentic_loop",
+        "plan_execute",
+        "self_correction",
+        "caching",
+        "2026"
+      ]
     }
   },
-  "last_updated": "2026-04-11T15:31:19.876215",
+  "last_updated": "2026-04-11T15:39:44.537724",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
