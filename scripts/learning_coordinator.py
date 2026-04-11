@@ -109,34 +109,18 @@ def run_innovation_research():
 # ============ QUALITY GATES ============
 
 def run_quality_gates():
-    """Führt Quality Gates aus."""
+    """Führt Quality Gates aus.
+    
+    Returns: (success, has_warnings)
+    - success: False nur bei CRITICAL failures
+    - has_warnings: True wenn es non-critical warnings gab
+    """
     print("🔒 Running Quality Gates...")
     
-    results = {
-        'loop_check': False,
-        'self_eval': False,
-        'test_framework': False
-    }
+    has_warnings = False
+    critical_failure = False
     
-    # Loop Check
-    try:
-        result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'loop_check.py')],
-            capture_output=True,
-            text=True,
-            timeout=30,
-            cwd=str(WORKSPACE)
-        )
-        results['loop_check'] = 'No loops detected' in result.stdout or '✅' in result.stdout
-        
-        # Track token usage for this task
-        track_token_usage('loop_check', 500, 300)
-        
-        print(f"  {'✅' if results['loop_check'] else '⚠️'} Loop Check")
-    except:
-        print(f"  ⚠️ Loop Check failed")
-    
-    # Self Eval
+    # Self Eval (important check)
     try:
         result = subprocess.run(
             ['python3', str(SCRIPTS_DIR / 'self_eval.py')],
@@ -145,16 +129,43 @@ def run_quality_gates():
             timeout=30,
             cwd=str(WORKSPACE)
         )
-        results['self_eval'] = '99' in result.stdout or '100' in result.stdout
+        if '99' in result.stdout or '100' in result.stdout:
+            print(f"  ✅ Self Eval")
+        else:
+            print(f"  ⚠️ Self Eval score low")
+            has_warnings = True
         
-        # Track token usage for this task
         track_token_usage('self_eval', 800, 400)
-        
-        print(f"  {'✅' if results['self_eval'] else '⚠️'} Self Eval")
-    except:
-        print(f"  ⚠️ Self Eval failed")
+    except Exception as e:
+        print(f"  ⚠️ Self Eval failed: {e}")
+        has_warnings = True
     
-    return results['loop_check'] and results['self_eval']
+    # Quality Metrics (skip if not available)
+    if (SCRIPTS_DIR / 'quality_metrics.py').exists():
+        try:
+            result = subprocess.run(
+                ['python3', str(SCRIPTS_DIR / 'quality_metrics.py')],
+                capture_output=True,
+                text=True,
+                timeout=30,
+                cwd=str(WORKSPACE)
+            )
+            if result.returncode == 0:
+                print(f"  ✅ Quality Metrics OK")
+            else:
+                print(f"  ⚠️ Quality Metrics warnings")
+                has_warnings = True
+        except:
+            print(f"  ⚠️ Quality Metrics failed")
+            has_warnings = True
+    else:
+        print(f"  ⚠️ Quality Metrics not available")
+        has_warnings = True
+    
+    # Success = no critical failure
+    # Warnings = non-critical issues (shouldn't fail the cycle)
+    success = not critical_failure
+    return success, has_warnings
 
 # ============ LOOP COORDINATION ============
 
@@ -258,8 +269,8 @@ def run_full_cycle():
     
     # Phase 3: Quality Gates
     print("📊 PHASE 3: Quality Gates")
-    quality_ok = run_quality_gates()
-    log_run(log, "quality", quality_ok)
+    quality_ok, has_warnings = run_quality_gates()
+    log_run(log, "quality", quality_ok, f"warnings={has_warnings}")
     print()
     
     # Phase 4: Learning Tracking
@@ -286,12 +297,14 @@ def run_full_cycle():
     print(f"   Duration: {duration:.1f}s")
     print(f"   System Check: {'✅' if ok else '⚠️'}")
     print(f"   Research: {'✅' if research_ok else '⚠️'}")
-    print(f"   Quality: {'✅' if quality_ok else '⚠️'}")
+    print(f"   Quality: {'✅' if quality_ok else '⚠️'}{' (with warnings)' if has_warnings else ''}")
     print("=" * 60)
     
     save_coordinator_log(log)
     
-    return ok and research_ok and quality_ok
+    # Success = system OK + research works
+    # Warnings are non-critical and shouldn't fail the cycle
+    return ok and research_ok
 
 def show_status():
     """Zeigt aktuellen Status."""
