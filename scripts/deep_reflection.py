@@ -21,41 +21,56 @@ MEMORY_FILE = WORKSPACE / "memory/2026-04-10.md"
 HEARTBEAT_PATH = WORKSPACE / "ceo/HEARTBEAT.md"
 PATTERNS_FILE = WORKSPACE / "ceo/PATTERN_RECOGNITION.md"
 
-# Reflection Questions (deep)
+# Reflection Questions (deep) - IMPROVED v2
 REFLECTION_QUESTIONS = [
     {
         "category": "QUALITY",
-        "question": "Which tasks were completed with high quality today?",
-        "aspect": "Was habe ich heute GUT gemacht?"
+        "question": "Which tasks were completed with HIGH QUALITY today?",
+        "aspect": "Was habe ich heute PERFEKT gemacht?"
     },
     {
         "category": "QUALITY", 
-        "question": "Which tasks were rushed or incomplete?",
-        "aspect": "Was habe ich heute SCHLECHT gemacht?"
+        "question": "Which tasks were rushed or incomplete? Where could bugs exist?",
+        "aspect": "Was war OBERFLÄCHLICH?"
+    },
+    {
+        "category": "QUALITY",
+        "question": "Did I test everything before calling it 'done'?",
+        "aspect": "Habe ich alles GETESTET?"
     },
     {
         "category": "PATTERNS",
-        "question": "Did I notice any recurring patterns?",
-        "aspect": "Welche Patterns habe ich heute erkannt?"
+        "question": "Did I notice any recurring patterns? (Good or Bad)",
+        "aspect": "Welche Patterns sind HEUTE aufgetreten?"
     },
     {
         "category": "PATTERNS",
-        "question": "Did I fall into any bad habits?",
-        "aspect": "Welche Bad Patterns sind aufgetreten?"
+        "question": "Did I fall into any LOOP without progress?",
+        "aspect": "Habe ich eine SCHLECHTE LOOP gemacht?"
+    },
+    {
+        "category": "TOKEN_EFFICIENCY",
+        "question": "Did I waste tokens on repetitive reasoning?",
+        "aspect": "Habe ich TOKEN verschwendet?"
+    },
+    {
+        "category": "TOKEN_EFFICIENCY",
+        "question": "Could I have used KG/memory instead of re-reasoning?",
+        "aspect": "Hätte ich已有的 Wissen nutzen können?"
     },
     {
         "category": "LEARNING",
-        "question": "What new thing did I learn today?",
+        "question": "What NEW pattern or skill did I learn today?",
         "aspect": "Was habe ich heute NEUES gelernt?"
     },
     {
         "category": "LEARNING",
-        "question": "What would I do differently if I could redo today?",
+        "question": "What would I do DIFFERENTLY if I could redo today?",
         "aspect": "Was würde ich ANDERS machen?"
     },
     {
         "category": "VALUE",
-        "question": "Which action created the most value?",
+        "question": "Which action created the most VALUE for Master?",
         "aspect": "Wo habe ich den größten VALUE geschaffen?"
     },
     {
@@ -65,13 +80,23 @@ REFLECTION_QUESTIONS = [
     },
     {
         "category": "GROWTH",
-        "question": "How did I improve my capabilities?",
+        "question": "How did I improve my CAPABILITIES today?",
         "aspect": "Wie habe ich mich HEUTE verbessert?"
     },
     {
         "category": "GROWTH",
-        "question": "What skill or knowledge gap remains?",
+        "question": "What skill or knowledge GAP remains?",
         "aspect": "Welche SKILL-GAP bleibt?"
+    },
+    {
+        "category": "PROACTIVE",
+        "question": "Did I search for NEW information proactivly?",
+        "aspect": "Habe ich PROAKTIV nach Neuem gesucht?"
+    },
+    {
+        "category": "PROACTIVE",
+        "question": "What can I improve WITHOUT being asked?",
+        "aspect": "Was kann ich SELBSTSTÄNDIG verbessern?"
     }
 ]
 
@@ -146,6 +171,39 @@ def analyze_quality(commits, memory_content):
     else:
         insights.append("⚠️ Wenige Commits ({} - wenig Output)".format(total))
     
+    # Check for test coverage mentions
+    if 'test' in memory_content.lower():
+        insights.append("✅ Tests dokumentiert")
+    
+    # Check for loop prevention
+    if 'loop' in memory_content.lower():
+        insights.append("⚠️ Loops dokumentiert")
+    
+    return insights
+
+
+def analyze_token_efficiency():
+    """Analysiert Token Effizienz."""
+    insights = []
+    
+    # Check if token_tracker has data
+    token_log = WORKSPACE / "data/token_log.json"
+    if token_log.exists():
+        with open(token_log) as f:
+            data = json.load(f)
+        today = datetime.now().strftime('%Y-%m-%d')
+        today_entries = [e for e in data.get('entries', []) if e.get('timestamp', '').startswith(today)]
+        
+        if today_entries:
+            total = sum(e['tokens'] for e in today_entries)
+            avg = total / len(today_entries)
+            insights.append(f"📊 Token Usage: {total:,} tokens ({len(today_entries)} tasks)")
+            insights.append(f"   Avg/Task: {avg:,.0f} tokens")
+        else:
+            insights.append("📊 Keine Token-Daten heute (noch kein Tracking)")
+    else:
+        insights.append("📊 Token Tracker: Noch nicht aktiv")
+    
     return insights
 
 def generate_deep_reflection():
@@ -182,6 +240,17 @@ def generate_deep_reflection():
     quality_insights = analyze_quality(commits, memory)
     for insight in quality_insights:
         lines.append(f"- {insight}")
+    lines.append("")
+    
+    # 2b. Token Efficiency Analysis (NEW)
+    lines.append("## 🔢 TOKEN EFFICIENCY ANALYSIS")
+    lines.append("")
+    token_insights = analyze_token_efficiency()
+    for insight in token_insights:
+        lines.append(f"- {insight}")
+    lines.append("")
+    lines.append("💡 **Token Optimization Tip:**")
+    lines.append("   Use KG/memory instead of re-reasoning same topics")
     lines.append("")
     
     # 3. Deep Questions

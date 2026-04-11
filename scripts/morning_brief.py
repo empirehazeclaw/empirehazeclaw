@@ -227,11 +227,48 @@ def get_recommendations(system, cron, kg, backup_count):
     if kg and kg['entities'] > 150:
         recs.append(f"✅ KG wächst: {kg['entities']} entities")
     
+    # Token efficiency check
+    token_log = WORKSPACE.parent / "data/token_log.json"
+    if token_log.exists():
+        import json
+        with open(token_log) as f:
+            data = json.load(f)
+        today = datetime.now().strftime('%Y-%m-%d')
+        today_tokens = sum(e['tokens'] for e in data.get('entries', []) if e.get('timestamp', '').startswith(today))
+        if today_tokens > 0:
+            recs.append(f"📊 Token Usage: {today_tokens:,} tokens")
+    
     # Good state
     if len(recs) == 0:
         recs.append("✅ System healthy")
     
     return recs
+
+def get_learning_progress():
+    """Holt Learning Progress."""
+    try:
+        result = subprocess.run(
+            ['python3', str(WORKSPACE / 'scripts/learning_tracker.py')],
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        return result.stdout[:500] if result.returncode == 0 else None
+    except:
+        return None
+
+def get_daily_focus():
+    """Holt Today's Focus aus letzter Reflection."""
+    # Check memory for yesterday's focus
+    yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+    memory_file = WORKSPACE / 'memory' / f'{yesterday}.md'
+    
+    if memory_file.exists():
+        content = memory_file.read_text()
+        if 'TOMORROW' in content or "TOMORROW'S FOCUS" in content:
+            return "Check yesterday's memory for focus"
+    
+    return "Continue improvement based on Learning Loop v2"
 
 def generate_brief(format='text'):
     """Generiert Morning Brief."""
