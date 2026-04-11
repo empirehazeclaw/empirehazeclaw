@@ -16,6 +16,12 @@
 | 5 | Gateway Auto-Recovery | Sir HazeClaw | 10:00 UTC |
 | 6 | Secrets Location Dokumentiert | Sir HazeClaw | 10:00 UTC |
 | 7 | System Documentation | Sir HazeClaw | 11:00 UTC |
+| 8 | P1: Script Konsolidierung (82→55) | Sir HazeClaw | 12:38 UTC |
+| 9 | P2: Doku Konsolidierung (75→19) | Sir HazeClaw | 12:45 UTC |
+| 10 | P3: Cost Budgeting | Sir HazeClaw | 12:52 UTC |
+| 11 | P4: KG Lifecycle | Sir HazeClaw | 12:52 UTC |
+| 12 | M1: Old Cron Jobs | Sir HazeClaw | 12:52 UTC |
+| 13 | M3: Session Cleanup Cron | Sir HazeClaw | 12:52 UTC |
 
 ---
 
