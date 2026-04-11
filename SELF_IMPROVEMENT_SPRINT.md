@@ -65,23 +65,25 @@ Aktuelle Werte als Baseline für nächste Sprints.
 - [x] Session Analyzer funktioniert
 - [x] Skills erweitert (timeout_handling, retry_loop_prevention)
 - [x] Evening Review mit Session Stats
-- [ ] Error Rate < 15% (aktuell: 29%)
+- [x] Learning Coordinator Exit-Code Bug gefixt
+- [ ] Error Rate < 15% (aktuell: 28%)
 - [ ] Friction Events < 50 (baseline: 43 loop events)
 
 ---
 
-## Sprint Results (2026-04-11 15:00-15:05 UTC)
+## Sprint Results (2026-04-11 15:00-15:12 UTC)
 
 ### Done:
-- ✅ Session Analyzer funktioniert
+- ✅ Session Analyzer funktioniert (113 Sessions analysiert)
 - ✅ 2 neue Skills: timeout_handling, retry_loop_prevention
 - ✅ Evening Review erweitert mit Session Stats
-- ✅ Error Rate Tracking (Baseline: 29%)
+- ✅ Error Rate Tracking (Baseline: 28%)
+- ✅ Learning Coordinator Exit-Code Bug gefixt
 
 ### Key Findings:
 - Timeout: Hauptproblem (98 Sessions)
 - Loop: 43 mal erkannt
-- Error Rate: 29% (zu hoch)
+- Error Rate: 28% (zu hoch)
 
 ### Next Steps:
 1. Error Rate senken (Quick Fixes für häufige Errors)

@@ -13,11 +13,19 @@
 ## 🔄 Autonomy Framework
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Learning Coordinator | ✅ HOURLY | Every hour via Cron |
+| Learning Coordinator | ✅ HOURLY | Exit-Code Bug gefixt |
 | Capability Evolver | ✅ ON-DEMAND | Subagent when needed |
 | Token Budget Tracker | ✅ DAILY | Cron daily |
 | Gateway Auto-Recovery | ✅ 5min | Auto-restart if down |
 | Session Cleanup | ✅ DAILY | Cron daily |
+
+## 📈 Self-Improvement Sprint (2026-04-11)
+| Feature | Status | Value |
+|---------|--------|-------|
+| Session Analyzer | ✅ | 113 Sessions |
+| Skill Library | ✅ | 5 Skills |
+| Skill Tracker | ✅ | 4 tracked |
+| Learning Coordinator Fix | ✅ | Exit 0 bei Warnings |
 
 ## 📊 Quick Metrics
 - Memory: `/workspace/memory/`
