@@ -3180,9 +3180,32 @@
         "nvidia",
         "token_efficiency"
       ]
+    },
+    "memory_frameworks_20260411": {
+      "type": "research",
+      "category": "ai_agent_memory",
+      "facts": [
+        {
+          "content": "Persistent Memory Frameworks 2026: Cognee (open-source KG layer), Always On Memory Agent by Google (LLM-driven, no vector DBs, Gemini 3.1 Flash-Lite), mem0 (universal memory layer for AI agents)",
+          "confidence": 0.85,
+          "extracted_at": "2026-04-11T09:59:42.389602",
+          "category": "memory_systems"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-11T09:59:42.389612",
+      "tags": [
+        "memory",
+        "persistent",
+        "open_source",
+        "2026",
+        "cognee",
+        "google",
+        "mem0"
+      ]
     }
   },
-  "last_updated": "2026-04-11T09:58:47.585628",
+  "last_updated": "2026-04-11T09:59:42.389614",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {

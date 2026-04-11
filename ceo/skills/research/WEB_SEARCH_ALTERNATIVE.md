@@ -33,3 +33,8 @@ Modify `innovation_research.py` to call agent with web_search capability instead
 - **Model routing**: Route to appropriate model size
 - **Smart prompt design**: Reduce tokens 60-80%
 - **Cost stratification**: Lightweight (throughput) vs premium reasoning models
+
+### Persistent Memory Systems (new finding)
+- **Cognee**: Open-source memory/knowledge graph layer for AI
+- **Always On Memory Agent** (Google, 2026-03): LLM-driven persistent memory, no vector DBs, uses Gemini 3.1 Flash-Lite
+- **mem0**: Universal memory layer for AI Agents (GitHub: mem0ai/mem0)
