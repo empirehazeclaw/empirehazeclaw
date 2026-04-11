@@ -16,17 +16,16 @@
 
 ## 🎯 AKTIVE TASKS
 
-### aktuell (Working)
+### HAUPTTASKS (Permanent)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| - | Self-Improvement Sprint v3 | 🔴 HIGH | ✅ 95/100 |
+| 1 | System überwachen & optimieren | 🔴 HIGH | 🔄 Always |
+| 2 | **Kontinuierliches Lernen** | 🔴 HIGH | 🔄 Always |
 
-### Geplant (Next)
+### Aktuell (Working)
 | # | Task | Priorität | Status |
 |---|------|-----------|--------|
-| 1 | Push to 100/100 | 🟡 MED | Next |
-| 2 | Backup Ratio Fix | 🟡 MED | Less backups |
-| 3 | Test-Framework Timeout Fix | ✅ | fast_test.py done |
+| - | Self-Improvement Sprint v3 | 🔴 HIGH | ✅ 97/100 |
 
 ---
 
