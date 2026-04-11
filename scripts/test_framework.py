@@ -149,6 +149,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Learning Coordinator'
     },
+    'tool_usage_analytics': {
+        'script': 'tool_usage_analytics.py',
+        'type': 'import_no_args',
+        'test_func': 'show_dashboard',
+        'description': 'Tool Usage Analytics'
+    },
     'autonomous_improvement': {
         'script': 'autonomous_improvement.py',
         'type': 'import_no_args',
