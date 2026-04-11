@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1775913276143",
-    "created_at": "2026-04-11T13:14:36.162Z",
+    "run_id": "run_1775913518588",
+    "created_at": "2026-04-11T13:18:38.607Z",
     "parent_event_id": "evt_1775861180674",
     "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": null,
@@ -10,7 +10,7 @@
       "reason": [
         "signals match gene.signals_match",
         "signals: perf_bottleneck, high_failure_ratio, force_innovation_after_repair_loop, retry_error_context, retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/, retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.667",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.750",
         "drift_intensity: 0.500"
       ],
       "alternatives": [
@@ -29,7 +29,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1775913276142",
+      "id": "mut_1775913518586",
       "category": "innovate",
       "trigger_signals": [
         "perf_bottleneck",
@@ -43,7 +43,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1775913276142",
+    "mutation_id": "mut_1775913518586",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -61,8 +61,10 @@
     "reused_asset_id": null,
     "reused_source_node": null,
     "reused_chain_id": null,
-    "baseline_untracked": [],
-    "baseline_git_head": "a27473feb47cf6b380e363b7a3a892843e7e9418",
+    "baseline_untracked": [
+      "docs/CAPABILITY_EVOLVER.md"
+    ],
+    "baseline_git_head": "4cf10ae708425bcf5adff30e39dda9d574556b85",
     "blast_radius_estimate": {
       "files": 12,
       "lines": 960
