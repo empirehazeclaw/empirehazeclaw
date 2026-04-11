@@ -65,8 +65,21 @@
 | Evening Capture | ✅ Once daily (9pm) |
 
 ## 🎯 Next Tasks
-1. Scripts Tiefe-Analyse (archivieren was nicht genutzt wird)
-2. Skills Inventory (unbenutzte Skills archivieren)
-3. CEO Briefing Delivery Fix
+1. ⭐ Cron Error Healer (3 Crons mit Errors)
+2. Session Cleanup Automation (9 orphaned)
+3. Script Konsolidierung (82→20)
+
+## 📊 System Health Score: 70/100
+| Dimension | Score |
+| --------- | ----- |
+| Funktionalität | 85 |
+| Dokumentation | 90 |
+| Effizienz | 60 ⚠️ |
+| Wartbarkeit | 40 🔴 |
+| Security | 75 |
+
+## 📋 Full Analysis
+- `ceo/DEEP_SYSTEM_ANALYSIS.md` - Complete architecture analysis
+- `ceo/IMPROVEMENT_TODO.md` - Prioritized optimization plan (20 tasks)
 
 *Next Heartbeat: When issues detected or hourly*

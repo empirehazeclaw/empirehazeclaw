@@ -1,186 +1,224 @@
-# System Analysis TODO — 2026-04-11 11:25 UTC
+# System Analysis TODO — 2026-04-11 12:05 UTC
 
 **Status:** AKTIV - Master hat bestätigt
-**Letztes Update:** 2026-04-11 11:25 UTC
+**Letztes Update:** 2026-04-11 12:05 UTC
 
 ---
 
-## ✅ COMPLETED TASKS (11/13)
+## ✅ COMPLETED TASKS (12/20)
 
 | Task | Status | Notes |
 |------|--------|-------|
-| Gateway Auto-Recovery | ✅ DONE | Cron every 5 min, ID: c0060c0e... |
-| Performance Trends | ✅ DONE | trend_analysis.py created |
-| auto_doc.py | ✅ DONE | Weekly Cron, 80 scripts scanned |
-| session_cleanup.py | ✅ DONE | Daily Cron at 03:00 UTC |
-| git_maintenance.py | ✅ DONE | Weekly Cron, 2 branches deleted |
-| Token Efficiency | ✅ DONE | In Coordinator integrated |
-| MCP Server | ✅ DONE | mcp_server.py created, 8 tools |
-| Workspace Cleanup | ✅ DONE | 90 → 17 files, 73 archived |
+| Gateway Auto-Recovery | ✅ DONE | Cron every 5 min |
+| Performance Trends | ✅ DONE | trend_analysis.py |
+| auto_doc.py | ✅ DONE | Weekly Cron |
+| session_cleanup.py | ✅ DONE | Daily Cron |
+| git_maintenance.py | ✅ DONE | Weekly Cron |
+| Token Efficiency | ✅ DONE | In Coordinator |
+| MCP Server | ✅ DONE | 8 tools |
+| Workspace Cleanup | ✅ DONE | 90→17 files, 73 archived |
 | System Documentation | ✅ DONE | Architecture, Inventory, Cron Index |
-| Secrets/API Key finden | ✅ DONE | Key in agents/ceo/agent/auth-profiles.json |
+| Secrets/API Key finden | ✅ DONE | Key in auth-profiles.json |
+| Memory Reranker | ✅ DONE | scripts/memory_reranker.py |
+| Deep System Analysis | ✅ DONE | 9 issues, 70/100 score |
 
 ---
 
-## 🔴 HIGH PRIORITY — START NOW
+## 🔴 PHASE 1: Quick Wins
 
-### 2. Memory Reranker ⭐
-**Quelle:** MEMORY_RERANKING_PATTERNS.md
-**Impact:** Bessere Context Precision
+### P1.1: Cron Error Healer ⭐
+**Problem:** 3 Cron Jobs mit persistierenden Errors
 
 ```
-TASK:
-1. Reranker Layer für memory_hybrid_search.py
-2. Deduplication memory/ ↔ KG
-3. Integration in Coordinator
+Nightly Dreaming     → Discord not configured
+Security Audit       → Message failed
+CEO Daily Briefing   → Message failed (2x consecutive)
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 1 | **Time:** ~3h
+**Lösung:**
+```python
+# cron_error_healer.py
+"""
+Auto-healt failed cron deliveries.
+- CEO Briefing error → Retry
+- Nightly Dreaming Discord → Switch to silent mode
+- Security Audit failure → Silent mode
+"""
+```
+
+**Status:** ⏳ OFFEN | **Priorität:** 1 | **Time:** 1h
 
 ---
 
-## 🟡 MEDIUM PRIORITY
+### P1.2: Session Cleanup Automation
+**Problem:** 74 Sessions, 9 orphaned
 
-### 3. Scripts Tiefe-Analyse
-**Problem:** 81 Scripts, nicht alle analysiert
-
+**Lösung:**
+```python
+# session_cleanup_cron.py
+"""
+Läuft täglich.
+Entfernt orphaned sessions automatisch.
+"""
 ```
-TASK:
-1. Alle Scripts mit auto_doc.py scannen
-2. Kategorisieren: aktiv/veraltet/unbekannt
-3. Veraltete Scripts → archive/
-4. README.md für Scripts erstellen
-```
 
-**Status:** ⏳ OFFEN | **Priorität:** 2 | **Time:** ~1h
+**Status:** ⏳ OFFEN | **Priorität:** 2 | **Time:** 30min
 
 ---
 
-### 4. Skills Inventory
-**Problem:** 16 Skill-Verzeichnisse, nicht analysiert
+## 🟠 PHASE 2: Struktur
 
+### P2.1: Script Konsolidierung
+**Problem:** 82 Scripts — Wildwuchs
+
+**Ziel:** 82 → ~20 Scripts (75% weniger)
+
+**Konsolidierte Kategorien:**
+| Kategorie | Scripts | Ziel |
+|-----------|---------|------|
+| system_health | 5 | 1 unified |
+| learning | 4 | 1 unified |
+| documentation | 3 | 1 unified |
+| maintenance | 4 | 1 unified |
+
+**Status:** ⏳ OFFEN | **Priorität:** 3 | **Time:** 3h
+
+---
+
+### P2.2: Knowledge Graph Lifecycle Manager
+**Problem:** KG wächst ohne Limit (1.7MB, ~180 Entities)
+
+**Lösung:**
+```python
+# kg_lifecycle_manager.py
+"""
+- Deduplication (threshold 85%)
+- Aging (markiere ungenutzte Entities)
+- Growth Limit (max 500 Entities)
+"""
 ```
-TASK:
+
+**Status:** ⏳ OFFEN | **Priorität:** 4 | **Time:** 2h
+
+---
+
+### P2.3: Skills Inventory & Audit
+**Problem:** 16 Skills, ~4 aktiv
+
+**TASK:**
 1. Alle Skills scannen
 2. Nutzung analysieren
 3. Archivieren was nicht genutzt wird
 4. Skill Index erstellen
-```
 
-**Status:** ⏳ OFFEN | **Priorität:** 3 | **Time:** ~1h
-
----
-
-### 5. Data/Logs Struktur dokumentieren
-**Problem:** data/*.json + logs/ nicht dokumentiert
-
-```
-TASK:
-1. Alle data/*.json Files inventarisieren
-2. logs/ Struktur analysieren
-3. Rotation/Growth management prüfen
-4. Doku erstellen
-```
-
-**Status:** ⏳ OFFEN | **Priorität:** 4 | **Time:** ~30min
+**Status:** ⏳ OFFEN | **Priorität:** 5 | **Time:** 1h
 
 ---
 
-### 6. Cost Advisor
-**Quelle:** OpenRouter Analysis
-**Impact:** Cost savings
+### P2.4: CEO Briefing Delivery Fix
+**Problem:** 2 consecutive errors
 
+**Lösung:** Nightly Dreaming → Silent mode already done
+
+**Status:** ⏳ OFFEN | **Priorität:** 6 | **Time:** 30min
+
+---
+
+## 🟡 PHASE 3: Strategic
+
+### P3.1: Cost Budget Controller
+**Problem:** Keine Cost Control
+
+**Lösung:**
+```python
+# cost_controller.py
+"""
+- Monatliches Budget: 10M tokens
+- Alert bei 80% Auslastung
+- Auto-disable bei Budget-Überschreitung
+"""
 ```
-TASK:
-1. cost_advisor.py erstellen
-   - Analysiert Usage
-   - Schlägt billigere Modelle vor
+
+**Status:** ⏳ OFFEN | **Priorität:** 7 | **Time:** 2h
+
+---
+
+### P3.2: Failover Testing automatisiert
+**Problem:** Fallbacks ungetestet
+
+**Lösung:**
+```bash
+# Test sequence:
+1. Minimax Failover → GPT-4o-mini
+2. GPT-4o-mini Failover → OpenRouter
+3. Report to Master
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 5 | **Time:** ~2h
+**Status:** ⏳ OFFEN | **Priorität:** 8 | **Time:** 1h
 
 ---
 
-### 7. Skill Gap Analysis
-**Quelle:** Self-Improvement
+## 📊 SYSTEM HEALTH: 70/100
 
-```
-TASK:
-1. skill_gap.py erstellen
-   - Analysiert Script-Nutzung
-   - Erkennt fehlende Skills
-```
-
-**Status:** ⏳ OFFEN | **Priorität:** 6 | **Time:** ~2h
+| Dimension | Score | Trend |
+|-----------|-------|-------|
+| Funktionalität | 85/100 | 🟢 Stable |
+| Dokumentation | 90/100 | 🟢 Improved |
+| Effizienz | 60/100 | 🟠 Needs Work |
+| Wartbarkeit | 40/100 | 🔴 Critical |
+| Security | 75/100 | 🟡 OK |
 
 ---
 
-## 🟢 LOWER PRIORITY
+## 🚨 CRITICAL ISSUES
 
-### 8. MCP Server Config
-**Status:** ⏳ Master braucht Config-Zugriff
-
----
-
-### 9. CEO Briefing Delivery Fix
-**Status:** ⚠️ 2 consecutive errors
-
----
-
-### 10. Nightly Dreaming Fix
-**Status:** ⚠️ Discord not configured
-
----
-
-## 📊 VOLLSTÄNDIGE TASK LIST
-
-| # | Task | Priority | Status |
-|---|------|----------|--------|
-| 1 | Secrets/API Key finden | ✅ DONE | secrets/secrets.env |
-| 2 | Memory Reranker | 🔴 HIGH | ⏳ OFFEN |
-| 3 | Scripts Tiefe-Analyse | 🟡 MED | ⏳ OFFEN |
-| 4 | Skills Inventory | 🟡 MED | ⏳ OFFEN |
-| 5 | Data/Logs Dokumentation | 🟡 MED | ⏳ OFFEN |
-| 6 | Cost Advisor | 🟡 MED | ⏳ OFFEN |
-| 7 | Skill Gap Analysis | 🟡 MED | ⏳ OFFEN |
-| 8 | MCP Config | 🔴 HIGH | ⏳ OFFEN |
-| 9 | CEO Briefing Fix | 🟡 MED | ⏳ OFFEN |
-| 10 | Nightly Dreaming Fix | 🟡 MED | ⏳ OFFEN |
+| # | Issue | Impact | Status |
+|---|-------|--------|--------|
+| 1 | 3 Cron Jobs mit Errors | Hoch | ⏳ OFFEN |
+| 2 | 82 Scripts (Wildwuchs) | Hoch | ⏳ OFFEN |
+| 3 | 9 Orphaned Sessions | Mittel | ⏳ OFFEN |
 
 ---
 
 ## 🎯 EXECUTION PLAN
 
-**Phase 1 (DONE):**
-1. ✅ Gateway Auto-Recovery
-2. ✅ Performance Trends
-3. ✅ auto_doc.py
-4. ✅ session_cleanup.py
-5. ✅ git_maintenance.py
-6. ✅ Workspace Cleanup
-7. ✅ Secrets Analysis
+**Phase 1 (NOW):**
+1. ⭐ Cron Error Healer ← START
+2. ⭐ Session Cleanup Automation
 
-**Phase 2 (NOW):**
-8. Memory Reranker ← START
-9. Scripts Tiefe-Analyse
-10. Skills Inventory
+**Phase 2:**
+3. Script Konsolidierung
+4. KG Lifecycle Manager
+5. Skills Inventory
+6. CEO Briefing Fix
 
----
-
-## 📋 SECRETS DOKUMENTATION (FOUND!)
-
-**Location:** `/home/clawbot/.openclaw/secrets/secrets.env`
-
-**Enthält:**
-- MINIMAX_API_KEY ✅
-- OPENROUTER_API_KEY ✅
-- GitHub, Google, AWS, etc.
-- 30+ API Keys total
-
-**NIE in openclaw.json committed!**
+**Phase 3:**
+7. Cost Budget Controller
+8. Failover Testing
 
 ---
 
-*Letztes Update: 2026-04-11 11:25 UTC*
+## 📋 SCHWACHSTELLEN (Aus Deep System Analysis)
+
+### Kritisch 🔴
+- 3 Cron Jobs mit persistierenden Errors
+- 82 Scripts — keine klare Struktur
+- Solo Fighter Bottleneck
+
+### Hoch 🟠
+- KG ohne Lifecycle Management
+- Kein Token Budget / Cost Alerting
+- Failover ungetestet
+
+### Mittel 🟡
+- Skills underutilized
+- Memory System Inkonsistenz
+- Orphaned Sessions
+
+---
+
+*Letztes Update: 2026-04-11 12:05 UTC*
 *Autonomous Processing: YES*
 *Master: Nico (bestätigt)*
+*Focus: Phase 1 - Quick Wins*
+*Reference: ceo/DEEP_SYSTEM_ANALYSIS.md*
