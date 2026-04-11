@@ -1,0 +1,107 @@
+{
+  "last_run": {
+    "run_id": "run_1775941088762",
+    "created_at": "2026-04-11T20:58:08.779Z",
+    "parent_event_id": "evt_1775861180674",
+    "selected_gene_id": "gene_gep_repair_from_errors",
+    "selected_capsule_id": null,
+    "selector": {
+      "selected": "gene_gep_repair_from_errors",
+      "reason": [
+        "signals match gene.signals_match",
+        "signals: log_error, errsig:Error: Cannot find module '/home/clawbot/.openclaw/workspace/scr', perf_bottleneck, high_failure_ratio, force_innovation_after_repair_loop",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.600",
+        "drift_intensity: 0.500"
+      ],
+      "alternatives": [
+        "gene_gep_optimize_prompt_and_assets",
+        "gene_tool_integrity",
+        "gene_auto_b9a66a5c"
+      ]
+    },
+    "signals": [
+      "log_error",
+      "errsig:Error: Cannot find module '/home/clawbot/.openclaw/workspace/scr'",
+      "perf_bottleneck",
+      "high_failure_ratio",
+      "force_innovation_after_repair_loop"
+    ],
+    "mutation": {
+      "type": "Mutation",
+      "id": "mut_1775941088760",
+      "category": "repair",
+      "trigger_signals": [
+        "log_error",
+        "errsig:Error: Cannot find module '/home/clawbot/.openclaw/workspace/scr'",
+        "perf_bottleneck",
+        "high_failure_ratio",
+        "force_innovation_after_repair_loop"
+      ],
+      "target": "gene:gene_gep_repair_from_errors",
+      "expected_effect": "reduce runtime errors, increase stability, and lower failure rate",
+      "risk_level": "low"
+    },
+    "mutation_id": "mut_1775941088760",
+    "personality_state": {
+      "type": "PersonalityState",
+      "rigor": 0.75,
+      "creativity": 0.35,
+      "verbosity": 0.25,
+      "risk_tolerance": 0.4,
+      "obedience": 0.85
+    },
+    "personality_key": "rigor=0.8|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "personality_known": false,
+    "personality_mutations": [
+      {
+        "type": "PersonalityMutation",
+        "param": "rigor",
+        "delta": 0.05,
+        "reason": "errors detected in reflection"
+      }
+    ],
+    "drift": false,
+    "selected_by": "memory_graph+selector",
+    "source_type": "generated",
+    "reused_asset_id": null,
+    "reused_source_node": null,
+    "reused_chain_id": null,
+    "baseline_untracked": [
+      "logs/error_reduction_plan.json",
+      "memory/evolution/evolution_solidify_state.json",
+      "memory/evolution/reflection_log.jsonl",
+      "run_loop_5x.sh",
+      "run_validate.sh",
+      "scripts/validate-suite.js",
+      "show_failures.sh",
+      "solidify.sh"
+    ],
+    "baseline_git_head": "7752bbf9ae98b85599a3a419fe26d3d43f7f5050",
+    "blast_radius_estimate": {
+      "files": 12,
+      "lines": 960
+    },
+    "strategy_policy": {
+      "name": "early-stabilize",
+      "label": "Early Stabilization",
+      "description": "First cycles. Prioritize fixing existing issues before innovating.",
+      "forceInnovate": false,
+      "cautiousExecution": false,
+      "highRiskGene": false,
+      "repairStreak": 0,
+      "failureStreak": 1,
+      "blastRadiusMaxFiles": 12,
+      "directives": [
+        "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",
+        "Target max files for this cycle: 12."
+      ]
+    },
+    "active_task_id": null,
+    "active_task_title": null,
+    "worker_assignment_id": null,
+    "worker_pending": false,
+    "commitment_deadline": null,
+    "applied_lessons": [],
+    "hub_lessons": []
+  }
+}

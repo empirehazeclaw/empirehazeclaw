@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1775924487880",
-    "created_at": "2026-04-11T16:21:27.890Z",
+    "run_id": "run_1775939279902",
+    "created_at": "2026-04-11T20:27:59.931Z",
     "parent_event_id": "evt_1775842939077",
     "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": null,
@@ -10,7 +10,7 @@
       "reason": [
         "signals match gene.signals_match",
         "signals: evolution_stagnation_detected, stable_success_plateau",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.833",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.857",
         "drift_intensity: 0.500"
       ],
       "alternatives": [
@@ -23,7 +23,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1775924487878",
+      "id": "mut_1775939279898",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -34,11 +34,11 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1775924487878",
+    "mutation_id": "mut_1775939279898",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
-      "creativity": 0.39999999999999997,
+      "creativity": 0.44999999999999996,
       "verbosity": 0.25,
       "risk_tolerance": 0.4,
       "obedience": 0.85
@@ -59,21 +59,16 @@
     "reused_asset_id": null,
     "reused_source_node": null,
     "reused_chain_id": null,
-    "baseline_untracked": [
-      "memory/evolution/reflection_log.jsonl",
-      "run.sh",
-      "run_evolve.sh",
-      "run_full.sh"
-    ],
-    "baseline_git_head": "2a610b8b3767433446ff7d51fbec57cb817e5fc4",
+    "baseline_untracked": [],
+    "baseline_git_head": "ab4b0e77a88ae4ec8f3b3c6c8944c3d3fce01ebb",
     "blast_radius_estimate": {
       "files": 10,
       "lines": 800
     },
     "strategy_policy": {
-      "name": "innovate",
-      "label": "Innovation Focus",
-      "description": "System is stable. Maximize new features and capabilities.",
+      "name": "early-stabilize",
+      "label": "Early Stabilization",
+      "description": "First cycles. Prioritize fixing existing issues before innovating.",
       "forceInnovate": true,
       "cautiousExecution": false,
       "highRiskGene": false,
@@ -81,7 +76,7 @@
       "failureStreak": 1,
       "blastRadiusMaxFiles": 10,
       "directives": [
-        "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
+        "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",
         "Force strategy shift: prefer innovate over repeating repair/optimize.",
         "Target max files for this cycle: 10."
       ]
@@ -93,5 +88,16 @@
     "commitment_deadline": null,
     "applied_lessons": [],
     "hub_lessons": []
-  }
+  },
+  "last_solidify": {
+    "run_id": "run_1775939279902",
+    "at": "2026-04-11T20:58:25.119Z",
+    "event_id": "evt_1775941105119",
+    "capsule_id": "capsule_1775941105119",
+    "outcome": {
+      "status": "success",
+      "score": 0.95
+    }
+  },
+  "solidify_count": 3
 }

@@ -1844,6 +1844,542 @@
         }
       ],
       "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:38:09.379338",
+      "improvements": [
+        {
+          "title": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "expected_impact": "HIGH",
+          "reason": "Error rate: 26.6%",
+          "source": "issue"
+        },
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "success": true,
+          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:38 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
+          "validated": true
+        },
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u274c error_reduction: Failed (will try different appr",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:43:27.578919",
+      "improvements": [
+        {
+          "title": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "expected_impact": "HIGH",
+          "reason": "Error rate: 26.6%",
+          "source": "issue"
+        },
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Error Rate Reduction",
+          "script": "error_reducer.py",
+          "success": true,
+          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:43 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
+          "validated": true
+        },
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:49:30.632268",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:52:23.774397",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:54:52.608966",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:54:59.390491",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:55:06.635536",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:55:13.744632",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:55:20.598411",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:56:55.988801",
+      "improvements": [
+        {
+          "title": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "expected_impact": "HIGH",
+          "reason": "Critical script errors detected",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Script Error Fix",
+          "script": "auto_fixer.py",
+          "success": true,
+          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "timestamp": "2026-04-11T20:57:11.157297",
+      "improvements": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 2
     }
   ],
   "hypotheses": [],

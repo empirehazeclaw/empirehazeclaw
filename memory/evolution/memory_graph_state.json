@@ -1,22 +1,21 @@
 {
   "last_action": {
-    "action_id": "act_1775913518587_ebb7163a",
-    "signal_key": "force_innovation_after_repair_loop|high_failure_ratio|perf_bottleneck|retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/|retry_error_context|retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr",
+    "action_id": "act_1775941088761_3b7aea76",
+    "signal_key": "errsig_norm:26070deb|force_innovation_after_repair_loop|high_failure_ratio|log_error|perf_bottleneck",
     "signals": [
+      "log_error",
+      "errsig:Error: Cannot find module '/home/clawbot/.openclaw/workspace/scr'",
       "perf_bottleneck",
       "high_failure_ratio",
-      "force_innovation_after_repair_loop",
-      "retry_error_context",
-      "retry_cmd:node scripts/validate-modules.js ./src/gep/solidify ./src/gep/policyCheck ./src/",
-      "retry_stderr:node:internal/modules/cjs/loader:1386\n  throw err;\n  ^\n\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr"
+      "force_innovation_after_repair_loop"
     ],
-    "mutation_id": "mut_1775913518586",
-    "mutation_category": "innovate",
-    "mutation_risk_level": "medium",
-    "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "mutation_id": "mut_1775941088760",
+    "mutation_category": "repair",
+    "mutation_risk_level": "low",
+    "personality_key": "rigor=0.8|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
     "personality_state": {
       "type": "PersonalityState",
-      "rigor": 0.7,
+      "rigor": 0.75,
       "creativity": 0.35,
       "verbosity": 0.25,
       "risk_tolerance": 0.4,
@@ -24,10 +23,10 @@
     },
     "gene_id": "gene_gep_repair_from_errors",
     "gene_category": "repair",
-    "hypothesis_id": "hyp_1775913518586_edb957f7",
+    "hypothesis_id": "hyp_1775941088761_3b7aea76",
     "capsules_used": [],
-    "had_error": false,
-    "created_at": "2026-04-11T13:18:38.587Z",
+    "had_error": true,
+    "created_at": "2026-04-11T20:58:08.761Z",
     "outcome_recorded": false,
     "baseline_observed": {
       "agent": "main",
@@ -35,17 +34,17 @@
       "drift_enabled": false,
       "review_mode": false,
       "dry_run": false,
-      "system_health": "Uptime: 143.5h | Node: v22.22.2 | Agent RSS: 56.4MB | Disk: 25% (72.3G free) | Node Processes: 1 | Integrations: Nominal",
+      "system_health": "Uptime: 151.1h | Node: v22.22.2 | Agent RSS: 56.7MB | Disk: 25% (72.1G free) | Node Processes: 1 | Integrations: Nominal",
       "mood": "Mood: Unknown",
-      "scan_ms": 23,
-      "memory_size_bytes": 4527,
+      "scan_ms": 25,
+      "memory_size_bytes": 6398,
       "recent_error_count": 0,
       "node": "v22.22.2",
       "platform": "linux",
-      "cwd": "/home/clawbot/.openclaw/workspace/ceo",
+      "cwd": "/home/clawbot/.openclaw/workspace/skills/capability-evolver",
       "evidence": {
         "recent_session_tail": "[NO SESSION LOGS FOUND]",
-        "today_log_tail": " Analyse\n   - Quality Checks\n\n5. **Morning Brief** ✅\n   - Token Usage in Recommendations\n   - Active Blockers Anzeige\n   - Mehr actionable recommendations\n\n**Score: 99/100 🟢**\n\n---\n\n*Top 5 Verbesserungen: DONE*\n\n---\n\n## LEARNING: Oberflächliche Arbeit bei MCP (13:04 UTC)\n\n**Was passiert:**\n- Ich habe behauptet \"MCP geht bei OpenClaw\"\n- Ich habe es nicht vollständig verifiziert\n- Ich habe blind Configuration hinzugefügt\n- Hat nicht funktioniert → abgebrochen\n\n**Fehler:**\n- Ich habe einen Fehler gemacht und ihn korrigiert aber nicht die root cause behoben\n- Hätte erst mit `openclaw doctor` oder docs prüfen sollen\n\n**Learnings:**\n1. **Erst verifizieren, dann implementieren** - Keine Annahmen\n2. **Bei Configuration-Änderungen: Erst Backup, dann Test, dann Commit**\n3. **Bei Fehlern: Root cause finden, nicht nur workaround**\n\n**Nico's Feedback:**\n\"Oberflächliche Arbeitsweise\" - genau richtig erkannt.\n\n*Sir HazeClaw - Solo Fighter*\n\n---\n\n## PATTERN: Umwege statt Direkt (13:09 UTC)\n\n**Beispiel:** Capability Evolver\n- Es gibt einen Cron dafür (oder sollte)\n- Statt zu prüfen ob Cron existiert → 10+ Workarounds versucht\n- Jeder Workaround wurde mit \"exec preflight\" gekillt\n- Trotzdem weitergemacht\n\n**Erkanntes Pattern:**\n```\nTask → exec Blocked → Workaround suchen → Blocked → Workaround 2 → ...\n```\n\n**Rule für mich:**\n1. **Direkten Weg zuerst**: Prüfe ob Cron/Tool/Script bereits existiert\n2. **Bei exec Block**: NICHT weiter umwege suchen → Stoppen und fragen\n3. **Max 2 Workarounds**: Wenn 2 nicht funktionieren → Master fragen\n4. **Einfach > Komplex**: Bestehende Tools nutzen statt neu erfinden\n\n**In LEARNING_LOOP.md zu integrieren:**\n- Pre-Creation Checklist um Punkt erweitern: \"Existiert bereits ein Tool/Cron für diese Aufgabe?\"\n- Error Handling: \"Bei exec Block → Stoppen und fragen\"\n\n*Sir HazeClaw - Solo Fighter*\n\n---\n\n## PATTERN: Bewährten Weg wiederholen (13:14 UTC)\n\n**Prinzip:**\n```\nWenn eine Aufgabe bereits X-mal auf Art Y funktioniert hat →\nNicht neue Workarounds suchen → Art Y nochmal verwenden\n```\n\n**Beispiel Capability Evolver:**\n- Subagent-Spawn hat funktioniert\n- Ich hätte direkt wieder Subagent nehmen sollen\n- Stattdessen exec-Varianten durchprobiert (gekillt)\n\n**In LEARNING_LOOP Rule 4 ergänzen:**\n```python\nWORKAROUND_RULE = {\n    \"Task funktioniert bereits auf Art X\": \"Art X nochmal verwenden\",\n    \"Wenn exec blockt und Subagent bereits funktioniert\": \"Subagent nehmen\",\n    \"Max Varianten\": 2 (dann Master fragen)\"\n}\n```\n\n*Sir HazeClaw - Solo Fighter*\n"
+        "today_log_tail": "uchen → Stoppen und fragen\n3. **Max 2 Workarounds**: Wenn 2 nicht funktionieren → Master fragen\n4. **Einfach > Komplex**: Bestehende Tools nutzen statt neu erfinden\n\n**In LEARNING_LOOP.md zu integrieren:**\n- Pre-Creation Checklist um Punkt erweitern: \"Existiert bereits ein Tool/Cron für diese Aufgabe?\"\n- Error Handling: \"Bei exec Block → Stoppen und fragen\"\n\n*Sir HazeClaw - Solo Fighter*\n\n---\n\n## PATTERN: Bewährten Weg wiederholen (13:14 UTC)\n\n**Prinzip:**\n```\nWenn eine Aufgabe bereits X-mal auf Art Y funktioniert hat →\nNicht neue Workarounds suchen → Art Y nochmal verwenden\n```\n\n**Beispiel Capability Evolver:**\n- Subagent-Spawn hat funktioniert\n- Ich hätte direkt wieder Subagent nehmen sollen\n- Stattdessen exec-Varianten durchprobiert (gekillt)\n\n**In LEARNING_LOOP Rule 4 ergänzen:**\n```python\nWORKAROUND_RULE = {\n    \"Task funktioniert bereits auf Art X\": \"Art X nochmal verwenden\",\n    \"Wenn exec blockt und Subagent bereits funktioniert\": \"Subagent nehmen\",\n    \"Max Varianten\": 2 (dann Master fragen)\"\n}\n```\n\n*Sir HazeClaw - Solo Fighter*\n\n---\n\n## EXEC TIMEOUT - SYSTEM LIMIT (2026-04-11 14:34 UTC)\n\n**Problem:** exec Commands werden nach ~60-90s vom System gekillt (SIGTERM)\n\n**Lösung:**\n- Scripts in Background starten (`nohup python3 script.py &`)\n- Oder als Cron Job laufen lassen (Cron hat längeren Timeout)\n- Cron Jobs mit `session: isolated` sind am robustesten\n\n**KEINE OPENCLAW CONFIG** - das ist ein System-Level Limit.\n\n---\n\n## CAPABILITY EVOLVER BUG FIX (2026-04-11 14:40 UTC)\n\n### Problem\nCapability Evolver scheiterte mit:\n```\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scr'\n```\nOder:\n```\nError: Cannot find module '/home/clawbot/.openclaw/workspace/scripts/validate-modules.js'\n```\n\n### Root Cause\nDer Evolver sucht nach `scripts/validate-modules.js` im `REPO_ROOT` Verzeichnis.\nStandardmäßig ist `REPO_ROOT = /home/clawbot/.openclaw/workspace/`\n\nAber das Script lag nur in:\n`/home/clawbot/.openclaw/workspace/skills/capability-evolver/scripts/validate-modules.js`\n\n### Lösung\nScript kopiert nach `/home/clawbot/.openclaw/workspace/scripts/validate-modules.js`\n\n### Prevention\nBei Installation/Update des Evolvers: Scripts nach `/workspace/scripts/` synchronisieren.\nAlternativ: `EVOLVER_REPO_ROOT` auf Evolver-Verzeichnis setzen.\n\n### Lessons Learned\n1. Evolver erwartet validate-modules.js in `/workspace/scripts/`\n2. State-Dateien in `/workspace/memory/evolution/` (NICHT im skill-Verzeichnis)\n3. Bei Fehler \"Cannot find module\" → erst Pfade prüfen\n"
       }
     }
   }
