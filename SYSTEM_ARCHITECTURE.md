@@ -13,22 +13,27 @@
 |-----------|------|---------|
 | `~/.openclaw/openclaw.json` | Haupt-Config | Models, Providers, Agents, Defaults |
 | `~/.openclaw/agents/ceo/` | CEO Agent | Sessions, Agent-spezifische Config |
+| `~/.openclaw/secrets/secrets.env` | **API Keys** | MINIMAX, OPENROUTER, GitHub, etc. ⚠️ |
 | `~/.openclaw/workspace/` | Arbeitsbereich | Alle Scripts, Skills, Docs, Memory |
-| Environment Variables | API Keys | MINIMAX_API_KEY, etc. (nicht in Config sichtbar) |
+| Environment Variables | API Keys | Wird aus secrets.env geladen |
+
+### ⚠️ WICHTIG: Secrets Location
+
+**API Keys sind in:** `/home/clawbot/.openclaw/secrets/secrets.env`
+- **MINIMAX_API_KEY** ✅ (System läuft damit)
+- **OPENROUTER_API_KEY** ✅ (auch vorhanden)
+- **Viele andere Keys** (GitHub, Google, etc.)
+
+**NIE in openclaw.json committed!** (nur redacted)
 
 ### OpenClaw Secrets Management
 
 **Wichtig:** OpenClaw unterstützt "SecretRefs" - API Keys müssen NICHT plaintext in Config sein.
 
-**Mögliche Sources:**
-1. `provider: "vault"` - Externer Vault (1Password, HashiCorp, etc.)
-2. `provider: "exec"` - Exec Command das Key ausführt
-3. `provider: "env"` - Environment Variable
-
 **Aktueller Status:** 
-- `minimax:global` auth profile existiert
-- API Key Status: UNKNOWN (vermutlich env oder vault)
-- System läuft = Key ist irgendwo konfiguriert
+- Keys in `secrets/secrets.env`
+- System läuft mit MINIMAX_API_KEY
+- Kein externes Vault (1Password, HashiCorp, etc.)
 
 ---
 
