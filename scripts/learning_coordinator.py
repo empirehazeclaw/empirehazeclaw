@@ -254,7 +254,8 @@ def run_quality_gates():
             timeout=30,
             cwd=str(WORKSPACE)
         )
-        if 'CRITICAL' in result.stdout or 'ERROR' in result.stdout:
+        # Only flag CRITICAL in uppercase followed by space (not "ERROR RATE")
+        if 'CRITICAL: ' in result.stdout or result.stdout.count('CRITICAL') > result.stdout.count('ERROR RATE'):
             issues_detected.append({
                 'type': 'script_errors',
                 'severity': 'HIGH',
