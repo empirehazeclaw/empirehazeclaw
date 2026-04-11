@@ -134,14 +134,14 @@ Research → KG → Skills → Scripts → Test → Commit → Reflection → LE
 - [x] Research → KG Auto-Update
 
 ### Diese Stunde
-- [ ] Test coordinator verbessern
-- [ ] Quality Gates komplett
-- [ ] Commit + Push
+- [x] Test coordinator verbessern
+- [x] Quality Gates komplett
+- [x] Cron Jobs überprüfen
+- [x] Commit + Push
 
 ### Heute
 - [ ] Autonomous Improvement aktivieren
-- [ ] Cron Jobs überprüfen
-- [ ] Scripts konsolidieren
+- [ ] Scripts konsolidieren (75 → <50)
 
 ### Diese Woche
 - [ ] Token Efficiency messen
