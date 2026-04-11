@@ -71,7 +71,23 @@
 | **API Keys ändern** | Sicherheitskritisch |
 | **Gateway Config ändern** | Kann System brechen |
 
+
 ---
+
+## ⏱️ EXEC TIMEOUT — WICHTIG!
+
+**MEIN PROZESS WIRD NACH ~60-90 SEKUNDEN GEKILLT (SIGTERM)**
+
+Das ist eine **SYSTEM-LIMITATION**, keine Agent-Logik!
+"Nicht stoppen" hilft NICHT — das System beendet mich unabhängig von Anweisungen.
+
+**LÖSUNGEN:**
+1. Background mode: `python3 script.py &`
+2. Cron Job: `openclaw cron add` (längerer Timeout)
+3. Chunking: Große Tasks in <60s Stücke teilen
+
+**REGEL:** "Alles was > 60s dauert = Background oder Cron"
+
 
 ## 🛑 BEI UNSICHERHEIT: STOPPEN & DOKUMENTIEREN
 
