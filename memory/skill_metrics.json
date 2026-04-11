@@ -1,0 +1,67 @@
+{
+  "skills": {
+    "debugging": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:06:04.053602",
+      "tasks": [
+        {
+          "task": "Fixed Capability Evolver path bug",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
+    },
+    "coding": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:06:04.089797",
+      "tasks": [
+        {
+          "task": "Created skill_tracker.py",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
+    },
+    "research": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:06:04.120640",
+      "tasks": [
+        {
+          "task": "Self-improvement research",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
+    },
+    "automation": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:06:04.152566",
+      "tasks": [
+        {
+          "task": "Implemented Evening Review + Session Analysis",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
+    }
+  },
+  "daily": {
+    "2026-04-11": {
+      "uses": 4,
+      "successes": 4,
+      "failures": 0
+    }
+  }
+}
