@@ -1,0 +1,15 @@
+{
+  "lastUpdate": "2026-04-11 15:27 UTC",
+  "timeoutRules": {
+    "critical": true,
+    "rule1": "Task < 60s = Direkt ausführen",
+    "rule2": "Task > 60s (unwichtig) = Background mode (&)",
+    "rule3": "Task > 60s (wichtig) = Cron Job",
+    "note": "'Nicht stoppen' hilft NICHT — System-Limitation!"
+  },
+  "implementation": {
+    "checkDuration": true,
+    "useBackground": "yieldMs parameter for exec",
+    "useCron": "for important long tasks"
+  }
+}

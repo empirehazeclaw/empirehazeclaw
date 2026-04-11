@@ -180,3 +180,28 @@ OpenClaw Gateway (:18789)
 ---
 
 *Letzte große Bereinigung: 2026-04-07 (438KB → ~20KB)*
+
+---
+
+## ⏱️ TIMEOUT RULES (CRITICAL - 2026-04-11)
+
+**SYSTEM KILLS ME AFTER ~60-90s REGARDLESS OF INSTRUCTIONS!**
+
+### 3 Rules for EVERY exec task:
+
+| Task | Rule |
+|------|------|
+| < 60s | Direkt ausführen |
+| > 60s (unwichtig) | Background mode (`&`) |
+| > 60s (wichtig) | Cron Job |
+
+### Remember:
+- "Nicht stoppen" hilft NICHT
+- System-Limitation, not Agent behavior
+- Always check duration BEFORE executing
+- Use `yieldMs` for long background tasks
+
+### Implementation:
+- Check estimated duration first
+- If > 60s: use `background: true` or `yieldMs` parameter
+- For critical long tasks: spawn as isolated cron/session

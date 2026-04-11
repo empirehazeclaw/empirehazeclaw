@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-11 15:04 UTC
+## Last Update: 2026-04-11 15:26 UTC
 
 ## ✅ System Overview
 | Metric | Status |
@@ -19,13 +19,19 @@
 | Gateway Auto-Recovery | ✅ 5min | Auto-restart if down |
 | Session Cleanup | ✅ DAILY | Cron daily |
 
-## 📈 Self-Improvement Sprint (2026-04-11)
+## ⚠️ EXEC TIMEOUT — KNOWN LIMITATION
+**System killt Prozesse nach ~60-90s (SIGTERM)**
+**Lösung:** Background mode (`&`) oder Cron Jobs für lange Tasks
+**Dokumentiert:** SYSTEM_TIMEOUT.md + timeout_handling skill
+
+## 📈 Self-Improvement Sprint (2026-04-11) — 85% COMPLETE
 | Feature | Status | Value |
 |---------|--------|-------|
-| Session Analyzer | ✅ | 113 Sessions |
-| Skill Library | ✅ | 5 Skills |
-| Skill Tracker | ✅ | 4 tracked |
-| Learning Coordinator Fix | ✅ | Exit 0 bei Warnings |
+| Skill Library | ✅ COMPLETE | 12 Skills (Level 1-3) |
+| Session Analyzer | ✅ | 121 Sessions |
+| Skill Tracker | ✅ | 100/100 scores |
+| Error Rate | ⚠️ 28% | Target <15% |
+| Learning Plan | ✅ | AUTONOMOUS_LEARNING_PLAN.md |
 
 ## 📊 Quick Metrics
 - Memory: `/workspace/memory/`
