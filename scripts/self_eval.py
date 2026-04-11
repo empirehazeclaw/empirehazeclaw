@@ -10,7 +10,7 @@ Usage:
 
 import json
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
@@ -102,17 +102,39 @@ def get_kg_stats():
         return {'entities': 0, 'relations': 0}
 
 def get_backup_ratio():
-    """Berechnet Backup/Commit Ratio."""
+    """Berechnet Backup/Commit Ratio.
+    
+    Fairere Berechnung:
+    - Zählt Backups von HEUTE nur
+    - Oder gestrige Backups wenn heute noch nichts
+    """
     backup_dir = WORKSPACE.parent / "backups"
     today = datetime.now().strftime("%Y%m%d")
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
     
-    backups = list(backup_dir.glob(f"backup_{today}_*.tar.gz"))
     git = get_git_stats()
     
-    if git['commits_today'] == 0:
-        return 999  # Infinite
+    # Count today's backups only
+    today_backups = list(backup_dir.glob(f"backup_{today}_*.tar.gz"))
     
-    return len(backups) / git['commits_today']
+    # If commits today, use today's backups
+    if git['commits_today'] > 0:
+        return len(today_backups) / max(git['commits_today'], 1)
+    else:
+        # No commits today, count yesterday's backups / yesterday's commits
+        yesterday_backups = list(backup_dir.glob(f"backup_{yesterday}_*.tar.gz"))
+        # Use yesterday's commits
+        result = subprocess.run(
+            ["git", "log", "--oneline", f"--since='{yesterday} 00:00:00' --until='{today} 00:00:00'"],
+            cwd=str(WORKSPACE),
+            capture_output=True,
+            text=True
+        )
+        yesterday_commits = len([c for c in result.stdout.strip().split('\n') if c])
+        
+        if yesterday_commits > 0:
+            return len(yesterday_backups) / yesterday_commits
+        return 0.0  # No commits yesterday either
 
 def get_script_stats():
     """Holt Script Statistics."""
