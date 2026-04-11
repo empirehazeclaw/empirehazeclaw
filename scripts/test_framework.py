@@ -131,6 +131,12 @@ TESTS = {
         'test_func': 'main',
         'description': 'Learning Progress Tracker'
     },
+    'token_tracker': {
+        'script': 'token_tracker.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Token Usage Tracker'
+    },
     'morning_routine': {
         'script': 'morning_routine.py',
         'type': 'import_no_args',
@@ -282,6 +288,24 @@ TESTS = {
         'type': 'import_no_args',
         'test_func': 'main',
         'description': 'Priority Filter'
+    },
+    'morning_check': {
+        'script': 'morning_check.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Morning Check'
+    },
+    'subagent_health_check': {
+        'script': 'subagent_health_check.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Subagent Health Check'
+    },
+    'token_tracker': {
+        'script': 'token_tracker.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Token Tracker'
     },
     'auto_doc': {
         'script': 'auto_doc.py',
