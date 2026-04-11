@@ -1,11 +1,11 @@
 {
   "skills": {
     "debugging": {
-      "uses": 2,
-      "successes": 2,
+      "uses": 3,
+      "successes": 3,
       "failures": 0,
       "total_duration_ms": 0,
-      "last_used": "2026-04-11T15:19:57.889361",
+      "last_used": "2026-04-11T15:20:43.854964",
       "tasks": [
         {
           "task": "Fixed Capability Evolver path bug",
@@ -14,6 +14,11 @@
         },
         {
           "task": "Error Recovery + Tool Failure Skills erstellt",
+          "outcome": "success",
+          "at": "2026-04-11"
+        },
+        {
+          "task": "Level 2 Skills fertig",
           "outcome": "success",
           "at": "2026-04-11"
         }
@@ -70,12 +75,26 @@
           "at": "2026-04-11"
         }
       ]
+    },
+    "workflow": {
+      "uses": 1,
+      "successes": 1,
+      "failures": 0,
+      "total_duration_ms": 0,
+      "last_used": "2026-04-11T15:20:43.823866",
+      "tasks": [
+        {
+          "task": "First Attempt + Problem Decomposition Skills erstellt",
+          "outcome": "success",
+          "at": "2026-04-11"
+        }
+      ]
     }
   },
   "daily": {
     "2026-04-11": {
-      "uses": 7,
-      "successes": 7,
+      "uses": 9,
+      "successes": 9,
       "failures": 0
     }
   }

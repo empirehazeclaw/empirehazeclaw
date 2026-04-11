@@ -214,14 +214,15 @@ BEFORE every task:
 |-------|--------|----------|
 | Timeout Handling | ✅ Done | HIGH |
 | Retry Loop Prevention | ✅ Done | HIGH |
-| Error Recovery | ⚠️ Basic | HIGH |
-| Tool Failure Handling | ❌ Missing | MEDIUM |
+| Error Recovery | ✅ NEW | HIGH |
+| Tool Failure Handling | ✅ NEW | HIGH |
+| Debugging Workflow | ✅ | MEDIUM |
 
 ### Level 2: Workflow Optimization (Week 2)
 | Skill | Status | Priority |
 |-------|--------|----------|
-| First-Attempt Success | ⚠️ Basic | HIGH |
-| Problem Decomposition | ⚠️ Basic | HIGH |
+| First-Attempt Success | ✅ NEW | HIGH |
+| Problem Decomposition | ✅ NEW | HIGH |
 | Verification Workflow | ❌ Missing | MEDIUM |
 
 ### Level 3: Advanced (Week 3-4)
