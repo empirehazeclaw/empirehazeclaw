@@ -11,8 +11,11 @@ from pathlib import Path
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 
-def run_cmd(cmd):
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+def run_cmd(cmd, shell=False):
+    """Run command without shell=True by default."""
+    if isinstance(cmd, str) and not shell:
+        cmd = cmd.split()
+    result = subprocess.run(cmd, shell=shell, capture_output=True, text=True)
     return result.stdout.strip(), result.returncode
 
 def main():
@@ -21,17 +24,17 @@ def main():
     print()
     
     # Git commits today
-    stdout, _ = run_cmd("git log --oneline --since='today 00:00' | wc -l")
+    stdout, _ = run_cmd("git log --oneline --since='today 00:00' | wc -l", shell=True)
     commits = int(stdout.strip()) if stdout.strip().isdigit() else 0
     print(f"📝 Commits Today: {commits}")
     
     # Git commits yesterday
-    stdout, _ = run_cmd("git log --oneline --since='yesterday 00:00' --until='today 00:00' | wc -l")
+    stdout, _ = run_cmd("git log --oneline --since='yesterday 00:00' --until='today 00:00' | wc -l", shell=True)
     yesterday = int(stdout.strip()) if stdout.strip().isdigit() else 0
     print(f"📝 Yesterday: {yesterday}")
     
     # Backup count today
-    stdout, _ = run_cmd("ls /home/clawbot/.openclaw/backups/ | grep '$(date +%Y%m%d)' | wc -l")
+    stdout, _ = run_cmd("ls /home/clawbot/.openclaw/backups/ | grep '$(date +%Y%m%d)' | wc -l", shell=True)
     backups = int(stdout.strip()) if stdout.strip().isdigit() else 0
     print(f"💾 Backups Today: {backups}")
     
