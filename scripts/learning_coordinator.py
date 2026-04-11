@@ -226,7 +226,12 @@ def load_coordinator_log():
     if COORDINATOR_LOG.exists():
         try:
             with open(COORDINATOR_LOG) as f:
-                return json.load(f)
+                data = json.load(f)
+                # Handle legacy format (no 'runs' key)
+                if 'runs' not in data:
+                    print(f"  ⚠️ Legacy log format detected, migrating...")
+                    return {"runs": [], "last_full_cycle": data.get('last_full_cycle') or data.get('timestamp')}
+                return data
         except (json.JSONDecodeError, IOError) as e:
             print(f"  ⚠️ Corrupted log file, resetting: {e}")
             return {"runs": [], "last_full_cycle": None}
@@ -259,49 +264,73 @@ def run_full_cycle():
     log = load_coordinator_log()
     start_time = datetime.now()
     
-    # Phase 1: System Check
+    # Phase 1: System Check (MUST be sequential - base check)
     print("📊 PHASE 1: System Check")
     ok, issues = check_and_act()
     log_run(log, "system_check", ok, str(issues))
     print()
     
-    # Phase 2: Research
-    print("📊 PHASE 2: Innovation Research")
-    research_ok = run_innovation_research()
+    # Phases 2, 3, 4: Run PARALLEL for speed
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    
+    def run_research_task():
+        print("📊 PHASE 2: Innovation Research")
+        return ("research", run_innovation_research())
+    
+    def run_quality_task():
+        print("📊 PHASE 3: Quality Gates")
+        return ("quality", run_quality_gates())
+    
+    def run_learning_task():
+        print("📊 PHASE 4: Learning Tracker")
+        try:
+            result = subprocess.run(
+                ['python3', str(SCRIPTS_DIR / 'learning_tracker.py')],
+                capture_output=True,
+                text=True,
+                timeout=30,
+                cwd=str(WORKSPACE)
+            )
+            print(f"  ✅ Learning tracked")
+            return ("learning", True)
+        except:
+            print(f"  ⚠️ Learning tracking failed")
+            return ("learning", False)
+    
+    print("🚀 PHASES 2-4: Running parallel...")
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = [
+            executor.submit(run_research_task),
+            executor.submit(run_quality_task),
+            executor.submit(run_learning_task)
+        ]
+        
+        results = {}
+        for future in as_completed(futures):
+            phase, result_val = future.result()
+            results[phase] = result_val
+    
+    # Log results (extract has_warnings from quality result)
+    research_ok = results.get("research", (False, False))[0] if isinstance(results.get("research"), tuple) else results.get("research", False)
+    quality_result = results.get("quality", (False, False))
+    quality_ok = quality_result[0] if isinstance(quality_result, tuple) else quality_result
+    has_warnings = quality_result[1] if isinstance(quality_result, tuple) else False
+    learning_ok = results.get("learning", False)
+    
     log_run(log, "research", research_ok)
-    print()
-    
-    # Phase 3: Quality Gates
-    print("📊 PHASE 3: Quality Gates")
-    quality_ok, has_warnings = run_quality_gates()
     log_run(log, "quality", quality_ok, f"warnings={has_warnings}")
-    print()
-    
-    # Phase 4: Learning Tracking
-    print("📊 PHASE 4: Learning Tracker")
-    try:
-        result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'learning_tracker.py')],
-            capture_output=True,
-            text=True,
-            timeout=30,
-            cwd=str(WORKSPACE)
-        )
-        print(f"  ✅ Learning tracked")
-        log_run(log, "learning", True)
-    except:
-        print(f"  ⚠️ Learning tracking failed")
-        log_run(log, "learning", False)
+    log_run(log, "learning", learning_ok)
     print()
     
     # Summary
     duration = (datetime.now() - start_time).total_seconds()
     print("=" * 60)
     print("📊 CYCLE SUMMARY")
-    print(f"   Duration: {duration:.1f}s")
+    print(f"   Duration: {duration:.1f}s (parallelized!)")
     print(f"   System Check: {'✅' if ok else '⚠️'}")
     print(f"   Research: {'✅' if research_ok else '⚠️'}")
     print(f"   Quality: {'✅' if quality_ok else '⚠️'}{' (with warnings)' if has_warnings else ''}")
+    print(f"   Learning: {'✅' if learning_ok else '⚠️'}")
     print("=" * 60)
     
     save_coordinator_log(log)
