@@ -221,9 +221,11 @@ BEFORE every task:
 ### Level 2: Workflow Optimization (Week 2)
 | Skill | Status | Priority |
 |-------|--------|----------|
-| First-Attempt Success | ✅ | HIGH |
-| Problem Decomposition | ✅ | HIGH |
-| Verification Workflow | ✅ NEW | MEDIUM |
+| First-Attempt Success | ✅ Done | HIGH |
+| Problem Decomposition | ✅ Done | HIGH |
+| Verification Workflow | ✅ Done | MEDIUM |
+| Coding Workflow | ✅ Done | MEDIUM |
+| Research Workflow | ✅ Done | MEDIUM |
 
 ### Level 3: Advanced (Week 3-4)
 | Skill | Status | Priority |
