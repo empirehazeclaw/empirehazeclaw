@@ -137,6 +137,18 @@ TESTS = {
         'test_func': 'main',
         'description': 'Token Usage Tracker'
     },
+    'innovation_research': {
+        'script': 'innovation_research.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Innovation Research'
+    },
+    'skill_creator': {
+        'script': 'skill_creator.py',
+        'type': 'import_no_args',
+        'test_func': 'main',
+        'description': 'Skill Creator'
+    },
     'morning_routine': {
         'script': 'morning_routine.py',
         'type': 'import_no_args',

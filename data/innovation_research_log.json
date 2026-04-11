@@ -1,0 +1,27 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-04-11T09:46:01.297488",
+      "mode": "daily",
+      "queries": 3,
+      "results": [
+        {
+          "query": "AI agent self-improvement patterns 2026",
+          "result": "Search failed: [openclaw] Failed to start CLI: Error: The `openclaw search` command is unavailable because `plugins.allow` excludes \"search\". Add \"search\" to `plugins.allow` if you want that bundled plugin CLI surfa",
+          "timestamp": "2026-04-11T09:45:27.377069"
+        },
+        {
+          "query": "OpenSource AI agent innovations",
+          "result": "Search failed: [openclaw] Failed to start CLI: Error: The `openclaw search` command is unavailable because `plugins.allow` excludes \"search\". Add \"search\" to `plugins.allow` if you want that bundled plugin CLI surfa",
+          "timestamp": "2026-04-11T09:45:44.825541"
+        },
+        {
+          "query": "LLM token efficiency techniques",
+          "result": "Search failed: [openclaw] Failed to start CLI: Error: The `openclaw search` command is unavailable because `plugins.allow` excludes \"search\". Add \"search\" to `plugins.allow` if you want that bundled plugin CLI surfa",
+          "timestamp": "2026-04-11T09:46:01.297391"
+        }
+      ]
+    }
+  ],
+  "last_full_research": null
+}
