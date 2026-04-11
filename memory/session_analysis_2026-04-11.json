@@ -1,11 +1,11 @@
 {
   "stats": {
-    "total_sessions": 0,
-    "successful": 0,
-    "errors": 0,
-    "neutral": 0,
-    "total_friction": 0,
-    "categories": {}
+    "total": 113,
+    "success": 24,
+    "error": 20,
+    "neutral": 69,
+    "total_friction": 81
   },
-  "insights": []
+  "sessions": 113,
+  "date": "2026-04-11T14:58:27.714291"
 }
