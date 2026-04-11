@@ -72,7 +72,7 @@ def calculate_proximity_score(query_terms: List[str], content: str) -> float:
     
     # Normalize: closer = higher score (max distance ~1000 chars)
     score = max(0, 1 - (avg_distance / 1000))
-    return score
+    return min(score, 1.0)  # Cap at 1.0
 
 
 def has_exact_phrase_match(query: str, content: str) -> bool:
@@ -222,6 +222,11 @@ def rerank(query: str, results: List[Dict], weights: Dict = None) -> List[Dict]:
         # Normalize original to 0-1 range first
         normalized_orig = min(original_score, 1.0)
         
+        # Cap individual signals at 1.0
+        proximity = min(proximity, 1.0)
+        structural = min(structural, 1.0)
+        title = min(title, 1.0)
+        
         final_score = (
             normalized_orig * weights['original'] +
             proximity * weights['proximity'] +
@@ -230,7 +235,7 @@ def rerank(query: str, results: List[Dict], weights: Dict = None) -> List[Dict]:
             title * weights['title']
         )
         
-        # Cap at 1.0
+        # Cap final at 1.0
         final_score = min(final_score, 1.0)
         
         # Add rerank signals to result

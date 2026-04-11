@@ -278,13 +278,17 @@ def hybrid_search(query: str, limit: int = 5, days: int = 30) -> List[Dict]:
     if RERANKER_AVAILABLE:
         for r in output:
             if r['type'] == 'file':
-                filepath = WORKSPACE / r['source']
+                # Fix path: remove leading slash to make it relative
+                rel_path = r['source'].lstrip('/')
+                filepath = WORKSPACE / rel_path
                 if filepath.exists():
                     try:
                         with open(filepath) as f:
                             r['content'] = f.read()[:2000]  # First 2000 chars
                     except:
                         r['content'] = r.get('snippet', '')
+                else:
+                    r['content'] = r.get('snippet', '')
             else:
                 # For entities, use empty content (reranker will skip)
                 r['content'] = ''
