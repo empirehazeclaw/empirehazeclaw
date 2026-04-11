@@ -204,3 +204,29 @@ ls *.md | grep -E "AGENT|Consolidation|INVENTORY|ROI|AUDIT|BACKUP|CHAOS|FINAL|IN
 *Erstellt: 2026-04-11 11:12 UTC*
 *Status: INVENTORY COMPLETE*
 *Next: Aufräumen + Struktur*
+---
+
+## 🔐 SECRETS LOCATION (CRITICAL)
+
+**Path:** `/home/clawbot/.openclaw/secrets/secrets.env`
+
+### Enthaltende Keys:
+| Service | Key Name | Status |
+|---------|----------|--------|
+| Minimax | MINIMAX_API_KEY | ✅ ACTIVE |
+| OpenRouter | OPENROUTER_API_KEY | ✅ |
+| GitHub | GITHUB_PAT, GITHUB_API_TOKEN | ✅ |
+| Google | GOOGLE_OAUTH_*, GEMINI_API_KEY | ✅ |
+| AWS | AWS_ACCESS_KEY, AWS_SECRET_KEY | ✅ |
+| OpenAI | OPENAI_API_KEY | ✅ |
+| Anthropic | ANTHROPIC_API_KEY | ✅ |
+| X/Twitter | X_CONSUMER_*, X_ACCESS_TOKEN_* | ✅ |
+| Und 20+ weitere | - | ✅ |
+
+### Security:
+- **NIE in Git** (siehe .gitignore)
+- **NIE in openclaw.json** (nur redacted)
+- Backup: secrets.env.bak
+
+### Dokumente:
+- `secrets/SECURITY_ROTATION.md` - Key Rotation Status

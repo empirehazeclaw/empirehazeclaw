@@ -1,11 +1,11 @@
-# System Analysis TODO — 2026-04-11 11:22 UTC
+# System Analysis TODO — 2026-04-11 11:25 UTC
 
 **Status:** AKTIV - Master hat bestätigt
-**Letztes Update:** 2026-04-11 11:22 UTC
+**Letztes Update:** 2026-04-11 11:25 UTC
 
 ---
 
-## ✅ COMPLETED TASKS (7/13)
+## ✅ COMPLETED TASKS (10/13)
 
 | Task | Status | Notes |
 |------|--------|-------|
@@ -18,27 +18,11 @@
 | MCP Server | ✅ DONE | mcp_server.py created, 8 tools |
 | Workspace Cleanup | ✅ DONE | 90 → 17 files, 73 archived |
 | System Documentation | ✅ DONE | Architecture, Inventory, Cron Index |
+| **Secrets/API Key finden** | ✅ DONE | Keys in secrets/secrets.env |
 
 ---
 
 ## 🔴 HIGH PRIORITY — START NOW
-
-### 1. Secrets/API Key Standort finden ⭐
-**Problem:** Wir wissen nicht wo der Minimax API Key ist
-**Warum:** System läuft, aber Key-Location unbekannt
-
-```
-TASK:
-1. Prüfe: openclaw config show
-2. Prüfe: env | grep MINIMAX
-3. Prüfe: ~/.openclaw/agents/*/auth-profiles.json
-4. Dokumentiere: Wo ist der Key?
-5. Falls Key fehlt: Master informieren
-```
-
-**Status:** ⏳ OFFEN | **Priorität:** 1
-
----
 
 ### 2. Memory Reranker ⭐
 **Quelle:** MEMORY_RERANKING_PATTERNS.md
@@ -51,7 +35,7 @@ TASK:
 3. Integration in Coordinator
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 2 | **Time:** ~3h
+**Status:** ⏳ OFFEN | **Priorität:** 1 | **Time:** ~3h
 
 ---
 
@@ -68,7 +52,7 @@ TASK:
 4. README.md für Scripts erstellen
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 3 | **Time:** ~1h
+**Status:** ⏳ OFFEN | **Priorität:** 2 | **Time:** ~1h
 
 ---
 
@@ -78,12 +62,12 @@ TASK:
 ```
 TASK:
 1. Alle Skills scannen
-2. Nutzung analysieren (metriken?)
+2. Nutzung analysieren
 3. Archivieren was nicht genutzt wird
 4. Skill Index erstellen
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 4 | **Time:** ~1h
+**Status:** ⏳ OFFEN | **Priorität:** 3 | **Time:** ~1h
 
 ---
 
@@ -95,10 +79,10 @@ TASK:
 1. Alle data/*.json Files inventarisieren
 2. logs/ Struktur analysieren
 3. Rotation/Growth management prüfen
-4. Doku erstellen: data_documentation.md
+4. Doku erstellen
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 5 | **Time:** ~30min
+**Status:** ⏳ OFFEN | **Priorität:** 4 | **Time:** ~30min
 
 ---
 
@@ -113,7 +97,7 @@ TASK:
    - Schlägt billigere Modelle vor
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 6 | **Time:** ~2h
+**Status:** ⏳ OFFEN | **Priorität:** 5 | **Time:** ~2h
 
 ---
 
@@ -127,7 +111,7 @@ TASK:
    - Erkennt fehlende Skills
 ```
 
-**Status:** ⏳ OFFEN | **Priorität:** 7 | **Time:** ~2h
+**Status:** ⏳ OFFEN | **Priorität:** 6 | **Time:** ~2h
 
 ---
 
@@ -135,39 +119,24 @@ TASK:
 
 ### 8. MCP Server Config
 **Status:** ⏳ Master braucht Config-Zugriff
-```
-Master muss mcpServers in openclaw.json eintragen
-```
 
 ---
 
 ### 9. CEO Briefing Delivery Fix
 **Status:** ⚠️ 2 consecutive errors
 
-```
-TASK:
-1. Prüfe warum "Message failed"
-2. Fix delivery config
-```
-
 ---
 
 ### 10. Nightly Dreaming Fix
 **Status:** ⚠️ Discord not configured
 
-```
-TASK:
-1. Delivery channel: Discord → Telegram
-2. Testen
-```
-
 ---
 
-## 📊 VOLLSTÄNDIGE TASK LIST (20 Tasks)
+## 📊 VOLLSTÄNDIGE TASK LIST
 
 | # | Task | Priority | Status |
 |---|------|----------|--------|
-| 1 | Secrets/API Key finden | 🔴 HIGH | ⏳ OFFEN |
+| 1 | Secrets/API Key finden | ✅ DONE | secrets/secrets.env |
 | 2 | Memory Reranker | 🔴 HIGH | ⏳ OFFEN |
 | 3 | Scripts Tiefe-Analyse | 🟡 MED | ⏳ OFFEN |
 | 4 | Skills Inventory | 🟡 MED | ⏳ OFFEN |
@@ -177,50 +146,41 @@ TASK:
 | 8 | MCP Config | 🔴 HIGH | ⏳ OFFEN |
 | 9 | CEO Briefing Fix | 🟡 MED | ⏳ OFFEN |
 | 10 | Nightly Dreaming Fix | 🟡 MED | ⏳ OFFEN |
-| 11-20 | Weitere (siehe unten) | 🟢 LOW | ⏳ OFFEN |
-
----
-
-## 📋 WEITERE OFFENE TASKS
-
-- Cron Schedule optimieren
-- Backup Verification verbessern
-- Health Alert System verbessern
-- Telegram Response Tracking
-- OpenRouter Deprecation vermeiden (OpenRouter Key fehlt)
 
 ---
 
 ## 🎯 EXECUTION PLAN
 
-**Phase 1 (NOW):**
-1. Secrets/API Key finden ← START
-2. Memory Reranker
+**Phase 1 (DONE):**
+1. ✅ Gateway Auto-Recovery
+2. ✅ Performance Trends
+3. ✅ auto_doc.py
+4. ✅ session_cleanup.py
+5. ✅ git_maintenance.py
+6. ✅ Workspace Cleanup
+7. ✅ Secrets Analysis
 
-**Phase 2:**
-3. Scripts Tiefe-Analyse
-4. Skills Inventory
-
-**Phase 3:**
-5. Data/Logs Dokumentation
-6. CEO Briefing Fix
-7. Nightly Dreaming Fix
-
-**Phase 4:**
-8. Cost Advisor
-9. Skill Gap Analysis
+**Phase 2 (NOW):**
+8. Memory Reranker ← START
+9. Scripts Tiefe-Analyse
+10. Skills Inventory
 
 ---
 
-## 📊 FORTSCHRITT
+## 📋 SECRETS DOKUMENTATION (FOUND!)
 
-- Completed: **9 Tasks**
-- In Progress: **0 Tasks**
-- Open: **~20 Tasks**
+**Location:** `/home/clawbot/.openclaw/secrets/secrets.env`
+
+**Enthält:**
+- MINIMAX_API_KEY ✅
+- OPENROUTER_API_KEY ✅
+- GitHub, Google, AWS, etc.
+- 30+ API Keys total
+
+**NIE in openclaw.json committed!**
 
 ---
 
-*Letztes Update: 2026-04-11 11:22 UTC*
+*Letztes Update: 2026-04-11 11:25 UTC*
 *Autonomous Processing: YES*
 *Master: Nico (bestätigt)*
-*Focus: System Analysis + Memory Reranker*
