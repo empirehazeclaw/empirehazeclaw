@@ -713,6 +713,36 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 284
+    },
+    {
+      "timestamp": "2026-04-12T13:24:28.779309+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 287
+    },
+    {
+      "timestamp": "2026-04-12T13:24:33.951779+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 289
+    },
+    {
+      "timestamp": "2026-04-12T13:24:39.132240+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 291
     }
   ],
   "success_patterns": [
@@ -1184,6 +1214,45 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-12T12:21:42.173846+00:00",
       "confidence": 0.728659637965649
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:24:28.779309+00:00",
+      "confidence": 0.8626115703727327
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:24:33.951779+00:00",
+      "confidence": 0.9073738099485695
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:24:39.132240+00:00",
+      "confidence": 0.7077592814974043
     }
   ],
   "error_fixes": [

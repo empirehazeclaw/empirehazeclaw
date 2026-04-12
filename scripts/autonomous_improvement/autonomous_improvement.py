@@ -160,6 +160,7 @@ def generate_hypothesis(metrics: dict) -> list:
     error_rate = metrics.get("error_rate", 100)
     kg_entities = metrics.get("kg_entities", 0)
     skills_count = metrics.get("skills_count", 0)
+    scripts_without_timeout = metrics.get("scripts_without_timeout", 0)
     
     log("Generating improvement hypotheses...", "STEP")
     
@@ -193,6 +194,28 @@ def generate_hypothesis(metrics: dict) -> list:
                 "Convert to background execution",
                 "Add cron scheduling"
             ]
+        })
+    elif error_rate > 10:
+        hypotheses.append({
+            "id": f"hyp_{datetime.now().strftime('%H%M%S')}_1",
+            "category": "error_reduction",
+            "priority": "HIGH",
+            "description": "Reduce error rate below 10%",
+            "approach": "Target remaining high-frequency errors",
+            "expected_impact": 5,
+            "effort": "MEDIUM",
+            "methods": ["Analyze recent error patterns", "Fix root causes"]
+        })
+    elif error_rate > 5:
+        hypotheses.append({
+            "id": f"hyp_{datetime.now().strftime('%H%M%S')}_1",
+            "category": "error_reduction",
+            "priority": "MEDIUM",
+            "description": "Push error rate below 5%",
+            "approach": "Fine-tune error handling",
+            "expected_impact": 3,
+            "effort": "LOW",
+            "methods": ["Review remaining errors", "Apply targeted fixes"]
         })
     
     # Knowledge graph hypotheses
@@ -229,7 +252,25 @@ def generate_hypothesis(metrics: dict) -> list:
             ]
         })
     
-    # Generic improvement hypotheses
+    # Scripts without timeout — high priority if any exist
+    if scripts_without_timeout > 0:
+        hypotheses.append({
+            "id": f"hyp_{datetime.now().strftime('%H%M%S')}_timeout",
+            "category": "efficiency",
+            "priority": "HIGH",
+            "description": f"Add timeout to {scripts_without_timeout} scripts without timeout protection",
+            "approach": "Add timeout= parameter to prevent hung processes",
+            "expected_impact": 5,
+            "effort": "MEDIUM",
+            "methods": [
+                "Find scripts with subprocess.run/call without timeout",
+                "Add timeout=30 to prevent hanging",
+                "Test each modified script"
+            ]
+        })
+    
+    # Generic improvement hypotheses — ROTATE THROUGH THESE
+    # efficiency: high impact but MEDIUM priority
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_5",
         "category": "efficiency",
@@ -281,7 +322,7 @@ def generate_hypothesis(metrics: dict) -> list:
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_8",
         "category": "safety",
-        "priority": "HIGH",
+        "priority": "MEDIUM",  # CHANGED from HIGH to MEDIUM to allow rotation
         "description": "Prevent destructive operations",
         "approach": "Add safeguards to dangerous commands",
         "expected_impact": 10,
@@ -318,12 +359,14 @@ def generate_hypothesis(metrics: dict) -> list:
         ]
     })
     
-    # Shuffle to avoid always picking same hypothesis
-    random.shuffle(hypotheses)
-    
     # Sort by priority and expected impact
+    # But add SUBTLE randomness for same-priority items to avoid always same order
     priority_order = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
-    hypotheses.sort(key=lambda x: (priority_order.get(x["priority"], 2), -x["expected_impact"]))
+    hypotheses.sort(key=lambda x: (
+        priority_order.get(x["priority"], 2), 
+        -x["expected_impact"],
+        random.random() * 0.001  # tiny random factor for same priority+impact
+    ))
     
     return hypotheses[:7]  # Return top 7 (more variety)
 
