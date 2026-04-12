@@ -1,498 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 2,
-      "timestamp": "2026-04-11T23:22:37.717563",
-      "metrics_before": {
-        "error_rate": 1.48,
-        "sessions_today": 302,
-        "friction_events": 0,
-        "kg_entities": 209,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T23:22:37.717575",
-        "session_count": 308
-      },
-      "hypothesis": {
-        "id": "hyp_232237_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_232237_8",
-        "timestamp": "2026-04-11T23:22:37.756760",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 209,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:22:37.756767",
-          "session_count": 308
-        },
-        "metrics_after": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 209,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:22:37.770181",
-          "session_count": 308
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-11T23:22:42.793153",
-      "metrics_before": {
-        "error_rate": 1.48,
-        "sessions_today": 302,
-        "friction_events": 0,
-        "kg_entities": 209,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T23:22:42.793162",
-        "session_count": 308
-      },
-      "hypothesis": {
-        "id": "hyp_232242_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_232242_8",
-        "timestamp": "2026-04-11T23:22:42.825011",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 209,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:22:42.825019",
-          "session_count": 308
-        },
-        "metrics_after": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 209,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:22:42.845503",
-          "session_count": 308
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-11T23:23:30.978027",
-      "metrics_before": {
-        "error_rate": 1.48,
-        "sessions_today": 302,
-        "friction_events": 0,
-        "kg_entities": 210,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T23:23:30.978032",
-        "session_count": 308
-      },
-      "hypothesis": {
-        "id": "hyp_232331_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_232331_8",
-        "timestamp": "2026-04-11T23:23:31.015056",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 210,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:31.015063",
-          "session_count": 308
-        },
-        "metrics_after": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 210,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:31.029975",
-          "session_count": 308
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 2,
-      "timestamp": "2026-04-11T23:23:36.087010",
-      "metrics_before": {
-        "error_rate": 1.48,
-        "sessions_today": 302,
-        "friction_events": 0,
-        "kg_entities": 211,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T23:23:36.087022",
-        "session_count": 308
-      },
-      "hypothesis": {
-        "id": "hyp_232336_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_232336_8",
-        "timestamp": "2026-04-11T23:23:36.119879",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 211,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:36.119887",
-          "session_count": 308
-        },
-        "metrics_after": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 211,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:36.135248",
-          "session_count": 308
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-11T23:23:41.192029",
-      "metrics_before": {
-        "error_rate": 1.48,
-        "sessions_today": 302,
-        "friction_events": 0,
-        "kg_entities": 212,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T23:23:41.192040",
-        "session_count": 308
-      },
-      "hypothesis": {
-        "id": "hyp_232341_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_232341_8",
-        "timestamp": "2026-04-11T23:23:41.225060",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 212,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:41.225065",
-          "session_count": 308
-        },
-        "metrics_after": {
-          "error_rate": 1.48,
-          "sessions_today": 302,
-          "friction_events": 0,
-          "kg_entities": 212,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T23:23:41.242012",
-          "session_count": 308
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "timestamp": "2026-04-12T00:05:08.892854",
-      "improvements": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 2
-    },
-    {
-      "cycle": 1,
-      "timestamp": "2026-04-12T00:21:29.924518",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 12,
-        "friction_events": 0,
-        "kg_entities": 215,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T00:21:29.924525",
-        "session_count": 327
-      },
-      "hypothesis": {
-        "id": "hyp_002129_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_002129_8",
-        "timestamp": "2026-04-12T00:21:29.959136",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 215,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:29.959142",
-          "session_count": 327
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 215,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:29.973244",
-          "session_count": 327
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 2,
-      "timestamp": "2026-04-12T00:21:35.027720",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 12,
-        "friction_events": 0,
-        "kg_entities": 216,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T00:21:35.027731",
-        "session_count": 327
-      },
-      "hypothesis": {
-        "id": "hyp_002135_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_002135_8",
-        "timestamp": "2026-04-12T00:21:35.121387",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 216,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:35.121395",
-          "session_count": 327
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 216,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:35.156199",
-          "session_count": 327
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-12T00:21:40.236469",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 12,
-        "friction_events": 0,
-        "kg_entities": 217,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T00:21:40.236477",
-        "session_count": 327
-      },
-      "hypothesis": {
-        "id": "hyp_002140_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_002140_8",
-        "timestamp": "2026-04-12T00:21:40.265949",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 217,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:40.265956",
-          "session_count": 327
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 12,
-          "friction_events": 0,
-          "kg_entities": 217,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T00:21:40.279782",
-          "session_count": 327
-        },
-        "actual_impact": 0,
-        "change_made": null,
-        "error": null
-      },
-      "kept": false
-    },
-    {
       "timestamp": "2026-04-12T01:05:36.153369",
       "improvements": [
         {
@@ -2770,14 +2278,185 @@
       "description": "Kompletter \u00dcberblick \u00fcber alle System-Dokumentation (102 Files, Score 72/100)",
       "impact": "medium",
       "status": "completed"
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T12:21:31.722978",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 219,
+        "friction_events": 0,
+        "kg_entities": 278,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T12:21:31.722982",
+        "session_count": 477
+      },
+      "hypothesis": {
+        "id": "hyp_122131_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_122131_8",
+        "timestamp": "2026-04-12T12:21:31.758009",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 278,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:31.758017",
+          "session_count": 477
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 279,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:31.803959",
+          "session_count": 477
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T12:21:36.857971",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 219,
+        "friction_events": 0,
+        "kg_entities": 280,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T12:21:36.857982",
+        "session_count": 477
+      },
+      "hypothesis": {
+        "id": "hyp_122136_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_122136_8",
+        "timestamp": "2026-04-12T12:21:36.902881",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 280,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:36.902889",
+          "session_count": 477
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 281,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:36.975111",
+          "session_count": 477
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T12:21:42.053827",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 219,
+        "friction_events": 0,
+        "kg_entities": 282,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T12:21:42.053838",
+        "session_count": 477
+      },
+      "hypothesis": {
+        "id": "hyp_122142_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_122142_8",
+        "timestamp": "2026-04-12T12:21:42.090685",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 282,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:42.090691",
+          "session_count": 477
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 219,
+          "friction_events": 0,
+          "kg_entities": 283,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T12:21:42.145049",
+          "session_count": 477
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 81,
-    "successful": 44,
+    "total": 84,
+    "successful": 47,
     "failed": 37,
-    "current_streak": 21,
-    "best_streak": 21
+    "current_streak": 24,
+    "best_streak": 24
   }
 }

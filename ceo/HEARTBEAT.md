@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-12 09:03 UTC
+## Last Update: 2026-04-12 12:03 UTC
 
 ## 📅 WOCHE 1 GESTARTET (2026-04-13 bis 2026-04-19)
 
@@ -81,7 +81,7 @@
 
 ## 📊 Current Status
 ```
-Gateway:     ✅ Healthy
+Gateway:     ✅ Healthy (RPC probe: ok)
 Error Rate:  ✅ ~1.4% (target: <1%)
 KG:          ✅ 254 entities, 523 relations
 Memory:      ✅ Clean structure
