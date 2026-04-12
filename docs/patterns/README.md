@@ -1,78 +1,89 @@
-# 🧠 Skill Library — Sir HazeClaw
+# 🎨 Pattern Library
 
-## 📚 Skills Index (12 Skills)
-
-### 🔧 Level 1: Error Handling ✅
-| Skill | Created | Priority |
-|-------|---------|----------|
-| timeout_handling | 2026-04-11 | HIGH |
-| retry_loop_prevention | 2026-04-11 | HIGH |
-| error_recovery | 2026-04-11 | HIGH |
-| tool_failure_handling | 2026-04-11 | HIGH |
-| debugging_workflow | 2026-04-11 | MEDIUM |
-
-### 🔄 Level 2: Workflow Optimization ✅
-| Skill | Created | Priority |
-|-------|---------|----------|
-| first_attempt_success | 2026-04-11 | HIGH |
-| problem_decomposition | 2026-04-11 | HIGH |
-| verification_workflow | 2026-04-11 | MEDIUM |
-| coding_workflow | 2026-04-11 | MEDIUM |
-| research_workflow | 2026-04-11 | MEDIUM |
-
-### 📖 Level 3: Advanced ✅
-| Skill | Created | Priority |
-|-------|---------|----------|
-| autonomous_improvement | 2026-04-11 | HIGH |
-| self_evaluation | 2026-04-11 | MEDIUM |
+**Purpose:** Reusable patterns for Sir HazeClaw operations
+**Location:** `/workspace/docs/patterns/`
+**Count:** 27 patterns
 
 ---
 
-## 🎯 Usage
+## 📊 Pattern Categories
 
-```bash
-# Pattern extrahieren
-python3 scripts/pattern_extractor.py \
-    --task "Was ich getan habe" \
-    --outcome "✅ Erfolg" \
-    --category "workflow"
+### 🔄 Core Loops
+| Pattern | File | Purpose |
+|---------|------|---------|
+| **Self-Healing Pattern** | `self_healing_pattern.md` | Auto-recovery from failures |
+| **Autonomous Improvement** | `autonomous_improvement.md` | Continuous learning loop |
+| **Loop Detection** | `loop_detection.md` | Prevent infinite loops |
 
-# Skill Metrics
-python3 scripts/skill_metrics.py
-python3 scripts/skill_tracker.py --report
-```
+### 🛡️ Error Handling
+| Pattern | File | Purpose |
+|---------|------|---------|
+| **Error Recovery** | `error_recovery.md` | Graceful error handling |
+| **Retry Loop Prevention** | `retry_loop_prevention.md` | Avoid retry storms |
+| **Tool Failure Handling** | `tool_failure_handling.md` | Handle tool failures |
+
+### ⚡ Performance
+| Pattern | File | Purpose |
+|---------|------|---------|
+| **Timeout Handling** | `timeout_handling.md` | Timeout management |
+| **Token Optimization** | `token_optimization.md` | Reduce token usage |
+| **First Attempt Success** | `first_attempt_success.md` | Reduce retries |
+| **Workflow Efficiency** | `workflow_efficiency.md` | Optimize workflows |
+
+### 🔍 Quality & Verification
+| Pattern | File | Purpose |
+|---------|------|---------|
+| **Path Verification** | `path_verification.md` | Verify file paths |
+| **Verification Workflow** | `verification_workflow.md` | Verify results |
+| **Self-Evaluation** | `self_evaluation.md` | Self-assessment |
+| **Self-Correction** | `self_correction.md` | Self-correct errors |
+
+### 🔧 Operations
+| Pattern | File | Purpose |
+|---------|------|---------|
+| **Agentic Loop Architecture** | `agentic_loop_architecture.md` | Multi-agent loops |
+| **Debugging Workflow** | `debugging_workflow.md` | Systematic debugging |
+| **Research Workflow** | `research_workflow.md` | Research methodology |
+| **Coding Workflow** | `coding_workflow.md` | Code development |
+| **Problem Decomposition** | `problem_decomposition.md` | Break down problems |
+| **Prompt Efficiency** | `prompt_efficiency.md` | Optimize prompts |
+| **HITL Pattern** | `hitl_pattern.md` | Human-in-the-loop |
+| **Todo Manager** | `todo_manager.md` | Task management |
+| **Performance Dashboard** | `performance_dashboard.md` | Monitor metrics |
 
 ---
 
-## 📊 Skill Scoreboard (LIVE)
+## 🎯 Most Important Patterns
 
-| Skill | Score | Uses | Success |
-|-------|-------|------|---------|
-| debugging | 100/100 | 3 | 100% |
-| coding | 100/100 | 1 | 100% |
-| research | 100/100 | 2 | 100% |
-| automation | 100/100 | 2 | 100% |
-| workflow | 100/100 | 2 | 100% |
-| learning | 100/100 | 1 | 100% |
+### For Daily Operations
+1. **Self-Healing Pattern** — System recovery
+2. **Error Recovery** — Graceful degradation
+3. **Loop Detection** — Prevent resource waste
 
-**Today:** 11 uses, 100% success rate
-
----
-
-## 📈 Learning Progress
-
-### Level 1: Error Handling
-- [x] 4/5 Skills DONE
-- [ ] Tool Failure Handling → already DONE ✅
-
-### Level 2: Workflow
-- [x] 5/5 Skills DONE
-
-### Level 3: Advanced
-- [x] 2/3 Skills DONE
-
-**Total: 11/13 Skills (85%)**
+### For Learning
+1. **Autonomous Improvement** — Continuous improvement
+2. **Self-Evaluation** — Assess own performance
+3. **Research Workflow** — Systematic research
 
 ---
 
-*Last Updated: 2026-04-11 15:20 UTC*
+## 📝 Adding New Patterns
+
+When creating a new pattern:
+1. Create file in `docs/patterns/`
+2. Use format: `pattern_name.md`
+3. Include: Purpose, Implementation, Example
+4. Add entry to this README
+
+---
+
+## 🔗 Related Documentation
+
+- **[SYSTEM_ARCHITECTURE.md](SYSTEM_ARCHITECTURE.md)** — System context
+- **[CONSOLIDATION_PLAN.md](CONSOLIDATION_PLAN.md)** — Active improvements
+- **Skills:** `/workspace/skills/` — Implementations
+
+---
+
+*Pattern library maintained by Sir HazeClaw*
+*Patterns extracted from operational experience*
