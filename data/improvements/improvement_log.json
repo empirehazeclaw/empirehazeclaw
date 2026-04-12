@@ -1,778 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 2,
-      "timestamp": "2026-04-11T20:21:36.854378",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 248,
-        "friction_events": 0,
-        "kg_entities": 245,
-        "skills_count": 25,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T20:21:36.854398",
-        "session_count": 258
-      },
-      "hypothesis": {
-        "id": "hyp_202136_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_202136_2",
-        "timestamp": "2026-04-11T20:21:36.898122",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 245,
-          "skills_count": 25,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T20:21:36.898129",
-          "session_count": 258
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 246,
-          "skills_count": 25,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T20:21:37.026922",
-          "session_count": 258
-        },
-        "actual_impact": 2,
-        "change_made": "kg_added:1",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-11T20:21:42.112542",
-      "metrics_before": {
-        "error_rate": 26.6,
-        "sessions_today": 248,
-        "friction_events": 0,
-        "kg_entities": 247,
-        "skills_count": 25,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-11T20:21:42.112550",
-        "session_count": 258
-      },
-      "hypothesis": {
-        "id": "hyp_202142_2",
-        "category": "error_reduction",
-        "priority": "HIGH",
-        "description": "Fix timeout-related errors (61% of all errors)",
-        "approach": "Use background_or_cron for tasks >60s",
-        "expected_impact": 15,
-        "effort": "LOW",
-        "methods": [
-          "Identify >60s tasks in recent sessions",
-          "Convert to background execution",
-          "Add cron scheduling"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_202142_2",
-        "timestamp": "2026-04-11T20:21:42.149826",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 26.6,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 247,
-          "skills_count": 25,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T20:21:42.149833",
-          "session_count": 258
-        },
-        "metrics_after": {
-          "error_rate": 26.6,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 248,
-          "skills_count": 25,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-11T20:21:42.292070",
-          "session_count": 258
-        },
-        "actual_impact": 2,
-        "change_made": "kg_added:1",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "timestamp": "2026-04-11T20:23:17.433384",
-      "improvements": [
-        {
-          "title": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "expected_impact": "HIGH",
-          "reason": "Error rate: 26.6%",
-          "source": "issue"
-        },
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "success": true,
-          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:23 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
-          "validated": true
-        },
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u274c error_reduction: Failed (will try different approach) | \u2705 quality_improve: +50% impr",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:38:09.379338",
-      "improvements": [
-        {
-          "title": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "expected_impact": "HIGH",
-          "reason": "Error rate: 26.6%",
-          "source": "issue"
-        },
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "success": true,
-          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:38 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
-          "validated": true
-        },
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u274c error_reduction: Failed (will try different appr",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:43:27.578919",
-      "improvements": [
-        {
-          "title": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "expected_impact": "HIGH",
-          "reason": "Error rate: 26.6%",
-          "source": "issue"
-        },
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Error Rate Reduction",
-          "script": "error_reducer.py",
-          "success": true,
-          "output": "\ud83d\udd0d ERROR REDUCER \u2014 Automated Error Reduction\n   2026-04-11 20:43 UTC\n\n\ud83d\udd0d ERROR ANALYSIS\n==============",
-          "validated": true
-        },
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:49:30.632268",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:52:23.774397",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:54:52.608966",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:54:59.390491",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:55:06.635536",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:55:13.744632",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:55:20.598411",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:56:55.988801",
-      "improvements": [
-        {
-          "title": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "expected_impact": "HIGH",
-          "reason": "Critical script errors detected",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Script Error Fix",
-          "script": "auto_fixer.py",
-          "success": true,
-          "output": "\ud83d\udd0d AUTO FIXER \u2014 Mode: check\n==================================================\n\u26a0\ufe0f 1 Issues gefunden:\n",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
-      "timestamp": "2026-04-11T20:57:11.157297",
-      "improvements": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 2
-    },
-    {
-      "timestamp": "2026-04-11T21:04:51.768549",
-      "improvements": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 2
-    },
-    {
-      "timestamp": "2026-04-11T21:19:06.218578",
-      "improvements": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 2
-    },
-    {
       "timestamp": "2026-04-11T21:19:13.009607",
       "improvements": [
         {
@@ -2499,14 +1727,898 @@
         "error": null
       },
       "kept": false
+    },
+    {
+      "timestamp": "2026-04-12T03:04:52.448965",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 84/100",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": true,
+          "output": "\ud83e\udd16 **Autonomous Improvement \u2014 03:04:51 UTC**\n\n\ud83d\udcca Scripts analyzed: 97\n   With potential issues: 76\n\n\ud83c\udfaf ",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T03:21:37.148080",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 65,
+        "friction_events": 0,
+        "kg_entities": 223,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T03:21:37.148087",
+        "session_count": 373
+      },
+      "hypothesis": {
+        "id": "hyp_032137_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_032137_8",
+        "timestamp": "2026-04-12T03:21:37.187712",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 223,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:37.187719",
+          "session_count": 373
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 223,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:37.200653",
+          "session_count": 373
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T03:21:42.253741",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 65,
+        "friction_events": 0,
+        "kg_entities": 224,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T03:21:42.253752",
+        "session_count": 373
+      },
+      "hypothesis": {
+        "id": "hyp_032142_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_032142_8",
+        "timestamp": "2026-04-12T03:21:42.296713",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 224,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:42.296720",
+          "session_count": 373
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 224,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:42.316962",
+          "session_count": 373
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T03:21:47.374130",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 65,
+        "friction_events": 0,
+        "kg_entities": 225,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T03:21:47.374140",
+        "session_count": 373
+      },
+      "hypothesis": {
+        "id": "hyp_032147_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_032147_8",
+        "timestamp": "2026-04-12T03:21:47.405747",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 225,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:47.405755",
+          "session_count": 373
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 65,
+          "friction_events": 0,
+          "kg_entities": 225,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T03:21:47.421996",
+          "session_count": 373
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "timestamp": "2026-04-12T04:04:55.476111",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 84/100",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": true,
+          "output": "\ud83e\udd16 **Autonomous Improvement \u2014 04:04:55 UTC**\n\n\ud83d\udcca Scripts analyzed: 97\n   With potential issues: 76\n\n\ud83c\udfaf ",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T04:21:29.352237",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 81,
+        "friction_events": 0,
+        "kg_entities": 226,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T04:21:29.352243",
+        "session_count": 388
+      },
+      "hypothesis": {
+        "id": "hyp_042129_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_042129_8",
+        "timestamp": "2026-04-12T04:21:29.390837",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 226,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:29.390846",
+          "session_count": 388
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 226,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:29.410616",
+          "session_count": 388
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T04:21:34.461256",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 81,
+        "friction_events": 0,
+        "kg_entities": 227,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T04:21:34.461265",
+        "session_count": 388
+      },
+      "hypothesis": {
+        "id": "hyp_042134_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_042134_8",
+        "timestamp": "2026-04-12T04:21:34.499616",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 227,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:34.499624",
+          "session_count": 388
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 227,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:34.519885",
+          "session_count": 388
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T04:21:39.580660",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 81,
+        "friction_events": 0,
+        "kg_entities": 228,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T04:21:39.580670",
+        "session_count": 388
+      },
+      "hypothesis": {
+        "id": "hyp_042139_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_042139_8",
+        "timestamp": "2026-04-12T04:21:39.618249",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 228,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:39.618256",
+          "session_count": 388
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 81,
+          "friction_events": 0,
+          "kg_entities": 228,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T04:21:39.637797",
+          "session_count": 388
+        },
+        "actual_impact": 0,
+        "change_made": null,
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "timestamp": "2026-04-12T05:05:03.261853",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 84/100",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": true,
+          "output": "\ud83e\udd16 **Autonomous Improvement \u2014 05:05:02 UTC**\n\n\ud83d\udcca Scripts analyzed: 97\n   With potential issues: 76\n\n\ud83c\udfaf ",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T05:21:29.546230",
+      "metrics_before": {
+        "error_rate": 1.51,
+        "sessions_today": 96,
+        "friction_events": 0,
+        "kg_entities": 230,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T05:21:29.546236",
+        "session_count": 402
+      },
+      "hypothesis": {
+        "id": "hyp_052129_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_052129_8",
+        "timestamp": "2026-04-12T05:21:29.581143",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 230,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:29.581149",
+          "session_count": 402
+        },
+        "metrics_after": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 231,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:29.632252",
+          "session_count": 402
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T05:21:34.685997",
+      "metrics_before": {
+        "error_rate": 1.51,
+        "sessions_today": 96,
+        "friction_events": 0,
+        "kg_entities": 232,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T05:21:34.686012",
+        "session_count": 402
+      },
+      "hypothesis": {
+        "id": "hyp_052134_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_052134_8",
+        "timestamp": "2026-04-12T05:21:34.717107",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 232,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:34.717114",
+          "session_count": 402
+        },
+        "metrics_after": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 233,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:34.768294",
+          "session_count": 402
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T05:21:39.826551",
+      "metrics_before": {
+        "error_rate": 1.51,
+        "sessions_today": 96,
+        "friction_events": 0,
+        "kg_entities": 234,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T05:21:39.826560",
+        "session_count": 402
+      },
+      "hypothesis": {
+        "id": "hyp_052139_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_052139_8",
+        "timestamp": "2026-04-12T05:21:39.857721",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 234,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:39.857728",
+          "session_count": 402
+        },
+        "metrics_after": {
+          "error_rate": 1.51,
+          "sessions_today": 96,
+          "friction_events": 0,
+          "kg_entities": 235,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T05:21:39.905515",
+          "session_count": 402
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "timestamp": "2026-04-12T06:04:55.845127",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 84/100",
+          "source": "issue"
+        },
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": true,
+          "output": "\ud83e\udd16 **Autonomous Improvement \u2014 06:04:55 UTC**\n\n\ud83d\udcca Scripts analyzed: 97\n   With potential issues: 76\n\n\ud83c\udfaf ",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 3
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T06:21:29.481135",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 115,
+        "friction_events": 0,
+        "kg_entities": 236,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T06:21:29.481142",
+        "session_count": 419
+      },
+      "hypothesis": {
+        "id": "hyp_062129_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_062129_8",
+        "timestamp": "2026-04-12T06:21:29.600846",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 236,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:29.600855",
+          "session_count": 419
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 237,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:29.766274",
+          "session_count": 419
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T06:21:34.907205",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 115,
+        "friction_events": 0,
+        "kg_entities": 238,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T06:21:34.907216",
+        "session_count": 419
+      },
+      "hypothesis": {
+        "id": "hyp_062134_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_062134_8",
+        "timestamp": "2026-04-12T06:21:34.946882",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 238,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:34.946890",
+          "session_count": 419
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 239,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:35.025068",
+          "session_count": 419
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T06:21:40.101719",
+      "metrics_before": {
+        "error_rate": 1.5,
+        "sessions_today": 115,
+        "friction_events": 0,
+        "kg_entities": 240,
+        "skills_count": 26,
+        "scripts_without_timeout": 1,
+        "timestamp": "2026-04-12T06:21:40.101730",
+        "session_count": 419
+      },
+      "hypothesis": {
+        "id": "hyp_062140_8",
+        "category": "safety",
+        "priority": "HIGH",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_062140_8",
+        "timestamp": "2026-04-12T06:21:40.134275",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 240,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:40.134281",
+          "session_count": 419
+        },
+        "metrics_after": {
+          "error_rate": 1.5,
+          "sessions_today": 115,
+          "friction_events": 0,
+          "kg_entities": 241,
+          "skills_count": 26,
+          "scripts_without_timeout": 1,
+          "timestamp": "2026-04-12T06:21:40.180162",
+          "session_count": 419
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 54,
-    "successful": 23,
-    "failed": 31,
-    "current_streak": 0,
+    "total": 66,
+    "successful": 29,
+    "failed": 37,
+    "current_streak": 6,
     "best_streak": 20
   }
 }

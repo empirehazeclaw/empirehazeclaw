@@ -49,16 +49,17 @@ Error: "⚠️ ✉️ Message failed"
 Issue: Delivery problem
 ```
 
-### 4. Nightly Dreaming
+### 4. Memory-Core Dreaming
 ```
-ID: f701b751-a2f0-422f-bf1b-0bd52dff2e01
-Interval: 02:00 UTC (0 2 * * *)
-Status: ⚠️ 1 error
-Last Run: 08:00 UTC
-Script: nightly_dreaming.py
-Error: "Outbound not configured for channel: discord"
-Issue: Discord not configured
+Type: OpenClaw memory-core plugin (built-in)
+Interval: 04:40 UTC (40 4 * * *)
+Status: ✅ ACTIVE
+Script: memory-core plugin internal
+Features: Light → REM → Deep Phase
+Output: MEMORY.md, DREAMS.md, memory/dreaming/
 ```
+
+**Hinweis:** Custom nightly_dreaming.py wurde durch memory-core dreaming ersetzt (2026-04-12)
 
 ### 5. Security Audit
 ```
@@ -221,10 +222,10 @@ Action: Short-term → Long-term memory promotion
 | Cron | Issue | Priority |
 |------|-------|----------|
 | CEO Daily Briefing | Message failed (2x) | 🔴 HIGH |
-| Nightly Dreaming | Discord not configured | 🟡 MED |
 | Security Audit | Message failed (1x) | 🟡 MED |
+| ~~Nightly Dreaming~~ | ✅ **DISABLED** - Replaced by memory-core dreaming | — |
 
----
+**Update 2026-04-12:** Custom nightly_dreaming.py deleted. Using memory-core plugin dreaming instead.---
 
 *Erstellt: 2026-04-11 11:14 UTC*
 *Quelle: cron list*

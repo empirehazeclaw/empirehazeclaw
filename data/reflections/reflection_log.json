@@ -371,6 +371,168 @@
       "auto_applied": true,
       "pattern_stored": true,
       "kg_entities": 223
+    },
+    {
+      "timestamp": "2026-04-12T03:21:37.222886+00:00",
+      "action": "improvement_cycle_1",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 224
+    },
+    {
+      "timestamp": "2026-04-12T03:21:42.341992+00:00",
+      "action": "improvement_cycle_2",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 225
+    },
+    {
+      "timestamp": "2026-04-12T03:21:47.445585+00:00",
+      "action": "improvement_cycle_3",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 226
+    },
+    {
+      "timestamp": "2026-04-12T04:21:29.432838+00:00",
+      "action": "improvement_cycle_1",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 227
+    },
+    {
+      "timestamp": "2026-04-12T04:21:34.547227+00:00",
+      "action": "improvement_cycle_2",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 228
+    },
+    {
+      "timestamp": "2026-04-12T04:21:39.663627+00:00",
+      "action": "improvement_cycle_3",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 229
+    },
+    {
+      "timestamp": "2026-04-12T05:21:29.658793+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 232
+    },
+    {
+      "timestamp": "2026-04-12T05:21:34.794920+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 234
+    },
+    {
+      "timestamp": "2026-04-12T05:21:39.929582+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 236
+    },
+    {
+      "timestamp": "2026-04-12T06:21:29.849922+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 238
+    },
+    {
+      "timestamp": "2026-04-12T06:21:35.063982+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 240
+    },
+    {
+      "timestamp": "2026-04-12T06:21:40.203998+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 242
     }
   ],
   "success_patterns": [
@@ -530,6 +692,84 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-11T20:21:42.325374+00:00",
       "confidence": 0.7506527557615735
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T05:21:29.658793+00:00",
+      "confidence": 0.8115555366049403
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T05:21:34.794920+00:00",
+      "confidence": 0.9431379978933189
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T05:21:39.929582+00:00",
+      "confidence": 0.9405990600598323
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T06:21:29.849922+00:00",
+      "confidence": 0.7575464696557844
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T06:21:35.063982+00:00",
+      "confidence": 0.8126441619547985
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T06:21:40.203998+00:00",
+      "confidence": 0.7391449044449216
     }
   ],
   "error_fixes": [
@@ -662,6 +902,60 @@
         "confidence": 0.8
       },
       "timestamp": "2026-04-12T02:21:40.616592+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T03:21:37.222886+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T03:21:42.341992+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T03:21:47.445585+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T04:21:29.432838+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T04:21:34.547227+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T04:21:39.663627+00:00"
     }
   ]
 }

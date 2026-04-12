@@ -1,10 +1,44 @@
 {
   "attempts": [],
-  "improvements": [],
+  "improvements": [
+    {
+      "timestamp": "2026-04-12T03:04:51.920432",
+      "script": "apply_timeouts",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    },
+    {
+      "timestamp": "2026-04-12T05:05:02.600774",
+      "script": "session_compressor",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Bare except clause",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    },
+    {
+      "timestamp": "2026-04-12T06:04:55.308938",
+      "script": "email_sequence",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    }
+  ],
   "discards": [
     {
       "timestamp": "2026-04-11T23:14:47.867704",
       "script": "auto_backup",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T04:04:55.095883",
+      "script": "common_issues_check",
       "reason": "no_improvement"
     }
   ]

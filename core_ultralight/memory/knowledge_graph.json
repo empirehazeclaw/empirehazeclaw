@@ -3929,14 +3929,14 @@
       "category": "ai_agent_innovation",
       "facts": [
         {
-          "content": "## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User\nThe development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, th\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/hermes-agent\n",
+          "content": "## arXiv: When Agent Markets Arrive\nAI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the econ\n\n## arXiv: Reimagining RAN Automation in 6G: An Agentic AI Framework with Hierarchical Onli\nIn this paper, we propose an Agentic Artificial Intelligence (AI) framework for wireless networks. The framework coordinates a pool of AI agents guided by Natural Language (NL) inputs from a human ope\n\n## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User\nThe development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, th\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousRes...",
           "confidence": 0.8,
-          "extracted_at": "2026-04-12T02:05:07.579250",
+          "extracted_at": "2026-04-12T06:04:49.062264",
           "category": "innovation_research"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-12T02:05:07.579256",
+      "created": "2026-04-12T06:04:49.062275",
       "tags": [
         "innovation",
         "research",
@@ -3952,7 +3952,7 @@
         {
           "content": "Research completed: 3 queries, 2 hypotheses generated",
           "confidence": 0.9,
-          "extracted_at": "2026-04-12T02:05:07.640814",
+          "extracted_at": "2026-04-12T06:04:49.137853",
           "category": "research"
         }
       ],
@@ -3975,7 +3975,7 @@
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-12T02:05:07.640821",
+      "created": "2026-04-12T06:04:49.137861",
       "tags": [
         "research",
         "coordinator",
@@ -4188,9 +4188,504 @@
         "first_seen": "2026-04-12T02:21:40.616592+00:00",
         "fix_applied": "Unknown error: unknown"
       }
+    },
+    "error_None_3425": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T03:21:37.222886+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T03:21:37.222886+00:00",
+      "last_accessed": "2026-04-12T03:21:37.222886+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T03:21:37.222886+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_6205": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T03:21:42.341992+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T03:21:42.341992+00:00",
+      "last_accessed": "2026-04-12T03:21:42.341992+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T03:21:42.341992+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_8126": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T03:21:47.445585+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T03:21:47.445585+00:00",
+      "last_accessed": "2026-04-12T03:21:47.445585+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T03:21:47.445585+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_3953": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T04:21:29.432838+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T04:21:29.432838+00:00",
+      "last_accessed": "2026-04-12T04:21:29.432838+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T04:21:29.432838+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_9058": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T04:21:34.547227+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T04:21:34.547227+00:00",
+      "last_accessed": "2026-04-12T04:21:34.547227+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T04:21:34.547227+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_7107": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T04:21:39.663627+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T04:21:39.663627+00:00",
+      "last_accessed": "2026-04-12T04:21:39.663627+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T04:21:39.663627+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "improvement_safety_20260412_042239_7369": {
+      "id": "improvement_safety_20260412_042239_7369",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T04:22:39.368313",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_052129_6124": {
+      "id": "improvement_safety_20260412_052129_6124",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T05:21:29.596888",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_1_8649": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_1",
+          "confidence": 0.8115555366049403,
+          "extracted_at": "2026-04-12T05:21:29.658793+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T05:21:29.658793+00:00",
+      "last_accessed": "2026-04-12T05:21:29.658793+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_1",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T05:21:29.658793+00:00",
+        "confidence": 0.8115555366049403
+      }
+    },
+    "improvement_safety_20260412_052134_6661": {
+      "id": "improvement_safety_20260412_052134_6661",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T05:21:34.733415",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_2_9372": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_2",
+          "confidence": 0.9431379978933189,
+          "extracted_at": "2026-04-12T05:21:34.794920+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T05:21:34.794920+00:00",
+      "last_accessed": "2026-04-12T05:21:34.794920+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_2",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T05:21:34.794920+00:00",
+        "confidence": 0.9431379978933189
+      }
+    },
+    "improvement_safety_20260412_052139_1784": {
+      "id": "improvement_safety_20260412_052139_1784",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T05:21:39.872492",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_3_5627": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_3",
+          "confidence": 0.9405990600598323,
+          "extracted_at": "2026-04-12T05:21:39.929582+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T05:21:39.929582+00:00",
+      "last_accessed": "2026-04-12T05:21:39.929582+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_3",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T05:21:39.929582+00:00",
+        "confidence": 0.9405990600598323
+      }
+    },
+    "improvement_safety_20260412_062129_9062": {
+      "id": "improvement_safety_20260412_062129_9062",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T06:21:29.653539",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_1_9325": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_1",
+          "confidence": 0.7575464696557844,
+          "extracted_at": "2026-04-12T06:21:29.849922+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T06:21:29.849922+00:00",
+      "last_accessed": "2026-04-12T06:21:29.849922+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_1",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T06:21:29.849922+00:00",
+        "confidence": 0.7575464696557844
+      }
+    },
+    "improvement_safety_20260412_062134_7665": {
+      "id": "improvement_safety_20260412_062134_7665",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T06:21:34.971141",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_2_7281": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_2",
+          "confidence": 0.8126441619547985,
+          "extracted_at": "2026-04-12T06:21:35.063982+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T06:21:35.063982+00:00",
+      "last_accessed": "2026-04-12T06:21:35.063982+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_2",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T06:21:35.063982+00:00",
+        "confidence": 0.8126441619547985
+      }
+    },
+    "improvement_safety_20260412_062140_5805": {
+      "id": "improvement_safety_20260412_062140_5805",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T06:21:40.147943",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "success_improvement_cycle_3_9443": {
+      "type": "success_pattern",
+      "category": "pattern",
+      "facts": [
+        {
+          "content": "Success pattern for improvement_cycle_3",
+          "confidence": 0.7391449044449216,
+          "extracted_at": "2026-04-12T06:21:40.203998+00:00"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T06:21:40.203998+00:00",
+      "last_accessed": "2026-04-12T06:21:40.203998+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "type": "success_pattern",
+        "action_type": "improvement_cycle_3",
+        "context": {
+          "hypothesis": "Prevent destructive operations",
+          "actual_impact": 3,
+          "decision": "KEEP"
+        },
+        "tokens_used": 0,
+        "efficiency": 0.0,
+        "discovered_at": "2026-04-12T06:21:40.203998+00:00",
+        "confidence": 0.7391449044449216
+      }
+    },
+    "category_reflections": {
+      "type": "category",
+      "name": "Reflections",
+      "created": "2026-04-12T06:36:52.052894",
+      "created_by": "kg_orphan_connector"
+    },
+    "category_metrics-system": {
+      "type": "category",
+      "name": "Metrics-System",
+      "created": "2026-04-12T06:36:52.052924",
+      "created_by": "kg_orphan_connector"
+    },
+    "category_research-topics": {
+      "type": "category",
+      "name": "Research-Topics",
+      "created": "2026-04-12T06:36:52.052966",
+      "created_by": "kg_orphan_connector"
+    },
+    "category_success-patterns": {
+      "type": "category",
+      "name": "Success-Patterns",
+      "created": "2026-04-12T06:36:52.053586",
+      "created_by": "kg_orphan_connector"
+    },
+    "category_error-handling-patterns": {
+      "type": "category",
+      "name": "Error-Handling-Patterns",
+      "created": "2026-04-12T06:36:52.053629",
+      "created_by": "kg_orphan_connector"
+    },
+    "category_improvements": {
+      "type": "category",
+      "name": "Improvements",
+      "created": "2026-04-12T06:36:52.054318",
+      "created_by": "kg_orphan_connector"
     }
   },
-  "last_updated": "2026-04-12T02:05:07.579260",
+  "last_updated": "2026-04-12T06:04:49.062281",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -42429,6 +42924,1887 @@
       "type": "shares_category",
       "weight": 0.7,
       "created_at": "2026-04-09T10:11:03.413640"
+    },
+    {
+      "from": "dream_insight_20260412T063402001437",
+      "to": "dream_insight_20260412T063402001437",
+      "type": "same_category",
+      "created": "2026-04-12T06:34:02.001437"
+    },
+    {
+      "from": "dream_insight_20260412T063402001437",
+      "to": "dream_insight_20260412T063402001437",
+      "type": "same_category",
+      "created": "2026-04-12T06:34:02.001437"
+    },
+    {
+      "from": "reflection_deep_20260410",
+      "to": "category_reflections",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.052907",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "quality_metrics_20260410",
+      "to": "category_metrics-system",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.052926",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "quality_metrics_20260410",
+      "to": "quality_metrics_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.052930",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "quality_metrics_20260411",
+      "to": "category_metrics-system",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.052950",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "quality_metrics_20260411",
+      "to": "quality_metrics_20260410",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.052954",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.052971",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.052978",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.052979",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "research_integration_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.052980",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053025",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053034",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053048",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053057",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "memory_frameworks_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053070",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "memory_frameworks_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053074",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "memory_frameworks_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053075",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "memory_frameworks_20260411",
+      "to": "research_integration_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053076",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "memory_frameworks_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053100",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "multiagent_frameworks_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053111",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "multiagent_frameworks_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053116",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "multiagent_frameworks_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053120",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "multiagent_frameworks_20260411",
+      "to": "research_integration_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053120",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "multiagent_frameworks_20260411",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053154",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_integration_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053195",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_integration_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053204",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_integration_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053207",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_integration_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053208",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053242",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053248",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053250",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053251",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053297",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "hermes_agent_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053311",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053323",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053334",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053335",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053336",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053358",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053368",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "nvidia_agentic_search_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053381",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "nvidia_agentic_search_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053385",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "nvidia_agentic_search_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053386",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "nvidia_agentic_search_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053387",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053411",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053415",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053416",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053416",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053454",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053459",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "token_optimization_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053477",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "token_optimization_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053481",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "token_optimization_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053482",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "token_optimization_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053483",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053515",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053519",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053520",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053521",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053557",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053561",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "self_healing_hitl_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053571",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_file_read_2290",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053587",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_file_read_2290",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053591",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_file_read_2290",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053592",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_file_read_2290",
+      "to": "success_improvement_cycle_1_3828",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053593",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_exec_command_7091",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053605",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_exec_command_7091",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053609",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_exec_command_7091",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053610",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_exec_command_7091",
+      "to": "success_improvement_cycle_1_3828",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053614",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_timeout_7327",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053630",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_timeout_7327",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053634",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_timeout_7327",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053635",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_timeout_7327",
+      "to": "error_None_7291",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053636",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_kg_update_9649",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053648",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_kg_update_9649",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053652",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_kg_update_9649",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053652",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_kg_update_9649",
+      "to": "success_improvement_cycle_1_3828",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053653",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_3828",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053664",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_3828",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053669",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_3828",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053669",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_3828",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053670",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_1941",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053681",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_1941",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053685",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_1941",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053686",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_1941",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053686",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7388",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053697",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7388",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053701",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7388",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053702",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7388",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053703",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_3745",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053714",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_3745",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053718",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_3745",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053718",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_3745",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053719",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_7792",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053730",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_7792",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053734",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_7792",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053735",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_7792",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053736",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8849",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053746",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8849",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053753",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8849",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053754",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8849",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053755",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5652",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053768",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5652",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053772",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5652",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053773",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5652",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053774",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260411",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053784",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260411",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053788",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260411",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053789",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260411",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053790",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_2808",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053811",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_2808",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053816",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_2808",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053817",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_2808",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053818",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8119",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053829",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8119",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053833",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8119",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053842",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_8119",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053843",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_2470",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053854",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_2470",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053858",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_2470",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053859",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_2470",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053863",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9521",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053875",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9521",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053879",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9521",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053879",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9521",
+      "to": "error_None_7291",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053880",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2304",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053891",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2304",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053895",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2304",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053896",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2304",
+      "to": "error_None_7291",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053897",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7291",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053908",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7291",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053915",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7291",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053916",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7291",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053917",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2142",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053928",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2142",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053932",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2142",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053932",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2142",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053933",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.053944",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053948",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053949",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053949",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053976",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "Social-Media-Automation",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053983",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053994",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "innovation_research_20260412",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054003",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260412",
+      "to": "category_research-topics",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054014",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260412",
+      "to": "innovation_research_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054018",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260412",
+      "to": "memory_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054019",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "research_20260412",
+      "to": "multiagent_frameworks_20260411",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054020",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9448",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054039",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9448",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054043",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9448",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054044",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9448",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054045",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1287",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054056",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1287",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054060",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1287",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054061",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1287",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054061",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8234",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054072",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8234",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054076",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8234",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054077",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8234",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054078",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5305",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054089",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5305",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054096",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5305",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054097",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5305",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054098",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5308",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054114",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5308",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054118",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5308",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054118",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_5308",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054119",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1937",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054134",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1937",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054138",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1937",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054138",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_1937",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054139",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2369",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054150",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2369",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054154",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2369",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054155",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_2369",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054156",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4345",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054181",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4345",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054186",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4345",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054186",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4345",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054187",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4280",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054198",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4280",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054202",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4280",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054203",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_4280",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054203",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3425",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054214",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3425",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054218",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3425",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054219",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3425",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054220",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_6205",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054231",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_6205",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054235",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_6205",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054235",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_6205",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054236",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8126",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054247",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8126",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054254",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8126",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054255",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_8126",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054256",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3953",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054267",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3953",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054271",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3953",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054272",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_3953",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054272",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9058",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054284",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9058",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054288",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9058",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054289",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_9058",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054290",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7107",
+      "to": "category_error-handling-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054301",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7107",
+      "to": "error_timeout_7327",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054304",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7107",
+      "to": "error_None_9521",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054305",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "error_None_7107",
+      "to": "error_None_2304",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054306",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_042239_7369",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054319",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_042239_7369",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054323",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_042239_7369",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054324",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_042239_7369",
+      "to": "improvement_safety_20260412_052139_1784",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054324",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_042239_7369",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054336",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052129_6124",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054348",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052129_6124",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054352",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052129_6124",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054353",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052129_6124",
+      "to": "improvement_safety_20260412_052139_1784",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054353",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052129_6124",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054365",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_8649",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054379",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_8649",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054383",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_8649",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054384",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_8649",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054385",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052134_6661",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054396",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052134_6661",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054400",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052134_6661",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054403",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052134_6661",
+      "to": "improvement_safety_20260412_052139_1784",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054406",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052134_6661",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054418",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_9372",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054429",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_9372",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054433",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_9372",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054434",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_9372",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054435",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052139_1784",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054446",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052139_1784",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054449",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052139_1784",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054450",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052139_1784",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054451",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_052139_1784",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054462",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5627",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054473",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5627",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054477",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5627",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054477",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_5627",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054478",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062129_9062",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054489",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062129_9062",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054493",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062129_9062",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054494",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062129_9062",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054494",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062129_9062",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054505",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_9325",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054516",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_9325",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054520",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_9325",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054521",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_1_9325",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054522",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062134_7665",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054533",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062134_7665",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054536",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062134_7665",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054537",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062134_7665",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054538",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062134_7665",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054549",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7281",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054560",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7281",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054567",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7281",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054568",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_2_7281",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054568",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062140_5805",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054580",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062140_5805",
+      "to": "improvement_safety_20260412_042239_7369",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054583",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062140_5805",
+      "to": "improvement_safety_20260412_052129_6124",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054584",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062140_5805",
+      "to": "improvement_safety_20260412_052134_6661",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054585",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "improvement_safety_20260412_062140_5805",
+      "to": "category_improvements",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054596",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_9443",
+      "to": "category_success-patterns",
+      "type": "categorized_as",
+      "created": "2026-04-12T06:36:52.054607",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_9443",
+      "to": "success_file_read_2290",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054611",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_9443",
+      "to": "success_exec_command_7091",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054612",
+      "source": "orphan_connector"
+    },
+    {
+      "from": "success_improvement_cycle_3_9443",
+      "to": "success_kg_update_9649",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054613",
+      "source": "orphan_connector"
     }
   ]
 }

@@ -319,6 +319,54 @@
       "error_rate": 1.5,
       "error_count": 1250,
       "msg_count": 83057
+    },
+    {
+      "timestamp": "2026-04-12T03:04:49.057272",
+      "error_rate": 1.5,
+      "error_count": 1250,
+      "msg_count": 83137
+    },
+    {
+      "timestamp": "2026-04-12T03:04:51.783252",
+      "error_rate": 1.5,
+      "error_count": 1250,
+      "msg_count": 83137
+    },
+    {
+      "timestamp": "2026-04-12T04:04:51.993369",
+      "error_rate": 1.5,
+      "error_count": 1252,
+      "msg_count": 83221
+    },
+    {
+      "timestamp": "2026-04-12T04:04:54.989771",
+      "error_rate": 1.5,
+      "error_count": 1252,
+      "msg_count": 83221
+    },
+    {
+      "timestamp": "2026-04-12T05:04:59.028420",
+      "error_rate": 1.51,
+      "error_count": 1254,
+      "msg_count": 83308
+    },
+    {
+      "timestamp": "2026-04-12T05:05:02.374094",
+      "error_rate": 1.51,
+      "error_count": 1254,
+      "msg_count": 83308
+    },
+    {
+      "timestamp": "2026-04-12T06:04:52.258501",
+      "error_rate": 1.5,
+      "error_count": 1254,
+      "msg_count": 83414
+    },
+    {
+      "timestamp": "2026-04-12T06:04:55.175487",
+      "error_rate": 1.5,
+      "error_count": 1254,
+      "msg_count": 83414
     }
   ]
 }
