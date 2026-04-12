@@ -1862,6 +1862,15 @@
       "description": "Gateway healthy, 33 memory files, 191 chunks",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "15:15",
+      "category": "analysis",
+      "title": "Skills analyse",
+      "description": "Largest: capability-evolver (1.8MB), voice-agent (1.6MB)",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
