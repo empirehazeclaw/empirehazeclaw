@@ -5737,6 +5737,75 @@
         "discovered_at": "2026-04-12T13:24:39.132240+00:00",
         "confidence": 0.7077592814974043
       }
+    },
+    "error_None_1565": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:28:52.763085+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:28:52.763085+00:00",
+      "last_accessed": "2026-04-12T13:28:52.763085+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:28:52.763085+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_7413": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:28:57.871522+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:28:57.871522+00:00",
+      "last_accessed": "2026-04-12T13:28:57.871522+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:28:57.871522+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
+    },
+    "error_None_8219": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:29:02.985979+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:29:02.985979+00:00",
+      "last_accessed": "2026-04-12T13:29:02.985979+00:00",
+      "access_count": 0,
+      "decay_score": 1.0,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:29:02.985979+00:00",
+        "fix_applied": "Unknown error: unknown"
+      }
     }
   },
   "last_updated": "2026-04-12T08:04:56.486649",

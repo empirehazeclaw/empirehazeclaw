@@ -1,170 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 2,
-      "timestamp": "2026-04-12T05:21:34.685997",
-      "metrics_before": {
-        "error_rate": 1.51,
-        "sessions_today": 96,
-        "friction_events": 0,
-        "kg_entities": 232,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T05:21:34.686012",
-        "session_count": 402
-      },
-      "hypothesis": {
-        "id": "hyp_052134_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_052134_8",
-        "timestamp": "2026-04-12T05:21:34.717107",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.51,
-          "sessions_today": 96,
-          "friction_events": 0,
-          "kg_entities": 232,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T05:21:34.717114",
-          "session_count": 402
-        },
-        "metrics_after": {
-          "error_rate": 1.51,
-          "sessions_today": 96,
-          "friction_events": 0,
-          "kg_entities": 233,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T05:21:34.768294",
-          "session_count": 402
-        },
-        "actual_impact": 3,
-        "change_made": "added_1_kg_entities",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-12T05:21:39.826551",
-      "metrics_before": {
-        "error_rate": 1.51,
-        "sessions_today": 96,
-        "friction_events": 0,
-        "kg_entities": 234,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T05:21:39.826560",
-        "session_count": 402
-      },
-      "hypothesis": {
-        "id": "hyp_052139_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_052139_8",
-        "timestamp": "2026-04-12T05:21:39.857721",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.51,
-          "sessions_today": 96,
-          "friction_events": 0,
-          "kg_entities": 234,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T05:21:39.857728",
-          "session_count": 402
-        },
-        "metrics_after": {
-          "error_rate": 1.51,
-          "sessions_today": 96,
-          "friction_events": 0,
-          "kg_entities": 235,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T05:21:39.905515",
-          "session_count": 402
-        },
-        "actual_impact": 3,
-        "change_made": "added_1_kg_entities",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "timestamp": "2026-04-12T06:04:55.845127",
-      "improvements": [
-        {
-          "title": "Self-Evaluation Improvement",
-          "script": "autonomous_improvement.py",
-          "expected_impact": "MEDIUM",
-          "reason": "Self-Eval score low: 84/100",
-          "source": "issue"
-        },
-        {
-          "title": "Apply Self Improvement pattern",
-          "script": null,
-          "expected_impact": "HIGH",
-          "reason": "Investigate and implement self_improvement techniq",
-          "source": "research"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "script": null,
-          "expected_impact": "MEDIUM",
-          "reason": "Investigate and implement autonomous_learning tech",
-          "source": "research"
-        }
-      ],
-      "results": [
-        {
-          "improvement": "Self-Evaluation Improvement",
-          "script": "autonomous_improvement.py",
-          "success": true,
-          "output": "\ud83e\udd16 **Autonomous Improvement \u2014 06:04:55 UTC**\n\n\ud83d\udcca Scripts analyzed: 97\n   With potential issues: 76\n\n\ud83c\udfaf ",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Self Improvement pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 quality_improve: +50% improvement | \u2705 quality_improve: +50% improvement",
-          "validated": true
-        },
-        {
-          "improvement": "Apply Autonomous Learning pattern",
-          "script": "self_play_improver.py",
-          "success": true,
-          "output": "\ud83d\udca1 Insights: | \u2705 speed_improve: +50% improvement | \u2705 speed_improve: +50% improvement",
-          "validated": true
-        }
-      ],
-      "validated": 3
-    },
-    {
       "cycle": 1,
       "timestamp": "2026-04-12T06:21:29.481135",
       "metrics_before": {
@@ -1792,14 +1628,185 @@
         "error": null
       },
       "kept": true
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T13:28:52.690161",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 291,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:28:52.690184",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_132852_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_132852_5",
+        "timestamp": "2026-04-12T13:28:52.724901",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 291,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:28:52.724909",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 291,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:28:52.739726",
+          "session_count": 479
+        },
+        "actual_impact": 0,
+        "change_made": "token_monitoring_active, efficiency_patterns_applied",
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T13:28:57.790607",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 292,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:28:57.790615",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_132857_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_132857_5",
+        "timestamp": "2026-04-12T13:28:57.827905",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 292,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:28:57.827912",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 292,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:28:57.842860",
+          "session_count": 479
+        },
+        "actual_impact": 0,
+        "change_made": "token_monitoring_active, efficiency_patterns_applied",
+        "error": null
+      },
+      "kept": false
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T13:29:02.905055",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 293,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:29:02.905065",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_132902_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_132902_5",
+        "timestamp": "2026-04-12T13:29:02.936392",
+        "success": false,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 293,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:29:02.936399",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 293,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:29:02.954811",
+          "session_count": 479
+        },
+        "actual_impact": 0,
+        "change_made": "token_monitoring_active, efficiency_patterns_applied",
+        "error": null
+      },
+      "kept": false
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 87,
+    "total": 90,
     "successful": 50,
-    "failed": 37,
-    "current_streak": 27,
+    "failed": 40,
+    "current_streak": 0,
     "best_streak": 27
   }
 }

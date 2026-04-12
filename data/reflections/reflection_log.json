@@ -743,6 +743,57 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 291
+    },
+    {
+      "timestamp": "2026-04-12T13:28:52.763085+00:00",
+      "action": "improvement_cycle_1",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 292
+    },
+    {
+      "timestamp": "2026-04-12T13:28:57.871522+00:00",
+      "action": "improvement_cycle_2",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 293
+    },
+    {
+      "timestamp": "2026-04-12T13:29:02.985979+00:00",
+      "action": "improvement_cycle_3",
+      "success": false,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "fix_type": "known_fix",
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "auto_applied": true,
+      "pattern_stored": true,
+      "kg_entities": 294
     }
   ],
   "success_patterns": [
@@ -1439,6 +1490,33 @@
         "confidence": 0.8
       },
       "timestamp": "2026-04-12T04:21:39.663627+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T13:28:52.763085+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T13:28:57.871522+00:00"
+    },
+    {
+      "error_type": null,
+      "fix": {
+        "description": "Unknown error: unknown",
+        "source": "knowledge_graph",
+        "confidence": 0.8
+      },
+      "timestamp": "2026-04-12T13:29:02.985979+00:00"
     }
   ]
 }
