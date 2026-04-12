@@ -1,6 +1,7 @@
 # 🚀 SIR HAZECLAW — QUICK REFERENCE
 
-**Last Updated:** 2026-04-12 07:45 UTC
+**Last Updated:** 2026-04-12 08:10 UTC
+**Version:** Phase 2 Complete (Simplified System)
 
 ---
 
@@ -16,7 +17,7 @@ Sir HazeClaw is an autonomous AI agent that continuously improves itself, manage
 
 | Channel | Address | Notes |
 |---------|---------|-------|
-| **Telegram** | @Nico (5392634979) | Primary — use this |
+| **Telegram** | @Nico (ID: 5392634979) | Primary — use this |
 | **Session** | `agent:ceo:telegram:direct:5392634979` | For internal use |
 
 ---
@@ -27,7 +28,7 @@ Sir HazeClaw is an autonomous AI agent that continuously improves itself, manage
 | Time (UTC) | What | Description |
 |------------|------|-------------|
 | 03:00 | Auto Backup | Backs up workspace to Git |
-| 08:00 | Security Audit | Scans for issues, logs only |
+| 08:00 | Security Scan | Scans for issues, logs only |
 | 10:00 | CEO Weekly Review | Monday only |
 | 11:00 | **Morning Brief** 🌅 | Summary to Telegram |
 | 14:00 | Innovation Research | Web research, logs insights |
@@ -51,7 +52,7 @@ Sir HazeClaw is an autonomous AI agent that continuously improves itself, manage
 
 ## 🎮 COMMON COMMANDS
 
-```
+```bash
 # Check system status
 openclaw status
 
@@ -64,6 +65,9 @@ python3 scripts/health_check.py --full
 # Run learning coordinator
 python3 scripts/learning_coordinator.py --full
 
+# Run cron watchdog
+python3 scripts/cron_watchdog.py --report
+
 # View recent logs
 tail -20 logs/gateway_recovery.log
 tail -20 logs/cron_healer.log
@@ -75,11 +79,14 @@ tail -20 logs/cron_healer.log
 
 | File | Purpose |
 |------|---------|
-| `HEARTBEAT.md` | Current system status at a glance |
-| `docs/DEEP_AUDIT.md` | Full system audit + issues |
-| `docs/SYSTEM_ARCHITECTURE.md` | How everything fits together |
+| `ceo/HEARTBEAT.md` | Current system status at a glance |
+| `ceo/docs/DEEP_AUDIT.md` | Full system audit + issues |
+| `ceo/docs/CONSOLIDATION_REPORT.md` | Phase 2 documentation |
+| `ceo/docs/EXECUTION_PLAN.md` | 6-phase improvement plan |
 | `scripts/MEMORY_API.py` | Unified memory interface |
 | `scripts/cron_error_healer.py` | Self-healing for crons |
+| `scripts/cron_watchdog.py` | Cron monitoring (consolidated) |
+| `scripts/kg_updater.py` | KG management (consolidated) |
 
 ---
 
@@ -106,13 +113,36 @@ tail -20 logs/cron_healer.log
 ## 📊 CURRENT STATUS
 
 ```
-Gateway:     ✅ Healthy (71ms response)
-Error Rate:  ✅ 1.48% (target: <1%)
+Gateway:     ✅ Healthy
+Error Rate:  ✅ ~1.4% (target: <1%)
 KG:          ✅ 209 entities, 816 relations
-Memory:      ✅ 33 files, 191 vector chunks
-Crons:       ✅ 17 active, 3 re-enabled today
-Scripts:     ⚠️  99 (consolidation in progress → target: ~40)
+Memory:      ✅ Clean structure
+Crons:       ✅ 20/45 active (rest are old fleet/discord)
+Scripts:     ✅ 62 (consolidated from 99 in Phase 2)
 ```
+
+---
+
+## 🔄 PHASE 2 CONSOLIDATION SUMMARY
+
+### Scripts: 99 → 62 ✅
+
+**KG Scripts (4 → 1):**
+```bash
+python3 scripts/kg_updater.py stats        # Entity stats
+python3 scripts/kg_updater.py enhance     # Bulk add
+python3 scripts/kg_updater.py lifecycle   # Lifecycle
+python3 scripts/kg_updater.py clean-relations  # Relations
+```
+
+**Cron Scripts (2 → 1):**
+```bash
+python3 scripts/cron_watchdog.py --report       # Status report
+python3 scripts/cron_watchdog.py watchdog      # Continuous watch
+python3 scripts/cron_watchdog.py --format json  # JSON output
+```
+
+**Archived:** 37 scripts in `scripts/_archive/phase2/` and `scripts/_archive/phase2b/`
 
 ---
 
@@ -122,6 +152,7 @@ Scripts:     ⚠️  99 (consolidation in progress → target: ~40)
 2. **Gateway down?** → Auto-restart kicks in within 5 minutes
 3. **Wrong delivery config?** → Check cron `delivery: {mode, channel, to}`
 4. **Memory issues?** → Check `memory/session_metrics_history.json`
+5. **Need to restore archived script?** → `mv scripts/_archive/phase2/<script>.py scripts/`
 
 ---
 
@@ -136,3 +167,4 @@ Scripts:     ⚠️  99 (consolidation in progress → target: ~40)
 ---
 
 *🦞 Sir HazeClaw — Running since 2026-04-08*
+*Phase 2 Complete: System simplified, documented, tested*
