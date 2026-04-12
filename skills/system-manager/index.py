@@ -31,9 +31,9 @@ def run_backup_verify():
     return subprocess.run(cmd, cwd=str(WORKSPACE))
 
 def run_cron_monitor():
-    """Run cron monitor."""
+    """Run cron monitor (consolidated into cron_watchdog.py)."""
     import subprocess
-    cmd = [sys.executable, str(SCRIPTS_DIR / "cron_monitor.py")]
+    cmd = [sys.executable, str(SCRIPTS_DIR / "cron_watchdog.py"), "--report"]
     return subprocess.run(cmd, cwd=str(WORKSPACE))
 
 def run_morning_routine():

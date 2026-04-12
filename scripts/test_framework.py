@@ -109,17 +109,7 @@ TESTS: Dict[str, Dict] = {
     'kg_updater': {
         'script': 'kg_updater.py',
         'type': 'module',
-        'description': 'KG Updater'
-    },
-    'kg_enhancer': {
-        'script': 'kg_enhancer.py',
-        'type': 'module',
-        'description': 'KG Enhancer'
-    },
-    'kg_relation_cleaner': {
-        'script': 'kg_relation_cleaner.py',
-        'type': 'module',
-        'description': 'KG Relation Cleaner'
+        'description': 'KG Updater (consolidates kg_enhancer, kg_lifecycle, kg_relation_cleaner)'
     },
     
     # Skills & Learning
@@ -150,10 +140,10 @@ TESTS: Dict[str, Dict] = {
         'type': 'module',
         'description': 'Cron Error Healer'
     },
-    'cron_monitor': {
-        'script': 'cron_monitor.py',
+    'cron_watchdog': {
+        'script': 'cron_watchdog.py',
         'type': 'module',
-        'description': 'Cron Monitor'
+        'description': 'Cron Watchdog (consolidates cron_monitor)'
     },
     'token_tracker': {
         'script': 'token_tracker.py',
@@ -165,11 +155,7 @@ TESTS: Dict[str, Dict] = {
         'type': 'module',
         'description': 'Token Budget Tracker'
     },
-    'performance_dashboard': {
-        'script': 'performance_dashboard.py',
-        'type': 'module',
-        'description': 'Performance Dashboard'
-    },
+    # Archived: performance_dashboard.py (consolidated into efficiency_tracker + cron_watchdog)
     
     # Analysis
     'quality_metrics': {

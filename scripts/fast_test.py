@@ -20,7 +20,7 @@ QUICK_TESTS = [
     ('morning_brief', 'morning_brief.py', 'generate_brief'),
     ('health_monitor', 'health_monitor.py', 'generate_report'),
     ('self_check', 'self_check.py', 'generate_report'),
-    ('cron_monitor', 'cron_monitor.py', 'generate_report'),
+    ('cron_watchdog', 'cron_watchdog.py', 'watchdog_run'),
     ('daily_summary', 'daily_summary.py', 'generate_summary'),
     ('evening_summary', 'evening_summary.py', 'generate_summary'),
     ('quality_metrics', 'quality_metrics.py', 'calculate_metrics'),
@@ -32,8 +32,7 @@ QUICK_TESTS = [
     ('backup_verify', 'backup_verify.py', 'generate_report'),
     ('habit_tracker', 'habit_tracker.py', 'generate_report'),
     ('quick_check', 'quick_check.py', 'main'),
-    ('kg_updater', 'kg_updater.py', 'list_entities'),
-    ('kg_enhancer', 'kg_enhancer.py', 'generate_report'),
+    ('kg_updater', 'kg_updater.py', 'stats'),
 ]
 
 def run_test(name, script, func):
