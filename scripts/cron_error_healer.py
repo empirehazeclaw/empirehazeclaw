@@ -518,11 +518,32 @@ def determine_healing_action(job_id: str, job_name: str, error: str, consecutive
             elif action == "disable_cron":
                 log(f"Action: DISABLE_CRON", "WARN")
                 if not dry_run:
+                    # Auto-backup config before changes
+                    try:
+                        sys.path.insert(0, str(Path(__file__).parent))
+                        from config_backup_manager import auto_backup
+                        auto_backup(f"before_disable_cron_{job_name}")
+                    except Exception as e:
+                        log(f"Config backup failed: {e}", "WARN")
+                    
+                    # Disable the cron
                     try:
                         subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
                         log(f"Cron disabled: {job_name}", "INFO")
                     except Exception as e:
                         log(f"Failed to disable cron: {e}", "ERROR")
+                    
+                    # Create GitHub issue for persistent failures
+                    if consecutive >= 3:
+                        try:
+                            from github_issue_creator import create_cron_failure_issue
+                            issue_url = create_cron_failure_issue(
+                                job_name, job_id, error, consecutive
+                            )
+                            if issue_url:
+                                log(f"GitHub issue created: {issue_url}", "INFO")
+                        except Exception as e:
+                            log(f"GitHub issue creation failed: {e}", "WARN")
                 action_taken = True
 
             # ===== WAIT AND RETRY =====
