@@ -186,3 +186,43 @@
 
 *Last Updated: 2026-04-11 22:44 UTC*
 *Research: OWASP AI Agent Security, IBM, Wiz, Mem0, Echoleak (2024)*
+
+---
+
+## 📋 PILAR 7: SELF-HEALING ENHANCEMENTS (2026-04-12)
+
+### Research Findings:
+- Self-Healing Plugin `@elvatis_com/openclaw-self-healing-elvatis` ist **INKOMPATIBEL** (Version mismatch)
+- Plugin erwartet neuere OpenClaw Version
+- Config: nested structure wird rejected
+
+### Was wir schon haben:
+| Script | Status |
+|--------|--------|
+| cron_error_healer.py | ✅ Aktiv |
+| auto_fixer.py | ✅ Aktiv |
+| KAIROS_CONDITIONAL.py | ✅ Aktiv |
+
+### Fehlende Features:
+| Feature | Priority | Status |
+|---------|----------|--------|
+| Model Health Check | 🔴 HIGH | ✅ DONE |
+| Model Cooldown Manager | 🔴 HIGH | ✅ DONE |
+| Auto-Failover (Session Pins) | 🔴 HIGH | ✅ DONE |
+| Integration cron_error_healer | 🔴 HIGH | ✅ DONE |
+| Config Auto-Backup | 🟡 MEDIUM | 📋 TODO |
+| GitHub Issue Creation | 🟡 MEDIUM | 📋 TODO |
+
+### Implementation Plan:
+1. [x] `model_health_checker.py` — Health probe für alle konfigurierten Models ✅ DONE 2026-04-12
+2. [x] `model_cooldown_manager.py` — Cooldown state tracking nach rate limits ✅ DONE 2026-04-12
+3. [x] `session_pin_manager.py` — Auto-failover session pins auf fallback model ✅ DONE 2026-04-12
+4. [x] Integrate in existing cron_error_healer.py ✅ DONE 2026-04-12
+
+### HyDE Research (2026-04-12):
+- HyDE = Hypothetical Document Embeddings für RAG
+- 20-40% better precision bei knowledge-intensive queries
+- Adaptieren für KG: Hypothetische KG entities generieren vor retrieval
+- Status: Konzept validiert, Implementation später
+
+*Last Updated: 2026-04-12 16:38 UTC*
