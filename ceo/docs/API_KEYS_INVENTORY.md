@@ -21,7 +21,7 @@
 ```
 Location: /home/clawbot/.openclaw/secrets/secrets.env
 Env Var:  OPENROUTER_API_KEY
-Value:    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
+Value:    sk-or-v1-cc77...4f4
 User ID:  user_3BE9Y5tW08JQGrYzfl9kFl4HkSX
 Status:   ✅ FUNKTIONIERT
 Test:     nvidia/nemotron-3-super-120b-a12b:free — Response: WORKS
@@ -32,7 +32,7 @@ Rate Limit: qwen3-coder:free und gemma:free sind rate-limited
 ```
 Location: /home/clawbot/.openclaw/secrets/secrets.env
 Env Var:  OPENROUTER_API_KEY_2
-Value:    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
+Value:    sk-or-v1-11fb...5f5ea
 Status:   ❌ "User not found" — Key ungültig oder gelöscht
 ```
 
@@ -71,7 +71,7 @@ Lösung: Nico muss neuen Token generieren bei modal.com/glm-5-endpoint
 
 ### OpenRouter Key 2 Ungültig
 ```
-OPENROUTER_API_KEY_2=sk-or-v1-11fb7d20...
+OPENROUTER_API_KEY_2=sk-or-v1-11fb......
 Error: User not found
 Lösung: Aus secrets.env entfernen oder neuen Key generieren
 ```

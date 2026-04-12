@@ -94,7 +94,7 @@ Der Symlink/die Datei `secrets.env` im Root-Verzeichnis ist **VERALTET** und wir
 ### 1. OPENROUTER_API_KEY_2 LÖSCHEN
 ```bash
 # Aus secrets/secrets.env entfernen:
-OPENROUTER_API_KEY_2=sk-or-v1-11fb7d20...  # ← DIESER IST INVALID
+OPENROUTER_API_KEY_2=sk-or-v1-11fb......  # ← DIESER IST INVALID
 ```
 
 ### 2. MODAL_API_KEY ERSETZEN
