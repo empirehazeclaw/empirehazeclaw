@@ -1880,6 +1880,24 @@
       "description": "Neueste docs: heute 13:14, keine Files >30 Tage",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "15:25",
+      "category": "system",
+      "title": "Gateway healthy",
+      "description": "Gateway reachable 72ms",
+      "impact": "low",
+      "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "15:30",
+      "category": "analysis",
+      "title": "CEO structure analysiert",
+      "description": "CEO: 1.8MB total, memory: 580K, docs: 256K",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
