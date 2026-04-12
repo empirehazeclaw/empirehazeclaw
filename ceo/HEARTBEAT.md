@@ -58,7 +58,27 @@ Scripts:     ✅ 65 (62 + 3 new: orchestrator, meta-tools, kairos)
 Test Suite:  ✅ 369/369 passing
 ```
 
+## 📈 TRACKED METRICS (Daily)
+
+### From Recap Analysis - Start Tracking:
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Error Rate | 1.4% | <1% | 🟡 Close |
+| KG Entities | 254 | Growing | ✅ |
+| KG Relations | 523 | Quality | ✅ |
+| Scripts | 62 | ~40 | 🟡 Consolidation done |
+| Security Score | 85/100 | 90+ | 🟡 Needs audit |
+| Sessions/Day | ? | Track | 🔴 Add to cron |
+| Token Usage | 0% | <80% | ✅ Controlled |
+
+### Untracked (Need to Add):
+1. **Session count per day** — Add to morning_brief.py
+2. **Token usage per session** — Already tracked via token_budget_tracker
+3. **Cron success/failure ratio** — Add to cron_watchdog
+4. **Skill improvement rate** — Track in skill_tracker.py
+
 ---
-*Auto-updated: 2026-04-12 08:19 UTC*
-*Sir HazeClaw — Kontinuierliche Verbesserung, kein Ende! 🚀*
+*Auto-updated: 2026-04-12 08:35 UTC*
+*Sir HazeClaw — Learning from recaps to improve future 🚀*
 *🎉 ALL 6 PHASES COMPLETE*
+*📊 RECAP_ANALYSIS.md created — patterns extracted*
