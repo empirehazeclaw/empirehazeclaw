@@ -10,14 +10,19 @@
 | 1.1 | System-Audit abschließen | 🔄 IN PROGRESS |
 | 1.2 | Error Rate: 1.4% → <1% | ⏳ Läuft |
 | 1.3 | Script-Inventar | ✅ DONE (66 scripts) |
-| 1.4 | Cron-Inventar | ✅ DONE (45 jobs) |
-| 1.5 | KG-Inventar | ⏳ NEXT |
+| 1.4 | Cron-Inventar | ✅ DONE (45 jobs, 20 enabled) |
+| 1.5 | KG-Inventar | ✅ DONE (260 entities, 523 relations) |
 
 ### ✅ Week 1 Completed Today:
 - [x] MONTHLY PLAN erstellt (EXECUTION_PLAN.md)
 - [x] SCRIPT_INDEX.md erstellt (66 scripts)
 - [x] CRON_INDEX.md erstellt (45 jobs)
 - [x] RECAP_ANALYSIS.md erstellt
+- [x] KG_INDEX.md erstellt (260 entities)
+
+### 🚨 KG Issue Found:
+- access_count = 0 for ALL entities → KG retrieval BROKEN
+- Fix scheduled for Week 2 (Phase 4)
 
 ### 📊 KPI Week 1 Target:
 - Error Rate: <1%
