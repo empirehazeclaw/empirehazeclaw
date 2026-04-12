@@ -2548,6 +2548,15 @@
       "description": "2 .tar.gz ins archive/ verschoben",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:00",
+      "category": "system",
+      "title": "Error Cron Analyse durchgef\u00fchrt",
+      "description": "4 error crons identifiziert: Token Budget, Session Cleanup, CEO Daily, KG Lifecycle",
+      "impact": "medium",
+      "status": "identified"
     }
   ],
   "hypotheses": [],
