@@ -189,14 +189,14 @@ HEALING_RULES = {
 
     # ===== Fallback/Model errors =====
     "FallbackSummaryError": {
-        "action": "disable_cron",
+        "action": "model_failover",
         "category": "reasoning_error",
-        "note": "All models failed - disable cron"
+        "note": "All models failed - try failover to healthy model"
     },
     "All models failed": {
-        "action": "disable_cron",
+        "action": "model_failover",
         "category": "reasoning_error",
-        "note": "All models failed - disable cron"
+        "note": "All models failed - try failover to healthy model"
     },
 
     # ===== Script/Module errors =====
@@ -536,6 +536,34 @@ def determine_healing_action(job_id: str, job_name: str, error: str, consecutive
                 # This would trigger Telegram notification
                 action_taken = False  # Needs manual intervention
 
+            # ===== MODEL FAILOVER =====
+            elif action == "model_failover":
+                log(f"Action: MODEL_FAILOVER - trying to switch to healthy model", "INFO")
+                if not dry_run:
+                    try:
+                        # Import session pin manager
+                        sys.path.insert(0, str(Path(__file__).parent))
+                        from session_pin_manager import failover_all_from_model, get_available_models, DEFAULT_MODEL_CHAIN
+                        
+                        # Get current model from error context
+                        # For now, try to failover all sessions from failed models
+                        available = get_available_models(DEFAULT_MODEL_CHAIN)
+                        if available:
+                            healthy_model = available[0]
+                            log(f"Found healthy model: {healthy_model}", "INFO")
+                            # Note: Full session failover requires session ID tracking
+                            # For now, just log the suggestion
+                            log(f"Suggestion: Pin sessions to {healthy_model}", "INFO")
+                        else:
+                            log(f"No healthy models available - would disable cron", "WARN")
+                            # Fallback to disable
+                            subprocess.run(["openclaw", "cron", "disable", job_id], check=True)
+                            log(f"Cron disabled: {job_name}", "INFO")
+                    except Exception as e:
+                        log(f"Model failover failed: {e}", "ERROR")
+                        action_taken = False
+                action_taken = True
+
             break  # Only handle first matching pattern
 
     # STAGE 4: VERIFY
@@ -549,6 +577,46 @@ def determine_healing_action(job_id: str, job_name: str, error: str, consecutive
 
     return action_taken
 
+def check_model_health_and_record():
+    """Check model health and record failures."""
+    try:
+        # Import model health checker functions
+        sys.path.insert(0, str(Path(__file__).parent))
+        from model_health_checker import probe_model, get_configured_models, load_state as load_health_state
+        from model_cooldown_manager import record_failure, is_in_cooldown, get_available_models
+        
+        # Get configured models
+        models = get_configured_models()
+        
+        # Probe each model
+        for model_id in models:
+            result = probe_model(model_id)
+            
+            if result.get("status") == "error":
+                error_msg = result.get("error", "unknown")
+                # Determine reason
+                if "429" in error_msg or "rate" in error_msg.lower():
+                    reason = "rate_limit"
+                elif "401" in error_msg or "403" in error_msg:
+                    reason = "auth_error"
+                elif "timeout" in error_msg.lower():
+                    reason = "timeout"
+                else:
+                    reason = "unknown"
+                
+                record_failure(model_id, reason)
+                log(f"Model {model_id} failed: {error_msg} -> recorded as {reason}", "WARN")
+        
+        # Check for available models
+        available = get_available_models(models)
+        if len(available) < len(models):
+            unavailable = set(models) - set(available)
+            log(f"Models in cooldown: {unavailable}", "WARN")
+        
+    except Exception as e:
+        log(f"Model health check failed: {e}", "WARN")
+
+
 def heal_all_errors(dry_run: bool = False) -> Dict[str, int]:
     """Heale alle Crons mit Errors - full 4-Stage loop."""
     stats = {
@@ -560,6 +628,10 @@ def heal_all_errors(dry_run: bool = False) -> Dict[str, int]:
         'circuit_breaker': 0
     }
 
+    log(f"", "INFO")
+    log(f"=== MODEL HEALTH CHECK ===", "INFO")
+    check_model_health_and_record()
+    
     log(f"", "INFO")
     log(f"=== FULL 4-STAGE LOOP ===", "INFO")
 
