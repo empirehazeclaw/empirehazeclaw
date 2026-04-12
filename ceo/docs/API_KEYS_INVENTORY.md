@@ -64,7 +64,7 @@ Status:   ❌ "User not found" — Key ungültig oder gelöscht
 
 ### Modal Token Ungültig
 ```
-MODAL_API_KEY=ak-AjCOB3Qdw6nEosChNZvCUa:as-d6rukZKOnsznEykolOdWqE
+MODAL_API_KEY=ak-...:as-...
 Error: invalid token
 Lösung: Nico muss neuen Token generieren bei modal.com/glm-5-endpoint
 ```

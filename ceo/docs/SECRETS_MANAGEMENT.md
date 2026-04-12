@@ -99,7 +99,7 @@ OPENROUTER_API_KEY_2=sk-or-v1-11fb......  # ← DIESER IST INVALID
 
 ### 2. MODAL_API_KEY ERSETZEN
 ```bash
-# Aktuell: MODAL_API_KEY=ak-AjCOB3Qdw6nEosChNZvCUa:as-d6rukZKOnsznEykolOdWqE
+# Aktuell: MODAL_API_KEY=ak-...REDACTED
 # Status: invalid token
 # Lösung: Nico muss neuen Token generieren bei modal.com/glm-5-endpoint
 ```
@@ -132,7 +132,7 @@ grep -v "^#" /home/clawbot/.openclaw/secrets/secrets.env | grep -v "^$" | wc -l
 | Social | 12 | 12 | 0 | 0 |
 | Google | 4 | 4 | 0 | 0 |
 | System | 2 | 2 | 0 | 0 |
-| **TOTAL** | **36** | **33** | **2** | **1** |
+| **TOTAL** | **35** | **33** | **2** | |
 
 ---
 
