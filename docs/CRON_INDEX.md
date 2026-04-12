@@ -230,3 +230,24 @@ Action: Short-term → Long-term memory promotion
 *Erstellt: 2026-04-11 11:14 UTC*
 *Quelle: cron list*
 *Status: COMPLETE*
+---
+
+## 📋 ADDITIONAL SYSTEMS
+
+### QMD (Query Markdown)
+```
+Status: ✅ READY (On-Demand CLI, not a daemon)
+Usage: qmd query "search term" -c memory
+Index: 58 files, 1692 vectors
+Location: ~/.cache/qmd/
+Note: No process needed - runs on-demand
+```
+
+### Memory Sessions Directory
+```
+Path: memory/sessions/
+Status: ✅ Created 2026-04-12
+Purpose: OpenClaw session memory persistence (via session-memory hook)
+Hook: session-memory (enabled)
+```
+

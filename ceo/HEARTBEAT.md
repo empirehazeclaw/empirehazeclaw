@@ -45,6 +45,13 @@
 | **Validation Rate** | **97%** | ↑↑↑ EXCELLENT |
 
 ## 📋 Action Log (Today)
+- **06:49 UTC - Memory-Core Dreaming Cleanup**
+  - ✅ Custom nightly_dreaming.py deleted
+  - ✅ Custom kg_orphan_connector.py deleted
+  - ✅ Memory-core plugin configured (04:40 UTC)
+  - ✅ Google API key added to auth-profiles.json
+  - ✅ docs/MEMORY_DREAMING.md created
+  - ✅ Commit: 6c7e3ae
 - **00:00 UTC - Midnight Run Complete**
   - ✅ cron_error_healer v2: 4 jobs checked
   - ✅ CEO Daily Briefing: FALSE POSITIVE (actually delivered)
@@ -109,5 +116,5 @@
 **Real Error Rate: 1.41%** (was hardcoded 26.6% — FALSE!)
 
 ---
-*Auto-updated: 2026-04-11 20:55 UTC*
+*Auto-updated: 2026-04-12 06:50 UTC*
 *Sir HazeClaw — Kontinuierliche Verbesserung, kein Ende! 🚀*

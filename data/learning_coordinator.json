@@ -1,12 +1,14 @@
 {
-  "timestamp": "2026-04-12T06:04:00Z",
-  "duration_seconds": 7.5,
-  "phase_results": {
-    "system_check": "OK",
-    "research": { "hypotheses_generated": 2, "integrated": true },
-    "quality_gates": { "issues": [{ "level": "HIGH", "description": "Self-Eval score low: 84/100" }, { "level": "MEDIUM", "description": "Quality über Quantität: 60/100" }] },
-    "improvements": { "count": 3, "all_validated": true },
-    "learning_tracked": true
+  "timestamp": "2026-04-12T07:04:00Z",
+  "duration_s": 8.2,
+  "system_check": "pass",
+  "research": {"hypotheses": 2, "status": "pass"},
+  "quality": {"issues": 0, "status": "pass"},
+  "improvements": {
+    "selected": ["Apply Self Improvement pattern", "Apply Autonomous Learning pattern"],
+    "executed": 2,
+    "validated": 2
   },
-  "summary": "Full cycle completed successfully. 2 issues flagged (HIGH/MEDIUM), 3 improvements executed via Self-Play (GVU Pattern)."
+  "learning": "pass",
+  "meta_improvement": "skipped (runs every 5 cycles)"
 }
