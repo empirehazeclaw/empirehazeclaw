@@ -1817,6 +1817,15 @@
       "description": "knowledge_graph.json.backup gel\u00f6scht",
       "impact": "medium",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:40",
+      "category": "system",
+      "title": "Workspace size analysiert",
+      "description": "68MB \u2192 67MB (1MB gespart durch KG backup removal)",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
