@@ -1,8 +1,110 @@
 # 🎯 SIR HAZECLAW — DETAILED EXECUTION PLAN
 **Research Date:** 2026-04-12
-**Based on:** Deep Audit + 2026 Agent Architecture Research
+**Based on:** Deep Audit + 2026 Agent Architecture Research + Nico's Voice Request
 **Status:** APPROVED — Ready to Execute
 **Storage:** `docs/EXECUTION_PLAN.md` (Git committed)
+
+---
+
+## 📅 MONTHLY PLAN (April 13 - May 12, 2026)
+
+**Based on Nico's Request:** "Ich möchte, dass du dich selbstständig um die Wartung kümmerst, vereinfachst, verwaltest, optimierst und erweiterst."
+
+### 🎯 MONTHLY GOALS
+1. **Überblick schaffen** — Vollständiger System-Überblick
+2. **Wartung automatisieren** — Self-Healing optimieren
+3. **Vereinfachen** — Scripts 62→40, Crons aufräumen
+4. **Optimieren** — Error Rate 1.4%→<1%, Security 85→90
+5. **Erweitern** — KG Growth, Skills verbessern
+
+---
+
+### WOCHE 1: 2026-04-13 bis 2026-04-19 — ÜBERBLICK + WARTUNG
+
+| # | Aufgabe | Status | Action |
+|---|---------|--------|--------|
+| 1.1 | System-Audit abschließen | ⏳ | HEARTBEAT.md complete machen |
+| 1.2 | Error Rate: 1.4% → <1% | ⏳ | cron_error_healer läuft weiter |
+| 1.3 | Script-Inventar erstellen | ⏳ | docs/SCRIPT_INDEX.md |
+| 1.4 | Cron-Inventar erstellen | ⏳ | docs/CRON_INDEX.md aktualisieren |
+| 1.5 | KG-Inventar erstellen | ⏳ | docs/KG_INDEX.md |
+
+**KPI Woche 1:** Error Rate <1%, alle 45 Crons dokumentiert
+
+---
+
+### WOCHE 2: 2026-04-20 bis 2026-04-26 — KONSOLIDIERUNG
+
+| # | Aufgabe | Status | Action |
+|---|---------|--------|--------|
+| 2.1 | Scripts: 62 → ~40 | ⏳ | Phase 2.3 fortsetzen |
+| 2.2 | Crons: 45 → 30 | ⏳ | Duplikate zusammenführen |
+| 2.3 | KG: 254 → 500 entities | ⏳ | Qualitäts-Entities hinzufügen |
+| 2.4 | Skills: Qualität > Quantität | ⏳ | Skill-Metriken verbessern |
+
+**KPI Woche 2:** Scripts <40, KG >500 entities, Crons <30
+
+---
+
+### WOCHE 3: 2026-04-27 bis 2026-05-03 — OPTIMIERUNG
+
+| # | Aufgabe | Status | Action |
+|---|---------|--------|--------|
+| 3.1 | Session Compression | ⏳ | 10KB → 200B Prototype |
+| 3.2 | Security: 85 → 90+ | ⏳ | Security Audit |
+| 3.3 | Token Caching | ⏳ | 70% Reduction Target |
+| 3.4 | Performance Monitor | ⏳ | latency_dashboard.py |
+
+**KPI Woche 3:** Security Score >90, Session Compression Prototype
+
+---
+
+### WOCHE 4: 2026-05-04 bis 2026-05-10 — ERWEITERUNG
+
+| # | Aufgabe | Status | Action |
+|---|---------|--------|--------|
+| 4.1 | Neue Skills | ⏳ | 1 Skill pro Woche |
+| 4.2 | Multi-Agent Loop | ⏳ | Developer + Reviewer Pattern |
+| 4.3 | MCP Protocol | ⏳ | Evaluieren |
+| 4.4 | Automatisierte Tests | ⏳ | Test Coverage >90% |
+
+**KPI Woche 4:** 1 neuer Skill, Multi-Agent Loop prototypisch
+
+---
+
+### WOCHE 5 (Buffer): 2026-05-11 bis 2026-05-12
+
+| # | Aufgabe | Status | Action |
+|---|---------|--------|--------|
+| 5.1 | Review + Adjust | ⏳ | Monatsrückblick |
+| 5.2 | Mai-Plan erstellen | ⏳ | COPY of this plan |
+
+---
+
+### 📊 MONTHLY KPI TRACKER
+
+| Metric | Start (Apr 12) | Ziel (May 12) | Status |
+|--------|----------------|---------------|--------|
+| Error Rate | 1.4% | <1% | 🟡 |
+| KG Entities | 254 | 500+ | 🔴 |
+| Scripts | 62 | <40 | 🟡 |
+| Active Crons | 45 | <30 | 🔴 |
+| Security Score | 85/100 | 90+ | 🟡 |
+| Active Skills | 14 | 20+ | 🟡 |
+| Session Size | 10KB | 200B | 🔴 |
+
+---
+
+## ✅ PHASE 1-6 STATUS (DONE — 2026-04-12)
+
+| Phase | Status | Result |
+|-------|--------|--------|
+| Phase 1 | ✅ COMPLETE | CEO Briefing fixed, 3 Crons re-enabled |
+| Phase 2 | ✅ COMPLETE | 99→62 scripts consolidated |
+| Phase 3 | ✅ COMPLETE | SIMPLE.md operator guide |
+| Phase 4 | ✅ COMPLETE | KG 1085→523 relations |
+| Phase 5 | ✅ COMPLETE | SELF_IMPROVEMENT_ORCHESTRATOR.py |
+| Phase 6 | ✅ COMPLETE | META_TOOLS.py + KAIROS_CONDITIONAL.py |
 
 ---
 
