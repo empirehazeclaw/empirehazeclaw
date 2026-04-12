@@ -1,16 +1,16 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-12 00:02 UTC
+## Last Update: 2026-04-12 07:45 UTC
 
 ## ✅ System Overview
 | Metric | Status |
 |--------|--------|
 | Gateway | ✅ LIVE |
-| Active Crons | 33/42 |
-| Cron Errors | 3 | ↓ (down from 5) |
+| Active Crons | 20/45 | (was 17/45 - added 3 re-enabled today)
+| Cron Errors | 1 ↓ | CEO Daily Briefing false positive fixed
 | Token Usage | 0% (0/5,000,000) |
 | Test Suite | 369/369 ✅ |
-| **Cron Healer v2** | **✅ Just Ran - 4 Jobs Processed** |
+| **Cron Healer v2** | **✅ Active** | Circuit Breaker working
 
 ## 🚨 MY MISSION: CONTINUOUS SELF-IMPROVEMENT
 
@@ -37,17 +37,23 @@
 ## 📊 Current Status
 | Metric | Value | Trend |
 |--------|-------|-------|
-| Skills | 22 | Growing |
+| Skills | 14 | Stable (cleaned up)
 | **Self-Healing** | **✅ v2 Active** | Circuit Breaker + 4-Stage Loop |
-| KG Entities | 243 | Growing |
-| Commits Today | 60+ | Working |
+| KG Entities | 209 | Quality focus (reduced from 249)
+| Scripts | 99 | Consolidation: 99 → ~40 target
 | Learning Loop | v4 + Meta | Running |
 | **Validation Rate** | **97%** | ↑↑↑ EXCELLENT |
 
+## 🎯 TODAY'S FIXES (2026-04-12)
+- ✅ CEO Daily Briefing: Fixed false positive error (delivery config)
+- ✅ 3 Crons Re-enabled: Token Budget, KG Lifecycle, Session Cleanup
+- ✅ Created docs/DEEP_AUDIT.md (full system audit)
+- ✅ Created docs/QUICK_REFERENCE.md (simple 1-page overview)
+
 ## 🎯 PHASE 1.2: Scripts Consolidation
 - ✅ Archived 5 outreach scripts (outreach/ → _archive/phase1/)
-- ✅ Removed 7 empty directories (analysis/, archive/, automation/, core/, experimental/, healing/, maintenance/)
-- ✅ Scripts: 97 → 92
+- ✅ Removed 7 empty directories
+- ✅ Scripts: 97 → 92 (remaining: 99 - consolidation in progress)
 - Decision: Keep evening_* and morning_brief (have active crons)
 - **Next: Phase 1.3 — Consolidate error_analyzer.py (4→1)**
 - **06:49 UTC - Memory-Core Dreaming Cleanup**
