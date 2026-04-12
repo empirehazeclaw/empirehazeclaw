@@ -2539,6 +2539,15 @@
       "description": "Alle Recap-Docs konsolidiert",
       "impact": "medium",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "13:50",
+      "category": "cleanup",
+      "title": "Backup archives reorganisiert",
+      "description": "2 .tar.gz ins archive/ verschoben",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
