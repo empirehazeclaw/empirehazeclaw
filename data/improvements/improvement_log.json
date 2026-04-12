@@ -1907,6 +1907,15 @@
       "description": "200K task reports, keine alten >7 Tage",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "15:40",
+      "category": "analysis",
+      "title": "Experience bank analysiert",
+      "description": "56K experience bank, 4 files",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
