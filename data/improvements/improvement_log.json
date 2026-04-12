@@ -1970,6 +1970,15 @@
       "description": "16 skills folders, 4.0MB total",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "16:15",
+      "category": "system",
+      "title": "System Gesamt\u00fcbersicht",
+      "description": "Workspace: 68MB, Top: skills(4M), scripts(3.4M), archive(2.2M)",
+      "impact": "medium",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
