@@ -2557,6 +2557,15 @@
       "description": "4 error crons identifiziert: Token Budget, Session Cleanup, CEO Daily, KG Lifecycle",
       "impact": "medium",
       "status": "identified"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:10",
+      "category": "documentation",
+      "title": "8 Recap-docs identifiziert",
+      "description": "MASTER_RECAP konsolidiert, weitere 7 k\u00f6nnten gemergt werden",
+      "impact": "low",
+      "status": "identified"
     }
   ],
   "hypotheses": [],
