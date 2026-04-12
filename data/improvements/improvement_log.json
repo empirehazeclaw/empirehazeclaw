@@ -2566,6 +2566,15 @@
       "description": "MASTER_RECAP konsolidiert, weitere 7 k\u00f6nnten gemergt werden",
       "impact": "low",
       "status": "identified"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:15",
+      "category": "system",
+      "title": "KG Status gepr\u00fcft",
+      "description": "284 entities, 523 relations",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
