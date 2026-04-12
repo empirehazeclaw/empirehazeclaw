@@ -1808,6 +1808,15 @@
       "description": "2 archive folders entfernt",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:35",
+      "category": "cleanup",
+      "title": "KG backup entfernt (1.7MB)",
+      "description": "knowledge_graph.json.backup gel\u00f6scht",
+      "impact": "medium",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
