@@ -1826,6 +1826,15 @@
       "description": "68MB \u2192 67MB (1MB gespart durch KG backup removal)",
       "impact": "low",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:45",
+      "category": "skills",
+      "title": "Skills quality check",
+      "description": "15 skills folders, largest: capability-evolver (1.8MB)",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
