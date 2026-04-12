@@ -347,7 +347,16 @@ def determine_healing_action(job_id: str, job_name: str, error: str, consecutive
     category = categorize_error(error)
     log(f"Category: {category}", "INFO")
 
-    # Check false positive first
+    # CRITICAL CHECK: If message was delivered, this is a false positive - don't heal!
+    # Even if error text contains patterns like "Telegram recipient" or "Message failed",
+    # if lastDelivered is True, the message got through and we should ignore the error.
+    status = get_last_run_status(job_id)
+    if status and status.get("lastDelivered"):
+        log(f"FALSE POSITIVE: Job {job_name} has lastDelivered=True - message actually delivered", "INFO")
+        log(f"Error text '{error[:50]}...' is misleading - skipping healing", "INFO")
+        return True
+
+    # Check false positive patterns (text-based)
     if check_false_positive(job_id, error):
         log(f"Action: FALSE POSITIVE - no healing needed", "INFO")
         return True
