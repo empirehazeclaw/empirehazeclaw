@@ -96,7 +96,15 @@ def age_kg(kg: Dict) -> Dict:
     
     stale_count = 0
     for entity_id, entity_data in entities.items():
-        last_accessed = entity_data.get("last_accessed", now)
+        last_accessed_raw = entity_data.get("last_accessed", now)
+        # Handle both ISO string timestamps and numeric timestamps
+        if isinstance(last_accessed_raw, str):
+            try:
+                last_accessed = datetime.fromisoformat(last_accessed_raw.replace("Z", "+00:00")).timestamp()
+            except (ValueError, TypeError):
+                last_accessed = now
+        else:
+            last_accessed = last_accessed_raw
         age_days = (now - last_accessed) / 86400
         
         if age_days > STALE_THRESHOLD_DAYS:

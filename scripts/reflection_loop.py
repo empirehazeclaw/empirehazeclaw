@@ -196,6 +196,9 @@ class ReflectionEngine:
     
     def _generate_fix(self, error_type: str, error_msg: str, result: dict) -> dict:
         """Generate a fix for an unknown error."""
+        # Ensure error_type and error_msg are strings before calling .lower()
+        error_type = str(error_type) if error_type else "unknown"
+        error_msg = str(error_msg) if error_msg else ""
         # Simple rule-based fix generation
         fix_templates = {
             "timeout": {

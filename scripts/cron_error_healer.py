@@ -163,6 +163,30 @@ HEALING_RULES = {
         "note": "Rate limited - wait before retry"
     },
 
+    # ===== Telegram errors =====
+    "Telegram recipient": {
+        "action": "disable_cron",
+        "category": "delivery_error",
+        "note": "Telegram recipient not found - disable cron"
+    },
+    "could not be resolved to a numeric chat ID": {
+        "action": "disable_cron",
+        "category": "delivery_error",
+        "note": "Telegram username not resolvable - disable cron"
+    },
+
+    # ===== Edit failures =====
+    "Edit: `": {
+        "action": "disable_cron",
+        "category": "tool_failure",
+        "note": "Edit operation failed - script issue, disable cron"
+    },
+    "Edit failed": {
+        "action": "disable_cron",
+        "category": "tool_failure",
+        "note": "Edit failed - disable cron"
+    },
+
     # ===== Fallback/Model errors =====
     "FallbackSummaryError": {
         "action": "disable_cron",

@@ -283,6 +283,42 @@
       "error_rate": 1.48,
       "error_count": 1198,
       "msg_count": 80835
+    },
+    {
+      "timestamp": "2026-04-12T00:05:05.277262",
+      "error_rate": 1.5,
+      "error_count": 1246,
+      "msg_count": 82889
+    },
+    {
+      "timestamp": "2026-04-12T00:05:08.164503",
+      "error_rate": 1.5,
+      "error_count": 1246,
+      "msg_count": 82889
+    },
+    {
+      "timestamp": "2026-04-12T01:05:32.821817",
+      "error_rate": 1.5,
+      "error_count": 1246,
+      "msg_count": 82969
+    },
+    {
+      "timestamp": "2026-04-12T01:05:35.629371",
+      "error_rate": 1.5,
+      "error_count": 1246,
+      "msg_count": 82969
+    },
+    {
+      "timestamp": "2026-04-12T02:05:10.691351",
+      "error_rate": 1.5,
+      "error_count": 1250,
+      "msg_count": 83057
+    },
+    {
+      "timestamp": "2026-04-12T02:05:13.354508",
+      "error_rate": 1.5,
+      "error_count": 1250,
+      "msg_count": 83057
     }
   ]
 }
