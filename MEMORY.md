@@ -336,3 +336,30 @@ LAUNCH → CORRECTION → AUTONOMOUS → CONSOLIDATION
 1. Neuen OpenRouter Key generieren: https://openrouter.ai/keys
 2. Alten Key aus Git History entfernen (BFG Tool)
 
+
+---
+
+## 🔑 LESSON LEARNED (2026-04-12)
+
+### Self-Improvement Loop Anti-Pattern:
+
+**BAD:** Loop der nur "Verbesserungen" sammelt ohne echte Fixes
+- 100 Commits aber keine echte Verbesserung
+- Ständig "Status", "Loop", "Check" als Activity
+
+**GOOD:** Gezielte Verbesserungen mit klaren Outputs
+- Erst denken: Was brauchen wir wirklich?
+-限量 Quantity: 1 perfekter Fix > 50 sinnlose "Verbesserungen"
+- Qualität vor Quantität
+
+### Bessere Loop-Struktur:
+1. **Problem identifizieren** (konkret)
+2. **Fix implementieren** (einfach, messbar)
+3. **Testen/verifizieren**
+4. **Dokumentieren** (1x pro meaningful change)
+
+### Nie wieder:
+- Commits nur um "aktiv zu sein"
+- Improvement Log updaten ohne echten Fortschritt
+- Analysen die nichts ändern
+

@@ -824,6 +824,96 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 300
+    },
+    {
+      "timestamp": "2026-04-12T14:21:37.984567+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 302
+    },
+    {
+      "timestamp": "2026-04-12T14:21:43.162450+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 304
+    },
+    {
+      "timestamp": "2026-04-12T14:21:48.322210+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 306
+    },
+    {
+      "timestamp": "2026-04-12T15:21:43.507063+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 308
+    },
+    {
+      "timestamp": "2026-04-12T15:21:48.656836+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 310
+    },
+    {
+      "timestamp": "2026-04-12T15:21:53.825916+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 312
+    },
+    {
+      "timestamp": "2026-04-12T15:24:15.796754+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 314
+    },
+    {
+      "timestamp": "2026-04-12T15:24:20.947988+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 316
+    },
+    {
+      "timestamp": "2026-04-12T15:24:26.130641+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 319
     }
   ],
   "success_patterns": [
@@ -1373,6 +1463,123 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-12T13:32:04.876600+00:00",
       "confidence": 0.8537146648319183
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T14:21:37.984567+00:00",
+      "confidence": 0.8059632091928924
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T14:21:43.162450+00:00",
+      "confidence": 0.8691160946533076
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T14:21:48.322210+00:00",
+      "confidence": 0.7309368069385401
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:21:43.507063+00:00",
+      "confidence": 0.9118490244776163
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:21:48.656836+00:00",
+      "confidence": 0.8123213457341371
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:21:53.825916+00:00",
+      "confidence": 0.7542988061001205
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:24:15.796754+00:00",
+      "confidence": 0.9215521456005855
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:24:20.947988+00:00",
+      "confidence": 0.8177218680593731
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Grow knowledge graph with new insights",
+        "actual_impact": 10,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T15:24:26.130641+00:00",
+      "confidence": 0.924350131232246
     }
   ],
   "error_fixes": [

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-autonomous_improvement.py — Karpathy-Style Self-Improvement Loop
+autonomous_improvement.py - Karpathy-Style Self-Improvement Loop
 ================================================================
 Sir HazeClaw - 2026-04-11
 
@@ -46,6 +46,12 @@ IMPROVEMENT_THRESHOLD = 0.02  # 2% improvement minimum (lowered from 5% to allow
 MAX_ATTEMPTS_PER_RUN = 3
 STAGNATION_LIMIT = 3  # Stop after 3 failed attempts
 
+# Category diversity: prevent same category from being selected repeatedly
+CATEGORY_COOLDOWN_CYCLES = 2  # A category can't be selected again for N cycles after use
+
+# Track recently used categories across cycles (module-level for persistence)
+_recently_used_categories = []
+
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -79,7 +85,7 @@ def get_current_metrics() -> dict:
         "scripts_without_timeout": 0,  # NEW: Measurable metric!
         "timestamp": datetime.now().isoformat()
     }
-    
+
     # Get error rate
     if METRICS_FILE.exists():
         with open(METRICS_FILE) as f:
@@ -87,28 +93,28 @@ def get_current_metrics() -> dict:
         history = data.get("history", [])
         if history:
             metrics["error_rate"] = history[-1].get("error_rate", 100)
-    
+
     # Get KG entities
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
         metrics["kg_entities"] = len(kg.get("entities", {}))
-    
+
     # Get skills count
     skills_dir = WORKSPACE / "skills" / "_library"
     if skills_dir.exists():
         metrics["skills_count"] = len(list(skills_dir.glob("*.md")))
-    
+
     # Get sessions today
     session_dir = Path("/home/clawbot/.openclaw/agents/ceo/sessions")
     if session_dir.exists():
         today = datetime.now().date()
         sessions = list(session_dir.glob("*.jsonl"))
         metrics["sessions_today"] = sum(
-            1 for s in sessions 
+            1 for s in sessions
             if datetime.fromtimestamp(s.stat().st_mtime).date() == today
         )
-    
+
     # NEW: Count scripts without timeout
     scripts_dir = WORKSPACE / "scripts"
     timeout_count = 0
@@ -120,12 +126,12 @@ def get_current_metrics() -> dict:
             if "timeout=" not in content and "timeout =" not in content:
                 timeout_count += 1
     metrics["scripts_without_timeout"] = timeout_count
-    
+
     # Count sessions (for cleanup measurement)
     session_dir = Path("/home/clawbot/.openclaw/agents/ceo/sessions")
     if session_dir.exists():
         metrics["session_count"] = len(list(session_dir.glob("*.jsonl")))
-    
+
     return metrics
 
 def load_improvement_log() -> dict:
@@ -155,15 +161,15 @@ def save_improvement_log(data: dict):
 
 def generate_hypothesis(metrics: dict) -> list:
     """Generate improvement hypotheses based on current state."""
-    
+
     hypotheses = []
     error_rate = metrics.get("error_rate", 100)
     kg_entities = metrics.get("kg_entities", 0)
     skills_count = metrics.get("skills_count", 0)
     scripts_without_timeout = metrics.get("scripts_without_timeout", 0)
-    
+
     log("Generating improvement hypotheses...", "STEP")
-    
+
     # Error rate hypotheses
     if error_rate > 20:
         hypotheses.append({
@@ -180,10 +186,10 @@ def generate_hypothesis(metrics: dict) -> list:
                 "Implement loop detection before retry"
             ]
         })
-        
+
         hypotheses.append({
             "id": f"hyp_{datetime.now().strftime('%H%M%S')}_2",
-            "category": "error_reduction", 
+            "category": "error_reduction",
             "priority": "HIGH",
             "description": "Fix timeout-related errors (61% of all errors)",
             "approach": "Use background_or_cron for tasks >60s",
@@ -217,7 +223,7 @@ def generate_hypothesis(metrics: dict) -> list:
             "effort": "LOW",
             "methods": ["Review remaining errors", "Apply targeted fixes"]
         })
-    
+
     # Knowledge graph hypotheses
     if kg_entities < 200:
         hypotheses.append({
@@ -234,7 +240,7 @@ def generate_hypothesis(metrics: dict) -> list:
                 "Add to KG entities"
             ]
         })
-    
+
     # Skill hypotheses
     if skills_count < 25:
         hypotheses.append({
@@ -251,8 +257,8 @@ def generate_hypothesis(metrics: dict) -> list:
                 "Update SKILL.md index"
             ]
         })
-    
-    # Scripts without timeout — high priority if any exist
+
+    # Scripts without timeout - high priority if any exist
     if scripts_without_timeout > 0:
         hypotheses.append({
             "id": f"hyp_{datetime.now().strftime('%H%M%S')}_timeout",
@@ -268,8 +274,8 @@ def generate_hypothesis(metrics: dict) -> list:
                 "Test each modified script"
             ]
         })
-    
-    # Generic improvement hypotheses — ROTATE THROUGH THESE
+
+    # Generic improvement hypotheses - ROTATE THROUGH THESE
     # efficiency: high impact but MEDIUM priority
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_5",
@@ -285,7 +291,7 @@ def generate_hypothesis(metrics: dict) -> list:
             "Use caching where possible"
         ]
     })
-    
+
     # Workflow hypothesis
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_6",
@@ -301,8 +307,8 @@ def generate_hypothesis(metrics: dict) -> list:
             "Suggest optimization"
         ]
     })
-    
-    # Communication hypothesis  
+
+    # Communication hypothesis
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_7",
         "category": "communication",
@@ -317,7 +323,7 @@ def generate_hypothesis(metrics: dict) -> list:
             "Suggest actionable next steps"
         ]
     })
-    
+
     # Safety hypothesis
     hypotheses.append({
         "id": f"hyp_{datetime.now().strftime('%H%M%S')}_8",
@@ -333,15 +339,15 @@ def generate_hypothesis(metrics: dict) -> list:
             "Log destructive actions"
         ]
     })
-    
+
     # Filter to only valid categories that have apply_* functions
     valid_categories = ["error_reduction", "knowledge", "skills", "efficiency", "workflow", "communication", "safety"]
     hypotheses = [h for h in hypotheses if h["category"] in valid_categories]
-    
+
     # If error rate is low, skip error_reduction and favor other categories
     if error_rate <= 5:
         hypotheses = [h for h in hypotheses if h["category"] != "error_reduction"]
-    
+
     # Add knowledge growth hypothesis (ALWAYS, regardless of current KG size)
     # This ensures we always have a KG-growing option
     hypotheses.append({
@@ -358,23 +364,33 @@ def generate_hypothesis(metrics: dict) -> list:
             "Update KG with session insights"
         ]
     })
-    
+
     # Sort by priority and expected impact
     # But add SUBTLE randomness for same-priority items to avoid always same order
     priority_order = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
-    hypotheses.sort(key=lambda x: (
-        priority_order.get(x["priority"], 2), 
-        -x["expected_impact"],
-        random.random() * 0.001  # tiny random factor for same priority+impact
-    ))
     
+    # Apply category cooldown penalty
+    def sort_key(x):
+        base_priority = priority_order.get(x["priority"], 2)
+        # Penalize recently used categories by bumping their priority down
+        cooldown_penalty = 0
+        if x["category"] in _recently_used_categories:
+            cooldown_penalty = 1  # Same category gets priority bump down
+        return (
+            base_priority + cooldown_penalty,
+            -x["expected_impact"],
+            random.random() * 0.001  # tiny random factor for same priority+impact
+        )
+    
+    hypotheses.sort(key=sort_key)
+
     return hypotheses[:7]  # Return top 7 (more variety)
 
 def apply_hypothesis(hypothesis: dict) -> dict:
     """Apply a single hypothesis and measure impact."""
-    
+
     log(f"Applying: {hypothesis['description']}", "STEP")
-    
+
     result = {
         "hypothesis_id": hypothesis["id"],
         "timestamp": datetime.now().isoformat(),
@@ -385,39 +401,39 @@ def apply_hypothesis(hypothesis: dict) -> dict:
         "change_made": None,
         "error": None
     }
-    
+
     category = hypothesis["category"]
-    
+
     try:
         if category == "error_reduction":
             result["change_made"] = apply_error_reduction(hypothesis)
-            
+
         elif category == "knowledge":
             result["change_made"] = apply_kg_growth(hypothesis)
-            
+
         elif category == "skills":
             result["change_made"] = apply_skill_expansion(hypothesis)
-            
+
         elif category == "efficiency":
             result["change_made"] = apply_efficiency_improvement(hypothesis)
-        
+
         elif category in ["workflow", "communication", "safety"]:
             # For these categories, add KG entities to track the change
             result["change_made"] = apply_generic_improvement(hypothesis)
-        
+
         else:
             result["change_made"] = "no_handler_for_category"
             result["error"] = f"No apply function for category: {category}"
-            
+
         # Measure after state
         result["metrics_after"] = get_current_metrics()
-        
+
         # Calculate actual impact based on what was actually done
         error_before = result["metrics_before"].get("error_rate", 100)
         error_after = result["metrics_after"].get("error_rate", 100)
         kg_before = result["metrics_before"].get("kg_entities", 0)
         kg_after = result["metrics_after"].get("kg_entities", 0)
-        
+
         # Measure what we actually improved
         if category == "error_reduction":
             # Did we add any KG entities?
@@ -437,36 +453,36 @@ def apply_hypothesis(hypothesis: dict) -> dict:
             # Default: measure KG growth
             kg_growth = kg_after - kg_before
             result["actual_impact"] = kg_growth * 3
-        
+
         # Success if improvement >= threshold
         result["success"] = result["actual_impact"] >= IMPROVEMENT_THRESHOLD
-        
+
     except Exception as e:
         result["error"] = str(e)
         log(f"Error applying hypothesis: {e}", "ERROR")
-    
+
     return result
 
 def apply_error_reduction(hypothesis: dict) -> str:
-    """Apply error reduction patterns — REAL FIXES, not just analysis."""
-    
+    """Apply error reduction patterns - REAL FIXES, not just analysis."""
+
     changes = []
     kg_added = 0
     real_fixes = 0
-    
+
     # Run the actual error reduction strategy
     error_reducer = WORKSPACE / "scripts" / "error_reduction_strategy.py"
-    
+
     if error_reducer.exists():
         log("  → Running error_reduction_strategy.py --fix-all...", "STEP")
         result = subprocess.run(
             ["/usr/bin/python3", str(error_reducer), "--fix-all"],
             capture_output=True, text=True, timeout=120
         )
-        
+
         # Parse output for results
         output = result.stdout
-        
+
         # Extract fixed counts
         for line in output.split("\n"):
             if "Timeouts fixed:" in line:
@@ -483,10 +499,10 @@ def apply_error_reduction(hypothesis: dict) -> str:
                     log(f"  → Loops fixed: {loop_fixes}", "SUCCESS")
                 except:
                     pass
-        
+
         if real_fixes > 0:
             changes.append(f"real_fixes:{real_fixes}")
-    
+
     # Add KG entities for tracking (unique each time)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     random_suffix = random.randint(1000, 9999)
@@ -501,31 +517,31 @@ def apply_error_reduction(hypothesis: dict) -> str:
             "tags": ["error", "fix", "real-action"]
         }
     ]
-    
+
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
-        
+
         for entity in new_entities:
             if entity["id"] not in kg.get("entities", {}):
                 kg.setdefault("entities", {})[entity["id"]] = entity
                 with open(KG_FILE, "w") as f:
                     json.dump(kg, f, indent=2)
                 kg_added += 1
-    
+
     changes.append(f"kg_added:{kg_added}")
     log(f"  → Total real fixes: {real_fixes}", "SUCCESS")
-    
+
     return ", ".join(changes) if changes else "no_changes_needed"
 
 def apply_kg_growth(hypothesis: dict) -> str:
     """Grow knowledge graph."""
-    
+
     # Add new KG entities based on current state
     kg_added = 0
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     random_suffix = random.randint(1000, 9999)
-    
+
     # Use UNIQUE IDs each time to ensure measurability
     kg_entity = {
         "id": f"kg_growth_{timestamp}_{random_suffix}",
@@ -536,12 +552,12 @@ def apply_kg_growth(hypothesis: dict) -> str:
         "created": datetime.now().isoformat(),
         "tags": ["autonomous", "improvement", "karpathy", "self-healing"]
     }
-    
+
     # Try to add to KG
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
-        
+
         # Check if entity already exists
         entity_id = kg_entity["id"]
         if entity_id not in kg.get("entities", {}):
@@ -550,7 +566,7 @@ def apply_kg_growth(hypothesis: dict) -> str:
                 json.dump(kg, f, indent=2)
             kg_added += 1
             log(f"  → Added KG entity: {entity_id}", "SUCCESS")
-        
+
         # Add second unique entity
         kg_entity2 = {
             "id": f"pattern_discovery_{timestamp}_{random_suffix}",
@@ -561,7 +577,7 @@ def apply_kg_growth(hypothesis: dict) -> str:
             "created": datetime.now().isoformat(),
             "tags": ["estimation", "planning", "safety"]
         }
-        
+
         entity_id2 = kg_entity2["id"]
         if entity_id2 not in kg.get("entities", {}):
             kg.setdefault("entities", {})[entity_id2] = kg_entity2
@@ -569,7 +585,7 @@ def apply_kg_growth(hypothesis: dict) -> str:
                 json.dump(kg, f, indent=2)
             kg_added += 1
             log(f"  → Added KG entity: {entity_id2}", "SUCCESS")
-    
+
     if kg_added > 0:
         return f"added_{kg_added}_kg_entities"
     else:
@@ -577,19 +593,19 @@ def apply_kg_growth(hypothesis: dict) -> str:
 
 def apply_skill_expansion(hypothesis: dict) -> str:
     """Add new skills based on research."""
-    
+
     # Check current skills
     skills_dir = WORKSPACE / "skills" / "_library"
     existing_skills = [s.stem for s in skills_dir.glob("*.md")]
-    
+
     # New skills to consider
     new_skills = [
         "context_window_optimization",
-        "multi_agent_coordination", 
+        "multi_agent_coordination",
         "memory_consolidation",
         "error_prediction"
     ]
-    
+
     skills_added = []
     for skill in new_skills:
         if skill not in existing_skills:
@@ -611,10 +627,10 @@ To be implemented based on operational data.
 *Auto-generated by autonomous_improvement.py*
 """)
                 skills_added.append(skill)
-    
+
     log(f"  → Added {len(skills_added)} new skills", "STEP")
     changes.append(f"skills_added:{len(skills_added)}")
-    
+
     # Also add a KG entity to track this improvement
     kg_entity = {
         "id": f"skill_expansion_{timestamp}_{random_suffix}",
@@ -626,7 +642,7 @@ To be implemented based on operational data.
         "created": datetime.now().isoformat(),
         "tags": ["autonomous", "skills", "expansion"]
     }
-    
+
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
@@ -637,20 +653,20 @@ To be implemented based on operational data.
                 json.dump(kg, f, indent=2)
             kg_added += 1
             log(f"  → Added KG entity: {entity_id}", "SUCCESS")
-    
+
     changes.append(f"kg_added:{kg_added}")
     return ", ".join(changes)
 
 def apply_efficiency_improvement(hypothesis: dict) -> str:
     """Apply efficiency patterns."""
-    
+
     changes = []
     kg_added = 0
-    
+
     # Check for token-heavy operations and add KG entity to track this
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     random_suffix = random.randint(1000, 9999)
-    
+
     kg_entity = {
         "id": f"efficiency_improvement_{timestamp}_{random_suffix}",
         "type": "improvement",
@@ -662,11 +678,11 @@ def apply_efficiency_improvement(hypothesis: dict) -> str:
         "created": datetime.now().isoformat(),
         "tags": ["autonomous", "efficiency", "token-optimization"]
     }
-    
+
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
-        
+
         entity_id = kg_entity["id"]
         if entity_id not in kg.get("entities", {}):
             kg.setdefault("entities", {})[entity_id] = kg_entity
@@ -674,24 +690,24 @@ def apply_efficiency_improvement(hypothesis: dict) -> str:
                 json.dump(kg, f, indent=2)
             kg_added += 1
             log(f"  → Added KG entity: {entity_id}", "SUCCESS")
-    
+
     changes.append(f"efficiency_patterns_applied")
     changes.append(f"kg_added:{kg_added}")
-    
+
     return ", ".join(changes)
 
 def apply_generic_improvement(hypothesis: dict) -> str:
     """Apply generic improvements that don't fit other categories."""
-    
+
     category = hypothesis.get("category", "unknown")
     description = hypothesis.get("description", "Unknown")
-    
+
     kg_added = 0
-    
+
     # Create entity representing this improvement
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     random_suffix = random.randint(1000, 9999)
-    
+
     kg_entity = {
         "id": f"improvement_{category}_{timestamp}_{random_suffix}",
         "type": "improvement",
@@ -705,11 +721,11 @@ def apply_generic_improvement(hypothesis: dict) -> str:
         "created": datetime.now().isoformat(),
         "tags": ["autonomous", "improvement", category]
     }
-    
+
     if KG_FILE.exists():
         with open(KG_FILE) as f:
             kg = json.load(f)
-        
+
         entity_id = kg_entity["id"]
         if entity_id not in kg.get("entities", {}):
             kg.setdefault("entities", {})[entity_id] = kg_entity
@@ -717,12 +733,12 @@ def apply_generic_improvement(hypothesis: dict) -> str:
                 json.dump(kg, f, indent=2)
             kg_added += 1
             log(f"  → Added KG entity: {entity_id}", "SUCCESS")
-    
+
     return f"added_{kg_added}_kg_entities"
 
 def keep_or_discard(result: dict) -> str:
     """Decide whether to keep or discard the change."""
-    
+
     if result["success"]:
         log(f"✅ KEEP: Improved by {result['actual_impact']:.2f}%", "SUCCESS")
         return "KEEP"
@@ -732,11 +748,11 @@ def keep_or_discard(result: dict) -> str:
 
 def run_improvement_cycle(cycle_number: int) -> dict:
     """Run a single improvement cycle."""
-    
+
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}CYCLE {cycle_number}{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
-    
+
     cycle_result = {
         "cycle": cycle_number,
         "timestamp": datetime.now().isoformat(),
@@ -745,44 +761,44 @@ def run_improvement_cycle(cycle_number: int) -> dict:
         "applied": None,
         "kept": False
     }
-    
+
     # Step 1: Analyze current state
     log("Step 1: Analyzing current state...", "STEP")
     metrics = get_current_metrics()
     log(f"  Error Rate: {metrics['error_rate']:.1f}%", "INFO")
     log(f"  KG Entities: {metrics['kg_entities']}", "INFO")
     log(f"  Skills: {metrics['skills_count']}", "INFO")
-    
+
     # Step 2: Generate hypothesis
     log("Step 2: Generating hypotheses...", "STEP")
     hypotheses = generate_hypothesis(metrics)
     log(f"  Generated {len(hypotheses)} hypotheses", "INFO")
-    
+
     if not hypotheses:
         log("  No hypotheses generated. System may be optimal.", "INFO")
         return cycle_result
-    
+
     # Select best hypothesis
     best = hypotheses[0]
     cycle_result["hypothesis"] = best
     log(f"  Selected: {best['description']}", "INFO")
     log(f"  Expected Impact: {best['expected_impact']}%", "INFO")
-    
+
     # Step 3: Apply hypothesis
     log("Step 3: Applying hypothesis...", "STEP")
     applied = apply_hypothesis(best)
     cycle_result["applied"] = applied
-    
+
     # Step 4: Evaluate
     log("Step 4: Evaluating...", "STEP")
     decision = keep_or_discard(applied)
     cycle_result["kept"] = decision == "KEEP"
-    
+
     # Step 5: Log result
     improvement_log = load_improvement_log()
     improvement_log["improvements"].append(cycle_result)
     improvement_log["stats"]["total"] += 1
-    
+
     if decision == "KEEP":
         improvement_log["stats"]["successful"] += 1
         improvement_log["stats"]["current_streak"] += 1
@@ -791,15 +807,15 @@ def run_improvement_cycle(cycle_number: int) -> dict:
     else:
         improvement_log["stats"]["failed"] += 1
         improvement_log["stats"]["current_streak"] = 0
-    
+
     improvement_log["improvements"] = improvement_log["improvements"][-50:]  # Keep last 50
     save_improvement_log(improvement_log)
-    
-    # Step 6: REFLECTION — Self-correct based on results
+
+    # Step 6: REFLECTION - Self-correct based on results
     log("Step 6: Reflecting on cycle...", "STEP")
     try:
         reflection = ReflectionEngine()
-        
+
         # Create action result for reflection
         action_result = {
             "action": f"improvement_cycle_{cycle_number}",
@@ -814,39 +830,62 @@ def run_improvement_cycle(cycle_number: int) -> dict:
                 "decision": decision
             }
         }
-        
+
         reflection_result = reflection.reflect(action_result)
         log(f"  Reflection stored: {reflection_result.get('pattern_stored', False)}", "INFO")
-        
+
         # If we have a fix from reflection, apply it
         if reflection_result.get("fix") and not applied.get("success", False):
             log(f"  → Applying reflection fix: {reflection_result['fix'].get('description')}", "STEP")
     except Exception as e:
         log(f"  Reflection error (non-critical): {e}", "WARNING")
-    
+
     return cycle_result
 
 def run_overnight():
     """Run overnight improvement session (multiple cycles)."""
-    
+
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}🌙 OVERNIGHT AUTONOMOUS IMPROVEMENT{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
-    
+
     start_time = datetime.now()
     results = []
     stagnation_count = 0
     
+    # Reset category tracking for this overnight run
+    global _recently_used_categories
+    _recently_used_categories = []
+
     log(f"Started: {start_time.strftime('%H:%M UTC')}", "INFO")
     log(f"Max Cycles: {MAX_ATTEMPTS_PER_RUN}", "INFO")
     log(f"Stagnation Limit: {STAGNATION_LIMIT}", "INFO")
-    
+
     for i in range(1, MAX_ATTEMPTS_PER_RUN + 1):
         result = run_improvement_cycle(i)
         results.append(result)
         
-        # Check for stagnation
-        if not result.get("applied", {}).get("success", False):
+        # Track category usage for diversity
+        if result.get("hypothesis"):
+            cat = result["hypothesis"].get("category")
+            if cat:
+                _recently_used_categories.append(cat)
+                # Keep only recent cycles for cooldown
+                if len(_recently_used_categories) > CATEGORY_COOLDOWN_CYCLES:
+                    _recently_used_categories.pop(0)
+        
+        # Check for stagnation: failure OR same category repeated
+        applied = result.get("applied", {})
+        is_success = applied.get("success", False)
+        
+        # Detect category stagnation: if same category used in consecutive cycles
+        category_stagnation = False
+        if len(_recently_used_categories) >= 2:
+            if _recently_used_categories[-1] == _recently_used_categories[-2]:
+                category_stagnation = True
+                log(f"⚠️ Category stagnation detected: '{_recently_used_categories[-1]}' repeated", "WARNING")
+        
+        if not is_success or category_stagnation:
             stagnation_count += 1
             log(f"Stagnation counter: {stagnation_count}/{STAGNATION_LIMIT}", "WARNING")
             
@@ -858,34 +897,34 @@ def run_overnight():
         if i < MAX_ATTEMPTS_PER_RUN:
             import time
             time.sleep(5)
-    
+
     end_time = datetime.now()
     duration = (end_time - start_time).total_seconds()
-    
+
     # Summary
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}🌅 OVERNIGHT SUMMARY{Colors.ENDC}", "INFO")
     log(f"{Colors.BOLD}{'='*60}{Colors.ENDC}", "INFO")
-    
+
     successful = sum(1 for r in results if r.get("applied", {}).get("success", False))
     total = len(results)
-    
+
     log(f"Cycles Run: {total}", "INFO")
     log(f"Successful: {successful}/{total}", "INFO")
     log(f"Duration: {duration:.0f} seconds", "INFO")
     log(f"Finished: {end_time.strftime('%H:%M UTC')}", "INFO")
-    
+
     # Final metrics
     final_metrics = get_current_metrics()
     initial_metrics = results[0].get("metrics_before", {}) if results else final_metrics
-    
+
     if initial_metrics:
         error_before = initial_metrics.get("error_rate", 0)
         error_after = final_metrics.get("error_rate", 0)
         improvement = error_before - error_after
-        
+
         log(f"Error Rate Change: {error_before:.1f}% → {error_after:.1f}% ({improvement:+.1f}%)", "INFO")
-    
+
     return {
         "start_time": start_time.isoformat(),
         "end_time": end_time.isoformat(),
@@ -897,27 +936,27 @@ def run_overnight():
 
 def review_improvements():
     """Review improvement history and suggest next steps."""
-    
+
     improvement_log = load_improvement_log()
     stats = improvement_log["stats"]
     improvements = improvement_log["improvements"]
-    
+
     print(f"\n{Colors.BOLD}{'='*60}{Colors.ENDC}")
     print(f"{Colors.BOLD}📊 IMPROVEMENT REVIEW{Colors.ENDC}")
     print(f"{Colors.BOLD}{'='*60}{Colors.ENDC}\n")
-    
+
     print("📈 Overall Statistics:")
     print(f"   Total Cycles: {stats['total']}")
     print(f"   Successful: {stats['successful']}")
     print(f"   Failed: {stats['failed']}")
-    
+
     if stats['total'] > 0:
         success_rate = stats['successful'] / stats['total'] * 100
         print(f"   Success Rate: {success_rate:.1f}%")
-    
+
     print(f"   Current Streak: {stats['current_streak']}")
     print(f"   Best Streak: {stats['best_streak']}")
-    
+
     print("\n📋 Recent Improvements:")
     for imp in improvements[-10:]:
         timestamp = imp.get("timestamp", "")[:10]
@@ -926,21 +965,21 @@ def review_improvements():
         success = "✅" if imp.get("applied", {}).get("success") else "❌"
         actual = imp.get("applied", {}).get("actual_impact", 0)
         print(f"   {success} {timestamp}: {desc} ({actual:+.2f}%)")
-    
+
     # Suggest next action
     print("\n🎯 Suggested Next Action:")
     if stats['current_streak'] >= 3:
-        print("   Continue current approach — streak is good!")
+        print("   Continue current approach - streak is good!")
     elif stats['failed'] > stats['successful']:
-        print("   Review failed hypotheses — need new approach")
+        print("   Review failed hypotheses - need new approach")
     else:
         print("   Continue with top-priority hypothesis")
-    
+
     print()
 
 def main():
     """Main entry point."""
-    
+
     if "--analyze" in sys.argv:
         log("Current System State:", "INFO")
         metrics = get_current_metrics()
@@ -948,7 +987,7 @@ def main():
             if key != "timestamp":
                 print(f"  {key}: {value}")
         return
-    
+
     if "--hypothesis" in sys.argv:
         metrics = get_current_metrics()
         hypotheses = generate_hypothesis(metrics)
@@ -960,7 +999,7 @@ def main():
             print(f"   Category: {h['category']}")
             print()
         return
-    
+
     if "--apply" in sys.argv:
         metrics = get_current_metrics()
         hypotheses = generate_hypothesis(metrics)
@@ -973,23 +1012,23 @@ def main():
             if result['error']:
                 print(f"  Error: {result['error']}")
         return
-    
+
     if "--review" in sys.argv:
         review_improvements()
         return
-    
+
     if "--overnight" in sys.argv:
         run_overnight()
         return
-    
+
     # Default: Run single cycle
     log("Starting Autonomous Improvement Cycle...", "INFO")
     result = run_improvement_cycle(1)
-    
+
     if result.get("applied", {}).get("success"):
         log(f"✅ Improvement successful: {result['applied']['actual_impact']:.2f}%", "SUCCESS")
     else:
-        log("ℹ️ Run with --review to see history, --overnight for multiple cycles", "INFO")
+        log("i️ Run with --review to see history, --overnight for multiple cycles", "INFO")
 
 if __name__ == "__main__":
     main()
