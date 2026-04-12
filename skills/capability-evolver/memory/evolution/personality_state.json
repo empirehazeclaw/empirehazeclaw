@@ -3,7 +3,7 @@
   "current": {
     "type": "PersonalityState",
     "rigor": 0.7,
-    "creativity": 0.44999999999999996,
+    "creativity": 0.45,
     "verbosity": 0.25,
     "risk_tolerance": 0.4,
     "obedience": 0.9
@@ -15,6 +15,13 @@
       "avg_score": 0.9075,
       "n": 4,
       "updated_at": "2026-04-11T22:14:03.127Z"
+    },
+    "rigor=0.7|creativity=0.5|verbosity=0.3|risk_tolerance=0.4|obedience=0.9": {
+      "success": 1,
+      "fail": 0,
+      "avg_score": 0.95,
+      "n": 1,
+      "updated_at": "2026-04-12T17:03:33.731Z"
     }
   },
   "history": [
@@ -45,7 +52,14 @@
       "outcome": "success",
       "score": 0.95,
       "notes": "event:evt_1775945643099"
+    },
+    {
+      "at": "2026-04-12T17:03:33.731Z",
+      "key": "rigor=0.7|creativity=0.5|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+      "outcome": "success",
+      "score": 0.95,
+      "notes": "event:evt_1776013413670"
     }
   ],
-  "updated_at": "2026-04-11T22:14:03.128Z"
+  "updated_at": "2026-04-12T17:03:33.731Z"
 }

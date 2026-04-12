@@ -1,29 +1,53 @@
 {
-  "timestamp": "2026-04-12T15:04:00Z",
-  "cycle": 4,
-  "fullCycle": true,
-  "duration_seconds": 7.0,
-  "system_check": "PASS",
-  "research": {
-    "hypotheses_generated": 0,
-    "status": "PASS"
-  },
-  "quality_gates": {
-    "issues_detected": 0,
-    "status": "PASS"
-  },
-  "improvements": {
-    "count": 0,
-    "validated": 0,
-    "status": "SKIPPED",
-    "reason": "No issues or hypotheses"
-  },
-  "learning": {
-    "status": "TRACKED"
-  },
-  "meta_improvement": {
-    "status": "SKIPPED",
-    "reason": "Runs every 5 cycles (currently cycle 4)"
-  },
-  "summary": "All systems nominal - no hypotheses or issues detected"
+  "runs": [
+    {
+      "timestamp": "2026-04-12T16:04:59.054433",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-12T16:04:59.138243",
+      "phase": "research",
+      "success": true,
+      "notes": "0 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-12T16:05:07.317621",
+      "phase": "quality",
+      "success": true,
+      "notes": "0 issues"
+    },
+    {
+      "timestamp": "2026-04-12T16:05:07.543942",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-12T17:04:44.830391",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-12T17:04:44.895721",
+      "phase": "research",
+      "success": true,
+      "notes": "0 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-12T17:04:51.626070",
+      "phase": "quality",
+      "success": true,
+      "notes": "0 issues"
+    },
+    {
+      "timestamp": "2026-04-12T17:04:51.782765",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    }
+  ],
+  "last_full_cycle": "2026-04-12T17:04:51.782776"
 }

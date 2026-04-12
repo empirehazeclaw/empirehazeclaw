@@ -63,3 +63,11 @@ A chronological record of evolution decisions and outcomes.
   2. Select an existing Gene by signals match (no improvisation)
   3. Estimate blast radius (files, lines) before editing
 - Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
+### [2026-04-12 17:03:33] INNOVATE - success
+- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 10 files, 688 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract structured signals from logs and user instructions
+  2. Select an existing Gene by signals match (no improvisation)
+  3. Estimate blast radius (files, lines) before editing
+- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。

@@ -914,6 +914,36 @@
       "duration_ms": 0,
       "pattern_stored": true,
       "kg_entities": 319
+    },
+    {
+      "timestamp": "2026-04-12T16:21:36.153160+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 321
+    },
+    {
+      "timestamp": "2026-04-12T16:21:41.308145+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 323
+    },
+    {
+      "timestamp": "2026-04-12T16:21:46.510800+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 325
     }
   ],
   "success_patterns": [
@@ -1580,6 +1610,45 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-12T15:24:26.130641+00:00",
       "confidence": 0.924350131232246
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T16:21:36.153160+00:00",
+      "confidence": 0.8278138957395703
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Prevent destructive operations",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T16:21:41.308145+00:00",
+      "confidence": 0.7672458664267281
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Optimize daily workflow rhythm",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T16:21:46.510800+00:00",
+      "confidence": 0.7396797298487763
     }
   ],
   "error_fixes": [

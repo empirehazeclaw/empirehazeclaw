@@ -2,177 +2,6 @@
   "improvements": [
     {
       "cycle": 1,
-      "timestamp": "2026-04-12T13:28:52.690161",
-      "metrics_before": {
-        "error_rate": 1.54,
-        "sessions_today": 234,
-        "friction_events": 0,
-        "kg_entities": 291,
-        "skills_count": 26,
-        "scripts_without_timeout": 0,
-        "timestamp": "2026-04-12T13:28:52.690184",
-        "session_count": 479
-      },
-      "hypothesis": {
-        "id": "hyp_132852_5",
-        "category": "efficiency",
-        "priority": "MEDIUM",
-        "description": "Reduce token waste through optimization",
-        "approach": "Apply token_optimization patterns",
-        "expected_impact": 20,
-        "effort": "MEDIUM",
-        "methods": [
-          "Analyze token usage per session",
-          "Apply compression to prompts",
-          "Use caching where possible"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_132852_5",
-        "timestamp": "2026-04-12T13:28:52.724901",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 291,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:28:52.724909",
-          "session_count": 479
-        },
-        "metrics_after": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 291,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:28:52.739726",
-          "session_count": 479
-        },
-        "actual_impact": 0,
-        "change_made": "token_monitoring_active, efficiency_patterns_applied",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 2,
-      "timestamp": "2026-04-12T13:28:57.790607",
-      "metrics_before": {
-        "error_rate": 1.54,
-        "sessions_today": 234,
-        "friction_events": 0,
-        "kg_entities": 292,
-        "skills_count": 26,
-        "scripts_without_timeout": 0,
-        "timestamp": "2026-04-12T13:28:57.790615",
-        "session_count": 479
-      },
-      "hypothesis": {
-        "id": "hyp_132857_5",
-        "category": "efficiency",
-        "priority": "MEDIUM",
-        "description": "Reduce token waste through optimization",
-        "approach": "Apply token_optimization patterns",
-        "expected_impact": 20,
-        "effort": "MEDIUM",
-        "methods": [
-          "Analyze token usage per session",
-          "Apply compression to prompts",
-          "Use caching where possible"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_132857_5",
-        "timestamp": "2026-04-12T13:28:57.827905",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 292,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:28:57.827912",
-          "session_count": 479
-        },
-        "metrics_after": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 292,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:28:57.842860",
-          "session_count": 479
-        },
-        "actual_impact": 0,
-        "change_made": "token_monitoring_active, efficiency_patterns_applied",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-12T13:29:02.905055",
-      "metrics_before": {
-        "error_rate": 1.54,
-        "sessions_today": 234,
-        "friction_events": 0,
-        "kg_entities": 293,
-        "skills_count": 26,
-        "scripts_without_timeout": 0,
-        "timestamp": "2026-04-12T13:29:02.905065",
-        "session_count": 479
-      },
-      "hypothesis": {
-        "id": "hyp_132902_5",
-        "category": "efficiency",
-        "priority": "MEDIUM",
-        "description": "Reduce token waste through optimization",
-        "approach": "Apply token_optimization patterns",
-        "expected_impact": 20,
-        "effort": "MEDIUM",
-        "methods": [
-          "Analyze token usage per session",
-          "Apply compression to prompts",
-          "Use caching where possible"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_132902_5",
-        "timestamp": "2026-04-12T13:29:02.936392",
-        "success": false,
-        "metrics_before": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 293,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:29:02.936399",
-          "session_count": 479
-        },
-        "metrics_after": {
-          "error_rate": 1.54,
-          "sessions_today": 234,
-          "friction_events": 0,
-          "kg_entities": 293,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T13:29:02.954811",
-          "session_count": 479
-        },
-        "actual_impact": 0,
-        "change_made": "token_monitoring_active, efficiency_patterns_applied",
-        "error": null
-      },
-      "kept": false
-    },
-    {
-      "cycle": 1,
       "timestamp": "2026-04-12T13:31:54.410052",
       "metrics_before": {
         "error_rate": 1.54,
@@ -1169,14 +998,185 @@
         "error": null
       },
       "kept": true
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T16:21:36.028861",
+      "metrics_before": {
+        "error_rate": 1.53,
+        "sessions_today": 281,
+        "friction_events": 0,
+        "kg_entities": 319,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T16:21:36.028867",
+        "session_count": 481
+      },
+      "hypothesis": {
+        "id": "hyp_162136_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_162136_5",
+        "timestamp": "2026-04-12T16:21:36.072450",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 319,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:36.072459",
+          "session_count": 481
+        },
+        "metrics_after": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 320,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:36.123629",
+          "session_count": 481
+        },
+        "actual_impact": 3,
+        "change_made": "efficiency_patterns_applied, kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T16:21:41.183526",
+      "metrics_before": {
+        "error_rate": 1.53,
+        "sessions_today": 281,
+        "friction_events": 0,
+        "kg_entities": 321,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T16:21:41.183536",
+        "session_count": 481
+      },
+      "hypothesis": {
+        "id": "hyp_162141_8",
+        "category": "safety",
+        "priority": "MEDIUM",
+        "description": "Prevent destructive operations",
+        "approach": "Add safeguards to dangerous commands",
+        "expected_impact": 10,
+        "effort": "MEDIUM",
+        "methods": [
+          "Identify rm/trash operations",
+          "Add confirmation prompts",
+          "Log destructive actions"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_162141_8",
+        "timestamp": "2026-04-12T16:21:41.218571",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 321,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:41.218577",
+          "session_count": 481
+        },
+        "metrics_after": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 322,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:41.275847",
+          "session_count": 481
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T16:21:46.349529",
+      "metrics_before": {
+        "error_rate": 1.53,
+        "sessions_today": 281,
+        "friction_events": 0,
+        "kg_entities": 323,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T16:21:46.349539",
+        "session_count": 481
+      },
+      "hypothesis": {
+        "id": "hyp_162146_6",
+        "category": "workflow",
+        "priority": "MEDIUM",
+        "description": "Optimize daily workflow rhythm",
+        "approach": "Morning \u2192 Learning \u2192 Evening pattern",
+        "expected_impact": 5,
+        "effort": "LOW",
+        "methods": [
+          "Analyze current cron schedule",
+          "Identify gaps or overlaps",
+          "Suggest optimization"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_162146_6",
+        "timestamp": "2026-04-12T16:21:46.396197",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 323,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:46.396206",
+          "session_count": 481
+        },
+        "metrics_after": {
+          "error_rate": 1.53,
+          "sessions_today": 281,
+          "friction_events": 0,
+          "kg_entities": 324,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T16:21:46.474332",
+          "session_count": 481
+        },
+        "actual_impact": 3,
+        "change_made": "added_1_kg_entities",
+        "error": null
+      },
+      "kept": true
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 102,
-    "successful": 62,
+    "total": 105,
+    "successful": 65,
     "failed": 40,
-    "current_streak": 12,
+    "current_streak": 15,
     "best_streak": 27
   }
 }
