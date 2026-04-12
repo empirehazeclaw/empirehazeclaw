@@ -21,18 +21,13 @@ QUICK_TESTS = [
     ('health_monitor', 'health_monitor.py', 'generate_report'),
     ('self_check', 'self_check.py', 'generate_report'),
     ('cron_watchdog', 'cron_watchdog.py', 'watchdog_run'),
-    ('daily_summary', 'daily_summary.py', 'generate_summary'),
-    ('evening_summary', 'evening_summary.py', 'generate_summary'),
     ('quality_metrics', 'quality_metrics.py', 'calculate_metrics'),
     ('memory_hybrid_search', 'memory_hybrid_search.py', 'hybrid_search'),
     ('auto_backup', 'auto_backup.py', 'get_backup_stats'),
-    ('self_eval', 'self_eval.py', 'calculate_scores'),
-    ('deep_reflection', 'deep_reflection.py', 'generate_deep_reflection'),
-    ('memory_cleanup', 'memory_cleanup.py', 'show_report'),
-    ('backup_verify', 'backup_verify.py', 'generate_report'),
-    ('habit_tracker', 'habit_tracker.py', 'generate_report'),
-    ('quick_check', 'quick_check.py', 'main'),
     ('kg_updater', 'kg_updater.py', 'stats'),
+    ('mission_control', 'mission_control.py', 'main'),
+    ('session_analyzer', 'session_analyzer.py', 'analyze'),
+    ('graceful_degradation', 'graceful_degradation.py', 'check'),
 ]
 
 def run_test(name, script, func):

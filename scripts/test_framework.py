@@ -94,11 +94,7 @@ TESTS: Dict[str, Dict] = {
         'type': 'import',
         'description': 'Graceful Degradation'
     },
-    'retry_with_backoff': {
-        'script': 'retry_with_backoff.py',
-        'type': 'import',
-        'description': 'Retry with Backoff'
-    },
+    # Archived
     'context_compressor': {
         'script': 'context_compressor.py',
         'type': 'import',
@@ -113,26 +109,10 @@ TESTS: Dict[str, Dict] = {
     },
     
     # Skills & Learning
-    'skill_metrics': {
-        'script': 'skill_metrics.py',
-        'type': 'module',
-        'description': 'Skill Metrics'
-    },
-    'skill_tracker': {
-        'script': 'skill_tracker.py',
-        'type': 'module',
-        'description': 'Skill Tracker'
-    },
-    'learning_tracker': {
-        'script': 'learning_tracker.py',
-        'type': 'module',
-        'description': 'Learning Tracker'
-    },
-    'efficiency_tracker': {
-        'script': 'efficiency_tracker.py',
-        'type': 'module',
-        'description': 'Efficiency Tracker'
-    },
+    # Archived
+    # Archived
+    # Archived
+    # Archived
     
     # Monitoring
     'cron_error_healer': {
