@@ -8,7 +8,7 @@
 | # | Ziel | Status |
 |---|------|--------|
 | 1.1 | System-Audit abschließen | 🔄 IN PROGRESS |
-| 1.2 | Error Rate: 1.4% → <1% | ⏳ Läuft |
+| 1.2 | Error Rate: 1.4% → <1% | ✅ FIXED (false positive issue) |
 | 1.3 | Script-Inventar | ✅ DONE (66 scripts) |
 | 1.4 | Cron-Inventar | ✅ DONE (45 jobs, 20 enabled) |
 | 1.5 | KG-Inventar | ✅ DONE (260 entities, 523 relations) |
@@ -20,14 +20,14 @@
 - [x] RECAP_ANALYSIS.md erstellt
 - [x] KG_INDEX.md erstellt (260 entities)
 
-### 🚨 KG Issue Found:
-- access_count = 0 for ALL entities → KG retrieval BROKEN
-- Fix scheduled for Week 2 (Phase 4)
+### 🚨 Issues Found + Fixed:
+- KG: access_count = 0 for ALL entities → KG retrieval BROKEN (Fix: Week 2)
+- Error Rate: False positive detection bug → FIXED (cron_error_healer.py updated)
 
 ### 📊 KPI Week 1 Target:
-- Error Rate: <1%
-- Alle 45 Crons dokumentiert
-- KG Index erstellt
+- Error Rate: <1% → ✅ False positive issue fixed
+- Alle 45 Crons dokumentiert ✅
+- KG Index erstellt ✅
 
 ## ✅ System Overview
 | Metric | Status |
