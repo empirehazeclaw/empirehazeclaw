@@ -1,177 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 1,
-      "timestamp": "2026-04-12T06:21:29.481135",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 115,
-        "friction_events": 0,
-        "kg_entities": 236,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T06:21:29.481142",
-        "session_count": 419
-      },
-      "hypothesis": {
-        "id": "hyp_062129_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_062129_8",
-        "timestamp": "2026-04-12T06:21:29.600846",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 236,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:29.600855",
-          "session_count": 419
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 237,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:29.766274",
-          "session_count": 419
-        },
-        "actual_impact": 3,
-        "change_made": "added_1_kg_entities",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 2,
-      "timestamp": "2026-04-12T06:21:34.907205",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 115,
-        "friction_events": 0,
-        "kg_entities": 238,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T06:21:34.907216",
-        "session_count": 419
-      },
-      "hypothesis": {
-        "id": "hyp_062134_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_062134_8",
-        "timestamp": "2026-04-12T06:21:34.946882",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 238,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:34.946890",
-          "session_count": 419
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 239,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:35.025068",
-          "session_count": 419
-        },
-        "actual_impact": 3,
-        "change_made": "added_1_kg_entities",
-        "error": null
-      },
-      "kept": true
-    },
-    {
-      "cycle": 3,
-      "timestamp": "2026-04-12T06:21:40.101719",
-      "metrics_before": {
-        "error_rate": 1.5,
-        "sessions_today": 115,
-        "friction_events": 0,
-        "kg_entities": 240,
-        "skills_count": 26,
-        "scripts_without_timeout": 1,
-        "timestamp": "2026-04-12T06:21:40.101730",
-        "session_count": 419
-      },
-      "hypothesis": {
-        "id": "hyp_062140_8",
-        "category": "safety",
-        "priority": "HIGH",
-        "description": "Prevent destructive operations",
-        "approach": "Add safeguards to dangerous commands",
-        "expected_impact": 10,
-        "effort": "MEDIUM",
-        "methods": [
-          "Identify rm/trash operations",
-          "Add confirmation prompts",
-          "Log destructive actions"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_062140_8",
-        "timestamp": "2026-04-12T06:21:40.134275",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 240,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:40.134281",
-          "session_count": 419
-        },
-        "metrics_after": {
-          "error_rate": 1.5,
-          "sessions_today": 115,
-          "friction_events": 0,
-          "kg_entities": 241,
-          "skills_count": 26,
-          "scripts_without_timeout": 1,
-          "timestamp": "2026-04-12T06:21:40.180162",
-          "session_count": 419
-        },
-        "actual_impact": 3,
-        "change_made": "added_1_kg_entities",
-        "error": null
-      },
-      "kept": true
-    },
-    {
       "timestamp": "2026-04-12T07:04:56.944950",
       "improvements": [
         {
@@ -1799,14 +1628,194 @@
         "error": null
       },
       "kept": false
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-04-12T13:31:54.410052",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 294,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:31:54.410057",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_133154_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_133154_5",
+        "timestamp": "2026-04-12T13:31:54.444362",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 294,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:31:54.444368",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 295,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:31:54.497454",
+          "session_count": 479
+        },
+        "actual_impact": 3,
+        "change_made": "efficiency_patterns_applied, kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-04-12T13:31:59.553147",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 296,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:31:59.553164",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_133159_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_133159_5",
+        "timestamp": "2026-04-12T13:31:59.596527",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 296,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:31:59.596535",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 297,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:31:59.662068",
+          "session_count": 479
+        },
+        "actual_impact": 3,
+        "change_made": "efficiency_patterns_applied, kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-04-12T13:32:04.726790",
+      "metrics_before": {
+        "error_rate": 1.54,
+        "sessions_today": 234,
+        "friction_events": 0,
+        "kg_entities": 298,
+        "skills_count": 26,
+        "scripts_without_timeout": 0,
+        "timestamp": "2026-04-12T13:32:04.726799",
+        "session_count": 479
+      },
+      "hypothesis": {
+        "id": "hyp_133204_5",
+        "category": "efficiency",
+        "priority": "MEDIUM",
+        "description": "Reduce token waste through optimization",
+        "approach": "Apply token_optimization patterns",
+        "expected_impact": 20,
+        "effort": "MEDIUM",
+        "methods": [
+          "Analyze token usage per session",
+          "Apply compression to prompts",
+          "Use caching where possible"
+        ]
+      },
+      "applied": {
+        "hypothesis_id": "hyp_133204_5",
+        "timestamp": "2026-04-12T13:32:04.774387",
+        "success": true,
+        "metrics_before": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 298,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:32:04.774405",
+          "session_count": 479
+        },
+        "metrics_after": {
+          "error_rate": 1.54,
+          "sessions_today": 234,
+          "friction_events": 0,
+          "kg_entities": 299,
+          "skills_count": 26,
+          "scripts_without_timeout": 0,
+          "timestamp": "2026-04-12T13:32:04.843137",
+          "session_count": 479
+        },
+        "actual_impact": 3,
+        "change_made": "efficiency_patterns_applied, kg_added:1",
+        "error": null
+      },
+      "kept": true
+    },
+    {
+      "date": "2026-04-12",
+      "time": "14:30",
+      "category": "cleanup",
+      "title": "Empty folders removed",
+      "description": "2 archive folders entfernt",
+      "impact": "low",
+      "status": "completed"
     }
   ],
   "hypotheses": [],
   "stats": {
-    "total": 90,
-    "successful": 50,
+    "total": 93,
+    "successful": 53,
     "failed": 40,
-    "current_streak": 0,
+    "current_streak": 3,
     "best_streak": 27
   }
 }

@@ -794,6 +794,36 @@
       "auto_applied": true,
       "pattern_stored": true,
       "kg_entities": 294
+    },
+    {
+      "timestamp": "2026-04-12T13:31:54.522440+00:00",
+      "action": "improvement_cycle_1",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 296
+    },
+    {
+      "timestamp": "2026-04-12T13:31:59.692309+00:00",
+      "action": "improvement_cycle_2",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 298
+    },
+    {
+      "timestamp": "2026-04-12T13:32:04.876600+00:00",
+      "action": "improvement_cycle_3",
+      "success": true,
+      "error_type": null,
+      "tokens_used": 0,
+      "duration_ms": 0,
+      "pattern_stored": true,
+      "kg_entities": 300
     }
   ],
   "success_patterns": [
@@ -1304,6 +1334,45 @@
       "efficiency": 0.0,
       "discovered_at": "2026-04-12T13:24:39.132240+00:00",
       "confidence": 0.7077592814974043
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_1",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:31:54.522440+00:00",
+      "confidence": 0.7983418180959304
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_2",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:31:59.692309+00:00",
+      "confidence": 0.9386872248714924
+    },
+    {
+      "type": "success_pattern",
+      "action_type": "improvement_cycle_3",
+      "context": {
+        "hypothesis": "Reduce token waste through optimization",
+        "actual_impact": 3,
+        "decision": "KEEP"
+      },
+      "tokens_used": 0,
+      "efficiency": 0.0,
+      "discovered_at": "2026-04-12T13:32:04.876600+00:00",
+      "confidence": 0.8537146648319183
     }
   ],
   "error_fixes": [
