@@ -2024,6 +2024,15 @@
       "description": "92 Commits, 74 Verbesserungen",
       "impact": "medium",
       "status": "completed"
+    },
+    {
+      "date": "2026-04-12",
+      "time": "16:45",
+      "category": "cleanup",
+      "title": "Archive folders identifiziert",
+      "description": "3 archive folders: 2.2M + 492K + 2.0M = 4.7MB total",
+      "impact": "medium",
+      "status": "identified"
     }
   ],
   "hypotheses": [],
