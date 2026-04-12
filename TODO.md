@@ -210,8 +210,8 @@
 | Model Cooldown Manager | 🔴 HIGH | ✅ DONE |
 | Auto-Failover (Session Pins) | 🔴 HIGH | ✅ DONE |
 | Integration cron_error_healer | 🔴 HIGH | ✅ DONE |
-| Config Auto-Backup | 🟡 MEDIUM | 📋 TODO |
-| GitHub Issue Creation | 🟡 MEDIUM | 📋 TODO |
+| Config Auto-Backup | 🟡 MEDIUM | ✅ DONE |
+| GitHub Issue Creation | 🟡 MEDIUM | ✅ DONE |
 
 ### Implementation Plan:
 1. [x] `model_health_checker.py` — Health probe für alle konfigurierten Models ✅ DONE 2026-04-12
