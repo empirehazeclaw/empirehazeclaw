@@ -1,139 +1,170 @@
 # 📋 TODO — Sir HazeClaw
 **Created:** 2026-04-12 08:57 UTC
-**Updated:** 2026-04-12 08:57 UTC
+**Updated:** 2026-04-12 09:37 UTC
 
 ---
 
-## 🎯 WOCHE 1 PRIORITIES (2026-04-13 bis 2026-04-19)
+## 🎯 IMPACT PRIORITY (Höchster Impact zuerst)
 
-### Week 1 Status: 🔄 IN PROGRESS
-
-| # | Task | Priority | Status | Notes |
-|---|------|----------|--------|-------|
-| 1.1 | System-Audit abschließen | 🔴 HIGH | 🔄 | HEARTBEAT.md komplett machen |
-| 1.2 | Error Rate: 1.4% → <1% | 🔴 HIGH | ✅ DONE | False positive fix deployed |
-| 1.3 | Script-Inventar | 🔴 HIGH | ✅ DONE | 66 scripts in SCRIPT_INDEX.md |
-| 1.4 | Cron-Inventar | 🔴 HIGH | ✅ DONE | 45 jobs in CRON_INDEX.md |
-| 1.5 | KG-Inventar | 🔴 HIGH | ✅ DONE | 260 entities in KG_INDEX.md |
-
----
-
-## 🔴 IMMEDIATE ACTIONS (Heute)
-
-### Error Rate Monitoring
-- [ ] Verify cron_error_healer fix is working
-- [ ] Monitor CEO Daily Briefing cron for next runs
-- [ ] Check if disabled crons re-enable correctly
-
-### KG Fix Preparation (Week 2)
-- [ ] memory_hybrid_search.py KG retrieval fix
-- [ ] Update MEMORY_API.py KG search priority
-- [ ] Test KG access_count update
+| # | Task | Impact | Effort | Status |
+|---|------|--------|--------|--------|
+| **P1** | **Modal Token erneuern (GLM-5.1)** | 🔴 HOCH | Niedrig | ⚠️ NICO |
+| **P2** | **Modelle inventarisieren + OpenRouter testen** | 🔴 HOCH | Mittel | 🔴 OFFEN |
+| **P3** | Skills Inventory erstellen | 🟡 MED | Mittel | 🔴 OFFEN |
+| **P4** | Workspace aufräumen (Archive) | 🟡 MED | Hoch | 🔴 OFFEN |
+| **P5** | KG retrieval fix (access_count=0) | 🟡 MED | Mittel | 🔴 OFFEN |
+| **P6** | MCP Inventory | 🟢 NIEDRIG | Mittel | 🔴 OFFEN |
 
 ---
 
-## 🟡 WEEK 2 TASKS (2026-04-20 bis 2026-04-26)
+## 🟡 WEEK 2 VORBEREITUNG (2026-04-13 bis 2026-04-19)
 
-### Scripts Consolidation
-- [ ] Phase 2.3: KG scripts → kg_updater.py subcommands
-- [ ] Phase 2.4: Memory scripts → memory_cleanup.py subcommands
-- [ ] Phase 2.5: Token scripts → token_tracker.py subcommands
-- [ ] Target: 62 → ~40 scripts
+### Documentation (heute abschließen)
+- [x] SECRETS_MANAGEMENT.md — ✅ FERTIG
+- [x] SCRIPT_INDEX.md — ✅ FERTIG
+- [x] CRON_INDEX.md — ✅ FERTIG
+- [x] KG_INDEX.md — ✅ FERTIG
+- [x] DOCUMENTATION_STATUS.md — ✅ FERTIG
+- [ ] ~~MODELS_INVENTORY.md~~ → **P2 verschoben**
+- [ ] ~~SKILLS_INDEX.md~~ → **P3 verschoben**
 
-### Cron Consolidation
-- [ ] Review 25 disabled crons
-- [ ] Re-enable valid crons
-- [ ] Target: 45 → ~30 active crons
-
-### KG Growth
-- [ ] Fix KG retrieval (access_count = 0 issue)
-- [ ] Add quality entities (target: 260 → 500)
-- [ ] Remove stale entities
-
----
-
-## 🟢 WEEK 3 TASKS (2026-04-27 bis 2026-05-03)
-
-### Session Compression
-- [ ] Prototype: 10KB → 200B target
-- [ ] Test compression ratio
-- [ ] Implement in memory system
-
-### Security
-- [ ] Full security audit
-- [ ] Target: 85 → 90+ score
-- [ ] Fix remaining vulnerabilities
-
-### Performance
-- [ ] Token caching (70% reduction target)
-- [ ] latency_dashboard.py monitoring
-- [ ] Performance optimization
+### Week 2 Consolidation
+- [ ] Scripts: 62 → ~40 (Konsolidierung)
+- [ ] Crons: 45 → ~30 (25 disabled review)
+- [ ] KG: 260 → 500 entities (quality + growth)
+- [ ] KG retrieval fix (access_count = 0)
 
 ---
 
-## 🔵 WEEK 4 TASKS (2026-05-04 bis 2026-05-10)
+## 🔴 HIGH IMPACT TASKS (Starten mit P1)
 
-### Skills
-- [ ] Add 1 new skill per week
-- [ ] Skill quality > quantity
-- [ ] Track improvement rate
+### P1: MODAL TOKEN (Impact: HOCH) ⚠️ NICO AKTION
+```
+Problem: Modal Token "invalid" — GLM-5.1 nicht nutzbar
+Lösung: Nico muss neuen Token generieren
+URL: modal.com/glm-5-endpoint
+Status: WARTET AUF NICO
+```
 
-### Multi-Agent Loop
-- [ ] Developer + Reviewer pattern
-- [ ] Prototype evaluation
-- [ ] Integration planning
-
-### MCP Protocol
-- [ ] Evaluate MCP compatibility
-- [ ] Test if useful for our setup
-- [ ] Decision: Implement or skip
-
----
-
-## 📝 KNOWN ISSUES
-
-| # | Issue | Priority | Status |
-|---|-------|----------|--------|
-| I1 | KG access_count = 0 | 🟡 MED | Week 2 fix |
-| I2 | 25 disabled crons need review | 🟡 MED | Week 2 |
-| I3 | Session compression not implemented | 🟡 MED | Week 3 |
-| I4 | Security score 85 → 90+ | 🟡 MED | Week 3 |
+### P2: MODELS INVENTORY (Impact: HOCH)
+```
+Warum: System hat keine vollständige Model-Doku
+Problem: OpenRouter Keys funktionieren aber nicht voll getestet
+         qwen3-coder:free ist rate-limited
+         nemotron-3-super:free funktioniert ✅
+         
+Aufgaben:
+  [ ] OpenRouter Modelle durchtesten
+  [ ] MiniMax Backup dokumentieren
+  [ ] Google Gemini als Fallback prüfen
+  [ ] MODELS_INVENTORY.md erstellen
+  
+Impact: Wir wissen genau welche Modelle funktionieren
+```
 
 ---
 
-## ✅ COMPLETED TASKS (Archive)
+## 🟡 MEDIUM IMPACT TASKS
 
-### Week 1 Completed (2026-04-12)
-- [x] Monthly Plan erstellt (EXECUTION_PLAN.md)
-- [x] SCRIPT_INDEX.md (66 scripts)
-- [x] CRON_INDEX.md (45 jobs, 20 enabled)
-- [x] KG_INDEX.md (260 entities)
-- [x] RECAP_ANALYSIS.md
-- [x] cron_error_healer.py false positive fix
-- [x] 3DAY_RECAP.md, COMPREHENSIVE_RECAP.md
-- [x] PERIOD recaps (1W, 2W, 4W, SINCE_START)
-- [x] All 6 phases complete (Phase 1-6)
+### P3: SKILLS INVENTORY (Impact: MED)
+```
+Warum: Skills existieren aber kein zentrales Inventory
+Problem: Quality > Quantity Regel nicht messbar
+Aufgaben:
+  [ ] Alle Skills in workspace/skills/ inventarisieren
+  [ ] Quality Score für jeden Skill
+  [ ] SKILLS_INDEX.md erstellen
+  [ ] Ungenutzte Skills identifizieren
+```
 
-### Month History
-- [x] Day 1 (Apr 9): Launch + Discord setup
-- [x] Day 2 (Apr 10): Quality correction + loop detection
-- [x] Day 3 (Apr 11): Autonomous operation + security
-- [x] Day 4 (Apr 12): Consolidation Phase 1-6
+### P4: WORKSPACE AUFRÄUMEN (Impact: MED)
+```
+Warum: Archive, Checkpoints, ungenutzte Ordner
+Problem: 102 Docs, viele veraltet/duplikat
+Aufgaben:
+  [ ] workspace/archive/ bereinigen
+  [ ] workspace.checkpoints/ aufräumen
+  [ ] Duplikate zusammenführen
+  [ ] DOC_INDEX.md als Master-Index
+```
+
+### P5: KG RETRIEVAL FIX (Impact: MED)
+```
+Problem: access_count = 0 für ALLE entities
+Bedeutet: KG retrieval ist kaputt
+Aufgaben:
+  [ ] memory_hybrid_search.py debuggen
+  [ ] KG update mechanismus prüfen
+  [ ] MEMORY_API.py KG priority fixen
+  [ ] Testen mit bekannten entities
+```
+
+### P6: MCP INVENTORY (Impact: NIEDRIG)
+```
+Warum: MCP Server könnten nützlich sein
+Problem: Kein Inventory, MCP_EVALUATION.md veraltet
+Aufgaben:
+  [ ] MCP Server inventarisieren
+  [ ] Nutzen evaluieren
+  [ ] MCP_INVENTORY.md erstellen
+```
 
 ---
 
-## 📊 KPI TRACKER
+## 📊 KPI TRACKER (Daily)
 
-| Metric | Start | Current | Target | Status |
-|--------|-------|---------|--------|--------|
-| Error Rate | 1.4% | 1.4% | <1% | 🟡 Close |
-| KG Entities | 254 | 260 | 500+ | 🔴 |
-| Scripts | 62 | 62 | <40 | 🟡 |
-| Active Crons | 20 | 20 | <30 | ✅ |
-| Security Score | 85 | 85 | 90+ | 🟡 |
-| Session Size | 10KB | 10KB | 200B | 🔴 |
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Error Rate | 1.4% | <1% | 🟡 Close |
+| KG Entities | 260 | 500+ | 🔴 |
+| Scripts | 62 | <40 | 🟡 |
+| Active Crons | 20 | <30 | ✅ |
+| Security Score | 85 | 90+ | 🟡 |
+| Session Size | 10KB | 200B | 🔴 |
+| Docs (Total) | 102 | <50 | 🔴 |
+| Modelle funktional | 1 | 3+ | 🔴 |
 
 ---
 
-*Letztes Update: 2026-04-12 08:57 UTC*
-*Sir HazeClaw — Kontinuierliche Verbesserung*
+## ✅ COMPLETED (2026-04-12)
+
+- [x] Secrets konsolidiert (35 Keys, 600 permissions, redacted)
+- [x] SECRETS_MANAGEMENT.md ✅
+- [x] API_KEYS_INVENTORY.md ✅
+- [x] SECRETS_DOCUMENTATION_SUMMARY.md ✅
+- [x] DOCUMENTATION_STATUS.md ✅
+- [x] .gitignore erweitert (*.env, secrets/)
+- [x] OPENROUTER_API_KEY_2 entfernt (invalid)
+- [x] MODAL_API_KEY als ungültig markiert
+- [x] OpenRouter Key 1 getestet → FUNKTIONIERT ✅
+
+---
+
+## 🚨 KNOWN ISSUES
+
+| # | Issue | Priority | Owner | Status |
+|---|-------|----------|-------|--------|
+| I1 | Modal Token ungültig | 🔴 HIGH | Nico | ⚠️ WARTET |
+| I2 | KG retrieval broken | 🟡 MED | Sir HazeClaw | Week 2 |
+| I3 | Workspace unübersichtlich | 🟡 MED | Sir HazeClaw | Week 2 |
+| I4 | Modelle nicht getestet | 🔴 HIGH | Sir HazeClaw | P2 |
+| I5 | Skills kein Inventory | 🟡 MED | Sir HazeClaw | P3 |
+
+---
+
+## 📅 WOCHE 2 PLAN (2026-04-13 bis 2026-04-19)
+
+| Tag | Focus | Tasks |
+|-----|-------|-------|
+| **So** | Documentation ✅ | Secrets, Docs Status |
+| **Mo** | P2: Models | Modelle inventarisieren |
+| **Di** | P3: Skills | Skills Index erstellen |
+| **Mi** | P5: KG Fix | KG retrieval reparieren |
+| **Do** | P4: Workspace | Aufräumen |
+| **Fr** | P6: MCP | MCP evaluieren |
+| **Sa** | Review | Week 2 retrospektive |
+
+---
+
+*Letztes Update: 2026-04-12 09:37 UTC*
+*Sir HazeClaw — Todo mit Impact Priority*
