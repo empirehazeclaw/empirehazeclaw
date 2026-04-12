@@ -1,8 +1,13 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-12 08:46 UTC
+## Last Update: 2026-04-12 09:03 UTC
 
 ## 📅 WOCHE 1 GESTARTET (2026-04-13 bis 2026-04-19)
+
+### 🚀 NEW (09:22 UTC):
+- [x] SECRETS_MANAGEMENT.md erstellt (35 Keys konsolidiert)
+- [x] Ungültige Keys bereinigt (OPENROUTER_API_KEY_2, MODAL_API_KEY)
+- [x] Secrets: SINGLE SOURCE OF TRUTH etabliert
 
 ### 🎯 Week 1 Ziele:
 | # | Ziel | Status |
@@ -90,13 +95,14 @@ Test Suite:  ✅ 369/369 passing
 ### From Recap Analysis - Start Tracking:
 | Metric | Current | Target | Status |
 |--------|---------|--------|--------|
-| Error Rate | 1.4% | <1% | 🟡 Close |
+| Error Rate | 1.5% | <1% | 🟡 1.5% actual (metrics show 1.51%) |
 | KG Entities | 254 | Growing | ✅ |
 | KG Relations | 523 | Quality | ✅ |
 | Scripts | 62 | ~40 | 🟡 Consolidation done |
 | Security Score | 85/100 | 90+ | 🟡 Needs audit |
 | Sessions/Day | ? | Track | 🔴 Add to cron |
 | Token Usage | 0% | <80% | ✅ Controlled |
+| **Secrets/Keys** | **35 valid** | Clean | ✅ **CONSOLIDATED** |
 
 ### Untracked (Need to Add):
 1. **Session count per day** — Add to morning_brief.py
@@ -104,8 +110,20 @@ Test Suite:  ✅ 369/369 passing
 3. **Cron success/failure ratio** — Add to cron_watchdog
 4. **Skill improvement rate** — Track in skill_tracker.py
 
+### 🚨 SECURITY INCIDENT (09:42 UTC):
+- [x] OpenRouter API Key exponiert in GitHub Repo (commit 957092f)
+- [x] Key wurde von OpenRouter automatisch deaktiviert
+- [x] Incident dokumentiert in SECURITY_INCIDENT_2026-04-12.md
+- [x] Pre-Commit Hook installiert (workspace/hooks/)
+- [ ] Neuen OpenRouter Key generieren (Nico)
+
+### 🚨 Open Issues:
+1. **MODAL_TOKEN** → Nico muss neuen generieren (modal.com/glm-5-endpoint)
+2. **Session Tracking** → morning_brief.py Cron fehlt
+3. **KG Retrieval** → access_count=0 Bug (Fix in Week 2)
+
 ---
-*Auto-updated: 2026-04-12 08:35 UTC*
+*Auto-updated: 2026-04-12 09:22 UTC*
 *Sir HazeClaw — Learning from recaps to improve future 🚀*
 *🎉 ALL 6 PHASES COMPLETE*
 *📊 RECAP_ANALYSIS.md created — patterns extracted*

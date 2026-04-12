@@ -144,10 +144,11 @@ Aufgaben:
 
 | # | Issue | Priority | Owner | Status |
 |---|-------|----------|-------|--------|
+| I0 | **OpenRouter Key EXPOSED + REVOKED** | 🔴 CRITICAL | Nico | ⚠️ NEW KEY NEEDED |
 | I1 | Modal Token ungültig | 🔴 HIGH | Nico | ⚠️ WARTET |
 | I2 | KG retrieval broken | 🟡 MED | Sir HazeClaw | Week 2 |
 | I3 | Workspace unübersichtlich | 🟡 MED | Sir HazeClaw | Week 2 |
-| I4 | Modelle nicht getestet | 🔴 HIGH | Sir HazeClaw | P2 |
+| I4 | Modelle nicht getestet | 🔴 HIGH | Sir HazeClaw | BLOCKIERT |
 | I5 | Skills kein Inventory | 🟡 MED | Sir HazeClaw | P3 |
 
 ---

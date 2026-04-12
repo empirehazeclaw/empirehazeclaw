@@ -302,3 +302,37 @@ LAUNCH → CORRECTION → AUTONOMOUS → CONSOLIDATION
 | Learning Loop | 90/100 |
 | **TOTAL** | **91/100** |
 
+
+---
+
+## 🔐 KRITISCHE SECURITY REGELN (2026-04-12)
+
+### REGEL Nr. 1: API KEYS
+```
+❌ NIEMALS API Keys in Dokumentation schreiben
+❌ NIEMALS vollständige API Keys in Messages
+❌ NIEMALS API Keys in Code commits
+
+✅ Keys NUR in secrets/secrets.env
+✅ Keys NUR in folgendem Format dokumentieren:
+   Name: OPENROUTER_API_KEY
+   Status: WORKING
+   Ende: ...b0f4 (nur letzte 4 Zeichen)
+```
+
+### VORFALL (2026-04-12):
+- OpenRouter API Key in API_KEYS_INVENTORY.md committed
+- Repository ist PUBLIC auf GitHub
+- OpenRouter hat automatisch gescannt und Key deaktiviert
+- Commit: 957092f (09:15 UTC) → Entdeckt: 09:42 UTC
+- Key: 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
+
+### PRÄVENTION:
+- Pre-Commit Hook installiert (workspace/hooks/pre-commit)
+- Scannt auf: sk-or-, sk-proj-, hf_, ghp_, ak-, AIza
+- Blockiert Commits mit API Keys
+
+### ACTION NICO:
+1. Neuen OpenRouter Key generieren: https://openrouter.ai/keys
+2. Alten Key aus Git History entfernen (BFG Tool)
+

@@ -5,3 +5,9 @@ examiner/
 memory/vault.enc.json
 memory/.vault-key
 __pycache__/
+
+# Secrets Protection
+*.env
+secrets/
+secrets.env
+.vault-key
