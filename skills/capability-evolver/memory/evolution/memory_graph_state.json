@@ -1,11 +1,12 @@
 {
   "last_action": {
-    "action_id": "act_1776074417297_ac924094",
-    "signal_key": "perf_bottleneck",
+    "action_id": "act_1776100317134_6421e823",
+    "signal_key": "evolution_stagnation_detected|stable_success_plateau",
     "signals": [
-      "perf_bottleneck"
+      "evolution_stagnation_detected",
+      "stable_success_plateau"
     ],
-    "mutation_id": "mut_1776074417296",
+    "mutation_id": "mut_1776100317130",
     "mutation_category": "innovate",
     "mutation_risk_level": "medium",
     "personality_key": "rigor=0.7|creativity=0.5|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
@@ -19,12 +20,12 @@
     },
     "gene_id": "gene_gep_repair_from_errors",
     "gene_category": "repair",
-    "hypothesis_id": "hyp_1776074417296_a69475b9",
+    "hypothesis_id": "hyp_1776100317133_222e4c30",
     "capsules_used": [
-      "capsule_1770477654236"
+      "capsule_1775939760071"
     ],
     "had_error": false,
-    "created_at": "2026-04-13T10:00:17.297Z",
+    "created_at": "2026-04-13T17:11:57.134Z",
     "outcome_recorded": false,
     "baseline_observed": {
       "agent": "main",
@@ -32,14 +33,14 @@
       "drift_enabled": false,
       "review_mode": false,
       "dry_run": false,
-      "system_health": "Uptime: 188.2h | Node: v22.22.2 | Agent RSS: 57.0MB | Disk: 26% (70.6G free) | Node Processes: 1 | Integrations: Nominal",
+      "system_health": "Uptime: 195.3h | Node: v22.22.2 | Agent RSS: 56.9MB | Disk: 26% (70.6G free) | Node Processes: 1 | Integrations: Nominal",
       "mood": "Mood: Unknown",
-      "scan_ms": 46,
+      "scan_ms": 22,
       "memory_size_bytes": 737,
       "recent_error_count": 0,
       "node": "v22.22.2",
       "platform": "linux",
-      "cwd": "/home/clawbot/.openclaw/workspace/ceo",
+      "cwd": "/home/clawbot/.openclaw/workspace/skills/capability-evolver",
       "evidence": {
         "recent_session_tail": "[NO SESSION LOGS FOUND]",
         "today_log_tail": "[MISSING] /home/clawbot/.openclaw/workspace/skills/capability-evolver/memory/2026-04-13.md"

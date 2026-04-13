@@ -166,14 +166,25 @@
           "learning_signals": [
             "perf_bottleneck"
           ]
+        },
+        {
+          "at": "2026-04-13T15:36:16.295Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
         }
       ],
       "epigenetic_marks": [
         {
           "context": "linux/x64/v22.22.2",
-          "boost": 0.35,
+          "boost": 0.39999999999999997,
           "reason": "reinforced_by_success",
-          "created_at": "2026-04-13T10:00:27.043Z"
+          "created_at": "2026-04-13T15:36:16.295Z"
         }
       ],
       "schema_version": "1.6.0",

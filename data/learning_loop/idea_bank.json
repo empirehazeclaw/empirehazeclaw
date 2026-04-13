@@ -1,0 +1,117 @@
+{
+  "ideas": [
+    {
+      "id": "idea_20260413_163033",
+      "title": "Apply Self-Improvement Pattern",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:30:33.956788",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163222",
+      "title": "Error Handling Improvement",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:32:22.084345",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163224",
+      "title": "Cron Health Optimization",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:32:24.292413",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163226",
+      "title": "Session Efficiency",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:32:26.442847",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163228",
+      "title": "Knowledge Graph Quality",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:32:28.618808",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163230",
+      "title": "Token Budget Optimization",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:32:30.853227",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260413_163543",
+      "title": "[CROSS-PATTERN] unknown",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:35:43.764826",
+      "times_encountered": 3
+    },
+    {
+      "id": "idea_20260413_163716",
+      "title": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-13T16:37:16.700845",
+      "times_encountered": 1
+    },
+    {
+      "title": "WARNING: memory:broken",
+      "description": "broken",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:Failed",
+      "description": "Failed",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:failed",
+      "description": "failed",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:crashed",
+      "description": "crashed",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:alert",
+      "description": "alert",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:Issue",
+      "description": "Issue",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    }
+  ],
+  "version": "1.0"
+}

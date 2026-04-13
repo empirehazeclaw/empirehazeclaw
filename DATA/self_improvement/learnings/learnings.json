@@ -1,0 +1,327 @@
+{
+  "patterns": [
+    {
+      "name": "decision_dec_20260413_172206_0",
+      "description": "Quality: 0.9",
+      "success_count": 1,
+      "id": "pattern_1",
+      "stored_at": "2026-04-13T17:22:06.372546",
+      "failure_count": 0
+    },
+    {
+      "name": "decision_dec_20260413_172339_1",
+      "context": "test",
+      "decision": "Testing decision tracker integration",
+      "description": "Quality 0.9: success",
+      "success_count": 1,
+      "id": "pattern_2",
+      "stored_at": "2026-04-13T17:23:39.176689"
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_3",
+      "stored_at": "2026-04-13T17:28:13.025300",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_4",
+      "stored_at": "2026-04-13T17:28:13.025659",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 2 & 3 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 2 & 3 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_5",
+      "stored_at": "2026-04-13T17:28:13.026223",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 4 & 5 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 4 & 5 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_6",
+      "stored_at": "2026-04-13T17:28:13.026524",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_7",
+      "stored_at": "2026-04-13T17:28:13.026856",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:VALID",
+      "context": "memory",
+      "description": "VALID",
+      "source": "memory_analysis",
+      "id": "pattern_8",
+      "stored_at": "2026-04-13T17:28:13.027274",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Valid",
+      "context": "memory",
+      "description": "Valid",
+      "source": "memory_analysis",
+      "id": "pattern_9",
+      "stored_at": "2026-04-13T17:28:13.027763",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:SUCCESS",
+      "context": "memory",
+      "description": "SUCCESS",
+      "source": "memory_analysis",
+      "id": "pattern_10",
+      "stored_at": "2026-04-13T17:28:13.028151",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_11",
+      "stored_at": "2026-04-13T17:28:13.028492",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Success",
+      "context": "memory",
+      "description": "Success",
+      "source": "memory_analysis",
+      "id": "pattern_12",
+      "stored_at": "2026-04-13T17:28:13.028892",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "decision_dec_20260413_173312_2",
+      "context": "testing",
+      "decision": "Test decision for validation",
+      "description": "Quality 0.85: success",
+      "success_count": 1,
+      "id": "pattern_13",
+      "stored_at": "2026-04-13T17:33:12.825930"
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_14",
+      "stored_at": "2026-04-13T17:33:17.424842",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_15",
+      "stored_at": "2026-04-13T17:33:17.425303",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 2 & 3 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 2 & 3 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_16",
+      "stored_at": "2026-04-13T17:33:17.425826",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 4 & 5 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 4 & 5 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_17",
+      "stored_at": "2026-04-13T17:33:17.426140",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_18",
+      "stored_at": "2026-04-13T17:33:17.426701",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:VALID",
+      "context": "memory",
+      "description": "VALID",
+      "source": "memory_analysis",
+      "id": "pattern_19",
+      "stored_at": "2026-04-13T17:33:17.427256",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Valid",
+      "context": "memory",
+      "description": "Valid",
+      "source": "memory_analysis",
+      "id": "pattern_20",
+      "stored_at": "2026-04-13T17:33:17.427719",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:SUCCESS",
+      "context": "memory",
+      "description": "SUCCESS",
+      "source": "memory_analysis",
+      "id": "pattern_21",
+      "stored_at": "2026-04-13T17:33:17.428152",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_22",
+      "stored_at": "2026-04-13T17:33:17.428653",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Success",
+      "context": "memory",
+      "description": "Success",
+      "source": "memory_analysis",
+      "id": "pattern_23",
+      "stored_at": "2026-04-13T17:33:17.429235",
+      "success_count": 1,
+      "failure_count": 0
+    }
+  ],
+  "warnings": [
+    {
+      "pattern": "memory:broken",
+      "context": "memory",
+      "description": "broken",
+      "source": "memory_analysis",
+      "id": "warning_1",
+      "stored_at": "2026-04-13T17:28:13.029252",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_2",
+      "stored_at": "2026-04-13T17:28:13.029474",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_3",
+      "stored_at": "2026-04-13T17:28:13.029841",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_4",
+      "stored_at": "2026-04-13T17:28:13.030340",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_5",
+      "stored_at": "2026-04-13T17:28:13.031010",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:broken",
+      "context": "memory",
+      "description": "broken",
+      "source": "memory_analysis",
+      "id": "warning_6",
+      "stored_at": "2026-04-13T17:33:17.429625",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_7",
+      "stored_at": "2026-04-13T17:33:17.430034",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_8",
+      "stored_at": "2026-04-13T17:33:17.430437",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_9",
+      "stored_at": "2026-04-13T17:33:17.430851",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_10",
+      "stored_at": "2026-04-13T17:33:17.431414",
+      "hit_count": 1
+    }
+  ],
+  "improvements": [],
+  "metadata": {
+    "created": "2026-04-13T17:19:24.487814",
+    "version": "1.0"
+  }
+}

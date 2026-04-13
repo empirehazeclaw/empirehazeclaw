@@ -1,0 +1,13 @@
+{
+  "id": "dec_20260413_173312_2",
+  "context": "testing",
+  "decision": "Test decision for validation",
+  "confidence": 0.75,
+  "reasoning": "Testing the decision tracker integration",
+  "alternatives": [],
+  "metadata": {},
+  "recorded_at": "2026-04-13T17:33:12.825287",
+  "outcome": "success",
+  "outcome_quality": 0.85,
+  "outcome_recorded_at": "2026-04-13T17:33:12.825559"
+}

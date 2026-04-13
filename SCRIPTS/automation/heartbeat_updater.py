@@ -7,6 +7,7 @@ Phase 8 Maximization: Fixed timeout issue
 
 import os
 import json
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -39,15 +40,8 @@ def get_gateway_status_fast():
 
 def get_crons_fast():
     """Get cron stats using service (fast)"""
-    if get_cron_list:
-        try:
-            crons = get_cron_list()
-            jobs = crons.get('jobs', [])
-            enabled = sum(1 for j in jobs if j.get('enabled', False))
-            errors = sum(1 for j in jobs if j.get('state', {}).get('lastRunStatus') == 'error')
-            return enabled, len(jobs), errors
-        except:
-            pass
+    # Note: openclaw cron list can hang, so we skip cron stats
+    # and just return None (will show as "?")
     return None, None, None
 
 def count_scripts():
