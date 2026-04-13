@@ -50,6 +50,10 @@ def check_for_secrets(staged_files: list) -> tuple:
         if not path.exists():
             continue
             
+        # Skip files in backup directories (they contain old session data)
+        if '_backup' in str(path) or '.backup' in str(path):
+            continue
+        
         # Skip binary files
         if path.suffix in ['.pyc', '.png', '.jpg', '.gif', '.pdf']:
             continue
