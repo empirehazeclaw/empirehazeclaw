@@ -7003,6 +7003,23 @@
         "2026",
         "arxiv"
       ]
+    },
+    "error_pattern_20260413_1004": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T10:04:17.556678Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T10:04:17.556687Z",
+      "last_accessed": "2026-04-13T10:04:17.556688Z",
+      "access_count": 1,
+      "decay_score": 1.0
     }
   },
   "last_updated": "2026-04-13T09:04:46.600362",
