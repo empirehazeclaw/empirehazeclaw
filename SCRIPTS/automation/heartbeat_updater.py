@@ -23,7 +23,7 @@ except ImportError:
     get_cron_list = None
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-HEARTBEAT_PATH = WORKSPACE / "HEARTBEAT.md"
+HEARTBEAT_PATH = WORKSPACE / "ceo" / "HEARTBEAT.md"
 MEMORY_DIR = WORKSPACE / "memory"
 STATE_FILE = WORKSPACE / "data" / "heartbeat_state.json"
 
