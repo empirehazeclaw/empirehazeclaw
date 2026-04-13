@@ -11,3 +11,7 @@ __pycache__/
 secrets/
 secrets.env
 .vault-key
+
+# Backup directories
+ceo/_backup_rollbacks/
+workspace/*_backup*/

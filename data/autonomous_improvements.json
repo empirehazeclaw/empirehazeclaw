@@ -60,6 +60,11 @@
       "timestamp": "2026-04-13T09:04:47.429803",
       "script": "health_check",
       "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-13T18:05:03.925116",
+      "script": "error_rate_monitor",
+      "reason": "test_failed"
     }
   ]
 }

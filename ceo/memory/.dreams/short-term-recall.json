@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-13T06:10:06.912Z",
+  "updatedAt": "2026-04-13T21:28:20.428Z",
   "entries": {
     "memory:memory/2026-04-13.md:5:7": {
       "key": "memory:memory/2026-04-13.md:5:7",
@@ -60992,6 +60992,161 @@
         "needed",
         "all",
         "good"
+      ]
+    },
+    "memory:memory/2026-04-08.md:183:218": {
+      "key": "memory:memory/2026-04-08.md:183:218",
+      "path": "memory/2026-04-08.md",
+      "startLine": 183,
+      "endLine": 218,
+      "source": "memory",
+      "snippet": "- Mentioned: Research at 13:00 UTC, Security Audit 3 gaps, University waiting - Asked what Nico wants to do ### Current Time - 12:48 UTC (2:48 PM Berlin/MESZ) --- *Nico (Boss) spricht Deutsch. Timezone Europe/Berlin.* --- ## Session #4 — 13:29 UTC ### Session Start - New session via /new at 13:29 PM UTC - Read SOUL.md, USER.md, HEARTBEAT.md ### HEARTBEAT.md Update (2026-04-08 13:15) — NEU! - Großer Fortschritt seit gestern: - Cybersecurity Track COMPLETE: Alle 5 Module + 5 Übungen fertig (Module 2-5 heute vom CEO selbst geschrieben) - Examiner muss noch Quizze für Module 2-5 erstellen - PRIORITÄT 1: Data Manager Bug (OpenClaw Issue), 4 Security Keys rotieren (Nico manuell), GitHub",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47338495850563045,
+      "maxScore": 0.47338495850563045,
+      "firstRecalledAt": "2026-04-13T21:27:49.152Z",
+      "lastRecalledAt": "2026-04-13T21:27:49.152Z",
+      "queryHashes": [
+        "d659c10e27d5"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "berlin/mesz",
+        "europe/berlin",
+        "soul.md",
+        "user.md",
+        "heartbeat.md",
+        "2-5",
+        "mentioned",
+        "research"
+      ]
+    },
+    "memory:memory/ARCHIVE/2026-04-12.md:1:33": {
+      "key": "memory:memory/ARCHIVE/2026-04-12.md:1:33",
+      "path": "memory/ARCHIVE/2026-04-12.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "--- ## SESSION SAVE (21:04 UTC) — Before New Session ### 🚀 Today's Major Achievements (2026-04-12 Evening) #### Learning Loop System (NEW!) - Created `/SCRIPTS/automation/learning_loop.py` — Main loop with Collect → Analyze → Execute → Reflexion - Created `/SCRIPTS/automation/learning_collector.py` — Collects from sessions, crons, errors, KG - Created `/SCRIPTS/automation/learning_analyzer.py` — Finds patterns with confidence scoring + meta-learning weights - Created `/SCRIPTS/automation/learning_executor.py` — ACTUALLY applies improvements (adds to KG, creates fix files, logs) - Created `/SCRIPTS/automation/learning_feedback.py` — Integrates Nico's direct feedback into learning - **Met",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.766902884078621,
+      "maxScore": 0.766902884078621,
+      "firstRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "queryHashes": [
+        "432408a5b866"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "meta-learning",
+        "save",
+        "utc",
+        "new",
+        "today's",
+        "major",
+        "achievements",
+        "evening"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:18": {
+      "key": "memory:memory/2026-04-13.md:1:18",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# 2026-04-13 ## Learning Loop — 21:03 UTC - Iteration 1, Score: 0.690, Duration: 2.6s - Feedback: 4 signals (direct:2, metrics:1, self_eval:1) - Log signals: 56 | Memory signals: 0 | Session insights: 0 - Hypotheses generated: 5 (all novel) - Forced novelty injection triggered (consecutive_same_pattern=3) - Pattern: [PHASE 4] Explore: error_prediction - Validation: 2/3 tests passed - Validation success rate: 107/107 - Cross-pattern hits: 3 - Issues: none ## Notes - Learning loop running hourly as expected - System stable, no errors",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7631881649338259,
+      "maxScore": 0.7631881649338259,
+      "firstRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "queryHashes": [
+        "432408a5b866"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "0.690",
+        "2.6s",
+        "self-eval",
+        "consecutive-same-pattern",
+        "error-prediction",
+        "2/3",
+        "107/107",
+        "cross-pattern"
+      ]
+    },
+    "memory:memory/ARCHIVE/2026-04-13.md:32:43": {
+      "key": "memory:memory/ARCHIVE/2026-04-13.md:32:43",
+      "path": "memory/ARCHIVE/2026-04-13.md",
+      "startLine": 32,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "1. Fixed CEO Weekly Review path: `scripts/weekly_review.py` → `SCRIPTS/tools/weekly_review.py` 2. Fixed Opportunity Scanner timeout: 60s → 300s 3. Learning: CLI tools on system can be used via exec, not just \"built-in\" tools ## Patterns Observed - Learning Loop improving consistently - Self-Improver helping identify improvement opportunities - System stability significantly better than earlier attempts --- _Learned today: \"If a tool exists on the system, use exec to call it — don't default to 'no facility' without trying.\"_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7526911433927649,
+      "maxScore": 0.7526911433927649,
+      "firstRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "queryHashes": [
+        "432408a5b866"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "scripts/weekly-review.py",
+        "scripts/tools/weekly-review.py",
+        "built-in",
+        "self-improver",
+        "fixed",
+        "ceo",
+        "weekly",
+        "review"
+      ]
+    },
+    "memory:memory/ARCHIVE/2026-04-12.md:26:75": {
+      "key": "memory:memory/ARCHIVE/2026-04-12.md:26:75",
+      "path": "memory/ARCHIVE/2026-04-12.md",
+      "startLine": 26,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- Compressed 2 checkpoint files (1.7MB → 220KB) - Session storage: 44MB (down from 64MB+) - RAM: 1.3GB / 7.8GB (good) - kg_lifecycle_manager symlink restored - Learning Loop integrated with feedback system #### Morning Brief Enhancement - Updated to read `/logs/cron_status.json` for detailed health (healthy/degraded counts) - Now shows: Active, Failed, Healthy, Degraded counts ### 📊 Learning Loop Metrics | Iteration | Score | Improvements | |-----------|-------|-------------| | 1 | 0.60 | 4 | | 2 | 0.80 | 3 | | 3 | 0.80 | 0 (no high-confidence patterns) | ### 🎯 Current System Status - Learning Loop: Running hourly - Capability Evolver: Trained, ready for next stagnation - Self-Healing C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.752534459355368,
+      "maxScore": 0.752534459355368,
+      "firstRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "queryHashes": [
+        "432408a5b866"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "1.7mb",
+        "1.3gb",
+        "7.8gb",
+        "kg-lifecycle-manager",
+        "logs/cron-status.json",
+        "healthy/degraded",
+        "0.60",
+        "0.80"
       ]
     }
   }

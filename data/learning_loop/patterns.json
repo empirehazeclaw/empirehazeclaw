@@ -197,13 +197,13 @@
       ],
       "description": "[PHASE 4] Explore: feedback_integration",
       "solution": "Applied improvement: [PHASE 4] Explore: feedback_integration",
-      "success_count": 221,
+      "success_count": 227,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5003534825435686,
+      "confidence": 0.5001878551164369,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
-      "last_validated": "2026-04-13T17:33:23.207589",
+      "last_validated": "2026-04-13T23:04:28.118555",
       "error_type": "feedback_integration",
       "context": {
         "source": "forced_novelty",
@@ -339,6 +339,60 @@
     {
       "title": "memory:success",
       "description": "success",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:Working",
+      "description": "Working",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:gateway_recovery.log",
+      "description": "1 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:backup.log",
+      "description": "15 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:working",
+      "description": "working",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:valid",
+      "description": "valid",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:Optimized",
+      "description": "Optimized",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",

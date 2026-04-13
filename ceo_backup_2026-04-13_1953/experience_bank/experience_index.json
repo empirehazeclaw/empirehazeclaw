@@ -1,0 +1,20 @@
+{
+  "last_updated": "2026-04-09T23:03:17.126989Z",
+  "total_experiences": 12,
+  "months": [
+    "2026-04"
+  ],
+  "by_agent": {
+    "builder": 1,
+    "data_manager": 4,
+    "research": 1,
+    "qc": 1,
+    "unknown": 3,
+    "qc_officer": 1,
+    "security_officer": 1
+  },
+  "by_outcome": {
+    "success": 0,
+    "failed": 12
+  }
+}

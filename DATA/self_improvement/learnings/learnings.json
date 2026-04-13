@@ -225,6 +225,106 @@
       "stored_at": "2026-04-13T17:33:17.429235",
       "success_count": 1,
       "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_24",
+      "stored_at": "2026-04-13T18:00:17.558056",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_25",
+      "stored_at": "2026-04-13T18:00:17.558720",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 2 & 3 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 2 & 3 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_26",
+      "stored_at": "2026-04-13T18:00:17.559748",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 PHASE 4 & 5 COMPLETE",
+      "context": "memory",
+      "description": "\u2705 PHASE 4 & 5 COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_27",
+      "stored_at": "2026-04-13T18:00:17.560581",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "context": "memory",
+      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
+      "source": "memory_analysis",
+      "id": "pattern_28",
+      "stored_at": "2026-04-13T18:00:17.561323",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:VALID",
+      "context": "memory",
+      "description": "VALID",
+      "source": "memory_analysis",
+      "id": "pattern_29",
+      "stored_at": "2026-04-13T18:00:17.562018",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Valid",
+      "context": "memory",
+      "description": "Valid",
+      "source": "memory_analysis",
+      "id": "pattern_30",
+      "stored_at": "2026-04-13T18:00:17.562614",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:SUCCESS",
+      "context": "memory",
+      "description": "SUCCESS",
+      "source": "memory_analysis",
+      "id": "pattern_31",
+      "stored_at": "2026-04-13T18:00:17.563805",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_32",
+      "stored_at": "2026-04-13T18:00:17.564578",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Success",
+      "context": "memory",
+      "description": "Success",
+      "source": "memory_analysis",
+      "id": "pattern_33",
+      "stored_at": "2026-04-13T18:00:17.565258",
+      "success_count": 1,
+      "failure_count": 0
     }
   ],
   "warnings": [
@@ -316,6 +416,51 @@
       "source": "memory_analysis",
       "id": "warning_10",
       "stored_at": "2026-04-13T17:33:17.431414",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:broken",
+      "context": "memory",
+      "description": "broken",
+      "source": "memory_analysis",
+      "id": "warning_11",
+      "stored_at": "2026-04-13T18:00:17.565950",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_12",
+      "stored_at": "2026-04-13T18:00:17.566674",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_13",
+      "stored_at": "2026-04-13T18:00:17.567375",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_14",
+      "stored_at": "2026-04-13T18:00:17.568090",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_15",
+      "stored_at": "2026-04-13T18:00:17.568738",
       "hit_count": 1
     }
   ],
