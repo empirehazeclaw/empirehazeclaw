@@ -1,6 +1,6 @@
 # 📋 SCRIPT INDEX — Complete Inventory
-**Updated:** 2026-04-12 08:46 UTC
-**Total Scripts:** 66 (62 main + 3 Phase 6 + 1 framework)
+**Updated:** 2026-04-13 07:12 UTC
+**Total Scripts:** 106 (82 active + 17 restored + 7 framework)
 
 ---
 
@@ -23,6 +23,7 @@
 | system_report.py | Comprehensive status report | ✅ Active |
 | quick_check.py | Rapid system status | ✅ Active |
 | common_issues_check.py | Check for common problems | ✅ Active |
+| cron_monitor.py | Cron monitoring (restored) | ✅ Active |
 
 ---
 
@@ -32,9 +33,10 @@
 |--------|---------|--------|
 | error_reducer.py | Error analysis + fixing | ✅ Active |
 | error_rate_monitor.py | Monitor error rate | ✅ Active |
-| error_reduction_plan.py | Plan error reductions | ✅ Active |
+| error_reduction_plan.py | Plan error reductions | ⚠️ Review |
 | error_reduction_strategy.py | Strategy for errors | ⚠️ Review |
 | cron_error_healer.py | Auto-heal failed crons | ✅ Active |
+| retry_with_backoff.py | Retry pattern utility (restored) | ✅ Active |
 
 ---
 
@@ -59,7 +61,7 @@
 
 | Script | Purpose | Status |
 |--------|---------|--------|
-| learning_coordinator.py | Hourly learning loop | ✅ Active |
+| learning_coordinator.py | Learning loop coordinator | ✅ Active |
 | autonomous_improvement.py | Overnight experiments | ✅ Active |
 | capability_evolver.py | Evolve capabilities | ✅ Active |
 | reflection_loop.py | Reflection patterns | ⚠️ Replaced by deep_reflection.py |
@@ -67,6 +69,8 @@
 | quality_metrics.py | Quality tracking | ✅ Active |
 | code_stats.py | Code statistics | ✅ Active |
 | loop_check.py | Loop detection | ✅ Active |
+| evolve.py | Self-evolution script (restored) | ✅ Active |
+| innovation_research.py | AI innovation research (restored) | ✅ Active |
 
 ---
 
@@ -75,9 +79,9 @@
 | Script | Purpose | Status |
 |--------|---------|--------|
 | kg_updater.py | KG main + subcommands | ✅ Active |
-| kg_enhancer.py | KG enhancement | ⚠️ Merge into kg_updater |
-| kg_lifecycle_manager.py | KG lifecycle | ⚠️ Merge into kg_updater |
-| kg_relation_cleaner.py | Clean relations | ⚠️ Merge into kg_updater |
+| kg_enhancer.py | KG enhancement (restored) | ✅ Active |
+| kg_lifecycle_manager.py | KG lifecycle | ✅ Active |
+| kg_relation_cleaner.py | Clean relations (restored) | ✅ Active |
 | kg_orphan_connector.py | Connect orphans | ⚠️ Review |
 | kg_dreamer.py | Dreaming/insights | ✅ Active |
 
@@ -87,7 +91,7 @@
 
 | Script | Purpose | Status |
 |--------|---------|--------|
-| security_audit.py | Security scanning | ✅ Active |
+| security_audit.py | Security scanning (restored) | ✅ Active |
 | security_scanner.py | Vulnerability scan | ✅ Active |
 | security_hardening.py | Hardening | ✅ Active |
 
@@ -107,14 +111,27 @@
 
 | Script | Purpose | Status |
 |--------|---------|--------|
-| daily_summary.py | Daily activity summary | ✅ Active |
-| evening_summary.py | Evening report | ✅ Active |
+| daily_summary.py | Daily activity summary (restored) | ✅ Active |
+| evening_summary.py | Evening report (restored) | ✅ Active |
+| evening_review.py | Evening review (restored) | ✅ Active |
 | morning_brief.py | Morning briefing | ✅ Active |
 | self_check.py | Self diagnostics | ✅ Active |
-| cron_monitor.py | Cron monitoring | ⚠️ Merge into cron_watchdog |
 | token_tracker.py | Token tracking | ✅ Active |
 | token_budget_tracker.py | Budget tracking | ⚠️ Merge into token_tracker |
-| performance_dashboard.py | Performance | ⚠️ Review |
+| performance_dashboard.py | Performance (restored) | ✅ Active |
+| github_stats.py | GitHub commit stats (restored) | ✅ Active |
+| openrouter_monitor.py | OpenRouter API monitor (restored) | ✅ Active |
+
+---
+
+## 🔄 SESSION & CONTEXT
+
+| Script | Purpose | Status |
+|--------|---------|--------|
+| auto_session_capture.py | Auto session capture (restored) | ✅ Active |
+| session_cleanup.py | Session cleanup | ✅ Active |
+| session_compressor.py | Session compression | ✅ Active |
+| context_compressor.py | Context compression | ✅ Active |
 
 ---
 
@@ -127,29 +144,51 @@
 
 ---
 
-## 📁 ARCHIVED (Phase 2)
+## 📊 SCRIPT METRICS
 
-See `scripts/_archive/phase2/` for archived scripts.
+| Category | Active | Review/Merge | Restored |
+|----------|--------|--------------|----------|
+| Execution | 3 | 0 | 0 |
+| Health | 6 | 0 | 1 |
+| Errors | 6 | 1 | 1 |
+| Memory | 9 | 2 | 0 |
+| Learning | 10 | 1 | 2 |
+| KG | 5 | 1 | 2 |
+| Security | 3 | 0 | 1 |
+| Backup | 3 | 0 | 0 |
+| Analytics | 10 | 1 | 4 |
+| Session | 4 | 0 | 1 |
+| Testing | 2 | 0 | 0 |
+| **TOTAL** | **61** | **6** | **12** |
+
+*Note: 17 scripts restored from archive (2026-04-13). 1 unrecoverable (apply_timeouts.py - corrupt).*
 
 ---
 
-## 📊 SCRIPT METRICS
+## 📁 RESTORED FROM ARCHIVE (2026-04-13)
 
-| Category | Active | Review/Merge | Archived |
-|----------|--------|--------------|----------|
-| Execution | 3 | 0 | 0 |
-| Health | 5 | 0 | 0 |
-| Errors | 5 | 1 | 0 |
-| Memory | 9 | 2 | 0 |
-| Learning | 8 | 1 | 0 |
-| KG | 4 | 3 | 0 |
-| Security | 3 | 0 | 0 |
-| Backup | 3 | 0 | 0 |
-| Analytics | 7 | 2 | 0 |
-| Testing | 2 | 0 | 0 |
-| **TOTAL** | **49** | **9** | **~37** |
+| Script | From | Category | Status |
+|--------|------|----------|--------|
+| innovation_research.py | phase2b | automation | ✅ Active |
+| kg_enhancer.py | phase2/kg | analysis | ✅ Active |
+| kg_relation_cleaner.py | phase2/kg | tools | ✅ Active |
+| cron_monitor.py | phase2 | automation | ✅ Active |
+| evolve.py | phase2 | analysis | ✅ Active |
+| openrouter_monitor.py | phase2 | automation | ✅ Active |
+| performance_dashboard.py | phase2 | analysis | ✅ Active |
+| auto_session_capture.py | phase2 | automation | ✅ Active |
+| efficiency_tracker.py | phase2b | analysis | ✅ Active |
+| security_audit.py | phase2b | tools | ✅ Active |
+| common_issues_check.py | phase2b | automation | ✅ Active |
+| retry_with_backoff.py | phase2b | tools | ✅ Active |
+| system_report.py | phase2b | automation | ✅ Active |
+| daily_summary.py | phase2b | automation | ✅ Active |
+| evening_review.py | phase2b | automation | ✅ Active |
+| evening_summary.py | phase2b | automation | ✅ Active |
+| github_stats.py | phase2b | analysis | ✅ Active |
+| apply_timeouts.py | phase2b | tools | ❌ Unrecoverable |
 
 ---
 
 *Script Index maintained by Sir HazeClaw*
-*Last updated: 2026-04-12 08:46 UTC*
+*Last updated: 2026-04-13 07:12 UTC*

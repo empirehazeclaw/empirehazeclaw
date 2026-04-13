@@ -1,22 +1,95 @@
 {
-  "timestamp": "2026-04-13T02:04:00Z",
-  "cycle": 4,
-  "duration_s": 0.6,
-  "phases": {
-    "system_check": "OK",
-    "research": "OK",
-    "quality_gates": "1 issue",
-    "improvements": "1 selected, 0 executed",
-    "learning_tracker": "OK"
-  },
-  "issues": [
+  "runs": [
     {
-      "type": "self_eval_low",
-      "severity": "HIGH",
-      "detail": "Self-Eval score low: 0/100"
+      "timestamp": "2026-04-13T04:04:44.116425",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-13T04:04:44.175375",
+      "phase": "research",
+      "success": true,
+      "notes": "0 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-13T04:04:44.654779",
+      "phase": "quality",
+      "success": true,
+      "notes": "1 issues"
+    },
+    {
+      "timestamp": "2026-04-13T04:04:44.657270",
+      "phase": "improvement",
+      "success": true,
+      "notes": "1 applied"
+    },
+    {
+      "timestamp": "2026-04-13T04:04:44.679831",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-13T05:04:42.968761",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-13T05:04:43.025474",
+      "phase": "research",
+      "success": true,
+      "notes": "0 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-13T05:04:43.574191",
+      "phase": "quality",
+      "success": true,
+      "notes": "1 issues"
+    },
+    {
+      "timestamp": "2026-04-13T05:04:43.576646",
+      "phase": "improvement",
+      "success": true,
+      "notes": "1 applied"
+    },
+    {
+      "timestamp": "2026-04-13T05:04:43.600964",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.241860",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.308659",
+      "phase": "research",
+      "success": true,
+      "notes": "0 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.837883",
+      "phase": "quality",
+      "success": true,
+      "notes": "1 issues"
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.840077",
+      "phase": "improvement",
+      "success": true,
+      "notes": "1 applied"
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.858476",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
     }
   ],
-  "improvements_selected": ["Self-Evaluation Improvement"],
-  "improvements_executed": 0,
-  "self_eval_score": 0
+  "last_full_cycle": "2026-04-13T06:05:22.858485"
 }

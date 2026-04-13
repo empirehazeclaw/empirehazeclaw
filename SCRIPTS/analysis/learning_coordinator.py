@@ -29,11 +29,27 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Dict, Optional, Tuple
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-SCRIPTS_DIR = WORKSPACE / "scripts"
+SCRIPTS_DIR = WORKSPACE / "SCRIPTS"  # Fixed: was pointing to lowercase "scripts"
 DATA_DIR = WORKSPACE / "data"
 KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
 COORDINATOR_LOG = DATA_DIR / "learning_coordinator.json"
 IMPROVEMENT_LOG = DATA_DIR / "improvements/improvement_log.json"
+
+# Script search paths (in order of priority)
+SCRIPT_SEARCH_PATHS = [
+    WORKSPACE / "scripts",           # Legacy scripts dir
+    WORKSPACE / "SCRIPTS" / "analysis",
+    WORKSPACE / "SCRIPTS" / "automation",
+    WORKSPACE / "SCRIPTS" / "tools",
+]
+
+def find_script(name):
+    """Find a script in any of the known directories."""
+    for sp in SCRIPT_SEARCH_PATHS:
+        p = sp / name
+        if p.exists():
+            return p
+    return SCRIPTS_DIR / name  # fallback
 
 # ============ UTILITIES ============
 
@@ -81,7 +97,7 @@ def run_innovation_research():
     
     try:
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'innovation_research.py'), '--daily'],
+            ['python3', str(find_script('innovation_research.py')), '--daily'],
             capture_output=True,
             text=True,
             timeout=120,
@@ -183,7 +199,7 @@ def run_quality_gates():
     # Self Eval
     try:
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'self_eval.py')],
+            ['python3', str(find_script('self_eval.py'))],
             capture_output=True,
             text=True,
             timeout=30,
@@ -224,7 +240,7 @@ def run_quality_gates():
     try:
         # Run error_reducer for real-time error analysis
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'error_reducer.py')],
+            ['python3', str(find_script('error_reducer.py'))],
             capture_output=True, text=True, timeout=60, cwd=str(WORKSPACE)
         )
         # Parse output for error rate
@@ -248,7 +264,7 @@ def run_quality_gates():
     # Scripts Health Check
     try:
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'error_rate_monitor.py')],
+            ['python3', str(find_script('error_rate_monitor.py'))],
             capture_output=True,
             text=True,
             timeout=30,
@@ -397,7 +413,7 @@ def run_self_play_generation(research_imp: Dict) -> Dict:
         
         # Run 2 generations of self-play
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'self_play_improver.py'), '--generations', '2'],
+            ['python3', str(find_script('self_play_improver.py')), '--generations', '2'],
             capture_output=True,
             text=True,
             timeout=180,
@@ -429,7 +445,7 @@ def run_self_play_generation(research_imp: Dict) -> Dict:
 def execute_improvement_script(script_name, title):
     """Executes an improvement script and validates result."""
     try:
-        script_path = SCRIPTS_DIR / script_name
+        script_path = find_script(script_name)
         if not script_path.exists():
             return {'success': False, 'output': f'Script not found: {script_name}'}
         
@@ -606,7 +622,7 @@ def run_full_cycle():
     print("📚 PHASE 5: Learning Tracker")
     try:
         result = subprocess.run(
-            ['python3', str(SCRIPTS_DIR / 'learning_tracker.py')],
+            ['python3', str(find_script('learning_tracker.py'))],
             capture_output=True,
             text=True,
             timeout=30,
@@ -626,7 +642,7 @@ def run_full_cycle():
         print("🧠 PHASE 6: Meta-Improvement (Loop improving itself)")
         try:
             result = subprocess.run(
-                ['python3', str(SCRIPTS_DIR / 'meta_improver.py')],
+                ['python3', str(find_script('meta_improver.py'))],
                 capture_output=True,
                 text=True,
                 timeout=60,

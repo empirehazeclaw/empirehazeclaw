@@ -2,42 +2,6 @@
   "improvements": [
     {
       "date": "2026-04-12",
-      "time": "15:10",
-      "category": "system",
-      "title": "System metrics gepr\u00fcft",
-      "description": "Gateway healthy, 33 memory files, 191 chunks",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "15:15",
-      "category": "analysis",
-      "title": "Skills analyse",
-      "description": "Largest: capability-evolver (1.8MB), voice-agent (1.6MB)",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "15:20",
-      "category": "documentation",
-      "title": "Docs alter check",
-      "description": "Neueste docs: heute 13:14, keine Files >30 Tage",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "15:25",
-      "category": "system",
-      "title": "Gateway healthy",
-      "description": "Gateway reachable 72ms",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
       "time": "15:30",
       "category": "analysis",
       "title": "CEO structure analysiert",
@@ -1228,6 +1192,94 @@
     },
     {
       "timestamp": "2026-04-13T02:04:45.312285",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T03:04:45.934130",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T04:04:44.655768",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T05:04:43.574716",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T06:05:22.838851",
       "improvements": [
         {
           "title": "Self-Evaluation Improvement",

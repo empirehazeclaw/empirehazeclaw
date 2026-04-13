@@ -1,6 +1,6 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-12 21:04 UTC
+## Last Update: 2026-04-13 07:12 UTC
 
 ### 🚀 SESSION ENDE - Alles gespeichert
 
@@ -80,11 +80,26 @@ Siehe `memory/2026-04-12.md` für vollständige Details.
 |---|------|--------|
 | 1.1 | System-Audit abschließen | 🔄 IN PROGRESS |
 | 1.2 | Error Rate: 1.4% → <1% | ✅ FIXED (false positive issue) |
-| 1.3 | Script-Inventar | ✅ DONE (66 scripts) |
+| 1.3 | Script-Inventar | ✅ DONE (106 scripts, 17 restored) |
 | 1.4 | Cron-Inventar | ✅ DONE (45 jobs, 20 enabled) |
 | 1.5 | KG-Inventar | ✅ DONE (260 entities, 523 relations) |
 
 ### ✅ Week 1 Completed Today:
+
+### 🚀 Archive Recovery (07:09 UTC):
+- [x] Learning Coordinator Script-Pfade gefixt (find_script() routing)
+- [x] 17 nützliche Scripts aus _archive wiederhergestellt
+- [x] SCRIPT_INDEX.md aktualisiert (66 → 106 scripts)
+- [x] Innovation Research reaktiviert (SCRIPTS/automation/)
+- [x] 3 Script-Syntax-Fehler repariert (github_stats, system_report)
+- [x] 1 Script unrecoverable (apply_timeouts.py - corrupt archive)
+
+### 📁 Restored Scripts:
+automation: innovation_research, cron_monitor, openrouter_monitor,
+  auto_session_capture, common_issues_check, retry_with_backoff,
+  system_report, daily_summary, evening_review, evening_summary
+analysis: kg_enhancer, evolve, performance_dashboard, efficiency_tracker, github_stats
+tools: kg_relation_cleaner, security_audit
 - [x] MONTHLY PLAN erstellt (EXECUTION_PLAN.md)
 - [x] SCRIPT_INDEX.md erstellt (66 scripts)
 - [x] CRON_INDEX.md erstellt (45 jobs)

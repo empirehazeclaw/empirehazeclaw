@@ -6800,13 +6800,13 @@
         {
           "content": "Research completed: 0 queries, 0 hypotheses generated",
           "confidence": 0.9,
-          "extracted_at": "2026-04-13T02:04:44.796958",
+          "extracted_at": "2026-04-13T06:05:22.276411",
           "category": "research"
         }
       ],
       "hypotheses": [],
       "priority": "MEDIUM",
-      "created": "2026-04-13T02:04:44.796965",
+      "created": "2026-04-13T06:05:22.276427",
       "tags": [
         "research",
         "coordinator",
@@ -6844,6 +6844,91 @@
       "priority": "MEDIUM",
       "created": "2026-04-13T02:03:49.347286Z",
       "last_accessed": "2026-04-13T02:03:49.347287Z",
+      "access_count": 1,
+      "decay_score": 1.0
+    },
+    "error_pattern_20260413_0303": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T03:03:47.729487Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T03:03:47.729495Z",
+      "last_accessed": "2026-04-13T03:03:47.729496Z",
+      "access_count": 1,
+      "decay_score": 1.0
+    },
+    "error_pattern_20260413_0403": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T04:03:49.318250Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T04:03:49.318256Z",
+      "last_accessed": "2026-04-13T04:03:49.318257Z",
+      "access_count": 1,
+      "decay_score": 1.0
+    },
+    "error_pattern_20260413_0503": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T05:03:46.724590Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T05:03:46.724596Z",
+      "last_accessed": "2026-04-13T05:03:46.724597Z",
+      "access_count": 1,
+      "decay_score": 1.0
+    },
+    "error_pattern_20260413_0603": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T06:03:49.131833Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T06:03:49.131843Z",
+      "last_accessed": "2026-04-13T06:03:49.131845Z",
+      "access_count": 1,
+      "decay_score": 1.0
+    },
+    "error_pattern_20260413_0703": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1.0,
+          "extracted_at": "2026-04-13T07:03:59.404380Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T07:03:59.404390Z",
+      "last_accessed": "2026-04-13T07:03:59.404391Z",
       "access_count": 1,
       "decay_score": 1.0
     }
