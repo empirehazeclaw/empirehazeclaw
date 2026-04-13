@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-13T09:43:00Z",
+  "issues_found": [
+    {
+      "severity": "high",
+      "category": "invalid_credentials",
+      "title": "Buffer Token — INVALID",
+      "details": "Buffer API Token liefert 401 Unauthorized seit mindestens 2026-04-08. Dienste die Buffer nutzen funktionieren nicht.",
+      "files_affected": ["social_pipeline.py"],
+      "status": "open",
+      "since": "2026-04-07"
+    },
+    {
+      "severity": "high",
+      "category": "invalid_credentials",
+      "title": "Leonardo AI API Key — INVALID",
+      "details": "Leonardo AI Key liefert HTML statt JSON — API Key ist invalide und muss in der Leonardo Cloud Console erneuert werden.",
+      "files_affected": [],
+      "status": "open",
+      "since": "2026-04-07"
+    },
+    {
+      "severity": "high",
+      "category": "secrets_management",
+      "title": "6 kritische Keys ausstehend auf Rotation",
+      "details": "Telegram Bot Token, RESTIC_PASSWORD, GitHub Token, Buffer Token, Google AIza Key, SECRET_KEY — alle noch auf Rotation wartend.",
+      "files_affected": ["secrets/SECURITY_ROTATION.md"],
+      "status": "open",
+      "since": "2026-04-07"
+    }
+  ],
+  "keys_status": {
+    "buffer_token": "INVALID (401)",
+    "leonardo_api_key": "INVALID (HTML response)",
+    "telegram_bot_token": "pending_rotation",
+    "github_token": "pending_rotation",
+    "google_aiza_key": "pending_rotation",
+    "restic_password": "pending_rotation",
+    "secret_key": "pending_rotation"
+  },
+  "workspace_scan": {
+    "scripts_found": 39,
+    "new_scripts_security_relevant": [],
+    "hardcoded_secrets_found": false,
+    "gitignore_active": true
+  },
+  "log_review": {
+    "suspicious_activity": false,
+    "recent_errors": "none detected in 24h"
+  },
+  "recommendations": [
+    "Buffer Token erneuern über Buffer App Settings",
+    "Leonardo AI Key in Cloud Console prüfen und ggf. regenerieren",
+    "Security Rotation Plan vollständig durchführen",
+    "Alle 6 ausstehenden kritischen Keys prioritär rotieren"
+  ]
+}
