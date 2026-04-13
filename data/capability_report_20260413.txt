@@ -1,15 +1,19 @@
 ============================================================
 🦞 CAPABILITY EVOLUTION REPORT
-Generated: 2026-04-13T07:11:23.690266
+Generated: 2026-04-13T23:22:16.004347
 ============================================================
 
-🟡 MEDIUM (10 issues)
+🟡 MEDIUM (12 issues)
 ----------------------------------------
   📄 /home/clawbot/.openclaw/workspace/scripts/error_rate_monitor.py
      Error Handling: Bare except clause - may catch system exceptions
      → Fix: Wrap in try/except with specific exception type
 
   📄 /home/clawbot/.openclaw/workspace/scripts/evening_review.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/heartbeat_updater.py
      Error Handling: Bare except clause - may catch system exceptions
      → Fix: Wrap in try/except with specific exception type
 
@@ -30,6 +34,10 @@ Generated: 2026-04-13T07:11:23.690266
      → Fix: Wrap in try/except with specific exception type
 
   📄 /home/clawbot/.openclaw/workspace/scripts/morning_brief.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/weekly_review.py
      Error Handling: Bare except clause - may catch system exceptions
      → Fix: Wrap in try/except with specific exception type
 

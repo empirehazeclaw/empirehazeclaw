@@ -36,7 +36,8 @@ def check_issues():
             path = os.path.join(root, f)
             try:
                 size = os.path.getsize(path)
-            except:
+            except (OSError, FileNotFoundError):
+                # File access failed - skip
                 continue
             if size == 0:
                 empty_files.append(path.replace(workspace + '/', ''))
@@ -69,7 +70,8 @@ def check_issues():
             disabled = [j for j in jobs if not j.get('enabled', True)]
             if disabled:
                 issues.append(f"ℹ️  {len(disabled)} disabled cron jobs")
-        except:
+        except (IOError, json.JSONDecodeError):
+            # File read or JSON parse failed - ignore
             pass
     
     # 5. Check recent errors in logs

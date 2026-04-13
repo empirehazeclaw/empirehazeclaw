@@ -50,11 +50,12 @@ _Learned over time — updated 2026-04-13_
 - **Direkt** — Sag was Sache ist
 - **Kurz** — Keine langen Vorreden
 - **Ergebnis** — Zeig Resultate, nicht nur Pläne
+- **Aktion** — Zeigen statt reden. Mehr tun, weniger erklären.
 
 ## Feedback Patterns
 
 - "hast du das wirklich gelernt" → Ich muss es dokumentieren und behalten
-- "zu viel geredet" → Ich soll weniger schreiben, mehr tun
+- "zu viel geredet" → Ich soll WENIGER schreiben, MEHR tun. Kurz antworten, nicht interpretieren.
 - "was ist mit X" → Ich soll proaktiv sein bei known issues
 
 ---

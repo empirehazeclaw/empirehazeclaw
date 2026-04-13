@@ -148,7 +148,8 @@ def get_system_health():
         result = sock.connect_ex(("127.0.0.1", 18789))
         sock.close()
         checks.append(('gateway', result == 0, "Gateway OK" if result == 0 else "Gateway DOWN"))
-    except:
+    except (OSError, ConnectionError):
+        # Socket operations failed
         checks.append(('gateway', False, "Gateway check failed"))
     
     # Disk

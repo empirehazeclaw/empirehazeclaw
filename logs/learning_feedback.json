@@ -1,1 +1,19 @@
 {"timestamp": "2026-04-12T20:57:55.413685Z", "feedback": "learning loop is working well", "quality": 5, "processed": true}
+{"timestamp": "2026-04-13T21:35:45.123159Z", "source": "rem_harness", "feedback": "REM Theme: 'gateway' surfaced 1039 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:35:45.124002Z", "source": "rem_harness", "feedback": "REM Theme: 'assistant' surfaced 997 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:35:45.124091Z", "source": "rem_harness", "feedback": "REM Theme: 'user' surfaced 931 times", "quality": 4.7, "processed": false}
+{"timestamp": "2026-04-13T21:35:45.124158Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:35:45.124275Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/2026-04-13.md:1-18", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:35:45.124329Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.59): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 2.9, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808402Z", "source": "rem_harness", "feedback": "REM Theme: 'gateway' surfaced 1039 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808697Z", "source": "rem_harness", "feedback": "REM Theme: 'assistant' surfaced 997 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808748Z", "source": "rem_harness", "feedback": "REM Theme: 'user' surfaced 931 times", "quality": 4.7, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808790Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808824Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/2026-04-13.md:1-18", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:44:36.808856Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.59): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 2.9, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734488Z", "source": "rem_harness", "feedback": "REM Theme: 'gateway' surfaced 1039 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734768Z", "source": "rem_harness", "feedback": "REM Theme: 'assistant' surfaced 997 times", "quality": 5.0, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734820Z", "source": "rem_harness", "feedback": "REM Theme: 'user' surfaced 931 times", "quality": 4.7, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734862Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734897Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/2026-04-13.md:1-18", "quality": 3.0, "processed": false}
+{"timestamp": "2026-04-13T21:53:43.734931Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.59): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 2.9, "processed": false}

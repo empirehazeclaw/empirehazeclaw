@@ -38,7 +38,8 @@ def get_session_stats() -> dict:
                     if p in content:
                         errors += 1
                         break
-            except:
+            except (IOError, OSError):
+                # File read failed - skip this session
                 pass
     
     return {

@@ -173,7 +173,8 @@ class LearningAnalyzer:
         if state_file.exists():
             try:
                 state = json.load(open(state_file))
-            except:
+            except (IOError, json.JSONDecodeError):
+                # File read or JSON parse failed - use empty state
                 state = {}
         
         if "analyzer_weights" not in state:

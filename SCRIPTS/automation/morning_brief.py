@@ -40,7 +40,8 @@ def get_system_status():
         result = sock.connect_ex(("127.0.0.1", 18789))
         sock.close()
         status['gateway'] = result == 0
-    except:
+    except (OSError, ConnectionError):
+        # Socket operations failed
         status['gateway'] = False
     
     # Disk
@@ -151,7 +152,8 @@ def get_cron_status():
                 status_data = json.load(f)
             result['healthy'] = status_data.get('summary', {}).get('healthy', 0)
             result['degraded'] = status_data.get('summary', {}).get('degraded', 0) + status_data.get('summary', {}).get('failed', 0)
-        except:
+        except (IOError, json.JSONDecodeError):
+            # File read or JSON parse failed - ignore
             pass
     
     return result
@@ -198,7 +200,8 @@ def get_git_commits(days_ago=0):
         
         commits = [c for c in result.stdout.strip().split('\n') if c]
         return len(commits)
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # Git command failed - return 0
         return 0
 
 def get_system_trends():
@@ -270,7 +273,8 @@ def get_learning_progress():
             timeout=10
         )
         return result.stdout[:500] if result.returncode == 0 else None
-    except:
+    except (subprocess.CalledProcessError, OSError):
+        # Learning tracker script failed - return None
         return None
 
 def get_daily_focus():

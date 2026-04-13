@@ -34,7 +34,8 @@ def get_gateway_status_fast():
         try:
             healthy, msg = check_health()
             return "✅ LIVE" if healthy else "❌ DOWN"
-        except:
+        except (Exception):
+            # Service call failed - health check unavailable
             pass
     return "⚠️ CHECK_FAILED"
 
@@ -49,14 +50,16 @@ def count_scripts():
     try:
         scripts_dir = WORKSPACE / "scripts"
         return sum(1 for f in scripts_dir.glob("*.py") if f.is_file())
-    except:
+    except (OSError, PermissionError):
+        # Directory access failed
         return None
 
 def count_memory_files():
     """Count memory files"""
     try:
         return sum(1 for f in MEMORY_DIR.glob("*.md") if f.is_file())
-    except:
+    except (OSError, PermissionError):
+        # Directory access failed
         return None
 
 def get_kg_entities():
@@ -67,7 +70,8 @@ def get_kg_entities():
             with open(kg_path) as f:
                 kg = json.load(f)
             return len(kg.get('entities', {}))
-    except:
+    except (IOError, json.JSONDecodeError):
+        # KG file read or JSON parse failed
         pass
     return None
 

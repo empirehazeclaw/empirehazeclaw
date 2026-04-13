@@ -92,7 +92,8 @@ def get_system_health():
         result = sock.connect_ex(("127.0.0.1", 18789))
         sock.close()
         checks.append(('gateway', result == 0, "Gateway OK" if result == 0 else "Gateway DOWN"))
-    except:
+    except (OSError, ConnectionError):
+        # Socket operations failed
         checks.append(('gateway', False, "Gateway check failed"))
     
     # Disk
@@ -106,7 +107,12 @@ def get_system_health():
     checks.append(('memory', free_mem > 20, f"Memory {free_mem:.0f}% free"))
     
     # Load
-    load = os.getloadavg()[0]
+    try:
+        load = os.getloadavg()[0]
+        checks.append(('load', load < 4.0, f"Load {load:.2f}"))
+    except (OSError, AttributeError):
+        # getloadavg not available on this platform
+        checks.append(('load', True, "Load N/A"))
     checks.append(('load', load < 4.0, f"Load {load:.2f}"))
     
     return checks

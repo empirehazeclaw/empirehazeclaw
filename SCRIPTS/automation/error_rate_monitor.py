@@ -49,7 +49,8 @@ def get_current_error_rate():
             match = re.search(r'Real Error Rate: ([0-9.]+)%', line)
             if match:
                 return float(match.group(1))
-    except:
+    except (subprocess.CalledProcessError, OSError):
+        # Subprocess or file operation failed - fallback to metrics file
         pass
     
     # Fallback to metrics file

@@ -39,7 +39,8 @@ def get_today_commits():
                 else:
                     commits.append({'hash': line[:8], 'msg': ''})
         return len(commits), commits
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # Git command failed - return empty
         return 0, []
 
 def get_yesterday_commits():
@@ -55,7 +56,8 @@ def get_yesterday_commits():
             timeout=10
         )
         return len([c for c in result.stdout.strip().split('\n') if c])
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # Git command failed - return 0
         return 0
 
 def get_today_memory():
@@ -85,7 +87,8 @@ def get_kg_today():
             'entities': entities,
             'relations': relations
         }
-    except:
+    except (IOError, json.JSONDecodeError):
+        # KG file read or JSON parse failed
         return None
 
 def get_system_status():
@@ -100,7 +103,8 @@ def get_system_status():
         result = sock.connect_ex(("127.0.0.1", 18789))
         sock.close()
         gateway = result == 0
-    except:
+    except (OSError, ConnectionError):
+        # Socket operations failed
         gateway = False
     
     # Load

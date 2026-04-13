@@ -63,7 +63,8 @@ def check_gateway_health():
             timeout=5
         )
         return 'ok' in result.stdout.lower() or 'live' in result.stdout.lower()
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # curl command failed - gateway likely down
         return False
 
 def restart_gateway():
@@ -78,7 +79,8 @@ def restart_gateway():
         )
         if result.returncode == 0:
             return True
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # openclaw gateway restart failed - try systemctl fallback
         pass
     
     # Fallback: systemctl restart
@@ -89,7 +91,8 @@ def restart_gateway():
             timeout=30
         )
         return True
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # systemctl restart failed
         return False
 
 def send_telegram_alert(message):
@@ -103,7 +106,8 @@ def send_telegram_alert(message):
             timeout=15
         )
         return True
-    except:
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
+        # openclaw message send failed
         return False
 
 def run_recovery():

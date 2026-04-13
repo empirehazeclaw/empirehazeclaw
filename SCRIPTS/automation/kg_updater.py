@@ -316,7 +316,8 @@ def age_kg(kg: Dict) -> Tuple[Dict, int]:
                 if last_dt.timestamp() < cutoff and entity_data.get("status") != "stale":
                     entity_data["status"] = "stale"
                     stale_count += 1
-            except:
+            except (ValueError, TypeError):
+                # datetime parsing failed - skip this entity
                 pass
     
     kg["entities"] = entities

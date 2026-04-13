@@ -134,7 +134,8 @@ def get_last_run_time(state):
                 return f"{age_mins/60:.1f}h ago"
             else:
                 return f"{age_mins/1440:.1f}d ago"
-        except:
+        except (ValueError, TypeError):
+            # datetime parsing failed - return truncated original
             return last_run[:16]
     return None
 
