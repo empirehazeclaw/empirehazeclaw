@@ -1,14 +1,16 @@
 # HEARTBEAT.md — Sir HazeClaw Status
 
-## Last Update: 2026-04-13 03:04 UTC
+## Last Update: 2026-04-13 09:00 UTC
 
 ## ✅ System Overview
 | Metric | Status |
 |--------|--------|
-| Gateway | ❓ UNKNOWN |
-| Active Crons | None/None |
-| Scripts | 29 active |
-| Memory Files | ? |
+| Gateway | ✅ LIVE |
+| Active Crons | 24/24 |
+| Cron Errors | 2 |
+| Scripts | 39 active |
+| Memory Files | 0 |
+| KG Entities | 347 |
 
 ## 🔄 Autonomy Framework
 | Component | Status | Notes |
@@ -21,12 +23,12 @@
 
 ## 📊 Quick Metrics
 - Memory: `/workspace/memory/`
-- Scripts: `/workspace/scripts/` (29 active)
-- KG Entities: ~?
+- Scripts: `/workspace/scripts/` (39 active)
+- KG Entities: ~347
 
 ## ⚠️ NO SPAM RULE
 Only report: ERROR, WARNING, or real improvement/learning.
 
 ---
-*Auto-updated: 2026-04-13 03:04 UTC*
-*Sir HazeClaw — Solo Fighter*
+*Auto-updated: 2026-04-13 09:00 UTC*
+*Sir HazeClaw — Optimized (v2)*
