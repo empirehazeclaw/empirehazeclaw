@@ -55,6 +55,11 @@
       "timestamp": "2026-04-12T20:22:53.512056",
       "script": "error_rate_monitor",
       "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-13T09:04:47.429803",
+      "script": "health_check",
+      "reason": "no_improvement"
     }
   ]
 }
