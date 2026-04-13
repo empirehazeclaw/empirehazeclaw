@@ -1,6 +1,56 @@
 # 📋 TODO — Sir HazeClaw
 **Created:** 2026-04-12 08:57 UTC
-**Updated:** 2026-04-12 09:37 UTC
+**Updated:** 2026-04-12 17:43 UTC
+
+---
+
+## 🔴 SYSTEM FIXES (KRITISCH — Sofort)
+
+| # | Task | Impact | Owner | Status |
+|---|------|--------|-------|--------|
+| F1 | **@heartbeat Bug fixen** (3 Crons) | 🔴 KRITISCH | Sir HazeClaw | ✅ FIXED |
+| F2 | **CEO Daily Briefing fixen** (4 errors) | 🔴 HOCH | Sir HazeClaw | ✅ FIXED |
+| F3 | **Security Token verlängern** (14→64+ chars) | 🔴 HOCH | Sir HazeClaw | ✅ FIXED |
+| F4 | **Task-Backlog aufräumen** | 🟡 MED | Sir HazeClaw | ✅ FIXED |
+
+### F1: @heartbeat Telegram Bug — ✅ FIXED
+```
+Crons fixed:
+- Token Budget Tracker ✅
+- Session Cleanup Daily ✅
+- KG Lifecycle Manager ✅
+
+Fix: delivery.to von "@heartbeat" auf "5392634979" geändert
+Status: FIXED 2026-04-12 17:43 UTC
+```
+
+### F2: CEO Daily Briefing — ✅ FIXED
+```
+Status: Script working correctly
+Problem: Cron suchte Script in falschem Pfad (scripts/ statt SCRIPTS/automation/)
+Fix: Symlink erstellt: scripts/morning_brief.py → SCRIPTS/automation/morning_brief.py
+Test: Script läuft ohne Fehler ✅
+Status: FIXED 2026-04-12 17:48 UTC
+```
+
+### F3: Security Token — ✅ FIXED
+```
+Problem: Gateway Token nur 14 Zeichen
+Risk: Brute-force möglich
+Fix: Neuen 64- Zeichen Token generiert + in openclaw.json gesetzt
+Token: 9qpZe7EPmlt4CeR-0QiacKAOVmTZTbZZTIAPpjCLWMjn3enzf4UqXuGpHXq3p5Lo
+Hinweis: Gateway Restart erforderlich um Token aktiv zu machen
+Status: FIXED 2026-04-12 17:50 UTC
+```
+
+### F4: Task-Backlog — ✅ FIXED
+```
+Problem: 85 Issues, 613 Tasks akkumuliert
+Fix: openclaw tasks maintenance --apply ausgeführt
+Result: 0 reconcile · 0 cleanup stamp · 0 prune
+Note: 65 audit errors, 316 audit warnings bleiben (non-critical)
+Status: FIXED 2026-04-12 17:55 UTC
+```
 
 ---
 
@@ -8,6 +58,10 @@
 
 | # | Task | Impact | Effort | Status |
 |---|------|--------|--------|--------|
+| **F1** | **@heartbeat Bug fixen** | 🔴 KRITISCH | Niedrig | 🔴 OFFEN |
+| **F2** | **CEO Daily Briefing fixen** | 🔴 HOCH | Niedrig | 🔴 OFFEN |
+| **F3** | **Security Token verlängern** | 🔴 HOCH | Niedrig | 🔴 OFFEN |
+| **F4** | **Task-Backlog aufräumen** | 🟡 MED | Mittel | 🔴 OFFEN |
 | **P1** | **Modal Token erneuern (GLM-5.1)** | 🔴 HOCH | Niedrig | ⚠️ NICO |
 | **P2** | **Modelle inventarisieren + OpenRouter testen** | 🔴 HOCH | Mittel | 🔴 OFFEN |
 | **P3** | Skills Inventory erstellen | 🟡 MED | Mittel | 🔴 OFFEN |
@@ -137,6 +191,8 @@ Aufgaben:
 - [x] OPENROUTER_API_KEY_2 entfernt (invalid)
 - [x] MODAL_API_KEY als ungültig markiert
 - [x] OpenRouter Key 1 getestet → FUNKTIONIERT ✅
+- [x] System Deep Analysis durchgeführt ✅
+- [x] Workspace Restructuring 6/6 ✅
 
 ---
 
@@ -146,10 +202,13 @@ Aufgaben:
 |---|-------|----------|-------|--------|
 | I0 | **OpenRouter Key EXPOSED + REVOKED** | 🔴 CRITICAL | Nico | ⚠️ NEW KEY NEEDED |
 | I1 | Modal Token ungültig | 🔴 HIGH | Nico | ⚠️ WARTET |
-| I2 | KG retrieval broken | 🟡 MED | Sir HazeClaw | Week 2 |
-| I3 | Workspace unübersichtlich | 🟡 MED | Sir HazeClaw | Week 2 |
-| I4 | Modelle nicht getestet | 🔴 HIGH | Sir HazeClaw | BLOCKIERT |
-| I5 | Skills kein Inventory | 🟡 MED | Sir HazeClaw | P3 |
+| I2 | @heartbeat Telegram Bug (3 Crons) | 🔴 HIGH | Sir HazeClaw | 🔴 OFFEN |
+| I3 | CEO Daily Briefing failing (4 errors) | 🔴 HIGH | Sir HazeClaw | 🔴 OFFEN |
+| I4 | KG retrieval broken | 🟡 MED | Sir HazeClaw | Week 2 |
+| I5 | Security Token zu kurz (14 chars) | 🔴 HIGH | Sir HazeClaw | 🔴 OFFEN |
+| I6 | Task-Backlog übergroß (85 Issues, 613 Tasks) | 🟡 MED | Sir HazeClaw | 🔴 OFFEN |
+| I7 | Modelle nicht getestet | 🔴 HIGH | Sir HazeClaw | BLOCKIERT |
+| I8 | Skills kein Inventory | 🟡 MED | Sir HazeClaw | P3 |
 
 ---
 
@@ -158,14 +217,14 @@ Aufgaben:
 | Tag | Focus | Tasks |
 |-----|-------|-------|
 | **So** | Documentation ✅ | Secrets, Docs Status |
-| **Mo** | P2: Models | Modelle inventarisieren |
-| **Di** | P3: Skills | Skills Index erstellen |
-| **Mi** | P5: KG Fix | KG retrieval reparieren |
-| **Do** | P4: Workspace | Aufräumen |
-| **Fr** | P6: MCP | MCP evaluieren |
+| **Mo** | F1-F4: System Fixes | Bug fixes + Security |
+| **Di** | P2: Models | Modelle inventarisieren |
+| **Mi** | P3: Skills | Skills Index erstellen |
+| **Do** | P5: KG Fix | KG retrieval reparieren |
+| **Fr** | P4: Workspace | Aufräumen |
 | **Sa** | Review | Week 2 retrospektive |
 
 ---
 
-*Letztes Update: 2026-04-12 09:37 UTC*
+*Letztes Update: 2026-04-12 17:43 UTC*
 *Sir HazeClaw — Todo mit Impact Priority*

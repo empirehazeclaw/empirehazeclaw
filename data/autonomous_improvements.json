@@ -40,6 +40,21 @@
       "timestamp": "2026-04-12T04:04:55.095883",
       "script": "common_issues_check",
       "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T18:22:53.321907",
+      "script": "morning_brief",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T19:22:58.148799",
+      "script": "kg_updater",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T20:22:53.512056",
+      "script": "error_rate_monitor",
+      "reason": "test_failed"
     }
   ]
 }

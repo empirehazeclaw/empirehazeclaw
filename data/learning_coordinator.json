@@ -1,53 +1,22 @@
 {
-  "runs": [
+  "timestamp": "2026-04-13T02:04:00Z",
+  "cycle": 4,
+  "duration_s": 0.6,
+  "phases": {
+    "system_check": "OK",
+    "research": "OK",
+    "quality_gates": "1 issue",
+    "improvements": "1 selected, 0 executed",
+    "learning_tracker": "OK"
+  },
+  "issues": [
     {
-      "timestamp": "2026-04-12T16:04:59.054433",
-      "phase": "system_check",
-      "success": true,
-      "notes": "[]"
-    },
-    {
-      "timestamp": "2026-04-12T16:04:59.138243",
-      "phase": "research",
-      "success": true,
-      "notes": "0 hypotheses"
-    },
-    {
-      "timestamp": "2026-04-12T16:05:07.317621",
-      "phase": "quality",
-      "success": true,
-      "notes": "0 issues"
-    },
-    {
-      "timestamp": "2026-04-12T16:05:07.543942",
-      "phase": "learning",
-      "success": true,
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-12T17:04:44.830391",
-      "phase": "system_check",
-      "success": true,
-      "notes": "[]"
-    },
-    {
-      "timestamp": "2026-04-12T17:04:44.895721",
-      "phase": "research",
-      "success": true,
-      "notes": "0 hypotheses"
-    },
-    {
-      "timestamp": "2026-04-12T17:04:51.626070",
-      "phase": "quality",
-      "success": true,
-      "notes": "0 issues"
-    },
-    {
-      "timestamp": "2026-04-12T17:04:51.782765",
-      "phase": "learning",
-      "success": true,
-      "notes": ""
+      "type": "self_eval_low",
+      "severity": "HIGH",
+      "detail": "Self-Eval score low: 0/100"
     }
   ],
-  "last_full_cycle": "2026-04-12T17:04:51.782776"
+  "improvements_selected": ["Self-Evaluation Improvement"],
+  "improvements_executed": 0,
+  "self_eval_score": 0
 }

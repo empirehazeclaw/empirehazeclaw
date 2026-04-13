@@ -2,60 +2,6 @@
   "improvements": [
     {
       "date": "2026-04-12",
-      "time": "14:30",
-      "category": "cleanup",
-      "title": "Empty folders removed",
-      "description": "2 archive folders entfernt",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "14:35",
-      "category": "cleanup",
-      "title": "KG backup entfernt (1.7MB)",
-      "description": "knowledge_graph.json.backup gel\u00f6scht",
-      "impact": "medium",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "14:40",
-      "category": "system",
-      "title": "Workspace size analysiert",
-      "description": "68MB \u2192 67MB (1MB gespart durch KG backup removal)",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "14:45",
-      "category": "skills",
-      "title": "Skills quality check",
-      "description": "15 skills folders, largest: capability-evolver (1.8MB)",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "14:50",
-      "category": "system",
-      "title": "System comprehensive check",
-      "description": "Memory: 34 files, Crons: 15 active, 0 errors visible",
-      "impact": "low",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
-      "time": "15:00",
-      "category": "summary",
-      "title": "Loop summary nach 2h",
-      "description": "77 Commits, 55 Verbesserungen, 1MB gespart",
-      "impact": "high",
-      "status": "completed"
-    },
-    {
-      "date": "2026-04-12",
       "time": "15:10",
       "category": "system",
       "title": "System metrics gepr\u00fcft",
@@ -1169,6 +1115,138 @@
         "error": null
       },
       "kept": true
+    },
+    {
+      "timestamp": "2026-04-12T21:05:21.676958",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-12T22:04:45.517029",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-12T23:04:43.517454",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T00:05:03.100716",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T01:04:50.366577",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
+    },
+    {
+      "timestamp": "2026-04-13T02:04:45.312285",
+      "improvements": [
+        {
+          "title": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "expected_impact": "MEDIUM",
+          "reason": "Self-Eval score low: 0/100",
+          "source": "issue"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Self-Evaluation Improvement",
+          "script": "autonomous_improvement.py",
+          "success": false,
+          "output": "Script not found: autonomous_improvement.py",
+          "validated": false
+        }
+      ],
+      "validated": 0
     }
   ],
   "hypotheses": [],

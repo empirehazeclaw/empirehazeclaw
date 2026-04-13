@@ -122,10 +122,11 @@ def get_active_blockers():
     return blockers[:3]  # Max 3
 
 def get_cron_status():
-    """Holt Cron Status."""
+    """Holt Cron Status from both jobs.json and cron_status.json."""
+    # Primary: jobs.json
     cron_path = "/home/clawbot/.openclaw/cron/jobs.json"
     if not os.path.exists(cron_path):
-        return {'enabled': 0, 'failed': 0, 'total': 0}
+        return {'enabled': 0, 'failed': 0, 'total': 0, 'healthy': 0, 'degraded': 0}
     
     with open(cron_path) as f:
         data = json.load(f)
@@ -134,11 +135,26 @@ def get_cron_status():
     enabled = [j for j in jobs if j.get('enabled', True)]
     failed = [j for j in enabled if j.get('state', {}).get('lastRunStatus') == 'error']
     
-    return {
+    result = {
         'enabled': len(enabled),
         'failed': len(failed),
-        'total': len(jobs)
+        'total': len(jobs),
+        'healthy': 0,
+        'degraded': 0
     }
+    
+    # Enhanced: Read cron_status.json for detailed health
+    cron_status_path = "/home/clawbot/.openclaw/workspace/logs/cron_status.json"
+    if os.path.exists(cron_status_path):
+        try:
+            with open(cron_status_path) as f:
+                status_data = json.load(f)
+            result['healthy'] = status_data.get('summary', {}).get('healthy', 0)
+            result['degraded'] = status_data.get('summary', {}).get('degraded', 0) + status_data.get('summary', {}).get('failed', 0)
+        except:
+            pass
+    
+    return result
 
 def get_backup_status():
     """Holt Backup Status."""
@@ -309,7 +325,9 @@ def generate_brief(format='text'):
 ━━━━━━━━━━━━━━━━━━━
 **Crons:**
 • Active: {cron['enabled']}/{cron['total']}
-• Failed: {cron['failed']}"""
+• Failed: {cron['failed']}
+• Healthy: {cron.get('healthy', '?')}
+• Degraded: {cron.get('degraded', '?')}"""
 
         if blockers:
             msg += f"\n━━━━━━━━━━━━━━━━━━━\n**⚠️ Active Blockers:**"

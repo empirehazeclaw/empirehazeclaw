@@ -1,0 +1,88 @@
+{"timestamp": "2026-04-12T20:13:22.362430Z", "level": "INFO", "message": "=== Learning Loop Iteration 1 ==="}
+{"timestamp": "2026-04-12T20:13:22.362660Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T20:13:22.598609Z", "level": "INFO", "message": "Collected 145 experiences"}
+{"timestamp": "2026-04-12T20:13:22.598728Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T20:13:22.599086Z", "level": "INFO", "message": "Found 5 patterns"}
+{"timestamp": "2026-04-12T20:13:22.599150Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T20:13:29.105979Z", "level": "INFO", "message": "=== Learning Loop Iteration 1 ==="}
+{"timestamp": "2026-04-12T20:13:29.106121Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T20:13:29.181058Z", "level": "INFO", "message": "Collected 145 experiences"}
+{"timestamp": "2026-04-12T20:13:29.181197Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T20:13:29.181557Z", "level": "INFO", "message": "Found 5 patterns"}
+{"timestamp": "2026-04-12T20:13:29.181608Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T20:13:29.181807Z", "level": "INFO", "message": "Applied 4 improvements"}
+{"timestamp": "2026-04-12T20:13:29.181862Z", "level": "INFO", "message": "Reflexion score: 0.60"}
+{"timestamp": "2026-04-12T20:49:46.925423Z", "level": "INFO", "message": "=== Learning Loop Iteration 2 ==="}
+{"timestamp": "2026-04-12T20:49:46.925561Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T20:49:47.014804Z", "level": "INFO", "message": "Collected 117 experiences"}
+{"timestamp": "2026-04-12T20:49:47.014963Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T20:49:47.015320Z", "level": "INFO", "message": "Found 4 patterns"}
+{"timestamp": "2026-04-12T20:49:47.015388Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T20:49:47.054009Z", "level": "INFO", "message": "Applied 3 improvements"}
+{"timestamp": "2026-04-12T20:49:47.054074Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-12T20:49:47.054387Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-12T21:00:56.415072Z", "level": "INFO", "message": "=== Learning Loop Iteration 3 ==="}
+{"timestamp": "2026-04-12T21:00:56.415203Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T21:00:56.497297Z", "level": "INFO", "message": "Collected 122 experiences"}
+{"timestamp": "2026-04-12T21:00:56.497426Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T21:00:56.497722Z", "level": "INFO", "message": "Found 5 patterns"}
+{"timestamp": "2026-04-12T21:00:56.497785Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T21:00:56.537110Z", "level": "INFO", "message": "Applied 4 improvements"}
+{"timestamp": "2026-04-12T21:00:56.537236Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-12T21:00:56.537598Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-12T21:00:56.537801Z", "level": "INFO", "message": "Feedback: {'adjustments': [{'type': 'aggressive', 'reason': 'high_feedback_quality'}], 'feedback_count': 1, 'avg_quality': 5.0}"}
+{"timestamp": "2026-04-12T21:03:51.646545Z", "level": "INFO", "message": "=== Learning Loop Iteration 4 ==="}
+{"timestamp": "2026-04-12T21:03:51.646677Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T21:03:51.733561Z", "level": "INFO", "message": "Collected 128 experiences"}
+{"timestamp": "2026-04-12T21:03:51.733707Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T21:03:51.734016Z", "level": "INFO", "message": "Found 5 patterns"}
+{"timestamp": "2026-04-12T21:03:51.734088Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T21:03:51.773007Z", "level": "INFO", "message": "Applied 4 improvements"}
+{"timestamp": "2026-04-12T21:03:51.773111Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-12T21:03:51.773497Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-12T21:03:51.773673Z", "level": "INFO", "message": "Feedback: {'adjustments': [{'type': 'aggressive', 'reason': 'high_feedback_quality'}], 'feedback_count': 1, 'avg_quality': 5.0}"}
+{"timestamp": "2026-04-12T22:03:47.962493Z", "level": "INFO", "message": "=== Learning Loop Iteration 5 ==="}
+{"timestamp": "2026-04-12T22:03:47.962859Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T22:03:48.103509Z", "level": "INFO", "message": "Collected 130 experiences"}
+{"timestamp": "2026-04-12T22:03:48.103627Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T22:03:48.103954Z", "level": "INFO", "message": "Found 6 patterns"}
+{"timestamp": "2026-04-12T22:03:48.104028Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T22:03:48.146086Z", "level": "INFO", "message": "Applied 4 improvements"}
+{"timestamp": "2026-04-12T22:03:48.146193Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-12T22:03:48.146508Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-12T23:03:46.630825Z", "level": "INFO", "message": "=== Learning Loop Iteration 6 ==="}
+{"timestamp": "2026-04-12T23:03:46.630942Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-12T23:03:46.733438Z", "level": "INFO", "message": "Collected 132 experiences"}
+{"timestamp": "2026-04-12T23:03:46.733561Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-12T23:03:46.733898Z", "level": "INFO", "message": "Found 6 patterns"}
+{"timestamp": "2026-04-12T23:03:46.733949Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-12T23:03:46.783121Z", "level": "INFO", "message": "Applied 4 improvements"}
+{"timestamp": "2026-04-12T23:03:46.783243Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-12T23:03:46.783524Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-13T00:03:47.308338Z", "level": "INFO", "message": "=== Learning Loop Iteration 7 ==="}
+{"timestamp": "2026-04-13T00:03:47.309406Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-13T00:03:47.428142Z", "level": "INFO", "message": "Collected 134 experiences"}
+{"timestamp": "2026-04-13T00:03:47.428281Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-13T00:03:47.428592Z", "level": "INFO", "message": "Found 6 patterns"}
+{"timestamp": "2026-04-13T00:03:47.428647Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-13T00:03:47.469100Z", "level": "INFO", "message": "Applied 5 improvements"}
+{"timestamp": "2026-04-13T00:03:47.469161Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-13T00:03:47.469405Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-13T01:03:48.826190Z", "level": "INFO", "message": "=== Learning Loop Iteration 8 ==="}
+{"timestamp": "2026-04-13T01:03:48.826298Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-13T01:03:48.919697Z", "level": "INFO", "message": "Collected 135 experiences"}
+{"timestamp": "2026-04-13T01:03:48.919800Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-13T01:03:48.920071Z", "level": "INFO", "message": "Found 6 patterns"}
+{"timestamp": "2026-04-13T01:03:48.920114Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-13T01:03:48.964034Z", "level": "INFO", "message": "Applied 5 improvements"}
+{"timestamp": "2026-04-13T01:03:48.964101Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-13T01:03:48.964358Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
+{"timestamp": "2026-04-13T02:03:49.228853Z", "level": "INFO", "message": "=== Learning Loop Iteration 9 ==="}
+{"timestamp": "2026-04-13T02:03:49.230106Z", "level": "INFO", "message": "Collecting experiences..."}
+{"timestamp": "2026-04-13T02:03:49.340590Z", "level": "INFO", "message": "Collected 136 experiences"}
+{"timestamp": "2026-04-13T02:03:49.340707Z", "level": "INFO", "message": "Analyzing patterns..."}
+{"timestamp": "2026-04-13T02:03:49.340967Z", "level": "INFO", "message": "Found 6 patterns"}
+{"timestamp": "2026-04-13T02:03:49.341031Z", "level": "INFO", "message": "Executing improvements..."}
+{"timestamp": "2026-04-13T02:03:49.383038Z", "level": "INFO", "message": "Applied 5 improvements"}
+{"timestamp": "2026-04-13T02:03:49.383124Z", "level": "INFO", "message": "Reflexion score: 0.80"}
+{"timestamp": "2026-04-13T02:03:49.383475Z", "level": "INFO", "message": "Meta-learning: Updated analyzer weights to {'cron_failure': 0.8200000000000001, 'system_error': 0.72, 'user_error_feedback': 0.62, 'positive_feedback': 0.52, 'kg_entity_access': 0.32}"}
