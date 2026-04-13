@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776027661723",
-    "created_at": "2026-04-12T21:01:01.742Z",
+    "run_id": "run_1776074417299",
+    "created_at": "2026-04-13T10:00:17.311Z",
     "parent_event_id": "evt_1776026425762",
     "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": "capsule_1770477654236",
@@ -11,7 +11,7 @@
         "signals match gene.signals_match",
         "capsule trigger matches signals",
         "signals: perf_bottleneck",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.952",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.955",
         "drift_intensity: 0.500"
       ],
       "alternatives": [
@@ -25,7 +25,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776027661719",
+      "id": "mut_1776074417296",
       "category": "innovate",
       "trigger_signals": [
         "perf_bottleneck"
@@ -34,7 +34,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776027661719",
+    "mutation_id": "mut_1776074417296",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -53,7 +53,7 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "a1ee04b54558f5c311e9804bd7e623057ed63130",
+    "baseline_git_head": "58a5e30ae56d6c658dd5e39934fb1a690100b034",
     "blast_radius_estimate": {
       "files": 6,
       "lines": 480
@@ -83,14 +83,14 @@
     "hub_lessons": []
   },
   "last_solidify": {
-    "run_id": "run_1776026395455",
-    "at": "2026-04-12T20:40:25.762Z",
-    "event_id": "evt_1776026425762",
+    "run_id": "run_1776074417299",
+    "at": "2026-04-13T10:00:27.021Z",
+    "event_id": "evt_1776074427021",
     "capsule_id": "capsule_1770477654236",
     "outcome": {
       "status": "success",
       "score": 0.94
     }
   },
-  "solidify_count": 8
+  "solidify_count": 9
 }
