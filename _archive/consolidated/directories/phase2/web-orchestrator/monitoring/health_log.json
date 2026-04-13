@@ -1,0 +1,186 @@
+[
+  {
+    "timestamp": "2026-03-29T19:50:23.191117",
+    "domains": [
+      {
+        "domain": "de",
+        "url": "https://empirehazeclaw.de",
+        "status": 200,
+        "latency_ms": 51.3,
+        "size_bytes": 20232,
+        "ok": true,
+        "timestamp": "2026-03-29T19:50:22.350645"
+      },
+      {
+        "domain": "com",
+        "url": "https://empirehazeclaw.com",
+        "status": 200,
+        "latency_ms": 55.9,
+        "size_bytes": 17383,
+        "ok": true,
+        "timestamp": "2026-03-29T19:50:22.407373"
+      },
+      {
+        "domain": "info",
+        "url": "https://empirehazeclaw.info",
+        "status": 200,
+        "latency_ms": 43.3,
+        "size_bytes": 14662,
+        "ok": true,
+        "timestamp": "2026-03-29T19:50:22.451782"
+      },
+      {
+        "domain": "store",
+        "url": "https://empirehazeclaw.store",
+        "status": 200,
+        "latency_ms": 90.1,
+        "size_bytes": 33894,
+        "ok": true,
+        "timestamp": "2026-03-29T19:50:22.542801"
+      }
+    ],
+    "api": {
+      "projects": 9,
+      "ok": true
+    },
+    "all_ok": true
+  },
+  {
+    "timestamp": "2026-03-29T20:36:25.703130",
+    "domains": [
+      {
+        "domain": "de",
+        "url": "https://empirehazeclaw.de",
+        "status": 200,
+        "latency_ms": 63.1,
+        "size_bytes": 21265,
+        "ok": true,
+        "timestamp": "2026-03-29T20:36:24.794842"
+      },
+      {
+        "domain": "com",
+        "url": "https://empirehazeclaw.com",
+        "status": 200,
+        "latency_ms": 88.5,
+        "size_bytes": 17383,
+        "ok": true,
+        "timestamp": "2026-03-29T20:36:24.885343"
+      },
+      {
+        "domain": "info",
+        "url": "https://empirehazeclaw.info",
+        "status": 200,
+        "latency_ms": 57.9,
+        "size_bytes": 15431,
+        "ok": true,
+        "timestamp": "2026-03-29T20:36:24.944888"
+      },
+      {
+        "domain": "store",
+        "url": "https://empirehazeclaw.store",
+        "status": 200,
+        "latency_ms": 106.7,
+        "size_bytes": 34565,
+        "ok": true,
+        "timestamp": "2026-03-29T20:36:25.052962"
+      }
+    ],
+    "api": {
+      "projects": 15,
+      "ok": true
+    },
+    "all_ok": true
+  },
+  {
+    "timestamp": "2026-04-05T10:07:28.100763",
+    "domains": [
+      {
+        "domain": "de",
+        "url": "https://empirehazeclaw.de",
+        "status": 200,
+        "latency_ms": 92.0,
+        "size_bytes": 21709,
+        "ok": true,
+        "timestamp": "2026-04-05T10:07:27.173485"
+      },
+      {
+        "domain": "com",
+        "url": "https://empirehazeclaw.com",
+        "status": 200,
+        "latency_ms": 60.7,
+        "size_bytes": 12880,
+        "ok": true,
+        "timestamp": "2026-04-05T10:07:27.237415"
+      },
+      {
+        "domain": "info",
+        "url": "https://empirehazeclaw.info",
+        "status": 200,
+        "latency_ms": 57.2,
+        "size_bytes": 8478,
+        "ok": true,
+        "timestamp": "2026-04-05T10:07:27.295601"
+      },
+      {
+        "domain": "store",
+        "url": "https://empirehazeclaw.store",
+        "status": 200,
+        "latency_ms": 55.6,
+        "size_bytes": 35000,
+        "ok": true,
+        "timestamp": "2026-04-05T10:07:27.352219"
+      }
+    ],
+    "api": {
+      "projects": 16,
+      "ok": true
+    },
+    "all_ok": true
+  },
+  {
+    "timestamp": "2026-04-06T08:03:11.451819",
+    "domains": [
+      {
+        "domain": "de",
+        "url": "https://empirehazeclaw.de",
+        "status": 200,
+        "latency_ms": 65.4,
+        "size_bytes": 21709,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.781876"
+      },
+      {
+        "domain": "com",
+        "url": "https://empirehazeclaw.com",
+        "status": 200,
+        "latency_ms": 50.5,
+        "size_bytes": 12880,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.833468"
+      },
+      {
+        "domain": "info",
+        "url": "https://empirehazeclaw.info",
+        "status": 200,
+        "latency_ms": 68.7,
+        "size_bytes": 8478,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.903533"
+      },
+      {
+        "domain": "store",
+        "url": "https://empirehazeclaw.store",
+        "status": 200,
+        "latency_ms": 80.5,
+        "size_bytes": 35000,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.985055"
+      }
+    ],
+    "api": {
+      "ok": false,
+      "error": "API returned 403"
+    },
+    "all_ok": false
+  }
+]

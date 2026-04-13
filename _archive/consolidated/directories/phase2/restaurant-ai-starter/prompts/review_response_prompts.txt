@@ -1,0 +1,506 @@
+# Restaurant Review Response Prompts
+# 25 ChatGPT Prompts für automatisierte und personalisierte Review-Antworten
+# Erstellt mit KI + Manual Review
+
+---
+
+## ⭐ GOOGLE REVIEWS
+
+### Prompt 1: 5-Sterne Lob (allgemein)
+```
+Antoworte auf folgende 5-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Schreibe eine Antwort die:
+- Persönlich und nicht generisch klingt
+- Bestimmte Details aus der Bewertung aufgreift
+- Danke sagt
+- Einen bleibenden positiven Eindruck hinterlässt
+- Nie nach "Kopiert" aussieht
+
+Länge: 2-4 Sätze
+```
+
+### Prompt 2: 5-Sterne mit Kellner-Lob
+```
+Antworte auf Bewertung die [Kellner-Name] erwähnt:
+
+"[Bewertungstext]"
+
+Gehe speziell auf [Name] ein:
+- Danke für das Lob
+- Teile es dem Team mit
+- Zeige menschliche Seite
+
+Länge: 2-3 Sätze
+```
+
+### Prompt 3: 5-Sterne mit Food-Lob
+```
+Antworte auf Bewertung die Gericht [Gerichtsname] lobt:
+
+"[Bewertungstext]"
+
+Fokus:
+- Welches Gericht wurde gelobt
+- Küchenchef-Feedback
+- Empfehlung für nächstes Mal (anderes Gericht)
+
+Länge: 2-3 Sätze
+```
+
+### Prompt 4: 5-Sterne "Werde wiederkommen"
+```
+Antworte auf Bewertung wo Gast "Werde wiederkommen!" sagt:
+
+"[Bewertungstext]"
+
+Zeige:
+- Freude darüber
+- Auf baldiges Wiedersehen
+- Falls relevant: Hinweis auf saisonale Änderungen/Specials
+
+Länge: 2 Sätze
+```
+
+### Prompt 5: 4-Sterne (gut aber Verbesserungspotenzial)
+```
+Antworte auf 4-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Analyse:
+- Was war gut (loben)
+- Was könnte besser sein (anerkennen ohne Ausrede)
+- Was wir konkret ändern werden (falls möglich)
+- Einladung zurückzukommen
+
+Ton: Dankbar, nicht defensiv
+Länge: 3-4 Sätze
+```
+
+### Prompt 6: 3-Sterne (durchschnittlich)
+```
+Antworte auf 3-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Ziel:
+- Ernst nehmen, nicht ignorieren
+- Höflich nachfragen was gefehlt hat
+- Lösung anbieten
+- Persönlicher Kontakt angetragen
+
+Ton: Aufrichtig besorgt, lösungsorientiert
+Länge: 4-5 Sätze
+```
+
+### Prompt 7: 2-Sterne (enttäuscht)
+```
+Antworte auf 2-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Pflicht:
+- Entschuldigung ohne Ausrede
+- Zeigen dass wir verstehen
+- Persönlicher Kontakt anbieten
+- Direkte Email/Telefon anbieten
+
+Ton: Ernst, empathisch
+Länge: 4-5 Sätze
+```
+
+### Prompt 8: 1-Sterne (sehr unzufrieden)
+```
+Antworte auf 1-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Kritisch:
+- Aufrichtige Entschuldigung
+- NICHT verteidigen oder erklären
+- Persönlicher Kontakt SOFORT anbieten
+- GM/Inhaber-Einbindung wenn angemessen
+- Danke für Feedback (egal wie negativ)
+
+Ton: Demütig, handelnd
+Länge: 4-6 Sätze
+```
+
+---
+
+## 📍 TRIPADVISOR
+
+### Prompt 9: Tripadvisor 5-Sterne (international)
+```
+Antworte auf Tripadvisor 5-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Tripadvisor-spezifisch:
+- Etwas formeller als Google
+- Sprache beachten (falls auf Englisch)
+- Lokale Empfehlungen für Touristen
+- Hinweis auf beste Besuchszeit
+
+Länge: 3-4 Sätze
+```
+
+### Prompt 10: Tripadvisor Kritik (Service)
+```
+Antworte auf Tripadvisor Kritik an Service:
+
+"[Bewertungstext]"
+
+Fokus:
+- Service-Problem ernst nehmen
+- Entschuldigung
+- Was wir beim Training ändern
+- Erneute Einladung
+
+Ton: Professionell, verantwortlich
+Länge: 4-5 Sätze
+```
+
+### Prompt 11: Tripadvisor Kritik (Essen)
+```
+Antworte auf Tripadvisor Kritik an Essen/Qualität:
+
+"[Bewertungstext]"
+
+Fokus:
+- Essen wurde nicht gut - akzeptieren
+- Qualitätsstandards ansprechen
+- Neue Gerichte/Verbesserungen andeuten
+- Besuch beim Koch empfehlen
+
+Ton: Kulinarisch interessiert, verbesserungswillig
+Länge: 4-5 Sätze
+```
+
+---
+
+## ⭐ THEFORK / OPENTABLE
+
+### Prompt 12: TheFork 9/10 Punkte
+```
+Antworte auf TheFork Bewertung mit 9/10:
+
+"[Bewertungstext]"
+
+Speziell für TheFork:
+- Punkte werden ernst genommen
+- Was hat den letzten Punkt gekostet?
+- Neugierig nach Verbesserung
+
+Länge: 3-4 Sätze
+```
+
+### Prompt 13: TheFork Beschwerde über Reservierung
+```
+Antworte auf Beschwerde über Reservierungssystem:
+
+"[Bewertungstext]"
+
+Mögliches Problem:
+- Tisch nicht frei
+- Lange Wartezeit
+- Doppelbuchung
+
+Ton: Technisches Problem eingestehen, Lösung anbieten
+Länge: 4-5 Sätze
+```
+
+---
+
+## 📱 SOCIAL MEDIA
+
+### Prompt 14: Instagram Kommentar (Lob)
+```
+Antoworte auf Instagram Kommentar mit Lob:
+
+"[Kommentar]"
+
+Instagram-spezifisch:
+- Kurz und locker
+- Emoji okay
+- Persönlicher als Google
+- Story teilen wenn angemessen
+
+Länge: 1-3 Sätze
+```
+
+### Prompt 15: Instagram Kommentar (Frage)
+```
+Antworte auf Instagram Kommentar mit Frage:
+
+"[Kommentar]"
+
+Frage beantworten:
+- Öffnungszeiten
+- Reservierung
+- Preise
+- Menu
+
+Instagram-spezifisch:
+- Schnelle Antwort
+- Direkt zur Website/Contact-Link
+```
+
+### Prompt 16: Facebook Bewertung (allgemein)
+```
+Antworte auf Facebook 5-Sterne Bewertung:
+
+"[Bewertungstext]"
+
+Facebook-spezifisch:
+- Etwas kürzer
+- Kann öffentlich gelöst werden wenn möglich
+- Hinweis auf Facebook-Seite folgen
+```
+
+### Prompt 17: Twitter/X Beschwerde
+```
+Antworte auf Twitter/X Beschwerde:
+
+"[Tweet]"
+
+Twitter-spezifisch:
+- SOFORT antworten (Twitter ist schnelllebig)
+- Direkt, nicht zu lang
+- Persönlicher Name wenn möglich
+- Offline nehmen: "Schreib uns bitte direkt..."
+- Kontaktinfo in DM
+
+Länge: 2-3 Tweets (Thread)
+```
+
+---
+
+## 📝 PROAKTIVE REVIEWS
+
+### Prompt 18: Nachverfolgung nach positivem Besuch
+```
+Schreibe Follow-Up Email 24h nach positivem Service.
+
+Ziel:
+- Dankeschön
+- Bitte um Review auf [Google/TheFork]
+- Link einfügen
+- Nicht aufdringlich
+
+Ton: Dankbar, nicht bettelig
+Länge: 5-7 Sätze
+```
+
+### Prompt 19: Nachverfolgung nach kritischem Besuch
+```
+Schreibe Follow-Up Email nach kritischem Service.
+
+Zeitpunkt: 24-48h nach Vorfall
+
+Inhalt:
+- Persönliche Entschuldigung
+- Erklärung (kurz, ehrlich)
+- Was wir ändern
+- Gutschein als Entschädigung
+- Einladung persönlich zu sprechen
+
+Ton: Aufrichtig, großzügig
+Länge: 8-10 Sätze
+```
+
+### Prompt 20: Review-Anfrage für Stammgäste
+```
+Schreibe Email an Stammgast (5+ Besuche) mit Review-Bitte.
+
+Ziel:
+- Ehrliche Bewertung ermutigen (auch Kritik willkommen)
+- Link zu Google/TheFork
+- Dank für Treue
+
+Ton: Wertschätzend, persönlich
+Länge: 5-6 Sätze
+```
+
+---
+
+## 🎯 ANALYSE & STRATEGY
+
+### Prompt 21: Review-Analyse (monatlich)
+```
+Analysiere meine Google Reviews des letzten Monats.
+
+Bewertungen:
+[Liste mit Sternen, Text, Datum]
+
+Gib mir:
+- Durchschnittsstern
+- Häufigste Lobpunkte
+- Häufigste Kritikpunkte
+- Muster (bestimmte Tage, Schichten, Gerichte)
+- TOP 3 Verbesserungen die sofort umsetzbar sind
+```
+
+### Prompt 22: Competitive Review Comparison
+```
+Vergleiche unsere Reviews mit [Konkurrent] über letzte 3 Monate.
+
+Unsere Reviews:
+[Bewertungen]
+
+Ihre Reviews:
+[Bewertungen]
+
+Analyse:
+- Wo sind wir besser?
+- Wo sind sie besser?
+- Was können wir lernen?
+- Differenzierungsstrategie
+```
+
+### Prompt 23: Review-Response Guideline erstellen
+```
+Erstelle interne Guidelines für Review-Antworten.
+
+Für jeden Stern:
+1. 5 Sterne: Was muss rein, was nie
+2. 4 Sterne: Was muss rein, was nie
+3. 3 Sterne: Was muss rein, was nie
+4. 2 Sterne: Was muss rein, was nie
+5. 1 Stern: Was muss rein, was nie
+
+Fester Ablauf:
+- Wann antworten (innerhalb 24h)
+- Wer antwortet
+- Eskalationsweg
+- Template-Logik vs. Personalisierung
+```
+
+### Prompt 24: Review-Akquise Strategie
+```
+Erstelle Strategie um mehr 5-Sterne Reviews zu bekommen.
+
+Optionen:
+1. Timing der Bitte (WANN fragen)
+2. Plattform (Google vs. TheFork vs. Beide)
+3. In-Restaurant Bitte (wie Kellner fragen)
+4. Digitale Bitte (Email/SMS)
+5. Anreize (合法: kleines Getränk, Dessert)
+6. Was NIEMALS tun (Fake Reviews, Incentivize 5-Sterne)
+
+Plan für nächste 30 Tage.
+```
+
+### Prompt 25: Jahres-Review-Rückblick
+```
+Erstelle Jahresrückblick unserer Bewertungen.
+
+Daten:
+- Anzahl Reviews 2025 vs 2024
+- Durchschnittsstern
+- Trend (Steigend/Fallend)
+- Highlights (beste Bewertungen)
+- Tiefpunkte (schlimmste Situationen + was wir gelernt haben)
+- Team-spezifische Lobeshymnen
+
+Für Team-Meeting:
+- Was haben wir gelernt?
+- Was ändern wir 2026?
+- Danke ans Team aussprechen
+```
+
+---
+
+## 💼 OPENTABLE / RESY SPECIFIC
+
+### Prompt 26: Opentable 4-Sterne mit Wartezeit
+```
+Antworte auf Opentable Bewertung:
+
+"[Bewertungstext]"
+
+Opentable-spezifisch:
+- Reservierungssystem-Problem eingestehen
+- Was wir tun damit es nicht wieder passiert
+- Wartezeit-Management erklären
+
+Länge: 4-5 Sätze
+```
+
+### Prompt 27: Opentable "Kein Tisch obwohl reserviert"
+```
+Antoworte auf schwere Beschwerde (Tisch weg obwohl reserviert):
+
+"[Bewertungstext]"
+
+Kritisches Szenario:
+- Volle Entschuldigung
+- Was ist wirklich passiert
+- Wiedergutmachung anbieten
+- Persönlicher Kontakt
+
+Ton: Extrem demütig, kulant
+Länge: 5-6 Sätze
+```
+
+---
+
+## 🎁 GUTSCHEIN & KOMPENSATION
+
+### Prompt 28: Gutschein-Angebot in Review-Antwort
+```
+Integriere Gutschein-Angebot in Review-Antwort.
+
+Kontext: 3-Sterne Review mit berechtigter Kritik
+
+Schreibe Antwort MIT:
+- Entschuldigung
+- Erklärung
+- Gutschein: [€20] für nächsten Besuch
+- Code: [Vorschlag]
+- Einladung zurückzukommen
+
+Ton: Großzügig, nicht übermäßig
+Länge: 5-7 Sätze
+```
+
+### Prompt 29: Überraschungs-Gutschein (proaktiv)
+```
+Schreibe Email wo wir proaktiv Gutschein anbieten NACH kritischer Situation.
+
+Szenario: Gast hat sich beschwert, wir haben gelöst, jetzt proaktiv anbieten.
+
+Inhalt:
+- Danke für konstruktive Beschwerde
+- Hier ist Gutschein als Entschuldigung
+- Keine Verpflichtung zu nutzen
+- Hoffnung auf zweite Chance
+
+Ton: Großzügig, nicht bettelnd
+Länge: 6-8 Sätze
+```
+
+### Prompt 30: Gutschein-Ablaufdatum-Erinnerung
+```
+Schreibe Erinnerungs-Email für bald ablaufenden Gutschein.
+
+Code: [Code]
+Läuft ab: [Datum]
+Restwert: [Betrag]
+
+Inhalt:
+- Freundliche Erinnerung
+- Gutschein noch nutzen
+- Bei Fragen: Kontakt
+
+Ton: Hilfreich, nicht drängelnd
+Länge: 5-6 Sätze
+```
+
+---
+
+*Erstellt: 2026-03-26*
+*Für: EmpireHazeClaw Restaurant AI Starter Kit*

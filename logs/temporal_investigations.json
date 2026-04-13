@@ -642,5 +642,61 @@
     },
     "timestamp": "2026-04-13T07:03:59.438769Z",
     "status": "investigating"
+  },
+  {
+    "type": "temporal_investigation",
+    "hour": "2026-04-12T19",
+    "pattern": {
+      "type": "temporal_pattern",
+      "pattern": "multiple_errors_same_hour",
+      "hour": "2026-04-12T19",
+      "count": 17,
+      "confidence": 1.0,
+      "suggestion": "Investigate cause of multiple errors in same hour"
+    },
+    "timestamp": "2026-04-13T08:03:59.419210Z",
+    "status": "investigating"
+  },
+  {
+    "type": "temporal_investigation",
+    "hour": "2026-04-13T07",
+    "pattern": {
+      "type": "temporal_pattern",
+      "pattern": "multiple_errors_same_hour",
+      "hour": "2026-04-13T07",
+      "count": 21,
+      "confidence": 1.0,
+      "suggestion": "Investigate cause of multiple errors in same hour"
+    },
+    "timestamp": "2026-04-13T08:03:59.420135Z",
+    "status": "investigating"
+  },
+  {
+    "type": "temporal_investigation",
+    "hour": "2026-04-12T17",
+    "pattern": {
+      "type": "temporal_pattern",
+      "pattern": "multiple_errors_same_hour",
+      "hour": "2026-04-12T17",
+      "count": 8,
+      "confidence": 0.8,
+      "suggestion": "Investigate cause of multiple errors in same hour"
+    },
+    "timestamp": "2026-04-13T08:03:59.420899Z",
+    "status": "investigating"
+  },
+  {
+    "type": "temporal_investigation",
+    "hour": "2026-04-13T08",
+    "pattern": {
+      "type": "temporal_pattern",
+      "pattern": "multiple_errors_same_hour",
+      "hour": "2026-04-13T08",
+      "count": 6,
+      "confidence": 0.6,
+      "suggestion": "Investigate cause of multiple errors in same hour"
+    },
+    "timestamp": "2026-04-13T08:03:59.421732Z",
+    "status": "investigating"
   }
 ]

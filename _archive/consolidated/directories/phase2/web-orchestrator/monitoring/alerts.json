@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2026-04-06T08:03:11.452524",
+    "type": "HEALTH_CHECK_FAILED",
+    "results": [
+      {
+        "domain": "de",
+        "url": "https://empirehazeclaw.de",
+        "status": 200,
+        "latency_ms": 65.4,
+        "size_bytes": 21709,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.781876"
+      },
+      {
+        "domain": "com",
+        "url": "https://empirehazeclaw.com",
+        "status": 200,
+        "latency_ms": 50.5,
+        "size_bytes": 12880,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.833468"
+      },
+      {
+        "domain": "info",
+        "url": "https://empirehazeclaw.info",
+        "status": 200,
+        "latency_ms": 68.7,
+        "size_bytes": 8478,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.903533"
+      },
+      {
+        "domain": "store",
+        "url": "https://empirehazeclaw.store",
+        "status": 200,
+        "latency_ms": 80.5,
+        "size_bytes": 35000,
+        "ok": true,
+        "timestamp": "2026-04-06T08:03:10.985055"
+      }
+    ],
+    "api": {
+      "ok": false,
+      "error": "API returned 403"
+    }
+  }
+]

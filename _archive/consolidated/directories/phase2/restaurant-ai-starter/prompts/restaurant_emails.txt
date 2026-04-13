@@ -1,0 +1,856 @@
+# Restaurant Email Prompts
+# 50 ChatGPT Prompts für Restaurants
+# Erstellt mit KI + Manual Review
+
+---
+
+## 📧 RESERVIERUNGS-EMAILS
+
+### Prompt 1: Reservierungsanfrage beantworten
+```
+Schreibe eine professionelle Email-Bestätigung für eine Restaurant-Reservierung.
+
+Details:
+- Name: [Gast Name]
+- Datum: [Datum]
+- Uhrzeit: [Uhrzeit]
+- Personenzahl: [Anzahl]
+- Telefon: [Telefon]
+
+Ton: Freundlich, professionell, persönlich
+Enthält: Bestätigung aller Details + Rückfrage ob Special Requests
+Länge: 150-200 Wörter
+```
+
+### Prompt 2: Reservierungsablehnung (volles Haus)
+```
+Schreibe eine höfliche Email, die eine Reservierungsanfrage ablehnt, weil das Restaurant ausgebucht ist.
+
+Ton: Entschuldigend, kulant, biete Alternative an
+Enthält: 
+- Ehrliche Begründung
+- Alternative Daten vorschlagen
+- Auf Warteliste anbieten
+- Lokale Empfehlungen
+
+Länge: 120-150 Wörter
+```
+
+### Prompt 3: Reservierungsänderung bestätigen
+```
+Schreibe eine Bestätigungs-Email für eine geänderte Reservierung.
+
+Original:
+- Datum: [Datum alt]
+- Uhrzeit: [Zeit alt]
+- Personen: [Anzahl alt]
+
+Neu:
+- Datum: [Datum neu]
+- Uhrzeit: [Zeit neu]
+- Personen: [Anzahl neu]
+
+Ton: Klar, bestätigend, nochmal alle wichtigen Infos
+Länge: 100-130 Wörter
+```
+
+### Prompt 4: Reservierungs-Erinnerung (24h vorher)
+```
+Schreibe eine freundliche Erinnerungs-Email 24 Stunden vor der Reservierung.
+
+Details:
+- Restaurant: [Name]
+- Adresse: [Adresse]
+- Uhrzeit: [Uhrzeit]
+- Personenzahl: [Anzahl]
+- Kleidung: [Dresscode falls vorhanden]
+- Parken: [Parkinfos]
+- Special: [z.B. Geburtstag]
+
+Ton: Warm, einladend, nützliche Infos
+Länge: 80-100 Wörter
+```
+
+### Prompt 5: No-Show Follow-up Email
+```
+Schreibe eine professionelle Email nach einem No-Show ohne Absage.
+
+Ton: Verständnisvoll, nicht beschuldigend
+Enthält:
+- Freude über vergangene Besuche
+- Verständnis für unvorhergesehene Ereignisse
+- Einladung neu zu reservieren
+- Vielleicht kleiner Anreiz (Aperitif, etc.)
+
+Länge: 100-130 Wörter
+```
+
+---
+
+## 🎉 EVENT-EMAILS
+
+### Prompt 6: Geburtstags-Einladung
+```
+Schreibe eine Email für einen Geburtstagsgast im Restaurant.
+
+Inhalt:
+- Persönliche Gratulation
+- Einladung zu speziellem Geburtagsmenü
+- Option für private Feier
+- Special: Kostenloses Dessert/Special
+
+Ton: Herzlich, feierlich, exklusiv
+Länge: 120-150 Wörter
+```
+
+### Prompt 7: Firmenevent Angebot
+```
+Schreibe eine professionelle Email als Antwort auf eine Anfrage für ein Firmenevent.
+
+Enthalten sein muss:
+- Willkommensgruß
+- Unser Angebot für Firmentevents
+- Beispiel-Menüs für Gruppen
+- Räumlichkeiten ( privat/semi-privat)
+- AV-Equipment falls vorhanden
+- Kontakt für Besichtigung
+
+Ton: Business, kompetent, einladend
+Länge: 150-180 Wörter
+```
+
+### Prompt 8: Valentinstag / Feiertags-Kampagne
+```
+Schreibe eine emotionale Email für [Feiertag] im Restaurant.
+
+Elemente:
+- Romantische/Stimmungvolle Beschreibung
+- Spezielles Menü vorstellen
+- Preis (falls vorhanden)
+- Reservierungshinweis (begrenzte Plätze)
+- Call-to-Action: Jetzt reservieren
+
+Ton: Emotinal, FOMO erzeugend, elegant
+Länge: 130-160 Wörter
+```
+
+---
+
+## 🍽️ MENÜ & BESTELLUNG
+
+### Prompt 9: Neues Menü Vorstellung
+```
+Stelle unser neues Saisonal-Special-Menü per Email vor.
+
+Menü-Details:
+- Vorspeise: [Name + Beschreibung]
+- Hauptgang: [Name + Beschreibung]  
+- Dessert: [Name + Beschreibung]
+- Getränke: [Name + Beschreibung]
+- Preis: [Preis]
+- Gültig: [Datum]
+
+Ton: Aufgeregt, einladend, beschreibend
+Länge: 150-200 Wörter
+```
+
+### Prompt 10: vegetarische/vegane Optionen bewerben
+```
+Schreibe eine Email, die unsere vegetarischen/veganen Gerichte hervorhebt.
+
+Fokus:
+- Geschmack und Qualität
+- Frische Zutaten
+- Kreative Zubereitung
+- Gesundheitsaspekte
+
+Ton: Begeistert, einladend, nicht belehrend
+Länge: 120-150 Wörter
+```
+
+---
+
+## ⭐ BEWERTUNGEN & FEEDBACK
+
+### Prompt 11: Positive Bewertung bedanken
+```
+Schreibe eine Dankes-Email nach positiver Bewertung auf [Plattform].
+
+Danke für:
+- Lob für [Aspekt]
+- Nennen des Kellners/Teams falls erwähnt
+- Einladung wiederzukommen
+- Kleiner Anreiz (Getränk, Dessert)
+
+Ton: Herzlich, persönlich, ehrlich
+Länge: 80-100 Wörter
+```
+
+### Prompt 12: Negative Bewertung Antwort (öffentlich)
+```
+Schreibe eine professionelle Antwort auf eine negative Bewertung.
+
+Bewertung: [Text]
+Problem: [Kern des Problems]
+
+Enthalten:
+- Entschuldigung ohne Ausrede
+- Konkrete Lösung/Aufklärung
+- Einladung persönlich zu sprechen
+- Kontaktdaten
+
+Ton: Reumütig, professionell, lösungsorientiert
+Länge: 100-150 Wörter
+```
+
+### Prompt 13: Feedback-Anfrage nach Besuch
+```
+Schreibe eine Email, die 24h nach Besuch um Feedback bittet.
+
+Inhalt:
+- Danke für Besuch
+- Link zu Feedback-Formular/Google Reviews
+- Kleiner Anreiz für nächste Visite
+- Hinweis auf Wichtigkeit des Feedbacks
+
+Ton: Freundlich, nicht aufdringlich, dankbar
+Länge: 80-100 Wörter
+```
+
+---
+
+## 📢 NEWSLETTER
+
+### Prompt 14: Monatlicher Newsletter
+```
+Schreibe den Newsletter für [Monat] mit folgenden Themen:
+
+Themen:
+1. Neues Gericht / Seasonal Special
+2. kommende Events
+3. Team-Mitglied im Spotlight
+4. Rezept-Tipp
+5. Social Media Aufruf
+
+Ton: Warm, informativ, community-getrieben
+Länge: 250-350 Wörter
+```
+
+### Prompt 15: Last-Minute Angebot
+```
+Schreibe eine knappe, dringende Email für ein Last-Minute-Angebot.
+
+Angebot:
+- Was: [Angebot]
+- Wann: [Datum/Zeit]
+- Preis: [Preis]
+- Grund: [Leerstand füllen]
+
+Ton: Dringend, exklusiv, FOMO
+Länge: 80-120 Wörter
+```
+
+### Prompt 16: Stammgäste-Exklusiv
+```
+Schreibe eine Email nur für Stammgäste mit exklusivem Angebot.
+
+Angebot:
+- Art: [z.B. 20% Rabatt, gratis Aperitif]
+- Gültig: [Zeitraum]
+- Code: [Vorgabe]
+
+Ton: Wertschätzend, exklusiv, Dankbarkeit zeigend
+Länge: 100-130 Wörter
+```
+
+---
+
+## 🎁 PROMOS & GUTSCHEINE
+
+### Prompt 17: Gutschein-Verkauf Email
+```
+Schreibe eine Email, die Gutscheine bewirbt.
+
+Fokus:
+- Geschenkidee für [Anlass]
+- Wie es funktioniert
+- Verschiedene Beträge
+- Sofort-Download
+- Eigene Gestaltung
+
+Ton: Festlich, geschenkorientiert
+Länge: 130-160 Wörter
+```
+
+### Prompt 18: Willkommens-Gutschein für Neukunden
+```
+Schreibe eine Email für Erstbesucher mit Willkommens-Rabatt.
+
+Angebot:
+- 15% auf erste Rechnung
+- Gültig: 30 Tage
+- Code: [Vorgabe]
+
+Ton: Aufgeregt, einladend
+Länge: 80-100 Wörter
+```
+
+### Prompt 19: Treueprogramm Ankündigung
+```
+Kündige unser neues Treueprogramm per Email an.
+
+Elemente:
+- Was ist es
+- Wie funktioniert es (Punkte sammeln)
+- Was kann man bekommen
+- Wie meldet man sich an
+- Start-Datum
+
+Ton: Aufgeregt, vorteilhaft
+Länge: 150-200 Wörter
+```
+
+---
+
+## 🚨 OPERATIONAL
+
+### Prompt 20: Lieferprobleme / Verspätung
+```
+Schreibe eine Email an Kunden bei Lieferproblemen.
+
+Situation:
+- Bestellung: [Nummer]
+- Problem: [Verspätung/Fehler]
+- Lösung: [Neue Lieferung/Gutschein/Refund]
+
+Ton: Entschuldigend, lösungsorientiert, kulant
+Länge: 100-130 Wörter
+```
+
+### Prompt 21: Allergen-Information anfragen
+```
+Schreibe eine Email, die Allergen-Informationen von Lieferanten anfordert.
+
+Pflichtfelder:
+- 14 Hauptallergene durchgehen
+- Zutatenliste
+- Nährwerte
+- Haltbarkeit
+
+Ton: Professionell, behördlich korrekt
+Länge: 100-120 Wörter
+```
+
+### Prompt 22: Öffnungszeiten-Änderung kommunizieren
+```
+Informiere über geänderte Öffnungszeiten.
+
+Änderung:
+- Datum: [Wann]
+- Alt: [Alte Zeiten]
+- Neu: [Neue Zeiten]
+- Grund: [Kurz und ehrlich]
+
+Ton: Klar, transparent, entschuldigend falls negativ
+Länge: 80-100 Wörter
+```
+
+### Prompt 23: Restaurant-Schließung temporär
+```
+Schreibe eine Email zur vorübergehenden Schließung.
+
+Info:
+- Grund: [Urlaub/Renovierung/anderer Grund]
+- Von: [Datum]
+- Bis: [Datum]
+- Wiedereröffnung: [Datum]
+
+Ton: Entschuldigend, dankbar, Wiedersehen ankündigend
+Länge: 80-100 Wörter
+```
+
+### Prompt 24: Wintersperre / Seasonal Close
+```
+Schreibe eine Saison-Abschieds-Email.
+
+Inhalt:
+- Danke für die Saison
+- Blicke auf Highlights zurück
+- Bis wann geöffnet
+- Wann wir wieder öffnen
+- Newsletter-Aufruf für Updates
+
+Ton: Nostalgisch, dankbar, Vorfreude
+Länge: 120-150 Wörter
+```
+
+---
+
+## 💼 BUSINESS & PARTNERSCHAFTEN
+
+### Prompt 25: Food-Blogger / Influencer Pitch
+```
+Schreibe eine Email an einen lokalen Food-Blogger für eine Zusammenarbeit.
+
+Elemente:
+- Kompliment für seinen Account
+- Kurze Vorstellung Restaurant
+- Vorschlag: Kostenloses Dinner im Austausch für Content
+- Flexible Terms anbieten
+- Links zu Socials/Website
+
+Ton: Professional, respektvoll, nicht desperate
+Länge: 130-160 Wörter
+```
+
+### Prompt 26: Lieferanten-Anfrage
+```
+Schreibe eine Email an potenziellen neuen Lieferanten.
+
+Inhalt:
+- Vorstellung Restaurant
+- Was wir brauchen (konkrete Produkte)
+- Mengen pro Woche/Monat
+- Qualitätsansprüche
+- Lieferbedingungen
+- Kontaktdaten für Angebot
+
+Ton: Business, sachlich, interessiert
+Länge: 120-150 Wörter
+```
+
+### Prompt 27: Catering-Angebot an Firma
+```
+Schreibe eine Email als Erstkontakt für Catering an lokale Firma.
+
+Elemente:
+- Vorstellung Restaurant + Catering-Erfahrung
+- Referenzen/Portfolio
+- Services (Lieferservice, Aufbau, Service vor Ort)
+- Kontakt für Angebot
+
+Ton: Proaktiv, professionell
+Länge: 130-160 Wörter
+```
+
+### Prompt 28: Bewerbungs-Einladung
+```
+Lade einen vielversprechenden Bewerber zum Probearbeiten ein.
+
+Position: [Job]
+Name: [Bewerber]
+Was: Probetag/Abend
+Wann: [Datum]
+Kleidung: [Dresscode]
+Kontakt: [Wer erwartet ihn]
+
+Ton: Herzlich, einladend, professionell
+Länge: 80-100 Wörter
+```
+
+---
+
+## 🎊 SAISONAL & SPECIAL
+
+### Prompt 29: Weihnachtsfeier-Angebot
+```
+Bewirb Weihnachtsfeiern im Restaurant.
+
+Elemente:
+- Pakete für verschiedene Gruppengrößen
+- Menü-Vorschläge
+- Dekoration
+- Entertainment-Optionen
+- Buchungshinweis (früh buchen!)
+- Deadline: [Datum]
+
+Ton: Festlich, exklusiv, FOMO
+Länge: 150-200 Wörter
+```
+
+### Prompt 30: Silvester-Angebot
+```
+Schreibe Email für Silvester-Abend im Restaurant.
+
+Inhalt:
+- Spezielles Silvester-Menü
+- DJ/Entertainment
+- Mitternachts-Champagner
+- Ticket-Preis (falls relevant)
+- Dresscode
+- Begrenzte Plätze
+
+Ton: Feierlich, aufregend, exklusiv
+Länge: 130-160 Wörter
+```
+
+### Prompt 31: Oster-Brunch Kampagne
+```
+Bewirb unseren Oster-Brunch.
+
+Details:
+- Datum: [Karfreitag/Ostersonntag]
+- Uhrzeit: [Zeit]
+- Preis: [Preis pro Person]
+- Kinderpreis: [Falls vorhanden]
+- Programm: [Eier-Suche, Basteln, etc.]
+
+Ton: Familiär, freudig, einladend
+Länge: 120-150 Wörter
+```
+
+### Prompt 32: Fasching / Karneval Event
+```
+Schreibe eine lustige Email für Karneval im Restaurant.
+
+Elemente:
+- Kostümwettbewerb
+- Spezial-Menü (karnevalistisch)
+- DJ/Musik
+- Drinks-Special
+- Anmeldung nötig
+
+Ton: Lustig, locker, partymäßig
+Länge: 100-130 Wörter
+```
+
+---
+
+## 📱 SOCIAL MEDIA COPY (für Posts)
+
+### Prompt 33: Instagram Caption - Neues Gericht
+```
+Schreibe eine Instagram-Caption für unser neues Gericht.
+
+Gericht: [Name]
+Zutaten-Highlight: [Besondere Zutat]
+Kurzbeschreibung: [Geschmack/Optik]
+
+Format:
+- Catchy opener
+- 2-3 Sätze Beschreibung
+- Hashtags (10-15)
+- Call-to-Action
+
+Ton: Appetitlich, trendy
+Länge: Kurz (Caption + Hashtags)
+```
+
+### Prompt 34: Facebook Event-Einladung
+```
+Schreibe eine Facebook-Event-Seite für [Event].
+
+Sections:
+- Header-Bild Beschreibung
+- Was: [Event]
+- Wann: [Datum/Zeit]
+- Wo: [Ort]
+- Programm-Ablauf
+- Preis/Tickets
+- FB-Link zum Event
+
+Ton: Einladend, informativ
+Länge: 200-300 Wörter
+```
+
+### Prompt 35: Twitter/X Thread Starter
+```
+Schreibe einen Twitter/X Thread über 5 Tipps für bessere Restaurant-Bewertungen.
+
+Tipp 1-5: [Platzhalter]
+
+Format:
+- Hook Tweet (Frage oder Statement)
+- 5 Tipps als einzelne Tweets
+- Abschließender Tweet mit CTA
+
+Ton: Hilfreich, tealbar, authentisch
+```
+
+---
+
+## 📧 SERVICE & SUPPORT
+
+### Prompt 36: Beschwerde-Escalation Antwort
+```
+Antworte auf eine eskalierte Beschwerde (Email an Inhaber/GM).
+
+Situation:
+- Ursprüngliche Beschwerde: [Text]
+- Eskalationsgrund: [Kunde unzufrieden mit Antwort]
+
+Ton: Sehr empathisch, kulant, persönlich
+Enthält: Direkte Lösung + persönlicher Anruf anbieten
+Länge: 130-160 Wörter
+```
+
+### Prompt 37: Rückerstattungs-Anfrage positiv
+```
+Bestätige eine Rückerstattung und mache es gut.
+
+Situation:
+- Bestellung: [Nummer]
+- Grund: [Warum refund]
+- Betrag: [Höhe]
+
+Bonus: Kleiner Gutschein für nächsten Besuch
+Ton: Kulant, verständnisvoll
+Länge: 80-100 Wörter
+```
+
+### Prompt 38: Rückerstattungs-Anfrage ablehnend
+```
+Lehne eine Rückerstattung höflich ab aber biete Alternative.
+
+Situation:
+- Anfrage: [Was Kunde will]
+- Warum ablehnen: [Klarer Grund]
+
+Alternative: [Trostpreis/Kompromiss]
+
+Ton: Freundlich, fair, erklärend
+Länge: 100-130 Wörter
+```
+
+### Prompt 39: Stornierung mit Deposit
+```
+Bestätige eine Stornierung und kläre Deposit-Frage.
+
+Details:
+- Reservierung: [Nummer]
+- Deposit: [Betrag]
+- Stornierungsfrist: [Tage]
+
+Ton: Klar, kulant wo möglich
+Länge: 80-100 Wörter
+```
+
+### Prompt 40: Umtausch / Tausch-Anfrage
+```
+Antworte auf Anfrage für Umtausch (falsches Gericht, etc.).
+
+Situation:
+- Bestellung: [Details]
+- Problem: [Was ist passiert]
+
+Ton: Lösung-orientiert, großzügig
+Länge: 80-100 Wörter
+```
+
+---
+
+## 🎯 UPSELLING SEQUENCES
+
+### Prompt 41: Upgrade auf Premium-Menü
+```
+Schreibe Email, die Upgrades für besonderen Anlass bewirbt.
+
+Anlass: [Geburtstag, Jubiläum, etc.]
+Upgrade-Option: [Premium Menü, Wine Pairing, etc.]
+Preisunterschied: [Betrag]
+
+Ton: Verführerisch, exklusiv, nicht aufdringlich
+Länge: 100-130 Wörter
+```
+
+### Prompt 42: Wein-Pairing Empfehlung
+```
+Schreibe Email nach Hauptgericht mit Wein-Pairing-Empfehlung für Dessert.
+
+Fokus:
+- Welcher Wein passt zu [Dessert]
+- Warum diese Kombination
+- Angebote (p.g.g., probieren)
+- Link zum Kauf/Bestellung
+
+Ton: Weltmännisch, fachlich
+Länge: 80-100 Wörter
+```
+
+### Prompt 43: Dessert-des-Tages Email
+```
+Schreibe verführerische Email für Dessert-des-Tages.
+
+Dessert: [Name]
+Beschreibung: [Geschmack, Optik]
+Preis: [Betrag]
+
+Ton: Süß, verlockend
+Länge: 60-80 Wörter
+```
+
+### Prompt 44: Add-on: Käseplatte
+```
+Biete Käseplatte nach Hauptgericht an.
+
+Elemente:
+- Auswahl der Käse (3-5)
+- Beilagen (Nüsse, Honig, Baguette)
+- Portion-Größe
+- Preis
+
+Ton: Sophisticated, empfehlend
+Länge: 80-100 Wörter
+```
+
+### Prompt 45: Getränke-Paket Up-sell
+```
+Verkaufe Getränkepaket für Event/Gruppe.
+
+Paket:
+- Inhalt: [Softdrinks, Kaffee, Alkohol etc.]
+- Dauer: [Zeitraum]
+- Preis pro Person: [Betrag]
+- Ersparnis: [Vergleich Einzelkauf]
+
+Ton: Value-betonend, praktisch
+Länge: 100-130 Wörter
+```
+
+---
+
+## 🔄 RE-ENGAGEMENT
+
+### Prompt 46: Schlafende Gäste reaktivieren
+```
+Schreibe Re-Engagement Email an Gäste, die 6+ Monate nicht da waren.
+
+Ton: Wiedersehensfreude, nicht vorwurfsvoll
+Enthält: 
+- Wir vermissen dich
+- Was ist neu im Restaurant
+- Kleiner Anreiz wiederzukommen
+
+Länge: 100-130 Wörter
+```
+
+### Prompt 47: Gewinnspiel-Email
+```
+Lade zum Gewinnspiel ein.
+
+Ablauf:
+- Was: [Gewinn]
+- Wie teilnehmen: [Aktion]
+- Deadline: [Datum]
+- Ziehung: [Datum]
+
+Ton: Aufregend, einfach
+Länge: 100-130 Wörter
+```
+
+### Prompt 48: Umfrage-Verlosung
+```
+Fordere auf zur Umfrage mit Verlosungseinsatz.
+
+Umfrage: [Link]
+Verlosung: [Preis]
+Teilnahme: [Was muss man tun]
+Deadline: [Datum]
+
+Ton: Dankbar für Meinung, Anreiz bietend
+Länge: 80-100 Wörter
+```
+
+### Prompt 49: Empfehlungs-Programm
+```
+Bewerbe Empfehlungsprogramm.
+
+Programm:
+- Friend-get-Friend: [Vorteil für beide]
+- Wie funktioniert es
+- Max количество Freunde
+- Gültigkeit
+
+Ton: Großzügig, gemeinschaftlich
+Länge: 100-130 Wörter
+```
+
+### Prompt 50: "Wir vermissen dich" nach negativer Bewertung
+```
+Schreibe persönliche Email nach negativer Bewertung.
+
+Ziel:
+- Kunde zurückgewinnen
+- Zeigen dass wir uns bessern
+- Offen für direkten Kontakt
+
+Ton: Aufrichtig, verletzlich, lernwillig
+Länge: 120-150 Wörter
+```
+
+---
+
+## 📝 BONUS: SCHNELLE PROMPTS
+
+### Prompt 51: Kurz-Bio für Website
+```
+Schreibe eine kurze Bio für [Team-Mitglied].
+
+Position: [Job]
+Hintergrund: [Kurzer Lebenslauf]
+Lieblingsgericht: [Was er/sie kocht oder empfiehlt]
+Hobbys: [Persönlichkeit zeigen]
+
+Länge: 50-80 Wörter
+```
+
+### Prompt 52: Speisekarten-Beschreibung
+```
+Beschreibe [Gerichtsname] für die Speisekarte.
+
+Kurs: [Vorspeise/Hauptgang/Dessert]
+Hauptzutat: [Zentrale Zutat]
+Zubereitung: [Kurz]
+Allergene-Hinweis: [Falls nötig]
+
+Länge: 2-3 Sätze
+```
+
+### Prompt 53: Pressemitteilung - Neueröffnung
+```
+Schreibe Pressemitteilung für Restaurant-Neueröffnung.
+
+Elemente:
+- Überraschungsmoment (Wenn möglich)
+- Was macht das Restaurant besonders
+- Wer steht dahinter
+- Fakten: Eröffnungsdatum, Adresse, Öffnungszeiten
+- Zitat vom Inhaber
+- Foto-Hinweis
+
+Ton: Nachrichtenwert, professionell
+Länge: 300-400 Wörter
+```
+
+### Prompt 54: Autoresponder für Urlaubszeit
+```
+Schreibe Email-Autoresponder für Urlaub/Abwesenheit.
+
+Enthalten:
+- Dank für Nachricht
+- Wann du wieder verfügbar bist
+- Für dringende Fälle: [Alternative Kontakt]
+- Evtl. Empfehlung für andere Restaurants
+
+Ton: Freundlich, hilfsbereit
+Länge: 50-80 Wörter
+```
+
+### Prompt 55: Review-Anfrage (Google, TripAdvisor)
+```
+Schreibe Review-Anfrage-Email für Google/TripAdvisor.
+
+Inhalt:
+- Danke für Besuch
+- Link zu Bewertungsseite
+- Warum Reviews wichtig sind
+- Danke im Voraus
+
+Ton: Dankbar, nicht aufdringlich
+Länge: 80-100 Wörter
+```
+
+---
+
+*Erstellt: 2026-03-26*
+*Für: EmpireHazeClaw Restaurant AI Starter Kit*
