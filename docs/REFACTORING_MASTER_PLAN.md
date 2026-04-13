@@ -1,9 +1,9 @@
-# 🔄 REFACTORING MASTER PLAN v3.0
+# 🔄 REFACTORING MASTER PLAN v3.2
 ## EmpireHazeClaw — Architecture Refactoring
 
 **Erstellt:** 2026-04-13 07:44 UTC
-**Version:** 3.1 — Updated 2026-04-13 08:16 UTC
-**Status:** IN PROGRESS — Phases 1-3 Complete
+**Version:** 3.2 — Updated 2026-04-13 08:32 UTC
+**Status:** IN PROGRESS — Phases 1-5 Complete
 
 ---
 
@@ -22,17 +22,15 @@
 | Phase 1 | ✅ DONE | 08:05 | `phase1_cleanup_complete_20260413` |
 | Phase 2 | ✅ DONE | 08:08 | `phase2_config_layer_complete_20260413` |
 | Phase 3 | ✅ DONE | 08:15 | `phase3_logging_complete_20260413` |
-| Phase 4 | 🔄 NEXT | — | — |
-| Phase 5 | ⏳ PENDING | — | — |
-| Phase 6 | ⏳ PENDING | — | — |
+| Phase 4 | ✅ DONE | 08:21 | `phase4_event_queue_complete_20260413` |
+| Phase 5 | ✅ DONE | 08:32 | `phase5_subprocess_elimination_complete_20260413` |
+| Phase 6 | 🔄 NEXT | — | — |
 | Phase 7 | ⏳ PENDING | — | — |
 | Phase 8 | ⏳ PENDING | — | — |
 
 ---
 
 ## ✅ PHASE 1: Cleanup (DONE ✓)
-
-**Ziel:** Verwirrung eliminieren, keine funktionalen Änderungen
 
 **Completed:**
 - ✅ 3 Archive konsolidiert → `_archive/consolidated/` (5.8 MB)
@@ -45,96 +43,79 @@
 
 ## ✅ PHASE 2: Config Layer (DONE ✓)
 
-**Ziel:** Alle Pfade an EINEM Ort
-
 **Created:**
 - `SCRIPTS/core/config.py` — Zentrale Konfiguration
 - `SCRIPTS/core/__init__.py` — Package Init
 - `SCRIPTS/core/config_migration_helper.py` — Migration Tool
 
-**Config bietet:**
-```python
-BASE_DIR, WORKSPACE, SCRIPTS_DIR
-MEMORY_DIR, DB_PATH, DATA_DB_PATH, CEO_DB_PATH
-KG_PATH, LOG_DIR, LOG_PATH, ARCHIVE_DIR
-SERVICES_DIR, SCRIPTS_ENTRY_DIR, EVENTS_DB_PATH
-```
-
 **Git:** `9243b3f Phase 2: Config Layer created`
-
-**Identified:** 98 files with hardcoded paths
 
 ---
 
 ## ✅ PHASE 3: Logging Layer (DONE ✓)
 
-**Ziel:** Observability — alles muss geloggt werden
-
 **Created:**
 - `SCRIPTS/core/logger.py` — Zentrales Logging
-
-**Usage:**
-```python
-from SCRIPTS.core.logger import get_logger
-logger = get_logger(__name__)
-logger.info("Health check done", duration=1.5)
-```
-
-**Log Location:** `/home/clawbot/.openclaw/logs/system.log`
 
 **Git:** `ff64df1 Phase 3: Logging Layer created`
 
 ---
 
-## 🔄 PHASE 4: SQLite Event Queue (NEXT)
+## ✅ PHASE 4: SQLite Event Queue (DONE ✓)
 
-**Ziel:** Race Conditions eliminieren
+**Created:**
+- `SCRIPTS/core/events.py` — Atomic event queue
+- `memory/events.sqlite` — Event database
 
-**Plan:**
-```python
-# SCRIPTS/core/events.py
-EVENTS_DB = "/home/clawbot/.openclaw/memory/events.sqlite"
-
-def publish(event_type: str, payload: dict):
-    """Atomic event publish"""
-    
-def consume(event_type: str, limit: int = 10) -> list:
-    """Consume unprocessed events"""
-```
-
-**Anwendung:** HEARTBEAT.md → Event Queue (Race Conditions eliminieren)
+**Git:** `c193b94 Phase 4: SQLite Event Queue complete`
 
 ---
 
-## ⏳ PHASE 5: Subprocess Eliminierung
+## ✅ PHASE 5: Subprocess Elimination (DONE ✓)
 
-**Ziel:** Direkte Funktionsaufrufe statt Shell-Skripte
+**5 Services Created:**
+| Service | File | Tested |
+|---------|------|--------|
+| health.py | services/health.py | ✅ |
+| git.py | services/git.py | ✅ |
+| gateway.py | services/gateway.py | ✅ |
+| cron_healer.py | services/cron_healer.py | ✅ |
+| morning_brief.py | services/morning_brief.py | ✅ |
 
-**Problem:** 42 Scripts verwenden `subprocess.run(['python3', 'script.py'])`
+**3 Entry Points:**
+- `scripts/health_check.py`
+- `scripts/git_maintenance.py`
+- `scripts/morning_brief.py`
 
-**Solution:** Services erstellen
-```python
-# SCRIPTS/services/health.py
-def run_health_check() -> dict:
-    """Direct function call instead of subprocess"""
+**Pattern:**
 ```
+services/*.py = Business Logic (direct function calls)
+scripts/*.py  = Entry Points (import + call)
+```
+
+**Git:** `ccf7070 Phase 5: SUBPROCESS ELIMINATION COMPLETE ✅`
+
+**Note:** learning_coordinator.py (730 lines) kept as-is - complex shell workflows
 
 ---
 
-## ⏳ PHASE 6: Services Struktur
+## 🔄 PHASE 6: Services Struktur (NEXT)
 
-**Ziel:** Klare Trennung — Entry Points vs. Logik
+**Ziel:** Finalize services/ vs scripts/ Trennung
 
+**Directory Structure:**
 ```
 .openclaw/
 ├── SCRIPTS/
-│   ├── core/
-│   │   ├── config.py
-│   │   ├── logger.py
-│   │   └── events.py (Phase 4)
-│   ├── services/  # LOGIK
-│   └── scripts/   # ENTRY POINTS
+│   ├── core/           ✅ config.py, logger.py, events.py
+│   ├── services/      ✅ 5 services created
+│   └── scripts/       ✅ 3 entry points
 ```
+
+**Tasks:**
+- [ ] Document service interface standards
+- [ ] Create index of services
+- [ ] Mark remaining scripts-to-script calls for future
 
 ---
 
@@ -157,7 +138,7 @@ def run_health_check() -> dict:
 bash /home/clawbot/.openclaw/backup_pre_refactor/20260413/ROLLBACK_RESTORE.sh
 
 # Git rollback:
-git checkout refactor_v3_start_20260413
+git checkout phase0_cleanup_start_20260413
 ```
 
 ---
@@ -165,14 +146,15 @@ git checkout refactor_v3_start_20260413
 ## 🏷️ GIT TAGS
 
 ```
-refactor_v3_start_20260413    — Master plan start
-phase0_cleanup_start_20260413  — Phase 0 baseline
-phase1_cleanup_complete_20260413  — Phase 1 done
+refactor_v3_start_20260413           — Master plan start
+phase0_cleanup_start_20260413         — Phase 0 baseline
+phase1_cleanup_complete_20260413      — Phase 1 done
 phase2_config_layer_complete_20260413  — Phase 2 done
-phase3_logging_complete_20260413  — Phase 3 done
-checkpoint_phase1_complete     — Previous work
+phase3_logging_complete_20260413      — Phase 3 done
+phase4_event_queue_complete_20260413  — Phase 4 done
+phase5_subprocess_elimination_complete_20260413  — Phase 5 done
 ```
 
 ---
 
-**Letzte Änderung:** 2026-04-13 08:16 UTC (v3.1 — phases 1-3 verified)
+**Letzte Änderung:** 2026-04-13 08:32 UTC (v3.2 — Phase 5 complete)
