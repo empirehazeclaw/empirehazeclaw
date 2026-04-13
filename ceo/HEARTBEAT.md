@@ -80,7 +80,7 @@ Siehe `memory/2026-04-12.md` für vollständige Details.
 |---|------|--------|
 | 1.1 | System-Audit abschließen | 🔄 IN PROGRESS |
 | 1.2 | Error Rate: 1.4% → <1% | ✅ FIXED (false positive issue) |
-| 1.3 | Script-Inventar | ✅ DONE (106 scripts, 17 restored) |
+| 1.3 | Script-Inventar | ✅ DONE (115 scripts, 26 restored) |
 | 1.4 | Cron-Inventar | ✅ DONE (45 jobs, 20 enabled) |
 | 1.5 | KG-Inventar | ✅ DONE (260 entities, 523 relations) |
 
@@ -90,6 +90,11 @@ Siehe `memory/2026-04-12.md` für vollständige Details.
 - [x] Learning Coordinator Script-Pfade gefixt (find_script() routing)
 - [x] 17 nützliche Scripts aus _archive wiederhergestellt
 - [x] SCRIPT_INDEX.md aktualisiert (66 → 106 scripts)
+- [x] Batch 2: 9 weitere Scripts aus Archiv wiederhergestellt (batch_exec, blast_radius_estimator, code_stats, quick_fixes, trend_analysis, github_backup.sh, sqlite_vacuum.sh, kill_day.sh, AUTONOMOUS_IMPROVEMENT_IMPLEMENTATION.md)
+- [x] 3 neue Cron Jobs eingerichtet: sqlite_vacuum.sh (Sonntag 04:00), github_backup.sh (täglich 23:00), kill_day.sh (monatlich, disabled)
+- [x] SHELL_TOOLS.md Dokumentation erstellt
+- [x] CRON_INDEX.md mit neuen Crons aktualisiert
+- [x] SCRIPT_INDEX.md aktualisiert (115 scripts)
 - [x] Innovation Research reaktiviert (SCRIPTS/automation/)
 - [x] 3 Script-Syntax-Fehler repariert (github_stats, system_report)
 - [x] 1 Script unrecoverable (apply_timeouts.py - corrupt archive)

@@ -167,6 +167,7 @@
 
 ## 📁 RESTORED FROM ARCHIVE (2026-04-13)
 
+### Batch 1 — 17 scripts (07:09 UTC)
 | Script | From | Category | Status |
 |--------|------|----------|--------|
 | innovation_research.py | phase2b | automation | ✅ Active |
@@ -188,7 +189,36 @@
 | github_stats.py | phase2b | analysis | ✅ Active |
 | apply_timeouts.py | phase2b | tools | ❌ Unrecoverable |
 
+### Batch 2 — 9 scripts (07:22 UTC)
+| Script | From | Category | Status |
+|--------|------|----------|--------|
+| batch_exec.py | phase2 | automation | ✅ Active |
+| blast_radius_estimator.py | phase2 | analysis | ✅ Active |
+| code_stats.py | phase2 | analysis | ✅ Active |
+| quick_fixes.py | phase2 | automation | ✅ Active |
+| trend_analysis.py | phase2 | analysis | ✅ Active |
+| github_backup.sh | scripts_old | tools | ✅ Active |
+| sqlite_vacuum.sh | scripts_old | tools | ✅ Active |
+| kill_day.sh | scripts_old | tools | ✅ Active |
+| AUTONOMOUS_IMPROVEMENT_IMPLEMENTATION.md | scripts_old | docs | ✅ Active |
+
+---
+
+## 🗑️ NOT RESTORED (Project-Specific)
+
+| Item | Reason |
+|------|--------|
+| restaurant-ai-starter/* | Project-specific |
+| trading/* | Trading bot project |
+| social/* | Social media automation |
+| web-orchestrator/* | Web/SEO project |
+| restaurant-ai-starter/* | Project-specific |
+| website-de/* | Project-specific |
+| blog-posts/, ebooks/, pdfs/* | Content assets |
+| fleet_manager/* | Discord infrastructure |
+| corpus.txt | Project content (Etsy guide) |
+
 ---
 
 *Script Index maintained by Sir HazeClaw*
-*Last updated: 2026-04-13 07:12 UTC*
+*Last updated: 2026-04-13 07:23 UTC*

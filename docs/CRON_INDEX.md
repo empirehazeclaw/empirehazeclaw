@@ -251,3 +251,45 @@ Purpose: OpenClaw session memory persistence (via session-memory hook)
 Hook: session-memory (enabled)
 ```
 
+
+---
+
+## 🆕 NEW SHELL TOOL CRONS (2026-04-13)
+
+### 16. SQLite Vacuum Weekly
+```
+ID: 4d51210d-9f08-42dc-9032-5a424b99c4b9
+Interval: Sunday 04:00 UTC (0 4 * * 0)
+Status: ✅ Active
+Script: sqlite_vacuum.sh
+Action: VACUUM + ANALYZE all *.sqlite in memory/
+Delivery: Telegram (announce)
+Log: logs/sqlite_vacuum.log
+```
+
+### 17. GitHub Backup Daily
+```
+ID: 55208aae-9e3a-41ec-93da-951a2e0b69a1
+Interval: 23:00 UTC (0 23 * * *)
+Status: ✅ Active
+Script: github_backup.sh
+Action: git add → commit → push workspace changes
+Delivery: Telegram (announce)
+Log: logs/github_backup.log
+```
+
+### 18. Kill Day Agent Cleanup
+```
+ID: 822d0b84-ddd4-4531-87a1-e7eac5bfcbc8
+Interval: First Sunday of month 03:00 UTC (0 3 1-7 * 0)
+Status: ❌ DISABLED (manual trigger)
+Script: kill_day.sh
+Action: --dry-run only via cron; manual --execute required
+Delivery: Telegram (announce)
+Log: logs/kill_day.log
+Safety: Requires YES-DELETE confirmation to execute
+```
+
+---
+
+*Updated: 2026-04-13 07:27 UTC*
