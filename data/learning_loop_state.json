@@ -1,10 +1,8 @@
 {
   "version": "3.0",
   "iteration": 0,
-  "score": 0.6897192034166992,
+  "score": 0.6897191756850574,
   "score_history": [
-    0.6891683669843583,
-    0.7191683669843584,
     0.6891672081160065,
     0.7191672081160065,
     0.6891661651344898,
@@ -53,15 +51,17 @@
     0.7197027548465962,
     0.6897192342296348,
     0.7197192342296348,
-    0.6897192034166992
+    0.6897192034166992,
+    0.7197192034166993,
+    0.6897191756850574
   ],
   "patterns": [],
   "cross_pattern_hits": 3,
   "cross_pattern_misses": 0,
-  "validation_successes": 115,
+  "validation_successes": 116,
   "validation_failures": 0,
   "feedback_processed": 3,
-  "novelty_injections": 116,
+  "novelty_injections": 117,
   "consecutive_failures": 0,
   "last_validation": null,
   "last_decay": "2026-04-13T13:35:56.953796",

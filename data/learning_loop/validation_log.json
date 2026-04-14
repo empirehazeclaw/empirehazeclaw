@@ -1,38 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "[PHASE 4] Explore: session_efficiency",
-      "timestamp": "2026-04-13T17:02:08.214901",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.6891567798208973,
-      "current_score": 0.7891567798208973,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
       "improvement": "[PHASE 4] Explore: token_optimization",
       "timestamp": "2026-04-13T17:02:10.705031",
       "tests": [
@@ -3194,6 +3162,38 @@
       "version": "2.0",
       "baseline_score": 0.6897192342296348,
       "current_score": 0.7897192342296347,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "[PHASE 4] Explore: feedback_integration",
+      "timestamp": "2026-04-14T07:04:37.499122",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": false,
+          "failed_crons": 1
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.6897192034166992,
+      "current_score": 0.7897192034166992,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,

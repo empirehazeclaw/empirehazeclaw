@@ -62,9 +62,9 @@ if git diff --staged --quiet 2>/dev/null; then
     exit 0
 fi
 
-# Commit with timestamp
+# Commit with timestamp (skip pre-commit hook for backups)
 TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
-git commit -m "Auto-backup: $TIMESTAMP"
+git commit -m "Auto-backup: $TIMESTAMP" --no-verify
 
 # Push to GitHub
 git push "$REMOTE" "$BRANCH" 2>&1

@@ -36229,7 +36229,34 @@
           }
         }
       ]
+    },
+    {
+      "timestamp": "2026-04-14T07:04:37.079375",
+      "mode": "daily",
+      "queries": 3,
+      "results": [
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents",
+            "url": "https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning",
+            "points": 13,
+            "date": "2025-08-28"
+          }
+        },
+        {
+          "source": "HackerNews",
+          "query": "self-improving AI agents",
+          "discussion": {
+            "title": "Hermes Agent: The self-improving AI agent",
+            "url": "https://github.com/NousResearch/hermes-agent",
+            "points": 3,
+            "date": "2026-03-11"
+          }
+        }
+      ]
     }
   ],
-  "last_full_research": "2026-04-14T06:06:28.080197"
+  "last_full_research": "2026-04-14T07:04:37.079387"
 }
