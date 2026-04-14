@@ -1,18 +1,16 @@
 {
-  "cycle_timestamp": "2026-04-14T00:23:07.732565+00:00",
+  "cycle_timestamp": "2026-04-14T02:58:14.480432+00:00",
   "actions_analysis": {
     "status": "no_transactions",
     "recommendations": []
   },
   "errors_analysis": {
-    "status": "analyzed",
-    "timestamp": "2026-04-14T00:23:07.732953+00:00",
-    "total_errors": 3,
+    "status": "no_errors",
     "proposals": []
   },
   "affective_analysis": {
     "status": "analyzed",
-    "timestamp": "2026-04-14T00:23:07.733048+00:00",
+    "timestamp": "2026-04-14T02:58:14.480807+00:00",
     "metrics": {
       "errorRate": {
         "current": 0.014,
@@ -38,6 +36,71 @@
     },
     "alerts": [],
     "active_alert_count": 0
+  },
+  "kg_pattern_analysis": {
+    "status": "analyzed",
+    "total_entities": 359,
+    "patterns": [
+      {
+        "type": "ISSUES_IN_KG",
+        "description": "50 entities contain issue-related facts",
+        "entities": [
+          {
+            "entity": "Kunden-Support",
+            "fact": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
+            "access_count": 3
+          },
+          {
+            "entity": "Competitor-Other-AI-Tools",
+            "fact": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSG",
+            "access_count": 3
+          },
+          {
+            "entity": "Sir-HazeClaw-Scripts",
+            "fact": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
+            "access_count": 6
+          },
+          {
+            "entity": "Sir-HazeClaw-Capabilities",
+            "fact": "Pr\u00e4vention: Probleme verhindern BEVOR sie passieren",
+            "access_count": 0
+          },
+          {
+            "entity": "AI-Agent-Prompt-Patterns",
+            "fact": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
+            "access_count": 3
+          }
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "type": "TRENDING_ENTITIES",
+        "description": "Entities with highest recent access",
+        "entities": [
+          {
+            "name": "EmpireHazeClaw",
+            "access_count": 9
+          },
+          {
+            "name": "empirehazeclaw-info",
+            "access_count": 9
+          },
+          {
+            "name": "System-Architektur",
+            "access_count": 8
+          },
+          {
+            "name": "innovation_research_20260411",
+            "access_count": 8
+          },
+          {
+            "name": "microsoft_agent_governance_20260411",
+            "access_count": 8
+          }
+        ],
+        "priority": "LOW"
+      }
+    ]
   },
   "proposals_created": [],
   "alert_needed": false

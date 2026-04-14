@@ -7159,9 +7159,30 @@
       "last_accessed": "2026-04-13T21:53:43.742329Z",
       "access_count": 1,
       "decay_score": 1.0
+    },
+    "innovation_research_20260414": {
+      "type": "research",
+      "category": "ai_agent_innovation",
+      "facts": [
+        {
+          "content": "## arXiv: OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Base\nThe alignment of Multi-Agent Systems (MAS) for autonomous software engineering is constrained by evaluator epistemic uncertainty. Current paradigms, such as Reinforcement Learning from Human Feedback \n\n## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/hermes-agent\n",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-14T02:04:39.072955",
+          "category": "innovation_research"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-14T02:04:39.072964",
+      "tags": [
+        "innovation",
+        "research",
+        "ai_agent",
+        "2026",
+        "arxiv"
+      ]
     }
   },
-  "last_updated": "2026-04-13T23:04:26.145976",
+  "last_updated": "2026-04-14T02:04:39.072970",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {

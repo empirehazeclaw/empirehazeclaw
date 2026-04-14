@@ -142,18 +142,18 @@ class AutonomySupervisor:
                 by_type[err_type] = []
             by_type[err_type].append(err)
         
-        # Generate proposals for repetitive errors
+        # Generate proposals for errors (any count, priority scales with frequency)
         for err_type, type_errors in by_type.items():
-            if len(type_errors) >= 3:
-                proposals.append({
-                    "id": f"PROPOSAL-{datetime.utcnow().strftime('%Y%m%d%H%M')}-{err_type}",
-                    "type": "FIX_REPETITIVE_ERROR",
-                    "error_type": err_type,
-                    "count": len(type_errors),
-                    "priority": "HIGH" if len(type_errors) >= 5 else "MEDIUM",
-                    "proposed_fix": self._propose_fix(err_type, type_errors),
-                    "artifacts": self._generate_artifacts(err_type, type_errors)
-                })
+            priority = "HIGH" if len(type_errors) >= 5 else "MEDIUM" if len(type_errors) >= 3 else "LOW"
+            proposals.append({
+                "id": f"PROPOSAL-{datetime.utcnow().strftime('%Y%m%d%H%M')}-{err_type}",
+                "type": "FIX_REPETITIVE_ERROR",
+                "error_type": err_type,
+                "count": len(type_errors),
+                "priority": priority,
+                "proposed_fix": self._propose_fix(err_type, type_errors),
+                "artifacts": self._generate_artifacts(err_type, type_errors)
+            })
         
         return {
             "status": "analyzed",
@@ -329,8 +329,14 @@ class AutonomySupervisor:
                 elif '**Result:**' in line:
                     err["result"] = line.split('**Result:**')[1].strip()
             
-            if "type" in err:
-                errors.append(err)
+            # Only count if has type AND a real Result (not template/example)
+            # Template entries have placeholders like "RESOLVED / ESCALATED / ROLLED_BACK"
+            if "type" in err and "result" in err:
+                # Filter out template/example text
+                if err["result"] not in ["RESOLVED / ESCALATED / ROLLED_BACK", 
+                                           "RESOLVED", "ESCALATED", "ROLLED_BACK",
+                                           "RESOLVED / ", " / "]:
+                    errors.append(err)
         
         return errors
     
@@ -385,6 +391,7 @@ class AutonomySupervisor:
             "actions_analysis": self.analyze_actions(),
             "errors_analysis": self.analyze_errors(),
             "affective_analysis": self.analyze_affective_state(),
+            "kg_pattern_analysis": self.analyze_kg_patterns(),
             "proposals_created": []
         }
         
@@ -395,8 +402,15 @@ class AutonomySupervisor:
                 results["proposals_created"].append(proposal_id)
         
         for prop in results["errors_analysis"].get("proposals", []):
-            if prop["priority"] == "HIGH":
+            # Create proposals for MEDIUM and HIGH priority errors
+            if prop["priority"] in ["HIGH", "MEDIUM"]:
                 proposal_id = self.create_proposal("ERROR_FIX", prop)
+                results["proposals_created"].append(proposal_id)
+        
+        # KG pattern proposals
+        for pattern in results["kg_pattern_analysis"].get("patterns", []):
+            if pattern["priority"] == "HIGH":
+                proposal_id = self.create_proposal("KG_PATTERN", pattern)
                 results["proposals_created"].append(proposal_id)
         
         # Alert if critical issues found
@@ -423,6 +437,66 @@ class AutonomySupervisor:
             except:
                 pass
         return proposals
+
+    def analyze_kg_patterns(self) -> Dict:
+        """
+        Analyze Knowledge Graph for patterns.
+        Looks for:
+        - Issues mentioned across multiple entities
+        - Error patterns in entity facts
+        - Trending topics (high access_count)
+        """
+        kg_path = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
+        if not kg_path.exists():
+            return {"status": "no_kg", "patterns": []}
+        
+        try:
+            kg = json.loads(kg_path.read_text())
+        except:
+            return {"status": "kg_unreadable", "patterns": []}
+        
+        entities = kg.get("entities", {})
+        patterns = []
+        
+        # Keywords that indicate issues/problems
+        issue_keywords = ["error", "problem", "issue", "bug", "fail", "timeout", "crash", "broken"]
+        
+        # Find entities with issue-related facts
+        entities_with_issues = []
+        for name, entity in entities.items():
+            for fact in entity.get("facts", []):
+                content = fact.get("content", "").lower()
+                if any(kw in content for kw in issue_keywords):
+                    entities_with_issues.append({
+                        "entity": name,
+                        "fact": fact.get("content", "")[:100],
+                        "access_count": entity.get("access_count", 0)
+                    })
+                    break  # Only count entity once
+        
+        if entities_with_issues:
+            patterns.append({
+                "type": "ISSUES_IN_KG",
+                "description": f"{len(entities_with_issues)} entities contain issue-related facts",
+                "entities": entities_with_issues[:5],  # Top 5
+                "priority": "MEDIUM"
+            })
+        
+        # Find high-access entities (potential hotspots)
+        trending = sorted(entities.items(), key=lambda x: x[1].get("access_count", 0), reverse=True)[:5]
+        if trending:
+            patterns.append({
+                "type": "TRENDING_ENTITIES",
+                "description": "Entities with highest recent access",
+                "entities": [{"name": n, "access_count": e.get("access_count", 0)} for n, e in trending],
+                "priority": "LOW"
+            })
+        
+        return {
+            "status": "analyzed",
+            "total_entities": len(entities),
+            "patterns": patterns
+        }
 
 
 # CLI interface
