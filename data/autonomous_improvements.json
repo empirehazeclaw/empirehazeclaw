@@ -65,6 +65,11 @@
       "timestamp": "2026-04-13T18:05:03.925116",
       "script": "error_rate_monitor",
       "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-14T09:05:38.565832",
+      "script": "decision_tracker_integration",
+      "reason": "test_failed"
     }
   ]
 }

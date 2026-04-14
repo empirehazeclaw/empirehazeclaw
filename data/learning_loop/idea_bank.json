@@ -199,6 +199,30 @@
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,
       "source": "memory_analysis"
+    },
+    {
+      "id": "idea_20260414_103445",
+      "title": "Fix Token Budget Tracker: check API response and timeout handling",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-14T10:34:45.505131",
+      "times_encountered": 6
+    },
+    {
+      "id": "idea_20260414_104104",
+      "title": "Fix CEO Weekly Review: check email sending and report generation",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-14T10:41:04.999613",
+      "times_encountered": 5
+    },
+    {
+      "id": "idea_20260414_104231",
+      "title": "Fix GitHub Backup Daily: check git auth and network connectivity",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-14T10:42:31.501897",
+      "times_encountered": 6
     }
   ],
   "version": "1.0"

@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776100317138",
-    "created_at": "2026-04-13T17:11:57.152Z",
+    "run_id": "run_1776174048900",
+    "created_at": "2026-04-14T13:40:48.913Z",
     "parent_event_id": "evt_1776094576245",
     "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": "capsule_1775939760071",
@@ -11,7 +11,7 @@
         "signals match gene.signals_match",
         "capsule trigger matches signals",
         "signals: evolution_stagnation_detected, stable_success_plateau",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.958",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.971",
         "drift_intensity: 0.500"
       ],
       "alternatives": [
@@ -24,7 +24,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776100317130",
+      "id": "mut_1776174048898",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -35,18 +35,31 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776100317130",
+    "mutation_id": "mut_1776174048898",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
-      "creativity": 0.5,
+      "creativity": 0.55,
       "verbosity": 0.25,
       "risk_tolerance": 0.4,
       "obedience": 0.9
     },
-    "personality_key": "rigor=0.7|creativity=0.5|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
-    "personality_known": true,
-    "personality_mutations": [],
+    "personality_key": "rigor=0.7|creativity=0.6|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "personality_known": false,
+    "personality_mutations": [
+      {
+        "type": "PersonalityMutation",
+        "param": "creativity",
+        "delta": -0.050000000000000044,
+        "reason": "natural_selection"
+      },
+      {
+        "type": "PersonalityMutation",
+        "param": "creativity",
+        "delta": 0.05,
+        "reason": "stagnation detected in reflection"
+      }
+    ],
     "drift": false,
     "selected_by": "memory_graph+selector",
     "source_type": "generated",
@@ -54,7 +67,7 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "1cc208fa254fbdeb1f3918f2648945ba9ff1a6d8",
+    "baseline_git_head": "0e02587886f3ca0d05ded7e6851382c8b269851f",
     "blast_radius_estimate": {
       "files": 10,
       "lines": 800

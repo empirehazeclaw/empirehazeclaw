@@ -1,101 +1,52 @@
-# 🎯 SKILLS INTEGRATION — ANALYSIS & ACTION PLAN
-## Sir HazeClaw — 2026-04-11 22:07 UTC
+# Skills Index — Sir HazeClaw (Empire Haze)
 
----
+## Active Skills (19)
 
-## 📊 SKILLS OVERVIEW
+| Skill | Description | Status |
+|-------|-------------|--------|
+| **coding** | Full-Stack Development (Python, JS, Bash, React) | ✅ |
+| **git-manager** | Git operations, branching, commits, PRs, conflicts | ✅ |
+| **code-review** | AI-powered code review with MiniMax M2.7 | ✅ |
+| **test-generator** | Auto-generate pytest/jest tests | ✅ |
+| **repo-analyzer** | Repository analysis, complexity, dependencies | ✅ |
+| **backend-api** | Node.js, Express, Stripe, Webhooks | ✅ |
+| **backup-advisor** | Backup strategy and implementation | ✅ |
+| **capability-evolver** | Self-evolution engine for AI agents | ✅ |
+| **content-creator** | Social media & blog content creation | ✅ |
+| **frontend** | Landing pages, shop, blog (Vercel) | ✅ |
+| **loop-prevention** | Prevent infinite loops in agents | ✅ |
+| **prompt-coach** | Optimize prompts for better results | ✅ |
+| **qa-enforcer** | Quality assurance enforcement | ✅ |
+| **research** | Research capabilities | ✅ |
+| **self-improvement** | Self-improvement mechanisms | ✅ |
+| **semantic-search** | Semantic search in workspace | ✅ |
+| **system-manager** | System management & monitoring | ✅ |
+| **voice-agent** | Offline voice-to-voice AI assistant | ✅ |
 
-### Total: 14 Skill Folders, 62 Files
+## New Skills (2026-04-14)
 
-| Folder | Files | SKILL.md | Status |
-|--------|-------|----------|--------|
-| _library | 25 | ✅ | DEPRECATED (→docs/patterns) |
-| backend-api | 1 | ✅ | Active |
-| capability-evolver | 4 | ✅ | Active (IN CRON) |
-| coding | 2 | ✅ | Active |
-| content-creator | 1 | ✅ | Active |
-| frontend | 1 | ✅ | Active |
-| loop-prevention | 1 | ✅ | Active (IN USE) |
-| qa-enforcer | 1 | ✅ | Active (IN USE) |
-| research | 8 | ✅ | Active (IN USE) |
-| self-improvement | 5 | ✅ | Active (IN USE) |
-| semantic-search | 1 | ✅ | Active |
-| system-manager | 2 | ✅ | Active |
-| voice-agent | 2 | ✅ | Active |
+| Skill | Created | Description |
+|-------|---------|-------------|
+| **git-manager** | 2026-04-14 | Intelligent Git operations for agents |
+| **code-review** | 2026-04-14 | Automated code review using MiniMax M2.7 |
+| **test-generator** | 2026-04-14 | Auto-generate unit/integration tests |
+| **repo-analyzer** | 2026-04-14 | Deep repository analysis |
 
-### 🚫 DELETED: email-outreach, lead-intelligence, video-renderer (unused)
+## Skill Structure
 
----
+Each skill directory contains:
+- `SKILL.md` — Description, usage, commands (YAML frontmatter required)
+- `index.js` — Main module with exported functions
+- `package.json` — Package metadata
+- `_meta.json` — Additional metadata (author, version, status)
 
-## ✅ ACTIVE SKILLS (14 with SKILL.md)
+## Usage
 
-### Production Ready
-| Skill | Purpose | Quality |
-|-------|---------|---------|
-| **semantic-search** | Memory/workspace search | ✅ Good |
-| **coding** | Full-stack development | ✅ Good |
-| **system-manager** | System/health monitoring | ✅ Good |
-| **self-improvement** | Learning + evolution | ✅ Good |
-| **loop-prevention** | Loop detection/prevention | ✅ Good |
+Skills are loaded by OpenClaw based on the task context.
+Use the skill name as identifier when requesting capabilities.
 
-### Domain Specific
-| Skill | Purpose | Usage |
-|-------|---------|-------|
-| **backend-api** | API/Webhook development | ⚠️ Nischen |
-| **frontend** | Website/Vercel dev | ⚠️ Nischen |
-| **content-creator** | Social media/blog | ⚠️ Nischen |
-| **email-outreach** | B2B email campaigns | ⚠️ Unused |
-| **lead-intelligence** | Lead generation | ⚠️ Unused |
-| **video-renderer** | Promotional videos | ⚠️ Unused |
-| **voice-agent** | Offline voice assistant | ⚠️ Nischen |
+## Status Legend
 
-### Experimental/Learning
-| Skill | Purpose | Status |
-|-------|---------|--------|
-| **research** | Research workflow | 🔬 Experimental |
-| **capability-evolver** | Self-evolution | 🔬 Experimental |
-| **qa-enforcer** | Quality enforcement | 🔬 Experimental |
-
----
-
-## 🚨 PROBLEMS IDENTIFIED
-
-### ✅ CLEANUP DONE:
-
-1. **_library → docs/patterns/**: 25 pattern files moved
-2. **Deleted**: email-outreach, lead-intelligence, video-renderer (unused)
-3. **backup-advisor**: Kept - has working index.py script
-
----
-
-## 📋 ACTION PLAN
-
-### ✅ DONE This Session:
-1. [x] Move _library patterns to docs/patterns/
-2. [x] Delete 3 unused skill folders
-3. [x] Update INDEX.md
-
-### Remaining:
-4. [ ] Audit each active skill for quality
-5. [ ] Add skill usage tracking
-6. [ ] Create skill recommendations based on context
-
----
-
-## 🎯 SUCCESS METRICS
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Skill folders | 17 | 14 |
-| Deprecated deleted | 0 | 3 |
-| Patterns organized | No | Yes (25 in docs/patterns) |
-| Skills in crons | 1 | 5 |
-
----
-
-## 📝 NOTES
-
-- Most skills are "nischen" (niche) - only used occasionally
-- The 5 "Production Ready" skills are the core ones
-- Skills documentation quality varies significantly
-- Some skills reference tools not installed (e.g., Remotion for video)
+- ✅ Active — Fully functional and documented
+- 🔄 Updating — In development
+- ⏸ Paused — Temporarily disabled

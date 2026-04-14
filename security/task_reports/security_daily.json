@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-13T09:43:00Z",
+  "date": "2026-04-14T10:30:00Z",
   "issues_found": [
     {
       "severity": "high",
       "category": "invalid_credentials",
       "title": "Buffer Token — INVALID",
-      "details": "Buffer API Token liefert 401 Unauthorized seit mindestens 2026-04-08. Dienste die Buffer nutzen funktionieren nicht.",
+      "details": "Buffer API Token liefert weiterhin 401 Unauthorized. Unverändert seit 2026-04-07.",
       "files_affected": ["social_pipeline.py"],
       "status": "open",
       "since": "2026-04-07"
@@ -14,7 +14,7 @@
       "severity": "high",
       "category": "invalid_credentials",
       "title": "Leonardo AI API Key — INVALID",
-      "details": "Leonardo AI Key liefert HTML statt JSON — API Key ist invalide und muss in der Leonardo Cloud Console erneuert werden.",
+      "details": "Leonardo AI Key liefert HTML statt JSON — API Key ist invalide. Unverändert seit 2026-04-07.",
       "files_affected": [],
       "status": "open",
       "since": "2026-04-07"
@@ -30,8 +30,8 @@
     }
   ],
   "keys_status": {
-    "buffer_token": "INVALID (401)",
-    "leonardo_api_key": "INVALID (HTML response)",
+    "buffer_token": "INVALID (401) — unverändert",
+    "leonardo_api_key": "INVALID (HTML response) — unverändert",
     "telegram_bot_token": "pending_rotation",
     "github_token": "pending_rotation",
     "google_aiza_key": "pending_rotation",
@@ -39,19 +39,27 @@
     "secret_key": "pending_rotation"
   },
   "workspace_scan": {
-    "scripts_found": 39,
+    "scripts_found": 55,
     "new_scripts_security_relevant": [],
     "hardcoded_secrets_found": false,
-    "gitignore_active": true
+    "gitignore_active": true,
+    "new_files_since_last_scan": ["learning_loop_v3.py (aktualisiert)", "decision_tracker_integration.py (neu 09:05)"]
   },
   "log_review": {
     "suspicious_activity": false,
-    "recent_errors": "none detected in 24h"
+    "recent_errors": "keine verdächtigen Aktivitäten in letzten 24h",
+    "failed_logins": 0,
+    "unauthorized_access": 0
+  },
+  "system_status": {
+    "active_crons": 25,
+    "python_processes": 2,
+    "gateway_status": "running"
   },
   "recommendations": [
-    "Buffer Token erneuern über Buffer App Settings",
-    "Leonardo AI Key in Cloud Console prüfen und ggf. regenerieren",
-    "Security Rotation Plan vollständig durchführen",
-    "Alle 6 ausstehenden kritischen Keys prioritär rotieren"
+    "Buffer Token erneuern über Buffer App Settings → Developers → Access Token",
+    "Leonardo AI Key in cloud.leonardo.ai prüfen und ggf. regenerieren",
+    "Security Rotation Plan für alle 6 kritischen Keys prioritär durchführen",
+    "decision_tracker_integration.py (neues Script) auf Secrets-Nutzung prüfen"
   ]
 }

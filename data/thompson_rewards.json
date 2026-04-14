@@ -1,0 +1,18 @@
+{
+  "hypothesis_general": {
+    "successes": 21,
+    "failures": 1
+  },
+  "cross_pattern_cross_pattern": {
+    "successes": 60,
+    "failures": 1
+  },
+  "issue_error": {
+    "successes": 2,
+    "failures": 1
+  },
+  "cross_pattern_elevated_error_rate": {
+    "successes": 9,
+    "failures": 1
+  }
+}

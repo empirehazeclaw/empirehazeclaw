@@ -81,22 +81,6 @@
       "cross_pattern_hits": 0
     },
     {
-      "id": "exec_error:_(66.7%)",
-      "description": "exec_error: 50 (66.7%)",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.45835286640633627,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669100",
-      "last_validated": "2026-04-13T14:21:19.061898",
-      "days_since_validation": 0,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
       "id": "error_tools:",
       "description": "\ud83d\udd27 Top Error Tools:",
       "error_type": "general_error",
@@ -173,13 +157,13 @@
       ],
       "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "success_count": 45,
+      "success_count": 115,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45898825425014955,
+      "confidence": 0.95,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-13T17:01:36.888204",
+      "last_validated": "2026-04-14T13:34:55.203999",
       "error_type": "elevated_error_rate",
       "context": {
         "source": "cross_pattern",
@@ -197,13 +181,13 @@
       ],
       "description": "[PHASE 4] Explore: feedback_integration",
       "solution": "Applied improvement: [PHASE 4] Explore: feedback_integration",
-      "success_count": 234,
+      "success_count": 236,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5000898505198411,
+      "confidence": 0.45006550102896425,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
-      "last_validated": "2026-04-14T07:04:38.512552",
+      "last_validated": "2026-04-14T07:38:16.832396",
       "error_type": "feedback_integration",
       "context": {
         "source": "forced_novelty",
@@ -420,6 +404,131 @@
     {
       "title": "memory:\u2705 Gateway health check passed \u2014 gateway ",
       "description": "\u2705 Gateway health check passed \u2014 gateway is healthy. No action needed. System: [2026-04-12 16:15:46 UTC] \u2705 Gateway recovery check complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "id": "pattern_20260414_074342",
+      "title": "Context Compression",
+      "category": "general",
+      "error_signature": [
+        "context",
+        "compression"
+      ],
+      "description": "Context Compression",
+      "solution": "Applied improvement: Context Compression",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.45927000000000007,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-14T07:43:42.701457",
+      "last_validated": "2026-04-14T07:43:42.701460",
+      "error_type": "context_compression",
+      "context": {
+        "source": "research",
+        "script": null
+      }
+    },
+    {
+      "id": "pattern_20260414_125308",
+      "title": "[DEBUG] Test improvement",
+      "category": "general",
+      "error_signature": [
+        "[debug]",
+        "test",
+        "improvement"
+      ],
+      "description": "[DEBUG] Test improvement",
+      "solution": "Applied improvement: [DEBUG] Test improvement",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.45927000000000007,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-14T12:53:08.664404",
+      "last_validated": "2026-04-14T12:53:08.664408",
+      "error_type": "general",
+      "context": {
+        "source": "debug",
+        "script": null
+      }
+    },
+    {
+      "id": "pattern_20260414_125502",
+      "title": "[CROSS-PATTERN] Test",
+      "category": "general",
+      "error_signature": [
+        "[cross-pattern]",
+        "test"
+      ],
+      "description": "[CROSS-PATTERN] Test",
+      "solution": "Applied improvement: [CROSS-PATTERN] Test",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.45927000000000007,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-14T12:55:02.790816",
+      "last_validated": "2026-04-14T12:55:02.790820",
+      "error_type": "cross_pattern",
+      "context": {
+        "source": "cross_pattern",
+        "script": null
+      }
+    },
+    {
+      "id": "pattern_20260414_125503",
+      "title": "[ISSUE] Test",
+      "category": "error",
+      "error_signature": [
+        "[issue]",
+        "test"
+      ],
+      "description": "[ISSUE] Test",
+      "solution": "Applied improvement: [ISSUE] Test",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.45927000000000007,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-14T12:55:03.870281",
+      "last_validated": "2026-04-14T12:55:03.870284",
+      "error_type": "issue",
+      "context": {
+        "source": "issue",
+        "script": null
+      }
+    },
+    {
+      "id": "pattern_20260414_125505",
+      "title": "[HYPOTHESIS] Test",
+      "category": "general",
+      "error_signature": [
+        "[hypothesis]",
+        "test"
+      ],
+      "description": "[HYPOTHESIS] Test",
+      "solution": "Applied improvement: [HYPOTHESIS] Test",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.45927000000000007,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-14T12:55:05.010555",
+      "last_validated": "2026-04-14T12:55:05.010558",
+      "error_type": "general",
+      "context": {
+        "source": "research",
+        "script": null
+      }
+    },
+    {
+      "title": "memory:\u2705 **Completed",
+      "description": "\u2705 **Completed",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
