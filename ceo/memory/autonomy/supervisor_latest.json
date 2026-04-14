@@ -1,5 +1,5 @@
 {
-  "cycle_timestamp": "2026-04-14T02:58:14.480432+00:00",
+  "cycle_timestamp": "2026-04-14T06:47:08.543610+00:00",
   "actions_analysis": {
     "status": "no_transactions",
     "recommendations": []
@@ -10,7 +10,7 @@
   },
   "affective_analysis": {
     "status": "analyzed",
-    "timestamp": "2026-04-14T02:58:14.480807+00:00",
+    "timestamp": "2026-04-14T06:47:08.544041+00:00",
     "metrics": {
       "errorRate": {
         "current": 0.014,
@@ -48,17 +48,17 @@
           {
             "entity": "Kunden-Support",
             "fact": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
-            "access_count": 3
+            "access_count": 4
           },
           {
             "entity": "Competitor-Other-AI-Tools",
             "fact": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSG",
-            "access_count": 3
+            "access_count": 4
           },
           {
             "entity": "Sir-HazeClaw-Scripts",
             "fact": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
-            "access_count": 6
+            "access_count": 8
           },
           {
             "entity": "Sir-HazeClaw-Capabilities",
@@ -68,7 +68,7 @@
           {
             "entity": "AI-Agent-Prompt-Patterns",
             "fact": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
-            "access_count": 3
+            "access_count": 4
           }
         ],
         "priority": "MEDIUM"
@@ -79,23 +79,23 @@
         "entities": [
           {
             "name": "EmpireHazeClaw",
-            "access_count": 9
+            "access_count": 12
           },
           {
             "name": "empirehazeclaw-info",
-            "access_count": 9
+            "access_count": 12
           },
           {
             "name": "System-Architektur",
-            "access_count": 8
+            "access_count": 11
           },
           {
             "name": "innovation_research_20260411",
-            "access_count": 8
+            "access_count": 11
           },
           {
             "name": "microsoft_agent_governance_20260411",
-            "access_count": 8
+            "access_count": 11
           }
         ],
         "priority": "LOW"

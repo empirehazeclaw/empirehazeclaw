@@ -498,6 +498,78 @@ class AutonomySupervisor:
             "patterns": patterns
         }
 
+    def validate_action(self, action: Dict, result: Dict) -> Dict:
+        """
+        Actor-Critic validation of an autonomous action.
+        Uses Learning Loop as the critic.
+        
+        Returns: {"approved": bool, "feedback": str, "retry": bool}
+        """
+        validation = {
+            "approved": True,
+            "feedback": "",
+            "retry": False,
+            "checks": {}
+        }
+        
+        # Check 1: Did the action succeed?
+        if result.get("status") == "error":
+            validation["approved"] = False
+            validation["feedback"] = f"Action failed: {result.get('error', 'unknown')}"
+            validation["retry"] = True
+            validation["checks"]["success"] = False
+        else:
+            validation["checks"]["success"] = True
+        
+        # Check 2: Did it complete within expected time?
+        duration_ms = result.get("duration_ms", 0)
+        expected_max_ms = result.get("expected_duration_ms", 60000)
+        if duration_ms > expected_max_ms:
+            validation["feedback"] += f" Warning: Took {duration_ms/1000:.1f}s (expected <{expected_max_ms/1000}s)"
+            validation["checks"]["timing"] = "slow"
+        else:
+            validation["checks"]["timing"] = "ok"
+        
+        # Check 3: Invoke Learning Loop validation for code/config changes
+        action_type = action.get("type", "")
+        if action_type in ["script_modification", "config_change", "new_system"]:
+            # Run Learning Loop validation
+            try:
+                import subprocess
+                ll_result = subprocess.run(
+                    ["python3", "/home/clawbot/.openclaw/workspace/scripts/learning_loop_v3.py", "--validate"],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                if ll_result.returncode != 0:
+                    validation["approved"] = False
+                    validation["feedback"] += f" Learning Loop validation failed."
+                    validation["retry"] = True
+            except Exception as e:
+                validation["feedback"] += f" Could not run Learning Loop: {e}"
+        
+        return validation
+
+    def create_action_log_entry(self, transaction_id: str, category: str, action: str, 
+                                 trigger: str, result: str, notes: str = "") -> None:
+        """Log an autonomous action to the action log."""
+        if not ACTION_LOG.exists():
+            ACTION_LOG.write_text("# ACTION LOG — Sir HazeClaw Autonomy Engine\n\n")
+        
+        entry = f"""
+### {transaction_id}
+- **Timestamp:** {datetime.now(timezone.utc).isoformat()}
+- **Category:** {category}
+- **Action:** {action}
+- **Trigger:** {trigger}
+- **Result:** {result}
+- **Notes:** {notes}
+
+"""
+        with open(ACTION_LOG, "a") as f:
+            f.write(entry)
+
 
 # CLI interface
 if __name__ == "__main__":
