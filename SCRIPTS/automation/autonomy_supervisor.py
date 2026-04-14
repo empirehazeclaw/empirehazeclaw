@@ -8,7 +8,7 @@ Runs on cron every 5 minutes
 import os
 import re
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -45,12 +45,12 @@ class AutonomySupervisor:
                     return datetime.fromisoformat(ts)
             except:
                 pass
-        return datetime.utcnow() - timedelta(minutes=5)
+        return datetime.now(timezone.utc) - timedelta(minutes=5)
     
     def _save_last_check_time(self):
         """Save last check timestamp"""
         state_file = AUTONOMY_DIR / "supervisor_state.json"
-        state = {"last_check": datetime.utcnow().isoformat()}
+        state = {"last_check": datetime.now(timezone.utc).isoformat()}
         state_file.write_text(json.dumps(state))
     
     def analyze_actions(self) -> Dict:
@@ -113,7 +113,7 @@ class AutonomySupervisor:
         
         return {
             "status": "analyzed",
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "stats": stats,
             "recommendations": recommendations
         }
@@ -157,7 +157,7 @@ class AutonomySupervisor:
         
         return {
             "status": "analyzed",
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "total_errors": len(errors),
             "proposals": proposals
         }
@@ -242,7 +242,7 @@ class AutonomySupervisor:
         
         return {
             "status": "analyzed",
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "metrics": metrics,
             "alerts": alerts,
             "active_alert_count": len([a for a in alerts if a["severity"] == "CRITICAL"])
@@ -253,12 +253,12 @@ class AutonomySupervisor:
         Create a proposal artifact.
         Proposals are read-only suggestions - supervisor NEVER touches live system.
         """
-        proposal_id = f"PROPOSAL-{datetime.utcnow().strftime('%Y%m%d%H%M%S')}"
+        proposal_id = f"PROPOSAL-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}"
         
         proposal = {
             "id": proposal_id,
             "type": proposal_type,
-            "created": datetime.utcnow().isoformat(),
+            "created": datetime.now(timezone.utc).isoformat(),
             "status": "PENDING",
             "details": details,
             "supervisor": "Sir HazeClaw Supervisor (VIGIL pattern)",
@@ -381,7 +381,7 @@ class AutonomySupervisor:
         self._save_last_check_time()
         
         results = {
-            "cycle_timestamp": datetime.utcnow().isoformat(),
+            "cycle_timestamp": datetime.now(timezone.utc).isoformat(),
             "actions_analysis": self.analyze_actions(),
             "errors_analysis": self.analyze_errors(),
             "affective_analysis": self.analyze_affective_state(),
