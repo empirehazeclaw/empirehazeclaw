@@ -33,6 +33,8 @@ FILES=$(find . -type f \
     ! -path "./node_modules/*" \
     ! -path "./skills/semantic-search/node_modules/*" \
     ! -path "./ceo/_backup_rollbacks/*" \
+    ! -path "./ceo/_backup_rollbacks/*/*" \
+    ! -path "./ceo/_backup_rollbacks/*/*/*" \
     ! -path "./.backup*" \
     ! -path "*/.backup/*" \
     ! -name "*.sqlite" \
