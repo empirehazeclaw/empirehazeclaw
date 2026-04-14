@@ -11,6 +11,12 @@ REMOTE="origin"
 
 cd "$WORKSPACE"
 
+# Clean up old rollback backups (they contain API keys and are too large)
+if [ -d "ceo/_backup_rollbacks" ]; then
+    echo "🧹 Cleaning up old rollback backups..."
+    rm -rf ceo/_backup_rollbacks/* 2>/dev/null || true
+fi
+
 # Get current branch
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
@@ -24,7 +30,7 @@ fi
 git config user.email "clawbot@empirehazeclaw.com" 2>/dev/null || true
 git config user.name "ClawBot" 2>/dev/null || true
 
-# Find all files to add (exclude archives, node_modules, sqlite, logs)
+# Find all files to add (exclude archives, node_modules, sqlite, logs, backups)
 # Use find to get the list, then filter with grep -v
 FILES=$(find . -type f \
     ! -path "./.git/*" \
@@ -35,8 +41,13 @@ FILES=$(find . -type f \
     ! -path "./ceo/_backup_rollbacks/*" \
     ! -path "./ceo/_backup_rollbacks/*/*" \
     ! -path "./ceo/_backup_rollbacks/*/*/*" \
-    ! -path "./.backup*" \
+    ! -path "*/_backup_rollbacks/*" \
+    ! -path "*/backup/*" \
+    ! -path "*/backups/*" \
     ! -path "*/.backup/*" \
+    ! -path "./.backup*" \
+    ! -name "*_backup_*" \
+    ! -name "*.backup*" \
     ! -name "*.sqlite" \
     ! -name "*.sqlite.backup*" \
     ! -path "./logs/*" \

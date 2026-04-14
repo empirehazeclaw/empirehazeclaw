@@ -1,6 +1,6 @@
 # Skills Index — Sir HazeClaw (Empire Haze)
 
-## Active Skills (19)
+## Active Skills (22)
 
 | Skill | Description | Status |
 |-------|-------------|--------|
@@ -13,6 +13,7 @@
 | **backup-advisor** | Backup strategy and implementation | ✅ |
 | **capability-evolver** | Self-evolution engine for AI agents | ✅ |
 | **content-creator** | Social media & blog content creation | ✅ |
+| **debug-helper** | Automated failure analysis and debugging | ✅ |
 | **frontend** | Landing pages, shop, blog (Vercel) | ✅ |
 | **loop-prevention** | Prevent infinite loops in agents | ✅ |
 | **prompt-coach** | Optimize prompts for better results | ✅ |
@@ -27,10 +28,16 @@
 
 | Skill | Created | Description |
 |-------|---------|-------------|
+| **bug-hunter** | 2026-04-14 | Autonomous bug scanner — alle 30min, nur echte Fehler |
+| **youtube-transcript** | 2026-04-14 | YouTube Transcripts/Untertitel holen mit yt-dlp |
 | **git-manager** | 2026-04-14 | Intelligent Git operations for agents |
 | **code-review** | 2026-04-14 | Automated code review using MiniMax M2.7 |
 | **test-generator** | 2026-04-14 | Auto-generate unit/integration tests |
 | **repo-analyzer** | 2026-04-14 | Deep repository analysis |
+| **debug-helper** | 2026-04-14 | Automated failure analysis and debugging |
+| **hyperparameter-tuner** | 2026-04-14 | Learning Loop v3 hyperparameter optimization |
+| **log-aggregator** | 2026-04-14 | Centralized log collection and analysis |
+| **memory-sanitizer** | 2026-04-14 | Privacy-preserving data anonymization for AI training |
 
 ## Skill Structure
 

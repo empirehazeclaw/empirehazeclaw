@@ -1,0 +1,20 @@
+{
+  "lastChecks": {
+    "gateway": {{USER_ID_2}},
+    "crons": {{USER_ID_2}},
+    "loop_score": 0.690,
+    "kg": 359,
+    "reminders": null
+  },
+  "lastReport": "2026-04-14T09:08Z",
+  "lastError": null,
+  "knownIssues": [
+    "65 Lost Tasks (orphans, cannot cancel)",
+    "Opportunity Scanner cron error (recurring) — script works at system/opportunity_scanner.py",
+    "CEO Weekly Review cron error (recurring)",
+    "Token Budget Tracker cron error",
+    "GitHub Backup Daily cron error",
+    "REM Feedback Integration cron error"
+  ],
+  "updatedAt": "2026-04-14T09:08:00Z"
+}

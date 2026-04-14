@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776174048900",
-    "created_at": "2026-04-14T13:40:48.913Z",
+    "run_id": "run_1776175277331",
+    "created_at": "2026-04-14T14:01:17.345Z",
     "parent_event_id": "evt_1776094576245",
     "selected_gene_id": "gene_gep_repair_from_errors",
     "selected_capsule_id": "capsule_1775939760071",
@@ -11,7 +11,7 @@
         "signals match gene.signals_match",
         "capsule trigger matches signals",
         "signals: evolution_stagnation_detected, stable_success_plateau",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.971",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.976",
         "drift_intensity: 0.500"
       ],
       "alternatives": [
@@ -24,7 +24,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776174048898",
+      "id": "mut_1776175277329",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -35,7 +35,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776174048898",
+    "mutation_id": "mut_1776175277329",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -67,7 +67,7 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "0e02587886f3ca0d05ded7e6851382c8b269851f",
+    "baseline_git_head": "5974f01dea6b979be34e95be28d8ff7ea3e9052c",
     "blast_radius_estimate": {
       "files": 10,
       "lines": 800

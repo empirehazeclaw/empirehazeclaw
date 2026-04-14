@@ -214,7 +214,7 @@
       "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
       "why_ineffective": "Validation tests failed: 2/3",
       "created": "2026-04-14T10:41:04.999613",
-      "times_encountered": 5
+      "times_encountered": 7
     },
     {
       "id": "idea_20260414_104231",
@@ -222,7 +222,23 @@
       "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
       "why_ineffective": "Validation tests failed: 2/3",
       "created": "2026-04-14T10:42:31.501897",
-      "times_encountered": 6
+      "times_encountered": 7
+    },
+    {
+      "id": "idea_20260414_190359",
+      "title": "Investigate and fix Cron Watchdog failure",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-14T19:03:59.342488",
+      "times_encountered": 1
+    },
+    {
+      "id": "idea_20260414_200437",
+      "title": "Investigate and fix Opportunity Scanner Daily failure",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-14T20:04:37.741290",
+      "times_encountered": 1
     }
   ],
   "version": "1.0"

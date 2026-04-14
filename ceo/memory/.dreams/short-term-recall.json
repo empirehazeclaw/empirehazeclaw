@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-14T04:41:05.073Z",
+  "updatedAt": "2026-04-14T18:03:55.591Z",
   "entries": {
     "memory:memory/2026-04-13.md:5:7": {
       "key": "memory:memory/2026-04-13.md:5:7",
@@ -61035,18 +61035,20 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "--- ## SESSION SAVE (21:04 UTC) — Before New Session ### 🚀 Today's Major Achievements (2026-04-12 Evening) #### Learning Loop System (NEW!) - Created `/SCRIPTS/automation/learning_loop.py` — Main loop with Collect → Analyze → Execute → Reflexion - Created `/SCRIPTS/automation/learning_collector.py` — Collects from sessions, crons, errors, KG - Created `/SCRIPTS/automation/learning_analyzer.py` — Finds patterns with confidence scoring + meta-learning weights - Created `/SCRIPTS/automation/learning_executor.py` — ACTUALLY applies improvements (adds to KG, creates fix files, logs) - Created `/SCRIPTS/automation/learning_feedback.py` — Integrates Nico's direct feedback into learning - **Met",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.766902884078621,
+      "totalScore": 1.2935429520732153,
       "maxScore": 0.766902884078621,
       "firstRecalledAt": "2026-04-13T21:28:20.428Z",
-      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-14T18:03:55.591Z",
       "queryHashes": [
-        "432408a5b866"
+        "432408a5b866",
+        "a829d4ebb8d5"
       ],
       "recallDays": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "meta-learning",
@@ -61128,18 +61130,20 @@
       "endLine": 75,
       "source": "memory",
       "snippet": "- Compressed 2 checkpoint files (1.7MB → 220KB) - Session storage: 44MB (down from 64MB+) - RAM: 1.3GB / 7.8GB (good) - kg_lifecycle_manager symlink restored - Learning Loop integrated with feedback system #### Morning Brief Enhancement - Updated to read `/logs/cron_status.json` for detailed health (healthy/degraded counts) - Now shows: Active, Failed, Healthy, Degraded counts ### 📊 Learning Loop Metrics | Iteration | Score | Improvements | |-----------|-------|-------------| | 1 | 0.60 | 4 | | 2 | 0.80 | 3 | | 3 | 0.80 | 0 (no high-confidence patterns) | ### 🎯 Current System Status - Learning Loop: Running hourly - Capability Evolver: Trained, ready for next stagnation - Self-Healing C",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.752534459355368,
+      "totalScore": 1.2818600131302016,
       "maxScore": 0.752534459355368,
       "firstRecalledAt": "2026-04-13T21:28:20.428Z",
-      "lastRecalledAt": "2026-04-13T21:28:20.428Z",
+      "lastRecalledAt": "2026-04-14T18:03:55.591Z",
       "queryHashes": [
-        "432408a5b866"
+        "432408a5b866",
+        "a829d4ebb8d5"
       ],
       "recallDays": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "1.7mb",
@@ -78753,6 +78757,68 @@
         "cycle",
         "report",
         "utc"
+      ]
+    },
+    "memory:memory/2026-04-13.md:68:116": {
+      "key": "memory:memory/2026-04-13.md:68:116",
+      "path": "memory/2026-04-13.md",
+      "startLine": 68,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- Script created: `SCRIPTS/automation/rem_feedback.py` - Cron scheduled: Daily @ 6:00 UTC - Results: 8 themes, 3 truths found, 6 feedback entries added to learning loop - KG updated with 8 REM themes - First automated run completed successfully ## Evening Capture Fix - Problem: Timeout 120s too short (script was killed) - Solution: Increased timeout to 300s - Next run: Tonight 21:00 UTC with more time ## Files Updated (Self-Maintenance) - IDENTITY.md — Fully populated (Sir HazeClaw 🦞) - USER.md — Updated with current projects and preferences - HEARTBEAT.md — Current status, metrics, achievements ## System Status | Metric | Value | |--------|-------| | Gateway | 2026.4.12 LIVE | | Active",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5227691620588303,
+      "maxScore": 0.5227691620588303,
+      "firstRecalledAt": "2026-04-14T18:03:55.591Z",
+      "lastRecalledAt": "2026-04-14T18:03:55.591Z",
+      "queryHashes": [
+        "a829d4ebb8d5"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "self-maintenance",
+        "identity.md",
+        "user.md",
+        "heartbeat.md",
+        "2026.4.12",
+        "script",
+        "created"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:43": {
+      "key": "memory:memory/2026-04-13.md:1:43",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "# 2026-04-13 ## Learning Loop — 21:03 UTC - Iteration 1, Score: 0.690, Duration: 2.6s - Feedback: 4 signals (direct:2, metrics:1, self_eval:1) - Log signals: 56 | Memory signals: 0 | Session insights: 0 - Hypotheses generated: 5 (all novel) - Forced novelty injection triggered (consecutive_same_pattern=3) - Pattern: [PHASE 4] Explore: error_prediction - Validation: 2/3 tests passed - Validation success rate: 107/107 - Cross-pattern hits: 3 - Issues: none ## Learning Loop — 22:03 UTC - Iteration 1, Score: 0.690, Duration: 3.8s - Feedback: 4 signals (direct:2, metrics:1, self_eval:1) - Log signals: 56 | Memory signals: 0 | Session insights: 0 - Hypotheses generated: 5 (all novel) - Forced no",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5191250532865525,
+      "maxScore": 0.5191250532865525,
+      "firstRecalledAt": "2026-04-14T18:03:55.591Z",
+      "lastRecalledAt": "2026-04-14T18:03:55.591Z",
+      "queryHashes": [
+        "a829d4ebb8d5"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "0.690",
+        "2.6s",
+        "self-eval",
+        "consecutive-same-pattern",
+        "error-prediction",
+        "2/3",
+        "107/107",
+        "cross-pattern"
       ]
     }
   }

@@ -1,20 +1,21 @@
 {
   "lastChecks": {
-    "gateway": 1744622400,
-    "crons": 1744622400,
-    "loop_score": 0.690,
+    "gateway": 1744632000,
+    "crons": 1744632000,
+    "loop_score": 0.763,
     "kg": 359,
     "reminders": null
   },
-  "lastReport": "2026-04-14T09:08Z",
+  "lastReport": "2026-04-14T20:03Z",
   "lastError": null,
   "knownIssues": [
     "65 Lost Tasks (orphans, cannot cancel)",
-    "Opportunity Scanner cron error (recurring) — script works at system/opportunity_scanner.py",
-    "CEO Weekly Review cron error (recurring)",
+    "Opportunity Scanner Daily cron error (recurring) — script works at system/opportunity_scanner.py",
+    "CEO Weekly Review cron error (recurring) — script works (tested 2026-04-13)",
+    "Agent Self-Improver cron error (recurring) — checked 2026-04-13",
     "Token Budget Tracker cron error",
     "GitHub Backup Daily cron error",
-    "REM Feedback Integration cron error"
+    "REM Feedback Integration cron error (last ran 14h ago)"
   ],
-  "updatedAt": "2026-04-14T09:08:00Z"
+  "updatedAt": "2026-04-14T20:04:00Z"
 }
