@@ -2,38 +2,6 @@
   "validations": [
     {
       "improvement": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "timestamp": "2026-04-14T12:52:03.280632",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7259466882679814,
-      "current_score": 0.8259466882679813,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
-      "improvement": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "timestamp": "2026-04-14T12:52:14.236039",
       "tests": [
         {
@@ -3289,6 +3257,38 @@
       "version": "2.0",
       "baseline_score": 0.7649532085365853,
       "current_score": 0.6649532085365853,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": false
+      }
+    },
+    {
+      "improvement": "Investigate and fix Cron Watchdog failure",
+      "timestamp": "2026-04-15T22:04:18.172236",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": false,
+          "failed_crons": 1
+        }
+      ],
+      "passed": false,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.764895281707317,
+      "current_score": 0.664895281707317,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,

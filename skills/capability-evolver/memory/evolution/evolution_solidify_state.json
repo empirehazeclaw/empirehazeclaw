@@ -1,12 +1,12 @@
 {
   "last_run": {
-    "run_id": "run_1776175277331",
-    "created_at": "2026-04-14T14:01:17.345Z",
-    "parent_event_id": "evt_1776094576245",
-    "selected_gene_id": "gene_gep_repair_from_errors",
+    "run_id": "run_1776287125432",
+    "created_at": "2026-04-15T21:05:25.447Z",
+    "parent_event_id": "evt_1776287123360",
+    "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
     "selector": {
-      "selected": "gene_gep_repair_from_errors",
+      "selected": "gene_gep_innovate_from_opportunity",
       "reason": [
         "signals match gene.signals_match",
         "capsule trigger matches signals",
@@ -14,9 +14,7 @@
         "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.976",
         "drift_intensity: 0.500"
       ],
-      "alternatives": [
-        "gene_gep_innovate_from_opportunity"
-      ]
+      "alternatives": []
     },
     "signals": [
       "evolution_stagnation_detected",
@@ -24,18 +22,18 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776175277329",
+      "id": "mut_1776287125430",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
         "stable_success_plateau",
         "force_innovation"
       ],
-      "target": "gene:gene_gep_repair_from_errors",
+      "target": "gene:gene_gep_innovate_from_opportunity",
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776175277329",
+    "mutation_id": "mut_1776287125430",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -45,7 +43,7 @@
       "obedience": 0.9
     },
     "personality_key": "rigor=0.7|creativity=0.6|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
-    "personality_known": false,
+    "personality_known": true,
     "personality_mutations": [
       {
         "type": "PersonalityMutation",
@@ -67,23 +65,23 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "5974f01dea6b979be34e95be28d8ff7ea3e9052c",
+    "baseline_git_head": "4c5ea9cbda287478b9e147202168b15eea0f9ddb",
     "blast_radius_estimate": {
       "files": 10,
       "lines": 800
     },
     "strategy_policy": {
-      "name": "innovate",
-      "label": "Innovation Focus",
-      "description": "System is stable. Maximize new features and capabilities.",
+      "name": "early-stabilize",
+      "label": "Early Stabilization",
+      "description": "First cycles. Prioritize fixing existing issues before innovating.",
       "forceInnovate": true,
       "cautiousExecution": false,
       "highRiskGene": false,
       "repairStreak": 0,
-      "failureStreak": 0,
+      "failureStreak": 1,
       "blastRadiusMaxFiles": 10,
       "directives": [
-        "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
+        "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",
         "Force strategy shift: prefer innovate over repeating repair/optimize.",
         "Target max files for this cycle: 10."
       ]
@@ -97,14 +95,14 @@
     "hub_lessons": []
   },
   "last_solidify": {
-    "run_id": "run_1776094526951",
-    "at": "2026-04-13T15:36:16.245Z",
-    "event_id": "evt_1776094576245",
-    "capsule_id": "capsule_1775939760071",
+    "run_id": "run_1776276377650",
+    "at": "2026-04-15T21:05:23.360Z",
+    "event_id": "evt_1776287123360",
+    "capsule_id": null,
     "outcome": {
-      "status": "success",
-      "score": 0.95
+      "status": "failed",
+      "score": 0.76
     }
   },
-  "solidify_count": 10
+  "solidify_count": 13
 }
