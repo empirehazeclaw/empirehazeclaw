@@ -6,11 +6,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669064",
       "last_validated": "2026-04-13T13:48:51.669075",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -22,11 +22,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669082",
       "last_validated": "2026-04-13T13:48:51.669083",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -38,11 +38,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669087",
       "last_validated": "2026-04-13T13:48:51.669088",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -54,11 +54,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669091",
       "last_validated": "2026-04-13T13:48:51.669091",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -70,11 +70,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669094",
       "last_validated": "2026-04-13T13:48:51.669095",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -86,11 +86,11 @@
       "error_type": "general_error",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669103",
       "last_validated": "2026-04-13T13:48:51.669104",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -102,11 +102,11 @@
       "error_type": "cron_failure",
       "solution": null,
       "validated": false,
-      "confidence": 0.4814722754443022,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669107",
       "last_validated": "2026-04-13T14:21:02.770253",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -118,11 +118,11 @@
       "error_type": "cron_failure",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669110",
       "last_validated": "2026-04-13T13:48:51.669110",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -134,11 +134,11 @@
       "error_type": "cron_failure",
       "solution": null,
       "validated": false,
-      "confidence": 0.5,
+      "confidence": 0.45125,
       "initial_confidence": 0.5,
       "first_seen": "2026-04-13T13:48:51.669113",
       "last_validated": "2026-04-13T13:48:51.669114",
-      "days_since_validation": 0,
+      "days_since_validation": 2,
       "archived": false,
       "source": "error_learning",
       "access_count": 0,
@@ -157,13 +157,13 @@
       ],
       "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "success_count": 118,
+      "success_count": 122,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8275500000000001,
+      "confidence": 0.8558155000000003,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-14T23:03:57.750567",
+      "last_validated": "2026-04-15T14:05:47.599628",
       "error_type": "elevated_error_rate",
       "context": {
         "source": "cross_pattern",
@@ -184,7 +184,7 @@
       "success_count": 236,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45006550102896425,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
       "last_validated": "2026-04-14T07:38:16.832396",
@@ -192,7 +192,8 @@
       "context": {
         "source": "forced_novelty",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "title": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
@@ -423,7 +424,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45927000000000007,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T07:43:42.701457",
       "last_validated": "2026-04-14T07:43:42.701460",
@@ -431,7 +432,8 @@
       "context": {
         "source": "research",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260414_125308",
@@ -447,7 +449,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45927000000000007,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:53:08.664404",
       "last_validated": "2026-04-14T12:53:08.664408",
@@ -455,7 +457,8 @@
       "context": {
         "source": "debug",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260414_125502",
@@ -470,7 +473,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45927000000000007,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:02.790816",
       "last_validated": "2026-04-14T12:55:02.790820",
@@ -478,7 +481,8 @@
       "context": {
         "source": "cross_pattern",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260414_125503",
@@ -493,7 +497,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45927000000000007,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:03.870281",
       "last_validated": "2026-04-14T12:55:03.870284",
@@ -501,7 +505,8 @@
       "context": {
         "source": "issue",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260414_125505",
@@ -516,7 +521,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.45927000000000007,
+      "confidence": 0.6649999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:05.010555",
       "last_validated": "2026-04-14T12:55:05.010558",
@@ -524,7 +529,8 @@
       "context": {
         "source": "research",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "title": "memory:\u2705 **Completed",

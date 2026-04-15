@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-14T10:30:00Z",
+  "date": "2026-04-15T10:30:00Z",
   "issues_found": [
     {
       "severity": "high",
@@ -27,39 +27,62 @@
       "files_affected": ["secrets/SECURITY_ROTATION.md"],
       "status": "open",
       "since": "2026-04-07"
+    },
+    {
+      "severity": "medium",
+      "category": "config",
+      "title": "Reverse Proxy Headers nicht vertraut",
+      "details": "gateway.bind ist loopback und gateway.trustedProxies ist leer. Wenn Control UI über Reverse Proxy exponiert wird, sollten trusted proxies konfiguriert werden.",
+      "files_affected": [],
+      "status": "open",
+      "since": "2026-04-15"
+    },
+    {
+      "severity": "low",
+      "category": "config",
+      "title": "denyCommands mit exaktem Matching — nicht shell-text Filtering",
+      "details": "gateway.nodes.denyCommands nutzt nur exakte Command-Namen, keine Shell-Text Filterung im Payload. Für breitere Restrictions: allowCommands einschränken.",
+      "files_affected": [],
+      "status": "open",
+      "since": "2026-04-15"
     }
   ],
   "keys_status": {
-    "buffer_token": "INVALID (401) — unverändert",
-    "leonardo_api_key": "INVALID (HTML response) — unverändert",
-    "telegram_bot_token": "pending_rotation",
+    "buffer_token": "INVALID (401) — unverändert seit 2026-04-07",
+    "leonardo_api_key": "INVALID (HTML response) — unverändert seit 2026-04-07",
+    "telegram_bot_token": "OK (8397…oH9Y · 46 chars)",
     "github_token": "pending_rotation",
     "google_aiza_key": "pending_rotation",
     "restic_password": "pending_rotation",
     "secret_key": "pending_rotation"
   },
   "workspace_scan": {
-    "scripts_found": 55,
+    "scripts_found": 57,
     "new_scripts_security_relevant": [],
+    "new_files_since_last_scan": ["decision_tracker_integration.py (2026-04-14 09:05)"],
     "hardcoded_secrets_found": false,
     "gitignore_active": true,
-    "new_files_since_last_scan": ["learning_loop_v3.py (aktualisiert)", "decision_tracker_integration.py (neu 09:05)"]
+    "decision_tracker_integration.py_checked": "Keine hardcoded Secrets gefunden"
   },
   "log_review": {
     "suspicious_activity": false,
     "recent_errors": "keine verdächtigen Aktivitäten in letzten 24h",
     "failed_logins": 0,
-    "unauthorized_access": 0
+    "unauthorized_access": 0,
+    "openclaw_tasks": "172 issues, 66 audit errors (vorhandene Task-Backlog, nicht neu)"
   },
   "system_status": {
-    "active_crons": 25,
+    "active_crons": "?/? (Status unbekannt)",
     "python_processes": 2,
-    "gateway_status": "running"
+    "gateway_status": "running",
+    "gateway_version": "2026.4.12",
+    "update_available": "2026.4.14"
   },
   "recommendations": [
     "Buffer Token erneuern über Buffer App Settings → Developers → Access Token",
     "Leonardo AI Key in cloud.leonardo.ai prüfen und ggf. regenerieren",
     "Security Rotation Plan für alle 6 kritischen Keys prioritär durchführen",
-    "decision_tracker_integration.py (neues Script) auf Secrets-Nutzung prüfen"
+    "Reverse Proxy trustedProxies konfigurieren falls Control UI exponiert",
+    "Gateway Update auf 2026.4.14 einspielen (openclaw update)"
   ]
 }

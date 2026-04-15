@@ -637,7 +637,7 @@ def run_full_cycle():
     
     # PHASE 6: Meta-Improvement (Loop improving ITSELF)
     # Only run every 5 cycles to save resources
-    cycle_count = len([r for r in log.get('runs', []) if r['phase'] == 'system_check'])
+    cycle_count = len([r for r in log.get('runs', []) if r.get('phase') == 'system_check'])
     if cycle_count > 0 and cycle_count % 5 == 0:
         print("🧠 PHASE 6: Meta-Improvement (Loop improving itself)")
         try:

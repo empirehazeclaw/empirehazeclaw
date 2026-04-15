@@ -48,7 +48,53 @@
       "improvements_selected": 3,
       "improvements_executed": 2,
       "duration_s": 4.6
+    },
+    {
+      "timestamp": "2026-04-15T09:07:39.567197",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:40.255388",
+      "phase": "research",
+      "success": true,
+      "notes": "2 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:41.240248",
+      "phase": "quality",
+      "success": true,
+      "notes": "2 issues"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:41.529677",
+      "phase": "improvement",
+      "success": true,
+      "notes": "3 applied"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:41.592585",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
     }
   ],
-  "last_full_cycle": "2026-04-14T18:05:08.521972"
+  "last_full_cycle": "2026-04-15T09:07:41.592594",
+  "token_usage": [
+    {
+      "timestamp": "2026-04-15T09:06:43.465621",
+      "task": "innovation_research",
+      "tokens_in": 6000,
+      "tokens_out": 4500,
+      "total": 10500
+    },
+    {
+      "timestamp": "2026-04-15T09:06:43.742285",
+      "task": "self_eval",
+      "tokens_in": 800,
+      "tokens_out": 400,
+      "total": 1200
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "hypothesis_general": {
-    "successes": 24,
+    "successes": 26,
     "failures": 1
   },
   "cross_pattern_cross_pattern": {
@@ -12,7 +12,7 @@
     "failures": 1
   },
   "cross_pattern_elevated_error_rate": {
-    "successes": 12,
+    "successes": 16,
     "failures": 1
   }
 }

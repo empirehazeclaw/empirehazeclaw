@@ -75,6 +75,16 @@
       "timestamp": "2026-04-14T18:05:08.236403",
       "script": "graceful_degradation",
       "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-15T09:06:44.694604",
+      "script": "cron_error_healer",
+      "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:41.296040",
+      "script": "morning_brief",
+      "reason": "no_improvement"
     }
   ]
 }
