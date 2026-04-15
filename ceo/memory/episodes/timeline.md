@@ -57,3 +57,14 @@ _Letzte Aktualisierung: 2026-04-13_
 ---
 
 *Episoden = bleibende Erinnerungen. Nur die wichtigsten Events.*
+### 2026-04-14 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.763
+
+### 2026-04-15 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.763
+
+### 2026-04-15 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.763
+
+### 2026-04-15 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.763

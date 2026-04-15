@@ -214,7 +214,7 @@
       "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
       "why_ineffective": "Validation tests failed: 2/3",
       "created": "2026-04-14T10:41:04.999613",
-      "times_encountered": 7
+      "times_encountered": 8
     },
     {
       "id": "idea_20260414_104231",
@@ -238,7 +238,7 @@
       "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
       "why_ineffective": "Validation tests failed: 2/3",
       "created": "2026-04-14T20:04:37.741290",
-      "times_encountered": 1
+      "times_encountered": 2
     }
   ],
   "version": "1.0"
