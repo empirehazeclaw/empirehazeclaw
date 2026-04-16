@@ -446,7 +446,7 @@ class AutonomySupervisor:
         - Error patterns in entity facts
         - Trending topics (high access_count)
         """
-        kg_path = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
+        kg_path = Path("/home/clawbot/.openclaw/workspace/ceo/memory/kg/knowledge_graph.json")
         if not kg_path.exists():
             return {"status": "no_kg", "patterns": []}
         

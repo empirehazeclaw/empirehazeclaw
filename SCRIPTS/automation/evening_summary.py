@@ -17,7 +17,7 @@ from pathlib import Path
 
 WORKSPACE_DIR = Path("/home/clawbot/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE_DIR / "memory"
-KG_PATH = WORKSPACE_DIR / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE_DIR / "ceo/memory/kg/knowledge_graph.json"
 HEARTBEAT_PATH = WORKSPACE_DIR / "ceo/HEARTBEAT.md"
 
 def get_today_commits():

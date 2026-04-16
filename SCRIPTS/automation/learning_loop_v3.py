@@ -40,7 +40,7 @@ from collections import defaultdict
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 SCRIPTS_DIR = WORKSPACE / "scripts"
 DATA_DIR = WORKSPACE / "data"
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 LOOP_STATE = DATA_DIR / "learning_loop_state.json"
 FEEDBACK_QUEUE = DATA_DIR / "feedback_queue.json"
 PATTERNS_FILE = DATA_DIR / "learning_loop" / "patterns.json"
@@ -1175,7 +1175,7 @@ def run_pattern_decay():
     patterns_data = load_patterns()
     patterns = patterns_data.get("patterns", [])
 
-    decay_rate = 0.05  # 5% per day
+    decay_rate = 0.07  # 7% per day (tuned up from 5% to break plateau)
     min_confidence = 0.2
     archived = 0
 
@@ -2111,7 +2111,7 @@ def select_improvements(issues: List[Dict], hypotheses: List[Dict]) -> List[Dict
 
     # Annealing: decrease exploration over time
     iteration = state.get('iteration', 1)
-    epsilon = max(0.05, 0.3 - (iteration * 0.01))  # Decays from 0.3 to 0.05
+    epsilon = max(0.10, 0.3 - (iteration * 0.01))  # Decays from 0.3 to 0.10 (higher floor for more exploration)
 
     # Candidates with their priors
     candidates = []

@@ -65,7 +65,7 @@ def count_memory_files():
 def get_kg_entities():
     """Get KG entity count"""
     try:
-        kg_path = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
+        kg_path = WORKSPACE / "ceo/memory/kg" / "knowledge_graph.json"
         if kg_path.exists():
             with open(kg_path) as f:
                 kg = json.load(f)

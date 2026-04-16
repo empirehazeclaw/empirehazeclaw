@@ -108,7 +108,7 @@ class LearningExecutor:
         
         if elements:
             # Add to KG as "error pattern" entity
-            kg_path = self.workspace / "core_ultralight" / "memory" / "knowledge_graph.json"
+            kg_path = self.workspace / "ceo/memory/kg" / "knowledge_graph.json"
             if kg_path.exists():
                 try:
                     with open(kg_path) as f:
@@ -180,7 +180,7 @@ class LearningExecutor:
         
         if elements:
             # Add to KG as success pattern
-            kg_path = self.workspace / "core_ultralight" / "memory" / "knowledge_graph.json"
+            kg_path = self.workspace / "ceo/memory/kg" / "knowledge_graph.json"
             if kg_path.exists():
                 try:
                     with open(kg_path) as f:

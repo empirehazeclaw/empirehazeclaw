@@ -21,7 +21,7 @@ from pathlib import Path
 
 # Config
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 CRON_PATH = WORKSPACE.parent / "cron/jobs.json"
 
 GATEWAY_PORT = 18789

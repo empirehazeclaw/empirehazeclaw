@@ -1,5 +1,5 @@
 {
-  "cycle_timestamp": "2026-04-16T03:58:25.521441+00:00",
+  "cycle_timestamp": "2026-04-16T22:59:24.098053+00:00",
   "actions_analysis": {
     "status": "no_transactions",
     "recommendations": []
@@ -10,7 +10,7 @@
   },
   "affective_analysis": {
     "status": "analyzed",
-    "timestamp": "2026-04-16T03:58:25.521804+00:00",
+    "timestamp": "2026-04-16T22:59:24.098502+00:00",
     "metrics": {
       "errorRate": {
         "current": 0.014,
@@ -39,7 +39,7 @@
   },
   "kg_pattern_analysis": {
     "status": "analyzed",
-    "total_entities": 362,
+    "total_entities": 436,
     "patterns": [
       {
         "type": "ISSUES_IN_KG",
@@ -48,17 +48,17 @@
           {
             "entity": "Kunden-Support",
             "fact": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
-            "access_count": 4
+            "access_count": 2
           },
           {
             "entity": "Competitor-Other-AI-Tools",
             "fact": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSG",
-            "access_count": 4
+            "access_count": 12
           },
           {
             "entity": "Sir-HazeClaw-Scripts",
             "fact": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
-            "access_count": 8
+            "access_count": 16
           },
           {
             "entity": "Sir-HazeClaw-Capabilities",
@@ -68,7 +68,7 @@
           {
             "entity": "AI-Agent-Prompt-Patterns",
             "fact": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
-            "access_count": 4
+            "access_count": 2
           }
         ],
         "priority": "MEDIUM"
@@ -78,24 +78,24 @@
         "description": "Entities with highest recent access",
         "entities": [
           {
+            "name": "innovation_research_20260411",
+            "access_count": 17
+          },
+          {
+            "name": "innovation_research_20260412",
+            "access_count": 17
+          },
+          {
             "name": "EmpireHazeClaw",
-            "access_count": 12
+            "access_count": 16
           },
           {
             "name": "empirehazeclaw-info",
-            "access_count": 12
+            "access_count": 16
           },
           {
-            "name": "System-Architektur",
-            "access_count": 11
-          },
-          {
-            "name": "innovation_research_20260411",
-            "access_count": 11
-          },
-          {
-            "name": "microsoft_agent_governance_20260411",
-            "access_count": 11
+            "name": "project_empirehazeclaw_fleet_20260410",
+            "access_count": 16
           }
         ],
         "priority": "LOW"

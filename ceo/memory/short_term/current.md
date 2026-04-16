@@ -1,18 +1,18 @@
 # SHORT TERM — Aktuelle Session
 
-_Letzte Aktualisierung: 2026-04-16 03:07 UTC_
+_Letzte Aktualisierung: 2026-04-16 22:07 UTC_
 
 ---
 
 ## 🔄 CURRENT SESSION
 
-**Letzter Sync:** 2026-04-16T03:07:11.231099Z
+**Letzter Sync:** 2026-04-16T22:07:09.931460Z
 
 ### 📊 System Status
 | Metric | Value |
 |--------|-------|
-| KG Entities | 354 |
-| KG Relations | 523 |
+| KG Entities | 435 |
+| KG Relations | 616 |
 | Loop Score | 0.763 |
 | Active Crons | 0 |
 | Unprocessed Feedback | 30 |
@@ -40,4 +40,4 @@ _Letzte Aktualisierung: 2026-04-16 03:07 UTC_
 ---
 
 *Short-term wird nach jeder Session automatisch upgedated.*
-*Letzte Änderung: 2026-04-16 03:07 UTC
+*Letzte Änderung: 2026-04-16 22:07 UTC

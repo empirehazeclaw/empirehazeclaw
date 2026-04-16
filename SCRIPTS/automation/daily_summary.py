@@ -22,7 +22,7 @@ from pathlib import Path
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "memory"
 CEO_DIR = WORKSPACE / "ceo"
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 CRON_PATH = WORKSPACE.parent / "cron/jobs.json"
 
 def get_git_commits(days_ago=0):

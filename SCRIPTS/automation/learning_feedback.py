@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg" / "knowledge_graph.json"
 FEEDBACK_LOG = WORKSPACE / "logs" / "learning_feedback.json"
 
 def add_feedback(feedback: str, quality: int):

@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import List, Dict
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg" / "knowledge_graph.json"
 
 class LearningAnalyzer:
     """

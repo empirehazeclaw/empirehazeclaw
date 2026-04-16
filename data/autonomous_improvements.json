@@ -85,6 +85,11 @@
       "timestamp": "2026-04-15T09:07:41.296040",
       "script": "morning_brief",
       "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:19.717003",
+      "script": "kg_updater",
+      "reason": "no_improvement"
     }
   ]
 }

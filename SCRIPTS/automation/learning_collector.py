@@ -17,7 +17,7 @@ from typing import List, Dict
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 SESSION_DIR = Path("/home/clawbot/.openclaw/agents/ceo/sessions")
-KG_PATH = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg" / "knowledge_graph.json"
 LOGS_DIR = WORKSPACE / "logs"
 
 class LearningCollector:

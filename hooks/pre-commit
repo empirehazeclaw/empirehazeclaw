@@ -1,25 +1,37 @@
 #!/bin/bash
 # Pre-commit hook to prevent API key exposure
 # Created: 2026-04-12 after security incident
+# Fixed: 2026-04-16 — escaped {} to prevent shell expansion
+
+set -euo pipefail
 
 echo "🔍 Checking for API keys in staged files..."
 
+STAGED_FILES=$(git diff --cached --name-only)
+
+# No staged files — allow commit
+if [ -z "$STAGED_FILES" ]; then
+    echo "✅ No staged files — commit allowed"
+    exit 0
+fi
+
 # Patterns that should NEVER be committed
 PATTERNS=(
-  "sk-or-v1-[a-zA-Z0-9]\{40,\}"
-  "sk-proj-[a-zA-Z0-9_-]\{50,\}"
-  "hf_[a-zA-Z0-9]\{20,\}"
-  "ghp_[a-zA-Z0-9]\{30,\}"
-  "ak-[A-Za-z0-9]\{16,\}:as-"
-  "AIza[a-zA-Z0-9_-]\{30,\}"
-  "sk-ant-api03-[a-zA-Z0-9_-]\{50,\}"
+  "sk-or-v1-[a-zA-Z0-9]{40,}"
+  "sk-proj-[a-zA-Z0-9_-]{50,}"
+  "hf_[a-zA-Z0-9]{20,}"
+  "ghp_[a-zA-Z0-9]{36,}"
+  "ak-[A-Za-z0-9]{16,}:as-"
+  "AIza[a-zA-Z0-9_-]{30,}"
+  "sk-ant-api03-[a-zA-Z0-9_-]{50,}"
 )
 
 FOUND=0
 
 for pattern in "${PATTERNS[@]}"; do
-  if git diff --cached --name-only | xargs -I {} sh -c "grep -qE '$pattern' '{}' 2>/dev/null && echo '{}'"; then
-    echo "❌ BLOCKED: API key pattern detected!"
+  MATCHED=$(echo "$STAGED_FILES" | xargs grep -lE "$pattern" 2>/dev/null || true)
+  if [ -n "$MATCHED" ]; then
+    echo "❌ BLOCKED: API key pattern detected in: $MATCHED"
     FOUND=1
   fi
 done
@@ -31,4 +43,4 @@ if [ $FOUND -eq 1 ]; then
   exit 1
 fi
 
-echo "✅ No API keys detected - commit allowed"
+echo "✅ No API keys detected — commit allowed"

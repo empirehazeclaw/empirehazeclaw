@@ -78,9 +78,39 @@
       "phase": "learning",
       "success": true,
       "notes": ""
+    },
+    {
+      "timestamp": "2026-04-16T18:06:56.308383",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:18.862882",
+      "phase": "research",
+      "success": true,
+      "notes": "2 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:19.659811",
+      "phase": "quality",
+      "success": true,
+      "notes": "2 issues"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:19.941875",
+      "phase": "improvement",
+      "success": true,
+      "notes": "3 applied"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:20.001459",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
     }
   ],
-  "last_full_cycle": "2026-04-15T09:07:41.592594",
+  "last_full_cycle": "2026-04-16T18:07:20.001472",
   "token_usage": [
     {
       "timestamp": "2026-04-15T09:06:43.465621",
@@ -98,3 +128,4 @@
     }
   ]
 }
+{"timestamp":"2026-04-16T18:06:00Z","cycle":3,"duration":23.7,"system_check":"OK","research":{"hypotheses":2,"status":"OK"},"quality":{"issues":2,"high":"Self-Eval score low: 61/100","medium":"Quality über Quantität: 0/100"},"improvements":{"selected":3,"executed":3,"status":"OK"},"learning":"OK","meta_improvement":"skipped (every 5 cycles)"}

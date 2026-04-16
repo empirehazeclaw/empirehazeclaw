@@ -425,6 +425,106 @@
       "stored_at": "2026-04-14T18:00:50.022239",
       "success_count": 1,
       "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_44",
+      "stored_at": "2026-04-16T18:00:29.784103",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:success",
+      "context": "memory",
+      "description": "success",
+      "source": "memory_analysis",
+      "id": "pattern_45",
+      "stored_at": "2026-04-16T18:00:29.784807",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_46",
+      "stored_at": "2026-04-16T18:00:29.786187",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:success",
+      "context": "memory",
+      "description": "success",
+      "source": "memory_analysis",
+      "id": "pattern_47",
+      "stored_at": "2026-04-16T18:00:29.786975",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:working",
+      "context": "memory",
+      "description": "working",
+      "source": "memory_analysis",
+      "id": "pattern_48",
+      "stored_at": "2026-04-16T18:00:29.787814",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Fixed",
+      "context": "memory",
+      "description": "Fixed",
+      "source": "memory_analysis",
+      "id": "pattern_49",
+      "stored_at": "2026-04-16T18:00:29.788855",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Fixed",
+      "context": "memory",
+      "description": "Fixed",
+      "source": "memory_analysis",
+      "id": "pattern_50",
+      "stored_at": "2026-04-16T18:00:29.789547",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Fixed",
+      "context": "memory",
+      "description": "Fixed",
+      "source": "memory_analysis",
+      "id": "pattern_51",
+      "stored_at": "2026-04-16T18:00:29.790345",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Optimized",
+      "context": "memory",
+      "description": "Optimized",
+      "source": "memory_analysis",
+      "id": "pattern_52",
+      "stored_at": "2026-04-16T18:00:29.791038",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:better",
+      "context": "memory",
+      "description": "better",
+      "source": "memory_analysis",
+      "id": "pattern_53",
+      "stored_at": "2026-04-16T18:00:29.791715",
+      "success_count": 1,
+      "failure_count": 0
     }
   ],
   "warnings": [
@@ -606,6 +706,51 @@
       "source": "memory_analysis",
       "id": "warning_20",
       "stored_at": "2026-04-14T18:00:50.026040",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:broken",
+      "context": "memory",
+      "description": "broken",
+      "source": "memory_analysis",
+      "id": "warning_21",
+      "stored_at": "2026-04-16T18:00:29.792460",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_22",
+      "stored_at": "2026-04-16T18:00:29.793242",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:WARNING",
+      "context": "memory",
+      "description": "WARNING",
+      "source": "memory_analysis",
+      "id": "warning_23",
+      "stored_at": "2026-04-16T18:00:29.794054",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:ALERT",
+      "context": "memory",
+      "description": "ALERT",
+      "source": "memory_analysis",
+      "id": "warning_24",
+      "stored_at": "2026-04-16T18:00:29.794849",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Issue",
+      "context": "memory",
+      "description": "Issue",
+      "source": "memory_analysis",
+      "id": "warning_25",
+      "stored_at": "2026-04-16T18:00:29.795604",
       "hit_count": 1
     }
   ],

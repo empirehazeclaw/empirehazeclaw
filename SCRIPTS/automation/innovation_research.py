@@ -22,7 +22,7 @@ import xml.etree.ElementTree as ET
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 RESEARCH_LOG = WORKSPACE / "data" / "innovation_research_log.json"
-KG_PATH = WORKSPACE / "core_ultralight" / "memory" / "knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg" / "knowledge_graph.json"
 
 # arXiv categories for AI/ML research
 ARXIV_CATEGORIES = {

@@ -40,9 +40,13 @@ ALERT_LOG = BUG_REPORTS_DIR / "alerts.json"
 # Time window for scanning (last 30 minutes by default)
 SCAN_WINDOW_MINUTES = 30
 
+# Maximum bytes to scan per log file (prevents slow scans on huge logs)
+MAX_SCAN_SIZE = 500_000  # ~500KB per file
+
 # FALSE POSITIVES — patterns we actively IGNORE
 # These look like errors but aren't
 FALSE_POSITIVES = [
+    # INFO/Log level false positives
     r'^.*\[INFO\].*error.*$',           # INFO level logs mentioning "error"
     r'^.*Error: Starting',              # "Error: Starting..." 
     r'^.*Error: All models failed',     # Log lines, not exceptions
@@ -51,6 +55,14 @@ FALSE_POSITIVES = [
     r'^.*\[\d{4}-\d{2}-\d{2}.*\] Error:',  # Bracketed timestamps with Error:
     r'.*status report.*❌',             # Cron watchdog reports
     r'.*watchdog.*❌',                  # Watchdog logs
+    # Our own tool logs (noise from internal tools)
+    r'.*bug_fixer.*No fix strategy',   # bug_fixer.py internal messages
+    r'.*No fix strategy for:',          # bug_fixer log lines
+    r'.*=== Bug Auto-Fixer',           # bug_fixer banner
+    # Noise from monitoring tools
+    r'.*gateway.*recovery.*check',     # Gateway recovery checks (INFO level)
+    r'.*cron.*watchdog.*status',      # Cron watchdog status lines
+    r'.*\[DEBUG\].*error',            # Debug level error mentions
 ]
 
 # Combined false positive regex
@@ -188,8 +200,11 @@ def scan_all_logs(window_minutes: int = SCAN_WINDOW_MINUTES) -> List[Dict]:
     # Scan workspace logs
     if LOG_DIR.exists():
         for log_file in LOG_DIR.glob("*.log"):
-            if log_file.name in ['guardrail_interceptions.log']:
-                continue  # Skip our own logs
+            if log_file.name in ['guardrail_interceptions.log', 'litellm.log', 'bug_fixer.log']:
+                continue  # Skip our own logs + inactive LiteLLM proxy log
+            # Skip large files - scan last MAX_SCAN_SIZE bytes only
+            if log_file.stat().st_size > MAX_SCAN_SIZE:
+                print(f"  SKIP (large): {log_file.name} ({log_file.stat().st_size//1024}KB)")
             all_errors.extend(scan_log_file(log_file, window_minutes))
     
     return all_errors

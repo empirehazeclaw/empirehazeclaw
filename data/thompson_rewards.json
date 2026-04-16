@@ -14,5 +14,9 @@
   "cross_pattern_elevated_error_rate": {
     "successes": 17,
     "failures": 1
+  },
+  "hypothesis_cron_health": {
+    "successes": 9,
+    "failures": 1
   }
 }

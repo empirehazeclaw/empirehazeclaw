@@ -26,7 +26,7 @@ from pathlib import Path
 
 # Paths
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 HEARTBEAT_PATH = WORKSPACE / "ceo/HEARTBEAT.md"
 
 def get_system_status():

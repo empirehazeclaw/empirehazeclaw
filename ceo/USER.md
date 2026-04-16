@@ -30,11 +30,11 @@ _Learned over time — updated 2026-04-13_
 
 | Project | Status | Notes |
 |---------|--------|-------|
-| Learning Loop v3 | ✅ Active | Hourly, Score 0.690 |
+| Learning Loop v3 | ✅ Active | Hourly, Score 0.764 |
 | Agent Self-Improver | ✅ Daily @ 18:00 | Running |
 | REM Integration | ✅ NEW | Daily @ 6:00 UTC |
 | Knowledge Graph | ✅ Growing | 354 entities |
-| Memory System | ✅ Migrated | Option C, clean structure |
+| System Integration | ✅ COMPLETE | Event Bus + KG Sync + Dashboard |
 
 ## What Nico Values
 

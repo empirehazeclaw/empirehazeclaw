@@ -55,3 +55,41 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ### TTS
 See TTS tool — configured and working.
+
+---
+
+## 🔄 System Integration (2026-04-16)
+
+### Event Bus
+```bash
+python3 /workspace/scripts/event_bus.py stats           # Event Stats
+python3 /workspace/scripts/event_bus.py list --type kg_update  # Filter
+```
+
+### Monitoring
+```bash
+python3 /workspace/scripts/integration_dashboard.py     # Full Dashboard
+python3 /workspace/scripts/integration_dashboard.py --check  # Quick Check
+python3 /workspace/scripts/stagnation_detector.py --check all  # Stagnation
+```
+
+### Evolver
+```bash
+bash /workspace/scripts/run_smart_evolver.sh            # Smart Evolver
+```
+
+### Backup Locations
+- `backups/weekly_backup_*/` — Automated weekly (Sonntag 04:00 UTC)
+- `backups/post_integration_20260416_210413/` — Post-Integration Full
+- `backups/integration_backup_20260416_185449/` — Pre-Integration Backup
+- `backups/core_ultralight_kg_stale_*.json` — Old KG (stale, kann gelöscht werden)
+
+### New Scripts (2026-04-16)
+| Script | Purpose |
+|--------|---------|
+| `learning_to_kg_sync.py` | Bridge Learning Loop → KG |
+| `event_bus.py` | Cross-system event pub/sub |
+| `stagnation_detector.py` | Monitor stagnation |
+| `evolver_signal_bridge.py` | Feed signals to Evolver |
+| `evolver_stagnation_breaker.py` | Force gene diversity |
+| `integration_dashboard.py` | Unified monitoring |

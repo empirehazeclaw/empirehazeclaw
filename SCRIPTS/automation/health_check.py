@@ -31,7 +31,7 @@ from typing import Dict, List, Tuple, Optional
 
 # Config
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 CRON_PATH = WORKSPACE.parent / "cron/jobs.json"
 GATEWAY_HOST = "127.0.0.1"
 GATEWAY_PORT = 18789

@@ -32,7 +32,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 from collections import defaultdict
 
-KG_PATH = Path("/home/clawbot/.openclaw/workspace/core_ultralight/memory/knowledge_graph.json")
+KG_PATH = Path("/home/clawbot/.openclaw/workspace/ceo/memory/kg/knowledge_graph.json")
 
 # ============================================================
 # CORE FUNCTIONS (from kg_updater.py)
