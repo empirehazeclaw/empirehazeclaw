@@ -1,156 +1,6 @@
 {
   "history": [
     {
-      "timestamp": "2026-04-14T21:03:56.157515",
-      "error_rate": 2.1,
-      "error_count": 136,
-      "msg_count": 6480
-    },
-    {
-      "timestamp": "2026-04-14T22:03:48.908020",
-      "error_rate": 2.06,
-      "error_count": 137,
-      "msg_count": 6650
-    },
-    {
-      "timestamp": "2026-04-14T22:03:49.398994",
-      "error_rate": 2.06,
-      "error_count": 137,
-      "msg_count": 6650
-    },
-    {
-      "timestamp": "2026-04-14T22:03:49.819081",
-      "error_rate": 2.06,
-      "error_count": 137,
-      "msg_count": 6650
-    },
-    {
-      "timestamp": "2026-04-14T22:03:50.185829",
-      "error_rate": 2.06,
-      "error_count": 137,
-      "msg_count": 6650
-    },
-    {
-      "timestamp": "2026-04-14T22:03:50.657622",
-      "error_rate": 2.06,
-      "error_count": 137,
-      "msg_count": 6650
-    },
-    {
-      "timestamp": "2026-04-14T23:03:56.000767",
-      "error_rate": 2.12,
-      "error_count": 143,
-      "msg_count": 6751
-    },
-    {
-      "timestamp": "2026-04-14T23:03:56.461749",
-      "error_rate": 2.12,
-      "error_count": 143,
-      "msg_count": 6751
-    },
-    {
-      "timestamp": "2026-04-14T23:03:56.855843",
-      "error_rate": 2.12,
-      "error_count": 143,
-      "msg_count": 6751
-    },
-    {
-      "timestamp": "2026-04-14T23:03:57.250754",
-      "error_rate": 2.12,
-      "error_count": 143,
-      "msg_count": 6751
-    },
-    {
-      "timestamp": "2026-04-14T23:03:57.730247",
-      "error_rate": 2.12,
-      "error_count": 143,
-      "msg_count": 6751
-    },
-    {
-      "timestamp": "2026-04-15T00:05:09.025295",
-      "error_rate": 2.09,
-      "error_count": 136,
-      "msg_count": 6515
-    },
-    {
-      "timestamp": "2026-04-15T00:05:09.547846",
-      "error_rate": 2.09,
-      "error_count": 136,
-      "msg_count": 6515
-    },
-    {
-      "timestamp": "2026-04-15T00:05:09.953918",
-      "error_rate": 2.09,
-      "error_count": 136,
-      "msg_count": 6515
-    },
-    {
-      "timestamp": "2026-04-15T00:05:10.365252",
-      "error_rate": 2.09,
-      "error_count": 136,
-      "msg_count": 6515
-    },
-    {
-      "timestamp": "2026-04-15T00:05:10.782560",
-      "error_rate": 2.09,
-      "error_count": 136,
-      "msg_count": 6515
-    },
-    {
-      "timestamp": "2026-04-15T01:04:51.355008",
-      "error_rate": 2.14,
-      "error_count": 140,
-      "msg_count": 6535
-    },
-    {
-      "timestamp": "2026-04-15T01:04:51.793383",
-      "error_rate": 2.14,
-      "error_count": 140,
-      "msg_count": 6535
-    },
-    {
-      "timestamp": "2026-04-15T01:04:52.194586",
-      "error_rate": 2.14,
-      "error_count": 140,
-      "msg_count": 6535
-    },
-    {
-      "timestamp": "2026-04-15T01:04:52.566200",
-      "error_rate": 2.14,
-      "error_count": 140,
-      "msg_count": 6535
-    },
-    {
-      "timestamp": "2026-04-15T01:04:53.061682",
-      "error_rate": 2.14,
-      "error_count": 140,
-      "msg_count": 6535
-    },
-    {
-      "timestamp": "2026-04-15T02:05:24.600851",
-      "error_rate": 2.19,
-      "error_count": 144,
-      "msg_count": 6580
-    },
-    {
-      "timestamp": "2026-04-15T02:05:25.116127",
-      "error_rate": 2.19,
-      "error_count": 144,
-      "msg_count": 6580
-    },
-    {
-      "timestamp": "2026-04-15T02:05:25.542092",
-      "error_rate": 2.19,
-      "error_count": 144,
-      "msg_count": 6580
-    },
-    {
-      "timestamp": "2026-04-15T02:05:25.934997",
-      "error_rate": 2.19,
-      "error_count": 144,
-      "msg_count": 6580
-    },
-    {
       "timestamp": "2026-04-15T02:05:26.418727",
       "error_rate": 2.19,
       "error_count": 144,
@@ -599,6 +449,156 @@
       "error_rate": 3.15,
       "error_count": 160,
       "msg_count": 5083
+    },
+    {
+      "timestamp": "2026-04-15T23:05:14.007362",
+      "error_rate": 3.07,
+      "error_count": 156,
+      "msg_count": 5081
+    },
+    {
+      "timestamp": "2026-04-15T23:05:14.445840",
+      "error_rate": 3.07,
+      "error_count": 156,
+      "msg_count": 5081
+    },
+    {
+      "timestamp": "2026-04-15T23:05:14.792654",
+      "error_rate": 3.07,
+      "error_count": 156,
+      "msg_count": 5081
+    },
+    {
+      "timestamp": "2026-04-15T23:05:15.116211",
+      "error_rate": 3.07,
+      "error_count": 156,
+      "msg_count": 5081
+    },
+    {
+      "timestamp": "2026-04-15T23:05:15.493552",
+      "error_rate": 3.07,
+      "error_count": 156,
+      "msg_count": 5081
+    },
+    {
+      "timestamp": "2026-04-16T00:04:31.177658",
+      "error_rate": 3.1,
+      "error_count": 159,
+      "msg_count": 5121
+    },
+    {
+      "timestamp": "2026-04-16T00:04:31.650899",
+      "error_rate": 3.1,
+      "error_count": 159,
+      "msg_count": 5121
+    },
+    {
+      "timestamp": "2026-04-16T00:04:32.003669",
+      "error_rate": 3.1,
+      "error_count": 159,
+      "msg_count": 5121
+    },
+    {
+      "timestamp": "2026-04-16T00:04:32.312111",
+      "error_rate": 3.1,
+      "error_count": 159,
+      "msg_count": 5121
+    },
+    {
+      "timestamp": "2026-04-16T00:04:32.691304",
+      "error_rate": 3.1,
+      "error_count": 159,
+      "msg_count": 5121
+    },
+    {
+      "timestamp": "2026-04-16T01:04:11.021724",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5136
+    },
+    {
+      "timestamp": "2026-04-16T01:04:11.470873",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5136
+    },
+    {
+      "timestamp": "2026-04-16T01:04:11.822817",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5136
+    },
+    {
+      "timestamp": "2026-04-16T01:04:12.128120",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5136
+    },
+    {
+      "timestamp": "2026-04-16T01:04:12.486057",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5136
+    },
+    {
+      "timestamp": "2026-04-16T02:03:49.423839",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5142
+    },
+    {
+      "timestamp": "2026-04-16T02:03:49.834185",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5142
+    },
+    {
+      "timestamp": "2026-04-16T02:03:50.184626",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5142
+    },
+    {
+      "timestamp": "2026-04-16T02:03:50.491412",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5142
+    },
+    {
+      "timestamp": "2026-04-16T02:03:50.844151",
+      "error_rate": 3.13,
+      "error_count": 161,
+      "msg_count": 5142
+    },
+    {
+      "timestamp": "2026-04-16T03:04:05.180788",
+      "error_rate": 3.15,
+      "error_count": 163,
+      "msg_count": 5168
+    },
+    {
+      "timestamp": "2026-04-16T03:04:05.682738",
+      "error_rate": 3.15,
+      "error_count": 163,
+      "msg_count": 5168
+    },
+    {
+      "timestamp": "2026-04-16T03:04:06.073647",
+      "error_rate": 3.15,
+      "error_count": 163,
+      "msg_count": 5168
+    },
+    {
+      "timestamp": "2026-04-16T03:04:06.428391",
+      "error_rate": 3.15,
+      "error_count": 163,
+      "msg_count": 5168
+    },
+    {
+      "timestamp": "2026-04-16T03:04:06.897925",
+      "error_rate": 3.15,
+      "error_count": 163,
+      "msg_count": 5168
     }
   ]
 }
