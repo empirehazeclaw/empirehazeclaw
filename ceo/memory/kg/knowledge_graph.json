@@ -8199,6 +8199,61 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-16T22:10:15.467765"
+    },
+    "Improvement_2026-04-16T23-04-00-140753_Investigate-and-fix-Opportunit": {
+      "id": "Improvement_2026-04-16T23-04-00-140753_Investigate-and-fix-Opportunit",
+      "type": "Improvement",
+      "name": "Investigate and fix Opportunity Scanner Daily failure",
+      "description": "Investigate and fix Opportunity Scanner Daily failure",
+      "validated": false,
+      "timestamp": "2026-04-16T23:04:00.140753",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-16T23:10:12.971088"
+    },
+    "Improvement_2026-04-17T00-07-09-089324_Fix-CEO-Weekly-Review:-check-e": {
+      "id": "Improvement_2026-04-17T00-07-09-089324_Fix-CEO-Weekly-Review:-check-e",
+      "type": "Improvement",
+      "name": "Fix CEO Weekly Review: check email sending and report generation",
+      "description": "Fix CEO Weekly Review: check email sending and report generation",
+      "validated": false,
+      "timestamp": "2026-04-17T00:07:09.089324",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-17T00:10:07.393524"
+    },
+    "Improvement_2026-04-17T01-04-41-469609_Investigate-and-fix-Cron-Watch": {
+      "id": "Improvement_2026-04-17T01-04-41-469609_Investigate-and-fix-Cron-Watch",
+      "type": "Improvement",
+      "name": "Investigate and fix Cron Watchdog failure",
+      "description": "Investigate and fix Cron Watchdog failure",
+      "validated": false,
+      "timestamp": "2026-04-17T01:04:41.469609",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-17T01:10:12.656390"
+    },
+    "Improvement_2026-04-17T02-04-02-140397_Fix-CEO-Weekly-Review:-check-e": {
+      "id": "Improvement_2026-04-17T02-04-02-140397_Fix-CEO-Weekly-Review:-check-e",
+      "type": "Improvement",
+      "name": "Fix CEO Weekly Review: check email sending and report generation",
+      "description": "Fix CEO Weekly Review: check email sending and report generation",
+      "validated": false,
+      "timestamp": "2026-04-17T02:04:02.140397",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-17T02:10:24.599312"
+    },
+    "Improvement_2026-04-17T03-05-29-929627_Investigate-and-fix-Opportunit": {
+      "id": "Improvement_2026-04-17T03-05-29-929627_Investigate-and-fix-Opportunit",
+      "type": "Improvement",
+      "name": "Investigate and fix Opportunity Scanner Daily failure",
+      "description": "Investigate and fix Opportunity Scanner Daily failure",
+      "validated": false,
+      "timestamp": "2026-04-17T03:05:29.929627",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-17T03:10:13.062876"
     }
   },
   "last_updated": "2026-04-13T19:03:51.819185",
@@ -45064,6 +45119,41 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-16T22:10:15.467893"
+    },
+    "625": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-16T23-04-00-140753_Investigate-and-fix-Opportunit",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-16T23:10:12.971269"
+    },
+    "626": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T00-07-09-089324_Fix-CEO-Weekly-Review:-check-e",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T00:10:07.393657"
+    },
+    "627": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T01-04-41-469609_Investigate-and-fix-Cron-Watch",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T01:10:12.656537"
+    },
+    "628": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T02-04-02-140397_Fix-CEO-Weekly-Review:-check-e",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T02:10:24.599410"
+    },
+    "629": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T03-05-29-929627_Investigate-and-fix-Opportunit",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T03:10:13.063018"
     }
   }
 }

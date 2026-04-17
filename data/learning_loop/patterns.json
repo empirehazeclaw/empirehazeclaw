@@ -160,7 +160,7 @@
       "success_count": 123,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8202339500000003,
+      "confidence": 0.6509999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:38:17.781163",
       "last_validated": "2026-04-16T01:04:12.507907",
@@ -168,7 +168,8 @@
       "context": {
         "source": "cross_pattern",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260413_164637",
@@ -592,6 +593,33 @@
         "source": "dynamic_signal",
         "script": null
       }
+    },
+    {
+      "title": "memory:\u2705 **Supervisor Cycle Complete",
+      "description": "\u2705 **Supervisor Cycle Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 **Autonomy Supervisor Cycle Complete",
+      "description": "\u2705 **Autonomy Supervisor Cycle Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 Supervisor Cycle Complete",
+      "description": "\u2705 Supervisor Cycle Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
     }
   ],
   "version": "1.0"

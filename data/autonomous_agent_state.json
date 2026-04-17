@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-04-16T22:03:15.077536",
+  "last_run": "2026-04-17T03:06:21.783885",
   "actions_taken": [],
   "last_issues": [],
   "last_results": [
@@ -11,7 +11,7 @@
     {
       "name": "Tasks",
       "ok": true,
-      "msg": "Tasks OK (lost=2, failed=3)"
+      "msg": "Tasks OK (lost=2, failed=12)"
     },
     {
       "name": "Disk",
@@ -30,8 +30,8 @@
     },
     {
       "name": "Crons",
-      "ok": true,
-      "msg": "Crons OK (0 errors)"
+      "ok": false,
+      "msg": "3 cron errors detected"
     }
   ],
   "last_actions": []

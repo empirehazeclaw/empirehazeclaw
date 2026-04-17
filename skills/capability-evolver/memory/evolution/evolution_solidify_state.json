@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776373512259",
-    "created_at": "2026-04-16T21:05:12.274Z",
+    "run_id": "run_1776395040287",
+    "created_at": "2026-04-17T03:04:00.302Z",
     "parent_event_id": "evt_1776373507444",
     "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
@@ -11,7 +11,7 @@
         "signals match gene.signals_match",
         "capsule trigger matches signals",
         "signals: evolution_stagnation_detected, stable_success_plateau",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.961",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.958",
         "drift_intensity: 0.500"
       ],
       "alternatives": []
@@ -22,7 +22,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776373512258",
+      "id": "mut_1776395040285",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -33,7 +33,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776373512258",
+    "mutation_id": "mut_1776395040285",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -65,15 +65,15 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "c7dee42248b5dbad1a78908712f5fd1d15a5d680",
+    "baseline_git_head": "b5e433695f36efcc229432a25b42cadfd45c35dc",
     "blast_radius_estimate": {
       "files": 10,
       "lines": 800
     },
     "strategy_policy": {
-      "name": "early-stabilize",
-      "label": "Early Stabilization",
-      "description": "First cycles. Prioritize fixing existing issues before innovating.",
+      "name": "innovate",
+      "label": "Innovation Focus",
+      "description": "System is stable. Maximize new features and capabilities.",
       "forceInnovate": true,
       "cautiousExecution": false,
       "highRiskGene": false,
@@ -81,7 +81,7 @@
       "failureStreak": 0,
       "blastRadiusMaxFiles": 10,
       "directives": [
-        "Base strategy: Early Stabilization (First cycles. Prioritize fixing existing issues before innovating.)",
+        "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
         "Force strategy shift: prefer innovate over repeating repair/optimize.",
         "Target max files for this cycle: 10."
       ]

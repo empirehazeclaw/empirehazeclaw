@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T23:05:12.032Z",
+  "updatedAt": "2026-04-17T03:39:13.315Z",
   "entries": {
     "memory:memory/ARCHIVE/2026-04-12.md:1:33": {
       "key": "memory:memory/ARCHIVE/2026-04-12.md:1:33",
@@ -9,22 +9,24 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "--- ## SESSION SAVE (21:04 UTC) — Before New Session ### 🚀 Today's Major Achievements (2026-04-12 Evening) #### Learning Loop System (NEW!) - Created `/SCRIPTS/automation/learning_loop.py` — Main loop with Collect → Analyze → Execute → Reflexion - Created `/SCRIPTS/automation/learning_collector.py` — Collects from sessions, crons, errors, KG - Created `/SCRIPTS/automation/learning_analyzer.py` — Finds patterns with confidence scoring + meta-learning weights - Created `/SCRIPTS/automation/learning_executor.py` — ACTUALLY applies improvements (adds to KG, creates fix files, logs) - Created `/SCRIPTS/automation/learning_feedback.py` — Integrates Nico's direct feedback into learning - **Met",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.8143226660615195,
+      "totalScore": 2.275801289809345,
       "maxScore": 0.766902884078621,
       "firstRecalledAt": "2026-04-13T21:28:20.428Z",
-      "lastRecalledAt": "2026-04-15T06:03:52.981Z",
+      "lastRecalledAt": "2026-04-17T03:39:13.315Z",
       "queryHashes": [
         "432408a5b866",
         "a829d4ebb8d5",
-        "9fbd8194aae0"
+        "9fbd8194aae0",
+        "9ffad005757d"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-14",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "meta-learning",
@@ -75,20 +77,22 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "1. Fixed CEO Weekly Review path: `scripts/weekly_review.py` → `SCRIPTS/tools/weekly_review.py` 2. Fixed Opportunity Scanner timeout: 60s → 300s 3. Learning: CLI tools on system can be used via exec, not just \"built-in\" tools ## Patterns Observed - Learning Loop improving consistently - Self-Improver helping identify improvement opportunities - System stability significantly better than earlier attempts --- _Learned today: \"If a tool exists on the system, use exec to call it — don't default to 'no facility' without trying.\"_",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2685606982700461,
+      "totalScore": 1.7241989638797874,
       "maxScore": 0.7526911433927649,
       "firstRecalledAt": "2026-04-13T21:28:20.428Z",
-      "lastRecalledAt": "2026-04-15T23:05:12.032Z",
+      "lastRecalledAt": "2026-04-17T03:39:13.315Z",
       "queryHashes": [
         "432408a5b866",
-        "a1d8096cbfa4"
+        "a1d8096cbfa4",
+        "9ffad005757d"
       ],
       "recallDays": [
         "2026-04-13",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "scripts/weekly-review.py",

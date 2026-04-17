@@ -1,0 +1,1 @@
+/home/clawbot/.openclaw/workspace/scripts/kg_lifecycle_manager.py

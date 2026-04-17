@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "profiles": {
+    "minimax:global": {
+      "type": "api_key",
+      "provider": "minimax",
+      "key": "sk-cp-eQ6DbkJtxCAkw_zYabMlyK1B-TOEXlS-imp3xTQBCspBcZJCRT9F6mIbXrGYt7FBHz6g-h3mlg0dOoazixpMxzz5VOCn5U--mp8HfRIYaYZl4TQcmTmeYHs"
+    },
+    "google:global": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "AIzaSyB0uzuhrrVlFCZbUUsWgKDQbxPJFxdB1gA"
+    }
+  }
+}

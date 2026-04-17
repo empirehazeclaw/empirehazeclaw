@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 121,
-  "score": 0.7643629743874077,
+  "iteration": 126,
+  "score": 0.7638855061770944,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -143,7 +143,12 @@
     0.7641304162478729,
     0.7642466953176403,
     0.7643629743874077,
-    0.7643629743874077
+    0.7643629743874077,
+    0.7843629743874078,
+    0.7643629743874077,
+    0.7639694070618264,
+    0.7638855061770944,
+    0.7638855061770944
   ],
   "patterns": [],
   "cross_pattern_hits": 50,
@@ -151,7 +156,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 139,
+  "novelty_injections": 144,
   "consecutive_failures": 0,
   "last_validation": null,
   "last_decay": "2026-04-14T10:38:45.192126",
@@ -163,7 +168,7 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Investigate and fix Cron Watchdog failure",
+  "last_validated_pattern": "Investigate and fix Opportunity Scanner Daily failure",
   "last_forced_novelty": "2026-04-16T00:04:31.673026",
   "recently_forced_novelty": true
 }
