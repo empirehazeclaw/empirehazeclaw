@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-04-17T21:10:55.996569",
+  "source": "eval_improver",
+  "type": "evaluation_improvement",
+  "tsr_stats": {
+    "current": 1.0,
+    "average": 0.8378421052631579,
+    "min": 0.763,
+    "max": 1.0,
+    "trend": "improving",
+    "entries": 19,
+    "target_gap": -0.19999999999999996
+  },
+  "task_type_analysis": [],
+  "failure_patterns": [],
+  "recommendations": [],
+  "state_file": "/home/clawbot/.openclaw/workspace/ceo/memory/evaluations/learning_loop_state.json"
+}

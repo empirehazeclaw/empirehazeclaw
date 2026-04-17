@@ -1,0 +1,124 @@
+{
+  "tsr_history": [
+    {
+      "timestamp": "2026-04-17T20:42:27.668523",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:42:29.858977",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:42:31.357652",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:42:37.111449",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:43:25.846513",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:43:32.948115",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:46:11.499889",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:46:14.197451",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:46:22.338394",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:48:48.422708",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T20:48:48.466686",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:07:03.433887",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:07:08.311214",
+      "rate": 0.763,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:08:32.655623",
+      "rate": 1.0,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:08:37.313995+00:00",
+      "rate": 1.0,
+      "sample_size": 17
+    },
+    {
+      "timestamp": "2026-04-17T21:08:48.653232",
+      "rate": 1.0,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:09:48.970445",
+      "rate": 1.0,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:09:56.247477",
+      "rate": 1.0,
+      "sample_size": 10
+    },
+    {
+      "timestamp": "2026-04-17T21:10:55.995064",
+      "rate": 1.0,
+      "sample_size": 10
+    }
+  ],
+  "task_type_stats": {
+    "health_check": {
+      "successes": 9,
+      "failures": 0,
+      "total": 9,
+      "success_rate": 1.0
+    },
+    "research": {
+      "successes": 2,
+      "failures": 0,
+      "total": 2,
+      "success_rate": 1.0
+    },
+    "learning_sync": {
+      "successes": 6,
+      "failures": 0,
+      "total": 6,
+      "success_rate": 1.0
+    }
+  },
+  "failure_patterns": {},
+  "last_updated": "2026-04-17T21:10:55.997006",
+  "tsr_trend": "improving",
+  "last_improvement": null,
+  "recommendations_generated": 3
+}

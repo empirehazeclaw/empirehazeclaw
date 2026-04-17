@@ -1,21 +1,21 @@
 # SHORT TERM — Aktuelle Session
 
-_Letzte Aktualisierung: 2026-04-17 03:09 UTC_
+_Letzte Aktualisierung: 2026-04-17 22:05 UTC_
 
 ---
 
 ## 🔄 CURRENT SESSION
 
-**Letzter Sync:** 2026-04-17T03:09:49.213215Z
+**Letzter Sync:** 2026-04-17T22:05:38.153651Z
 
 ### 📊 System Status
 | Metric | Value |
 |--------|-------|
-| KG Entities | 440 |
-| KG Relations | 622 |
+| KG Entities | 295 |
+| KG Relations | 640 |
 | Loop Score | 0.784 |
 | Active Crons | 0 |
-| Unprocessed Feedback | 30 |
+| Unprocessed Feedback | 0 |
 
 ### ⚠️ Bekannte Issues
 - 65 Lost Tasks (orphans, cannot cancel)
@@ -40,4 +40,4 @@ _Letzte Aktualisierung: 2026-04-17 03:09 UTC_
 ---
 
 *Short-term wird nach jeder Session automatisch upgedated.*
-*Letzte Änderung: 2026-04-17 03:09 UTC
+*Letzte Änderung: 2026-04-17 22:05 UTC

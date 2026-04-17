@@ -435,18 +435,97 @@
           "learning_signals": [
             "perf_bottleneck"
           ]
+        },
+        {
+          "at": "2026-04-17T06:03:46.354Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
+        },
+        {
+          "at": "2026-04-17T15:44:22.111Z",
+          "outcome": "failed",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "retryable": false,
+          "learning_signals": [
+            "problem:stagnation",
+            "action:innovate",
+            "risk:validation"
+          ]
+        },
+        {
+          "at": "2026-04-17T15:45:07.192Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
+        },
+        {
+          "at": "2026-04-17T20:06:48.038Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
+        },
+        {
+          "at": "2026-04-17T20:09:41.391Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
+        },
+        {
+          "at": "2026-04-17T20:20:31.973Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
         }
       ],
       "epigenetic_marks": [
         {
           "context": "linux/x64/v22.22.2",
-          "boost": 0.39999999999999997,
+          "boost": 0.5,
           "reason": "reinforced_by_success",
-          "created_at": "2026-04-16T21:05:07.571Z"
+          "created_at": "2026-04-17T20:20:31.973Z"
         }
       ],
       "schema_version": "1.6.0",
-      "asset_id": "sha256:4698b25386b3163f3c44c3c0b7a438bb7e17b91fb34aa6cd9a3a19bd080a2536"
+      "asset_id": "sha256:4698b25386b3163f3c44c3c0b7a438bb7e17b91fb34aa6cd9a3a19bd080a2536",
+      "anti_patterns": [
+        {
+          "at": "2026-04-17T15:44:22.111Z",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "learning_signals": [
+            "problem:stagnation",
+            "action:innovate",
+            "risk:validation"
+          ]
+        }
+      ]
     },
     {
       "type": "Gene",

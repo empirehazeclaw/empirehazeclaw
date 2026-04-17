@@ -1,150 +1,6 @@
 {
   "patterns": [
     {
-      "id": "error_reducer_error",
-      "description": "\ud83d\udd0d ERROR REDUCER \u2014 Real Error Analysis (v2)",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669064",
-      "last_validated": "2026-04-13T13:48:51.669075",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "analyzing_errors...",
-      "description": "\ud83d\udd0d Analyzing errors...",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669082",
-      "last_validated": "2026-04-13T13:48:51.669083",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "error_rate:_2.21%",
-      "description": "\ud83d\udcc8 Real Error Rate: 2.21%",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669087",
-      "last_validated": "2026-04-13T13:48:51.669088",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "total_errors:",
-      "description": "Total real errors: 75",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669091",
-      "last_validated": "2026-04-13T13:48:51.669091",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "error_breakdown:",
-      "description": "\ud83d\udea8 Error Breakdown:",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669094",
-      "last_validated": "2026-04-13T13:48:51.669095",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "error_tools:",
-      "description": "\ud83d\udd27 Top Error Tools:",
-      "error_type": "general_error",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669103",
-      "last_validated": "2026-04-13T13:48:51.669104",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "failure:_failed:",
-      "description": "Cron failure: \u26a0\ufe0f Failed: 4",
-      "error_type": "cron_failure",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669107",
-      "last_validated": "2026-04-13T14:21:02.770253",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "failure:_failed_jobs:",
-      "description": "Cron failure: \u274c FAILED JOBS:",
-      "error_type": "cron_failure",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669110",
-      "last_validated": "2026-04-13T13:48:51.669110",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
-      "id": "failure:_error:_message",
-      "description": "Cron failure: \u274c Error: `\u26a0\ufe0f \u2709\ufe0f Message failed`",
-      "error_type": "cron_failure",
-      "solution": null,
-      "validated": false,
-      "confidence": 0.40217849999999994,
-      "initial_confidence": 0.5,
-      "first_seen": "2026-04-13T13:48:51.669113",
-      "last_validated": "2026-04-13T13:48:51.669114",
-      "days_since_validation": 3,
-      "archived": false,
-      "source": "error_learning",
-      "access_count": 0,
-      "cross_pattern_hits": 0
-    },
-    {
       "id": "pattern_20260413_163817",
       "title": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "category": "general",
@@ -185,7 +41,7 @@
       "success_count": 236,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
       "last_validated": "2026-04-14T07:38:16.832396",
@@ -194,223 +50,7 @@
         "source": "forced_novelty",
         "script": null
       },
-      "days_since_validation": 2
-    },
-    {
-      "title": "memory:\u2705 WORKSPACE RESTRUCTURING COMPLETE",
-      "description": "\u2705 WORKSPACE RESTRUCTURING COMPLETE",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 PHASE 2 & 3 COMPLETE",
-      "description": "\u2705 PHASE 2 & 3 COMPLETE",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 PHASE 4 & 5 COMPLETE",
-      "description": "\u2705 PHASE 4 & 5 COMPLETE",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:VALID",
-      "description": "VALID",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Valid",
-      "description": "Valid",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:SUCCESS",
-      "description": "SUCCESS",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:passed",
-      "description": "passed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Success",
-      "description": "Success",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Fixed",
-      "description": "Fixed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Resolved",
-      "description": "Resolved",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 Full Cycle Complete",
-      "description": "\u2705 Full Cycle Complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 Gateway recovery check complete",
-      "description": "\u2705 Gateway recovery check complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 Continuous improver completed",
-      "description": "\u2705 Continuous improver completed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 \u2014 no restart needed. Logging check com",
-      "description": "\u2705 \u2014 no restart needed. Logging check complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:success",
-      "description": "success",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Working",
-      "description": "Working",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "log:gateway_recovery.log",
-      "description": "1 successes (healthy)",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "log:backup.log",
-      "description": "15 successes (healthy)",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:working",
-      "description": "working",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:valid",
-      "description": "valid",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Optimized",
-      "description": "Optimized",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:better",
-      "description": "better",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705: First automated run completed",
-      "description": "\u2705: First automated run completed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 Gateway health check passed \u2014 gateway ",
-      "description": "\u2705 Gateway health check passed \u2014 gateway is healthy. No action needed. System: [2026-04-12 16:15:46 UTC] \u2705 Gateway recovery check complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260414_074342",
@@ -425,7 +65,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T07:43:42.701457",
       "last_validated": "2026-04-14T07:43:42.701460",
@@ -434,7 +74,7 @@
         "source": "research",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260414_125308",
@@ -450,7 +90,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:53:08.664404",
       "last_validated": "2026-04-14T12:53:08.664408",
@@ -459,7 +99,7 @@
         "source": "debug",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260414_125502",
@@ -474,7 +114,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:02.790816",
       "last_validated": "2026-04-14T12:55:02.790820",
@@ -483,7 +123,7 @@
         "source": "cross_pattern",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260414_125503",
@@ -498,7 +138,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:03.870281",
       "last_validated": "2026-04-14T12:55:03.870284",
@@ -507,7 +147,7 @@
         "source": "issue",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260414_125505",
@@ -522,7 +162,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:05.010555",
       "last_validated": "2026-04-14T12:55:05.010558",
@@ -531,16 +171,7 @@
         "source": "research",
         "script": null
       },
-      "days_since_validation": 2
-    },
-    {
-      "title": "memory:\u2705 **Completed",
-      "description": "\u2705 **Completed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260416_155831",
@@ -558,7 +189,7 @@
       "success_count": 7,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.95,
+      "confidence": 0.6509999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-16T15:58:31.046647",
       "last_validated": "2026-04-16T22:03:48.693245",
@@ -566,7 +197,8 @@
       "context": {
         "source": "dynamic_signal",
         "script": null
-      }
+      },
+      "days_since_validation": 1
     },
     {
       "id": "pattern_20260416_190437",
@@ -584,7 +216,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.7,
+      "confidence": 0.6509999999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-16T19:04:37.332924",
       "last_validated": "2026-04-16T19:04:37.332928",
@@ -592,7 +224,43 @@
       "context": {
         "source": "dynamic_signal",
         "script": null
+      },
+      "days_since_validation": 1
+    },
+    {
+      "id": "pattern_20260417_160345",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "category": "hypothesis_kg_quality",
+      "error_signature": [
+        "reduce",
+        "orphans:",
+        "relations",
+        "disconnected",
+        "entities"
+      ],
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
+      "success_count": 8,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.95,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-17T16:03:45.137210",
+      "last_validated": "2026-04-17T22:05:38.102676",
+      "error_type": "kg_quality",
+      "context": {
+        "source": "dynamic_signal",
+        "script": null
       }
+    },
+    {
+      "title": "memory:Valid",
+      "description": "Valid",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
     },
     {
       "title": "memory:\u2705 **Supervisor Cycle Complete",
@@ -615,6 +283,51 @@
     {
       "title": "memory:\u2705 Supervisor Cycle Complete",
       "description": "\u2705 Supervisor Cycle Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:passed",
+      "description": "passed",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:success",
+      "description": "success",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:valid",
+      "description": "valid",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 complete",
+      "description": "\u2705 complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 13 Events, letzter: evolver_completed",
+      "description": "\u2705 13 Events, letzter: evolver_completed",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",

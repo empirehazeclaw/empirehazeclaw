@@ -1,0 +1,61 @@
+{
+  "type": "data_agent.completed",
+  "source": "data_agent",
+  "timestamp": "2026-04-17T20:30:01.847501",
+  "data": {
+    "timestamp": "2026-04-17T20:30:01.806064",
+    "signals_collected": 0,
+    "patterns_found": 0,
+    "metrics_updated": true,
+    "kg_maintained": true,
+    "metrics": {
+      "timestamp": "2026-04-17T20:30:01.808047",
+      "learning_loop_score": 0.7900529236713736,
+      "kg_entities": 280,
+      "kg_relations": 638,
+      "kg_orphan_rate": 0.02142857142857143,
+      "system_health": "healthy"
+    },
+    "kg_maintenance": {
+      "timestamp": "2026-04-17T20:30:01.845790",
+      "orphans_found": 6,
+      "orphans_cleaned": 0,
+      "relations_fixed": 0,
+      "entity_types": {
+        "business": 1,
+        "product": 1,
+        "usecase": 1,
+        "system": 5,
+        "marketing": 2,
+        "learning": 1,
+        "infrastructure": 2,
+        "domain": 1,
+        "sales": 1,
+        "operations": 1,
+        "concept": 18,
+        "topic": 42,
+        "subtopic": 13,
+        "note": 14,
+        "skill": 6,
+        "person": 1,
+        "agent": 1,
+        "project": 1,
+        "pattern": 6,
+        "script": 2,
+        "reflection": 1,
+        "metrics": 2,
+        "category": 7,
+        "knowledge": 1,
+        "research": 19,
+        "success_pattern": 19,
+        "error_pattern": 20,
+        "improvement": 7,
+        "LearningPattern": 19,
+        "Improvement": 65
+      },
+      "orphan_pct": 0.02142857142857143,
+      "needs_cleanup": false,
+      "recommendation": "Orphan rate 2.1% within acceptable range"
+    }
+  }
+}

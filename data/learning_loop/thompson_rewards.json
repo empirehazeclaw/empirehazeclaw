@@ -1,0 +1,22 @@
+{
+  "test_category": {
+    "successes": 2,
+    "failures": 1
+  },
+  "general": {
+    "successes": 2,
+    "failures": 1
+  },
+  "memory_analysis": {
+    "successes": 2,
+    "failures": 1
+  },
+  "hypothesis_cron_health": {
+    "successes": 2,
+    "failures": 1
+  },
+  "error": {
+    "successes": 2,
+    "failures": 1
+  }
+}

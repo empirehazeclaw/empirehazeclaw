@@ -43,7 +43,7 @@ _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
 |-----------|--------|------|
 | OpenClaw Gateway | ✅ 2026.4.5 | Port 18789 |
 | Telegram | ✅ | Bot Token: 8397...oH9Y |
-| MetaClaw | ✅ | Port 30000, skills_only mode |
+| MetaClaw | ❌ REMOVED | 2026-04-17 |
 | LCM Plugin | ✅ | threshold 0.75 |
 | Stripe | ✅ | Auto-Fulfillment |
 | MiniMax | ✅ | M2.7 Model |
@@ -89,10 +89,7 @@ _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
 ```
 OpenClaw Gateway (:18789)
 ├── Telegram Channel
-├── MetaClaw Proxy (:30000) → MiniMax M2.7
-├── LCM Plugin (Compaction)
-├── Memory System (SQLite + Files)
-└── 6 Agents: CEO, Security, Data, Research, Builder, QC
+└── Memory System (SQLite + Files)
 ```
 
 ---
@@ -104,8 +101,8 @@ OpenClaw Gateway (:18789)
 | /home/clawbot/.openclaw/workspace/ | Main workspace |
 | /home/clawbot/.openclaw/secrets/ | API Keys (600 permissions) |
 | /home/clawbot/.openclaw/memory/ | Memory Brain |
-| /home/clawbot/MetaClaw/ | MetaClaw installation |
-| /home/clawbot/.metaclaw/skills/ | MetaClaw Skills (36 geladen) |
+| /home/clawbot/MetaClaw/ | ❌ REMOVED 2026-04-17 |
+| /home/clawbot/.metaclaw/skills/ | ❌ REMOVED 2026-04-17 |
 
 ---
 

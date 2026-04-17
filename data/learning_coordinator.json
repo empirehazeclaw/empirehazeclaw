@@ -1,131 +1,28 @@
 {
-  "runs": [
-    {
-      "timestamp": "2026-04-14T18:05:03.948460",
-      "phase": "system_check",
-      "success": true,
-      "notes": "[]"
-    },
-    {
-      "timestamp": "2026-04-14T18:05:07.231386",
-      "phase": "research",
-      "success": true,
-      "notes": "2 hypotheses"
-    },
-    {
-      "timestamp": "2026-04-14T18:05:08.153208",
-      "phase": "quality",
-      "success": true,
-      "notes": "2 issues"
-    },
-    {
-      "timestamp": "2026-04-14T18:05:08.448728",
-      "phase": "improvement",
-      "success": true,
-      "notes": "3 applied"
-    },
-    {
-      "timestamp": "2026-04-14T18:05:08.521957",
-      "phase": "learning",
-      "success": true,
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-14T18:05:00Z",
-      "status": "OK",
-      "system_check": "pass",
-      "hypotheses": 2,
-      "issues": [
-        {
-          "level": "HIGH",
-          "msg": "Self-Eval score low: 68/100"
-        },
-        {
-          "level": "MEDIUM",
-          "msg": "Quality \u00fcber Quantit\u00e4t: 18/100"
-        }
-      ],
-      "improvements_selected": 3,
-      "improvements_executed": 2,
-      "duration_s": 4.6
-    },
-    {
-      "timestamp": "2026-04-15T09:07:39.567197",
-      "phase": "system_check",
-      "success": true,
-      "notes": "[]"
-    },
-    {
-      "timestamp": "2026-04-15T09:07:40.255388",
-      "phase": "research",
-      "success": true,
-      "notes": "2 hypotheses"
-    },
-    {
-      "timestamp": "2026-04-15T09:07:41.240248",
-      "phase": "quality",
-      "success": true,
-      "notes": "2 issues"
-    },
-    {
-      "timestamp": "2026-04-15T09:07:41.529677",
-      "phase": "improvement",
-      "success": true,
-      "notes": "3 applied"
-    },
-    {
-      "timestamp": "2026-04-15T09:07:41.592585",
-      "phase": "learning",
-      "success": true,
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-16T18:06:56.308383",
-      "phase": "system_check",
-      "success": true,
-      "notes": "[]"
-    },
-    {
-      "timestamp": "2026-04-16T18:07:18.862882",
-      "phase": "research",
-      "success": true,
-      "notes": "2 hypotheses"
-    },
-    {
-      "timestamp": "2026-04-16T18:07:19.659811",
-      "phase": "quality",
-      "success": true,
-      "notes": "2 issues"
-    },
-    {
-      "timestamp": "2026-04-16T18:07:19.941875",
-      "phase": "improvement",
-      "success": true,
-      "notes": "3 applied"
-    },
-    {
-      "timestamp": "2026-04-16T18:07:20.001459",
-      "phase": "learning",
-      "success": true,
-      "notes": ""
-    }
-  ],
-  "last_full_cycle": "2026-04-16T18:07:20.001472",
-  "token_usage": [
-    {
-      "timestamp": "2026-04-15T09:06:43.465621",
-      "task": "innovation_research",
-      "tokens_in": 6000,
-      "tokens_out": 4500,
-      "total": 10500
-    },
-    {
-      "timestamp": "2026-04-15T09:06:43.742285",
-      "task": "self_eval",
-      "tokens_in": 800,
-      "tokens_out": 400,
-      "total": 1200
-    }
-  ]
+  "timestamp": "2026-04-17T18:05:00Z",
+  "duration_seconds": 4.7,
+  "system_check": "pass",
+  "research": {
+    "hypotheses_generated": 2,
+    "actionable": 2,
+    "integrated_to_kg": true
+  },
+  "quality_gates": {
+    "issues": [
+      {"level": "HIGH", "message": "Self-Eval score low: 33/100"},
+      {"level": "MEDIUM", "message": "⚠️ Quality über Quantität: 0/100"},
+      {"level": "MEDIUM", "message": "⚠️ Wissen & Lernen: 0/100"}
+    ]
+  },
+  "improvements": {
+    "total": 3,
+    "validated": 3,
+    "list": [
+      "Self-Evaluation Improvement",
+      "Apply Self Improvement pattern",
+      "Apply Autonomous Learning pattern"
+    ]
+  },
+  "learning_tracked": true,
+  "status": "completed"
 }
-{"timestamp":"2026-04-16T18:06:00Z","cycle":3,"duration":23.7,"system_check":"OK","research":{"hypotheses":2,"status":"OK"},"quality":{"issues":2,"high":"Self-Eval score low: 61/100","medium":"Quality über Quantität: 0/100"},"improvements":{"selected":3,"executed":3,"status":"OK"},"learning":"OK","meta_improvement":"skipped (every 5 cycles)"}

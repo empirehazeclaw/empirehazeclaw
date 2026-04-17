@@ -90,6 +90,11 @@
       "timestamp": "2026-04-16T18:07:19.717003",
       "script": "kg_updater",
       "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-17T18:05:42.757017",
+      "script": "decision_tracker_integration",
+      "reason": "test_failed"
     }
   ]
 }

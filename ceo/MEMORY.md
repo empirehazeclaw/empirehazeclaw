@@ -1,6 +1,6 @@
 # MEMORY.md — Sir HazeClaw Core Memory
 
-**Letzte Aktualisierung:** 2026-04-16 21:07 UTC
+**Letzte Aktualisierung:** 2026-04-17 20:36 UTC
 **Struktur:** Memory Blocks (nicht flach)
 
 ---
@@ -26,10 +26,55 @@ Key Facts:
 - Gateway: OpenClaw 2026.4.12 | Port 18789
 - Model: MiniMax M2.7
 - Workspace: /home/clawbot/.openclaw/workspace/ceo/
-- Scripts: 55 active in /workspace/scripts/
-- Crons: 51 total (27 enabled)
-- KG: ~360 entities, ~520 relations
+- Scripts: 200 total (100 /workspace/scripts + 100 /workspace/SCRIPTS/automation)
+- Crons: 26 active
+- KG: 280 entities, 638 relations (learning entities use type="learning")
+- Learning: 9 valid patterns, score=0.763
+- Skills Created Today: 6
 - Node.js: v22.22.2
+```
+
+### 🟢 KG LEARNING INTEGRATOR (2026-04-17)
+```
+Script: scripts/kg_learning_integrator.py
+Purpose: Bridges evaluation feedback → Knowledge Graph
+Usage:
+  --sync      Sync learnings from learning_loop_signal.json to KG
+  --query <t> Query learnings by type (performance_gap, antipattern, etc.)
+  --recent    Show most recently accessed learnings
+  --list      List all learnings grouped by type
+Signal: memory/evaluations/learning_loop_signal.json
+KG Entity Type: "learning"
+  Properties: learning_type, priority, observation, action, timestamp, source
+Relations added: "learned_from" (entity → source)
+
+Currently synced:
+  - performance_gap: Task success 76.3% (target 80%+)
+  - system_health: Memory is clean
+  - antipattern (filler_words): SOUL.md has filler words issue
+```
+
+### 🟣 PHASE 6 — Advanced Autonomy COMPLETED (2026-04-17)
+```
+5 Areas from Master Plan All Complete:
+| Phase | Area | Status | Script |
+|-------|------|--------|--------|
+| 6.1 | Session Lifecycle | ✅ Complete | session_context_analyzer.py |
+| 6.2 | Prompt Evolution | ✅ Complete | prompt_evolution_engine.py |
+| 6.3 | Evaluation Loop | ✅ Complete | evaluation_framework.py |
+| 6.4 | Memory Consolidation | ✅ Complete | memory_consolidator_v2.py |
+| 6.5 | Multi-Agent Orchestration | ✅ Complete | multi_agent_orchestrator.py |
+
+Key Findings:
+- Session: Clean (90% relevance)
+- Prompts: 10 inventoried, benchmark 100%
+- Evaluation: Task Success 76.3%, Error 3.0%
+- Memory: 87 files clean, no duplicates
+- Multi-Agent: Health/Research/Data agents found
+
+Backups:
+- backups/full_backup_20260417_184309/
+- backups/phase6_pre_work/
 ```
 
 ### 🟢 SYSTEM INTEGRATION (2026-04-16)
@@ -57,24 +102,33 @@ Backups:
 
 ### 🔴 ACTIVE ISSUES
 ```
-Label: Known Issues — Last Updated 2026-04-14
-Cron Errors (7):
-- KG Access Updater: Timeout (2x consecutive)
-- REM Feedback Integration: Telegram @heartbeat not found (2x)
-- GitHub Backup: Timeout
-- Token Budget Tracker: Timeout
-- CEO Weekly Review: Message failed
-- Opportunity Scanner: Message failed
-- Cron Watchdog: Timeout
+Label: Known Issues — Last Updated 2026-04-17 19:50 UTC
 
-Other:
-- 65 Lost Tasks (orphans from Cron Error Healer — cannot cancel)
-- Opportunity Scanner script works, cron delivery fails
+CRON ERRORS (7 legacy — mostly STALE):
+- KG Access Updater: Was Timeout → NOW OK (last run 4h ago)
+- REM Feedback Integration: Cron NOT FOUND (deleted)
+- GitHub Backup: Was Timeout → NOW OK (last run 21h ago)
+- Token Budget Tracker: Was Timeout → NOW OK (last run 20h ago)
+- CEO Weekly Review: Was "Message failed" → NOW OK (last run 1d ago)
+- Opportunity Scanner: Cron NOT FOUND (deleted)
+- Cron Watchdog: Was Timeout → NOW merged into System Maintenance Cron
+
+SECURITY ISSUES (Manual Action Required):
+- 6 API Keys pending rotation (Buffer, Leonardo, Telegram, etc.)
+- Buffer Token: INVALID (archived script, not active)
+- Leonardo AI: INVALID (archived script, not active)
+
+SYSTEM HEALTH (2026-04-17):
+- All 25 active Crons: OK
+- Task Success Rate: 76.3% (needs improvement to 80%+)
+- Multi-Agent System: NEW (Executor just created, needs monitoring)
 
 Resolved This Session:
 - Voice Note False Trigger: TOOLS.md korrigiert
 - Over-active inference: SOUL.md "Assume no input" Regel
 - Proactive code commit: AGENTS.md "NEVER without explicit approval"
+- Agent Executor Missing: agent_executor.py created + cron added
+- Cron Consolidation: 29 → 25 (4 less, redundant crons merged)
 ```
 
 ### 🟡 RECENT LEARNINGS

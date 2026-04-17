@@ -44,14 +44,19 @@ Add whatever helps you do your job. This is your cheat sheet.
 ## 🎤 Voice / Audio
 
 ### Whisper (Speech-to-Text)
-- **Installed:** `/home/clawbot/.local/bin/whisper`
-- **Usage:** 
-  ```bash
-  whisper "<audio-file>.ogg" --model base --language German --output_dir /tmp
-  ```
-- **Output:** `*.txt`, `*.json`, `*.srt` files in /tmp
-- **Model size:** Use `base` for speed, `medium` for accuracy (1.4GB download if not cached)
-- **Note:** Transcribe ONLY when an audio file is actually received. Do NOT proactively look for or speculate about voice notes — wait for the file to arrive first.
+**Schnellste Option:** `faster-whisper` mit `tiny` model
+```python
+from faster_whisper import WhisperModel
+model = WhisperModel('tiny', device='cpu', compute_type='int8')
+segments, info = model.transcribe('<file>.ogg', language='de')
+text = ''.join([s.text for s in list(segments)])
+```
+- Load: ~0.6s | Transcribe: ~1s | **Total: ~2s** (30x schneller als original whisper)
+
+**Alternativ:** whisper CLI (langsamer)
+```bash
+whisper "<audio-file>.ogg" --model base --language German --output_dir /tmp
+```
 
 ### TTS
 See TTS tool — configured and working.

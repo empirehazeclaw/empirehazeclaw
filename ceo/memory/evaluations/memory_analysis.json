@@ -1,0 +1,793 @@
+{
+  "timestamp": "2026-04-17T19:04:38.043759",
+  "files_scanned": 87,
+  "total_size_kb": 1596.5068359375,
+  "duplicates": [],
+  "stale_facts": [],
+  "recommendations": [],
+  "files": [
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/heartbeat-state.json",
+      "rel_path": "heartbeat-state.json",
+      "size": 733,
+      "size_kb": 0.7158203125,
+      "mtime": "2026-04-17T15:44:22.040602",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-15.md",
+      "rel_path": "2026-04-15.md",
+      "size": 22701,
+      "size_kb": 22.1689453125,
+      "mtime": "2026-04-15T21:05:23.486447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-17-archive-scripts-cleanup.md",
+      "rel_path": "2026-04-17-archive-scripts-cleanup.md",
+      "size": 7372,
+      "size_kb": 7.19921875,
+      "mtime": "2026-04-17T06:37:27.699821",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-14-memory-sanitizer-v2.md",
+      "rel_path": "2026-04-14-memory-sanitizer-v2.md",
+      "size": 5256,
+      "size_kb": 5.1328125,
+      "mtime": "2026-04-15T21:05:23.485447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/SYSTEM_AUDIT_2026-04-14.md",
+      "rel_path": "SYSTEM_AUDIT_2026-04-14.md",
+      "size": 5451,
+      "size_kb": 5.3232421875,
+      "mtime": "2026-04-15T21:05:23.487447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/daily_summary_2026-04-17.md",
+      "rel_path": "daily_summary_2026-04-17.md",
+      "size": 3043,
+      "size_kb": 2.9716796875,
+      "mtime": "2026-04-17T16:27:27.612922",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/INDEX.md",
+      "rel_path": "INDEX.md",
+      "size": 3172,
+      "size_kb": 3.09765625,
+      "mtime": "2026-04-17T15:44:22.039603",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/goal_alerts_state.json",
+      "rel_path": "goal_alerts_state.json",
+      "size": 275,
+      "size_kb": 0.2685546875,
+      "mtime": "2026-04-17T15:05:07.304035",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-17.md",
+      "rel_path": "2026-04-17.md",
+      "size": 15793,
+      "size_kb": 15.4228515625,
+      "mtime": "2026-04-17T18:44:41.814509",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-14.md",
+      "rel_path": "2026-04-14.md",
+      "size": 913,
+      "size_kb": 0.8916015625,
+      "mtime": "2026-04-15T21:05:23.485447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-17-edge-tts-german-voices.md",
+      "rel_path": "2026-04-17-edge-tts-german-voices.md",
+      "size": 10179,
+      "size_kb": 9.9404296875,
+      "mtime": "2026-04-17T12:24:50.792182",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/goals.json",
+      "rel_path": "goals.json",
+      "size": 2478,
+      "size_kb": 2.419921875,
+      "mtime": "2026-04-17T18:25:35.683468",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-15-night-gateway-status.md",
+      "rel_path": "2026-04-15-night-gateway-status.md",
+      "size": 8478,
+      "size_kb": 8.279296875,
+      "mtime": "2026-04-15T21:05:23.485447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-15-system-status.md",
+      "rel_path": "2026-04-15-system-status.md",
+      "size": 9129,
+      "size_kb": 8.9150390625,
+      "mtime": "2026-04-15T20:01:55.432671",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-13.md",
+      "rel_path": "2026-04-13.md",
+      "size": 13932,
+      "size_kb": 13.60546875,
+      "mtime": "2026-04-15T21:05:23.485447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/2026-04-16.md",
+      "rel_path": "2026-04-16.md",
+      "size": 2908,
+      "size_kb": 2.83984375,
+      "mtime": "2026-04-16T21:41:38.722915",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/procedural/rules.md",
+      "rel_path": "procedural/rules.md",
+      "size": 1487,
+      "size_kb": 1.4521484375,
+      "mtime": "2026-04-15T21:05:23.496447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/procedural/skills.md",
+      "rel_path": "procedural/skills.md",
+      "size": 2041,
+      "size_kb": 1.9931640625,
+      "mtime": "2026-04-15T21:05:23.497447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/procedural/workflows.md",
+      "rel_path": "procedural/workflows.md",
+      "size": 1489,
+      "size_kb": 1.4541015625,
+      "mtime": "2026-04-15T21:05:23.497447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/kg/knowledge_graph.json",
+      "rel_path": "kg/knowledge_graph.json",
+      "size": 1113376,
+      "size_kb": 1087.28125,
+      "mtime": "2026-04-17T19:03:25.125407",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/prompts/prompt_evolution_state.json",
+      "rel_path": "prompts/prompt_evolution_state.json",
+      "size": 8464,
+      "size_kb": 8.265625,
+      "mtime": "2026-04-17T18:02:48.305619",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/prompts/prompt_inventory.json",
+      "rel_path": "prompts/prompt_inventory.json",
+      "size": 3922,
+      "size_kb": 3.830078125,
+      "mtime": "2026-04-17T18:54:46.310320",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/prompts/benchmark_results.json",
+      "rel_path": "prompts/benchmark_results.json",
+      "size": 734,
+      "size_kb": 0.716796875,
+      "mtime": "2026-04-17T18:54:49.816336",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/evaluations/antipattern_tests.json",
+      "rel_path": "evaluations/antipattern_tests.json",
+      "size": 347,
+      "size_kb": 0.3388671875,
+      "mtime": "2026-04-17T18:57:54.217138",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/evaluations/lnew_metrics.json",
+      "rel_path": "evaluations/lnew_metrics.json",
+      "size": 618,
+      "size_kb": 0.603515625,
+      "mtime": "2026-04-17T18:57:24.053013",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/affective_state.json",
+      "rel_path": "autonomy/affective_state.json",
+      "size": 2615,
+      "size_kb": 2.5537109375,
+      "mtime": "2026-04-15T21:05:23.488447",
+      "age_days": 1,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/cycle_log.md",
+      "rel_path": "autonomy/cycle_log.md",
+      "size": 155,
+      "size_kb": 0.1513671875,
+      "mtime": "2026-04-16T22:59:29.339577",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/action_log.md",
+      "rel_path": "autonomy/action_log.md",
+      "size": 1922,
+      "size_kb": 1.876953125,
+      "mtime": "2026-04-15T21:05:23.487447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/supervisor_latest.json",
+      "rel_path": "autonomy/supervisor_latest.json",
+      "size": 2783,
+      "size_kb": 2.7177734375,
+      "mtime": "2026-04-17T19:03:47.334486",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/error_log.md",
+      "rel_path": "autonomy/error_log.md",
+      "size": 2563,
+      "size_kb": 2.5029296875,
+      "mtime": "2026-04-15T21:05:23.488447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/autonomy/supervisor_state.json",
+      "rel_path": "autonomy/supervisor_state.json",
+      "size": 50,
+      "size_kb": 0.048828125,
+      "mtime": "2026-04-17T19:03:47.323486",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/intention_engine_plan.md",
+      "rel_path": "notes/intention_engine_plan.md",
+      "size": 2806,
+      "size_kb": 2.740234375,
+      "mtime": "2026-04-17T14:46:42.491152",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/SYSTEM_IMPROVEMENTS_RESEARCH.md",
+      "rel_path": "notes/SYSTEM_IMPROVEMENTS_RESEARCH.md",
+      "size": 7373,
+      "size_kb": 7.2001953125,
+      "mtime": "2026-04-17T18:35:10.271953",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/self_improvement_audit_plan.md",
+      "rel_path": "notes/self_improvement_audit_plan.md",
+      "size": 2116,
+      "size_kb": 2.06640625,
+      "mtime": "2026-04-17T15:32:24.965351",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/skill_opportunities.md",
+      "rel_path": "notes/skill_opportunities.md",
+      "size": 2357,
+      "size_kb": 2.3017578125,
+      "mtime": "2026-04-17T16:33:16.916724",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/SYSTEM_IMPROVEMENT_PHASE2_DOC.md",
+      "rel_path": "notes/SYSTEM_IMPROVEMENT_PHASE2_DOC.md",
+      "size": 2915,
+      "size_kb": 2.8466796875,
+      "mtime": "2026-04-17T18:21:50.237936",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/proactive_scanner_plan.md",
+      "rel_path": "notes/proactive_scanner_plan.md",
+      "size": 2012,
+      "size_kb": 1.96484375,
+      "mtime": "2026-04-17T14:08:55.494635",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/2026-03-29-test-note.md",
+      "rel_path": "notes/2026-03-29-test-note.md",
+      "size": 465,
+      "size_kb": 0.4541015625,
+      "mtime": "2026-04-17T15:44:22.044603",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/memory_optimization_plan.md",
+      "rel_path": "notes/memory_optimization_plan.md",
+      "size": 1761,
+      "size_kb": 1.7197265625,
+      "mtime": "2026-04-17T15:32:24.965351",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/weekly_review_2026-04-21_PREPARED.md",
+      "rel_path": "notes/weekly_review_2026-04-21_PREPARED.md",
+      "size": 2029,
+      "size_kb": 1.9814453125,
+      "mtime": "2026-04-17T16:28:23.874048",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/2026-03-29-final-test-note.md",
+      "rel_path": "notes/2026-03-29-final-test-note.md",
+      "size": 377,
+      "size_kb": 0.3681640625,
+      "mtime": "2026-04-17T15:44:22.044603",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/SYSTEM_IMPROVEMENT_PHASE2_3_COMPLETE.md",
+      "rel_path": "notes/SYSTEM_IMPROVEMENT_PHASE2_3_COMPLETE.md",
+      "size": 5114,
+      "size_kb": 4.994140625,
+      "mtime": "2026-04-17T18:28:55.751970",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/bug_knowledge.json",
+      "rel_path": "notes/bug_knowledge.json",
+      "size": 70,
+      "size_kb": 0.068359375,
+      "mtime": "2026-04-16T16:17:28.232968",
+      "age_days": 1,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/learnings_2026_w16.md",
+      "rel_path": "notes/learnings_2026_w16.md",
+      "size": 2966,
+      "size_kb": 2.896484375,
+      "mtime": "2026-04-17T15:56:56.841970",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/SYSTEM_IMPROVEMENT_PHASE6_PLAN.md",
+      "rel_path": "notes/SYSTEM_IMPROVEMENT_PHASE6_PLAN.md",
+      "size": 9569,
+      "size_kb": 9.3447265625,
+      "mtime": "2026-04-17T18:42:49.359200",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/intention_engine_test_report.md",
+      "rel_path": "notes/intention_engine_test_report.md",
+      "size": 3868,
+      "size_kb": 3.77734375,
+      "mtime": "2026-04-17T15:05:26.382102",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/evolver_fixes_20260413.md",
+      "rel_path": "notes/evolver_fixes_20260413.md",
+      "size": 3759,
+      "size_kb": 3.6708984375,
+      "mtime": "2026-04-15T21:05:23.496447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/weekly_review_template.md",
+      "rel_path": "notes/weekly_review_template.md",
+      "size": 1250,
+      "size_kb": 1.220703125,
+      "mtime": "2026-04-17T15:24:10.950792",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/multi_agent_architecture_design.md",
+      "rel_path": "notes/multi_agent_architecture_design.md",
+      "size": 10482,
+      "size_kb": 10.236328125,
+      "mtime": "2026-04-17T18:19:00.143545",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/system_improvement_master_plan.md",
+      "rel_path": "notes/system_improvement_master_plan.md",
+      "size": 10684,
+      "size_kb": 10.43359375,
+      "mtime": "2026-04-17T17:55:29.435197",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/discord_voice_integration_plan.md",
+      "rel_path": "notes/discord_voice_integration_plan.md",
+      "size": 6111,
+      "size_kb": 5.9677734375,
+      "mtime": "2026-04-17T17:33:04.547775",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/SYSTEM_IMPROVEMENT_PHASE1_DOC.md",
+      "rel_path": "notes/SYSTEM_IMPROVEMENT_PHASE1_DOC.md",
+      "size": 6768,
+      "size_kb": 6.609375,
+      "mtime": "2026-04-17T18:06:35.189318",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/notes/learning_loop_optimization_plan.md",
+      "rel_path": "notes/learning_loop_optimization_plan.md",
+      "size": 1591,
+      "size_kb": 1.5537109375,
+      "mtime": "2026-04-17T15:32:24.965351",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/episodes/timeline.md",
+      "rel_path": "episodes/timeline.md",
+      "size": 4091,
+      "size_kb": 3.9951171875,
+      "mtime": "2026-04-17T19:03:25.046406",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/long_term/patterns.md",
+      "rel_path": "long_term/patterns.md",
+      "size": 1587,
+      "size_kb": 1.5498046875,
+      "mtime": "2026-04-17T15:44:22.043602",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/long_term/preferences.md",
+      "rel_path": "long_term/preferences.md",
+      "size": 2829,
+      "size_kb": 2.7626953125,
+      "mtime": "2026-04-15T21:05:23.493447",
+      "age_days": 1,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/long_term/facts.md",
+      "rel_path": "long_term/facts.md",
+      "size": 2793,
+      "size_kb": 2.7275390625,
+      "mtime": "2026-04-17T18:32:17.102493",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-13.emb.json",
+      "rel_path": "semantic/2026-04-13.emb.json",
+      "size": 10736,
+      "size_kb": 10.484375,
+      "mtime": "2026-04-17T12:31:00.668790",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/ai_doping_research.emb.json",
+      "rel_path": "semantic/ai_doping_research.emb.json",
+      "size": 10758,
+      "size_kb": 10.505859375,
+      "mtime": "2026-04-17T12:31:01.205792",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/tomorrow_plan.emb.json",
+      "rel_path": "semantic/tomorrow_plan.emb.json",
+      "size": 10818,
+      "size_kb": 10.564453125,
+      "mtime": "2026-04-17T12:31:01.890795",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/current.emb.json",
+      "rel_path": "semantic/current.emb.json",
+      "size": 10809,
+      "size_kb": 10.5556640625,
+      "mtime": "2026-04-17T12:31:00.967791",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/facts.emb.json",
+      "rel_path": "semantic/facts.emb.json",
+      "size": 10816,
+      "size_kb": 10.5625,
+      "mtime": "2026-04-17T12:31:00.910791",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-08-daily-operations.emb.json",
+      "rel_path": "semantic/2026-04-08-daily-operations.emb.json",
+      "size": 10784,
+      "size_kb": 10.53125,
+      "mtime": "2026-04-17T12:31:01.338792",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-16.emb.json",
+      "rel_path": "semantic/2026-04-16.emb.json",
+      "size": 10791,
+      "size_kb": 10.5380859375,
+      "mtime": "2026-04-17T12:31:00.742790",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-09-weekly-reflection.emb.json",
+      "rel_path": "semantic/2026-04-09-weekly-reflection.emb.json",
+      "size": 10916,
+      "size_kb": 10.66015625,
+      "mtime": "2026-04-17T12:31:01.094791",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/preferences.emb.json",
+      "rel_path": "semantic/preferences.emb.json",
+      "size": 10758,
+      "size_kb": 10.505859375,
+      "mtime": "2026-04-17T12:31:00.857790",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/autonomy_engine_plan.emb.json",
+      "rel_path": "semantic/autonomy_engine_plan.emb.json",
+      "size": 10787,
+      "size_kb": 10.5341796875,
+      "mtime": "2026-04-17T12:31:01.783794",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-03-29-final-test-note.emb.json",
+      "rel_path": "semantic/2026-03-29-final-test-note.emb.json",
+      "size": 10653,
+      "size_kb": 10.4033203125,
+      "mtime": "2026-04-17T12:31:01.371793",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/timeline.emb.json",
+      "rel_path": "semantic/timeline.emb.json",
+      "size": 10743,
+      "size_kb": 10.4912109375,
+      "mtime": "2026-04-17T12:31:02.020795",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-09-lcm-wiki.emb.json",
+      "rel_path": "semantic/2026-04-09-lcm-wiki.emb.json",
+      "size": 10775,
+      "size_kb": 10.5224609375,
+      "mtime": "2026-04-17T12:31:01.511793",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/evolver_fixes_20260413.emb.json",
+      "rel_path": "semantic/evolver_fixes_20260413.emb.json",
+      "size": 10760,
+      "size_kb": 10.5078125,
+      "mtime": "2026-04-17T12:31:01.731794",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-07-RECOVERED-memory-system.emb.json",
+      "rel_path": "semantic/2026-04-07-RECOVERED-memory-system.emb.json",
+      "size": 10750,
+      "size_kb": 10.498046875,
+      "mtime": "2026-04-17T12:31:01.583793",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/recent_sessions.emb.json",
+      "rel_path": "semantic/recent_sessions.emb.json",
+      "size": 10772,
+      "size_kb": 10.51953125,
+      "mtime": "2026-04-17T12:31:01.030791",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/neuroplasticity_engine_research.emb.json",
+      "rel_path": "semantic/neuroplasticity_engine_research.emb.json",
+      "size": 10783,
+      "size_kb": 10.5302734375,
+      "mtime": "2026-04-17T12:31:01.836794",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-15.emb.json",
+      "rel_path": "semantic/2026-04-15.emb.json",
+      "size": 10737,
+      "size_kb": 10.4853515625,
+      "mtime": "2026-04-17T12:31:00.424788",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-17.emb.json",
+      "rel_path": "semantic/2026-04-17.emb.json",
+      "size": 10740,
+      "size_kb": 10.48828125,
+      "mtime": "2026-04-17T12:51:10.491795",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/neuroplasticity_engine_plan_v2.emb.json",
+      "rel_path": "semantic/neuroplasticity_engine_plan_v2.emb.json",
+      "size": 10838,
+      "size_kb": 10.583984375,
+      "mtime": "2026-04-17T12:31:01.649794",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-03-29-test-note.emb.json",
+      "rel_path": "semantic/2026-03-29-test-note.emb.json",
+      "size": 10746,
+      "size_kb": 10.494140625,
+      "mtime": "2026-04-17T12:31:01.140792",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-14.emb.json",
+      "rel_path": "semantic/2026-04-14.emb.json",
+      "size": 10766,
+      "size_kb": 10.513671875,
+      "mtime": "2026-04-17T12:31:00.602789",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-08-wiki-growth-workflow.emb.json",
+      "rel_path": "semantic/2026-04-08-wiki-growth-workflow.emb.json",
+      "size": 10805,
+      "size_kb": 10.5517578125,
+      "mtime": "2026-04-17T12:31:01.270792",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/PlateauBek\u00e4mpfung_Projekt.emb.json",
+      "rel_path": "semantic/PlateauBek\u00e4mpfung_Projekt.emb.json",
+      "size": 10810,
+      "size_kb": 10.556640625,
+      "mtime": "2026-04-17T12:31:01.956795",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/patterns.emb.json",
+      "rel_path": "semantic/patterns.emb.json",
+      "size": 10761,
+      "size_kb": 10.5087890625,
+      "mtime": "2026-04-17T12:31:00.798790",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/semantic/2026-04-08-weekly-reflection.emb.json",
+      "rel_path": "semantic/2026-04-08-weekly-reflection.emb.json",
+      "size": 10908,
+      "size_kb": 10.65234375,
+      "mtime": "2026-04-17T12:31:01.433793",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/short_term/evaluation_for_ll.json",
+      "rel_path": "short_term/evaluation_for_ll.json",
+      "size": 419,
+      "size_kb": 0.4091796875,
+      "mtime": "2026-04-17T18:57:54.218138",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/short_term/session_analysis_latest.json",
+      "rel_path": "short_term/session_analysis_latest.json",
+      "size": 257,
+      "size_kb": 0.2509765625,
+      "mtime": "2026-04-17T18:44:25.867465",
+      "age_days": 0,
+      "type": "json"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/short_term/current.md",
+      "rel_path": "short_term/current.md",
+      "size": 974,
+      "size_kb": 0.951171875,
+      "mtime": "2026-04-17T19:03:25.046406",
+      "age_days": 0,
+      "type": "md"
+    },
+    {
+      "path": "/home/clawbot/.openclaw/workspace/ceo/memory/short_term/recent_sessions.md",
+      "rel_path": "short_term/recent_sessions.md",
+      "size": 731,
+      "size_kb": 0.7138671875,
+      "mtime": "2026-04-17T00:09:01.441656",
+      "age_days": 0,
+      "type": "md"
+    }
+  ]
+}

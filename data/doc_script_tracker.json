@@ -1,0 +1,574 @@
+{
+  "last_scan": "2026-04-17T06:32:44.128732",
+  "total": 71,
+  "scripts": [
+    {
+      "name": "autonomous_agent.py",
+      "path": "SCRIPTS/automation/autonomous_agent.py",
+      "size": 11388,
+      "modified": "2026-04-16T18:55:54.319708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 1
+    },
+    {
+      "name": "autonomy_supervisor.py",
+      "path": "SCRIPTS/automation/autonomy_supervisor.py",
+      "size": 23628,
+      "modified": "2026-04-16T18:55:54.323708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 1
+    },
+    {
+      "name": "bug_fix_pipeline.py",
+      "path": "SCRIPTS/automation/bug_fix_pipeline.py",
+      "size": 11235,
+      "modified": "2026-04-16T18:55:54.342708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 1
+    },
+    {
+      "name": "gateway_recovery.py",
+      "path": "SCRIPTS/automation/gateway_recovery.py",
+      "size": 6654,
+      "modified": "2026-04-16T18:55:54.410708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 1
+    },
+    {
+      "name": "learning_loop_v3.py",
+      "path": "SCRIPTS/automation/learning_loop_v3.py",
+      "size": 89327,
+      "modified": "2026-04-16T18:55:54.490708",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 1
+    },
+    {
+      "name": "cron_watchdog.py",
+      "path": "SCRIPTS/automation/cron_watchdog.py",
+      "size": 9898,
+      "modified": "2026-04-16T18:55:54.372708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 2
+    },
+    {
+      "name": "health_check.py",
+      "path": "SCRIPTS/automation/health_check.py",
+      "size": 11501,
+      "modified": "2026-04-16T18:55:54.423708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 2
+    },
+    {
+      "name": "kg_access_updater.py",
+      "path": "SCRIPTS/automation/kg_access_updater.py",
+      "size": 1333,
+      "modified": "2026-04-16T18:55:54.438708",
+      "category": "\ud83d\uddc3\ufe0f KNOWLEDGE GRAPH",
+      "priority": 2
+    },
+    {
+      "name": "learning_coordinator.py",
+      "path": "SCRIPTS/automation/learning_coordinator.py",
+      "size": 25400,
+      "modified": "2026-04-16T18:55:54.468708",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 2
+    },
+    {
+      "name": "run_loop_10.sh",
+      "path": "scripts/run_loop_10.sh",
+      "size": 215,
+      "modified": "2026-04-13T15:43:34.117058",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 2
+    },
+    {
+      "name": "run_smart_evolver.sh",
+      "path": "scripts/run_smart_evolver.sh",
+      "size": 2146,
+      "modified": "2026-04-17T06:01:32.750596",
+      "category": "\ud83d\udce1 EVENT BUS & EVOLVER",
+      "priority": 2
+    },
+    {
+      "name": "backup_manager.py",
+      "path": "SCRIPTS/automation/backup_manager.py",
+      "size": 10805,
+      "modified": "2026-04-16T18:55:54.327708",
+      "category": "\ud83d\udcbe BACKUP & RECOVERY",
+      "priority": 3
+    },
+    {
+      "name": "context_compressor.py",
+      "path": "SCRIPTS/automation/context_compressor.py",
+      "size": 4459,
+      "modified": "2026-04-16T18:55:54.353708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 3
+    },
+    {
+      "name": "heartbeat_updater.py",
+      "path": "SCRIPTS/automation/heartbeat_updater.py",
+      "size": 4405,
+      "modified": "2026-04-16T18:56:31.890836",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 3
+    },
+    {
+      "name": "memory_sync.py",
+      "path": "SCRIPTS/automation/memory_sync.py",
+      "size": 8569,
+      "modified": "2026-04-16T18:55:54.509708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 3
+    },
+    {
+      "name": "morning_brief.py",
+      "path": "SCRIPTS/automation/morning_brief.py",
+      "size": 12807,
+      "modified": "2026-04-16T18:55:54.513708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 3
+    },
+    {
+      "name": "actor_critic.py",
+      "path": "SCRIPTS/automation/actor_critic.py",
+      "size": 10893,
+      "modified": "2026-04-16T18:55:54.307708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "agent_self_improver.py",
+      "path": "SCRIPTS/automation/agent_self_improver.py",
+      "size": 26239,
+      "modified": "2026-04-16T18:55:54.311707",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "auto_session_capture.py",
+      "path": "SCRIPTS/automation/auto_session_capture.py",
+      "size": 7445,
+      "modified": "2026-04-16T18:55:54.315708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "automated_backup.py",
+      "path": "SCRIPTS/automation/automated_backup.py",
+      "size": 5860,
+      "modified": "2026-04-16T21:22:07.601141",
+      "category": "\ud83d\udcbe BACKUP & RECOVERY",
+      "priority": 4
+    },
+    {
+      "name": "backup_verifier.py",
+      "path": "SCRIPTS/automation/backup_verifier.py",
+      "size": 8672,
+      "modified": "2026-04-16T18:55:54.330708",
+      "category": "\ud83d\udcbe BACKUP & RECOVERY",
+      "priority": 4
+    },
+    {
+      "name": "backup_verify.py",
+      "path": "SCRIPTS/automation/backup_verify.py",
+      "size": 6203,
+      "modified": "2026-04-17T06:28:29.186340",
+      "category": "\ud83d\udcbe BACKUP & RECOVERY",
+      "priority": 4
+    },
+    {
+      "name": "batch_exec.py",
+      "path": "SCRIPTS/automation/batch_exec.py",
+      "size": 1553,
+      "modified": "2026-04-16T18:55:54.338708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "bug_fixer.py",
+      "path": "SCRIPTS/automation/bug_fixer.py",
+      "size": 4569,
+      "modified": "2026-04-16T18:55:54.346708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 4
+    },
+    {
+      "name": "common_issues_check.py",
+      "path": "SCRIPTS/automation/common_issues_check.py",
+      "size": 3573,
+      "modified": "2026-04-16T18:55:54.349708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "cron_error_healer.py",
+      "path": "SCRIPTS/automation/cron_error_healer.py",
+      "size": 30671,
+      "modified": "2026-04-16T18:55:54.357708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 4
+    },
+    {
+      "name": "cron_monitor.py",
+      "path": "SCRIPTS/automation/cron_monitor.py",
+      "size": 5854,
+      "modified": "2026-04-16T18:55:54.361708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 4
+    },
+    {
+      "name": "cron_optimizer.py",
+      "path": "SCRIPTS/automation/cron_optimizer.py",
+      "size": 6355,
+      "modified": "2026-04-16T18:55:54.365708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "cron_status_dashboard.py",
+      "path": "SCRIPTS/automation/cron_status_dashboard.py",
+      "size": 2594,
+      "modified": "2026-04-16T18:55:54.368708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "daily_summary.py",
+      "path": "SCRIPTS/automation/daily_summary.py",
+      "size": 10154,
+      "modified": "2026-04-16T18:55:54.377708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "decision_matrix.py",
+      "path": "SCRIPTS/automation/decision_matrix.py",
+      "size": 8693,
+      "modified": "2026-04-16T18:55:54.381708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "decision_tracker_integration.py",
+      "path": "SCRIPTS/automation/decision_tracker_integration.py",
+      "size": 9903,
+      "modified": "2026-04-16T18:55:54.384708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "discord_report_forwarder.py",
+      "path": "SCRIPTS/automation/discord_report_forwarder.py",
+      "size": 6030,
+      "modified": "2026-04-16T18:55:54.388708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "doc_maintenance.py",
+      "path": "SCRIPTS/automation/doc_maintenance.py",
+      "size": 11251,
+      "modified": "2026-04-17T06:32:39.253581",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "error_rate_monitor.py",
+      "path": "SCRIPTS/automation/error_rate_monitor.py",
+      "size": 5950,
+      "modified": "2026-04-16T18:55:54.392708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 4
+    },
+    {
+      "name": "error_reducer.py",
+      "path": "SCRIPTS/automation/error_reducer.py",
+      "size": 10546,
+      "modified": "2026-04-16T18:55:54.395708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 4
+    },
+    {
+      "name": "evening_capture.py",
+      "path": "SCRIPTS/automation/evening_capture.py",
+      "size": 1249,
+      "modified": "2026-04-16T18:55:54.399708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "evening_review.py",
+      "path": "SCRIPTS/automation/evening_review.py",
+      "size": 4529,
+      "modified": "2026-04-16T18:55:54.403708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "evening_summary.py",
+      "path": "SCRIPTS/automation/evening_summary.py",
+      "size": 8879,
+      "modified": "2026-04-16T18:55:54.406708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "event_bus.py",
+      "path": "SCRIPTS/automation/event_bus.py",
+      "size": 8481,
+      "modified": "2026-04-16T19:09:19.542472",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "evolver_signal_bridge.py",
+      "path": "SCRIPTS/automation/evolver_signal_bridge.py",
+      "size": 9482,
+      "modified": "2026-04-17T06:06:41.419442",
+      "category": "\ud83d\udce1 EVENT BUS & EVOLVER",
+      "priority": 4
+    },
+    {
+      "name": "evolver_stagnation_breaker.py",
+      "path": "SCRIPTS/automation/evolver_stagnation_breaker.py",
+      "size": 4196,
+      "modified": "2026-04-17T06:07:28.948574",
+      "category": "\ud83d\udce1 EVENT BUS & EVOLVER",
+      "priority": 4
+    },
+    {
+      "name": "graceful_degradation.py",
+      "path": "SCRIPTS/automation/graceful_degradation.py",
+      "size": 13851,
+      "modified": "2026-04-16T18:55:54.414708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "health_alert.py",
+      "path": "SCRIPTS/automation/health_alert.py",
+      "size": 4449,
+      "modified": "2026-04-16T18:55:54.419708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 4
+    },
+    {
+      "name": "health_monitor.py",
+      "path": "SCRIPTS/automation/health_monitor.py",
+      "size": 11469,
+      "modified": "2026-04-16T18:55:54.427708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 4
+    },
+    {
+      "name": "innovation_research.py",
+      "path": "SCRIPTS/automation/innovation_research.py",
+      "size": 8292,
+      "modified": "2026-04-16T18:56:31.890836",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "integration_dashboard.py",
+      "path": "SCRIPTS/automation/integration_dashboard.py",
+      "size": 9187,
+      "modified": "2026-04-16T20:34:31.848447",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "kg_access_updater_optimized.py",
+      "path": "SCRIPTS/automation/kg_access_updater_optimized.py",
+      "size": 4071,
+      "modified": "2026-04-16T18:55:54.441708",
+      "category": "\ud83d\uddc3\ufe0f KNOWLEDGE GRAPH",
+      "priority": 4
+    },
+    {
+      "name": "kg_auto_curator.py",
+      "path": "SCRIPTS/automation/kg_auto_curator.py",
+      "size": 12885,
+      "modified": "2026-04-16T18:56:31.890836",
+      "category": "\ud83d\uddc3\ufe0f KNOWLEDGE GRAPH",
+      "priority": 4
+    },
+    {
+      "name": "kg_updater.py",
+      "path": "SCRIPTS/automation/kg_updater.py",
+      "size": 20564,
+      "modified": "2026-04-16T18:55:54.452708",
+      "category": "\ud83d\uddc3\ufe0f KNOWLEDGE GRAPH",
+      "priority": 4
+    },
+    {
+      "name": "lcm_wiki_sync.py",
+      "path": "SCRIPTS/automation/lcm_wiki_sync.py",
+      "size": 12518,
+      "modified": "2026-04-16T18:55:54.456708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "learning_analyzer.py",
+      "path": "SCRIPTS/automation/learning_analyzer.py",
+      "size": 7890,
+      "modified": "2026-04-16T18:56:31.891836",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 4
+    },
+    {
+      "name": "learning_collector.py",
+      "path": "SCRIPTS/automation/learning_collector.py",
+      "size": 7838,
+      "modified": "2026-04-16T18:56:31.891836",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 4
+    },
+    {
+      "name": "learning_executor.py",
+      "path": "SCRIPTS/automation/learning_executor.py",
+      "size": 11100,
+      "modified": "2026-04-16T18:56:31.891836",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 4
+    },
+    {
+      "name": "learning_feedback.py",
+      "path": "SCRIPTS/automation/learning_feedback.py",
+      "size": 6381,
+      "modified": "2026-04-16T18:56:31.890836",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 4
+    },
+    {
+      "name": "learning_to_kg_sync.py",
+      "path": "SCRIPTS/automation/learning_to_kg_sync.py",
+      "size": 8040,
+      "modified": "2026-04-16T19:09:40.059541",
+      "category": "\ud83e\udde0 MEMORY & LEARNING",
+      "priority": 4
+    },
+    {
+      "name": "mcp_server.py",
+      "path": "SCRIPTS/automation/mcp_server.py",
+      "size": 8163,
+      "modified": "2026-04-16T18:55:54.502708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "memory_integrity_check.py",
+      "path": "SCRIPTS/automation/memory_integrity_check.py",
+      "size": 4662,
+      "modified": "2026-04-17T06:30:15.697893",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "memory_log_analyzer.py",
+      "path": "SCRIPTS/automation/memory_log_analyzer.py",
+      "size": 14885,
+      "modified": "2026-04-16T18:55:54.505708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "openrouter_monitor.py",
+      "path": "SCRIPTS/automation/openrouter_monitor.py",
+      "size": 2547,
+      "modified": "2026-04-16T18:55:54.518708",
+      "category": "\ud83d\udcca MONITORING",
+      "priority": 4
+    },
+    {
+      "name": "quick_fixes.py",
+      "path": "SCRIPTS/automation/quick_fixes.py",
+      "size": 3359,
+      "modified": "2026-04-16T18:55:54.523708",
+      "category": "\ud83d\udc1b BUG HANDLING",
+      "priority": 4
+    },
+    {
+      "name": "rem_feedback.py",
+      "path": "SCRIPTS/automation/rem_feedback.py",
+      "size": 7909,
+      "modified": "2026-04-16T18:56:31.889836",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "rollback_executor.py",
+      "path": "SCRIPTS/automation/rollback_executor.py",
+      "size": 8423,
+      "modified": "2026-04-16T18:55:54.532708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "self_healing.py",
+      "path": "SCRIPTS/automation/self_healing.py",
+      "size": 14331,
+      "modified": "2026-04-16T18:55:54.537708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "session_cleanup.py",
+      "path": "SCRIPTS/automation/session_cleanup.py",
+      "size": 6710,
+      "modified": "2026-04-16T18:55:54.541708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "session_context_manager.py",
+      "path": "SCRIPTS/automation/session_context_manager.py",
+      "size": 5096,
+      "modified": "2026-04-16T18:55:54.545708",
+      "category": "\ud83d\udcdd REPORTING",
+      "priority": 4
+    },
+    {
+      "name": "skills_fitness_tracker.py",
+      "path": "SCRIPTS/automation/skills_fitness_tracker.py",
+      "size": 5329,
+      "modified": "2026-04-16T18:55:54.549708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "stagnation_detector.py",
+      "path": "SCRIPTS/automation/stagnation_detector.py",
+      "size": 6544,
+      "modified": "2026-04-16T19:10:12.806653",
+      "category": "\ud83d\udce1 EVENT BUS & EVOLVER",
+      "priority": 4
+    },
+    {
+      "name": "system_report.py",
+      "path": "SCRIPTS/automation/system_report.py",
+      "size": 5615,
+      "modified": "2026-04-16T18:55:54.554708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    },
+    {
+      "name": "token_budget_tracker.py",
+      "path": "SCRIPTS/automation/token_budget_tracker.py",
+      "size": 6182,
+      "modified": "2026-04-16T18:55:54.560709",
+      "category": "\ud83d\udcb0 TOKEN & BUDGET",
+      "priority": 4
+    },
+    {
+      "name": "weekly_review.py",
+      "path": "SCRIPTS/automation/weekly_review.py",
+      "size": 11751,
+      "modified": "2026-04-16T18:55:54.564708",
+      "category": "\ud83d\udd27 TOOLS & UTILITIES",
+      "priority": 4
+    }
+  ]
+}

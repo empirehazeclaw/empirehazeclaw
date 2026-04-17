@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
-KG_PATH = WORKSPACE / "core_ultralight/memory/knowledge_graph.json"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 HEARTBEAT_PATH = WORKSPACE / "ceo/HEARTBEAT.md"
 
 # Goals Definition
@@ -105,8 +105,10 @@ def get_backup_ratio():
     """Berechnet Backup/Commit Ratio.
     
     Fairere Berechnung:
+    - Zählt NUR manuelle Backups (auto-Backups werden ignoriert)
     - Zählt Backups von HEUTE nur
     - Oder gestrige Backups wenn heute noch nichts
+    - Erkennt verschiedene Backup-Formate
     """
     backup_dir = WORKSPACE.parent / "backups"
     today = datetime.now().strftime("%Y%m%d")
@@ -114,15 +116,31 @@ def get_backup_ratio():
     
     git = get_git_stats()
     
-    # Count today's backups only
-    today_backups = list(backup_dir.glob(f"backup_{today}_*.tar.gz"))
+    # Patterns for auto-backups to EXCLUDE
+    AUTO_BACKUP_PATTERNS = [
+        'openclaw_', 'backup_', 'phase', 'kg_backup', 'pre_phase',
+        'complete-', 'kg_relation'
+    ]
+    
+    def is_manual_backup(name: str) -> bool:
+        """Check if a backup file is manually created (not auto)."""
+        name_lower = name.lower()
+        return not any(name_lower.startswith(p.lower()) or f'_{p.lower()}' in name_lower for p in AUTO_BACKUP_PATTERNS)
+    
+    def count_manual_backups_for_date(prefix):
+        """Count manually created backups matching prefix pattern."""
+        all_backups = list(backup_dir.glob(f'*{prefix}*.tar.gz'))
+        return len([b for b in all_backups if is_manual_backup(b.name)])
+    
+    # Count today's manual backups only
+    today_backups = count_manual_backups_for_date(today)
     
     # If commits today, use today's backups
     if git['commits_today'] > 0:
-        return len(today_backups) / max(git['commits_today'], 1)
+        return today_backups / max(git['commits_today'], 1)
     else:
         # No commits today, count yesterday's backups / yesterday's commits
-        yesterday_backups = list(backup_dir.glob(f"backup_{yesterday}_*.tar.gz"))
+        yesterday_backups = count_manual_backups_for_date(yesterday)
         # Use yesterday's commits
         result = subprocess.run(
             ["git", "log", "--oneline", f"--since='{yesterday} 00:00:00' --until='{today} 00:00:00'"],
@@ -133,7 +151,7 @@ def get_backup_ratio():
         yesterday_commits = len([c for c in result.stdout.strip().split('\n') if c])
         
         if yesterday_commits > 0:
-            return len(yesterday_backups) / yesterday_commits
+            return yesterday_backups / yesterday_commits
         return 0.0  # No commits yesterday either
 
 def get_script_stats():
@@ -145,15 +163,22 @@ def get_script_stats():
     
     # Count unique scripts tested by test_framework
     # Parse test_framework.py to extract tested scripts
-    test_framework_path = scripts_dir / 'test_framework.py'
+    # Check multiple possible locations
+    test_framework_paths = [
+        scripts_dir / 'test_framework.py',
+        WORKSPACE / 'SCRIPTS' / 'tools' / 'test_framework.py',
+        WORKSPACE / 'SCRIPTS' / 'automation' / 'test_framework.py',
+    ]
     tested = set()
     
-    if test_framework_path.exists():
-        content = test_framework_path.read_text()
-        import re
-        # Find all 'script': 'xxx.py' patterns
-        matches = re.findall(r"'script': '(\w+\.py)'", content)
-        tested = set(matches)
+    for tf_path in test_framework_paths:
+        if tf_path.exists():
+            content = tf_path.read_text()
+            import re
+            # Find all 'script': 'xxx.py' patterns
+            matches = re.findall(r"'script': '(\w+\.py)'", content)
+            tested = set(matches)
+            break
     
     tested_count = len(tested)
     

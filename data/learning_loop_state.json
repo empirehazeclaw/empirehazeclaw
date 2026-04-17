@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 126,
-  "score": 0.7638855061770944,
+  "iteration": 135,
+  "score": 0.7694266078818999,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -148,15 +148,39 @@
     0.7643629743874077,
     0.7639694070618264,
     0.7638855061770944,
-    0.7638855061770944
+    0.7638855061770944,
+    0.769942397355584,
+    0.7702055552503209,
+    0.7704687131450577,
+    0.7707318710397946,
+    0.7694516013387839,
+    0.7696792394608473,
+    0.7900529236713736,
+    0.7703160815661103,
+    0.7694266078818999
   ],
-  "patterns": [],
+  "patterns": [
+    {
+      "type": "performance_gap",
+      "metric": "task_success_rate",
+      "value": 0,
+      "target": 0.8,
+      "gap": 0.8,
+      "priority": "HIGH",
+      "learnings": []
+    },
+    {
+      "type": "error_rate",
+      "value": 0,
+      "status": "healthy"
+    }
+  ],
   "cross_pattern_hits": 50,
   "cross_pattern_misses": 0,
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 144,
+  "novelty_injections": 153,
   "consecutive_failures": 0,
   "last_validation": null,
   "last_decay": "2026-04-14T10:38:45.192126",
@@ -168,7 +192,14 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Investigate and fix Opportunity Scanner Daily failure",
-  "last_forced_novelty": "2026-04-16T00:04:31.673026",
-  "recently_forced_novelty": true
+  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
+  "last_forced_novelty": "2026-04-17T18:07:48.670332",
+  "recently_forced_novelty": true,
+  "feedback_stats": {
+    "count": 30,
+    "avg_quality": 3.98,
+    "last_update": "2026-04-17T18:25:22.091423Z"
+  },
+  "last_pattern_update": "2026-04-17T22:05:38.291857",
+  "patterns_discovered": 2
 }

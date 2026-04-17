@@ -2,46 +2,6 @@
 
 A chronological record of evolution decisions and outcomes.
 
-### [2026-04-11 20:36:00] INNOVATE - success
-- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 5 files, 105 lines
-- Signals: [evolution_stagnation_detected, stable_success_plateau]
-- Strategy:
-  1. Extract structured signals from logs and user instructions
-  2. Select an existing Gene by signals match (no improvisation)
-  3. Estimate blast radius (files, lines) before editing
-- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
-### [2026-04-11 20:58:25] INNOVATE - success
-- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 10 files, 2687 lines
-- Signals: [evolution_stagnation_detected, stable_success_plateau]
-- Strategy:
-  1. Extract structured signals from logs and user instructions
-  2. Select an existing Gene by signals match (no improvisation)
-  3. Estimate blast radius (files, lines) before editing
-- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 10 文件 / 2687 行。
-### [2026-04-11 22:14:03] INNOVATE - success
-- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 5 files, 61 lines
-- Signals: [evolution_stagnation_detected, stable_success_plateau]
-- Strategy:
-  1. Extract structured signals from logs and user instructions
-  2. Select an existing Gene by signals match (no improvisation)
-  3. Estimate blast radius (files, lines) before editing
-- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
-### [2026-04-12 17:03:33] INNOVATE - success
-- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 10 files, 688 lines
-- Signals: [evolution_stagnation_detected, stable_success_plateau]
-- Strategy:
-  1. Extract structured signals from logs and user instructions
-  2. Select an existing Gene by signals match (no improvisation)
-  3. Estimate blast radius (files, lines) before editing
-- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
-### [2026-04-12 20:18:54] INNOVATE - success
-- Gene: gene_gep_repair_from_errors | Score: 0.95 | Scope: 8 files, 425 lines
-- Signals: [evolution_stagnation_detected, stable_success_plateau]
-- Strategy:
-  1. Extract structured signals from logs and user instructions
-  2. Select an existing Gene by signals match (no improvisation)
-  3. Estimate blast radius (files, lines) before editing
-- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
 ### [2026-04-12 20:24:50] INNOVATE - success
 - Gene: gene_gep_repair_from_errors | Score: 0.94 | Scope: 9 files, 494 lines
 - Signals: [perf_bottleneck]
@@ -144,3 +104,42 @@ A chronological record of evolution decisions and outcomes.
   2. Search existing Genes and Capsules for partial matches (avoid reinventing)
   3. Design a minimal, testable implementation plan (prefer small increments)
 - Result: 固化：gene_gep_repair_from_errors 命中信号 log_error, errsig:**TOOLRESULT**: { "status": "error", "tool": "exec", "error": "error: unknown command 'process'\n\nCommand exited with code 1" }, user_missing, wi
+### [2026-04-17 15:44:22] INNOVATE - failed
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.76 | Scope: 64 files, 20477 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)
+### [2026-04-17 15:45:07] INNOVATE - success
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.95 | Scope: 6 files, 129 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)
+- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
+### [2026-04-17 20:06:48] INNOVATE - success
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.90 | Scope: 22 files, 7590 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)
+- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
+### [2026-04-17 20:09:41] INNOVATE - success
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.90 | Scope: 22 files, 7608 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)
+- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
+### [2026-04-17 20:20:31] INNOVATE - success
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.90 | Scope: 22 files, 7627 lines
+- Signals: [evolution_stagnation_detected, stable_success_plateau]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)
+- Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。

@@ -1,8 +1,8 @@
 {
   "last_run": {
-    "run_id": "run_1776395040287",
-    "created_at": "2026-04-17T03:04:00.302Z",
-    "parent_event_id": "evt_1776373507444",
+    "run_id": "run_1776463573034",
+    "created_at": "2026-04-17T22:06:13.046Z",
+    "parent_event_id": "evt_1776457231893",
     "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
     "selector": {
@@ -11,7 +11,7 @@
         "signals match gene.signals_match",
         "capsule trigger matches signals",
         "signals: evolution_stagnation_detected, stable_success_plateau",
-        "memory_graph: memory_prefer:gene_gep_repair_from_errors | gene_prior:0.958",
+        "memory_graph: memory_prefer:gene_gep_innovate_from_opportunity | gene_prior:0.992",
         "drift_intensity: 0.500"
       ],
       "alternatives": []
@@ -22,7 +22,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776395040285",
+      "id": "mut_1776463573032",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -33,7 +33,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776395040285",
+    "mutation_id": "mut_1776463573032",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -64,26 +64,32 @@
     "reused_asset_id": null,
     "reused_source_node": null,
     "reused_chain_id": null,
-    "baseline_untracked": [],
-    "baseline_git_head": "b5e433695f36efcc229432a25b42cadfd45c35dc",
+    "baseline_untracked": [
+      "evolver.pid",
+      "memory/evolution/gep_prompt_Cycle_#0164_run_1776457427816.json",
+      "memory/evolution/gep_prompt_Cycle_#0164_run_1776457427816.txt",
+      "memory/evolution/idle_schedule_state.json"
+    ],
+    "baseline_git_head": "6ac0fecf9e4586405b8ec17d8a17e3def69cb8e5",
     "blast_radius_estimate": {
-      "files": 10,
-      "lines": 800
+      "files": 6,
+      "lines": 480
     },
     "strategy_policy": {
       "name": "innovate",
       "label": "Innovation Focus",
       "description": "System is stable. Maximize new features and capabilities.",
       "forceInnovate": true,
-      "cautiousExecution": false,
-      "highRiskGene": false,
+      "cautiousExecution": true,
+      "highRiskGene": true,
       "repairStreak": 0,
       "failureStreak": 0,
-      "blastRadiusMaxFiles": 10,
+      "blastRadiusMaxFiles": 6,
       "directives": [
         "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
         "Force strategy shift: prefer innovate over repeating repair/optimize.",
-        "Target max files for this cycle: 10."
+        "Selected gene is high risk for current signals; keep blast radius narrow and prefer smallest viable change.",
+        "Target max files for this cycle: 6."
       ]
     },
     "active_task_id": null,
@@ -95,14 +101,10 @@
     "hub_lessons": []
   },
   "last_solidify": {
-    "run_id": "run_1776373414604",
-    "at": "2026-04-16T21:05:07.444Z",
-    "event_id": "evt_1776373507444",
-    "capsule_id": "capsule_1770477654236",
-    "outcome": {
-      "status": "success",
-      "score": 0.9
-    }
+    "run_id": "run_1776457363441",
+    "rejected": true,
+    "reason": "loop_bridge_disabled_autoreject_no_rollback",
+    "timestamp": "2026-04-17T20:22:43.479Z"
   },
-  "solidify_count": 22
+  "solidify_count": 28
 }
