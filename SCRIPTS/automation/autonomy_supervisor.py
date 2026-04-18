@@ -455,7 +455,13 @@ class AutonomySupervisor:
         except:
             return {"status": "kg_unreadable", "patterns": []}
         
-        entities = kg.get("entities", {})
+        entities_raw = kg.get("entities", [])
+        # Support both old dict format and new list format
+        if isinstance(entities_raw, dict):
+            entities_list = [(name, entity) for name, entity in entities_raw.items()]
+        else:
+            entities_list = [(e.get("id", "unknown"), e) for e in entities_raw]
+        
         patterns = []
         
         # Keywords that indicate issues/problems
@@ -463,7 +469,7 @@ class AutonomySupervisor:
         
         # Find entities with issue-related facts
         entities_with_issues = []
-        for name, entity in entities.items():
+        for name, entity in entities_list:
             for fact in entity.get("facts", []):
                 content = fact.get("content", "").lower()
                 if any(kw in content for kw in issue_keywords):
@@ -483,7 +489,7 @@ class AutonomySupervisor:
             })
         
         # Find high-access entities (potential hotspots)
-        trending = sorted(entities.items(), key=lambda x: x[1].get("access_count", 0), reverse=True)[:5]
+        trending = sorted(entities_list, key=lambda x: x[1].get("access_count", 0), reverse=True)[:5]
         if trending:
             patterns.append({
                 "type": "TRENDING_ENTITIES",
@@ -494,7 +500,7 @@ class AutonomySupervisor:
         
         return {
             "status": "analyzed",
-            "total_entities": len(entities),
+            "total_entities": len(entities_list),
             "patterns": patterns
         }
 

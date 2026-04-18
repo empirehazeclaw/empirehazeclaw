@@ -55,18 +55,40 @@ def get_recent_events(minutes: int = 1440) -> list:
 def check_kg_health() -> dict:
     """KG Health: entities, relations, orphans, types."""
     kg = load_kg()
-    entities = kg.get("entities", {})
-    relations = kg.get("relations", {})
+    entities = kg.get("entities", [])
+    relations = kg.get("relations", [])
+    
+    # Handle list-based KG (entities is a list, not dict)
+    if isinstance(entities, list):
+        entity_ids = set()
+        for e in entities:
+            if isinstance(e, dict):
+                entity_ids.add(e.get("id"))
+            elif isinstance(e, str):
+                entity_ids.add(e)
+        entity_list = entities
+    else:
+        entity_ids = set(entities.keys())
+        entity_list = entities.values()
     
     # Check orphans
-    entity_ids = set(entities.keys())
     orphan_count = 0
-    for r in relations.values():
-        if not r or not entity_ids.intersection({r.get("from"), r.get("to")}):
+    for r in relations:
+        if not r:
             orphan_count += 1
+            continue
+        if isinstance(r, dict):
+            if not entity_ids.intersection({r.get("from"), r.get("to")}):
+                orphan_count += 1
+        elif isinstance(r, str):
+            # relation as standalone string, can't check
+            pass
     
     # Count by type
-    type_counts = Counter(e.get("type", "unknown") for e in entities.values())
+    if isinstance(entities, list):
+        type_counts = Counter(e.get("type", "unknown") for e in entities if isinstance(e, dict))
+    else:
+        type_counts = Counter(e.get("type", "unknown") for e in entities.values())
     
     return {
         "entities": len(entities),

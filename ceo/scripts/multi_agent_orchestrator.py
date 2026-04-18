@@ -31,6 +31,7 @@ AGENT_SCRIPTS = {
     'data': f"{AGENT_BASE}/data_agent.py"
 }
 ORCHESTRATOR_STATE = f"{WORKSPACE}/memory/evaluations/orchestrator_state.json"
+TASK_LOGGER = f"{WORKSPACE}/scripts/unified_task_logger.py"
 
 
 class TaskPriority(Enum):
@@ -70,6 +71,17 @@ class MultiAgentOrchestrator:
         """Save orchestrator state."""
         with open(ORCHESTRATOR_STATE, 'w') as f:
             json.dump(self.state, f, indent=2)
+    
+    def log_task_to_unified(self, task_type, outcome, details=''):
+        """Log task to unified task logger."""
+        try:
+            import subprocess
+            result = subprocess.run(
+                ['python3', TASK_LOGGER, '--log', task_type, outcome, details],
+                capture_output=True, text=True, timeout=5
+            )
+        except Exception as e:
+            print(f"   ⚠️ Could not log to unified logger: {e}")
     
     def init_agent_registry(self):
         """Initialize agent capabilities registry."""
@@ -264,6 +276,10 @@ class MultiAgentOrchestrator:
         self.state['completed_tasks'].append(task['task_id'])
         task['status'] = 'completed'
         task['result'] = result
+        
+        # Log to unified task logger
+        self.log_task_to_unified(task_type='subagent_task', outcome='success', 
+                                 details=f"Task {task['task_id']} completed by Sir Hazeclaw")
         
         return result
     

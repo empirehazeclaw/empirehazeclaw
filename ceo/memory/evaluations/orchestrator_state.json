@@ -552,13 +552,3901 @@
         "returncode": 0,
         "error": null
       }
+    },
+    {
+      "task_id": "task_32",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-17T23:04:38.077147",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:05:15.375046",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_33",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-17T23:04:38.099652",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:05:15.531244",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-17T23:05:15.423287\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1643MB / 7940MB (20.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_34",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-17T23:15:29.263033",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:15:48.321289",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-17T23:15:48.228333\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1351MB / 7940MB (17.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_35",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-17T23:15:29.277829",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:15:48.365988",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_36",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-17T23:32:56.343230",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:33:32.262626",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_37",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-17T23:32:56.355921",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:33:32.392266",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-17T23:33:32.300535\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1591MB / 7940MB (20.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_38",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-17T23:45:12.270995",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:48:43.558389",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_39",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-17T23:45:12.281925",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-17T23:48:43.715252",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-17T23:48:43.596720\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1352MB / 7940MB (17.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_40",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T00:04:23.723076",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:06:41.543948",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T00:06:41.443223\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1368MB / 7940MB (17.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_41",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T00:04:23.739117",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:06:41.593698",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_42",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T00:15:27.577095",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:16:38.120659",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T00:16:38.021211\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1374MB / 7940MB (17.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_43",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T00:15:27.587749",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:16:38.166316",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_44",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T00:33:07.466624",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:33:27.697183",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T00:33:27.606156\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1381MB / 7940MB (17.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_45",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T00:33:08.530197",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:33:27.741408",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_46",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T00:45:19.130081",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:48:28.413743",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T00:48:28.320830\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1392MB / 7940MB (17.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_47",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T00:45:19.147532",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T00:48:28.463314",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_48",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T01:04:23.169926",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:05:21.450825",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_49",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T01:04:23.178497",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:05:21.609516",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T01:05:21.490942\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1454MB / 7940MB (18.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_50",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T01:15:25.648489",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:20:10.236808",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T01:20:10.140702\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1458MB / 7940MB (18.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_51",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T01:15:25.660215",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:20:10.284622",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_52",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T01:34:46.016289",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:36:13.698102",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T01:36:13.289319\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1475MB / 7940MB (18.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_53",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T01:34:46.023817",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:36:13.750976",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_54",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T01:45:29.930485",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:46:14.279141",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T01:46:14.184441\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1461MB / 7940MB (18.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_55",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T01:45:32.776160",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T01:46:14.318803",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_56",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T02:03:55.161587",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:04:34.273349",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T02:04:34.164491\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1816MB / 7940MB (22.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_57",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T02:03:55.176030",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:04:34.319924",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_58",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T02:15:12.786188",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:19:34.635669",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T02:19:34.541422\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1427MB / 7940MB (18.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_59",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T02:15:12.803468",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:19:34.679578",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_60",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T02:32:43.954885",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:34:34.778959",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T02:34:34.687772\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1467MB / 7940MB (18.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_61",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T02:32:45.377350",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:34:34.826357",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_62",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T02:45:12.843343",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:49:33.785439",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T02:49:33.661381\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1458MB / 7940MB (18.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_63",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T02:45:12.867374",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T02:49:33.837856",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_64",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T03:03:03.185580",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:05:00.909246",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T03:05:00.800644\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1690MB / 7940MB (21.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_65",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T03:03:03.193983",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:05:00.969447",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_66",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T03:15:22.175808",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:20:05.028396",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_67",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T03:15:22.185817",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:20:05.183703",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T03:20:05.067414\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1506MB / 7940MB (19.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_68",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T03:34:06.915667",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:35:05.086987",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T03:35:04.993407\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1527MB / 7940MB (19.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_69",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T03:34:06.927521",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:35:05.141212",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_70",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T03:45:23.806785",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:50:04.140036",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T03:50:04.021240\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1512MB / 7940MB (19.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_71",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T03:45:23.820343",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T03:50:04.190010",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_72",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T04:03:11.186552",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:05:23.259945",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T04:05:23.157205\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1674MB / 7940MB (21.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_73",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T04:03:11.194949",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:05:23.308304",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_74",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T04:15:25.377185",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:15:41.430462",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T04:15:41.337725\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1768MB / 7940MB (22.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_75",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T04:15:25.384794",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:15:41.478841",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_76",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T04:33:38.222623",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:33:51.887870",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T04:33:51.769722\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1676MB / 7940MB (21.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_77",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T04:33:38.229897",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:33:51.936489",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_78",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T04:45:16.920041",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:48:53.173342",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_79",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T04:45:16.931076",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T04:48:53.304309",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T04:48:53.210087\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1574MB / 7940MB (19.8%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_80",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T05:02:30.718816",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:03:55.415868",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T05:03:55.311927\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2111MB / 7940MB (26.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_81",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T05:02:30.729983",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:03:55.464368",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_82",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T05:15:19.865056",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:18:53.874092",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T05:18:53.775555\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1834MB / 7940MB (23.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_83",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T05:15:19.875808",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:18:53.921847",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_84",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T05:32:33.698442",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:33:57.813122",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T05:33:57.713130\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1835MB / 7940MB (23.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_85",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T05:32:33.722322",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:33:57.860096",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_86",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T05:45:46.357046",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:48:55.675335",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_87",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T05:45:46.378220",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T05:48:55.803841",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T05:48:55.712374\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1864MB / 7940MB (23.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_88",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T06:03:47.956094",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:06:54.431736",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T06:06:54.325431\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1894MB / 7940MB (23.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_89",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T06:03:52.013394",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:06:54.474632",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_90",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T06:15:18.927323",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:16:55.119433",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_91",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T06:15:18.946279",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:16:55.256673",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T06:16:55.157057\n==================================================\n\u2705 Process: 5 processes found\n\u2705 Memory: 1830MB / 7940MB (23.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_92",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T06:45:20.480494",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:49:48.078737",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T06:49:47.956136\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1974MB / 7940MB (24.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_93",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T06:45:20.501044",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:49:48.130958",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_94",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T06:58:47.877216",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:59:49.188269",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T06:59:49.078663\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2396MB / 7940MB (30.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_95",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T06:58:47.892783",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T06:59:49.236792",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_96",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T07:03:12.359814",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:05:17.064586",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_97",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T07:03:12.373371",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:05:17.209855",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T07:05:17.104205\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2174MB / 7940MB (27.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_98",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T07:15:15.426083",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:15:58.389458",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T07:15:58.275081\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2417MB / 7940MB (30.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_99",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T07:15:18.654889",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:15:58.442322",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_100",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T07:34:01.007237",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:34:44.298698",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T07:34:44.194414\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2325MB / 7940MB (29.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_101",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T07:34:01.032826",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:34:44.359793",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_102",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T07:45:33.381022",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:49:46.161475",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T07:49:46.056457\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2072MB / 7940MB (26.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_103",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T07:45:33.398805",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T07:49:46.202878",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_104",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T08:03:21.877692",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:06:26.678494",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T08:06:26.572579\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2072MB / 7940MB (26.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_105",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T08:03:21.892463",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:06:26.726029",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_106",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T08:15:14.072199",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:16:25.972986",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T08:16:25.850470\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2360MB / 7940MB (29.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_107",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T08:15:14.089502",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:16:26.035607",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_108",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T08:33:05.364677",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:34:21.902463",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_109",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T08:33:05.399503",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:34:22.045838",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T08:34:21.937773\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2185MB / 7940MB (27.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_110",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T08:45:14.235578",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:49:33.784828",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_111",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T08:45:14.249964",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T08:49:33.968786",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T08:49:33.836780\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2162MB / 7940MB (27.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_112",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T09:02:40.804787",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:06:36.402740",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_113",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T09:02:40.820440",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:06:36.558595",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T09:06:36.443716\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2293MB / 7940MB (28.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_114",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T09:15:14.929684",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:16:34.943595",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T09:16:34.834736\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2272MB / 7940MB (28.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_115",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T09:15:14.950853",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:16:34.997340",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_116",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T09:33:29.189547",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:34:28.500775",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T09:34:28.392626\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2370MB / 7940MB (29.8%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_117",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T09:33:29.208791",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:34:28.549151",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_118",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T09:45:15.068006",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:49:44.783854",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T09:49:44.659529\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2427MB / 7940MB (30.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_119",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T09:45:15.090065",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T09:49:44.837020",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_120",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T10:04:50.300454",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:05:55.407424",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T10:05:55.290211\n==================================================\n\u2705 Process: 5 processes found\n\u2705 Memory: 2418MB / 7940MB (30.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_121",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T10:04:50.317967",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:05:55.453071",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_122",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T10:15:14.497315",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:16:13.608054",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_123",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T10:15:14.513315",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:16:13.771216",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T10:16:13.650739\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2407MB / 7940MB (30.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_124",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T10:45:16.897896",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:49:05.835433",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T10:49:05.724932\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2568MB / 7940MB (32.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_125",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T10:45:16.917641",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T10:49:05.878684",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_126",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T11:02:53.858972",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:05:05.310691",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_127",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T11:02:53.870265",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:05:05.477806",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T11:05:05.353924\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2493MB / 7940MB (31.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_128",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T11:15:33.989914",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:20:02.581976",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_129",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T11:15:33.998795",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:20:02.766585",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T11:20:02.628127\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2508MB / 7940MB (31.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_130",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T11:45:30.225996",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:50:04.982601",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_131",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T11:45:30.243204",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T11:50:05.129038",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T11:50:05.022110\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2560MB / 7940MB (32.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_132",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T12:04:54.379683",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:09:31.694427",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T12:09:31.576070\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2580MB / 7940MB (32.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_133",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T12:04:58.076283",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:09:31.739910",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_134",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T12:15:19.252023",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:19:34.640214",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T12:19:34.527500\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2621MB / 7940MB (33.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_135",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T12:15:19.274598",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:19:34.684830",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_136",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T12:35:05.076566",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:37:10.785678",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T12:37:10.677129\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2613MB / 7940MB (32.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_137",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T12:35:05.095155",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:37:10.830758",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_138",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T12:45:18.248831",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:47:10.756698",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T12:47:10.651422\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2740MB / 7940MB (34.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_139",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T12:45:18.273128",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T12:47:10.802701",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_140",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T13:02:33.985620",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:04:39.608162",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_141",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T13:02:34.010087",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:04:39.760463",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T13:04:39.646600\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2771MB / 7940MB (34.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_142",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T13:15:16.255825",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:19:39.130080",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T13:19:38.995414\n==================================================\n\u2705 Process: 5 processes found\n\u2705 Memory: 2538MB / 7940MB (32.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_143",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T13:15:16.270667",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:19:39.197731",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_144",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T13:33:41.699834",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:35:23.138569",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T13:35:23.024372\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2679MB / 7940MB (33.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_145",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T13:33:45.050054",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:35:23.186043",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_146",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T13:45:28.084150",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:46:50.205113",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T13:46:50.102958\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2624MB / 7940MB (33.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_147",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T13:45:28.100025",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T13:46:50.254198",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collected 0 signals from ['event_bus']\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_148",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T14:05:15.830420",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:06:59.660405",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T14:06:59.528942\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2778MB / 7940MB (35.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_149",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:05:15.852697",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:06:59.711432",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_150",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T14:15:22.208472",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:16:58.743079",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T14:16:58.630205\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2684MB / 7940MB (33.8%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_151",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:15:23.473529",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:16:58.787986",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_152",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:15:24.850451",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:17:03.910026",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T14:16:58.835146\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_153",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T14:33:29.016635",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:35:11.432691",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T14:35:11.312311\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2659MB / 7940MB (33.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_154",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:33:32.015519",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:35:11.486531",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_155",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:33:35.297222",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:35:16.627503",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T14:35:11.532636\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_156",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T14:45:19.455447",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:45:41.064385",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T14:45:40.950041\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2666MB / 7940MB (33.6%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_157",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:45:20.579452",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:45:41.125229",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_158",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T14:45:21.877772",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T14:45:46.693536",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T14:45:41.176236\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_159",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T15:03:43.768972",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:06:15.536619",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T15:06:15.402649\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2710MB / 7940MB (34.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_160",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:03:46.255459",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:06:15.587202",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_161",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:03:50.229033",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:06:20.561078",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T15:06:15.637299\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_162",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T15:15:23.115034",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:16:20.233263",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T15:16:20.105476\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2785MB / 7940MB (35.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_163",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:15:25.273060",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:16:20.292295",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_164",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:15:26.843123",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:16:25.588224",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T15:16:20.342133\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_165",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:33:00.927752",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:34:39.208748",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_166",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T15:33:00.959304",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:34:39.821122",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T15:34:39.248006\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2880MB / 7940MB (36.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_167",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:33:00.990807",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:34:46.366255",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T15:34:39.862774\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_168",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T15:45:47.774189",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:49:37.698542",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T15:49:37.574021\n==================================================\n\u2705 Process: 5 processes found\n\u2705 Memory: 2736MB / 7940MB (34.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_169",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:45:47.801109",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:49:37.753022",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_170",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T15:45:47.821507",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T15:49:42.718388",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T15:49:37.797249\n============================================================\n\n\u2705 KG Health:\n   Entities: 412 | Connected: 288\n   Orphans: 129 (31.3%)\n   Orphan rate 31.3% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_171",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T16:03:22.076972",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:07:04.864471",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T16:07:04.754633\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2837MB / 7940MB (35.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_172",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:03:24.395152",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:07:04.909973",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_173",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:03:28.397599",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:07:11.563675",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T16:07:04.951525\n============================================================\n\n\u2705 KG Health:\n   Entities: 416 | Connected: 292\n   Orphans: 129 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_174",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T16:15:19.753689",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:17:07.872517",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T16:17:07.767381\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2832MB / 7940MB (35.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_175",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:15:22.469335",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:17:07.916202",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_176",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:15:24.296418",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:17:12.587736",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T16:17:07.955513\n============================================================\n\n\u2705 KG Health:\n   Entities: 416 | Connected: 292\n   Orphans: 129 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_177",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T16:32:47.438350",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:34:41.845921",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T16:34:41.732219\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2889MB / 7940MB (36.4%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_178",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:32:47.467855",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:34:46.933930",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T16:34:41.897734\n============================================================\n\n\u2705 KG Health:\n   Entities: 416 | Connected: 292\n   Orphans: 129 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_179",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:32:47.484989",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:34:46.979838",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_180",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:45:22.531868",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:49:54.328568",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_181",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T16:45:22.572803",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:49:59.136227",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T16:49:54.373554\n============================================================\n\n\u2705 KG Health:\n   Entities: 416 | Connected: 292\n   Orphans: 129 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_182",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T16:45:22.596596",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T16:49:59.328394",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T16:49:59.181375\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2997MB / 7940MB (37.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_183",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T17:03:26.113460",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:05:42.086221",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T17:05:41.969951\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2852MB / 7940MB (35.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_184",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:03:26.148294",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:05:42.134609",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_185",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:03:26.171826",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:05:47.308072",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T17:05:42.174972\n============================================================\n\n\u2705 KG Health:\n   Entities: 418 | Connected: 293\n   Orphans: 130 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_186",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T17:15:43.532534",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:16:05.057447",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T17:16:04.921206\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2852MB / 7940MB (35.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_187",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:15:43.566012",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:16:05.110602",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_188",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:15:43.589238",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:16:10.291855",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T17:16:05.155954\n============================================================\n\n\u2705 KG Health:\n   Entities: 418 | Connected: 293\n   Orphans: 130 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_189",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T17:33:03.014032",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:33:25.700394",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T17:33:25.584735\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2934MB / 7940MB (37.0%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_190",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:33:04.147005",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:33:25.744693",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_191",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T17:33:05.283407",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T17:33:31.320187",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T17:33:25.782509\n============================================================\n\n\u2705 KG Health:\n   Entities: 418 | Connected: 293\n   Orphans: 130 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_192",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T18:05:07.926659",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:08:26.573241",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T18:08:25.894744\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2963MB / 7940MB (37.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_193",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:05:07.966341",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:08:26.620345",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_194",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:05:07.982434",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:08:34.359628",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T18:08:26.660078\n============================================================\n\n\u2705 KG Health:\n   Entities: 420 | Connected: 294\n   Orphans: 131 (31.2%)\n   Orphan rate 31.2% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_195",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T18:15:19.284561",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:18:55.037540",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T18:18:54.920246\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2947MB / 7940MB (37.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_196",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:15:19.314001",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:18:55.084373",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_197",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:15:19.345019",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:19:00.239647",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T18:18:55.125938\n============================================================\n\n\u2705 KG Health:\n   Entities: 420 | Connected: 294\n   Orphans: 131 (31.2%)\n   Orphan rate 31.2% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_198",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:33:43.050022",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:35:55.189615",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_199",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:33:43.074217",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:36:00.142063",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T18:35:55.229288\n============================================================\n\n\u2705 KG Health:\n   Entities: 420 | Connected: 294\n   Orphans: 131 (31.2%)\n   Orphan rate 31.2% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_200",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T18:33:43.104813",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:36:00.315080",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T18:36:00.190689\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 3011MB / 7940MB (37.9%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_201",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T18:45:22.154416",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:46:49.754760",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T18:46:49.641833\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2957MB / 7940MB (37.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_202",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:45:25.729456",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:46:49.815919",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_203",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T18:45:28.327460",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T18:46:54.866510",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T18:46:49.858671\n============================================================\n\n\u2705 KG Health:\n   Entities: 420 | Connected: 294\n   Orphans: 131 (31.2%)\n   Orphan rate 31.2% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_204",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T19:02:39.598468",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:04:35.540069",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T19:04:35.165035\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2964MB / 7940MB (37.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_205",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:02:41.314024",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:04:35.585767",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_206",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:02:43.756015",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:04:40.496201",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T19:04:35.627116\n============================================================\n\n\u2705 KG Health:\n   Entities: 421 | Connected: 295\n   Orphans: 131 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_207",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:15:25.314089",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:19:47.491390",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T19:19:42.672700\n============================================================\n\n\u2705 KG Health:\n   Entities: 421 | Connected: 295\n   Orphans: 131 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_208",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:15:25.341108",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:19:47.544955",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_209",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T19:15:25.362659",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:19:47.971730",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T19:19:47.587182\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 3038MB / 7940MB (38.3%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_210",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T19:35:20.693914",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:37:28.691122",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T19:37:28.573856\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2990MB / 7940MB (37.7%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_211",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:35:20.731018",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:37:28.748366",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_212",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:35:20.752813",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:37:35.593142",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T19:37:28.794317\n============================================================\n\n\u2705 KG Health:\n   Entities: 421 | Connected: 295\n   Orphans: 131 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_213",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T19:45:26.989059",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:47:32.460348",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T19:47:32.291349\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 2957MB / 7940MB (37.2%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_214",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:45:27.035347",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:47:37.535759",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T19:47:32.512393\n============================================================\n\n\u2705 KG Health:\n   Entities: 421 | Connected: 295\n   Orphans: 131 (31.1%)\n   Orphan rate 31.1% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_215",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T19:45:27.051021",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T19:47:37.580620",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_216",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:01:55.580093",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:05:38.041251",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_217",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:01:55.620221",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:05:42.844262",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T20:05:38.081232\n============================================================\n\n\u2705 KG Health:\n   Entities: 422 | Connected: 296\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_218",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T20:01:55.640853",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:05:43.013116",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T20:05:42.881089\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 3134MB / 7940MB (39.5%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_219",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T20:16:08.699439",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:16:37.964258",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T20:16:37.841605\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 3002MB / 7940MB (37.8%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_220",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:16:08.739338",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:16:38.016237",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_221",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:16:08.771336",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:16:43.327930",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T20:16:38.059840\n============================================================\n\n\u2705 KG Health:\n   Entities: 422 | Connected: 296\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_222",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T20:33:02.228300",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:35:39.595218",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T20:35:39.462425\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 3027MB / 7940MB (38.1%)\n\u2705 Disk: 43G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_223",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:33:02.260717",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:35:39.649113",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_224",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:33:02.305752",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:35:44.702525",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T20:35:39.697841\n============================================================\n\n\u2705 KG Health:\n   Entities: 422 | Connected: 296\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_225",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:48:07.412132",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:48:41.425659",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_226",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T20:48:07.433508",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:48:46.103205",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T20:48:41.464651\n============================================================\n\n\u2705 KG Health:\n   Entities: 422 | Connected: 296\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_227",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T20:48:07.445398",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T20:48:46.254643",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T20:48:46.144060\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1715MB / 7940MB (21.6%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_228",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T21:03:32.603508",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:06:17.827093",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T21:06:17.722366\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1508MB / 7940MB (19.0%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_229",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:03:35.868970",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:06:17.875931",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_230",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:04:19.520041",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:06:22.587400",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T21:06:17.919905\n============================================================\n\n\u2705 KG Health:\n   Entities: 423 | Connected: 297\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_231",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T21:15:15.692867",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:16:15.594451",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T21:16:15.488894\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1582MB / 7940MB (19.9%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_232",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:15:15.721660",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:16:20.549753",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T21:16:15.634604\n============================================================\n\n\u2705 KG Health:\n   Entities: 423 | Connected: 297\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_233",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:15:15.728841",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:16:20.609599",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_234",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T21:32:35.961848",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:34:19.264772",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T21:34:19.164117\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1485MB / 7940MB (18.7%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_235",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:32:35.990491",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:34:24.600472",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T21:34:19.304152\n============================================================\n\n\u2705 KG Health:\n   Entities: 423 | Connected: 297\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_236",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:45:20.623095",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:49:44.475263",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T21:49:39.052939\n============================================================\n\n\u2705 KG Health:\n   Entities: 423 | Connected: 297\n   Orphans: 131 (31.0%)\n   Orphan rate 31.0% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_237",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T21:45:20.645993",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:49:44.635287",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T21:49:44.519162\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1510MB / 7940MB (19.0%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_238",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T21:45:20.663256",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T21:49:44.684533",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_239",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T22:02:44.476044",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:04:57.206193",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T22:04:57.104230\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1480MB / 7940MB (18.6%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_240",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:02:48.595336",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:04:57.253089",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_241",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:02:50.603900",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:05:02.791464",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T22:04:57.300919\n============================================================\n\n\u2705 KG Health:\n   Entities: 424 | Connected: 298\n   Orphans: 131 (30.9%)\n   Orphan rate 30.9% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_242",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T22:15:18.760692",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:19:58.492622",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T22:19:58.384140\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1848MB / 7940MB (23.3%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_243",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:15:20.177506",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:19:58.543364",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_244",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:15:21.605462",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:20:04.940278",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T22:19:58.584189\n============================================================\n\n\u2705 KG Health:\n   Entities: 424 | Connected: 298\n   Orphans: 131 (30.9%)\n   Orphan rate 30.9% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_245",
+      "type": "health_check",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "health_agent",
+      "created_at": "2026-04-18T22:45:17.075706",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:46:27.839557",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83e\udd9e Health Agent \u2014 2026-04-18T22:46:27.731507\n==================================================\n\u2705 Process: 4 processes found\n\u2705 Memory: 1511MB / 7940MB (19.0%)\n\u2705 Disk: 44G used / 96G (45%)\n\u2705 Network: HTTP 301\n\u2705 Gateway: Gateway HTTP 200\n\u2705 Cron: 0 recent errors\n\n\ud83d\udcca Health: 6/6 (100%)\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_246",
+      "type": "learning_sync",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:45:17.099384",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:46:27.884113",
+      "result": {
+        "success": true,
+        "stdout": "\ud83d\udce5 Collect not yet implemented in enhanced version\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
+    },
+    {
+      "task_id": "task_247",
+      "type": "data_analysis",
+      "data": {},
+      "priority": "MEDIUM",
+      "delegated_to": "data_agent",
+      "created_at": "2026-04-18T22:45:17.117758",
+      "fallback": false,
+      "status": "completed",
+      "completed_at": "2026-04-18T22:46:32.552320",
+      "result": {
+        "success": true,
+        "stdout": "\n\ud83d\udcca Data Agent \u2014 2026-04-18T22:46:27.921621\n============================================================\n\n\u2705 KG Health:\n   Entities: 424 | Connected: 298\n   Orphans: 131 (30.9%)\n   Orphan rate 30.9% within acceptable range\n\n\u26a0\ufe0f Script Health (32 checked):\n   [LOW] Mad-Dog Evolver Controller: Shell script not executable\n\n\u2705 Doc Audit (55 docs):\n   All docs OK\n\n\u2705 Cron Redundancy (30 total):\n   No redundancies detected\n\n\u2705 All systems healthy \u2014 no alerts\n",
+        "stderr": "",
+        "returncode": 0,
+        "error": null
+      }
     }
   ],
   "failed_tasks": [],
   "agent_last_seen": {
-    "health_agent": "2026-04-17T22:48:23.385829",
+    "health_agent": "2026-04-18T22:46:27.839568",
     "research_agent": "2026-04-17T19:59:14.912719",
-    "data_agent": "2026-04-17T22:48:23.248091"
+    "data_agent": "2026-04-18T22:46:32.552331"
   },
-  "delegation_count": 31
+  "delegation_count": 247
 }

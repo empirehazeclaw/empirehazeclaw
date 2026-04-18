@@ -1,5 +1,5 @@
 # PATTERNS — Erkannte Patterns
-_Letzte Aktualisierung: 2026-04-17_
+_Letzte Aktualisierung: 2026-04-18_
 ---
 
 ## 🔄 PERFORMANCE_GAP

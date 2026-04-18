@@ -24,6 +24,12 @@
 | quick_check.py | Rapid system status | ✅ Active |
 | common_issues_check.py | Check for common problems | ✅ Active |
 | cron_monitor.py | Cron monitoring (restored) | ✅ Active |
+| **unified_task_logger.py** | Central task log (all types) | ✅ Active |
+| **task_data_collector.py** | Aggregate from all sources | ✅ Active |
+| **task_report.py** | Generate TSR reports | ✅ Active |
+| **session_activity_analyzer.py** | Analyze session transcripts | ✅ Active |
+| **heartbeat_task_logger.py** | Capture main session activities | ✅ Active |
+| **task_logger_cron.py** | Task logging coordinator (15min) | ✅ Active |
 
 ---
 
@@ -221,4 +227,4 @@
 ---
 
 *Script Index maintained by Sir HazeClaw*
-*Last updated: 2026-04-13 07:23 UTC*
+*Last updated: 2026-04-18 04:57 UTC*

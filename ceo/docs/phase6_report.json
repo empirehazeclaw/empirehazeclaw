@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-18T11:09:59.469259+00:00",
+  "phase": 6,
+  "name": "SRE Culture",
+  "status": "COMPLETE",
+  "total_incidents": 1,
+  "total_pre_mortems": 1,
+  "total_post_mortems": 1,
+  "total_slo_breaches": 1,
+  "sre_score": 80.0,
+  "by_category": {
+    "performance": 1
+  },
+  "by_severity": {
+    "high": 1
+  }
+}

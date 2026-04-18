@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 135,
-  "score": 0.7694266078818999,
+  "iteration": 167,
+  "score": 0.7686032176149825,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -157,7 +157,39 @@
     0.7696792394608473,
     0.7900529236713736,
     0.7703160815661103,
-    0.7694266078818999
+    0.7694266078818999,
+    0.7694266078818999,
+    0.7694266078818999,
+    0.7687222855493101,
+    0.7689499236713735,
+    0.7696365738292682,
+    0.7698865738292683,
+    0.7701365738292683,
+    0.7703865738292682,
+    0.7902578287340302,
+    0.7691455246971798,
+    0.7693481001626016,
+    0.7695861954006968,
+    0.7698242906387921,
+    0.7696179716578396,
+    0.7698560668959349,
+    0.7700941621340301,
+    0.7703322573721254,
+    0.7705703526102207,
+    0.7693892595257512,
+    0.789591834991173,
+    0.7698299302292683,
+    0.7693172922673635,
+    0.7695553875054587,
+    0.769793482743554,
+    0.7686150033257513,
+    0.768817578791173,
+    0.7690556740292682,
+    0.7692937692673635,
+    0.7695318645054587,
+    0.7681625469114656,
+    0.7883651223768874,
+    0.7686032176149825
   ],
   "patterns": [
     {
@@ -180,7 +212,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 153,
+  "novelty_injections": 185,
   "consecutive_failures": 0,
   "last_validation": null,
   "last_decay": "2026-04-14T10:38:45.192126",
@@ -192,14 +224,19 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
-  "last_forced_novelty": "2026-04-17T18:07:48.670332",
+  "last_validated_pattern": "Apply proven pattern: Break score plateau with novel approach",
+  "last_forced_novelty": "2026-04-18T20:05:09.370795",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 30,
     "avg_quality": 3.98,
     "last_update": "2026-04-17T18:25:22.091423Z"
   },
-  "last_pattern_update": "2026-04-17T22:05:38.291857",
-  "patterns_discovered": 2
+  "last_pattern_update": "2026-04-18T22:03:46.309696",
+  "patterns_discovered": 2,
+  "applied_improvements": [
+    "SUCCESS_DOC: Documented learning loop in KG"
+  ],
+  "last_update": "2026-04-18T04:04:06.205949Z",
+  "total_improvements": 1
 }

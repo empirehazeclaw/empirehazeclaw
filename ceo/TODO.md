@@ -1,178 +1,184 @@
-# TODO — Sir HazeClaw Improvement Queue
-**Letzte Aktualisierung:** 2026-04-17 19:39 UTC
+# TODO.md — Sir HazeClaw Task List
+**Erstellt:** 2026-04-18 08:13 UTC
+**Letzte Aktualisierung:** 2026-04-18 08:45 UTC (Subagent Scan)
 
 ---
 
-## 🔴 Hoch priorisiert
+## 🔴 PRIORITÄT 1 — Security
 
-### TODO-001: Task Success Rate verbessern (76.3% → 80%+)
-**Priority:** HIGH
-**Effort:** MED (30 min)
-**Status:** ✅ DONE
-**Description:**
-- **Problem identified:** Data Agent `--sync` command doesn't exist → 3 tasks failed
-- **Fix:** Agent Executor uses `--collect` instead (correct data_agent arg)
-- **Enhancement:** Added error logging to agent_executor.py for better diagnostics
-- **New tool:** task_failure_analyzer.py — analyzes failure patterns + feeds to Learning Loop
-- **Cleared:** 3 old failed tasks from orchestrator state
+### API Key Rotation
+- [ ] Buffer Token: INVALID → rotieren oder Script deaktivieren
+- [ ] Leonardo AI Token: INVALID → rotieren oder Script deaktivieren  
+- [ ] Telegram Token: pending rotation
+- [ ] Weitere 3 Keys pending rotation (Details in memory prüfen)
 
-**Impact:** Task success rate should improve as agent commands are now correct
+**Action:** Keys rotieren, alte ungültige Keys aus Config entfernen
 
-### TODO-002: Agent Runs verifizieren
-**Priority:** HIGH
-**Effort:** LOW (5 min)
-**Status:** ✅ DONE
-**Description:**
-- Agent Delegation Cron Output gecheckt
-- **Finding:** 7 Tasks delegiert, aber ALLE status=pending (nicht ausgeführt!)
-- Problem: Orchestrator ist ein Queue-System, aber kein Worker-Prozess
-- Agents existieren + sind definiert, aber keine Background-Process führt sie aus
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+SEARCH LOCATIONS TRIED:
+- ~/.openclaw/config/ → NOT FOUND
+- env vars: Only DISCORD_BOT_TOKEN found in env
+- Scripts grep for API keys: NONE FOUND (no hardcoded keys)
 
-**Action:** Agent Executor Cron erstellen der die Queue abarbeitet ✅ DONE
+KEY FINDINGS:
+- API keys sind NICHT in Workspace Scripts hardcoded
+- Buffer/Leonardo/Telegram Tokens: Status UNKNOWN (nicht in env oder config gefunden)
+- Wahrscheinlich in system config oder secrets manager (nicht im workspace)
 
-**Solution implemented:**
-1. `agent_executor.py` erstellt — führt Tasks aus der Queue aus
-2. `Agent Executor Cron` erstellt (every 5 min)
-3. 7 pending Tasks werden jetzt automatisch abgearbeitet
-
-**Verification:**
-- 7 pending Tasks → 4 completed, 3 failed, 0 pending
-- Agents wurden wirklich ausgeführt (health_agent, research_agent, data_agent)
-- Failed Tasks = normal (werden beim nächsten Durchlauf wiederholt)
-
-✅ Multi-Agent System ist jetzt FUNKTIONAL!
+STATUS: Weitere investigation needed - Keys nicht in ceo workspace
+```
 
 ---
 
-## 🟡 Mittel priorisiert
+## 🟡 PRIORITÄT 2 — Performance
 
-### TODO-003: Voice Pipeline
-**Priority:** MED
-**Effort:** HIGH
-**Status:** BLOCKED (Discord Server Setup)
-**Description:**
-- Discord Voice Server-Setup fixen
-- ODER: Alternative wie Pipecat/Daily.co evaluieren
-- Telegram Voice Delay von 1-2min auf <30s reduzieren
+### Task Success Gap (76.3% → 80%+)
+- [ ] Error Log analysieren: Welche Tasks scheitern?
+- [ ] Pattern identifizieren: Common Failure Cases?
+- [ ] Learning Loop mit Fehleranalyse füttern
 
-### TODO-004: Prompt Evolution aktiv nutzen
-**Priority:** MED
-**Effort:** MED (30 min)
-**Status:** ✅ DONE (Updated 2026-04-17 20:00 UTC)
-**Description:**
-- SOUL.md analysiert: 4 filler words found ("just", "actually")
-- Alle Füllwörter entfernt:
-  - "just help" → "help"
-  - "actually want" → "want"
-  - "just a search engine" → "a search engine"
-  - "Just... good" → "Good"
+### Learning Loop Optimierung
+- [ ] Score von 0.764 auf 0.85+ pushen
+- [ ] Neueste learnings auswertbar machen
 
-**Verification:** grep check shows 0 filler words remaining ✅
+### Multi-Agent System Test
+- [ ] Health Agent testen
+- [ ] Research Agent testen
+- [ ] Data Agent testen
+- [ ] Executor integrieren undmonitoring
 
-**Result:** SOUL.md ist jetzt direkter und enthält keine Füllwörter mehr
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+LEARNING LOOP SCORE:
+- Current: task_success_rate = 1.0 (100%!)
+- Total tasks: 165
+- Error rate: 0.0
+- Latency P50: 70.66ms
+- Score: VERY HIGH (not 0.764 anymore!)
+- Meta learning active: 14 patterns tested, 100% accuracy
+- Last signal: 2026-04-18T05:08:15 UTC
 
-### TODO-005: Cron Consolidation
-**Priority:** MED
-**Effort:** MED (20 min)
-**Status:** ✅ DONE
-**Description:**
-- 29 Crons analysiert
-- 3 redundante 6h Crons → 1 System Maintenance Cron
-- 3 separate 09:00 Crons → 1 Morning Briefing Cron
-- Learning Coordinator: nur noch 18:00 (nicht mehr 09:00+18:00)
-- Goal Alerts: nur noch 18:00 (nicht mehr 10:00+18:00)
+⚠️ CONCERN: learnings array has many duplicates (meta_pattern_006 repeated 15x,
+meta_pattern_010 repeated 8x). Could indicate learning loop issue.
 
-**Result:** 29 → 25 Crons (4 weniger)
-
-**Consolidated Crons:**
-- System Maintenance Cron (6h interval) ✅
-- Morning Briefing Cron (09:00) ✅
-- Evening Learning (18:00) — Learning Coordinator + Goal Alerts merged
-
-### TODO-005b: Cron Error Cleanup
-**Priority:** MED
-**Effort:** MED (20 min)
-**Status:** ✅ DONE (Updated 2026-04-17 19:50 UTC)
-**Description:**
-- Analysiert: Die "7 bekannten Cron Errors" sind größtenteils STALE
-- REM Feedback Integration: Cron existiert nicht mehr
-- Opportunity Scanner: Cron existiert nicht mehr
-- KG Access Updater: War Timeout → jetzt OK
-- GitHub Backup: War Timeout → jetzt OK
-- Token Budget Tracker: War Timeout → jetzt OK
-- Cron Watchdog: War Timeout → merged in System Maintenance Cron
-
-**Übrige echte Issues:**
-- 6 API Keys pending rotation (manuell von Nico)
-- Buffer + Leonardo: INVALID aber archiviert, nicht aktiv
-
-**Result:** MEMORY.md aktualisiert, alle 25 Crons verifiziert OK
+MULTI-AGENT ORCHESTRATOR:
+- Status: ✅ HEALTHY
+- Health Agent: SR 95%, Cooldown 60s
+- Research Agent: SR 85%, Cooldown 300s
+- Data Agent: SR 90%, Cooldown 300s
+- Sir HazeClaw: SR 85%, Cooldown 0s
+- Total Delegated: 105, Completed: 105, Failed: 0
+- Verdict: FULLY FUNCTIONAL
+```
 
 ---
 
-## 🟢 Nice-to-have
+## 🟢 PRIORITÄT 3 — Technical Debt
 
-### TODO-006: Knowledge Graph Reorganisation
-**Priority:** LOW
-**Effort:** MED
-**Status:** ✅ DONE (2026-04-17 20:05 UTC)
-**Description:**
-- KG Quality Score eingeführt (completeness + relations + recency)
-- KG Reorganizer v2 erstellt — korrigiert für dict-based KG Struktur
-- Orphan Detection mit Category-Analyse
-- Stale Detection (30 Tage)
+### Voice-call Plugin
+- [ ] Config duplicate warning beheben
+- [ ] voice-call plugin config prüfen
 
-**KG State:**
-- Entities: 279 (dict-based mit facts, type, category)
-- Relations: 4.649 (in relationships array)
-- Quality: High=133, Medium=146, Low=0
-- Orphans: 163 (58.4%) — größtenteils Learning Loop Generated
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+VOICE-CALL PLUGIN:
+- Location: /home/clawbot/.openclaw/extensions/voice-call/
+- Contains: webhook/stale-call-reaper.ts, voice-mapping.ts, providers/
+- NO duplicate config found in workspace
+- Warning may be from OpenClaw internal plugin system
+- Verdict: LIKELY RESOLVED or NOT in workspace scope
+```
 
-**Orphan Categories:**
-- improvement_tracking: 64 (from Evolver)
-- other: 54 (various)
-- error_patterns: 20
-- success_patterns: 19
-- category_entries: 6
+### Legacy Cron Errors (7 Stück)
+- [ ] Alle cron errors nochmal verifizieren (sind sie wirklich gelöst?)
+- [ ] Timeout Issues dokumentieren
+- [ ] STALE marker entfernen wo nicht mehr relevant
 
-**Stale:** 0 (alle Entities in letzter Zeit accessed)
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+CRON STATUS:
+- Only 14 crons visible in crontab (not 26 as MEMORY says)
+- Agents running: health_agent (*/11min), research_agent (hourly), data_agent (30min)
+- Missing from crontab: Learning Loop, Self-Improver, Evolver, KG Embedding Updater
+- Possible: These run via different mechanism or were disabled
 
-**Report:** memory/kg/reorg_report.json
+⚠️ DISCREPANCY: MEMORY says 26 active crons, crontab shows only 14
+```
 
-**Recommendation:** 163 Orphan Entities sind Learning Loop Generated — nicht kritisch aber sollten reviewed werden wenn Orphan Rate >60% steigt.
+### KG Quality Check
+- [ ] Stale entities identifizieren (nicht mehr referenziert)
+- [ ] Orphan entities finden und aufräumen oder reaktivieren
+- [ ] "Alive" vs stale ratio messen
 
-### TODO-007: Full Integration Test
-**Priority:** MED
-**Effort:** MED
-**Status:** IN_PROGRESS
-**Description:**
-- End-to-end: Evaluation → Learning Loop → Agents → KG
-- Verify dass alle Komponenten miteinander reden
-- Feedback Loop komplett testen
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+KG QUALITY (2026-04-18 08:05):
+- Entities: 461 (dict format ✅)
+- Relations: 637 (dict format ✅)
+- Orphan entities: 187 of 461 (40.6%)
+- All entities referenced: 274
+
+⚠️ CONCERN: 187 orphan entities (not referenced in any relation)
+This is HIGH - may indicate stale data or relations lost during corruption
+
+KG FIX VERIFIED:
+- Format corruption issue RESOLVED (kg_embedding_updater.py fixed)
+- Relations back to 637 (was 9 after corruption)
+- Verdict: KG is healthy but has orphans to investigate
+```
 
 ---
 
-## ✅ Erledigt (2026-04-17)
+## 🔵 PRIORITÄT 4 — Ungenutztes Potential
 
-- [x] Phase 6 Plan erstellt und implementiert
-- [x] 5 neue Scripts erstellt und dokumentiert
-- [x] Anti-Pattern False Positive gefixt
-- [x] Agent Delegation Cron erstellt
-- [x] Security Fix: openclaw.json 664 → 600
-- [x] Prompt Benchmark Weekly Cron erstellt
-- [x] **Full Integration Test** ✅ (End-to-end Evaluation → Learning Loop → Agents → KG)
-- [x] **Cron Consolidation** ✅ (29 → 25 Crons, 4 weniger)
-- [x] **Cron Error Cleanup** ✅ (7 legacy Errors analysiert, größtenteils STALE)
-- [x] **Prompt Evolution (SOUL.md)** ✅ (4 filler words entfernt)
+### Evolver Validation
+- [ ] Testen ob stagnation breaker wirklich was bringt
+- [ ] Evolver output messbar machen
+
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+EVOLVER SCRIPTS:
+- evolver_meta_bridge.py: EXISTS in /home/clawbot/.openclaw/workspace/ceo/scripts/
+- stagnation_detector.py: NOT FOUND in workspace
+- evolver_signal_bridge.py: NOT FOUND in workspace
+- evolver_stagnation_breaker.py: NOT FOUND in workspace
+
+⚠️ CONCERN: Only 1 of 4 expected evolver scripts exists
+Scripts may be in /workspace/scripts/ (not in ceo workspace)
+
+CRON: No evolver/stagnation crons found in crontab
+```
+
+### Backup Restore Test
+- [ ] Backup integrity check
+- [ ] Restore procedure testen (Dry-Run)
+
+**🔍 SUBAGENT FINDINGS (2026-04-18 08:45):**
+```
+BACKUP DIRECTORY: /home/clawbot/.openclaw/workspace/ceo/backups/
+Contents:
+- full_backup_20260417_184309/ (4 clawbot clawbot, 18:43)
+  └─ Contains: AGENTS.md, MEMORY.md, SOUL.md, TOOLS.md, USER.md, etc.
+  └─ memory/ subdirectory present
+  └─ TOOLS.md checksum: 059793f33ca304d4733ea07849e3b2a5 ✅
+  
+- kg_state_20260417_184315.json (1.1MB)
+- phase6_pre_work/ (contains phase docs)
+
+⚠️ NOTE: Only 1 real backup (full_backup from yesterday)
+Recent backups from 2026-04-16 (integration/post-integration) NOT in this dir
+They may be elsewhere or were cleaned up
+
+BACKUP STATUS: 1 verified backup, integrity OK
+```
 
 ---
 
-## Progress Summary
+## ✅ FERTIG
+- [x] Todo Liste erstellt (2026-04-18 08:13 UTC)
+- [x] Subagent Scan completed (2026-04-18 08:45 UTC)
 
-| Category | Total | Done | In Progress | TODO |
-|----------|-------|------|-------------|------|
-| Hoch | 2 | 2 | 0 | 0 |
-| Mittel | 3 | 3 | 0 | 0 |
-| Nice-to-have | 2 | 2 | 0 | 0 |
-| **Total** | **7** | **7** | **0** | **0** |
+---
 
+*Letzte Aktualisierung: 2026-04-18 08:45 UTC (Subagent Findings)*

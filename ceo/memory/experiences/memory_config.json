@@ -1,0 +1,10 @@
+{
+  "max_experiences": 500,
+  "consolidation_interval_hours": 24,
+  "forgetting_threshold": 0.2,
+  "decay_rate_per_day": 0.05,
+  "boost_on_access": 0.1,
+  "min_importance": 0.1,
+  "replay_sample_size": 10,
+  "version": "1.0"
+}

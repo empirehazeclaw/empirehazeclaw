@@ -159,32 +159,45 @@ def search_hackernews(topic: str, max_results: int = 5) -> List[Dict]:
         log(f"HN search failed: {e}", "ERROR")
         return []
 
+def get_brave_api_key() -> Optional[str]:
+    """Get Brave API key from secrets.env."""
+    secrets_path = Path("/home/clawbot/.openclaw/secrets.env")
+    if secrets_path.exists():
+        for line in secrets_path.read_text().splitlines():
+            if line.startswith("BRAVE_API_KEY="):
+                return line.split("=", 1)[1].strip()
+    return os.environ.get("BRAVE_API_KEY")
+
 def search_web(topic: str, max_results: int = 5) -> List[Dict]:
-    """Web search for topic."""
+    """Web search for topic using Brave Search API."""
+    api_key = get_brave_api_key()
+    if not api_key:
+        log("Brave API key not found", "ERROR")
+        return []
+    
     try:
+        import urllib.parse
+        encoded_topic = urllib.parse.quote(topic)
         result = subprocess.run(
-            ["curl", "-s", f"https://duckduckgo.com/html/?q={topic.replace(' ', '+')}&h=&format=json"],
-            capture_output=True,
-            text=True,
-            timeout=15
+            ["curl", "-s", f"https://api.search.brave.com/res/v1/web/search?q={encoded_topic}&count={max_results}",
+             "-H", f"Accept: application/json",
+             "-H", f"x-subscription-token: {api_key}"],
+            capture_output=True, text=True, timeout=20
         )
         
-        # Simple parsing - extract titles and URLs
+        data = json.loads(result.stdout)
         results = []
-        lines = result.stdout.split('\n')
-        for line in lines:
-            if '<a href="' in line and 'rel="nof' not in line:
-                url_match = re.search(r'href="(https?://[^"]+)"', line)
-                title_match = re.search(r'>([^<]+)</a>', line)
-                if url_match and title_match:
-                    results.append({
-                        "title": title_match.group(1).strip(),
-                        "url": url_match.group(1),
-                        "topic": topic,
-                    })
+        
+        for item in data.get("web", {}).get("results", [])[:max_results]:
+            results.append({
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "description": item.get("description", "")[:200],
+                "topic": topic,
+            })
         
         log(f"Web: Found {len(results)} results on {topic}", "INFO")
-        return results[:max_results]
+        return results
     except Exception as e:
         log(f"Web search failed: {e}", "ERROR")
         return []

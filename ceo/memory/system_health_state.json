@@ -1,0 +1,33 @@
+{
+  "last_full_cycle": "2026-04-18T22:46:32.543859",
+  "cycles_run": 35,
+  "script_issues": [
+    {
+      "type": "not_executable",
+      "script": "/home/clawbot/.openclaw/workspace/ceo/scripts/mad_dog_controller.sh",
+      "cron": "Mad-Dog Evolver Controller",
+      "job_id": "50d3665b",
+      "detail": "Shell script not executable",
+      "severity": "LOW"
+    }
+  ],
+  "doc_issues": [],
+  "cron_issues": {
+    "total_crons": 30,
+    "redundancy_groups": 0,
+    "redundancies": [],
+    "healthy": true
+  },
+  "kg_health": {
+    "entity_count": 424,
+    "connected_count": 298,
+    "orphan_count": 131,
+    "orphan_pct": 0.3089622641509434,
+    "healthy": true,
+    "threshold": 0.8,
+    "recommendation": "Orphan rate 30.9% within acceptable range"
+  },
+  "last_script_check": "2026-04-18T22:46:30.266683",
+  "last_doc_audit": "2026-04-18T22:46:30.267201",
+  "last_cron_check": "2026-04-18T22:46:32.543849"
+}

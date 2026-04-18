@@ -155,7 +155,7 @@ def sync_to_kg(kg, entities):
                 "weight": 0.9,
                 "created_at": entity["timestamp"],
             }
-            kg["relationships"].append(rel)
+            kg["relations"].append(rel)
 
         synced += 1
 

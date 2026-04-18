@@ -1,0 +1,22 @@
+{
+  "config": {
+    "exploration_rate": 0.1,
+    "adaptive_decay": 0.95,
+    "min_rate": 0.02,
+    "max_rate": 0.2,
+    "stagnation_threshold": 5
+  },
+  "current_period": {
+    "start": "2026-04-18T10:50:04.606593+00:00",
+    "total_runs": 3,
+    "exploration_runs": 3,
+    "exploitation_runs": 0,
+    "exploration_successes": 0,
+    "exploitation_successes": 0,
+    "experimental_strategies": [
+      "test_strategy"
+    ]
+  },
+  "history": [],
+  "version": "1.0"
+}

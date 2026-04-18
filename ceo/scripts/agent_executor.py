@@ -91,7 +91,7 @@ def execute_agent_task(agent_name, task_data):
         elif task_type == 'learning_sync':
             cmd = [sys.executable, script, '--collect']
         elif task_type == 'data_analysis':
-            cmd = [sys.executable, script, '--analyze']
+            cmd = [sys.executable, script, '--full']
         else:
             cmd = [sys.executable, script]
         

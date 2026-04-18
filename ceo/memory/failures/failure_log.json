@@ -1,0 +1,124 @@
+{
+  "failures": [
+    {
+      "id": 1,
+      "timestamp": "2026-04-18T10:05:27.927110+00:00",
+      "description": "Test failure - crontab timeout",
+      "severity": "low",
+      "cause": "timeout",
+      "tags": [
+        "test",
+        "demo"
+      ],
+      "context": {},
+      "resolution": "Integration Test - resolved",
+      "related_learning": null,
+      "status": "resolved",
+      "resolved_at": "2026-04-18T11:11:56.214423+00:00"
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-04-18T10:10:54.937398+00:00",
+      "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung",
+      "severity": "low",
+      "cause": "design_gap",
+      "tags": [
+        "test",
+        "integration",
+        "phase1"
+      ],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-04-18T10:45:19.107936+00:00",
+      "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung",
+      "severity": "low",
+      "cause": "design_gap",
+      "tags": [
+        "test",
+        "integration",
+        "phase1"
+      ],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-04-18T10:45:32.147980+00:00",
+      "description": "Real test failure - API timeout at 10:45",
+      "severity": "medium",
+      "cause": "timeout",
+      "tags": [
+        "realtest",
+        "integration"
+      ],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-04-18T11:07:15.650134+00:00",
+      "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung",
+      "severity": "low",
+      "cause": "design_gap",
+      "tags": [
+        "test",
+        "integration",
+        "phase1"
+      ],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-04-18T11:11:56.033373+00:00",
+      "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung",
+      "severity": "low",
+      "cause": "design_gap",
+      "tags": [
+        "test",
+        "integration",
+        "phase1"
+      ],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-04-18T15:34:09.785189+00:00",
+      "description": "Recurring kg_sync failures in Learning Loop \u2014 6 occurrences today (06:05-15:05 UTC), all Learning Core runs failing kg_sync while loop/sync/pattern_learning/signal_bridge remain OK. Pattern suggests learning_to_kg_sync.py or KG write operations are failing silently.",
+      "severity": "high",
+      "cause": "timeout",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-04-18T19:36:30.963322+00:00",
+      "description": "Recurring health_agent failures: Gateway restart command 'openclaw' not found (health agent looks in wrong directory). Last occurrence: 2026-04-18T18:00. Binary exists at /home/clawbot/.npm-global/bin/openclaw but health agent likely uses 'openclaw' directly without full path. This issue has occurred multiple times across April 17-18.",
+      "severity": "high",
+      "cause": "design_gap",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    }
+  ],
+  "version": "1.0"
+}

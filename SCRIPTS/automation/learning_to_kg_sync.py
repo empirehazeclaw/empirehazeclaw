@@ -16,7 +16,7 @@ import os
 import sys
 import json
 import argparse
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Set
 
@@ -41,7 +41,7 @@ def load_state() -> dict:
     return {"synced_patterns": [], "synced_improvements": [], "last_sync": None}
 
 def save_state(state: dict):
-    state["last_sync"] = datetime.utcnow().isoformat()
+    state["last_sync"] = datetime.now(timezone.utc).isoformat()
     with open(STATE_FILE, 'w') as f:
         json.dump(state, f, indent=2)
 
@@ -69,6 +69,21 @@ def improvement_to_entity_id(improvement: dict) -> str:
     title = improvement.get("title", "unknown")[:30].replace(" ", "-").replace("[", "").replace("]", "")
     return f"Improvement_{ts}_{title}"
 
+def entity_id_exists(kg: dict, entity_id: str) -> bool:
+    """Check if entity_id exists in dict-based KG."""
+    return entity_id in kg.get("entities", {})
+
+def next_rel_id(kg: dict) -> str:
+    """Get next available relation ID for dict-based KG."""
+    rels = kg.get("relations", {})
+    if isinstance(rels, dict):
+        # Dict-based KG: keys are string numbers
+        existing = [int(k) for k in rels.keys() if str(k).isdigit()]
+    else:
+        # List-based KG fallback
+        existing = [int(r.get("id", 0)) for r in rels if str(r.get("id", "")).isdigit()]
+    return str(max(existing + [0]) + 1)
+
 def add_pattern_to_kg(kg: dict, pattern: dict) -> bool:
     """Add a learning pattern as KG entity. Returns True if added."""
     pid = pattern.get("id")
@@ -76,11 +91,11 @@ def add_pattern_to_kg(kg: dict, pattern: dict) -> bool:
         return False
     
     entity_id = pattern_to_entity_id(pid)
-    if entity_id in kg.get("entities", {}):
+    if entity_id_exists(kg, entity_id):
         return False  # Already exists
     
     # Create entity
-    kg["entities"][entity_id] = {
+    entity = {
         "id": entity_id,
         "type": "LearningPattern",
         "name": pid,
@@ -92,18 +107,31 @@ def add_pattern_to_kg(kg: dict, pattern: dict) -> bool:
         "source": pattern.get("source", "learning_loop"),
         "first_seen": pattern.get("first_seen"),
         "last_validated": pattern.get("last_validated"),
-        "created_at": datetime.utcnow().isoformat()
+        "created_at": datetime.now(timezone.utc).isoformat()
     }
+    kg["entities"][entity_id] = entity
     
     # Create relation to Learning Loop
-    next_rel_id = str(max([int(k) for k in kg.get("relations", {}).keys()] + [0]) + 1)
-    kg["relations"][next_rel_id] = {
-        "from": entity_id,
-        "to": "Learning-Loop",
-        "type": "part_of",
-        "weight": 0.9,
-        "created_at": datetime.utcnow().isoformat()
-    }
+    rel_id = next_rel_id(kg)
+    rels = kg.get("relations", {})
+    if isinstance(rels, dict):
+        rels[rel_id] = {
+            "id": int(rel_id),
+            "from": entity_id,
+            "to": "Learning-Loop",
+            "type": "part_of",
+            "weight": 0.9,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        }
+    else:
+        rels.append({
+            "id": int(rel_id),
+            "from": entity_id,
+            "to": "Learning-Loop",
+            "type": "part_of",
+            "weight": 0.9,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        })
     
     return True
 
@@ -114,7 +142,7 @@ def add_improvement_to_kg(kg: dict, improvement: dict) -> bool:
         return False
     
     entity_id = improvement_to_entity_id(improvement)
-    if entity_id in kg.get("entities", {}):
+    if entity_id_exists(kg, entity_id):
         return False  # Already exists
     
     validation = improvement.get("validation_details", {})
@@ -122,7 +150,7 @@ def add_improvement_to_kg(kg: dict, improvement: dict) -> bool:
     passed = validation.get("passed", False)
     
     # Create entity
-    kg["entities"][entity_id] = {
+    entity = {
         "id": entity_id,
         "type": "Improvement",
         "name": title[:100],
@@ -131,29 +159,53 @@ def add_improvement_to_kg(kg: dict, improvement: dict) -> bool:
         "timestamp": improvement.get("timestamp"),
         "test_count": len(tests),
         "tests_passed": sum(1 for t in tests if t.get("passed")),
-        "created_at": datetime.utcnow().isoformat()
+        "created_at": datetime.now(timezone.utc).isoformat()
     }
+    kg["entities"][entity_id] = entity
     
     # Create relation to Learning Loop
-    next_rel_id = str(max([int(k) for k in kg.get("relations", {}).keys()] + [0]) + 1)
-    kg["relations"][next_rel_id] = {
-        "from": "Learning-Loop",
-        "to": entity_id,
-        "type": "created",
-        "weight": 0.9,
-        "created_at": datetime.utcnow().isoformat()
-    }
+    rel_id = next_rel_id(kg)
+    rels = kg.get("relations", {})
+    if isinstance(rels, dict):
+        rels[rel_id] = {
+            "id": int(rel_id),
+            "from": "Learning-Loop",
+            "to": entity_id,
+            "type": "created",
+            "weight": 0.9,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        }
+    else:
+        rels.append({
+            "id": int(rel_id),
+            "from": "Learning-Loop",
+            "to": entity_id,
+            "type": "created",
+            "weight": 0.9,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        })
     
     # If validated, link to the pattern it validates
     if passed:
-        next_rel_id = str(int(next_rel_id) + 1)
-        kg["relations"][next_rel_id] = {
-            "from": entity_id,
-            "to": "Learning-Loop",
-            "type": "validates",
-            "weight": 0.8,
-            "created_at": datetime.utcnow().isoformat()
-        }
+        rel_id2 = next_rel_id(kg)
+        if isinstance(rels, dict):
+            rels[rel_id2] = {
+                "id": int(rel_id2),
+                "from": entity_id,
+                "to": "Learning-Loop",
+                "type": "validates",
+                "weight": 0.8,
+                "created_at": datetime.now(timezone.utc).isoformat()
+            }
+        else:
+            rels.append({
+                "id": int(rel_id2),
+                "from": entity_id,
+                "to": "Learning-Loop",
+                "type": "validates",
+                "weight": 0.8,
+                "created_at": datetime.now(timezone.utc).isoformat()
+            })
     
     return True
 
@@ -216,20 +268,3 @@ if __name__ == "__main__":
     
     dry_run = not args.apply
     sync_learning_to_kg(dry_run=dry_run)
-
-# ============================================================
-# EVENT BUS INTEGRATION
-# ============================================================
-def publish_event(event_type: str, source: str, data: dict, severity: str = "info"):
-    """Publish event to the event bus."""
-    import subprocess
-    import json
-    data_str = json.dumps(data).replace('"', '\\"')
-    try:
-        subprocess.run([
-            "python3", __file__.replace("_sync.py", "_event_bus.py"),
-            "publish", "--type", event_type, "--source", source,
-            "--severity", severity, "--data", data_str
-        ], check=False, capture_output=True, timeout=5)
-    except:
-        pass  # Non-blocking

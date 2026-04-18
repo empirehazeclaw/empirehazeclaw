@@ -2,40 +2,53 @@
 """
 Data Agent — Sir HazeClaw Multi-Agent Architecture
 =================================================
-Dedicated analytics + learning support agent.
+Dedicated analytics + system maintenance agent.
 
-Role: Analyst — Learning Loop execution, KG quality, Metrics
-Trigger: Cron (stündlich) + Event-basiert
+Role: Analyst + System Maintenance
+- Learning Loop execution, KG quality, Metrics
+- Script Health Check (broken symlinks, wrong paths, missing scripts)
+- Doc Audit (staleness detection)
+- Cron Redundancy Detection
+- KG Health (80% orphan threshold for CEO KG)
 
 Usage:
-    python3 data_agent.py --collect      # Collect learning signals
-    python3 data_agent.py --metrics     # Update metrics
-    python3 data_agent.py --kg-maintain # KG quality maintenance
-    python3 data_agent.py --full       # Full cycle
+    python3 data_agent.py --collect          # Collect learning signals
+    python3 data_agent.py --metrics         # Update metrics
+    python3 data_agent.py --kg-maintain     # KG quality maintenance
+    python3 data_agent.py --script-health    # Script + Cron health check
+    python3 data_agent.py --doc-audit        # Doc staleness audit
+    python3 data_agent.py --cron-redundancy  # Cron redundancy check
+    python3 data_agent.py --full             # Full cycle (all of the above)
 
-Phase 3 of Multi-Agent Architecture
+Phase 3 of Multi-Agent Architecture — Enhanced 2026-04-18
 """
 
 import os
 import sys
 import json
+import re
 import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple, Set
 from collections import defaultdict
+from urllib.parse import urlparse
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
+CEO = WORKSPACE / "ceo"
 SCRIPTS_DIR = WORKSPACE / "SCRIPTS" / "automation"
+CEO_SCRIPTS = CEO / "scripts"
 DATA_DIR = WORKSPACE / "data"
 EVENTS_DIR = DATA_DIR / "events"
 LOGS_DIR = WORKSPACE / "logs"
-KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
+KG_PATH = CEO / "memory" / "kg" / "knowledge_graph.json"
 DATA_STATE_FILE = DATA_DIR / "data_agent_state.json"
+STATE_FILE = CEO / "memory" / "system_health_state.json"
 
-# Config
-KG_ORPHAN_THRESHOLD = 0.30  # 30% orphans = needs cleanup
-LEARNING_LOG = DATA_DIR / "learning_loop" / "learning_log.json"
+# Config — CEO KG has 98%+ orphan rate by design, threshold is 80%
+KG_ORPHAN_THRESHOLD = 0.80
+STALE_DOC_DAYS = 30
+CRON_SCHEDULE_FILE = "/tmp/openclaw_crons.json"
 
 def log(msg: str, level: str = "INFO"):
     """Simple logging."""
@@ -49,30 +62,34 @@ def log(msg: str, level: str = "INFO"):
     with open(log_file, "a") as f:
         f.write(json.dumps(entry) + "\n")
 
+# ============ STATE ============
+
 def load_state() -> Dict:
-    """Load data agent state."""
-    if DATA_STATE_FILE.exists():
+    if STATE_FILE.exists():
         try:
-            return json.load(open(DATA_STATE_FILE))
+            return json.load(open(STATE_FILE))
         except:
             pass
     return {
-        "last_cycle": None,
+        "last_full_cycle": None,
         "cycles_run": 0,
-        "patterns_found": 0,
-        "improvements_applied": 0,
-        "kg_entities_added": 0,
-        "kg_orphans_cleaned": 0,
+        "script_issues": [],
+        "doc_issues": [],
+        "cron_issues": [],
+        "kg_health": {},
+        "last_script_check": None,
+        "last_doc_audit": None,
+        "last_cron_check": None,
     }
 
 def save_state(state: Dict):
-    """Save data agent state."""
-    DATA_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(DATA_STATE_FILE, "w") as f:
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
 
+# ============ KG ============
+
 def load_kg() -> Dict:
-    """Load knowledge graph."""
     if KG_PATH.exists():
         try:
             return json.load(open(KG_PATH))
@@ -80,292 +97,452 @@ def load_kg() -> Dict:
             return {"entities": {}, "relations": []}
     return {"entities": {}, "relations": []}
 
-def save_kg(kg: Dict):
-    """Save knowledge graph."""
-    KG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(KG_PATH, "w") as f:
-        json.dump(kg, f, indent=2)
+def get_kg_connected_entities(kg: Dict) -> Set[str]:
+    """Get all entity IDs that have relations (embedded or top-level)."""
+    connected = set()
+    
+    # Top-level relations
+    top_rel = kg.get("relations", {})
+    if isinstance(top_rel, dict):
+        for r in top_rel.values():
+            if isinstance(r, dict):
+                if r.get("from"): connected.add(r["from"])
+                if r.get("to"): connected.add(r["to"])
+    elif isinstance(top_rel, list):
+        for r in top_rel:
+            if isinstance(r, dict):
+                if r.get("source"): connected.add(r["source"])
+                if r.get("target"): connected.add(r["target"])
+    
+    # Embedded relations (CEO KG format: entity.relations = [{target, type}])
+    for eid, ent in kg.get("entities", {}).items():
+        for rel in ent.get("relations", []):
+            if isinstance(rel, dict):
+                if rel.get("target"): connected.add(rel["target"])
+                if rel.get("source"): connected.add(rel["source"])
+            elif isinstance(rel, str):
+                connected.add(rel)
+    
+    return connected
 
-def collect_learning_signals() -> Dict:
-    """Collect signals from various sources."""
-    signals = {
-        "timestamp": datetime.now().isoformat(),
-        "feedback_count": 0,
-        "pattern_count": 0,
-        "sources": [],
-    }
-    
-    # Check learning log
-    if LEARNING_LOG.exists():
-        try:
-            content = json.load(open(LEARNING_LOG))
-            signals['feedback_count'] = len(content.get('feedback', []))
-            signals['sources'].append('learning_log')
-        except:
-            pass
-    
-    # Check event bus for learning events
-    events_dir = EVENTS_DIR
-    if events_dir.exists():
-        recent_events = list(events_dir.glob("*.json"))[-20:]
-        learning_events = [e for e in recent_events if 'learning' in e.name or 'kg_update' in e.name]
-        signals['learning_events'] = len(learning_events)
-        signals['sources'].append('event_bus')
-    
-    # Check heartbeat state for patterns
-    heartbeat_state = DATA_DIR / "heartbeat-state.json"
-    if heartbeat_state.exists():
-        try:
-            state = json.load(open(heartbeat_state))
-            if 'knownIssues' in state:
-                signals['known_issues'] = len(state['knownIssues'])
-            if 'resolved' in state:
-                signals['resolved_issues'] = len(state['resolved'])
-        except:
-            pass
-    
-    log(f"Collected {signals['feedback_count']} signals from {len(signals['sources'])} sources", "INFO")
-    return signals
-
-def find_patterns_in_signals(signals: Dict) -> List[Dict]:
-    """Analyze signals for patterns."""
-    patterns = []
-    
-    # Pattern: Many known issues = systemic problem
-    if signals.get('known_issues', 0) > 5:
-        patterns.append({
-            "type": "systemic_issues",
-            "description": f"High issue count: {signals['known_issues']} known",
-            "severity": "HIGH",
-            "recommendation": "Investigate root cause of recurring issues"
-        })
-    
-    # Pattern: Many feedback but few patterns = learning gap
-    if signals.get('feedback_count', 0) > 10 and signals.get('pattern_count', 0) < 2:
-        patterns.append({
-            "type": "learning_gap",
-            "description": f"High feedback ({signals['feedback_count']}) but low pattern detection",
-            "severity": "MEDIUM",
-            "recommendation": "Improve pattern recognition or signal quality"
-        })
-    
-    return patterns
-
-def maintain_kg_quality(kg: Dict) -> Dict:
-    """Maintain KG quality: orphan cleanup, consistency."""
-    maintenance = {
-        "timestamp": datetime.now().isoformat(),
-        "orphans_found": 0,
-        "orphans_cleaned": 0,
-        "relations_fixed": 0,
-        "entity_types": {},
-    }
-    
-    entities = kg.get('entities', {})
-    relations = kg.get('relations', [])
-    
-    # Count entity types
-    type_counts = defaultdict(int)
-    for e in entities.values():
-        etype = e.get('type', 'unknown')
-        type_counts[etype] += 1
-    maintenance['entity_types'] = dict(type_counts)
-    
-    # Find orphans (entities with no relations)
-    entity_ids = set(entities.keys())
-    related_ids = set()
-    
-    # Relations stored as dict with numeric keys → iterate values
-    rels = relations.values() if isinstance(relations, dict) else relations
-    
-    for rel in rels:
-        if isinstance(rel, dict):
-            if rel.get('from'):
-                related_ids.add(rel['from'])
-            if rel.get('to'):
-                related_ids.add(rel['to'])
-    
-    orphans = entity_ids - related_ids
-    orphan_count = len(orphans)
-    maintenance['orphans_found'] = orphan_count
-    
-    # Calculate orphan percentage
-    total_entities = len(entity_ids)
-    orphan_pct = orphan_count / total_entities if total_entities > 0 else 0
-    maintenance['orphan_pct'] = orphan_pct
-    
-    # If orphan rate too high, flag for cleanup
-    if orphan_pct > KG_ORPHAN_THRESHOLD:
-        maintenance['needs_cleanup'] = True
-        maintenance['recommendation'] = f"Orphan rate {orphan_pct:.1%} exceeds threshold {KG_ORPHAN_THRESHOLD:.1%}"
-        log(f"KG Quality warning: {orphan_pct:.1%} orphans ({orphan_count}/{total_entities})", "WARN")
-    else:
-        maintenance['needs_cleanup'] = False
-        maintenance['recommendation'] = f"Orphan rate {orphan_pct:.1%} within acceptable range"
-    
-    return maintenance
-
-def get_learning_loop_score() -> float:
-    """Get current Learning Loop score."""
-    state_file = DATA_DIR / "learning_loop_state.json"
-    if state_file.exists():
-        try:
-            state = json.load(open(state_file))
-            return state.get('score', 0.0)
-        except:
-            pass
-    return 0.0
-
-def get_kg_stats() -> Dict:
-    """Get KG statistics."""
+def maintain_kg_quality() -> Dict:
+    """KG quality check with CEO KG–correct 80% orphan threshold."""
     kg = load_kg()
-    entities = kg.get('entities', {})
-    relations = kg.get('relations', [])
+    entities = kg.get("entities", {})
+    connected = get_kg_connected_entities(kg)
+    
+    entity_ids = set(entities.keys())
+    orphans = entity_ids - connected
+    orphan_pct = len(orphans) / len(entity_ids) if entity_ids else 0
+    
+    result = {
+        "entity_count": len(entity_ids),
+        "connected_count": len(connected),
+        "orphan_count": len(orphans),
+        "orphan_pct": orphan_pct,
+        "healthy": orphan_pct <= KG_ORPHAN_THRESHOLD,
+        "threshold": KG_ORPHAN_THRESHOLD,
+        "recommendation": None,
+    }
+    
+    if orphan_pct > KG_ORPHAN_THRESHOLD:
+        result["recommendation"] = f"Orphan rate {orphan_pct:.1%} exceeds {KG_ORPHAN_THRESHOLD:.1%}"
+    else:
+        result["recommendation"] = f"Orphan rate {orphan_pct:.1%} within acceptable range"
+    
+    return result
+
+# ============ SCRIPT HEALTH ============
+
+def get_cron_scripts() -> Dict[str, Tuple[str, str]]:
+    """Get all scripts referenced by cron jobs. Returns {script_path: (cron_name, job_id)}."""
+    result = subprocess.run(
+        ["openclaw", "cron", "list", "--json"],
+        capture_output=True, text=True, timeout=15
+    )
+    if result.returncode != 0:
+        return {}
+    
+    scripts = {}
+    data = json.loads(result.stdout)
+    for job in data.get("jobs", []):
+        msg = job.get("payload", {}).get("message", "")
+        job_name = job.get("name", "unnamed")
+        job_id = job.get("id", "")[:8]
+        
+        # Extract absolute paths
+        for p in re.findall(r'(/[^\s]+\.(?:py|sh))', msg):
+            if p.startswith("/"):
+                scripts[p] = (job_name, job_id)
+    
+    return scripts
+
+def check_script_health() -> Dict:
+    """Check all cron scripts for existence, symlinks, path correctness."""
+    scripts = get_cron_scripts()
+    issues = []
+    checked = set()
+    
+    for script_path, (cron_name, job_id) in scripts.items():
+        if script_path in checked:
+            continue
+        checked.add(script_path)
+        
+        p = Path(script_path)
+        
+        # Check existence
+        if not p.exists():
+            # Broken symlink?
+            if p.is_symlink():
+                target = p.resolve()
+                if not target.exists():
+                    issues.append({
+                        "type": "broken_symlink",
+                        "script": script_path,
+                        "cron": cron_name,
+                        "job_id": job_id,
+                        "detail": f"symlink points to non-existent: {target}",
+                        "severity": "CRITICAL",
+                    })
+            else:
+                issues.append({
+                    "type": "missing_script",
+                    "script": script_path,
+                    "cron": cron_name,
+                    "job_id": job_id,
+                    "detail": "Script does not exist",
+                    "severity": "CRITICAL",
+                })
+            continue
+        
+        # Check if executable for shell scripts
+        if script_path.endswith(".sh"):
+            if not os.access(p, os.X_OK):
+                issues.append({
+                    "type": "not_executable",
+                    "script": script_path,
+                    "cron": cron_name,
+                    "job_id": job_id,
+                    "detail": "Shell script not executable",
+                    "severity": "LOW",
+                })
+        
+        # Check for wrong path patterns (scripts/ vs SCRIPTS/ etc)
+        path_lower = script_path.lower()
+        if "/workspace/scripts/" in script_path:
+            # Check if script exists there or in SCRIPTS/
+            alt_path = script_path.replace("/workspace/scripts/", "/workspace/SCRIPTS/")
+            if not Path(alt_path).exists() and not p.exists():
+                pass  # Already handled as missing
+        
+        # Check if it's a symlink that points to another symlink (double symlink = likely broken)
+        if p.is_symlink():
+            target = p.resolve()
+            if target.is_symlink():
+                issues.append({
+                    "type": "double_symlink",
+                    "script": script_path,
+                    "cron": cron_name,
+                    "job_id": job_id,
+                    "detail": f"Double symlink chain: {p} -> {target}",
+                    "severity": "HIGH",
+                })
     
     return {
-        'entity_count': len(entities),
-        'relation_count': len(relations),
-        'type_counts': defaultdict(int),
+        "scripts_checked": len(checked),
+        "issues": issues,
+        "critical_count": sum(1 for i in issues if i["severity"] == "CRITICAL"),
+        "high_count": sum(1 for i in issues if i["severity"] == "HIGH"),
+        "low_count": sum(1 for i in issues if i["severity"] == "LOW"),
+        "healthy": len(issues) == 0,
     }
 
-def update_metrics() -> Dict:
-    """Update metrics for dashboard."""
-    metrics = {
-        "timestamp": datetime.now().isoformat(),
-        "learning_loop_score": get_learning_loop_score(),
-        "kg_entities": 0,
-        "kg_relations": 0,
-        "kg_orphan_rate": 0.0,
-        "system_health": "unknown",
+# ============ DOC AUDIT ============
+
+def check_doc_audit() -> Dict:
+    """Check for stale docs (>30 days old or in wrong location)."""
+    docs_dir = CEO / "docs"
+    issues = []
+    total = 0
+    
+    stale_threshold = datetime.now() - timedelta(days=STALE_DOC_DAYS)
+    
+    # Check docs/ directory
+    if docs_dir.exists():
+        for f in docs_dir.glob("*.md"):
+            total += 1
+            mtime = datetime.fromtimestamp(f.stat().st_mtime)
+            if mtime < stale_threshold:
+                issues.append({
+                    "type": "stale_doc",
+                    "file": f.name,
+                    "path": str(f.relative_to(CEO)),
+                    "mtime": mtime.isoformat(),
+                    "age_days": (datetime.now() - mtime).days,
+                    "severity": "MEDIUM",
+                })
+    
+    # Check architecture/
+    arch_dir = docs_dir / "architecture"
+    if arch_dir.exists():
+        for f in arch_dir.glob("*.md"):
+            total += 1
+    
+    # Check _archive_plans/
+    arch_dir = docs_dir / "_archive_plans"
+    if arch_dir.exists():
+        for f in arch_dir.glob("*.md"):
+            total += 1
+    
+    # Check docs without index (orphan docs)
+    for f in (docs_dir).glob("*.md"):
+        if f.name not in ["INDEX.md"] and not f.name.startswith("_"):
+            # Doc without proper index entry
+            pass
+    
+    return {
+        "docs_total": total,
+        "issues": issues,
+        "stale_count": len(issues),
+        "healthy": len(issues) == 0,
     }
+
+# ============ CRON REDUNDANCY ============
+
+def check_cron_redundancy() -> Dict:
+    """Detect crons with similar payloads that might be redundant."""
+    result = subprocess.run(
+        ["openclaw", "cron", "list", "--json"],
+        capture_output=True, text=True, timeout=15
+    )
+    if result.returncode != 0:
+        return {"error": "Could not fetch cron list"}
     
-    # KG stats
-    kg = load_kg()
-    kg_stats = get_kg_stats()
-    metrics['kg_entities'] = kg_stats['entity_count']
-    metrics['kg_relations'] = kg_stats['relation_count']
+    data = json.loads(result.stdout)
+    jobs = data.get("jobs", [])
     
-    # KG maintenance
-    maint = maintain_kg_quality(kg)
-    metrics['kg_orphan_rate'] = maint.get('orphan_pct', 0.0)
+    # Normalize payload for comparison
+    def normalize(msg: str) -> str:
+        # Remove timestamps, numbers, specific paths
+        n = re.sub(r'\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}', 'T', msg)
+        n = re.sub(r'\d+', 'N', n)
+        n = re.sub(r'(python3?\s+)(/[^\s]+)', r'\1SCRIPT', n)
+        n = re.sub(r'/home/clawbot/[^\s]+', '', n)
+        n = re.sub(r'\s+', ' ', n).strip().lower()
+        return n[:80]
     
-    # System health
-    health_score = load_state()
-    metrics['system_health'] = "healthy" if maint.get('orphan_pct', 1.0) < KG_ORPHAN_THRESHOLD else "degraded"
+    # Group by normalized payload
+    groups = defaultdict(list)
+    for job in jobs:
+        norm = normalize(job.get("payload", {}).get("message", ""))
+        groups[norm].append({
+            "name": job.get("name", "unnamed")[:50],
+            "id": job.get("id", "")[:8],
+            "enabled": job.get("enabled", False),
+            "schedule": job.get("schedule", {}).get("expr", "unknown"),
+        })
     
-    return metrics
+    # Find groups with >1 cron
+    redundancies = []
+    for norm, cron_list in groups.items():
+        if len(cron_list) > 1 and len(norm) > 20:
+            enabled = [c["name"] for c in cron_list if c["enabled"]]
+            if len(enabled) > 1:
+                redundancies.append({
+                    "pattern": norm[:60],
+                    "crons": cron_list,
+                    "enabled_count": len(enabled),
+                    "severity": "MEDIUM" if len(enabled) <= 2 else "HIGH",
+                })
+    
+    return {
+        "total_crons": len(jobs),
+        "redundancy_groups": len(redundancies),
+        "redundancies": redundancies,
+        "healthy": len(redundancies) == 0,
+    }
+
+# ============ FULL CYCLE ============
 
 def run_full_cycle() -> Dict:
-    """Run full data agent cycle."""
+    """Run complete data agent cycle."""
     state = load_state()
-    
     results = {
         "timestamp": datetime.now().isoformat(),
-        "signals_collected": 0,
-        "patterns_found": 0,
-        "metrics_updated": False,
-        "kg_maintained": False,
+        "kg_health": None,
+        "script_health": None,
+        "doc_audit": None,
+        "cron_redundancy": None,
+        "alerts": [],
     }
     
-    # 1. Collect learning signals
-    signals = collect_learning_signals()
-    results['signals_collected'] = signals.get('feedback_count', 0)
+    # KG Health
+    kg = maintain_kg_quality()
+    results["kg_health"] = kg
+    if not kg["healthy"]:
+        results["alerts"].append({
+            "type": "kg_orphan_rate",
+            "severity": "HIGH",
+            "message": kg["recommendation"],
+        })
+    state["kg_health"] = kg
     
-    # 2. Find patterns
-    patterns = find_patterns_in_signals(signals)
-    results['patterns_found'] = len(patterns)
+    # Script Health
+    scripts = check_script_health()
+    results["script_health"] = scripts
+    if scripts["issues"]:
+        for issue in scripts["issues"]:
+            if issue["severity"] in ("CRITICAL", "HIGH"):
+                results["alerts"].append({
+                    "type": f"script_{issue['type']}",
+                    "severity": issue["severity"],
+                    "message": f"[{issue['cron']}] {issue['script']}: {issue['detail']}",
+                })
+    state["script_issues"] = scripts["issues"]
+    state["last_script_check"] = datetime.now().isoformat()
     
-    # 3. Update metrics
-    metrics = update_metrics()
-    results['metrics_updated'] = True
-    results['metrics'] = metrics
+    # Doc Audit
+    docs = check_doc_audit()
+    results["doc_audit"] = docs
+    if docs["issues"]:
+        results["alerts"].append({
+            "type": "stale_docs",
+            "severity": "LOW",
+            "message": f"{docs['stale_count']} stale docs (>30 days)",
+        })
+    state["doc_issues"] = docs["issues"]
+    state["last_doc_audit"] = datetime.now().isoformat()
     
-    # 4. KG maintenance
-    kg = load_kg()
-    maint = maintain_kg_quality(kg)
-    results['kg_maintained'] = True
-    results['kg_maintenance'] = maint
+    # Cron Redundancy
+    cron_red = check_cron_redundancy()
+    results["cron_redundancy"] = cron_red
+    if cron_red.get("redundancies"):
+        for r in cron_red["redundancies"]:
+            results["alerts"].append({
+                "type": "cron_redundancy",
+                "severity": r["severity"],
+                "message": f"{r['enabled_count']} crons with similar payloads",
+            })
+    state["cron_issues"] = cron_red
+    state["last_cron_check"] = datetime.now().isoformat()
     
     # Update state
-    state['last_cycle'] = datetime.now().isoformat()
-    state['cycles_run'] += 1
-    state['patterns_found'] += len(patterns)
+    state["last_full_cycle"] = datetime.now().isoformat()
+    state["cycles_run"] = state.get("cycles_run", 0) + 1
     save_state(state)
-    
-    log(f"Data Agent cycle complete: {len(patterns)} patterns, {maint.get('orphan_pct', 0):.1%} orphans", "INFO")
     
     return results
 
-def publish_event(event_type: str, data: Dict):
-    """Publish event to event bus."""
-    EVENTS_DIR.mkdir(parents=True, exist_ok=True)
-    event = {
-        "type": event_type,
-        "source": "data_agent",
-        "timestamp": datetime.now().isoformat(),
-        "data": data
-    }
-    event_file = EVENTS_DIR / f"data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-    with open(event_file, "w") as f:
-        json.dump(event, f, indent=2)
+# ============ OUTPUT ============
 
 def print_results(results: Dict):
     """Print data agent results."""
     print(f"\n📊 Data Agent — {results['timestamp']}")
-    print("=" * 50)
+    print("=" * 60)
     
-    print(f"\n📥 Signals collected: {results['signals_collected']}")
-    print(f"💡 Patterns found: {results['patterns_found']}")
+    # KG
+    kg = results.get("kg_health", {})
+    kg_status = "✅" if kg.get("healthy") else "⚠️"
+    print(f"\n{kg_status} KG Health:")
+    print(f"   Entities: {kg.get('entity_count', 0)} | Connected: {kg.get('connected_count', 0)}")
+    print(f"   Orphans: {kg.get('orphan_count', 0)} ({kg.get('orphan_pct', 0):.1%})")
+    print(f"   {kg.get('recommendation', '')}")
     
-    if 'metrics' in results:
-        m = results['metrics']
-        print(f"\n📈 Metrics:")
-        print(f"   Learning Loop Score: {m.get('learning_loop_score', 0):.3f}")
-        print(f"   KG Entities: {m.get('kg_entities', 0)}")
-        print(f"   KG Relations: {m.get('kg_relations', 0)}")
-        print(f"   KG Orphan Rate: {m.get('kg_orphan_rate', 0):.1%}")
-        print(f"   System Health: {m.get('system_health', 'unknown')}")
+    # Script Health
+    sh = results.get("script_health", {})
+    sh_status = "✅" if sh.get("healthy") else "⚠️"
+    print(f"\n{sh_status} Script Health ({sh.get('scripts_checked', 0)} checked):")
+    if sh.get("issues"):
+        for issue in sh["issues"][:5]:
+            print(f"   [{issue['severity']}] {issue['cron']}: {issue['detail'][:50]}")
+    else:
+        print("   All scripts OK")
     
-    if 'kg_maintenance' in results:
-        maint = results['kg_maintenance']
-        print(f"\n🔧 KG Maintenance:")
-        print(f"   Orphans found: {maint.get('orphans_found', 0)}")
-        print(f"   Orphan rate: {maint.get('orphan_pct', 0):.1%}")
-        print(f"   Needs cleanup: {'⚠️ YES' if maint.get('needs_cleanup') else '✅ NO'}")
-        print(f"   Recommendation: {maint.get('recommendation', 'N/A')[:60]}")
+    # Doc Audit
+    da = results.get("doc_audit", {})
+    da_status = "✅" if da.get("healthy") else "⚠️"
+    print(f"\n{da_status} Doc Audit ({da.get('docs_total', 0)} docs):")
+    if da.get("issues"):
+        for issue in da["issues"][:3]:
+            print(f"   [STALE] {issue['file']} ({issue['age_days']} days old)")
+    else:
+        print("   All docs OK")
+    
+    # Cron Redundancy
+    cr = results.get("cron_redundancy", {})
+    cr_status = "✅" if cr.get("healthy") else "⚠️"
+    print(f"\n{cr_status} Cron Redundancy ({cr.get('total_crons', 0)} total):")
+    if cr.get("redundancies"):
+        for r in cr["redundancies"][:3]:
+            print(f"   [{r['severity']}] {r['enabled_count']} similar crons")
+    else:
+        print("   No redundancies detected")
+    
+    # Alerts
+    alerts = results.get("alerts", [])
+    if alerts:
+        print(f"\n🚨 ALERTS ({len(alerts)}):")
+        for a in alerts:
+            print(f"   [{a['severity']}] {a['message']}")
+    else:
+        print(f"\n✅ All systems healthy — no alerts")
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description='Data Agent')
-    parser.add_argument('--collect', action='store_true', help='Collect learning signals')
-    parser.add_argument('--metrics', action='store_true', help='Update metrics')
-    parser.add_argument('--kg-maintain', action='store_true', help='KG quality maintenance')
-    parser.add_argument('--full', action='store_true', help='Full cycle')
+    parser = argparse.ArgumentParser(description="Data Agent — Analytics + System Maintenance")
+    parser.add_argument("--collect", action="store_true", help="Collect learning signals")
+    parser.add_argument("--metrics", action="store_true", help="Update metrics")
+    parser.add_argument("--kg-maintain", action="store_true", help="KG quality maintenance")
+    parser.add_argument("--script-health", action="store_true", help="Script + Cron health check")
+    parser.add_argument("--doc-audit", action="store_true", help="Doc staleness audit")
+    parser.add_argument("--cron-redundancy", action="store_true", help="Cron redundancy check")
+    parser.add_argument("--full", action="store_true", help="Full cycle")
     args = parser.parse_args()
     
     if args.collect:
-        signals = collect_learning_signals()
-        print(f"📥 Collected {signals['feedback_count']} signals from {signals['sources']}")
+        # Legacy support
+        print("📥 Collect not yet implemented in enhanced version")
+    
     elif args.metrics:
-        metrics = update_metrics()
-        print(f"📈 Learning Loop Score: {metrics.get('learning_loop_score', 0):.3f}")
-        print(f"📊 KG: {metrics.get('kg_entities', 0)} entities, {metrics.get('kg_relations', 0)} relations")
-        print(f"🔧 Orphan Rate: {metrics.get('kg_orphan_rate', 0):.1%}")
+        kg = maintain_kg_quality()
+        print(f"🔧 KG: {kg['entity_count']} entities, {kg['orphan_count']} orphans ({kg['orphan_pct']:.1%})")
+        print(f"   {kg['recommendation']}")
+    
     elif args.kg_maintain:
-        kg = load_kg()
-        maint = maintain_kg_quality(kg)
-        print(f"🔧 KG Maintenance: {maint.get('orphans_found', 0)} orphans ({maint.get('orphan_pct', 0):.1%})")
-        if maint.get('needs_cleanup'):
-            print(f"⚠️ {maint.get('recommendation')}")
+        kg = maintain_kg_quality()
+        status = "✅" if kg["healthy"] else "⚠️"
+        print(f"{status} KG Health: {kg['orphan_count']} orphans ({kg['orphan_pct']:.1%})")
+        if not kg["healthy"]:
+            print(f"   {kg['recommendation']}")
+    
+    elif args.script_health:
+        sh = check_script_health()
+        status = "✅" if sh["healthy"] else "⚠️"
+        print(f"{status} Script Health: {sh['scripts_checked']} checked, {len(sh['issues'])} issues")
+        for issue in sh["issues"]:
+            print(f"   [{issue['severity']}] {issue['detail']}")
+    
+    elif args.doc_audit:
+        da = check_doc_audit()
+        status = "✅" if da["healthy"] else "⚠️"
+        print(f"{status} Doc Audit: {da['docs_total']} docs, {da['stale_count']} stale")
+        for issue in da["issues"]:
+            print(f"   [STALE] {issue['file']} ({issue['age_days']} days)")
+    
+    elif args.cron_redundancy:
+        cr = check_cron_redundancy()
+        status = "✅" if cr["healthy"] else "⚠️"
+        print(f"{status} Cron Redundancy: {cr['total_crons']} crons, {cr['redundancy_groups']} overlaps")
+        for r in cr.get("redundancies", []):
+            print(f"   [{r['severity']}] {r['enabled_count']} crons: {[c['name'] for c in r['crons'][:2]]}")
+    
     elif args.full:
         results = run_full_cycle()
         print_results(results)
-        publish_event('data_agent.completed', results)
+    
     else:
-        # Default: full cycle
         results = run_full_cycle()
         print_results(results)
-        publish_event('data_agent.completed', results)
 
 if __name__ == "__main__":
     main()

@@ -276,4 +276,64 @@ systemctl status openclaw
 
 ---
 
+## 8.13 UNIFIED TASK LOGGER (since 2026-04-18)
+
+**System:** Centralized Task Tracking
+
+### Overview
+Erfasst ALLE Task-Typen zentral für vollständige Metriken:
+- Subagent Tasks (via Orchestrator)
+- Main Session Tasks (via Session Analyzer)
+- Cron Tasks (via Task Logger Cron)
+
+### Scripts
+
+| Script | Purpose | Cron |
+|--------|---------|------|
+| `unified_task_logger.py` | Central task log storage | — |
+| `task_data_collector.py` | Aggregiert alle Quellen | — |
+| `task_report.py` | Generiert Reports + TSR | — |
+| `session_activity_analyzer.py` | Analysiert Session-Transcripts | — |
+| `heartbeat_task_logger.py` | Erfasst Main Session Activities | — |
+| `task_logger_cron.py` | Coordinator für alle Logger | 15min |
+
+### Data Flow
+```
+Orchestrator State ──┐
+                    ├──► Unified Task Logger ──► lnew_metrics.json
+Session Analyzer ────┘
+```
+
+### Live Metrics (2026-04-18)
+```
+Total Tasks: 162 | TSR: 100.0%
+├── Subagent: 158 (health_check: 41, learning_sync: 37, research: 2)
+├── Main Session: 4 (message_response, file_operation, learning_integration)
+└── Error Rate: 0.0%
+```
+
+### Locations
+- **Unified Tasks:** `memory/task_log/unified_tasks.json`
+- **Metrics:** `memory/evaluations/lnew_metrics.json`
+
+---
+
+## 8.14 TASK SUCCESS METRICS
+
+### LNEW Metrics (Live)
+
+| Metric | Current | Target |
+|--------|---------|--------|
+| Latency p50 | 70.7s | <60s |
+| Latency p95 | 284.6s | <300s |
+| Error Rate | 0.0% | <5% |
+| TSR | 100.0% | 80%+ |
+
+### Collection
+- Session Activity: Every 15min (heartbeat_task_logger)
+- Orchestrator: On-demand (task_data_collector)
+- Report: task_report.py or task_logger_cron
+
+---
+
 *Modul 08 — Monitoring | Sir HazeClaw 🦞*

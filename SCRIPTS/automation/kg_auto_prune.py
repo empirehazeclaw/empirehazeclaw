@@ -16,8 +16,8 @@ WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 KG_FILE = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 LOG_FILE = WORKSPACE / "logs" / "kg_prune.log"
 
-ORPHAN_THRESHOLD = 0.30  # 30%
-DRY_RUN = False  # Set to True for testing
+ORPHAN_THRESHOLD = 0.80  # 80% — CEO KG has many standalone learning entities
+DRY_RUN = True  # Default to dry-run; use --force to actually prune
 
 def log(msg: str, level: str = "INFO"):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -36,23 +36,40 @@ def save_kg(kg):
     with open(KG_FILE, "w") as f:
         json.dump(kg, f, indent=2)
 
-def get_connected_entities(relations):
+def get_connected_entities(kg):
+    """Find all entity IDs that have at least one relation (embedded in entity or top-level)."""
     connected = set()
-    if isinstance(relations, dict):
-        for rel in relations.values():
+    
+    # Check top-level relations (some KG formats)
+    top_relations = kg.get("relations", {})
+    if isinstance(top_relations, dict):
+        for rel in top_relations.values():
             if rel.get("from"): connected.add(rel["from"])
             if rel.get("to"): connected.add(rel["to"])
-    elif isinstance(relations, list):
-        for rel in relations:
+    elif isinstance(top_relations, list):
+        for rel in top_relations:
             if rel.get("source"): connected.add(rel["source"])
             if rel.get("target"): connected.add(rel["target"])
+    
+    # Check embedded relations in each entity (CEO KG format)
+    entities = kg.get("entities", {})
+    for eid, entity in entities.items():
+        if entity.get("relations"):
+            for rel in entity["relations"]:
+                if isinstance(rel, dict):
+                    if rel.get("target"): connected.add(rel["target"])
+                    if rel.get("source"): connected.add(rel["source"])
+                    # Handle 'type' field references
+                    if rel.get("type"): connected.add(rel["type"])
+                elif isinstance(rel, str):
+                    connected.add(rel)
+    
     return connected
 
 def prune_orphans(kg, dry_run=False):
     entities = kg.get("entities", {})
-    relations = kg.get("relations", {})
     
-    connected = get_connected_entities(relations)
+    connected = get_connected_entities(kg)
     entity_ids = set(entities.keys())
     
     orphans = entity_ids - connected

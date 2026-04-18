@@ -143,3 +143,99 @@ _Letzte Aktualisierung: 2026-04-13_
 
 ### 2026-04-17 — Timeline Event
 - Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-17 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
+
+### 2026-04-18 — Timeline Event
+- Learning Loop score changed: 0.000 → 0.784
