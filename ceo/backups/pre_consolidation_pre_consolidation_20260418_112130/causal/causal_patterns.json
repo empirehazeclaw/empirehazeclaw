@@ -1,0 +1,231 @@
+{
+  "patterns": [
+    {
+      "id": "PAT-0001",
+      "factor": "time_bucket",
+      "value": "10:00",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.237995+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0002",
+      "factor": "severity",
+      "value": "low",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238025+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0003",
+      "factor": "cause",
+      "value": "timeout",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238041+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0004",
+      "factor": "cause",
+      "value": "design_gap",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238048+00:00",
+      "examples": [
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0005",
+      "factor": "has_context",
+      "value": false,
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238066+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0006",
+      "factor": "attempt",
+      "value": 1,
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238080+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0007",
+      "factor": "user",
+      "value": "system",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238092+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0008",
+      "factor": "tags_count",
+      "value": 2,
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238104+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0009",
+      "factor": "tags_count",
+      "value": 3,
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238111+00:00",
+      "examples": [
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0010",
+      "factor": "day_of_week",
+      "value": "Saturday",
+      "failure_rate": 1.0,
+      "sample_size": 3,
+      "confidence": 0.5477225575051661,
+      "timestamp": "2026-04-18T10:45:19.238126+00:00",
+      "examples": [
+        {
+          "id": 1,
+          "description": "Test failure - crontab timeout"
+        },
+        {
+          "id": 2,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        },
+        {
+          "id": 3,
+          "description": "INTEGRATION TEST FAILURE - Phase 1 Validierung"
+        }
+      ]
+    },
+    {
+      "id": "PAT-0011",
+      "factor": "time_bucket",
+      "value": "11:00",
+      "failure_rate": 1.0,
+      "sample_size": 5,
+      "confidence": 0.7071067811865476,
+      "timestamp": "2026-04-18T11:07:15.792401+00:00",
+      "examples": []
+    },
+    {
+      "id": "PAT-0012",
+      "factor": "severity",
+      "value": "medium",
+      "failure_rate": 1.0,
+      "sample_size": 5,
+      "confidence": 0.7071067811865476,
+      "timestamp": "2026-04-18T11:07:15.792439+00:00",
+      "examples": []
+    }
+  ],
+  "version": "1.0"
+}

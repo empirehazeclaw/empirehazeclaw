@@ -1,0 +1,107 @@
+{
+  "cycle_timestamp": "2026-04-18T09:59:11.330276+00:00",
+  "actions_analysis": {
+    "status": "no_transactions",
+    "recommendations": []
+  },
+  "errors_analysis": {
+    "status": "no_errors",
+    "proposals": []
+  },
+  "affective_analysis": {
+    "status": "analyzed",
+    "timestamp": "2026-04-18T09:59:11.330708+00:00",
+    "metrics": {
+      "errorRate": {
+        "current": 0.014,
+        "unit": "percent",
+        "window": "15min"
+      },
+      "gatewayResponseMs": {
+        "current": 120,
+        "unit": "ms",
+        "window": "last10"
+      },
+      "lostTasks": {
+        "current": 65,
+        "threshold": 70
+      },
+      "cronErrors": {
+        "current": 2,
+        "jobs": [
+          "Opportunity Scanner",
+          "CEO Weekly Review"
+        ]
+      }
+    },
+    "alerts": [],
+    "active_alert_count": 0
+  },
+  "kg_pattern_analysis": {
+    "status": "analyzed",
+    "total_entities": 397,
+    "patterns": [
+      {
+        "type": "ISSUES_IN_KG",
+        "description": "28 entities contain issue-related facts",
+        "entities": [
+          {
+            "entity": "Kunden-Support",
+            "fact": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
+            "access_count": 2
+          },
+          {
+            "entity": "Competitor-Other-AI-Tools",
+            "fact": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSG",
+            "access_count": 14
+          },
+          {
+            "entity": "Sir-HazeClaw-Scripts",
+            "fact": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
+            "access_count": 18
+          },
+          {
+            "entity": "Sir-HazeClaw-Capabilities",
+            "fact": "Pr\u00e4vention: Probleme verhindern BEVOR sie passieren",
+            "access_count": 0
+          },
+          {
+            "entity": "AI-Agent-Prompt-Patterns",
+            "fact": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
+            "access_count": 2
+          }
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "type": "TRENDING_ENTITIES",
+        "description": "Entities with highest recent access",
+        "entities": [
+          {
+            "name": "innovation_research_20260411",
+            "access_count": 19
+          },
+          {
+            "name": "innovation_research_20260412",
+            "access_count": 19
+          },
+          {
+            "name": "EmpireHazeClaw",
+            "access_count": 18
+          },
+          {
+            "name": "empirehazeclaw-info",
+            "access_count": 18
+          },
+          {
+            "name": "project_empirehazeclaw_fleet_20260410",
+            "access_count": 18
+          }
+        ],
+        "priority": "LOW"
+      }
+    ]
+  },
+  "proposals_created": [],
+  "alert_needed": false
+}

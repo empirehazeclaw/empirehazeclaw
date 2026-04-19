@@ -1,0 +1,27 @@
+{
+  "chains": [
+    {
+      "chain_id": "CHAIN-0001",
+      "type": "cause_distribution",
+      "cause": "cause=timeout",
+      "effect": "failure_contribution",
+      "cause_value": 1.0,
+      "effect_value": "100.0% of all failures",
+      "comparison": "Top 3: timeout(100.0%), design_gap(100.0%)",
+      "confidence": 1.4142135623730951,
+      "timestamp": "2026-04-18T10:10:55.067228+00:00"
+    },
+    {
+      "chain_id": "CHAIN-0001",
+      "type": "cause_distribution",
+      "cause": "cause=design_gap",
+      "effect": "failure_contribution",
+      "cause_value": 1.0,
+      "effect_value": "100.0% of all failures",
+      "comparison": "Top 3: timeout(100.0%), design_gap(100.0%)",
+      "confidence": 1.4142135623730951,
+      "timestamp": "2026-04-18T10:10:55.067242+00:00"
+    }
+  ],
+  "version": "1.0"
+}

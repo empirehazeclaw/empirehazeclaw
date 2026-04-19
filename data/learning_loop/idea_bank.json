@@ -247,6 +247,14 @@
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,
       "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:Alert",
+      "description": "Alert",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
     }
   ],
   "version": "1.0"

@@ -1,0 +1,45 @@
+{
+  "task_learning_rates": {
+    "unknown": {
+      "learning_rate": 1.0,
+      "raw_rate": 3.5,
+      "avg_access_count": 3.5,
+      "avg_age_days": 1,
+      "sample_size": 4,
+      "category": "fast"
+    },
+    "meta_pattern": {
+      "learning_rate": 1.0,
+      "raw_rate": 13.0,
+      "avg_access_count": 13.0,
+      "avg_age_days": 1,
+      "sample_size": 1,
+      "category": "fast"
+    }
+  },
+  "curriculum": [
+    {
+      "phase": 1,
+      "name": "Quick Wins",
+      "description": "Build confidence with fast-learning tasks",
+      "tasks": [
+        "unknown"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Core Skills",
+      "description": "Develop fundamental capabilities",
+      "tasks": []
+    },
+    {
+      "phase": 3,
+      "name": "Mastery Training",
+      "description": "Deep practice for challenging tasks",
+      "tasks": []
+    }
+  ],
+  "retention_scores": {},
+  "learning_trajectories": {},
+  "version": "1.0"
+}

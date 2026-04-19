@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "default_execution": {
+      "type": "execution",
+      "timeout": 30,
+      "retries": 3,
+      "delegation": "auto",
+      "context_mode": "full",
+      "parallel": false
+    },
+    "quick_task": {
+      "type": "execution",
+      "timeout": 10,
+      "retries": 1,
+      "delegation": "none",
+      "context_mode": "minimal",
+      "parallel": false
+    },
+    "complex_task": {
+      "type": "execution",
+      "timeout": 120,
+      "retries": 5,
+      "delegation": "full",
+      "context_mode": "full",
+      "parallel": true
+    },
+    "delegation_only": {
+      "type": "delegation",
+      "timeout": 60,
+      "retries": 2,
+      "delegation": "forced",
+      "context_mode": "full",
+      "parallel": false
+    },
+    "direct_execution": {
+      "type": "execution",
+      "timeout": 45,
+      "retries": 3,
+      "delegation": "none",
+      "context_mode": "full",
+      "parallel": false
+    }
+  },
+  "set_at": "2026-04-18T11:07:25.873919+00:00",
+  "source": "defaults"
+}

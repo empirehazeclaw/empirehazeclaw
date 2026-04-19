@@ -1,0 +1,56 @@
+{
+  "mutations": [
+    {
+      "id": "MUT-0001",
+      "parent": "default_execution",
+      "mutation_type": "timeout_adjust",
+      "timestamp": "2026-04-18T10:50:04.798114+00:00",
+      "strategy": {
+        "type": "execution",
+        "timeout": 22,
+        "retries": 3,
+        "delegation": "auto",
+        "context_mode": "full",
+        "parallel": false,
+        "timeout_note": "Adjusted from 30s by factor 0.75"
+      },
+      "test_results": [],
+      "status": "pending"
+    },
+    {
+      "id": "MUT-0002",
+      "parent": "default_execution",
+      "mutation_type": "delegation_change",
+      "timestamp": "2026-04-18T10:50:16.012600+00:00",
+      "strategy": {
+        "type": "execution",
+        "timeout": 30,
+        "retries": 3,
+        "delegation": "forced",
+        "context_mode": "full",
+        "parallel": false,
+        "delegation_note": "Changed from auto"
+      },
+      "test_results": [],
+      "status": "pending"
+    },
+    {
+      "id": "MUT-0003",
+      "parent": "default_execution",
+      "mutation_type": "context_expansion",
+      "timestamp": "2026-04-18T11:07:25.915840+00:00",
+      "strategy": {
+        "type": "execution",
+        "timeout": 30,
+        "retries": 3,
+        "delegation": "auto",
+        "context_mode": "expanded",
+        "parallel": false,
+        "context_expanded": true
+      },
+      "test_results": [],
+      "status": "pending"
+    }
+  ],
+  "version": "1.0"
+}

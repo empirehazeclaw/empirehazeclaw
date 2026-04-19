@@ -1,0 +1,14 @@
+{
+  "total": 2,
+  "by_severity": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2
+  },
+  "by_cause": {
+    "timeout": 1,
+    "design_gap": 1
+  },
+  "last_updated": "2026-04-18T10:10:54.937688+00:00"
+}

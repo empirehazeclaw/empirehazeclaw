@@ -1,0 +1,23 @@
+{
+  "postmortems": [
+    {
+      "pm_id": "PM-0001",
+      "failure_id": 1,
+      "timestamp": "2026-04-18T10:10:54.979715+00:00",
+      "severity": "low",
+      "title": "Post-Mortem: Test failure - crontab timeout",
+      "status": "in_progress",
+      "file": "/home/clawbot/.openclaw/workspace/ceo/memory/evaluations/postmortems/PM-0001.md"
+    },
+    {
+      "pm_id": "PM-0002",
+      "failure_id": 2,
+      "timestamp": "2026-04-18T10:10:54.980093+00:00",
+      "severity": "low",
+      "title": "Post-Mortem: INTEGRATION TEST FAILURE - Phase 1 Validierung",
+      "status": "in_progress",
+      "file": "/home/clawbot/.openclaw/workspace/ceo/memory/evaluations/postmortems/PM-0002.md"
+    }
+  ],
+  "version": "1.0"
+}
