@@ -4432,6 +4432,438 @@
       "last_accessed": "2026-04-20T19:07:51.153848",
       "access_count": 1,
       "decay_score": 10
+    },
+    "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190950": {
+      "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Self-adaptive Multi-Access Edge Architectures: A Robotics Case",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549606",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549616",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549613",
+      "last_accessed": "2026-04-20T19:09:50.549614",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190950": {
+      "id": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549624",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549628",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549625",
+      "last_accessed": "2026-04-20T19:09:50.549626",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_When-Agent-Markets-Arrive_20260420_190950": {
+      "id": "research_When-Agent-Markets-Arrive_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "When Agent Markets Arrive",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549635",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549643",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549637",
+      "last_accessed": "2026-04-20T19:09:50.549640",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Towards-Personalizing-Secure-Programming_20260420_190950": {
+      "id": "research_Towards-Personalizing-Secure-Programming_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabilities",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549654",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549657",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549655",
+      "last_accessed": "2026-04-20T19:09:50.549656",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190950": {
+      "id": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Based Multi-Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549664",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549668",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549666",
+      "last_accessed": "2026-04-20T19:09:50.549667",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190950": {
+      "id": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Beyond Static Sandboxing: Learned Capability Governance for Autonomous AI Agents",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549674",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549678",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549675",
+      "last_accessed": "2026-04-20T19:09:50.549676",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190950": {
+      "id": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549683",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549687",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549685",
+      "last_accessed": "2026-04-20T19:09:50.549686",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190950": {
+      "id": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549693",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549697",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549694",
+      "last_accessed": "2026-04-20T19:09:50.549696",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Structured-Prompt-Language:-Declarative-_20260420_190950": {
+      "id": "research_Structured-Prompt-Language:-Declarative-_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Structured Prompt Language: Declarative Context Management for LLMs",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549703",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549707",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549705",
+      "last_accessed": "2026-04-20T19:09:50.549705",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190950": {
+      "id": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549797",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549801",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549799",
+      "last_accessed": "2026-04-20T19:09:50.549800",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190950": {
+      "id": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Safety, Security, and Cognitive Risks in World Models",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549808",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549814",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549810",
+      "last_accessed": "2026-04-20T19:09:50.549811",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190950": {
+      "id": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Puppets or partners? Governing cyborg propaganda in the digital public square",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549826",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549831",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549828",
+      "last_accessed": "2026-04-20T19:09:50.549830",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Learning-the-Stellar-Structure-Equations_20260420_190950": {
+      "id": "research_Learning-the-Stellar-Structure-Equations_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Learning the Stellar Structure Equations via Self-supervised Physics-Informed Neural Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549839",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549842",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549840",
+      "last_accessed": "2026-04-20T19:09:50.549841",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190950": {
+      "id": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Activity-Dependent Plasticity in Morphogenetically-Grown Recurrent Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549848",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549851",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549849",
+      "last_accessed": "2026-04-20T19:09:50.549850",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190950": {
+      "id": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190950",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Kernel Dynamics under Path Entropy Maximization",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:09:50.549857",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549861",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549858",
+      "last_accessed": "2026-04-20T19:09:50.549859",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Pattern-Library:-47-patterns-discovered_20260420_190950": {
+      "id": "research_Pattern-Library:-47-patterns-discovered_20260420_190950",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 47 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-20T19:09:50.549867",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 47 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549872",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549869",
+      "last_accessed": "2026-04-20T19:09:50.549870",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260420_190950": {
+      "id": "research_Knowledge-Gaps-Identified_20260420_190950",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-20T19:09:50.549878",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549883",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549880",
+      "last_accessed": "2026-04-20T19:09:50.549881",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260420_190950": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260420_190950",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-20T19:09:50.549895",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:09:50.549897",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:09:50.549895",
+      "last_accessed": "2026-04-20T19:09:50.549896",
+      "access_count": 1,
+      "decay_score": 10
     }
   },
   "last_updated": "2026-04-20T18:05:05.982692",

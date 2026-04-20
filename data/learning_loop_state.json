@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 219,
-  "score": 0.7654329268292682,
+  "iteration": 220,
+  "score": 0.7656829268292683,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -241,7 +241,8 @@
     0.7655400696864111,
     0.765897212543554,
     0.7662543554006969,
-    0.7654329268292682
+    0.7654329268292682,
+    0.7656829268292683
   ],
   "patterns": [
     {
@@ -269,7 +270,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 237,
+  "novelty_injections": 238,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
@@ -283,7 +284,7 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 1,
+  "consecutive_same_pattern": 2,
   "last_validated_pattern": "Apply proven pattern: Measure context size, find 1 specific text to shor",
   "last_forced_novelty": "2026-04-20T16:03:48.108040",
   "recently_forced_novelty": true,

@@ -1,28 +1,20 @@
 {
-  "last_full_cycle": "2026-04-20T18:09:06.758894",
-  "cycles_run": 121,
+  "last_full_cycle": "2026-04-20T19:08:38.855269",
+  "cycles_run": 122,
   "script_issues": [
     {
       "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/stagnation_detector.py",
-      "cron": "System Maintenance Cron",
-      "job_id": "e9a5581a",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/gateway_recovery.py",
+      "cron": "Run gateway recovery check:",
+      "job_id": "c0060c0e",
       "detail": "Script does not exist",
       "severity": "CRITICAL"
     },
     {
       "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/cron_watchdog.py",
-      "cron": "System Maintenance Cron",
-      "job_id": "e9a5581a",
-      "detail": "Script does not exist",
-      "severity": "CRITICAL"
-    },
-    {
-      "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/integration_dashboard.py",
-      "cron": "Integration Health Check",
-      "job_id": "9e5f2fb3",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/kg_access_updater_optimized.py",
+      "cron": "KG Access Updater",
+      "job_id": "21c804c9",
       "detail": "Script does not exist",
       "severity": "CRITICAL"
     },
@@ -44,25 +36,9 @@
     },
     {
       "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_coordinator.py",
-      "cron": "Learning Coordinator (2x/day)",
-      "job_id": "21b1dcba",
-      "detail": "Script does not exist",
-      "severity": "CRITICAL"
-    },
-    {
-      "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/gateway_recovery.py",
-      "cron": "Run gateway recovery check:",
-      "job_id": "c0060c0e",
-      "detail": "Script does not exist",
-      "severity": "CRITICAL"
-    },
-    {
-      "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/kg_access_updater_optimized.py",
-      "cron": "KG Access Updater",
-      "job_id": "21c804c9",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/integration_dashboard.py",
+      "cron": "Integration Health Check",
+      "job_id": "9e5f2fb3",
       "detail": "Script does not exist",
       "severity": "CRITICAL"
     },
@@ -71,6 +47,22 @@
       "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/token_budget_tracker.py",
       "cron": "Token Budget Tracker",
       "job_id": "ce95618e",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/stagnation_detector.py",
+      "cron": "System Maintenance Cron",
+      "job_id": "e9a5581a",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/cron_watchdog.py",
+      "cron": "System Maintenance Cron",
+      "job_id": "e9a5581a",
       "detail": "Script does not exist",
       "severity": "CRITICAL"
     },
@@ -92,9 +84,9 @@
     },
     {
       "type": "missing_script",
-      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/goal_alerts.py",
-      "cron": "Goal Alerts Daily",
-      "job_id": "40ae34b9",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_coordinator.py",
+      "cron": "Learning Coordinator (2x/day)",
+      "job_id": "21b1dcba",
       "detail": "Script does not exist",
       "severity": "CRITICAL"
     },
@@ -115,15 +107,15 @@
     "healthy": true
   },
   "kg_health": {
-    "entity_count": 217,
-    "connected_count": 316,
-    "orphan_count": 0,
-    "orphan_pct": 0.0,
+    "entity_count": 237,
+    "connected_count": 317,
+    "orphan_count": 19,
+    "orphan_pct": 0.08016877637130802,
     "healthy": true,
     "threshold": 0.8,
-    "recommendation": "Orphan rate 0.0% within acceptable range"
+    "recommendation": "Orphan rate 8.0% within acceptable range"
   },
-  "last_script_check": "2026-04-20T18:08:57.479022",
-  "last_doc_audit": "2026-04-20T18:08:57.479605",
-  "last_cron_check": "2026-04-20T18:09:06.758878"
+  "last_script_check": "2026-04-20T19:08:29.649479",
+  "last_doc_audit": "2026-04-20T19:08:29.650120",
+  "last_cron_check": "2026-04-20T19:08:38.855258"
 }
