@@ -1,7 +1,16 @@
 {
-  "last_full_cycle": "2026-04-20T19:12:21.182787",
-  "cycles_run": 124,
-  "script_issues": [],
+  "last_full_cycle": "2026-04-20T19:14:22.827309",
+  "cycles_run": 125,
+  "script_issues": [
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/workspace/SCRIPTS/automation/qmd_watchdog.py",
+      "cron": "QMD Watchdog",
+      "job_id": "905d55f0",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    }
+  ],
   "doc_issues": [],
   "cron_issues": {
     "total_crons": 33,
@@ -10,15 +19,15 @@
     "healthy": true
   },
   "kg_health": {
-    "entity_count": 279,
-    "connected_count": 320,
-    "orphan_count": 58,
-    "orphan_pct": 0.2078853046594982,
+    "entity_count": 300,
+    "connected_count": 323,
+    "orphan_count": 76,
+    "orphan_pct": 0.25333333333333335,
     "healthy": true,
     "threshold": 0.8,
-    "recommendation": "Orphan rate 20.8% within acceptable range"
+    "recommendation": "Orphan rate 25.3% within acceptable range"
   },
-  "last_script_check": "2026-04-20T19:12:11.758239",
-  "last_doc_audit": "2026-04-20T19:12:11.758815",
-  "last_cron_check": "2026-04-20T19:12:21.182769"
+  "last_script_check": "2026-04-20T19:14:09.066740",
+  "last_doc_audit": "2026-04-20T19:14:09.067417",
+  "last_cron_check": "2026-04-20T19:14:22.827296"
 }

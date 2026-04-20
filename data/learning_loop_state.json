@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 224,
-  "score": 0.7661829268292683,
+  "iteration": 225,
+  "score": 0.7664210220673635,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -246,7 +246,8 @@
     0.7859329268292683,
     0.7651434466019417,
     0.7653579268292683,
-    0.7661829268292683
+    0.7661829268292683,
+    0.7664210220673635
   ],
   "patterns": [
     {
@@ -274,7 +275,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 242,
+  "novelty_injections": 243,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
@@ -288,7 +289,7 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 0,
+  "consecutive_same_pattern": 1,
   "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
   "last_forced_novelty": "2026-04-20T19:10:51.026058",
   "recently_forced_novelty": true,
