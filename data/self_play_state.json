@@ -1,12 +1,6 @@
 {
-  "generation": 171,
+  "generation": 175,
   "best_improvements": [
-    {
-      "strategy": "speed_improve",
-      "script": "efficiency_tracker.py",
-      "improvement": 0.5,
-      "timestamp": "2026-04-18T18:06:37.399793"
-    },
     {
       "strategy": "quality_improve",
       "script": "quality_metrics.py",
@@ -60,53 +54,15 @@
       "script": "efficiency_tracker.py",
       "improvement": 0.5,
       "timestamp": "2026-04-20T09:52:20.572875"
+    },
+    {
+      "strategy": "quality_improve",
+      "script": "quality_metrics.py",
+      "improvement": 0.5,
+      "timestamp": "2026-04-20T18:05:07.749699"
     }
   ],
   "attempts": [
-    {
-      "strategy": "script_fix",
-      "script": "auto_fixer.py",
-      "metric": "scripts_working",
-      "direction": "higher",
-      "target": "> 95%",
-      "timestamp": "2026-04-13T09:04:47.598342",
-      "success": false,
-      "improvement": 0,
-      "verified_at": "2026-04-13T09:04:47.608917"
-    },
-    {
-      "strategy": "script_fix",
-      "script": "auto_fixer.py",
-      "metric": "scripts_working",
-      "direction": "higher",
-      "target": "> 95%",
-      "timestamp": "2026-04-13T09:04:47.620769",
-      "success": false,
-      "improvement": 0,
-      "verified_at": "2026-04-13T09:04:47.629002"
-    },
-    {
-      "strategy": "script_fix",
-      "script": "auto_fixer.py",
-      "metric": "scripts_working",
-      "direction": "higher",
-      "target": "> 95%",
-      "timestamp": "2026-04-13T18:05:04.001715",
-      "success": false,
-      "improvement": 0,
-      "verified_at": "2026-04-13T18:05:04.010913"
-    },
-    {
-      "strategy": "script_fix",
-      "script": "auto_fixer.py",
-      "metric": "scripts_working",
-      "direction": "higher",
-      "target": "> 95%",
-      "timestamp": "2026-04-13T18:05:04.024100",
-      "success": false,
-      "improvement": 0,
-      "verified_at": "2026-04-13T18:05:04.035682"
-    },
     {
       "strategy": "quality_improve",
       "script": "quality_metrics.py",
@@ -612,29 +568,53 @@
       "success": false,
       "improvement": 0,
       "verified_at": "2026-04-20T09:52:20.573876"
+    },
+    {
+      "strategy": "quality_improve",
+      "script": "quality_metrics.py",
+      "metric": "score",
+      "direction": "higher",
+      "target": "> 95",
+      "timestamp": "2026-04-20T18:05:07.749376",
+      "success": true,
+      "improvement": 0.5,
+      "verified_at": "2026-04-20T18:05:07.749693"
+    },
+    {
+      "strategy": "script_fix",
+      "script": "auto_fixer.py",
+      "metric": "scripts_working",
+      "direction": "higher",
+      "target": "> 95%",
+      "timestamp": "2026-04-20T18:05:07.750982",
+      "success": false,
+      "improvement": 0,
+      "verified_at": "2026-04-20T18:05:07.751310"
+    },
+    {
+      "strategy": "script_fix",
+      "script": "auto_fixer.py",
+      "metric": "scripts_working",
+      "direction": "higher",
+      "target": "> 95%",
+      "timestamp": "2026-04-20T18:05:07.811875",
+      "success": false,
+      "improvement": 0,
+      "verified_at": "2026-04-20T18:05:07.812191"
+    },
+    {
+      "strategy": "script_fix",
+      "script": "auto_fixer.py",
+      "metric": "scripts_working",
+      "direction": "higher",
+      "target": "> 95%",
+      "timestamp": "2026-04-20T18:05:07.813410",
+      "success": false,
+      "improvement": 0,
+      "verified_at": "2026-04-20T18:05:07.813876"
     }
   ],
   "history": [
-    {
-      "timestamp": "2026-04-18T09:03:03.109094",
-      "insight": "\u2705 kg_growth: +50% improvement",
-      "generation": 152
-    },
-    {
-      "timestamp": "2026-04-18T09:03:03.111122",
-      "insight": "\u2705 speed_improve: +50% improvement",
-      "generation": 153
-    },
-    {
-      "timestamp": "2026-04-18T09:03:03.830738",
-      "insight": "\u2705 kg_growth: +50% improvement",
-      "generation": 154
-    },
-    {
-      "timestamp": "2026-04-18T09:03:03.832568",
-      "insight": "\u2705 quality_improve: +50% improvement",
-      "generation": 155
-    },
     {
       "timestamp": "2026-04-18T09:26:17.028878",
       "insight": "\u2705 kg_growth: +50% improvement",
@@ -714,6 +694,26 @@
       "timestamp": "2026-04-20T09:52:20.573880",
       "insight": "\u274c script_fix: Failed (will try different approach)",
       "generation": 171
+    },
+    {
+      "timestamp": "2026-04-20T18:05:07.749705",
+      "insight": "\u2705 quality_improve: +50% improvement",
+      "generation": 172
+    },
+    {
+      "timestamp": "2026-04-20T18:05:07.751316",
+      "insight": "\u274c script_fix: Failed (will try different approach)",
+      "generation": 173
+    },
+    {
+      "timestamp": "2026-04-20T18:05:07.812198",
+      "insight": "\u274c script_fix: Failed (will try different approach)",
+      "generation": 174
+    },
+    {
+      "timestamp": "2026-04-20T18:05:07.813884",
+      "insight": "\u274c script_fix: Failed (will try different approach)",
+      "generation": 175
     }
   ]
 }

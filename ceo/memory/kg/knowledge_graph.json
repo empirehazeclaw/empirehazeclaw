@@ -13,8 +13,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445896",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 18,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 20,
       "decay_score": 1
     },
     "Managed-AI-Hosting": {
@@ -30,8 +30,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445920",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16,
       "decay_score": 1
     },
     "Social-Media-Automation": {
@@ -47,8 +47,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445936",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3,
       "decay_score": 1
     },
     "GOG-CLI": {
@@ -81,8 +81,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445958",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 16,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 18,
       "decay_score": 1
     },
     "Email-Outreach": {
@@ -98,8 +98,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445973",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16,
       "decay_score": 1
     },
     "Outreach-Dummy-Problem": {
@@ -166,8 +166,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.446022",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 18,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 20,
       "decay_score": 1
     },
     "Objection-DSGVO": {
@@ -204,1366 +204,6 @@
       "access_count": 2,
       "decay_score": 1
     },
-    "REDACTED": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122362",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122371",
-      "last_accessed": "2026-04-07T16:39:47.122372",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Decision": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122374",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122375",
-      "last_accessed": "2026-04-07T16:39:47.122376",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "DER WORKFLOW Immer wenn eine Session": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122452",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122453",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122883",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122887",
-      "last_accessed": "2026-04-07T16:39:47.122888",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Metadaten": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122894",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122894",
-      "last_accessed": "2026-04-07T16:39:47.122895",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Telegram History Analyse - Patterns & Learnings": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.123235",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.123240",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 3,
-      "decay_score": 1
-    },
-    "Learning": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.130873",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.130885",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 3,
-      "decay_score": 1
-    },
-    "Infrastructure": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.130913",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.130915",
-      "last_accessed": "2026-04-07T16:39:47.130916",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Backups": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.130919",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.130920",
-      "last_accessed": "2026-04-07T16:39:47.130921",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "ClawHub": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.130961",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.130962",
-      "last_accessed": "2026-04-07T16:39:47.130963",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Vercel": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.130973",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.130974",
-      "last_accessed": "2026-04-07T16:39:47.130975",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "RECOVERED LEARNINGS - 2026-04-07": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131246",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131251",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 3,
-      "decay_score": 1
-    },
-    "RECOVERED": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131254",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131256",
-      "last_accessed": "2026-04-07T16:39:47.131257",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Session": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131259",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131260",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "PRIORITY": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131263",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131265",
-      "last_accessed": "2026-04-07T16:39:47.131266",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "TOP DECISIONS": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131268",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131269",
-      "last_accessed": "2026-04-07T16:39:47.131270",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "RECOVERED: Memory System Architecture": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131339",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131342",
-      "last_accessed": "2026-04-07T16:39:47.131343",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Knowledge": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131345",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131347",
-      "last_accessed": "2026-04-07T16:39:47.131348",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Learnings": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131349",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131350",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 3,
-      "decay_score": 1
-    },
-    "Daily": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131353",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131355",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Notes": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131357",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131359",
-      "last_accessed": "2026-04-07T16:39:47.131360",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "STORAGE": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131368",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131369",
-      "last_accessed": "2026-04-07T16:39:47.131370",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "CONSOLIDATION": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131376",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131377",
-      "last_accessed": "2026-04-07T16:39:47.131378",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "SKILL": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131384",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131385",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Knowledge Hierarchy": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131388",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131390",
-      "last_accessed": "2026-04-07T16:39:47.131391",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Test": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131826",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131831",
-      "last_accessed": "2026-04-07T16:39:47.131832",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Summary": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131834",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131836",
-      "last_accessed": "2026-04-07T16:39:47.131837",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Main": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131839",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131840",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Connections": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131843",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131844",
-      "last_accessed": "2026-04-07T16:39:47.131845",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Tags": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.131847",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.131848",
-      "last_accessed": "2026-04-07T16:39:47.131849",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "System Test": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.132141",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.132197",
-      "last_accessed": "2026-04-07T16:39:47.132198",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Final Test Note": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.132504",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.132507",
-      "last_accessed": "2026-04-07T16:39:47.132508",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Evening Insights 2026-04-07": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.132554",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.132555",
-      "last_accessed": "2026-04-07T16:39:47.132556",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Warum": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.132557",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.132558",
-      "last_accessed": "2026-04-07T16:39:47.132559",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Quelle": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.132559",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.132560",
-      "last_accessed": "2026-04-07T16:39:47.132561",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "AI Agent Trends 2026 \u2014 Research Notes": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094131",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094146",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "NVIDIA": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094152",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094154",
-      "last_accessed": "2026-04-08T06:00:02.094155",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "OpenAI": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094158",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094160",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "LangChain": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094191",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094195",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Microsoft": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094199",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094201",
-      "last_accessed": "2026-04-08T06:00:02.094202",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "OpenClaw Multi-Agent & Security Research": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094900",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094908",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 15,
-      "decay_score": 1
-    },
-    "Monitoring": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094913",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094915",
-      "last_accessed": "2026-04-08T06:00:02.094916",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Quellen": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094918",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094919",
-      "last_accessed": "2026-04-08T06:00:02.094920",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "OpenClaw": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094922",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094923",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Gateway": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094926",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094927",
-      "last_accessed": "2026-04-08T06:00:02.094928",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Agent": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094930",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094931",
-      "last_accessed": "2026-04-08T06:00:02.094932",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Memory": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094934",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094936",
-      "last_accessed": "2026-04-08T06:00:02.094937",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Security": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094939",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094940",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Multi": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094943",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094945",
-      "last_accessed": "2026-04-08T06:00:02.094946",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Gateway als Kernel": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094952",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094953",
-      "last_accessed": "2026-04-08T06:00:02.094954",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Top": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094956",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094958",
-      "last_accessed": "2026-04-08T06:00:02.094959",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "{title}": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137669",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137679",
-      "last_accessed": "2026-04-09T06:00:01.137680",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Related": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137685",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137686",
-      "last_accessed": "2026-04-09T06:00:01.137687",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Source": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137689",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137690",
-      "last_accessed": "2026-04-09T06:00:01.137691",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Key Point": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137693",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137693",
-      "last_accessed": "2026-04-09T06:00:01.137694",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Related Notes": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137695",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137696",
-      "last_accessed": "2026-04-09T06:00:01.137697",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Wiki Growth Workflow \u2014 Automatische Wiki-Pflege": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137885",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137888",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Cron": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137890",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137891",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Daily Operations \u2014 2026-04-08": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138270",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138276",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 4,
-      "decay_score": 1
-    },
-    "Beides": {
-      "type": "concept",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138283",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138284",
-      "last_accessed": "2026-04-09T06:00:01.138285",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "System": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138287",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138288",
-      "last_accessed": "2026-04-09T06:00:01.138289",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Fixes": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138299",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138300",
-      "last_accessed": "2026-04-09T06:00:01.138301",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Curriculum": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138312",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138313",
-      "last_accessed": "2026-04-09T06:00:01.138314",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "[USER]": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138316",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138317",
-      "last_accessed": "2026-04-09T06:00:01.138318",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Entscheidung": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138323",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138324",
-      "last_accessed": "2026-04-09T06:00:01.138325",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Wiki": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138327",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138328",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
-      "decay_score": 1
-    },
-    "Cron Jobs": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138338",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138340",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Fixes Durchgef": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138343",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138344",
-      "last_accessed": "2026-04-09T06:00:01.138345",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "CEO Briefing Cron Error": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138347",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138348",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Agent Certification System": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138352",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138352",
-      "last_accessed": "2026-04-09T06:00:01.138353",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "TITLE_PLACEHOLDER": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139088",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139093",
-      "last_accessed": "2026-04-09T06:00:01.139095",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Erreichte": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139314",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139315",
-      "last_accessed": "2026-04-09T06:00:01.139316",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Neue": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139319",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139321",
-      "last_accessed": "2026-04-09T06:00:01.139322",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Metrics": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139339",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139341",
-      "last_accessed": "2026-04-09T06:00:01.139342",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Erreichte Checkpoints": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139344",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139345",
-      "last_accessed": "2026-04-09T06:00:01.139346",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Neue Erkenntnisse": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139348",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139349",
-      "last_accessed": "2026-04-09T06:00:01.139350",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Original": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.144080",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.144089",
-      "last_accessed": "2026-04-09T06:00:01.144091",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Keywords": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.144094",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.144096",
-      "last_accessed": "2026-04-09T06:00:01.144097",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Connected": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.144099",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.144100",
-      "last_accessed": "2026-04-09T06:00:01.144101",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Next": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.144103",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.144104",
-      "last_accessed": "2026-04-09T06:00:01.144105",
-      "access_count": 0,
-      "decay_score": 1
-    },
     "skill_health_monitoring_20260410": {
       "type": "skill",
       "category": "skill",
@@ -1577,8 +217,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:05.588034",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 15
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 17
     },
     "skill_backup_automation_20260410": {
       "type": "skill",
@@ -1593,8 +233,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.401249",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16
     },
     "skill_morning_brief_20260410": {
       "type": "skill",
@@ -1609,8 +249,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.449528",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16
     },
     "system_health_monitoring_20260410": {
       "type": "system",
@@ -1625,8 +265,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:33:04.124829",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 15
     },
     "system_backup_system_20260410": {
       "type": "system",
@@ -1734,8 +374,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:42.326285",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16
     },
     "project_empirehazeclaw_fleet_20260410": {
       "type": "project",
@@ -1750,8 +390,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:46.923434",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 18
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 20
     },
     "concept_continuous_improvement_20260410": {
       "type": "concept",
@@ -1907,8 +547,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 16
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 18
     },
     "skill_qa_enforcer": {
       "type": "skill",
@@ -1923,8 +563,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 15
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 17
     },
     "skill_backup_advisor": {
       "type": "skill",
@@ -1939,8 +579,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 4
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 6
     },
     "reflection_deep_20260410": {
       "type": "reflection",
@@ -2048,8 +688,8 @@
           "source": "self_eval.py"
         }
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 18
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 20
     },
     "Self-Improvement-Patterns": {
       "type": "pattern",
@@ -2094,8 +734,8 @@
           "source": "test_framework.py"
         }
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 17
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 19
     },
     "Bad-Patterns-SirHazeClaw": {
       "type": "pattern",
@@ -2178,8 +818,8 @@
         "2026",
         "arxiv"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 19
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 21
     },
     "memory_frameworks_20260411": {
       "type": "research",
@@ -2203,8 +843,8 @@
         "google",
         "mem0"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 16
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 17
     },
     "multiagent_frameworks_20260411": {
       "type": "research",
@@ -2295,8 +935,8 @@
         "open-source",
         "runtime"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 17
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 19
     },
     "nvidia_agentic_search_20260411": {
       "id": "nvidia_agentic_search_20260411",
@@ -2420,8 +1060,8 @@
         "autonomy_levels",
         "2026"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 15
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 17
     },
     "success_file_read_2290": {
       "type": "success_pattern",
@@ -2508,8 +1148,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-11T17:31:00.854162+00:00",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 14,
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 16,
       "decay_score": 1,
       "properties": {
         "type": "success_pattern",
@@ -2960,8 +1600,8 @@
         "2026",
         "arxiv"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 19
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 21
     },
     "research_20260412": {
       "type": "research",
@@ -3685,262 +2325,6 @@
       "created": "2026-04-12T06:36:52.054318",
       "created_by": "kg_orphan_connector"
     },
-    "LearningPattern_error_reducer_error": {
-      "id": "LearningPattern_error_reducer_error",
-      "type": "LearningPattern",
-      "name": "error_reducer_error",
-      "description": "\ud83d\udd0d ERROR REDUCER \u2014 Real Error Analysis (v2)",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669064",
-      "last_validated": "2026-04-13T13:48:51.669075",
-      "created_at": "2026-04-16T19:05:57.970671"
-    },
-    "LearningPattern_analyzing_errors...": {
-      "id": "LearningPattern_analyzing_errors...",
-      "type": "LearningPattern",
-      "name": "analyzing_errors...",
-      "description": "\ud83d\udd0d Analyzing errors...",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669082",
-      "last_validated": "2026-04-13T13:48:51.669083",
-      "created_at": "2026-04-16T19:05:57.970825"
-    },
-    "LearningPattern_error_rate:_2.21%": {
-      "id": "LearningPattern_error_rate:_2.21%",
-      "type": "LearningPattern",
-      "name": "error_rate:_2.21%",
-      "description": "\ud83d\udcc8 Real Error Rate: 2.21%",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669087",
-      "last_validated": "2026-04-13T13:48:51.669088",
-      "created_at": "2026-04-16T19:05:57.970907"
-    },
-    "LearningPattern_total_errors:": {
-      "id": "LearningPattern_total_errors:",
-      "type": "LearningPattern",
-      "name": "total_errors:",
-      "description": "Total real errors: 75",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669091",
-      "last_validated": "2026-04-13T13:48:51.669091",
-      "created_at": "2026-04-16T19:05:57.970985"
-    },
-    "LearningPattern_error_breakdown:": {
-      "id": "LearningPattern_error_breakdown:",
-      "type": "LearningPattern",
-      "name": "error_breakdown:",
-      "description": "\ud83d\udea8 Error Breakdown:",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669094",
-      "last_validated": "2026-04-13T13:48:51.669095",
-      "created_at": "2026-04-16T19:05:57.971063"
-    },
-    "LearningPattern_error_tools:": {
-      "id": "LearningPattern_error_tools:",
-      "type": "LearningPattern",
-      "name": "error_tools:",
-      "description": "\ud83d\udd27 Top Error Tools:",
-      "error_type": "general_error",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669103",
-      "last_validated": "2026-04-13T13:48:51.669104",
-      "created_at": "2026-04-16T19:05:57.971141"
-    },
-    "LearningPattern_failure:_failed:": {
-      "id": "LearningPattern_failure:_failed:",
-      "type": "LearningPattern",
-      "name": "failure:_failed:",
-      "description": "Cron failure: \u26a0\ufe0f Failed: 4",
-      "error_type": "cron_failure",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669107",
-      "last_validated": "2026-04-13T14:21:02.770253",
-      "created_at": "2026-04-16T19:05:57.971236",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 2
-    },
-    "LearningPattern_failure:_failed_jobs:": {
-      "id": "LearningPattern_failure:_failed_jobs:",
-      "type": "LearningPattern",
-      "name": "failure:_failed_jobs:",
-      "description": "Cron failure: \u274c FAILED JOBS:",
-      "error_type": "cron_failure",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669110",
-      "last_validated": "2026-04-13T13:48:51.669110",
-      "created_at": "2026-04-16T19:05:57.971317",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 2
-    },
-    "LearningPattern_failure:_error:_message": {
-      "id": "LearningPattern_failure:_error:_message",
-      "type": "LearningPattern",
-      "name": "failure:_error:_message",
-      "description": "Cron failure: \u274c Error: `\u26a0\ufe0f \u2709\ufe0f Message failed`",
-      "error_type": "cron_failure",
-      "solution": null,
-      "confidence": 0.40217849999999994,
-      "validated": false,
-      "source": "error_learning",
-      "first_seen": "2026-04-13T13:48:51.669113",
-      "last_validated": "2026-04-13T13:48:51.669114",
-      "created_at": "2026-04-16T19:05:57.971394"
-    },
-    "LearningPattern_pattern_20260413_163817": {
-      "id": "LearningPattern_pattern_20260413_163817",
-      "type": "LearningPattern",
-      "name": "pattern_20260413_163817",
-      "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "error_type": "elevated_error_rate",
-      "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "confidence": 0.8202339500000003,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-16T01:04:12.507907",
-      "created_at": "2026-04-16T19:05:57.971475"
-    },
-    "LearningPattern_pattern_20260413_164637": {
-      "id": "LearningPattern_pattern_20260413_164637",
-      "type": "LearningPattern",
-      "name": "pattern_20260413_164637",
-      "description": "[PHASE 4] Explore: feedback_integration",
-      "error_type": "feedback_integration",
-      "solution": "Applied improvement: [PHASE 4] Explore: feedback_integration",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-13T16:46:37.522401",
-      "last_validated": "2026-04-14T07:38:16.832396",
-      "created_at": "2026-04-16T19:05:57.971552"
-    },
-    "LearningPattern_pattern_20260414_074342": {
-      "id": "LearningPattern_pattern_20260414_074342",
-      "type": "LearningPattern",
-      "name": "pattern_20260414_074342",
-      "description": "Context Compression",
-      "error_type": "context_compression",
-      "solution": "Applied improvement: Context Compression",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-14T07:43:42.701457",
-      "last_validated": "2026-04-14T07:43:42.701460",
-      "created_at": "2026-04-16T19:05:57.971633"
-    },
-    "LearningPattern_pattern_20260414_125308": {
-      "id": "LearningPattern_pattern_20260414_125308",
-      "type": "LearningPattern",
-      "name": "pattern_20260414_125308",
-      "description": "[DEBUG] Test improvement",
-      "error_type": "general",
-      "solution": "Applied improvement: [DEBUG] Test improvement",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-14T12:53:08.664404",
-      "last_validated": "2026-04-14T12:53:08.664408",
-      "created_at": "2026-04-16T19:05:57.971714"
-    },
-    "LearningPattern_pattern_20260414_125502": {
-      "id": "LearningPattern_pattern_20260414_125502",
-      "type": "LearningPattern",
-      "name": "pattern_20260414_125502",
-      "description": "[CROSS-PATTERN] Test",
-      "error_type": "cross_pattern",
-      "solution": "Applied improvement: [CROSS-PATTERN] Test",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-14T12:55:02.790816",
-      "last_validated": "2026-04-14T12:55:02.790820",
-      "created_at": "2026-04-16T19:05:57.971800"
-    },
-    "LearningPattern_pattern_20260414_125503": {
-      "id": "LearningPattern_pattern_20260414_125503",
-      "type": "LearningPattern",
-      "name": "pattern_20260414_125503",
-      "description": "[ISSUE] Test",
-      "error_type": "issue",
-      "solution": "Applied improvement: [ISSUE] Test",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-14T12:55:03.870281",
-      "last_validated": "2026-04-14T12:55:03.870284",
-      "created_at": "2026-04-16T19:05:57.971877"
-    },
-    "LearningPattern_pattern_20260414_125505": {
-      "id": "LearningPattern_pattern_20260414_125505",
-      "type": "LearningPattern",
-      "name": "pattern_20260414_125505",
-      "description": "[HYPOTHESIS] Test",
-      "error_type": "general",
-      "solution": "Applied improvement: [HYPOTHESIS] Test",
-      "confidence": 0.6054299999999999,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-14T12:55:05.010555",
-      "last_validated": "2026-04-14T12:55:05.010558",
-      "created_at": "2026-04-16T19:05:57.971952"
-    },
-    "LearningPattern_pattern_20260416_155831": {
-      "id": "LearningPattern_pattern_20260416_155831",
-      "type": "LearningPattern",
-      "name": "pattern_20260416_155831",
-      "description": "Investigate and fix Opportunity Scanner Daily failure",
-      "error_type": "cron_health",
-      "solution": "Applied improvement: Investigate and fix Opportunity Scanner Daily failure",
-      "confidence": 0.8500000000000001,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-16T15:58:31.046647",
-      "last_validated": "2026-04-16T18:05:21.303745",
-      "created_at": "2026-04-16T19:05:57.972030"
-    },
-    "LearningPattern_pattern_20260416_190437": {
-      "id": "LearningPattern_pattern_20260416_190437",
-      "type": "LearningPattern",
-      "name": "pattern_20260416_190437",
-      "description": "Fix CEO Weekly Review: check email sending and report generation",
-      "error_type": "cron_health",
-      "solution": "Applied improvement: Fix CEO Weekly Review: check email sending and report generation",
-      "confidence": 0.7,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-16T19:04:37.332924",
-      "last_validated": "2026-04-16T19:04:37.332928",
-      "created_at": "2026-04-16T19:05:57.972107"
-    },
     "Improvement_2026-04-14T13-34-18-228138_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-14T13-34-18-228138_CROSS-PATTERN-CROSS-PATTERN",
       "type": "Improvement",
@@ -3972,7 +2356,9 @@
       "timestamp": "2026-04-14T13:34:22.438132",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-16T19:05:57.972417"
+      "created_at": "2026-04-16T19:05:57.972417",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed",
@@ -4049,7 +2435,9 @@
       "timestamp": "2026-04-14T13:34:49.010140",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-16T19:05:57.973015"
+      "created_at": "2026-04-16T19:05:57.973015",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN",
@@ -4094,8 +2482,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.973376",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e",
@@ -4117,7 +2505,9 @@
       "timestamp": "2026-04-14T16:03:45.454106",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-16T19:05:57.973542"
+      "created_at": "2026-04-16T19:05:57.973542",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e",
@@ -4151,8 +2541,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973799",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit",
@@ -4230,8 +2620,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.974420",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN",
@@ -4265,8 +2655,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.974682",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r": {
       "id": "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r",
@@ -4344,8 +2734,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975313",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN",
@@ -4379,8 +2769,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975577",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch",
@@ -4392,8 +2782,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975664",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 3
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 5
     },
     "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch",
@@ -4404,7 +2794,9 @@
       "timestamp": "2026-04-15T23:05:15.515608",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-16T19:05:57.975759"
+      "created_at": "2026-04-16T19:05:57.975759",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed",
@@ -4437,7 +2829,9 @@
       "timestamp": "2026-04-16T02:03:50.866280",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-16T19:05:57.976032"
+      "created_at": "2026-04-16T19:05:57.976032",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit",
@@ -4470,7 +2864,9 @@
       "timestamp": "2026-04-16T16:04:20.241473",
       "test_count": 3,
       "tests_passed": 3,
-      "created_at": "2026-04-16T19:05:57.976319"
+      "created_at": "2026-04-16T19:05:57.976319",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit",
@@ -4601,20 +2997,6 @@
       "tests_passed": 2,
       "created_at": "2026-04-17T03:10:13.062876"
     },
-    "LearningPattern_pattern_20260417_160345": {
-      "id": "LearningPattern_pattern_20260417_160345",
-      "type": "LearningPattern",
-      "name": "pattern_20260417_160345",
-      "description": "Reduce KG orphans: add relations to disconnected entities",
-      "error_type": "kg_quality",
-      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
-      "confidence": 0.7,
-      "validated": true,
-      "source": "learning_loop",
-      "first_seen": "2026-04-17T16:03:45.137210",
-      "last_validated": "2026-04-17T16:03:45.137214",
-      "created_at": "2026-04-17T16:03:45.257948"
-    },
     "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio",
       "type": "Improvement",
@@ -4625,8 +3007,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:03:45.258112",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 1
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3
     },
     "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
@@ -4638,8 +3020,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:09.016597",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 1
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3
     },
     "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
@@ -4651,8 +3033,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:36.507316",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 1
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3
     },
     "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
@@ -4664,8 +3046,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T17:04:36.977902",
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 1
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3
     },
     "innovation_research_20260417": {
       "type": "research",
@@ -4687,8 +3069,8 @@
         "2026",
         "arxiv"
       ],
-      "last_accessed": "2026-04-20T08:04:47.534150+00:00",
-      "access_count": 1
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 3
     },
     "research_20260417": {
       "type": "research",
@@ -4779,7 +3161,9 @@
         "research",
         "agent",
         "AI_agent_self-improvement"
-      ]
+      ],
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "research_AI_safety_alignment_20260420": {
       "type": "research",
@@ -4822,7 +3206,9 @@
         "research",
         "agent",
         "AI_safety_alignment"
-      ]
+      ],
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
     },
     "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation": {
       "id": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
@@ -4855,7 +3241,9 @@
       "timestamp": "2026-04-20T08:09:04.274527",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-20T08:09:04.504099+00:00"
+      "created_at": "2026-04-20T08:09:04.504099+00:00",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 2
     },
     "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel": {
       "id": "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel",
@@ -4886,12 +3274,12 @@
         {
           "content": "## arXiv: Self-adaptive Multi-Access Edge Architectures: A Robotics Case\nThe growth of compute-intensive AI tasks highlights the need to mitigate the processing costs and improve performance and energy efficiency. This necessitates the integration of intelligent agents as \n\n## arXiv: ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation\nParametric Computer-Aided Design (CAD) of articulated assemblies is essential for product development, yet generating these multi-part, movable models from high-level descriptions remains unexplored. \n\n## arXiv: Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabili\nAccording to constructivist theory, students learn software security more effectively when examples are grounded in their own code. Generic examples often fail to connect with students' prior work, li\n\n## arXiv: OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Base\nThe alignment of Multi-Agent Systems (MAS) for autonomous software engineering is constrained by evaluator epistemic uncertainty. Current paradigms, such as Reinforcement Learning from Human Feedback \n\n## arXiv: Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC\nThis paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely ad\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI ...",
           "confidence": 0.8,
-          "extracted_at": "2026-04-20T09:52:19.232263",
+          "extracted_at": "2026-04-20T18:05:05.982640",
           "category": "innovation_research"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T09:52:19.232270",
+      "created": "2026-04-20T18:05:05.982664",
       "tags": [
         "innovation",
         "research",
@@ -4907,7 +3295,7 @@
         {
           "content": "Research completed: 3 queries, 2 hypotheses generated",
           "confidence": 0.9,
-          "extracted_at": "2026-04-20T09:52:19.290928",
+          "extracted_at": "2026-04-20T18:05:06.066173",
           "category": "research"
         }
       ],
@@ -4930,15 +3318,1123 @@
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T09:52:19.290937",
+      "created": "2026-04-20T18:05:06.066182",
       "tags": [
         "research",
         "coordinator",
         "daily"
       ]
+    },
+    "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": false,
+      "timestamp": "2026-04-20T11:05:06.135679",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T11:05:06.428733+00:00"
+    },
+    "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T12:04:38.860395",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T12:04:39.089014+00:00",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
+    },
+    "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T13:03:59.793021",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T13:04:00.022291+00:00",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 1
+    },
+    "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317": {
+      "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Self-adaptive Multi-Access Edge Architectures: A Robotics Case",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354809",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354820",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354816",
+      "last_accessed": "2026-04-20T14:03:17.354817",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_140317": {
+      "id": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354828",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354831",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354829",
+      "last_accessed": "2026-04-20T14:03:17.354830",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_When-Agent-Markets-Arrive_20260420_140317": {
+      "id": "research_When-Agent-Markets-Arrive_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "When Agent Markets Arrive",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354836",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354839",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354837",
+      "last_accessed": "2026-04-20T14:03:17.354838",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Towards-Personalizing-Secure-Programming_20260420_140317": {
+      "id": "research_Towards-Personalizing-Secure-Programming_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabilities",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354843",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354846",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354844",
+      "last_accessed": "2026-04-20T14:03:17.354845",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_140317": {
+      "id": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Based Multi-Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354850",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354852",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354850",
+      "last_accessed": "2026-04-20T14:03:17.354851",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_140317": {
+      "id": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Beyond Static Sandboxing: Learned Capability Governance for Autonomous AI Agents",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354856",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354859",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354857",
+      "last_accessed": "2026-04-20T14:03:17.354858",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_140317": {
+      "id": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354863",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354865",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354864",
+      "last_accessed": "2026-04-20T14:03:17.354864",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_140317": {
+      "id": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354869",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354871",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354870",
+      "last_accessed": "2026-04-20T14:03:17.354870",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Structured-Prompt-Language:-Declarative-_20260420_140317": {
+      "id": "research_Structured-Prompt-Language:-Declarative-_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Structured Prompt Language: Declarative Context Management for LLMs",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354875",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354877",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354876",
+      "last_accessed": "2026-04-20T14:03:17.354877",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_140317": {
+      "id": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354881",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354883",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354882",
+      "last_accessed": "2026-04-20T14:03:17.354882",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_140317": {
+      "id": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Safety, Security, and Cognitive Risks in World Models",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354886",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354889",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354887",
+      "last_accessed": "2026-04-20T16:03:27.238892+00:00",
+      "access_count": 2,
+      "decay_score": 10
+    },
+    "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317": {
+      "id": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Puppets or partners? Governing cyborg propaganda in the digital public square",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354892",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354895",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354893",
+      "last_accessed": "2026-04-20T14:03:17.354894",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Learning-the-Stellar-Structure-Equations_20260420_140317": {
+      "id": "research_Learning-the-Stellar-Structure-Equations_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Learning the Stellar Structure Equations via Self-supervised Physics-Informed Neural Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354898",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354900",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354899",
+      "last_accessed": "2026-04-20T14:03:17.354899",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Activity-Dependent-Plasticity-in-Morphog_20260420_140317": {
+      "id": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Activity-Dependent Plasticity in Morphogenetically-Grown Recurrent Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354904",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354906",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354905",
+      "last_accessed": "2026-04-20T14:03:17.354905",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_140317": {
+      "id": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Kernel Dynamics under Path Entropy Maximization",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354909",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354912",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354910",
+      "last_accessed": "2026-04-20T14:03:17.354911",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Cluster:-42-Topics-inter-conne_20260420_140317": {
+      "id": "research_Knowledge-Cluster:-42-Topics-inter-conne_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Cluster: 42 Topics inter-connected",
+          "confidence": 0.85,
+          "extracted_at": "2026-04-20T14:03:17.354916",
+          "category": "research_finding"
+        },
+        {
+          "content": "Found 42 topic entities forming knowledge network. Topics: ['', '', '', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354918",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354916",
+      "last_accessed": "2026-04-20T14:03:17.354917",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Pattern-Library:-64-patterns-discovered_20260420_140317": {
+      "id": "research_Pattern-Library:-64-patterns-discovered_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 64 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-20T14:03:17.354923",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 64 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354926",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354924",
+      "last_accessed": "2026-04-20T14:03:17.354924",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260420_140317": {
+      "id": "research_Knowledge-Gaps-Identified_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-20T14:03:17.354930",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354933",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354931",
+      "last_accessed": "2026-04-20T14:03:17.354932",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260420_140317": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-20T14:03:17.354936",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354939",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354937",
+      "last_accessed": "2026-04-20T14:03:17.354938",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T14:05:13.385033",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T14:05:13.597667+00:00"
+    },
+    "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K": {
+      "id": "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Reduce KG orphans: add relations to disconnected e",
+      "description": "Apply proven pattern: Reduce KG orphans: add relations to disconnected e",
+      "validated": false,
+      "timestamp": "2026-04-20T15:04:30.361957",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T15:04:30.618662+00:00"
+    },
+    "Improvement_2026-04-20T16-03-48-193105_PHASE-4-Review-last-24h-of-A": {
+      "id": "Improvement_2026-04-20T16-03-48-193105_PHASE-4-Review-last-24h-of-A",
+      "type": "Improvement",
+      "name": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize",
+      "description": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize or cache it",
+      "validated": false,
+      "timestamp": "2026-04-20T16:03:48.193105",
+      "test_count": 4,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T16:03:48.424047+00:00"
+    },
+    "system_root": {
+      "type": "system",
+      "name": "System Root",
+      "created_at": "2026-04-20T16:11:00Z",
+      "last_accessed": "2026-04-20T16:11:00Z"
+    },
+    "research_AI_agent_self-improvement_20260420": {
+      "type": "research",
+      "category": "research_agent",
+      "facts": [
+        {
+          "content": "Research on AI agent self-improvement: 0 papers, 3 HN stories, 3 web results",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-20T16:47:55.076405",
+          "category": "research_summary"
+        }
+      ],
+      "papers": [],
+      "hn_stories": [
+        {
+          "title": "My AI Agent Knows Who I Am. Not Just What I Want. Who I Am",
+          "url": "https://thoughts.jock.pl/p/wiz-ai-agent-self-improvement-architecture",
+          "points": 2,
+          "topic": "AI agent self-improvement"
+        },
+        {
+          "title": "Show HN: Aigent \u2013 A general-purpose AI agent built for self-improvement",
+          "url": "https://stefanochiodino.github.io/aigent/",
+          "points": 2,
+          "topic": "AI agent self-improvement"
+        },
+        {
+          "title": "A FOSS project to create an Artificial Mind",
+          "url": "",
+          "points": 3,
+          "topic": "AI agent self-improvement"
+        }
+      ],
+      "topics": [
+        "AI agent self-improvement"
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T16:47:55.076408",
+      "tags": [
+        "research",
+        "agent",
+        "AI_agent_self-improvement"
+      ]
+    },
+    "LearningPattern_pattern_20260420_163745": {
+      "id": "LearningPattern_pattern_20260420_163745",
+      "type": "LearningPattern",
+      "name": "pattern_20260420_163745",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "error_type": "context_compression",
+      "solution": "Applied improvement: Measure context size, find 1 specific text to shorten",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-20T16:37:45.463078",
+      "last_validated": "2026-04-20T16:37:45.463079",
+      "created_at": "2026-04-20T17:04:49.807862+00:00"
+    },
+    "LearningPattern_pattern_20260420_170449": {
+      "id": "LearningPattern_pattern_20260420_170449",
+      "type": "LearningPattern",
+      "name": "pattern_20260420_170449",
+      "description": "Break score plateau with novel approach",
+      "error_type": "loop_optimization",
+      "solution": "Applied improvement: Break score plateau with novel approach",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-20T17:04:49.591713",
+      "last_validated": "2026-04-20T17:04:49.591715",
+      "created_at": "2026-04-20T17:04:49.807983+00:00"
+    },
+    "Improvement_2026-04-20T16-37-45-464375_Exploration-Measure-context-": {
+      "id": "Improvement_2026-04-20T16-37-45-464375_Exploration-Measure-context-",
+      "type": "Improvement",
+      "name": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "validated": true,
+      "timestamp": "2026-04-20T16:37:45.464375",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T17:04:49.808070+00:00"
+    },
+    "Improvement_2026-04-20T17-04-49-593079_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-20T17-04-49-593079_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-20T17:04:49.593079",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T17:04:49.808235+00:00"
+    },
+    "Improvement_2026-04-20T18-01-52-729553_Exploration-Measure-context-": {
+      "id": "Improvement_2026-04-20T18-01-52-729553_Exploration-Measure-context-",
+      "type": "Improvement",
+      "name": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "validated": true,
+      "timestamp": "2026-04-20T18:01:52.729553",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T18:06:36.969629+00:00"
+    },
+    "Improvement_2026-04-20T18-06-36-750273_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T18-06-36-750273_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T18:06:36.750273",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T18:06:36.969841+00:00"
+    },
+    "YouTube-Transcript-dQw4w9WgXcQ": {
+      "type": "transcript",
+      "category": "transcript",
+      "facts": [
+        {
+          "content": "Uns beiden ist die Liebe nicht fremd Du kennst die Regeln genau wie ich F\u00fcr mich z\u00e4hlst nur du Das kriegst du sonst von keinem hier Ich will dir sagen, wie ich f\u00fchle Damit du es auch verstehst Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich Wir kennen uns so lange schon Dein Herz dr\u00e4ngt dich,\ndoch du bist zu sch\u00fcchtern Tief in uns wissen wir es beide Wir kennen das Spiel und spielen eine Runde Und fragst du mich nach meinen Gef\u00fchlen Sag nicht, dass du es nicht siehst Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich (Oh, geb dich auf) (Oh, geb dich auf) Ich geb dich,\nich geb dich (Geb dich auf) Ich geb dich,\nich geb dich (Geb dich auf) Wir kennen uns so lange schon Dein Herz dr\u00e4ngt dich,\ndoch du bist zu sch\u00fcchtern Tief in uns wissen wir es beide Wir kennen das Spiel und spielen eine Runde Ich will dir sagen, wie ich f\u00fchle Damit du es auch verstehst Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich Ich geb dich niemals auf Lass dich niemals im Stich Werde nie umherziehn\nund dich alleine lassen Ich bringe dich nie zum Weinen Sage nie Goodbye L\u00fcge dich niemals an\nund verletze dich",
+          "source_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "extracted_at": "2026-04-20T18:54:55.926980",
+          "confidence": 0.95,
+          "category": "transcript"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T18:54:55.926980",
+      "last_accessed": "2026-04-20T18:54:55.926980",
+      "access_count": 1,
+      "decay_score": 1
+    },
+    "Improvement_2026-04-20T19-04-28-143193_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T19-04-28-143193_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T19:04:28.143193",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T19:04:28.381415+00:00"
+    },
+    "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190751": {
+      "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Self-adaptive Multi-Access Edge Architectures: A Robotics Case",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153657",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153674",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153668",
+      "last_accessed": "2026-04-20T19:07:51.153671",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190751": {
+      "id": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153688",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153693",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153690",
+      "last_accessed": "2026-04-20T19:07:51.153691",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_When-Agent-Markets-Arrive_20260420_190751": {
+      "id": "research_When-Agent-Markets-Arrive_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "When Agent Markets Arrive",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153702",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153707",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153704",
+      "last_accessed": "2026-04-20T19:07:51.153705",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Towards-Personalizing-Secure-Programming_20260420_190751": {
+      "id": "research_Towards-Personalizing-Secure-Programming_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabilities",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153713",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153717",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153715",
+      "last_accessed": "2026-04-20T19:07:51.153716",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190751": {
+      "id": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Based Multi-Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153724",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153729",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153726",
+      "last_accessed": "2026-04-20T19:07:51.153727",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190751": {
+      "id": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Beyond Static Sandboxing: Learned Capability Governance for Autonomous AI Agents",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153735",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153738",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153736",
+      "last_accessed": "2026-04-20T19:07:51.153737",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190751": {
+      "id": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153742",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153745",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153743",
+      "last_accessed": "2026-04-20T19:07:51.153744",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190751": {
+      "id": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153749",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153752",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153750",
+      "last_accessed": "2026-04-20T19:07:51.153751",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Structured-Prompt-Language:-Declarative-_20260420_190751": {
+      "id": "research_Structured-Prompt-Language:-Declarative-_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Structured Prompt Language: Declarative Context Management for LLMs",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153756",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153759",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153757",
+      "last_accessed": "2026-04-20T19:07:51.153758",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190751": {
+      "id": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153763",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153765",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153764",
+      "last_accessed": "2026-04-20T19:07:51.153764",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190751": {
+      "id": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Safety, Security, and Cognitive Risks in World Models",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153769",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153772",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153770",
+      "last_accessed": "2026-04-20T19:07:51.153771",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190751": {
+      "id": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Puppets or partners? Governing cyborg propaganda in the digital public square",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153776",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153779",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153777",
+      "last_accessed": "2026-04-20T19:07:51.153778",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Learning-the-Stellar-Structure-Equations_20260420_190751": {
+      "id": "research_Learning-the-Stellar-Structure-Equations_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Learning the Stellar Structure Equations via Self-supervised Physics-Informed Neural Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153783",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153785",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153784",
+      "last_accessed": "2026-04-20T19:07:51.153784",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190751": {
+      "id": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Activity-Dependent Plasticity in Morphogenetically-Grown Recurrent Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153789",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153792",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153790",
+      "last_accessed": "2026-04-20T19:07:51.153791",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190751": {
+      "id": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190751",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Kernel Dynamics under Path Entropy Maximization",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T19:07:51.153795",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153827",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153796",
+      "last_accessed": "2026-04-20T19:07:51.153826",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Pattern-Library:-47-patterns-discovered_20260420_190751": {
+      "id": "research_Pattern-Library:-47-patterns-discovered_20260420_190751",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 47 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-20T19:07:51.153832",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 47 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153834",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153833",
+      "last_accessed": "2026-04-20T19:07:51.153833",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260420_190751": {
+      "id": "research_Knowledge-Gaps-Identified_20260420_190751",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-20T19:07:51.153839",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153842",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153840",
+      "last_accessed": "2026-04-20T19:07:51.153841",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260420_190751": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260420_190751",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-20T19:07:51.153846",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T19:07:51.153849",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T19:07:51.153847",
+      "last_accessed": "2026-04-20T19:07:51.153848",
+      "access_count": 1,
+      "decay_score": 10
     }
   },
-  "last_updated": "2026-04-20T09:52:19.232273",
+  "last_updated": "2026-04-20T18:05:05.982692",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -41969,6 +41465,332 @@
       "type": "created",
       "weight": 0.9,
       "created_at": "2026-04-20T09:08:21.751827+00:00"
+    },
+    "648": {
+      "id": 648,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T11:05:06.428905+00:00"
+    },
+    "649": {
+      "id": 649,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T12:04:39.089125+00:00"
+    },
+    "650": {
+      "id": 650,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T13:04:00.022469+00:00"
+    },
+    "651": {
+      "id": 651,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T14:05:13.597814+00:00"
+    },
+    "652": {
+      "id": 652,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T15:04:30.618834+00:00"
+    },
+    "653": {
+      "id": 653,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T16-03-48-193105_PHASE-4-Review-last-24h-of-A",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T16:03:48.424179+00:00"
+    },
+    "654": {
+      "from": "innovation_research_20260417",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "655": {
+      "from": "research_20260417",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "656": {
+      "from": "research_AI_agent_self-improvement_20260417",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "657": {
+      "from": "research_AI_safety_alignment_20260420",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "658": {
+      "from": "innovation_research_20260420",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "659": {
+      "from": "research_20260420",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "660": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "661": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "662": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "663": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "664": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "665": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "666": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "667": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "668": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "669": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "670": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "671": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "672": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "673": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "674": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "675": {
+      "from": "research_Knowledge-Cluster:-42-Topics-inter-conne_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "676": {
+      "from": "research_Pattern-Library:-64-patterns-discovered_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "677": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "678": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_140317",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:11:00Z",
+      "context": "Orphan reconnected by KG maintenance"
+    },
+    "679": {
+      "from": "research_AI_agent_self-improvement_20260420",
+      "to": "system_root",
+      "type": "connects_to",
+      "created_at": "2026-04-20T16:52:44.958594",
+      "context": "Auto-connect by kg_auto_populate"
+    },
+    "680": {
+      "id": 680,
+      "from": "LearningPattern_pattern_20260420_163745",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-20T17:04:49.807976+00:00"
+    },
+    "681": {
+      "id": 681,
+      "from": "LearningPattern_pattern_20260420_170449",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-20T17:04:49.808056+00:00"
+    },
+    "682": {
+      "id": 682,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T16-37-45-464375_Exploration-Measure-context-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T17:04:49.808158+00:00"
+    },
+    "683": {
+      "id": 683,
+      "from": "Improvement_2026-04-20T16-37-45-464375_Exploration-Measure-context-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T17:04:49.808228+00:00"
+    },
+    "684": {
+      "id": 684,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T17-04-49-593079_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T17:04:49.808306+00:00"
+    },
+    "685": {
+      "id": 685,
+      "from": "Improvement_2026-04-20T17-04-49-593079_Break-score-plateau-with-novel",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T17:04:49.808387+00:00"
+    },
+    "686": {
+      "id": 686,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T18-01-52-729553_Exploration-Measure-context-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T18:06:36.969756+00:00"
+    },
+    "687": {
+      "id": 687,
+      "from": "Improvement_2026-04-20T18-01-52-729553_Exploration-Measure-context-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T18:06:36.969832+00:00"
+    },
+    "688": {
+      "id": 688,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T18-06-36-750273_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T18:06:36.969932+00:00"
+    },
+    "689": {
+      "id": 689,
+      "from": "Improvement_2026-04-20T18-06-36-750273_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T18:06:36.970011+00:00"
+    },
+    "690": {
+      "id": 690,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T19-04-28-143193_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:04:28.381531+00:00"
+    },
+    "691": {
+      "id": 691,
+      "from": "Improvement_2026-04-20T19-04-28-143193_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T19:04:28.381609+00:00"
     }
   }
 }

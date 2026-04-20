@@ -1,86 +1,78 @@
-# 🎯 SKILLS INVENTORY — Sir HazeClaw
-**Updated:** 2026-04-12 19:30 UTC
-**Total:** 17 skill directories, 27 library patterns
+# Skills Index — Updated 2026-04-20
+
+**Total Skills:** 29  
+**Active:** 8 | **Medium:** 12 | **Unused:** 4 | **Deprecated:** 1
 
 ---
 
-## 📊 SKILL DIRECTORIES
+## ✅ ACTIVE (8)
 
-| Skill | Path | Status | Notes |
-|-------|------|--------|-------|
-| **prompt-coach** | `skills/prompt-coach/` | ✅ Active | NEW - coaching for all inputs |
-| **semantic-search** | `skills/semantic-search/` | ✅ Active | _meta.json + SKILL.md |
-| **capability-evolver** | `skills/capability-evolver/` | 🔄 Active | 9 files, most recently modified |
-| **INDEX.md** | `skills/INDEX.md` | 📋 Index | Master skill documentation |
-| **_library** | `skills/_library/` | 📚 Patterns | 27 reusable patterns |
-| **backup-advisor** | `skills/backup-advisor/` | 🟡 Medium | backup advice |
-| **coding** | `skills/coding/` | 🟡 Medium | coding patterns |
-| **content-creator** | `skills/content-creator/` | 🟡 Medium | content creation |
-| **frontend** | `skills/frontend/` | 🟡 Medium | frontend dev |
-| **loop-prevention** | `skills/loop-prevention/` | 🟡 Medium | prevent infinite loops |
-| **qa-enforcer** | `skills/qa-enforcer/` | 🟡 Medium | quality assurance |
-| **research** | `skills/research/` | 🟡 Medium | research workflows |
-| **self-improvement** | `skills/self-improvement/` | 🟡 Medium | improvement patterns |
-| **system-manager** | `skills/system-manager/` | 🟡 Medium | system management |
-| **backend-api** | `skills/backend-api/` | 🔴 Unused | no recent activity |
-| **voice-agent** | `skills/voice-agent/` | 🔴 Unused | no recent activity |
+| Skill | Path | Description |
+|-------|------|-------------|
+| `capability-evolver` | `skills/capability-evolver/` | Gene-based prompt evolution, GEP Protocol |
+| `prompt-coach` | `skills/prompt-coach/` | Always-on Prompt Co-Pilot (SOUL.md active) |
+| `semantic-search` | `skills/semantic-search/` | Semantische Suche + KG (Cron @ 6:30) |
+| `bug-hunter` | `skills/bug-hunter/` | Log-Scanning auf Bugs |
+| `loop-prevention` | `skills/loop-prevention/` | Loop-Erkennung |
+| `self-improvement` | `skills/self-improvement/` | Selbst-Verbesserung |
+| `memory_cleaner` | `skills/memory_cleaner/` | Auto Memory Archivierung |
+| `memory-sanitizer` | `skills/memory-sanitizer/` | Sensible Daten entfernen |
 
 ---
 
-## 📚 _LIBRARY PATTERNS (27 total)
+## 🟡 MEDIUM (12)
 
-| Pattern | Purpose |
-|---------|---------|
-| `agentic_loop_architecture` | Agentic loop design |
-| `autonomous_improvement` | Self-improvement patterns |
-| `code_stats` | Code statistics |
-| `coding_workflow` | Development workflow |
-| `debugging_workflow` | Debug techniques |
-| `error_recovery` | Error recovery patterns |
-| `first_attempt_success` | One-shot success tips |
-| `hitl_pattern` | Human-in-the-loop |
-| `loop_detection` | Infinite loop prevention |
-| `performance_dashboard` | Performance metrics |
-| `prompt_efficiency` | Token optimization |
-| `research_workflow` | Research methodology |
-| `retry_loop_prevention` | Retry pattern safety |
-| `self_correction` | Self-correction patterns |
-| `self_evaluation` | Self-assessment |
-| `self_healing_pattern` | Self-healing automation |
-| `path_verification` | Path/directory checks |
-| `timeout_handling` | Timeout patterns |
-| `token_optimization` | Context optimization |
-| `todo_manager` | Task management |
-| `tool_failure_handling` | Tool failure recovery |
-| `verification_workflow` | Verification steps |
-| `workflow_efficiency` | Workflow optimization |
+| Skill | Path | Description |
+|-------|------|-------------|
+| `coding` | `skills/coding/` | Full-Stack Dev (Python, JS, Bash) |
+| `code-review` | `skills/code-review/` | Auto PR Review |
+| `git-manager` | `skills/git-manager/` | Git Operations |
+| `repo-analyzer` | `skills/repo-analyzer/` | Repository Analyse |
+| `test-generator` | `skills/test-generator/` | Auto Tests generieren |
+| `debug-helper` | `skills/debug-helper/` | Failure Analysis |
+| `guardrails` | `skills/guardrails/` | Over-active inference prevention |
+| `hyperparameter-tuner` | `skills/hyperparameter-tuner/` | Learning Loop Optimization |
+| `log-aggregator` | `skills/log-aggregator/` | Zentrale Log Sammlung |
+| `qa-enforcer` | `skills/qa-enforcer/` | Quality Enforcement |
+| `backup-advisor` | `skills/backup-advisor/` | Backup Beratung |
+| `research` | `skills/research/` | Research Workflows |
 
 ---
 
-## 🔍 ANALYSIS
+## 🔴 UNUSED (4)
 
-### Active Skills (3)
-- **prompt-coach**: Just created, handles all inputs
-- **semantic-search**: Read + write enabled, knowledge graph integration
-- **capability-evolver**: Recently active (2026-04-12)
-
-### Medium Usage (9)
-- Various skills from original system
-- Could be consolidated or deprecated
-
-### Unused (2)
-- **backend-api**: No recent use
-- **voice-agent**: No recent use
+| Skill | Path | Status |
+|-------|------|--------|
+| `backend-api` | `skills/backend-api/` | status: unknown |
+| `content-creator` | `skills/content-creator/` | status: unknown |
+| `frontend` | `skills/frontend/` | status: unknown |
+| `voice-agent` | `skills/voice-agent/` | status: unknown |
 
 ---
 
-## 💡 RECOMMENDATIONS
+## 📚 DEPRECATED (1)
 
-1. **Deprecate** `backend-api` and `voice-agent` (unused)
-2. **Merge** similar patterns in `_library` (e.g., `loop_detection` + `retry_loop_prevention`)
-3. **Document** `capability-evolver` usage pattern
-4. **Activate** `self-improvement` for continuous learning
+| Skill | Note |
+|-------|------|
+| `_library` | DEPRECATED - Patterns moved to docs/patterns/ |
 
 ---
 
-*Skills Inventory by Sir HazeClaw*
+## ❌ MISSING (but documented)
+
+| Skill | Note |
+|-------|------|
+| `ralph_loop` | Skill created 2026-04-20 as standalone |
+
+---
+
+## 🆕 NEW 2026-04-20
+
+| Skill | Path | Description |
+|-------|------|-------------|
+| `ralph_loop` | `skills/ralph_loop/` | Iteration pattern with stop hook + completion promise |
+
+---
+
+**Updated:** 2026-04-20 16:06 UTC  
+**Source:** Full workspace scan

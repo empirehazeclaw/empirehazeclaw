@@ -1,6 +1,6 @@
 # MEMORY.md — Sir HazeClaw Core Memory
 
-**Letzte Aktualisierung:** 2026-04-20 06:53 UTC
+**Letzte Aktualisierung:** 2026-04-20 11:43 UTC
 
 ---
 
@@ -23,9 +23,10 @@ Model: MiniMax M2.7
 Workspace: /home/clawbot/.openclaw/workspace/ceo/
 Scripts: ~300 total (nach Cleanup 2026-04-20: 298 scripts, war 763)
 Workspace Size: 230MB (war ~79MB, durch Cleanup aufgeräumt)
-Crons: 29 active
-KG: 479 entities, 33.8% orphans
-Learning: 100% success rate, 165 tasks
+Disk: 96GB total, 26% used (72GB free)
+RAM: 7.8GB total, 1.3GB used, 6.4GB available
+Crons: 29 active, 5 recently fixed/activated
+Cloud-init: Update pending (24.1.3 → 25.3)
 ```
 
 ---
@@ -113,16 +114,17 @@ ACTION: Brave API Key muss rotiert werden ( bereits-reported)
 
 ---
 
-## 🟢 QMD INTEGRATION (2026-04-19)
+## 🟢 QMD INTEGRATION (2026-04-20)
 ```
-QMD v2.1.0 | Index: 19.3 MB
-Collections:
-  - memory: 58 files (alter Pfad, 10d alt)
-  - ceo_memory: 113 files (NEU! 2026-04-19)
-Vectors: 1756 embedded
-Embedding: läuft im Hintergrund
-Cron: QMD Watchdog (alle 15min)
+QMD v2.1.0 | Index: 19.3 MB | Collection: ceo_memory (131 files)
+Vectors: 1095 embedded
+Models (in /home/clawbot/.cache/qmd/models/):
+  - ggml-org/embeddinggemma-300M-GGUF: 314MB ✅ aktiv
+  - tobil/qmd-query-expansion-1.7B: deleted (1.2GB .ipull unvollständig)
+QMD Watchdog: alle 20min ✅ OK
+Fallback: qmd search (BM25) funktioniert ohne query expansion model
 ```
+**npm global:** @tobilu/qmd (917MB) ist wichtig — QMD itself
 
 ---
 
@@ -426,3 +428,51 @@ workspace/ (.git → GitHub ✅)
 # IMMER VORHER prüfen!
 grep -r "dir_to_delete/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
 ```
+
+---
+
+## 🧹 SYSTEM ANALYSIS (2026-04-20)
+
+### Space Cleanup
+| Action | Freed | Status |
+|--------|-------|--------|
+| QMD `.ipull` (unvollständiger HuggingFace download) | -1.2GB | ✅ Deleted |
+| npm Cache | -700MB | ✅ Cleaned |
+| /tmp fix_bridge.py + openclaw-restart-*.sh | -~100KB | ✅ Deleted |
+| **Total** | **~1.9GB freed** | ✅ |
+
+### npm Global (1.8GB total)
+| Package | Size | Status |
+|---------|------|--------|
+| `openclaw@2026.4.15` | 861MB | ✅ needed |
+| `@tobilu/qmd` | 917MB | ✅ QMD itself (important) |
+| `@ffmpeg-installer/ffmpeg` | 66MB | ✅ needed |
+| `@clawdbot` | 4KB | ✅ tiny |
+| `@elvatis_com` | 4KB | ✅ tiny |
+
+### QMD .ipull = Unvollständiger Download
+- `hf_tobil_qmd-query-expansion-1.7B-q4_k_m.gguf.ipull` = HuggingFace Temp-File
+- `.ipull` = unvollständiger/abgebrochener Download
+- QMD funktioniert MIT `qmd search` (BM25 fallback) auch ohne Query Expansion model
+- Reranker (`Qwen3-Reranker-0.6B`) war auch nicht in cache → läuft online über HuggingFace
+
+### Cron Fixes
+| Cron | Vorher | Status | Fix |
+|------|--------|--------|-----|
+| Prompt Benchmark Weekly | error | ✅ ok | Self-healed on manual run |
+| Run auto documentation | error | ✅ ok | Self-healed on manual run |
+| Ralph Maintenance Loop | idle | ✅ ok | Enabled + manually triggered |
+| Cache Cleanup Daily | idle | ✅ ok | Enabled + manually triggered |
+| KG Orphan Cleaner Daily | idle | ✅ ok | Enabled + manually triggered |
+
+### Key Learnings
+1. **Cron "error"** = oft temporär → manueller Run = self-heal
+2. **Cron "idle"** = NICHT broken → nextRun war einfach noch nicht erreicht
+3. **QMD .ipull** = HuggingFace Temp-Format, unvollständig → sicher zu löschen
+4. **`qmd search`** (BM25) funktioniert als Fallback auch ohne query expansion model
+5. **Cloud-init update pending**: `24.1.3 → 25.3` (APT update, nicht kritisch)
+
+### Remaining
+- Whisper Cache: 462MB (small.pt) — **in use**, nicht löschen
+- node-gyp Cache: 65MB — optional
+- Rustup: 1.6GB (nur für Builder relevant)

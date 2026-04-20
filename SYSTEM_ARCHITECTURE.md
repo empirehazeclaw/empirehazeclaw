@@ -1,187 +1,148 @@
-# System Architecture Documentation — 2026-04-11
-
-**Erstellt:** 2026-04-11 11:10 UTC
-**Zweck:** Klare Dokumentation der Systemstruktur + Plan für Vereinfachung
-
----
-
-## 📁 SYSTEMÜBERSICHT
-
-### Wo sind Konfigurationen?
-
-| Datei/Ort |Zweck | Enthält |
-|-----------|------|---------|
-| `~/.openclaw/openclaw.json` | Haupt-Config | Models, Providers, Agents, Defaults |
-| `~/.openclaw/agents/ceo/` | CEO Agent | Sessions, Agent-spezifische Config |
-| `~/.openclaw/secrets/secrets.env` | **API Keys** | MINIMAX, OPENROUTER, GitHub, etc. ⚠️ |
-| `~/.openclaw/workspace/` | Arbeitsbereich | Alle Scripts, Skills, Docs, Memory |
-| Environment Variables | API Keys | Wird aus secrets.env geladen |
-
-### ⚠️ WICHTIG: Secrets Location
-
-**API Keys haben 2 Speicherorte:**
-
-| Ort | Zweck | Inhalt |
-|-----|-------|--------|
-| `secrets/secrets.env` | Langzeit-Backup aller Keys | Alle API Keys (MINIMAX, GitHub, etc.) |
-| `agents/ceo/agent/auth-profiles.json` | **Runtime Key Store** | Aktuell genutzter MINIMAX Key |
-
-**Aktueller MINIMAX Key:**
-- Key: `sk-cp-eQ6DbkJtxCAkw_zYabMlyK1B-...`
-- Location: `/home/clawbot/.openclaw/agents/ceo/agent/auth-profiles.json`
-- Auch in: `agents/main/agent/auth-profiles.json` (identisch)
-
-**Wie es funktioniert:**
-1. `openclaw.json` verweist auf `auth.profiles.minimax:global` (nur Provider + Mode)
-2. Gateway liest den **tatsächlichen Key** aus `auth-profiles.json` zur Laufzeit
-3. Das "Missing API Key" Warning in Config-Tools = nur Display-Problem
-
-**NIE in openclaw.json committed!** (nur redacted)
+# System Architecture — Sir HazeClaw
+**Updated:** 2026-04-20 16:45 UTC
+**Version:** 2.0
 
 ---
 
-## 📊 WORKSPACE STRUKTUR (Aktuell)
+## 🏗️ System Overview
 
 ```
-/home/clawbot/.openclaw/workspace/
-├── scripts/                    # 80+ Python Scripts
-│   ├── learning_*.py          # Learning Loop Scripts
-│   ├── *_tracker.py           # Tracking Scripts
-│   ├── *_check.py             # Health Checks
-│   ├── *_cleanup.py           # Cleanup Scripts
-│   └── *.py                   # Andere
-├── skills/                     # Skills (16+ Ordner)
-│   ├── self-improvement/
-│   ├── system-manager/
-│   ├── research/
-│   └── .../
-├── memory/                      # Short-Term Memory
-│   ├── 2026-04-*.md          # Tägliche Files
-│   └── shared/
-├── core_ultralight/
-│   └── memory/
-│       └── knowledge_graph.json  # KG (Long-Term)
-├── docs/                        # Dokumentation
-├── data/                        # Logs, States
-│   ├── token_log.json
-│   ├── learning_coordinator.json
-│   └── tool_usage_analytics.json
-├── ceo/                         # CEO Workspace
-│   ├── HEARTBEAT.md
-│   ├── IMPROVEMENT_TODO.md
-│   ├── LEARNING_LOOP_ANALYSE.md
-│   └── ...
-└── ...                          # Viele andere Files
+┌─────────────────────────────────────────────────────────────┐
+│                     Sir HazeClaw (CEO)                       │
+│                   /workspace/ceo/                           │
+└─────────────────┬───────────────────────────────────────────┘
+                  │
+      ┌───────────┴───────────┐
+      ▼                       ▼
+┌─────────────────┐     ┌─────────────────┐
+│  Orchestrator   │     │   Event Bus    │
+│  (multi_agent)   │     │  (1040 events) │
+└───────┬─────────┘     └────────┬────────┘
+        │                        │
+        ▼                        ▼
+┌─────────────────┐     ┌─────────────────┐
+│  Agent Executor │     │   KG Sync      │
+│  (Queue-based)  │     │  (learning→KG)  │
+└───────┬─────────┘     └─────────────────┘
+        │
+        ▼
+┌───────────────────────────────────────┐
+│         Specialized Agents             │
+│  health_agent | data_agent | research │
+└───────────────────────────────────────┘
 ```
 
 ---
 
-## ⚠️ PROBLEME (Current State)
+## 🔧 Core Components
 
-### 1. Zu viele Files (>100 im Root)
-Viele alte/dead Files die nicht mehr gebraucht werden:
-- `AGENT_*.md` (Consolidation, ROI, Inventory) - veraltet
-- `CLAW_*.md` - unclear purpose
-- `DREAMS.md`, `FINAL_STATE.md` - unclear
+### 1. Multi-Agent System
+- **Orchestrator:** Routes tasks based on capability matching
+- **Executor:** Queue-based task execution (60s timeout)
+- **Agents:** health (95% SR), data (90%), research (85%)
+- **State:** `orchestrator_state.json`
 
-### 2. Kein klares Naming Convention
-- Manche Files: `Upper_Case.md`
-- Manche: `lowercase.py`
-- Inkonsistent
+### 2. Learning Loop (v3)
+- **Score:** 0.764 (Target: 0.80)
+- **Iteration:** 215
+- **Validation:** v2 (3/3 tests, ±0.1% error threshold)
+- **Success Rate:** 200/205 (97.6%)
+- **Location:** `SCRIPTS/automation/learning_loop_v3.py`
 
-### 3. Scripts verteilt
-- `scripts/` hat 80+ Files
-- Nicht klar welche aktiv/inaktiv
+### 3. Knowledge Graph
+- **Entities:** 210 (after cleanup)
+- **Relations:** 647
+- **Orphan Rate:** 0% (fixed 2026-04-20)
+- **Location:** `ceo/memory/kg/knowledge_graph.json`
 
-### 4. Memory Fragmentation
-- `memory/` = täglich
-- `core_ultralight/memory/knowledge_graph.json` = KG
-- Nicht klar wann was genutzt
+### 4. Event Bus
+- **Total Events:** 1040
+- **Top Types:** agent_completed (827), evolver_completed (59)
+- **Consumer:** Internal only (learning_to_kg_sync)
+- **Location:** `data/events/events.jsonl`
+
+### 5. Memory System
+- **main.sqlite:** 372MB (4024 embeddings)
+- **ceo.sqlite:** 84MB (347 chunks)
+- **QMD:** 20MB index, BM25 fallback
+- **Short-term recall:** 546 entries (after fix)
+
+### 6. Capability Evolver
+- **Gene Pool:** 4 types (repair, innovate, optimize, auto)
+- **Strategy:** balanced (default)
+- **Signal Bridge:** Active
+- **Location:** `skills/capability-evolver/`
 
 ---
 
-## 📋 SYSTEMKLARHEITS-PLAN
-
-### Phase 1: Inventarisierung (DIESE WOCHE)
-
-**TASK:** Vollständige Inventarliste erstellen
-
-```
-1. Alle Scripts scan+status (aktiv/inaktiv/veraltet)
-2. Alle Skills dokumentieren (wofür?)
-3. Alle Memory Files alter+bereinigen
-4. Alle Root-Files inventarisieren
-```
-
-### Phase 2: Struktur vereinheitlichen (DIESE WOCHE)
-
-**TASK:** Klare Ordnerstruktur
+## 📁 Workspace Structure (2026-04-20)
 
 ```
 workspace/
-├── scripts/
-│   ├── core/           # Aktive, wichtige Scripts
-│   ├── tools/          # Hilfsscripts
-│   ├── deprecated/      # Alte Scripts (nicht löschen, nur archivieren)
-│   └── README.md       # Index aller Scripts
-├── skills/
-│   ├── active/         # Regelmäßig genutzt
-│   ├── research/       # Research + Ideen
-│   └── archived/       # Nicht mehr aktiv
-├── memory/
-│   ├── daily/          # Tägliche Files
-│   └── archive/        # Archivierte
-├── docs/               # Dokumentation
-├── data/               # Logs + States
-└── ceo/                # CEO Workspace
-```
-
-### Phase 3: Naming Convention (DIESE WOCHE)
-
-**TASK:** Einheitliche Benennung
-
-```
-Regeln:
-- Scripts: snake_case.py (learning_coordinator.py)
-- Docs: Title-Case.md (Learning Loop Analyse.md)
-- Variablen: camelCase
-- Constants: UPPER_SNAKE_CASE
-```
-
-### Phase 4: Documentation (DIESE WOCHE)
-
-**TASK:** Klare Dokumentation
-
-```
-1. SYSTEM_INDEX.md - Überblick über整个 System
-2. CONFIGURATION.md - Wo ist was konfiguriert
-3. SCRIPTS_INDEX.md - Alle Scripts mit Status
-4. ACTIVE_CRONS.md - Alle Crons dokumentiert
+├── ceo/                    # Main agent workspace
+│   ├── memory/            # Memory system
+│   │   ├── kg/            # Knowledge Graph
+│   │   ├── meta_learning/ # Learning loop state
+│   │   └── .dreams/       # Short-term recall
+│   ├── scripts/           # Agent scripts
+│   └── logs/              # Agent logs
+├── SCRIPTS/               # Automation scripts
+│   ├── automation/        # Main automation
+│   │   ├── learning_loop_v3.py
+│   │   ├── health_agent.py
+│   │   ├── data_agent.py
+│   │   ├── research_agent.py
+│   │   └── cron_health_monitor.py
+│   └── self_healing/
+├── skills/                # 30 skills registered
+│   ├── capability-evolver/
+│   ├── semantic-search/
+│   └── ralph_loop/        # NEW 2026-04-20
+├── docs/                  # Documentation
+│   ├── SYSTEM_DEEP_DIVE_ENHANCED_PLAN_v2.md
+│   ├── EVENT_BUS_CONSUMER_AUDIT.md
+│   └── BACKUP_RETENTION_POLICY.md
+└── data/                  # Runtime data
+    ├── events/           # Event bus
+    ├── learning_loop/     # Learning loop data
+    └── feedback_queue.json
 ```
 
 ---
 
-## 🔍 WAS ICH GERADE MACHE
+## 🔄 System Integration
 
-**TASK:** Memory Reranker implementieren
+### Event Flow
+```
+Cron Trigger → Agent Executor → Task Queue → Orchestrator
+                                                    │
+                                    ┌───────────────┴───────────────┐
+                                    ▼                               ▼
+                              health_agent              data_agent / research_agent
+                                    │                               │
+                                    └───────────┬───────────────────┘
+                                                ▼
+                                    Learning Loop → KG Sync → Event Bus
+```
 
-Das nutzt die bestehende `memory_hybrid_search.py` Struktur und fügt einen Reranking-Layer hinzu.
-
-**Danach:** System-Klarheits-Inventarisierung
+### Backup Locations (Consolidated)
+- `backups/`: Current backup targets
+- `ceo/backups/`: Phase backups
+- `_archive/`: Old archived backups (>30 days)
 
 ---
 
-## 📊 PRIORITÄTEN
+## 📊 Success Metrics
 
-| Task | Priority | Status |
-|------|----------|--------|
-| Memory Reranker | 🟡 MED | OFFEN |
-| System Inventarisierung | 🔴 HOCH | START NOW |
-| Struktur-Vereinheitlichung | 🟡 MED | FOLGT |
-| Documentation | 🟡 MED | FOLGT |
+| Metric | Current | Target |
+|--------|----------|--------|
+| Learning Score | 0.764 | 0.80 |
+| KG Orphan Rate | 0% | <5% |
+| Agent Health | 95-90-85% | >90% each |
+| Crons Active | 28 | 28 |
+| Short-term Recall | 546 | >100 |
 
 ---
 
-*Letztes Update: 2026-04-11 11:10 UTC*
-*Status: RESEARCH DONE*
-*Next: Memory Reranker → dann Inventarisierung*
+**Last Updated:** 2026-04-20 16:45 UTC
+**Status:** Active ✅

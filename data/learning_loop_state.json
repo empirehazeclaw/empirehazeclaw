@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 208,
-  "score": 0.7661038216359418,
+  "iteration": 219,
+  "score": 0.7654329268292682,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -230,21 +230,37 @@
     0.7666291883910374,
     0.7663669673903013,
     0.7661038216359418,
-    0.7661038216359418
+    0.7661038216359418,
+    0.7655855042409913,
+    0.7855001343171171,
+    0.7650990904336382,
+    0.7650990904336382,
+    0.7650990904336382,
+    0.7628557245889572,
+    0.7642213883677298,
+    0.7655400696864111,
+    0.765897212543554,
+    0.7662543554006969,
+    0.7654329268292682
   ],
   "patterns": [
     {
-      "type": "performance_gap",
-      "metric": "task_success_rate",
-      "value": 0,
-      "target": 0.8,
-      "gap": 0.8,
-      "priority": "HIGH",
-      "learnings": []
+      "type": "efficiency",
+      "metric": "efficiency",
+      "value": 185.625,
+      "status": "healthy"
+    },
+    {
+      "type": "antipattern",
+      "pattern_name": "filler_words",
+      "file": "SOUL.md",
+      "severity": "MED",
+      "matches": 2,
+      "action": "monitor"
     },
     {
       "type": "error_rate",
-      "value": 0,
+      "value": 0.0009115770282588879,
       "status": "healthy"
     }
   ],
@@ -253,11 +269,11 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 226,
+  "novelty_injections": 237,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
-  "pattern_source": "success",
+  "pattern_source": "capability",
   "last_validation": null,
   "last_decay": "2026-04-14T10:38:45.192126",
   "created": "2026-04-14T00:00:00",
@@ -268,16 +284,16 @@
     }
   },
   "consecutive_same_pattern": 1,
-  "last_validated_pattern": "Break score plateau with novel approach",
-  "last_forced_novelty": "2026-04-20T07:03:20.725534",
+  "last_validated_pattern": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+  "last_forced_novelty": "2026-04-20T16:03:48.108040",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-20T09:08:21.823658",
-  "patterns_discovered": 2,
+  "last_pattern_update": "2026-04-20T19:04:28.462202",
+  "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
   ],

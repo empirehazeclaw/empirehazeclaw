@@ -1,24 +1,129 @@
 {
-  "last_full_cycle": "2026-04-20T07:34:29.678440",
-  "cycles_run": 117,
-  "script_issues": [],
+  "last_full_cycle": "2026-04-20T18:09:06.758894",
+  "cycles_run": 121,
+  "script_issues": [
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/stagnation_detector.py",
+      "cron": "System Maintenance Cron",
+      "job_id": "e9a5581a",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/cron_watchdog.py",
+      "cron": "System Maintenance Cron",
+      "job_id": "e9a5581a",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/integration_dashboard.py",
+      "cron": "Integration Health Check",
+      "job_id": "9e5f2fb3",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_core.py",
+      "cron": "Learning Core Hourly",
+      "job_id": "6286b757",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/run_smart_evolver.sh",
+      "cron": "Smart Evolver Hourly",
+      "job_id": "1865d877",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_coordinator.py",
+      "cron": "Learning Coordinator (2x/day)",
+      "job_id": "21b1dcba",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/gateway_recovery.py",
+      "cron": "Run gateway recovery check:",
+      "job_id": "c0060c0e",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/kg_access_updater_optimized.py",
+      "cron": "KG Access Updater",
+      "job_id": "21c804c9",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/token_budget_tracker.py",
+      "cron": "Token Budget Tracker",
+      "job_id": "ce95618e",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/capability_probe.py",
+      "cron": "capability_probe_nightly",
+      "job_id": "9771887c",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/morning_data_kitchen.py",
+      "cron": "Morning Data Kitchen",
+      "job_id": "68b58214",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/goal_alerts.py",
+      "cron": "Goal Alerts Daily",
+      "job_id": "40ae34b9",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    },
+    {
+      "type": "missing_script",
+      "script": "/home/clawbot/.openclaw/home/clawbot/.openclaw/workspace/SCRIPTS/automation/weekly_maintenance.py",
+      "cron": "Weekly Maintenance Sunday",
+      "job_id": "9285d8ad",
+      "detail": "Script does not exist",
+      "severity": "CRITICAL"
+    }
+  ],
   "doc_issues": [],
   "cron_issues": {
-    "total_crons": 32,
+    "total_crons": 33,
     "redundancy_groups": 0,
     "redundancies": [],
     "healthy": true
   },
   "kg_health": {
-    "entity_count": 277,
-    "connected_count": 273,
-    "orphan_count": 4,
-    "orphan_pct": 0.01444043321299639,
+    "entity_count": 217,
+    "connected_count": 316,
+    "orphan_count": 0,
+    "orphan_pct": 0.0,
     "healthy": true,
     "threshold": 0.8,
-    "recommendation": "Orphan rate 1.4% within acceptable range"
+    "recommendation": "Orphan rate 0.0% within acceptable range"
   },
-  "last_script_check": "2026-04-20T07:34:27.154604",
-  "last_doc_audit": "2026-04-20T07:34:27.155514",
-  "last_cron_check": "2026-04-20T07:34:29.678428"
+  "last_script_check": "2026-04-20T18:08:57.479022",
+  "last_doc_audit": "2026-04-20T18:08:57.479605",
+  "last_cron_check": "2026-04-20T18:09:06.758878"
 }

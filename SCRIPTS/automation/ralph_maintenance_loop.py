@@ -75,7 +75,7 @@ def run_stagnation_check():
     """Run stagnation detector."""
     log("Running Stagnation Check...")
     result = subprocess.run(
-        ["python3", str(WORKSPACE / "scripts/stagnation_detector.py"), "--check", "all"],
+        ["python3", str(WORKSPACE / "SCRIPTS/automation/stagnation_detector.py"), "--check", "all"],
         capture_output=True, text=True, timeout=60
     )
     return result.returncode == 0, result.stdout + result.stderr

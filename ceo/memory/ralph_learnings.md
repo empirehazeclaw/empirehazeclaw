@@ -13,3 +13,27 @@
 3. Fixed double-prefix on `ralph_maintenance_loop.py` (`/openclaw/home/clawbot/.openclaw/...`)
 
 **Note:** The cron fires at 09:00 & 18:00 UTC (Ralph Learning Loop). Score currently 0.766 vs 0.80 target — still improving.
+
+## Learning: 2026-04-20 — Ralph Maintenance Loop Activated
+
+**Status:** Ralph Maintenance Loop (c8fa9a00) ist jetzt ✅ OK
+- Problem: War "idle" weil nextRun noch nicht erreicht war
+- Fix: `openclaw cron enable` + manueller Run = läuft jetzt
+- Alle 3 idlen Crons (Ralph Maintenance, Cache Cleanup, KG Orphan) aktiviert
+
+## Learning: 2026-04-20 — Errored Crons Self-Heal
+
+**Observation:** Prompt Benchmark Weekly + Run auto documentation waren "error" (24h/2h)
+- Nach manuellem `openclaw cron run` = sofort ✅ OK
+- "error" Status heisst NICHT dass das Script kaputt ist
+- Es bedeutet nur dass der letzte Run fehlgeschlagen ist (可能是 temporär)
+
+## Learning: 2026-04-20 — QMD .ipull = Temp Download
+
+**Discovery:** `/home/clawbot/.cache/qmd/models/hf_tobil_qmd-query-expansion-1.7B-q4_k_m.gguf.ipull`
+- `.ipull` = HuggingFace temporary download format
+- Unvollständig (QMD hatte beim Download abgebrochen)
+- QMD läuft mit `qmd search` (BM25) auch ohne das model
+- Gelöscht → 1.2GB gespart
+- [2026-04-20 12:10] [maintenance:success] Maintenance complete after 5 iterations
+- [2026-04-20 18:09] [maintenance:success] Maintenance complete after 6 iterations

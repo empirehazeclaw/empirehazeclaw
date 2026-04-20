@@ -1025,6 +1025,106 @@
       "stored_at": "2026-04-20T06:23:40.918933",
       "success_count": 1,
       "failure_count": 0
+    },
+    {
+      "name": "memory:working",
+      "context": "memory",
+      "description": "working",
+      "source": "memory_analysis",
+      "id": "pattern_104",
+      "stored_at": "2026-04-20T18:00:19.246388",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:\u2705 Dokumentation: Complete",
+      "context": "memory",
+      "description": "\u2705 Dokumentation: Complete",
+      "source": "memory_analysis",
+      "id": "pattern_105",
+      "stored_at": "2026-04-20T18:00:19.248852",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Passed",
+      "context": "memory",
+      "description": "Passed",
+      "source": "memory_analysis",
+      "id": "pattern_106",
+      "stored_at": "2026-04-20T18:00:19.251051",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Passed",
+      "context": "memory",
+      "description": "Passed",
+      "source": "memory_analysis",
+      "id": "pattern_107",
+      "stored_at": "2026-04-20T18:00:19.252511",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_108",
+      "stored_at": "2026-04-20T18:00:19.254129",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:passed",
+      "context": "memory",
+      "description": "passed",
+      "source": "memory_analysis",
+      "id": "pattern_109",
+      "stored_at": "2026-04-20T18:00:19.255608",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:success",
+      "context": "memory",
+      "description": "success",
+      "source": "memory_analysis",
+      "id": "pattern_110",
+      "stored_at": "2026-04-20T18:00:19.257667",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:FIXED",
+      "context": "memory",
+      "description": "FIXED",
+      "source": "memory_analysis",
+      "id": "pattern_111",
+      "stored_at": "2026-04-20T18:00:19.259253",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:Fixed",
+      "context": "memory",
+      "description": "Fixed",
+      "source": "memory_analysis",
+      "id": "pattern_112",
+      "stored_at": "2026-04-20T18:00:19.260796",
+      "success_count": 1,
+      "failure_count": 0
+    },
+    {
+      "name": "memory:fixed",
+      "context": "memory",
+      "description": "fixed",
+      "source": "memory_analysis",
+      "id": "pattern_113",
+      "stored_at": "2026-04-20T18:00:19.262409",
+      "success_count": 1,
+      "failure_count": 0
     }
   ],
   "warnings": [
@@ -1476,6 +1576,51 @@
       "source": "memory_analysis",
       "id": "warning_50",
       "stored_at": "2026-04-20T06:23:40.944424",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Issue",
+      "context": "memory",
+      "description": "Issue",
+      "source": "memory_analysis",
+      "id": "warning_51",
+      "stored_at": "2026-04-20T18:00:19.263963",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_52",
+      "stored_at": "2026-04-20T18:00:19.265549",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:failed",
+      "context": "memory",
+      "description": "failed",
+      "source": "memory_analysis",
+      "id": "warning_53",
+      "stored_at": "2026-04-20T18:00:19.267124",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Failed",
+      "context": "memory",
+      "description": "Failed",
+      "source": "memory_analysis",
+      "id": "warning_54",
+      "stored_at": "2026-04-20T18:00:19.268754",
+      "hit_count": 1
+    },
+    {
+      "pattern": "memory:Issue",
+      "context": "memory",
+      "description": "Issue",
+      "source": "memory_analysis",
+      "id": "warning_55",
+      "stored_at": "2026-04-20T18:00:19.270433",
       "hit_count": 1
     }
   ],

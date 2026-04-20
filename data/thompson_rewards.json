@@ -24,7 +24,11 @@
     "failures": 1
   },
   "hypothesis_loop_optimization": {
-    "successes": 22,
+    "successes": 23,
+    "failures": 1
+  },
+  "hypothesis_context_compression": {
+    "successes": 5,
     "failures": 1
   }
 }

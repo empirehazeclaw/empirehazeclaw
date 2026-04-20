@@ -45,7 +45,7 @@ def load_recall():
         log(f"Fehler beim Laden: {e}", "ERROR")
         return None
 
-MIN_SCORE_THRESHOLD = 0.7  # Minimum score to keep an entry
+MIN_SCORE_THRESHOLD = 0.4  # Minimum score to keep an entry (lowered from 0.7 - scores 0.58-0.62 are valid)
 
 def get_entries_to_keep(recall_data, max_age_hours=72):
     """Filtert Entries die nach Retention-Periode + Score-Schwelle noch relevant sind."""

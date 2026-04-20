@@ -1,0 +1,15 @@
+{
+  "name": "ralph_loop",
+  "version": "1.0.0",
+  "description": "Iteration pattern with stop hook + completion promise for reliable task completion",
+  "created": "2026-04-20",
+  "status": "active",
+  "scripts": {
+    "adapter": "scripts/ralph_loop_adapter.py"
+  },
+  "dependencies": [],
+  "usage": [
+    "python3 skills/ralph_loop/scripts/ralph_loop_adapter.py check --check '<command>'",
+    "python3 skills/ralph_loop/scripts/ralph_loop_adapter.py loop <task> --check '<check>' --action '<action>' --max-iterations 20"
+  ]
+}

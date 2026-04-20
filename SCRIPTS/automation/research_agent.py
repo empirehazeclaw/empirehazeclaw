@@ -159,40 +159,43 @@ def search_hackernews(topic: str, max_results: int = 5) -> List[Dict]:
         log(f"HN search failed: {e}", "ERROR")
         return []
 
-def get_brave_api_key() -> Optional[str]:
-    """Get Brave API key from secrets.env."""
+def get_tavily_api_key() -> Optional[str]:
+    """Get Tavily API key from secrets.env."""
     secrets_path = Path("/home/clawbot/.openclaw/secrets.env")
     if secrets_path.exists():
         for line in secrets_path.read_text().splitlines():
-            if line.startswith("BRAVE_API_KEY="):
+            if line.startswith("TAVILY_API_KEY="):
                 return line.split("=", 1)[1].strip()
-    return os.environ.get("BRAVE_API_KEY")
+    return os.environ.get("TAVILY_API_KEY")
+
 
 def search_web(topic: str, max_results: int = 5) -> List[Dict]:
-    """Web search for topic using Brave Search API."""
-    api_key = get_brave_api_key()
+    """Web search for topic using Tavily Search API."""
+    api_key = get_tavily_api_key()
     if not api_key:
-        log("Brave API key not found", "ERROR")
+        log("Tavily API key not found", "ERROR")
         return []
     
     try:
+        import urllib.request
         import urllib.parse
         encoded_topic = urllib.parse.quote(topic)
-        result = subprocess.run(
-            ["curl", "-s", f"https://api.search.brave.com/res/v1/web/search?q={encoded_topic}&count={max_results}",
-             "-H", f"Accept: application/json",
-             "-H", f"x-subscription-token: {api_key}"],
-            capture_output=True, text=True, timeout=20
+        data = json.dumps({"api_key": api_key, "query": topic, "max_results": max_results}).encode()
+        req = urllib.request.Request(
+            "https://api.tavily.com/search",
+            data=data,
+            headers={"Content-Type": "application/json"},
+            method="POST"
         )
+        with urllib.request.urlopen(req, timeout=20) as response:
+            result = json.loads(response.read().decode())
         
-        data = json.loads(result.stdout)
         results = []
-        
-        for item in data.get("web", {}).get("results", [])[:max_results]:
+        for item in result.get("results", [])[:max_results]:
             results.append({
                 "title": item.get("title", ""),
                 "url": item.get("url", ""),
-                "description": item.get("description", "")[:200],
+                "description": item.get("content", "")[:200],
                 "topic": topic,
             })
         

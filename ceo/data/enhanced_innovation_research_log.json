@@ -27,8 +27,22 @@
       "sources_used": 6,
       "findings_count": 19,
       "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-20T14:03:17.382485",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-20T19:07:51.181479",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
     }
   ],
-  "last_full_research": "2026-04-20T06:21:59.251515",
-  "sources_searched": 19
+  "last_full_research": "2026-04-20T19:07:51.181494",
+  "sources_searched": 31
 }

@@ -1,261 +1,8 @@
 {
   "patterns": [
     {
-      "id": "pattern_20260413_163817",
-      "title": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "category": "general",
-      "error_signature": [
-        "[cross-pattern]",
-        "real",
-        "error",
-        "rate:",
-        "2.21%"
-      ],
-      "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "success_count": 149,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.905,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-20T07:34:05.813834",
-      "error_type": "elevated_error_rate",
-      "context": {
-        "source": "cross_pattern",
-        "script": null
-      },
-      "days_since_validation": 2
-    },
-    {
-      "id": "pattern_20260413_164637",
-      "title": "[PHASE 4] Explore: feedback_integration",
-      "category": "general",
-      "error_signature": [
-        "[phase",
-        "explore:",
-        "feedback_integration"
-      ],
-      "description": "[PHASE 4] Explore: feedback_integration",
-      "solution": "Applied improvement: [PHASE 4] Explore: feedback_integration",
-      "success_count": 236,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4528931284142998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-13T16:46:37.522401",
-      "last_validated": "2026-04-14T07:38:16.832396",
-      "error_type": "feedback_integration",
-      "context": {
-        "source": "forced_novelty",
-        "script": null
-      },
-      "days_since_validation": 6
-    },
-    {
-      "id": "pattern_20260414_074342",
-      "title": "Context Compression",
-      "category": "general",
-      "error_signature": [
-        "context",
-        "compression"
-      ],
-      "description": "Context Compression",
-      "solution": "Applied improvement: Context Compression",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4528931284142998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-14T07:43:42.701457",
-      "last_validated": "2026-04-14T07:43:42.701460",
-      "error_type": "context_compression",
-      "context": {
-        "source": "research",
-        "script": null
-      },
-      "days_since_validation": 6
-    },
-    {
-      "id": "pattern_20260414_125308",
-      "title": "[DEBUG] Test improvement",
-      "category": "general",
-      "error_signature": [
-        "[debug]",
-        "test",
-        "improvement"
-      ],
-      "description": "[DEBUG] Test improvement",
-      "solution": "Applied improvement: [DEBUG] Test improvement",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4869818585099998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-14T12:53:08.664404",
-      "last_validated": "2026-04-14T12:53:08.664408",
-      "error_type": "general",
-      "context": {
-        "source": "debug",
-        "script": null
-      },
-      "days_since_validation": 5
-    },
-    {
-      "id": "pattern_20260414_125502",
-      "title": "[CROSS-PATTERN] Test",
-      "category": "general",
-      "error_signature": [
-        "[cross-pattern]",
-        "test"
-      ],
-      "description": "[CROSS-PATTERN] Test",
-      "solution": "Applied improvement: [CROSS-PATTERN] Test",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4869818585099998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-14T12:55:02.790816",
-      "last_validated": "2026-04-14T12:55:02.790820",
-      "error_type": "cross_pattern",
-      "context": {
-        "source": "cross_pattern",
-        "script": null
-      },
-      "days_since_validation": 5
-    },
-    {
-      "id": "pattern_20260414_125503",
-      "title": "[ISSUE] Test",
-      "category": "error",
-      "error_signature": [
-        "[issue]",
-        "test"
-      ],
-      "description": "[ISSUE] Test",
-      "solution": "Applied improvement: [ISSUE] Test",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4869818585099998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-14T12:55:03.870281",
-      "last_validated": "2026-04-14T12:55:03.870284",
-      "error_type": "issue",
-      "context": {
-        "source": "issue",
-        "script": null
-      },
-      "days_since_validation": 5
-    },
-    {
-      "id": "pattern_20260414_125505",
-      "title": "[HYPOTHESIS] Test",
-      "category": "general",
-      "error_signature": [
-        "[hypothesis]",
-        "test"
-      ],
-      "description": "[HYPOTHESIS] Test",
-      "solution": "Applied improvement: [HYPOTHESIS] Test",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.4869818585099998,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-14T12:55:05.010555",
-      "last_validated": "2026-04-14T12:55:05.010558",
-      "error_type": "general",
-      "context": {
-        "source": "research",
-        "script": null
-      },
-      "days_since_validation": 5
-    },
-    {
-      "id": "pattern_20260416_155831",
-      "title": "Investigate and fix Opportunity Scanner Daily failure",
-      "category": "hypothesis_cron_health",
-      "error_signature": [
-        "investigate",
-        "opportunity",
-        "scanner",
-        "daily",
-        "failure"
-      ],
-      "description": "Investigate and fix Opportunity Scanner Daily failure",
-      "solution": "Applied improvement: Investigate and fix Opportunity Scanner Daily failure",
-      "success_count": 7,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.5630498999999999,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-16T15:58:31.046647",
-      "last_validated": "2026-04-16T22:03:48.693245",
-      "error_type": "cron_health",
-      "context": {
-        "source": "dynamic_signal",
-        "script": null
-      },
-      "days_since_validation": 3
-    },
-    {
-      "id": "pattern_20260416_190437",
-      "title": "Fix CEO Weekly Review: check email sending and report generation",
-      "category": "hypothesis_cron_health",
-      "error_signature": [
-        "weekly",
-        "review:",
-        "check",
-        "email",
-        "sending"
-      ],
-      "description": "Fix CEO Weekly Review: check email sending and report generation",
-      "solution": "Applied improvement: Fix CEO Weekly Review: check email sending and report generation",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.5630498999999999,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-16T19:04:37.332924",
-      "last_validated": "2026-04-16T19:04:37.332928",
-      "error_type": "cron_health",
-      "context": {
-        "source": "dynamic_signal",
-        "script": null
-      },
-      "days_since_validation": 3
-    },
-    {
-      "id": "pattern_20260417_160345",
-      "title": "Reduce KG orphans: add relations to disconnected entities",
-      "category": "hypothesis_kg_quality",
-      "error_signature": [
-        "reduce",
-        "orphans:",
-        "relations",
-        "disconnected",
-        "entities"
-      ],
-      "description": "Reduce KG orphans: add relations to disconnected entities",
-      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
-      "success_count": 22,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.7585370550000003,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-17T16:03:45.137210",
-      "last_validated": "2026-04-19T16:38:14.106382",
-      "error_type": "kg_quality",
-      "context": {
-        "source": "dynamic_signal",
-        "script": null
-      }
-    },
-    {
-      "title": "memory:Valid",
-      "description": "Valid",
+      "title": "memory:working",
+      "description": "working",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
@@ -263,8 +10,8 @@
       "initial_confidence": 0.5
     },
     {
-      "title": "memory:\u2705 **Supervisor Cycle Complete",
-      "description": "\u2705 **Supervisor Cycle Complete",
+      "title": "memory:\u2705 Dokumentation: Complete",
+      "description": "\u2705 Dokumentation: Complete",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
@@ -272,17 +19,8 @@
       "initial_confidence": 0.5
     },
     {
-      "title": "memory:\u2705 **Autonomy Supervisor Cycle Complete",
-      "description": "\u2705 **Autonomy Supervisor Cycle Complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 Supervisor Cycle Complete",
-      "description": "\u2705 Supervisor Cycle Complete",
+      "title": "memory:Passed",
+      "description": "Passed",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
@@ -308,97 +46,8 @@
       "initial_confidence": 0.5
     },
     {
-      "title": "memory:valid",
-      "description": "valid",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 complete",
-      "description": "\u2705 complete",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 13 Events, letzter: evolver_completed",
-      "description": "\u2705 13 Events, letzter: evolver_completed",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "id": "pattern_20260418_030416",
-      "title": "Break score plateau with novel approach",
-      "category": "hypothesis_loop_optimization",
-      "error_signature": [
-        "break",
-        "score",
-        "plateau",
-        "with",
-        "novel"
-      ],
-      "description": "Break score plateau with novel approach",
-      "solution": "Applied improvement: Break score plateau with novel approach",
-      "success_count": 21,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.8145,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-18T03:04:16.068954",
-      "last_validated": "2026-04-19T20:05:59.832836",
-      "error_type": "loop_optimization",
-      "context": {
-        "source": "dynamic_signal",
-        "script": null
-      }
-    },
-    {
-      "title": "memory:PASSED",
-      "description": "PASSED",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:\u2705 COMPLETED",
-      "description": "\u2705 COMPLETED",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:Success",
-      "description": "Success",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:working",
-      "description": "working",
-      "error_type": "memory_signal",
-      "success_count": 1,
-      "category": "memory_analysis",
-      "confidence": 0.5,
-      "initial_confidence": 0.5
-    },
-    {
-      "title": "memory:resolved",
-      "description": "resolved",
+      "title": "memory:FIXED",
+      "description": "FIXED",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
@@ -424,8 +73,141 @@
       "initial_confidence": 0.5
     },
     {
-      "title": "memory:improved",
-      "description": "improved",
+      "title": "memory:optimized",
+      "description": "optimized",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 **Autonomy Supervisor Cycle Complete",
+      "description": "\u2705 **Autonomy Supervisor Cycle Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 Optimization 2 Complete",
+      "description": "\u2705 Optimization 2 Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 Optimization 3 Complete",
+      "description": "\u2705 Optimization 3 Complete",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "id": "pattern_20260420_163745",
+      "title": "Measure context size, find 1 specific text to shorten",
+      "category": "hypothesis_context_compression",
+      "error_signature": [
+        "measure",
+        "context",
+        "size,",
+        "find",
+        "specific"
+      ],
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "solution": "Applied improvement: Measure context size, find 1 specific text to shorten",
+      "success_count": 4,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.8500000000000001,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-20T16:37:45.463078",
+      "last_validated": "2026-04-20T19:04:28.141666",
+      "error_type": "context_compression",
+      "context": {
+        "source": "exploration",
+        "script": null
+      }
+    },
+    {
+      "id": "pattern_20260420_170449",
+      "title": "Break score plateau with novel approach",
+      "category": "hypothesis_loop_optimization",
+      "error_signature": [
+        "break",
+        "score",
+        "plateau",
+        "with",
+        "novel"
+      ],
+      "description": "Break score plateau with novel approach",
+      "solution": "Applied improvement: Break score plateau with novel approach",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.7,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-20T17:04:49.591713",
+      "last_validated": "2026-04-20T17:04:49.591715",
+      "error_type": "loop_optimization",
+      "context": {
+        "source": "dynamic_signal",
+        "script": null
+      }
+    },
+    {
+      "title": "log:cron_optimizer.log",
+      "description": "2 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:gateway_recovery.log",
+      "description": "1 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:kg_auto.log",
+      "description": "1 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:backup_verifier.log",
+      "description": "4 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:github_backup.log",
+      "description": "1 successes (healthy)",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "log:short_term_recall_cleanup.log",
+      "description": "4 successes (healthy)",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",
@@ -433,5 +215,7 @@
       "initial_confidence": 0.5
     }
   ],
-  "version": "1.0"
+  "version": 2,
+  "reset_at": "2026-04-20T16:14:00Z",
+  "note": "Reset due to 100% failure rate"
 }

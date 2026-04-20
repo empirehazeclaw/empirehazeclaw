@@ -13,42 +13,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445896",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 17,
-      "decay_score": 1
-    },
-    "KI-Mitarbeiter": {
-      "type": "product",
-      "category": "product",
-      "facts": [
-        {
-          "content": "Unsere Hauptprodukt-Kategorie. KI-Mitarbeiter f\u00fcr: Emails, Social Media, Kundensupport, Recherche, Terminbuchung. Nicht technisches Tool sondern digitaler Mitarbeiter.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445914",
-          "category": "product"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445910",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 15,
-      "decay_score": 1
-    },
-    "Zielgruppe-KMU": {
-      "type": "business",
-      "category": "business",
-      "facts": [
-        {
-          "content": "Deutsche KMUs: B\u00e4ckereien, Restaurants, Arztpraxen, Handwerk. Haben keine Zeit f\u00fcr Marketing, wollen einfach 'es funktioniert'. Kein Technical Skill n\u00f6tig.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445919",
-          "category": "business"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445917",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 19,
       "decay_score": 1
     },
     "Managed-AI-Hosting": {
@@ -64,75 +30,7 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445920",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Starter-Plan": {
-      "type": "product",
-      "category": "product",
-      "facts": [
-        {
-          "content": "\u20ac149 Setup, \u20ac99/Monat. F\u00fcr kleine Businesses und Developer. Basis AI Mitarbeiter f\u00fcr Emails und Social Media.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445924",
-          "category": "product"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445922",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 4,
-      "decay_score": 1
-    },
-    "Professional-Plan": {
-      "type": "product",
-      "category": "product",
-      "facts": [
-        {
-          "content": "\u20ac299 Setup, \u20ac199/Monat. F\u00fcr Agencies und Mittelstand. Erweiterte AI F\u00e4higkeiten, mehrere Bereiche.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445930",
-          "category": "product"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445925",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Enterprise-Plan": {
-      "type": "product",
-      "category": "product",
-      "facts": [
-        {
-          "content": "\u20ac499 Setup, \u20ac499/Monat. F\u00fcr Large Companies. Volle AI Integration, dedizierter Support.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445932",
-          "category": "product"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445931",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Email-Management": {
-      "type": "usecase",
-      "category": "usecase",
-      "facts": [
-        {
-          "content": "KI liest, filtert, beantwortet und eskaliert Emails. Spart 2-3 Stunden/Tag f\u00fcr typische KMUs.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445935",
-          "category": "usecase"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445933",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
       "access_count": 15,
       "decay_score": 1
     },
@@ -153,74 +51,6 @@
       "access_count": 2,
       "decay_score": 1
     },
-    "Kunden-Support": {
-      "type": "usecase",
-      "category": "usecase",
-      "facts": [
-        {
-          "content": "KI Chatbot und Telefon-Support f\u00fcr FAQs. Escalation zu menschlichem Support bei komplexen Issues.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445940",
-          "category": "usecase"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445938",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Recherche-Marketing": {
-      "type": "usecase",
-      "category": "usecase",
-      "facts": [
-        {
-          "content": "KI analysiert Wettbewerb, Markttrends, Keywords. F\u00fcr SEO und Marketing Strategie.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445942",
-          "category": "usecase"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445940",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Reservierungs-Automatisierung": {
-      "type": "usecase",
-      "category": "usecase",
-      "facts": [
-        {
-          "content": "Besonders f\u00fcr Restaurants: Automatische Termin- und Reservierungsverwaltung via Chat/Telefon.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445945",
-          "category": "usecase"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445943",
-      "last_accessed": "2026-04-06T06:42:36.445944",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "OpenClaw-Gateway": {
-      "type": "system",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Unser Core Framework - l\u00e4uft auf Port :18789. Prim\u00e4rmodell: MiniMax-M2.7. Fallbacks: GPT-4o-mini, Nemotron, Qwen3.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445947",
-          "category": "system"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445946",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
     "GOG-CLI": {
       "type": "system",
       "category": "system",
@@ -238,40 +68,6 @@
       "access_count": 2,
       "decay_score": 1
     },
-    "Stripe-Integration": {
-      "type": "system",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Payment Processing f\u00fcr Shop. Auto-Fulfillment funktioniert komplett automatisch. Keys in secrets.env.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445954",
-          "category": "system"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445953",
-      "last_accessed": "2026-04-06T06:42:36.445954",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Vercel-Deployment": {
-      "type": "system",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Hosting f\u00fcr alle Websites: empirehazeclaw.com, .de, .store, .info. Token: vcp_... in secrets.env.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445957",
-          "category": "system"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445955",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
     "Content-Marketing": {
       "type": "marketing",
       "category": "marketing",
@@ -285,59 +81,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445958",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 15,
-      "decay_score": 1
-    },
-    "TikTok-Marketing": {
-      "type": "marketing",
-      "category": "marketing",
-      "facts": [
-        {
-          "content": "Video Content f\u00fcr Reichweite. Script + Posting Automation. Gepostet \u00fcber Buffer.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445965",
-          "category": "marketing"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445963",
-      "last_accessed": "2026-04-06T06:42:36.445964",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "LinkedIn-Marketing": {
-      "type": "marketing",
-      "category": "marketing",
-      "facts": [
-        {
-          "content": "Professionelles B2B Networking. Blog Posts werden auf LinkedIn geteilt.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445970",
-          "category": "marketing"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.445968",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "B2B-Whitepaper": {
-      "type": "marketing",
-      "category": "marketing",
-      "facts": [
-        {
-          "content": "Lead Magnet f\u00fcr B2B Leads. '40% LLM API Kosten sparen' - Angeh\u00e4ngt an Outreach Emails.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445972",
-          "category": "marketing"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445971",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 17,
       "decay_score": 1
     },
     "Email-Outreach": {
@@ -353,110 +98,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445973",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Lead-Intelligence": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "CRM mit 4,088 Leads. Script: scripts/lead_generator.py. Qualifiziert nach Branch, Company Size, Conversion Chance.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445977",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445976",
-      "last_accessed": "2026-04-06T06:42:36.445976",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Email-Drip-Sequence": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "4-Step Auto-Follow-up Sequence. Script: scripts/email_sequence.py. 5 Emails pro Lead, 5 Tage Abstand.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445980",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445978",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Demo-Portal": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Free Trial / Live Demo f\u00fcr Interessenten. Muss interaktiver werden f\u00fcr bessere Conversion.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445982",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445981",
-      "last_accessed": "2026-04-06T06:42:36.445982",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Pipeline-Metrics": {
-      "type": "metrics",
-      "category": "metrics",
-      "facts": [
-        {
-          "content": "Stand 30.03.2026: 4,088 Leads, 73 Emails gesendet, 0 Responses, 0 Customers, \u20ac0 Revenue. Outreach floppt.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445985",
-          "category": "metrics"
-        }
-      ],
-      "priority": "CRITICAL",
-      "created": "2026-04-06T06:42:36.445983",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Conversion-Rate": {
-      "type": "metrics",
-      "category": "metrics",
-      "facts": [
-        {
-          "content": "Aktuell 0% Conversion (0 Responses / 73 Emails). Ziel: 2-5% Response Rate, 10% Conversion.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445991",
-          "category": "metrics"
-        }
-      ],
-      "priority": "CRITICAL",
-      "created": "2026-04-06T06:42:36.445986",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Revenue-Ziel": {
-      "type": "metrics",
-      "category": "metrics",
-      "facts": [
-        {
-          "content": "Q2 2026 Ziel: Erste Kunden gewinnen. Minimum \u20ac100 Revenue um AI Agent zu bezahlen.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.445996",
-          "category": "metrics"
-        }
-      ],
-      "priority": "CRITICAL",
-      "created": "2026-04-06T06:42:36.445994",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Outreach-Dummy-Problem": {
@@ -476,74 +119,6 @@
       "access_count": 2,
       "decay_score": 1
     },
-    "Trading-Bot-Nicht-Profitabel": {
-      "type": "learning",
-      "category": "learning",
-      "facts": [
-        {
-          "content": "Trading Bot produziert +0.55% aber nach Geb\u00fchren negativ. NICHT WEITER INVESTIEREN.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446001",
-          "category": "learning"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.445999",
-      "last_accessed": "2026-04-06T06:42:36.446000",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Buffer-API-Limitation": {
-      "type": "learning",
-      "category": "learning",
-      "facts": [
-        {
-          "content": "Buffer API unterst\u00fctzt KEINE Video-Uploads. Workaround: Direkter Upload zu TikTok/LinkedIn.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446003",
-          "category": "learning"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.446002",
-      "last_accessed": "2026-04-06T06:42:36.446002",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Gateway-Restart-Problem": {
-      "type": "learning",
-      "category": "learning",
-      "facts": [
-        {
-          "content": "Gateway Restart killt alle Child-Prozesse. Cron Jobs m\u00fcssen nach Restart neu gestartet werden.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446006",
-          "category": "learning"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.446004",
-      "last_accessed": "2026-04-16T16:02:45.159817+00:00",
-      "access_count": 12,
-      "decay_score": 1
-    },
-    "Hetzner-Server": {
-      "type": "infrastructure",
-      "category": "infrastructure",
-      "facts": [
-        {
-          "content": "Deutsche Server f\u00fcr DSGVO-Konformit\u00e4t. Standort Deutschland. Wichtigster Infrastructure-Partner.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446008",
-          "category": "infrastructure"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.446007",
-      "last_accessed": "2026-04-06T06:42:36.446007",
-      "access_count": 0,
-      "decay_score": 1
-    },
     "DSGVO-Compliance": {
       "type": "infrastructure",
       "category": "infrastructure",
@@ -558,23 +133,6 @@
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.446009",
       "last_accessed": "2026-04-06T06:42:36.446010",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "OpenRouter-API": {
-      "type": "infrastructure",
-      "category": "infrastructure",
-      "facts": [
-        {
-          "content": "API f\u00fcr Fallback Models: Nemotron 120B, Qwen3 Coder, Step-3.5 Flash. Alle kostenlos. Key in secrets.env.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446016",
-          "category": "infrastructure"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.446012",
-      "last_accessed": "2026-04-06T06:42:36.446012",
       "access_count": 0,
       "decay_score": 1
     },
@@ -595,23 +153,6 @@
       "access_count": 0,
       "decay_score": 1
     },
-    "empirehazeclaw-store": {
-      "type": "domain",
-      "category": "domain",
-      "facts": [
-        {
-          "content": "Shop Domain mit Stripe. Produkte: Managed AI Hosting Plans. URL: https://empirehazeclaw.store",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446021",
-          "category": "domain"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:42:36.446020",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 15,
-      "decay_score": 1
-    },
     "empirehazeclaw-info": {
       "type": "domain",
       "category": "domain",
@@ -625,229 +166,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.446022",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 17,
-      "decay_score": 1
-    },
-    "empirehazeclaw-de": {
-      "type": "domain",
-      "category": "domain",
-      "facts": [
-        {
-          "content": "Deutsche Corporate Website. URL: https://empirehazeclaw.de",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446026",
-          "category": "domain"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.446025",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "empirehazeclaw-com": {
-      "type": "domain",
-      "category": "domain",
-      "facts": [
-        {
-          "content": "Englische Corporate Website. URL: https://empirehazeclaw.com",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:42:36.446028",
-          "category": "domain"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:42:36.446027",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Sales-Pipeline": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Unsere Sales Pipeline: Lead \u2192 Qualifiziert \u2192 Kontaktiert \u2192 Demo \u2192 Angebot \u2192 Kunde. Aktuell bei Lead \u2192 Qualifiziert h\u00e4ngen.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.321980",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.321962",
-      "last_accessed": "2026-04-06T06:44:59.321977",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Lead-Qualifizierung": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "CRM mit 4,088 Leads. Qualifizierung nach: Branche (Gastro, Gesundheit, Handwerk), Company Size, Online Presence, Conversion Chance.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.321985",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.321982",
-      "last_accessed": "2026-04-06T06:44:59.321983",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Demo-Call": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Live Demo f\u00fcr Interessenten zeigt AI Mitarbeiter in Aktion. Scripts f\u00fcr: Email Demo, Social Demo, Full Demo. Call-to-Action: 'Kostenlose Testwoche'.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.321991",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.321987",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 4,
-      "decay_score": 1
-    },
-    "Angebots-Erstellung": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Angebot basiert auf gew\u00e4hltem Plan (Starter/Professional/Enterprise). Setup Fee + Monatliche Fee. Stripe Checkout Link.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.321995",
-          "category": "sales"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.321992",
-      "last_accessed": "2026-04-06T06:44:59.321993",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Kunden-Onboarding": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Nach Payment: Setup within 24h, Account Erstellung, Onboarding Call, First AI Employee deployed.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.321999",
-          "category": "sales"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.321996",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Competitor-Other-AI-Tools": {
-      "type": "competition",
-      "category": "competition",
-      "facts": [
-        {
-          "content": "Andere AI Tools: ChatGPT, Claude, Midjourney. Problem: Self-Service, kein Managed Service, keine DSGVO.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322003",
-          "category": "competition"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.322000",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Competitor-Agency": {
-      "type": "competition",
-      "category": "competition",
-      "facts": [
-        {
-          "content": "Agenturen: Bieten humans-only Service. Wir: AI-first mit Human-in-the-Loop. G\u00fcnstiger und skalierbarer.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322010",
-          "category": "competition"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.322004",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 4,
-      "decay_score": 1
-    },
-    "Pricing-Psychology": {
-      "type": "business",
-      "category": "business",
-      "facts": [
-        {
-          "content": "Starter \u20ac99 = 'probier es aus', Professional \u20ac199 = 'echter Business Nutzen', Enterprise \u20ac499 = 'Premium'. Anchor Pricing mit Enterprise.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322015",
-          "category": "business"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.322012",
-      "last_accessed": "2026-04-06T06:44:59.322013",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "ROI-Calculator": {
-      "type": "marketing",
-      "category": "marketing",
-      "facts": [
-        {
-          "content": "Tool auf Website: 'Berechne deinen ROI mit KI-Mitarbeiter'. Zeigt Zeitersparnis und Kosten vs. menschlichem Mitarbeiter.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322022",
-          "category": "marketing"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.322019",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Objection-Keine-Zeit": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Einwand: 'Keine Zeit f\u00fcr AI'. Antwort: 'AI spart 2-3h/Tag, Sie m\u00fcssen nur approve/reject'. Zeitersparnis quantifizieren.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322026",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.322023",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
-    "Objection-Zu-Teuer": {
-      "type": "sales",
-      "category": "sales",
-      "facts": [
-        {
-          "content": "Einwand: '\u20ac199/Monat zu teuer'. Antwort: 'Kostet weniger als 1h/Tag intern, und Sie sparen 2-3h'. ROI klar machen.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322033",
-          "category": "sales"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-06T06:44:59.322027",
-      "last_accessed": "2026-04-06T06:44:59.322028",
-      "access_count": 0,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 19,
       "decay_score": 1
     },
     "Objection-DSGVO": {
@@ -867,23 +187,6 @@
       "access_count": 0,
       "decay_score": 1
     },
-    "Multi-Tenant-Architektur": {
-      "type": "system",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Jeder Kunde bekommt isolierte AI Instanz. Shared Resources aber getrennte Daten. Kubernetes-basiert auf Hetzner.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322041",
-          "category": "system"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.322038",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
-      "decay_score": 1
-    },
     "Support-Prozess": {
       "type": "operations",
       "category": "operations",
@@ -899,57 +202,6 @@
       "created": "2026-04-06T06:44:59.322042",
       "last_accessed": "2026-04-13T16:01:10.271849",
       "access_count": 2,
-      "decay_score": 1
-    },
-    "SLA-Garantie": {
-      "type": "operations",
-      "category": "operations",
-      "facts": [
-        {
-          "content": "Professional: 99.5% Uptime, Enterprise: 99.9%. Monitoring via Watchdog Script.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322051",
-          "category": "operations"
-        }
-      ],
-      "priority": "LOW",
-      "created": "2026-04-06T06:44:59.322049",
-      "last_accessed": "2026-04-06T06:44:59.322050",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Referral-Program": {
-      "type": "growth",
-      "category": "growth",
-      "facts": [
-        {
-          "content": "Kunden werben Kunden: 1 Monat gratis bei erfolgreichem Referral. Viral Growth Mechanismus.",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322055",
-          "category": "growth"
-        }
-      ],
-      "priority": "LOW",
-      "created": "2026-04-06T06:44:59.322052",
-      "last_accessed": "2026-04-06T06:44:59.322053",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Upsell-Crosssell": {
-      "type": "growth",
-      "category": "growth",
-      "facts": [
-        {
-          "content": "Starter \u2192 Professional \u2192 Enterprise. Crosssell: Mehr AI Mitarbeiter, Additional Channels (Email+Social+Phone).",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-06T06:44:59.322058",
-          "category": "growth"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-06T06:44:59.322056",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 4,
       "decay_score": 1
     },
     "REDACTED": {
@@ -999,25 +251,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.122453",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
-      "decay_score": 1
-    },
-    "Decision 2026-04-05": {
-      "type": "decision",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122460",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122461",
-      "last_accessed": "2026-04-07T16:39:47.122461",
-      "access_count": 0,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)": {
@@ -1034,23 +269,6 @@
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.122887",
       "last_accessed": "2026-04-07T16:39:47.122888",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Importiert": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.122890",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.122891",
-      "last_accessed": "2026-04-07T16:39:47.122892",
       "access_count": 0,
       "decay_score": 1
     },
@@ -1086,23 +304,6 @@
       "created": "2026-04-07T16:39:47.123240",
       "last_accessed": "2026-04-13T21:30:32.418934",
       "access_count": 3,
-      "decay_score": 1
-    },
-    "Datum": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-07T16:39:47.123251",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-07T16:39:47.123252",
-      "last_accessed": "2026-04-07T16:39:47.123253",
-      "access_count": 0,
       "decay_score": 1
     },
     "Learning": {
@@ -1237,8 +438,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.131260",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "PRIORITY": {
@@ -1339,8 +540,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.131355",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Notes": {
@@ -1407,8 +608,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.131385",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Knowledge Hierarchy": {
@@ -1475,8 +676,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-07T16:39:47.131840",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Connections": {
@@ -1611,8 +812,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094146",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "NVIDIA": {
@@ -1645,8 +846,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094160",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "LangChain": {
@@ -1662,8 +863,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094195",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Microsoft": {
@@ -1696,8 +897,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094908",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 14,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 16,
       "decay_score": 1
     },
     "Monitoring": {
@@ -1747,8 +948,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094923",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Gateway": {
@@ -1815,8 +1016,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-08T06:00:02.094940",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "Multi": {
@@ -1834,23 +1035,6 @@
       "created": "2026-04-08T06:00:02.094945",
       "last_accessed": "2026-04-08T06:00:02.094946",
       "access_count": 0,
-      "decay_score": 1
-    },
-    "Skills": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-08T06:00:02.094947",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-08T06:00:02.094949",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
       "decay_score": 1
     },
     "Gateway als Kernel": {
@@ -1985,8 +1169,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.137888",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Cron": {
@@ -2002,25 +1186,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.137891",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
-      "decay_score": 1
-    },
-    "Weg": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.137893",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.137894",
-      "last_accessed": "2026-04-09T06:00:01.137895",
-      "access_count": 0,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "Daily Operations \u2014 2026-04-08": {
@@ -2036,8 +1203,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.138276",
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 5,
       "decay_score": 1
     },
     "Beides": {
@@ -2088,23 +1255,6 @@
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.138300",
       "last_accessed": "2026-04-09T06:00:01.138301",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "University": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138304",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138305",
-      "last_accessed": "2026-04-09T06:00:01.138306",
       "access_count": 0,
       "decay_score": 1
     },
@@ -2172,42 +1322,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.138328",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
-      "decay_score": 1
-    },
-    "Workflow": {
-      "type": "topic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138330",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138332",
-      "last_accessed": "2026-04-09T06:00:01.138332",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "System Status": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138334",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138335",
-      "last_accessed": "2026-04-09T06:00:01.138336",
-      "access_count": 0,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1
     },
     "Cron Jobs": {
@@ -2223,8 +1339,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.138340",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "Fixes Durchgef": {
@@ -2257,25 +1373,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.138348",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12,
-      "decay_score": 1
-    },
-    "University Self": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138349",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138350",
-      "last_accessed": "2026-04-09T06:00:01.138351",
-      "access_count": 0,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14,
       "decay_score": 1
     },
     "Agent Certification System": {
@@ -2295,40 +1394,6 @@
       "access_count": 0,
       "decay_score": 1
     },
-    "Was verloren ging": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138354",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138355",
-      "last_accessed": "2026-04-09T06:00:01.138356",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Was NICHT verloren ging": {
-      "type": "subtopic",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.138357",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.138357",
-      "last_accessed": "2026-04-09T06:00:01.138358",
-      "access_count": 0,
-      "decay_score": 1
-    },
     "TITLE_PLACEHOLDER": {
       "type": "note",
       "category": "auto-extracted",
@@ -2343,23 +1408,6 @@
       "priority": "MEDIUM",
       "created": "2026-04-09T06:00:01.139093",
       "last_accessed": "2026-04-09T06:00:01.139095",
-      "access_count": 0,
-      "decay_score": 1
-    },
-    "Weekly Reflection \u2014 2026-04-08": {
-      "type": "note",
-      "category": "auto-extracted",
-      "facts": [
-        {
-          "content": "Source: [internal-path]",
-          "confidence": 0.6,
-          "extracted_at": "2026-04-09T06:00:01.139303",
-          "category": "auto"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-09T06:00:01.139308",
-      "last_accessed": "2026-04-09T06:00:01.139311",
       "access_count": 0,
       "decay_score": 1
     },
@@ -2529,8 +1577,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:05.588034",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 16
     },
     "skill_backup_automation_20260410": {
       "type": "skill",
@@ -2545,8 +1593,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.401249",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15
     },
     "skill_morning_brief_20260410": {
       "type": "skill",
@@ -2561,8 +1609,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.449528",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15
     },
     "system_health_monitoring_20260410": {
       "type": "system",
@@ -2577,8 +1625,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:33:04.124829",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 14
     },
     "system_backup_system_20260410": {
       "type": "system",
@@ -2686,8 +1734,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:42.326285",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15
     },
     "project_empirehazeclaw_fleet_20260410": {
       "type": "project",
@@ -2702,8 +1750,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:46.923434",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 17
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 19
     },
     "concept_continuous_improvement_20260410": {
       "type": "concept",
@@ -2859,8 +1907,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 15
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 17
     },
     "skill_qa_enforcer": {
       "type": "skill",
@@ -2875,8 +1923,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 16
     },
     "skill_backup_advisor": {
       "type": "skill",
@@ -2891,8 +1939,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 5
     },
     "reflection_deep_20260410": {
       "type": "reflection",
@@ -3000,8 +2048,8 @@
           "source": "self_eval.py"
         }
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 17
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 19
     },
     "Self-Improvement-Patterns": {
       "type": "pattern",
@@ -3026,27 +2074,6 @@
       "last_accessed": "2026-04-11T23:14:56.264504",
       "access_count": 1
     },
-    "Sir-HazeClaw-Capabilities": {
-      "type": "category",
-      "facts": [
-        {
-          "content": "Solo Fighter Mode: CEO als Hauptagent",
-          "source": "AGENTS.md"
-        },
-        {
-          "content": "Proaktiv: Handelt ohne zu warten",
-          "source": "SOUL.md"
-        },
-        {
-          "content": "Ehrlichkeit: Fehler sind OK, L\u00fcgen nicht",
-          "source": "SOUL.md"
-        },
-        {
-          "content": "Pr\u00e4vention: Probleme verhindern BEVOR sie passieren",
-          "source": "SOUL.md"
-        }
-      ]
-    },
     "System-Architektur": {
       "type": "knowledge",
       "facts": [
@@ -3067,8 +2094,8 @@
           "source": "test_framework.py"
         }
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 16
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 18
     },
     "Bad-Patterns-SirHazeClaw": {
       "type": "pattern",
@@ -3109,52 +2136,6 @@
           "source": "HEARTBEAT.md"
         }
       ]
-    },
-    "AI-Agent-Prompt-Patterns": {
-      "type": "pattern",
-      "facts": [
-        {
-          "content": "Pattern 1: Role + Constraints - Definiere wer und was NICHT",
-          "source": "research 2026-04-10"
-        },
-        {
-          "content": "Pattern 2: Chain of Verification - Output vor Aktion pr\u00fcfen",
-          "source": "research 2026-04-10"
-        },
-        {
-          "content": "Pattern 3: Structured Output - Klare Kommunikation",
-          "source": "research 2026-04-10"
-        },
-        {
-          "content": "Pattern 4: Error Recovery - Explizite Fehlerbehandlung",
-          "source": "research 2026-04-10"
-        },
-        {
-          "content": "Pattern 5: Guard Rails - Sicherheitsgrenzen",
-          "source": "research 2026-04-10"
-        }
-      ],
-      "last_accessed": "2026-04-13T16:01:10.271849",
-      "access_count": 2
-    },
-    "Research-Skill": {
-      "type": "skill",
-      "facts": [
-        {
-          "content": "Web Search: Brave Search API integration",
-          "source": "skills/research"
-        },
-        {
-          "content": "Web Fetch: URL content extraction",
-          "source": "skills/research"
-        },
-        {
-          "content": "Pattern: Quick Research -> Deep Research -> Document",
-          "source": "skills/research"
-        }
-      ],
-      "last_accessed": "2026-04-13T16:01:10.176739",
-      "access_count": 2
     },
     "quality_metrics_20260411": {
       "type": "metrics",
@@ -3197,8 +2178,8 @@
         "2026",
         "arxiv"
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 18
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 20
     },
     "memory_frameworks_20260411": {
       "type": "research",
@@ -3222,8 +2203,8 @@
         "google",
         "mem0"
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 15
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 17
     },
     "multiagent_frameworks_20260411": {
       "type": "research",
@@ -3314,8 +2295,8 @@
         "open-source",
         "runtime"
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 16
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 18
     },
     "nvidia_agentic_search_20260411": {
       "id": "nvidia_agentic_search_20260411",
@@ -3439,8 +2420,8 @@
         "autonomy_levels",
         "2026"
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 14
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 16
     },
     "success_file_read_2290": {
       "type": "success_pattern",
@@ -3527,8 +2508,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-11T17:31:00.854162+00:00",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13,
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 15,
       "decay_score": 1,
       "properties": {
         "type": "success_pattern",
@@ -3979,8 +2960,8 @@
         "2026",
         "arxiv"
       ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 18
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 20
     },
     "research_20260412": {
       "type": "research",
@@ -4704,2645 +3685,6 @@
       "created": "2026-04-12T06:36:52.054318",
       "created_by": "kg_orphan_connector"
     },
-    "improvement_safety_20260412_072131_9576": {
-      "id": "improvement_safety_20260412_072131_9576",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T07:21:31.234148",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_5895": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7919488042935856,
-          "extracted_at": "2026-04-12T07:21:31.302015+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T07:21:31.302015+00:00",
-      "last_accessed": "2026-04-12T07:21:31.302015+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T07:21:31.302015+00:00",
-        "confidence": 0.7919488042935856
-      }
-    },
-    "improvement_safety_20260412_072136_2291": {
-      "id": "improvement_safety_20260412_072136_2291",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T07:21:36.385277",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_2913": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.9402833960736999,
-          "extracted_at": "2026-04-12T07:21:36.455247+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T07:21:36.455247+00:00",
-      "last_accessed": "2026-04-12T07:21:36.455247+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T07:21:36.455247+00:00",
-        "confidence": 0.9402833960736999
-      }
-    },
-    "improvement_safety_20260412_072141_8342": {
-      "id": "improvement_safety_20260412_072141_8342",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T07:21:41.550395",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_4320": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.8683269296870438,
-          "extracted_at": "2026-04-12T07:21:41.614954+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T07:21:41.614954+00:00",
-      "last_accessed": "2026-04-12T07:21:41.614954+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T07:21:41.614954+00:00",
-        "confidence": 0.8683269296870438
-      }
-    },
-    "improvement_safety_20260412_082139_6265": {
-      "id": "improvement_safety_20260412_082139_6265",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T08:21:39.445311",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_3317": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7631802323608639,
-          "extracted_at": "2026-04-12T08:21:39.508521+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T08:21:39.508521+00:00",
-      "last_accessed": "2026-04-12T08:21:39.508521+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T08:21:39.508521+00:00",
-        "confidence": 0.7631802323608639
-      }
-    },
-    "improvement_safety_20260412_082144_1478": {
-      "id": "improvement_safety_20260412_082144_1478",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T08:21:44.591734",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_7652": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7373242574549181,
-          "extracted_at": "2026-04-12T08:21:44.657158+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T08:21:44.657158+00:00",
-      "last_accessed": "2026-04-12T08:21:44.657158+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T08:21:44.657158+00:00",
-        "confidence": 0.7373242574549181
-      }
-    },
-    "improvement_safety_20260412_082149_2615": {
-      "id": "improvement_safety_20260412_082149_2615",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T08:21:49.732275",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_7353": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.9083558709378814,
-          "extracted_at": "2026-04-12T08:21:49.790940+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T08:21:49.790940+00:00",
-      "last_accessed": "2026-04-12T08:21:49.790940+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T08:21:49.790940+00:00",
-        "confidence": 0.9083558709378814
-      }
-    },
-    "improvement_safety_20260412_092141_6455": {
-      "id": "improvement_safety_20260412_092141_6455",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T09:21:41.544046",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_9700": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7902630842936516,
-          "extracted_at": "2026-04-12T09:21:41.604045+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T09:21:41.604045+00:00",
-      "last_accessed": "2026-04-12T09:21:41.604045+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T09:21:41.604045+00:00",
-        "confidence": 0.7902630842936516
-      }
-    },
-    "improvement_safety_20260412_092146_5872": {
-      "id": "improvement_safety_20260412_092146_5872",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T09:21:46.686962",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_3830": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.946459362859822,
-          "extracted_at": "2026-04-12T09:21:46.753897+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T09:21:46.753897+00:00",
-      "last_accessed": "2026-04-12T09:21:46.753897+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T09:21:46.753897+00:00",
-        "confidence": 0.946459362859822
-      }
-    },
-    "improvement_safety_20260412_092151_3496": {
-      "id": "improvement_safety_20260412_092151_3496",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T09:21:51.843989",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_6256": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.8264759881863716,
-          "extracted_at": "2026-04-12T09:21:51.923862+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T09:21:51.923862+00:00",
-      "last_accessed": "2026-04-12T09:21:51.923862+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T09:21:51.923862+00:00",
-        "confidence": 0.8264759881863716
-      }
-    },
-    "improvement_safety_20260412_102130_3082": {
-      "id": "improvement_safety_20260412_102130_3082",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T10:21:30.576226",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_2944": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7696298757952126,
-          "extracted_at": "2026-04-12T10:21:30.634526+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T10:21:30.634526+00:00",
-      "last_accessed": "2026-04-12T10:21:30.634526+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T10:21:30.634526+00:00",
-        "confidence": 0.7696298757952126
-      }
-    },
-    "improvement_safety_20260412_102135_3996": {
-      "id": "improvement_safety_20260412_102135_3996",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T10:21:35.718092",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_5784": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7419962104067,
-          "extracted_at": "2026-04-12T10:21:35.781350+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T10:21:35.781350+00:00",
-      "last_accessed": "2026-04-12T10:21:35.781350+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T10:21:35.781350+00:00",
-        "confidence": 0.7419962104067
-      }
-    },
-    "improvement_safety_20260412_102140_9127": {
-      "id": "improvement_safety_20260412_102140_9127",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T10:21:40.858764",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_6919": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7227808156319054,
-          "extracted_at": "2026-04-12T10:21:40.919904+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T10:21:40.919904+00:00",
-      "last_accessed": "2026-04-12T10:21:40.919904+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T10:21:40.919904+00:00",
-        "confidence": 0.7227808156319054
-      }
-    },
-    "improvement_safety_20260412_112130_3855": {
-      "id": "improvement_safety_20260412_112130_3855",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T11:21:30.044855",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_2431": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.8306014398895138,
-          "extracted_at": "2026-04-12T11:21:30.112189+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T11:21:30.112189+00:00",
-      "last_accessed": "2026-04-12T11:21:30.112189+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T11:21:30.112189+00:00",
-        "confidence": 0.8306014398895138
-      }
-    },
-    "improvement_safety_20260412_112135_4305": {
-      "id": "improvement_safety_20260412_112135_4305",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T11:21:35.205544",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_4657": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7461653124757565,
-          "extracted_at": "2026-04-12T11:21:35.269482+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T11:21:35.269482+00:00",
-      "last_accessed": "2026-04-12T11:21:35.269482+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T11:21:35.269482+00:00",
-        "confidence": 0.7461653124757565
-      }
-    },
-    "improvement_safety_20260412_112140_5553": {
-      "id": "improvement_safety_20260412_112140_5553",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T11:21:40.354971",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_7529": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7419324803334033,
-          "extracted_at": "2026-04-12T11:21:40.419549+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T11:21:40.419549+00:00",
-      "last_accessed": "2026-04-12T11:21:40.419549+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T11:21:40.419549+00:00",
-        "confidence": 0.7419324803334033
-      }
-    },
-    "improvement_safety_20260412_122131_4042": {
-      "id": "improvement_safety_20260412_122131_4042",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T12:21:31.772098",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_3635": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7499430708759511,
-          "extracted_at": "2026-04-12T12:21:31.828973+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T12:21:31.828973+00:00",
-      "last_accessed": "2026-04-12T12:21:31.828973+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T12:21:31.828973+00:00",
-        "confidence": 0.7499430708759511
-      }
-    },
-    "improvement_safety_20260412_122136_4830": {
-      "id": "improvement_safety_20260412_122136_4830",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T12:21:36.925133",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_1085": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7299860432736249,
-          "extracted_at": "2026-04-12T12:21:37.011393+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T12:21:37.011393+00:00",
-      "last_accessed": "2026-04-12T12:21:37.011393+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T12:21:37.011393+00:00",
-        "confidence": 0.7299860432736249
-      }
-    },
-    "improvement_safety_20260412_122142_5093": {
-      "id": "improvement_safety_20260412_122142_5093",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T12:21:42.105511",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_6678": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.728659637965649,
-          "extracted_at": "2026-04-12T12:21:42.173846+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T12:21:42.173846+00:00",
-      "last_accessed": "2026-04-12T12:21:42.173846+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T12:21:42.173846+00:00",
-        "confidence": 0.728659637965649
-      }
-    },
-    "improvement_safety_20260412_132407_3576": {
-      "id": "improvement_safety_20260412_132407_3576",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:24:07.987384",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "improvement_safety_20260412_132428_9362": {
-      "id": "improvement_safety_20260412_132428_9362",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:24:28.697198",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_1_2058": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.8626115703727327,
-          "extracted_at": "2026-04-12T13:24:28.779309+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:24:28.779309+00:00",
-      "last_accessed": "2026-04-12T13:24:28.779309+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:24:28.779309+00:00",
-        "confidence": 0.8626115703727327
-      }
-    },
-    "improvement_safety_20260412_132433_8915": {
-      "id": "improvement_safety_20260412_132433_8915",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:24:33.867787",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_7401": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.9073738099485695,
-          "extracted_at": "2026-04-12T13:24:33.951779+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:24:33.951779+00:00",
-      "last_accessed": "2026-04-12T13:24:33.951779+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:24:33.951779+00:00",
-        "confidence": 0.9073738099485695
-      }
-    },
-    "improvement_safety_20260412_132439_4179": {
-      "id": "improvement_safety_20260412_132439_4179",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:24:39.055162",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_7597": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7077592814974043,
-          "extracted_at": "2026-04-12T13:24:39.132240+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:24:39.132240+00:00",
-      "last_accessed": "2026-04-12T13:24:39.132240+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:24:39.132240+00:00",
-        "confidence": 0.7077592814974043
-      }
-    },
-    "error_None_1565": {
-      "type": "error_pattern",
-      "category": "error",
-      "facts": [
-        {
-          "content": "Error: None - None",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-12T13:28:52.763085+00:00"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-12T13:28:52.763085+00:00",
-      "last_accessed": "2026-04-12T13:28:52.763085+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "error_type": null,
-        "error_message": null,
-        "occurrence_count": 1,
-        "first_seen": "2026-04-12T13:28:52.763085+00:00",
-        "fix_applied": "Unknown error: unknown"
-      }
-    },
-    "error_None_7413": {
-      "type": "error_pattern",
-      "category": "error",
-      "facts": [
-        {
-          "content": "Error: None - None",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-12T13:28:57.871522+00:00"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-12T13:28:57.871522+00:00",
-      "last_accessed": "2026-04-12T13:28:57.871522+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "error_type": null,
-        "error_message": null,
-        "occurrence_count": 1,
-        "first_seen": "2026-04-12T13:28:57.871522+00:00",
-        "fix_applied": "Unknown error: unknown"
-      }
-    },
-    "error_None_8219": {
-      "type": "error_pattern",
-      "category": "error",
-      "facts": [
-        {
-          "content": "Error: None - None",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-12T13:29:02.985979+00:00"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-12T13:29:02.985979+00:00",
-      "last_accessed": "2026-04-12T13:29:02.985979+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "error_type": null,
-        "error_message": null,
-        "occurrence_count": 1,
-        "first_seen": "2026-04-12T13:29:02.985979+00:00",
-        "fix_applied": "Unknown error: unknown"
-      }
-    },
-    "efficiency_improvement_20260412_133154_2828": {
-      "id": "efficiency_improvement_20260412_133154_2828",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:31:54.459277",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_7808": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7983418180959304,
-          "extracted_at": "2026-04-12T13:31:54.522440+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:31:54.522440+00:00",
-      "last_accessed": "2026-04-12T13:31:54.522440+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:31:54.522440+00:00",
-        "confidence": 0.7983418180959304
-      }
-    },
-    "efficiency_improvement_20260412_133159_1862": {
-      "id": "efficiency_improvement_20260412_133159_1862",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:31:59.621003",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_2_7649": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.9386872248714924,
-          "extracted_at": "2026-04-12T13:31:59.692309+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:31:59.692309+00:00",
-      "last_accessed": "2026-04-12T13:31:59.692309+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:31:59.692309+00:00",
-        "confidence": 0.9386872248714924
-      }
-    },
-    "efficiency_improvement_20260412_133204_7566": {
-      "id": "efficiency_improvement_20260412_133204_7566",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T13:32:04.793897",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_3_6497": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.8537146648319183,
-          "extracted_at": "2026-04-12T13:32:04.876600+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T13:32:04.876600+00:00",
-      "last_accessed": "2026-04-12T13:32:04.876600+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T13:32:04.876600+00:00",
-        "confidence": 0.8537146648319183
-      }
-    },
-    "efficiency_improvement_20260412_142137_8634": {
-      "id": "efficiency_improvement_20260412_142137_8634",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T14:21:37.907477",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_2994": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.8059632091928924,
-          "extracted_at": "2026-04-12T14:21:37.984567+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T14:21:37.984567+00:00",
-      "last_accessed": "2026-04-12T14:21:37.984567+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T14:21:37.984567+00:00",
-        "confidence": 0.8059632091928924
-      }
-    },
-    "efficiency_improvement_20260412_142143_4950": {
-      "id": "efficiency_improvement_20260412_142143_4950",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T14:21:43.088456",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_2_8388": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.8691160946533076,
-          "extracted_at": "2026-04-12T14:21:43.162450+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T14:21:43.162450+00:00",
-      "last_accessed": "2026-04-12T14:21:43.162450+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T14:21:43.162450+00:00",
-        "confidence": 0.8691160946533076
-      }
-    },
-    "efficiency_improvement_20260412_142148_7716": {
-      "id": "efficiency_improvement_20260412_142148_7716",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T14:21:48.261550",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_3_4239": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7309368069385401,
-          "extracted_at": "2026-04-12T14:21:48.322210+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T14:21:48.322210+00:00",
-      "last_accessed": "2026-04-12T14:21:48.322210+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T14:21:48.322210+00:00",
-        "confidence": 0.7309368069385401
-      }
-    },
-    "efficiency_improvement_20260412_152143_2991": {
-      "id": "efficiency_improvement_20260412_152143_2991",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T15:21:43.431661",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_6149": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.9118490244776163,
-          "extracted_at": "2026-04-12T15:21:43.507063+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:21:43.507063+00:00",
-      "last_accessed": "2026-04-12T15:21:43.507063+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:21:43.507063+00:00",
-        "confidence": 0.9118490244776163
-      }
-    },
-    "efficiency_improvement_20260412_152148_1411": {
-      "id": "efficiency_improvement_20260412_152148_1411",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T15:21:48.594915",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_2_9867": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.8123213457341371,
-          "extracted_at": "2026-04-12T15:21:48.656836+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:21:48.656836+00:00",
-      "last_accessed": "2026-04-12T15:21:48.656836+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:21:48.656836+00:00",
-        "confidence": 0.8123213457341371
-      }
-    },
-    "efficiency_improvement_20260412_152153_6288": {
-      "id": "efficiency_improvement_20260412_152153_6288",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T15:21:53.753331",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_3_9889": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7542988061001205,
-          "extracted_at": "2026-04-12T15:21:53.825916+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:21:53.825916+00:00",
-      "last_accessed": "2026-04-12T15:21:53.825916+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:21:53.825916+00:00",
-        "confidence": 0.7542988061001205
-      }
-    },
-    "efficiency_improvement_20260412_152415_3625": {
-      "id": "efficiency_improvement_20260412_152415_3625",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T15:24:15.719010",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_7904": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.9215521456005855,
-          "extracted_at": "2026-04-12T15:24:15.796754+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:24:15.796754+00:00",
-      "last_accessed": "2026-04-12T15:24:15.796754+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:24:15.796754+00:00",
-        "confidence": 0.9215521456005855
-      }
-    },
-    "improvement_safety_20260412_152420_3809": {
-      "id": "improvement_safety_20260412_152420_3809",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T15:24:20.886805",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_5294": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.8177218680593731,
-          "extracted_at": "2026-04-12T15:24:20.947988+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:24:20.947988+00:00",
-      "last_accessed": "2026-04-12T15:24:20.947988+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:24:20.947988+00:00",
-        "confidence": 0.8177218680593731
-      }
-    },
-    "kg_growth_20260412_152426_2579": {
-      "id": "kg_growth_20260412_152426_2579",
-      "type": "skill",
-      "name": "Autonomous Improvement System",
-      "description": "Karpathy-style self-improvement loop - cycle 2579",
-      "source": "internal",
-      "created": "2026-04-12T15:24:26.036656",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "karpathy",
-        "self-healing"
-      ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13
-    },
-    "pattern_discovery_20260412_152426_2579": {
-      "id": "pattern_discovery_20260412_152426_2579",
-      "type": "pattern",
-      "name": "Blast Radius Estimation",
-      "description": "Estimating impact of changes before execution",
-      "source": "internal",
-      "created": "2026-04-12T15:24:26.071859",
-      "tags": [
-        "estimation",
-        "planning",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_3_8185": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.924350131232246,
-          "extracted_at": "2026-04-12T15:24:26.130641+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T15:24:26.130641+00:00",
-      "last_accessed": "2026-04-12T15:24:26.130641+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Grow knowledge graph with new insights",
-          "actual_impact": 10,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T15:24:26.130641+00:00",
-        "confidence": 0.924350131232246
-      }
-    },
-    "efficiency_improvement_20260412_162136_8630": {
-      "id": "efficiency_improvement_20260412_162136_8630",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T16:21:36.089963",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_3496": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.8278138957395703,
-          "extracted_at": "2026-04-12T16:21:36.153160+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T16:21:36.153160+00:00",
-      "last_accessed": "2026-04-12T16:21:36.153160+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T16:21:36.153160+00:00",
-        "confidence": 0.8278138957395703
-      }
-    },
-    "improvement_safety_20260412_162141_5230": {
-      "id": "improvement_safety_20260412_162141_5230",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T16:21:41.236948",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_5253": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7672458664267281,
-          "extracted_at": "2026-04-12T16:21:41.308145+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T16:21:41.308145+00:00",
-      "last_accessed": "2026-04-12T16:21:41.308145+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T16:21:41.308145+00:00",
-        "confidence": 0.7672458664267281
-      }
-    },
-    "improvement_workflow_20260412_162146_7963": {
-      "id": "improvement_workflow_20260412_162146_7963",
-      "type": "improvement",
-      "name": "Optimize daily workflow rhythm",
-      "description": "Autonomous improvement: Morning \u2192 Learning \u2192 Evening pattern",
-      "category": "workflow",
-      "approach": "Morning \u2192 Learning \u2192 Evening pattern",
-      "methods": [
-        "Analyze current cron schedule",
-        "Identify gaps or overlaps",
-        "Suggest optimization"
-      ],
-      "expected_impact": 5,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T16:21:46.422499",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "workflow"
-      ]
-    },
-    "success_improvement_cycle_3_9078": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7396797298487763,
-          "extracted_at": "2026-04-12T16:21:46.510800+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T16:21:46.510800+00:00",
-      "last_accessed": "2026-04-12T16:21:46.510800+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Optimize daily workflow rhythm",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T16:21:46.510800+00:00",
-        "confidence": 0.7396797298487763
-      }
-    },
-    "efficiency_improvement_20260412_172143_2144": {
-      "id": "efficiency_improvement_20260412_172143_2144",
-      "type": "improvement",
-      "name": "Reduce token waste through optimization",
-      "description": "Token optimization applied via autonomous improvement",
-      "category": "efficiency",
-      "approach": "Apply token_optimization patterns",
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T17:21:43.336460",
-      "tags": [
-        "autonomous",
-        "efficiency",
-        "token-optimization"
-      ]
-    },
-    "success_improvement_cycle_1_4452": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.823188080060258,
-          "extracted_at": "2026-04-12T17:21:43.416493+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T17:21:43.416493+00:00",
-      "last_accessed": "2026-04-12T17:21:43.416493+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_1",
-        "context": {
-          "hypothesis": "Reduce token waste through optimization",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T17:21:43.416493+00:00",
-        "confidence": 0.823188080060258
-      }
-    },
-    "improvement_safety_20260412_172148_9086": {
-      "id": "improvement_safety_20260412_172148_9086",
-      "type": "improvement",
-      "name": "Prevent destructive operations",
-      "description": "Autonomous improvement: Add safeguards to dangerous commands",
-      "category": "safety",
-      "approach": "Add safeguards to dangerous commands",
-      "methods": [
-        "Identify rm/trash operations",
-        "Add confirmation prompts",
-        "Log destructive actions"
-      ],
-      "expected_impact": 10,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T17:21:48.518383",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "safety"
-      ]
-    },
-    "success_improvement_cycle_2_5302": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7924294947767739,
-          "extracted_at": "2026-04-12T17:21:48.581877+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T17:21:48.581877+00:00",
-      "last_accessed": "2026-04-12T17:21:48.581877+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_2",
-        "context": {
-          "hypothesis": "Prevent destructive operations",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T17:21:48.581877+00:00",
-        "confidence": 0.7924294947767739
-      }
-    },
-    "improvement_workflow_20260412_172153_2350": {
-      "id": "improvement_workflow_20260412_172153_2350",
-      "type": "improvement",
-      "name": "Optimize daily workflow rhythm",
-      "description": "Autonomous improvement: Morning \u2192 Learning \u2192 Evening pattern",
-      "category": "workflow",
-      "approach": "Morning \u2192 Learning \u2192 Evening pattern",
-      "methods": [
-        "Analyze current cron schedule",
-        "Identify gaps or overlaps",
-        "Suggest optimization"
-      ],
-      "expected_impact": 5,
-      "source": "autonomous_improvement",
-      "created": "2026-04-12T17:21:53.668724",
-      "tags": [
-        "autonomous",
-        "improvement",
-        "workflow"
-      ]
-    },
-    "success_improvement_cycle_3_9168": {
-      "type": "success_pattern",
-      "category": "pattern",
-      "facts": [
-        {
-          "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7075978854639673,
-          "extracted_at": "2026-04-12T17:21:53.734265+00:00"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T17:21:53.734265+00:00",
-      "last_accessed": "2026-04-12T17:21:53.734265+00:00",
-      "access_count": 0,
-      "decay_score": 1,
-      "properties": {
-        "type": "success_pattern",
-        "action_type": "improvement_cycle_3",
-        "context": {
-          "hypothesis": "Optimize daily workflow rhythm",
-          "actual_impact": 3,
-          "decision": "KEEP"
-        },
-        "tokens_used": 0,
-        "efficiency": 0,
-        "discovered_at": "2026-04-12T17:21:53.734265+00:00",
-        "confidence": 0.7075978854639673
-      }
-    },
-    "error_pattern_20260412_2049": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T20:49:47.022282Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T20:49:47.022288Z",
-      "last_accessed": "2026-04-12T20:49:47.022290Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "feedback_positive_20260412_205755": {
-      "type": "learning_feedback",
-      "category": "nico_feedback",
-      "facts": [
-        {
-          "content": "learning loop is working well",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T20:57:55.424268Z",
-          "category": "quality_feedback"
-        }
-      ],
-      "priority": "HIGH",
-      "created": "2026-04-12T20:57:55.424274Z",
-      "last_accessed": "2026-04-13T21:30:32.418934",
-      "access_count": 4,
-      "decay_score": 1
-    },
-    "error_pattern_20260412_2100": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T21:00:56.505100Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T21:00:56.505105Z",
-      "last_accessed": "2026-04-12T21:00:56.505106Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260412_2103": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T21:03:51.741421Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T21:03:51.741428Z",
-      "last_accessed": "2026-04-12T21:03:51.741429Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260412_2203": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T22:03:48.111556Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T22:03:48.111566Z",
-      "last_accessed": "2026-04-12T22:03:48.111567Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260412_2303": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-12T23:03:46.743364Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-12T23:03:46.743371Z",
-      "last_accessed": "2026-04-12T23:03:46.743373Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0003": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T00:03:47.435123Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T00:03:47.435129Z",
-      "last_accessed": "2026-04-13T00:03:47.435131Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "research_20260413": {
-      "type": "research",
-      "category": "learning_coordinator",
-      "facts": [
-        {
-          "content": "Research completed: 3 queries, 2 hypotheses generated",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-13T18:05:02.931724",
-          "category": "research"
-        }
-      ],
-      "hypotheses": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "category": "self_improvement",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement self_improvement techniques from research",
-          "expected_impact": "HIGH"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "category": "autonomous_learning",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement autonomous_learning techniques from research",
-          "expected_impact": "MEDIUM"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T18:05:02.931731",
-      "tags": [
-        "research",
-        "coordinator",
-        "daily"
-      ]
-    },
-    "error_pattern_20260413_0103": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T01:03:48.926294Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T01:03:48.926302Z",
-      "last_accessed": "2026-04-13T01:03:48.926303Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0203": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T02:03:49.347279Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T02:03:49.347286Z",
-      "last_accessed": "2026-04-13T02:03:49.347287Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0303": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T03:03:47.729487Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T03:03:47.729495Z",
-      "last_accessed": "2026-04-13T03:03:47.729496Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0403": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T04:03:49.318250Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T04:03:49.318256Z",
-      "last_accessed": "2026-04-13T04:03:49.318257Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0503": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"id\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T05:03:46.724590Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T05:03:46.724596Z",
-      "last_accessed": "2026-04-13T05:03:46.724597Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0603": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T06:03:49.131833Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T06:03:49.131843Z",
-      "last_accessed": "2026-04-13T06:03:49.131845Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0703": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T07:03:59.404380Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T07:03:59.404390Z",
-      "last_accessed": "2026-04-13T07:03:59.404391Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0803": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T08:03:59.386898Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T08:03:59.386914Z",
-      "last_accessed": "2026-04-13T08:03:59.386915Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_0903": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T09:03:59.087240Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T09:03:59.087245Z",
-      "last_accessed": "2026-04-13T09:03:59.087246Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "innovation_research_20260413": {
-      "type": "research",
-      "category": "ai_agent_innovation",
-      "facts": [
-        {
-          "content": "## arXiv: When Agent Markets Arrive\nAI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the econ\n\n## arXiv: Reimagining RAN Automation in 6G: An Agentic AI Framework with Hierarchical Onli\nIn this paper, we propose an Agentic Artificial Intelligence (AI) framework for wireless networks. The framework coordinates a pool of AI agents guided by Natural Language (NL) inputs from a human ope\n\n## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User\nThe development of autonomous tool-use agents for complex, long-horizon tasks in collaboration with human users has become the frontier of agentic research. During multi-turn Human-AI interactions, th\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousRes...",
-          "confidence": 0.8,
-          "extracted_at": "2026-04-13T19:03:51.819161",
-          "category": "innovation_research"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T19:03:51.819181",
-      "tags": [
-        "innovation",
-        "research",
-        "ai_agent",
-        "2026",
-        "arxiv"
-      ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 13
-    },
-    "error_pattern_20260413_1004": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T10:04:17.556678Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T10:04:17.556687Z",
-      "last_accessed": "2026-04-13T10:04:17.556688Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_1104": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T11:04:17.341894Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T11:04:17.341900Z",
-      "last_accessed": "2026-04-13T11:04:17.341901Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_1205": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T12:05:01.289918Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T12:05:01.289927Z",
-      "last_accessed": "2026-04-13T12:05:01.289929Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_1303": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T13:03:48.809407Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T13:03:48.809414Z",
-      "last_accessed": "2026-04-13T13:03:48.809415Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "error_pattern_20260413_1403": {
-      "type": "error_pattern",
-      "category": "system",
-      "facts": [
-        {
-          "content": "Auto-detected error pattern: {\"timestamp\":",
-          "confidence": 1,
-          "extracted_at": "2026-04-13T14:03:50.755495Z",
-          "category": "error"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-13T14:03:50.755502Z",
-      "last_accessed": "2026-04-13T14:03:50.755503Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "rem_theme_gateway": {
-      "type": "rem_insight",
-      "category": "theme_pattern",
-      "facts": [
-        {
-          "content": "Theme 'gateway' recalled 1496 times",
-          "confidence": 1,
-          "extracted_at": "2026-04-15T06:01:11.878874Z",
-          "source": "rem_harness"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T06:01:11.878875Z",
-      "last_accessed": "2026-04-15T06:01:11.878876Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "rem_theme_assistant": {
-      "type": "rem_insight",
-      "category": "theme_pattern",
-      "facts": [
-        {
-          "content": "Theme 'assistant' recalled 1496 times",
-          "confidence": 1,
-          "extracted_at": "2026-04-15T06:01:11.878886Z",
-          "source": "rem_harness"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T06:01:11.878887Z",
-      "last_accessed": "2026-04-15T06:01:11.878887Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "rem_theme_user": {
-      "type": "rem_insight",
-      "category": "theme_pattern",
-      "facts": [
-        {
-          "content": "Theme 'user' recalled 1388 times",
-          "confidence": 1,
-          "extracted_at": "2026-04-15T06:01:11.878879Z",
-          "source": "rem_harness"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T06:01:11.878880Z",
-      "last_accessed": "2026-04-15T06:01:11.878881Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "rem_theme_home/clawbot": {
-      "type": "rem_insight",
-      "category": "theme_pattern",
-      "facts": [
-        {
-          "content": "Theme 'home/clawbot' recalled 1242 times",
-          "confidence": 1,
-          "extracted_at": "2026-04-15T06:01:11.878883Z",
-          "source": "rem_harness"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T06:01:11.878884Z",
-      "last_accessed": "2026-04-15T06:01:11.878884Z",
-      "access_count": 1,
-      "decay_score": 1
-    },
-    "innovation_research_20260414": {
-      "type": "research",
-      "category": "ai_agent_innovation",
-      "facts": [
-        {
-          "content": "## arXiv: ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation\nParametric Computer-Aided Design (CAD) of articulated assemblies is essential for product development, yet generating these multi-part, movable models from high-level descriptions remains unexplored. \n\n## arXiv: When Agent Markets Arrive\nAI agents are increasingly transacting on behalf of users -- delegating tasks, spending budgets, and negotiating with unfamiliar counterparties. From skill marketplaces to agent-only bazaars, the econ\n\n## arXiv: OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Base\nThe alignment of Multi-Agent Systems (MAS) for autonomous software engineering is constrained by evaluator epistemic uncertainty. Current paradigms, such as Reinforcement Learning from Human Feedback \n\n## arXiv: Networking-Aware Energy Efficiency in Agentic AI Inference: A Survey\nThe rapid emergence of Large Language Models (LLMs) has catalyzed Agentic artificial intelligence (AI), autonomous systems integrating perception, reasoning, and action into closed-loop pipelines for \n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## arXiv: Structured Prompt Language: Declarative Context Management for LLMs\nWe present SPL (Structured Prompt Language), a declarative SQL-inspired language that treats large language models as generative knowledge bases and their context windows as constrained resources. SPL\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/he...",
-          "confidence": 0.8,
-          "extracted_at": "2026-04-14T18:05:07.138977",
-          "category": "innovation_research"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-14T18:05:07.138987",
-      "tags": [
-        "innovation",
-        "research",
-        "ai_agent",
-        "2026",
-        "arxiv"
-      ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
-    },
-    "research_20260414": {
-      "type": "research",
-      "category": "learning_coordinator",
-      "facts": [
-        {
-          "content": "Research completed: 3 queries, 2 hypotheses generated",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-14T18:05:07.201569",
-          "category": "research"
-        }
-      ],
-      "hypotheses": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "category": "self_improvement",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement self_improvement techniques from research",
-          "expected_impact": "HIGH"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "category": "autonomous_learning",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement autonomous_learning techniques from research",
-          "expected_impact": "MEDIUM"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-14T18:05:07.201579",
-      "tags": [
-        "research",
-        "coordinator",
-        "daily"
-      ]
-    },
-    "innovation_research_20260415": {
-      "type": "research",
-      "category": "ai_agent_innovation",
-      "facts": [
-        {
-          "content": "## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/hermes-agent\n",
-          "confidence": 0.8,
-          "extracted_at": "2026-04-15T14:04:12.210095",
-          "category": "innovation_research"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T14:04:12.210103",
-      "tags": [
-        "innovation",
-        "research",
-        "ai_agent",
-        "2026",
-        "arxiv"
-      ],
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
-    },
-    "research_20260415": {
-      "type": "research",
-      "category": "learning_coordinator",
-      "facts": [
-        {
-          "content": "Research completed: 3 queries, 2 hypotheses generated",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-15T09:07:40.217413",
-          "category": "research"
-        }
-      ],
-      "hypotheses": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "category": "self_improvement",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement self_improvement techniques from research",
-          "expected_impact": "HIGH"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "category": "autonomous_learning",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement autonomous_learning techniques from research",
-          "expected_impact": "MEDIUM"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-15T09:07:40.217421",
-      "tags": [
-        "research",
-        "coordinator",
-        "daily"
-      ]
-    },
-    "innovation_research_20260416": {
-      "type": "research",
-      "category": "ai_agent_innovation",
-      "facts": [
-        {
-          "content": "## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/hermes-agent\n",
-          "confidence": 0.8,
-          "extracted_at": "2026-04-16T18:07:18.760376",
-          "category": "innovation_research"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-16T18:07:18.760386",
-      "tags": [
-        "innovation",
-        "research",
-        "ai_agent",
-        "2026",
-        "arxiv"
-      ]
-    },
-    "research_20260416": {
-      "type": "research",
-      "category": "learning_coordinator",
-      "facts": [
-        {
-          "content": "Research completed: 3 queries, 2 hypotheses generated",
-          "confidence": 0.9,
-          "extracted_at": "2026-04-16T18:07:18.832504",
-          "category": "research"
-        }
-      ],
-      "hypotheses": [
-        {
-          "title": "Apply Self Improvement pattern",
-          "category": "self_improvement",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement self_improvement techniques from research",
-          "expected_impact": "HIGH"
-        },
-        {
-          "title": "Apply Autonomous Learning pattern",
-          "category": "autonomous_learning",
-          "source": "research",
-          "priority": "MEDIUM",
-          "approach": "Investigate and implement autonomous_learning techniques from research",
-          "expected_impact": "MEDIUM"
-        }
-      ],
-      "priority": "MEDIUM",
-      "created": "2026-04-16T18:07:18.832510",
-      "tags": [
-        "research",
-        "coordinator",
-        "daily"
-      ]
-    },
     "LearningPattern_error_reducer_error": {
       "id": "LearningPattern_error_reducer_error",
       "type": "LearningPattern",
@@ -7439,7 +3781,9 @@
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669107",
       "last_validated": "2026-04-13T14:21:02.770253",
-      "created_at": "2026-04-16T19:05:57.971236"
+      "created_at": "2026-04-16T19:05:57.971236",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 3
     },
     "LearningPattern_failure:_failed_jobs:": {
       "id": "LearningPattern_failure:_failed_jobs:",
@@ -7453,7 +3797,9 @@
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669110",
       "last_validated": "2026-04-13T13:48:51.669110",
-      "created_at": "2026-04-16T19:05:57.971317"
+      "created_at": "2026-04-16T19:05:57.971317",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 3
     },
     "LearningPattern_failure:_error:_message": {
       "id": "LearningPattern_failure:_error:_message",
@@ -7748,8 +4094,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.973376",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e",
@@ -7805,8 +4151,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973799",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit",
@@ -7884,8 +4230,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.974420",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN",
@@ -7919,8 +4265,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.974682",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r": {
       "id": "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r",
@@ -7998,8 +4344,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975313",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN",
@@ -8033,8 +4379,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975577",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch",
@@ -8046,8 +4392,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975664",
-      "last_accessed": "2026-04-17T04:03:22.401482+00:00",
-      "access_count": 2
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 4
     },
     "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch",
@@ -8255,52 +4601,859 @@
       "tests_passed": 2,
       "created_at": "2026-04-17T03:10:13.062876"
     },
-    "Improvement_2026-04-17T04-04-14-952111_Investigate-and-fix-Cron-Watch": {
-      "id": "Improvement_2026-04-17T04-04-14-952111_Investigate-and-fix-Cron-Watch",
-      "type": "Improvement",
-      "name": "Investigate and fix Cron Watchdog failure",
-      "description": "Investigate and fix Cron Watchdog failure",
-      "validated": false,
-      "timestamp": "2026-04-17T04:04:14.952111",
-      "test_count": 3,
-      "tests_passed": 2,
-      "created_at": "2026-04-17T04:10:12.936386"
+    "LearningPattern_pattern_20260417_160345": {
+      "id": "LearningPattern_pattern_20260417_160345",
+      "type": "LearningPattern",
+      "name": "pattern_20260417_160345",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "error_type": "kg_quality",
+      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-17T16:03:45.137210",
+      "last_validated": "2026-04-17T16:03:45.137214",
+      "created_at": "2026-04-17T16:03:45.257948"
     },
-    "Improvement_2026-04-17T05-04-03-156558_PHASE-4-Add-1-new-validation": {
-      "id": "Improvement_2026-04-17T05-04-03-156558_PHASE-4-Add-1-new-validation",
+    "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-17T16:03:45.138881",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-17T16:03:45.258112",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 2
+    },
+    "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-17T16:42:08.901194",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-17T16:42:09.016597",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 2
+    },
+    "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-17T16:42:36.384724",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-17T16:42:36.507316",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 2
+    },
+    "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-17T17:04:36.864746",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-17T17:04:36.977902",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 2
+    },
+    "innovation_research_20260417": {
+      "type": "research",
+      "category": "ai_agent_innovation",
+      "facts": [
+        {
+          "content": "## arXiv: Self-adaptive Multi-Access Edge Architectures: A Robotics Case\nThe growth of compute-intensive AI tasks highlights the need to mitigate the processing costs and improve performance and energy efficiency. This necessitates the integration of intelligent agents as \n\n## arXiv: ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation\nParametric Computer-Aided Design (CAD) of articulated assemblies is essential for product development, yet generating these multi-part, movable models from high-level descriptions remains unexplored. \n\n## arXiv: Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabili\nAccording to constructivist theory, students learn software security more effectively when examples are grounded in their own code. Generic examples often fail to connect with students' prior work, li\n\n## arXiv: OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Base\nThe alignment of Multi-Agent Systems (MAS) for autonomous software engineering is constrained by evaluator epistemic uncertainty. Current paradigms, such as Reinforcement Learning from Human Feedback \n\n## arXiv: Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC\nThis paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely ad\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI ...",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-17T18:05:43.423811",
+          "category": "innovation_research"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-17T18:05:43.423821",
+      "tags": [
+        "innovation",
+        "research",
+        "ai_agent",
+        "2026",
+        "arxiv"
+      ],
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 2
+    },
+    "research_20260417": {
+      "type": "research",
+      "category": "learning_coordinator",
+      "facts": [
+        {
+          "content": "Research completed: 3 queries, 2 hypotheses generated",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-17T18:05:41.066583",
+          "category": "research"
+        }
+      ],
+      "hypotheses": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "category": "self_improvement",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement self_improvement techniques from research",
+          "expected_impact": "HIGH"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "category": "autonomous_learning",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement autonomous_learning techniques from research",
+          "expected_impact": "MEDIUM"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-17T18:05:41.066592",
+      "tags": [
+        "research",
+        "coordinator",
+        "daily"
+      ]
+    },
+    "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A": {
+      "id": "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A",
+      "type": "Improvement",
+      "name": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize",
+      "description": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize or cache it",
+      "validated": true,
+      "timestamp": "2026-04-17T18:07:49.814771",
+      "test_count": 4,
+      "tests_passed": 4,
+      "created_at": "2026-04-17T18:07:49.929363"
+    },
+    "research_AI_agent_self-improvement_20260417": {
+      "type": "research",
+      "category": "research_agent",
+      "facts": [
+        {
+          "content": "Research on AI agent self-improvement: 0 papers, 3 HN stories, 0 web results",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-17T18:20:28.511273",
+          "category": "research_summary"
+        }
+      ],
+      "papers": [],
+      "hn_stories": [
+        {
+          "title": "My AI Agent Knows Who I Am. Not Just What I Want. Who I Am",
+          "url": "https://thoughts.jock.pl/p/wiz-ai-agent-self-improvement-architecture",
+          "points": 2,
+          "topic": "AI agent self-improvement"
+        },
+        {
+          "title": "Show HN: Aigent \u2013 A general-purpose AI agent built for self-improvement",
+          "url": "https://stefanochiodino.github.io/aigent/",
+          "points": 2,
+          "topic": "AI agent self-improvement"
+        },
+        {
+          "title": "A FOSS project to create an Artificial Mind",
+          "url": "",
+          "points": 3,
+          "topic": "AI agent self-improvement"
+        }
+      ],
+      "topics": [
+        "AI agent self-improvement"
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-17T18:20:28.511277",
+      "tags": [
+        "research",
+        "agent",
+        "AI_agent_self-improvement"
+      ]
+    },
+    "research_AI_safety_alignment_20260420": {
+      "type": "research",
+      "category": "research_agent",
+      "facts": [
+        {
+          "content": "Research on AI safety alignment: 0 papers, 3 HN stories, 3 web results",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-20T07:00:03.038618",
+          "category": "research_summary"
+        }
+      ],
+      "papers": [],
+      "hn_stories": [
+        {
+          "title": "Program to help AI researchers build AI safety and alignment startups",
+          "url": "https://www.fiftyyears.com/5050/ai",
+          "points": 1,
+          "topic": "AI safety alignment"
+        },
+        {
+          "title": "Valori \u2013 Deterministic Substrate for AI (Code and ArXiv Paper)",
+          "url": "",
+          "points": 4,
+          "topic": "AI safety alignment"
+        },
+        {
+          "title": "Show HN: Civilization Patch \u2013 An Emotional Entropy Regulator for LLMs",
+          "url": "https://github.com/rain1955/Civilization-Patch/blob/main/RFC_Civilization_Patch_v1.1.md",
+          "points": 1,
+          "topic": "AI safety alignment"
+        }
+      ],
+      "topics": [
+        "AI safety alignment"
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T07:00:03.038621",
+      "tags": [
+        "research",
+        "agent",
+        "AI_safety_alignment"
+      ]
+    },
+    "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation": {
+      "id": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
       "type": "Improvement",
       "name": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check mem",
       "description": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
       "validated": true,
-      "timestamp": "2026-04-17T05:04:03.156558",
+      "timestamp": "2026-04-20T07:03:22.329649",
       "test_count": 4,
       "tests_passed": 3,
-      "created_at": "2026-04-17T05:10:14.884451"
+      "created_at": "2026-04-20T07:03:22.642273+00:00"
     },
-    "Improvement_2026-04-17T06-05-47-953595_CROSS-PATTERN-CROSS-PATTERN": {
-      "id": "Improvement_2026-04-17T06-05-47-953595_CROSS-PATTERN-CROSS-PATTERN",
+    "Improvement_2026-04-20T07-34-05-816043_CROSS-PATTERN-CROSS-PATTERN": {
+      "id": "Improvement_2026-04-20T07-34-05-816043_CROSS-PATTERN-CROSS-PATTERN",
       "type": "Improvement",
       "name": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "description": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "validated": true,
-      "timestamp": "2026-04-17T06:05:47.953595",
-      "test_count": 3,
-      "tests_passed": 3,
-      "created_at": "2026-04-17T06:10:13.962896"
-    },
-    "Improvement_2026-04-17T07-06-39-066052_Investigate-and-fix-Opportunit": {
-      "id": "Improvement_2026-04-17T07-06-39-066052_Investigate-and-fix-Opportunit",
-      "type": "Improvement",
-      "name": "Investigate and fix Opportunity Scanner Daily failure",
-      "description": "Investigate and fix Opportunity Scanner Daily failure",
-      "validated": false,
-      "timestamp": "2026-04-17T07:06:39.066052",
+      "timestamp": "2026-04-20T07:34:05.816043",
       "test_count": 3,
       "tests_passed": 2,
-      "created_at": "2026-04-17T07:10:13.578871"
+      "created_at": "2026-04-20T08:09:04.503765+00:00"
+    },
+    "Improvement_2026-04-20T08-09-04-274527_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T08-09-04-274527_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T08:09:04.274527",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T08:09:04.504099+00:00",
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 1
+    },
+    "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": false,
+      "timestamp": "2026-04-20T09:04:34.641768",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T09:08:21.751590+00:00"
+    },
+    "Improvement_2026-04-20T09-08-21-487817_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-20T09-08-21-487817_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": false,
+      "timestamp": "2026-04-20T09:08:21.487817",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T09:08:21.751746+00:00"
+    },
+    "innovation_research_20260420": {
+      "type": "research",
+      "category": "ai_agent_innovation",
+      "facts": [
+        {
+          "content": "## arXiv: Self-adaptive Multi-Access Edge Architectures: A Robotics Case\nThe growth of compute-intensive AI tasks highlights the need to mitigate the processing costs and improve performance and energy efficiency. This necessitates the integration of intelligent agents as \n\n## arXiv: ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation\nParametric Computer-Aided Design (CAD) of articulated assemblies is essential for product development, yet generating these multi-part, movable models from high-level descriptions remains unexplored. \n\n## arXiv: Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabili\nAccording to constructivist theory, students learn software security more effectively when examples are grounded in their own code. Generic examples often fail to connect with students' prior work, li\n\n## arXiv: OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Base\nThe alignment of Multi-Agent Systems (MAS) for autonomous software engineering is constrained by evaluator epistemic uncertainty. Current paradigms, such as Reinforcement Learning from Human Feedback \n\n## arXiv: Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC\nThis paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely ad\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI ...",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T09:52:19.232263",
+          "category": "innovation_research"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T09:52:19.232270",
+      "tags": [
+        "innovation",
+        "research",
+        "ai_agent",
+        "2026",
+        "arxiv"
+      ],
+      "last_accessed": "2026-04-20T12:03:41.258606+00:00",
+      "access_count": 1
+    },
+    "research_20260420": {
+      "type": "research",
+      "category": "learning_coordinator",
+      "facts": [
+        {
+          "content": "Research completed: 3 queries, 2 hypotheses generated",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-20T09:52:19.290928",
+          "category": "research"
+        }
+      ],
+      "hypotheses": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "category": "self_improvement",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement self_improvement techniques from research",
+          "expected_impact": "HIGH"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "category": "autonomous_learning",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement autonomous_learning techniques from research",
+          "expected_impact": "MEDIUM"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T09:52:19.290937",
+      "tags": [
+        "research",
+        "coordinator",
+        "daily"
+      ]
+    },
+    "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": false,
+      "timestamp": "2026-04-20T11:05:06.135679",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T11:05:06.428733+00:00"
+    },
+    "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T12:04:38.860395",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T12:04:39.089014+00:00"
+    },
+    "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T13:03:59.793021",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T13:04:00.022291+00:00"
+    },
+    "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317": {
+      "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Self-adaptive Multi-Access Edge Architectures: A Robotics Case",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354809",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354820",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354816",
+      "last_accessed": "2026-04-20T14:03:17.354817",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_140317": {
+      "id": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354828",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354831",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354829",
+      "last_accessed": "2026-04-20T14:03:17.354830",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_When-Agent-Markets-Arrive_20260420_140317": {
+      "id": "research_When-Agent-Markets-Arrive_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "When Agent Markets Arrive",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354836",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354839",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354837",
+      "last_accessed": "2026-04-20T14:03:17.354838",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Towards-Personalizing-Secure-Programming_20260420_140317": {
+      "id": "research_Towards-Personalizing-Secure-Programming_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabilities",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354843",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354846",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354844",
+      "last_accessed": "2026-04-20T14:03:17.354845",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_140317": {
+      "id": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "OOM-RL: Out-of-Money Reinforcement Learning Market-Driven Alignment for LLM-Based Multi-Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354850",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354852",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354850",
+      "last_accessed": "2026-04-20T14:03:17.354851",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_140317": {
+      "id": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Beyond Static Sandboxing: Learned Capability Governance for Autonomous AI Agents",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354856",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354859",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354857",
+      "last_accessed": "2026-04-20T14:03:17.354858",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_140317": {
+      "id": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354863",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354865",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354864",
+      "last_accessed": "2026-04-20T14:03:17.354864",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_140317": {
+      "id": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structured Issue Resolution",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354869",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354871",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354870",
+      "last_accessed": "2026-04-20T14:03:17.354870",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Structured-Prompt-Language:-Declarative-_20260420_140317": {
+      "id": "research_Structured-Prompt-Language:-Declarative-_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Structured Prompt Language: Declarative Context Management for LLMs",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354875",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354877",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354876",
+      "last_accessed": "2026-04-20T14:03:17.354877",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_140317": {
+      "id": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354881",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354883",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354882",
+      "last_accessed": "2026-04-20T14:03:17.354882",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_140317": {
+      "id": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Safety, Security, and Cognitive Risks in World Models",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354886",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354889",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354887",
+      "last_accessed": "2026-04-20T14:03:17.354888",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317": {
+      "id": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Puppets or partners? Governing cyborg propaganda in the digital public square",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354892",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354895",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354893",
+      "last_accessed": "2026-04-20T14:03:17.354894",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Learning-the-Stellar-Structure-Equations_20260420_140317": {
+      "id": "research_Learning-the-Stellar-Structure-Equations_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Learning the Stellar Structure Equations via Self-supervised Physics-Informed Neural Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354898",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354900",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354899",
+      "last_accessed": "2026-04-20T14:03:17.354899",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Activity-Dependent-Plasticity-in-Morphog_20260420_140317": {
+      "id": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Activity-Dependent Plasticity in Morphogenetically-Grown Recurrent Networks",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354904",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354906",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354905",
+      "last_accessed": "2026-04-20T14:03:17.354905",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_140317": {
+      "id": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_140317",
+      "type": "arxiv",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Kernel Dynamics under Path Entropy Maximization",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-20T14:03:17.354909",
+          "category": "research_finding"
+        },
+        {
+          "content": "",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354912",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354910",
+      "last_accessed": "2026-04-20T14:03:17.354911",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Cluster:-42-Topics-inter-conne_20260420_140317": {
+      "id": "research_Knowledge-Cluster:-42-Topics-inter-conne_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Cluster: 42 Topics inter-connected",
+          "confidence": 0.85,
+          "extracted_at": "2026-04-20T14:03:17.354916",
+          "category": "research_finding"
+        },
+        {
+          "content": "Found 42 topic entities forming knowledge network. Topics: ['', '', '', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354918",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354916",
+      "last_accessed": "2026-04-20T14:03:17.354917",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Pattern-Library:-64-patterns-discovered_20260420_140317": {
+      "id": "research_Pattern-Library:-64-patterns-discovered_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 64 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-20T14:03:17.354923",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 64 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354926",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354924",
+      "last_accessed": "2026-04-20T14:03:17.354924",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260420_140317": {
+      "id": "research_Knowledge-Gaps-Identified_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-20T14:03:17.354930",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354933",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354931",
+      "last_accessed": "2026-04-20T14:03:17.354932",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260420_140317": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260420_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-20T14:03:17.354936",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-20T14:03:17.354939",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-20T14:03:17.354937",
+      "last_accessed": "2026-04-20T14:03:17.354938",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "timestamp": "2026-04-20T14:05:13.385033",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T14:05:13.597667+00:00"
+    },
+    "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K": {
+      "id": "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Reduce KG orphans: add relations to disconnected e",
+      "description": "Apply proven pattern: Reduce KG orphans: add relations to disconnected e",
+      "validated": false,
+      "timestamp": "2026-04-20T15:04:30.361957",
+      "test_count": 3,
+      "tests_passed": 2,
+      "created_at": "2026-04-20T15:04:30.618662+00:00"
     }
   },
-  "last_updated": "2026-04-13T19:03:51.819185",
+  "last_updated": "2026-04-20T09:52:19.232273",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -45200,46 +42353,177 @@
       "created_at": "2026-04-17T03:10:13.063018"
     },
     "630": {
-      "from": "Learning-Loop",
-      "to": "Improvement_2026-04-17T04-04-14-952111_Investigate-and-fix-Cron-Watch",
-      "type": "created",
+      "from": "LearningPattern_pattern_20260417_160345",
+      "to": "Learning-Loop",
+      "type": "part_of",
       "weight": 0.9,
-      "created_at": "2026-04-17T04:10:12.936482"
+      "created_at": "2026-04-17T16:03:45.258065"
     },
     "631": {
       "from": "Learning-Loop",
-      "to": "Improvement_2026-04-17T05-04-03-156558_PHASE-4-Add-1-new-validation",
+      "to": "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio",
       "type": "created",
       "weight": 0.9,
-      "created_at": "2026-04-17T05:10:14.884622"
+      "created_at": "2026-04-17T16:03:45.258243"
     },
     "632": {
-      "from": "Improvement_2026-04-17T05-04-03-156558_PHASE-4-Add-1-new-validation",
+      "from": "Improvement_2026-04-17T16-03-45-138881_Reduce-KG-orphans:-add-relatio",
       "to": "Learning-Loop",
       "type": "validates",
       "weight": 0.8,
-      "created_at": "2026-04-17T05:10:14.884640"
+      "created_at": "2026-04-17T16:03:45.258270"
     },
     "633": {
       "from": "Learning-Loop",
-      "to": "Improvement_2026-04-17T06-05-47-953595_CROSS-PATTERN-CROSS-PATTERN",
+      "to": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
       "type": "created",
       "weight": 0.9,
-      "created_at": "2026-04-17T06:10:13.963056"
+      "created_at": "2026-04-17T16:42:09.016733"
     },
     "634": {
-      "from": "Improvement_2026-04-17T06-05-47-953595_CROSS-PATTERN-CROSS-PATTERN",
+      "from": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
       "to": "Learning-Loop",
       "type": "validates",
       "weight": 0.8,
-      "created_at": "2026-04-17T06:10:13.963076"
+      "created_at": "2026-04-17T16:42:09.016747"
     },
     "635": {
       "from": "Learning-Loop",
-      "to": "Improvement_2026-04-17T07-06-39-066052_Investigate-and-fix-Opportunit",
+      "to": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
       "type": "created",
       "weight": 0.9,
-      "created_at": "2026-04-17T07:10:13.579025"
+      "created_at": "2026-04-17T16:42:36.507439"
+    },
+    "636": {
+      "from": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-17T16:42:36.507451"
+    },
+    "637": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T17:04:36.978029"
+    },
+    "638": {
+      "from": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-17T17:04:36.978040"
+    },
+    "639": {
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-17T18:07:49.929489"
+    },
+    "640": {
+      "from": "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-17T18:07:49.929502"
+    },
+    "641": {
+      "id": 641,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T07:03:22.642382+00:00"
+    },
+    "642": {
+      "id": 642,
+      "from": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T07:03:22.642453+00:00"
+    },
+    "643": {
+      "id": 643,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T07-34-05-816043_CROSS-PATTERN-CROSS-PATTERN",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T08:09:04.503956+00:00"
+    },
+    "644": {
+      "id": 644,
+      "from": "Improvement_2026-04-20T07-34-05-816043_CROSS-PATTERN-CROSS-PATTERN",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T08:09:04.504086+00:00"
+    },
+    "645": {
+      "id": 645,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T08-09-04-274527_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T08:09:04.504254+00:00"
+    },
+    "646": {
+      "id": 646,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T09:08:21.751729+00:00"
+    },
+    "647": {
+      "id": 647,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T09-08-21-487817_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T09:08:21.751827+00:00"
+    },
+    "648": {
+      "id": 648,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T11-05-06-135679_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T11:05:06.428905+00:00"
+    },
+    "649": {
+      "id": 649,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T12-04-38-860395_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T12:04:39.089125+00:00"
+    },
+    "650": {
+      "id": 650,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T13:04:00.022469+00:00"
+    },
+    "651": {
+      "id": 651,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T14-05-13-385033_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T14:05:13.597814+00:00"
+    },
+    "652": {
+      "id": 652,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T15-04-30-361957_Apply-proven-pattern:-Reduce-K",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T15:04:30.618834+00:00"
     }
   }
 }
