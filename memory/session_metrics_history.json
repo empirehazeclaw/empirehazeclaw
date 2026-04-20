@@ -1,12 +1,6 @@
 {
   "history": [
     {
-      "timestamp": "2026-04-19T16:05:17.611956",
-      "error_rate": 3.16,
-      "error_count": 390,
-      "msg_count": 12354
-    },
-    {
       "timestamp": "2026-04-19T16:05:18.327731",
       "error_rate": 3.16,
       "error_count": 390,
@@ -596,6 +590,12 @@
     },
     {
       "timestamp": "2026-04-20T19:16:06.423109",
+      "error_rate": 2.84,
+      "error_count": 200,
+      "msg_count": 7050
+    },
+    {
+      "timestamp": "2026-04-20T19:16:14.723094",
       "error_rate": 2.84,
       "error_count": 200,
       "msg_count": 7050

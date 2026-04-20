@@ -5339,13 +5339,13 @@
         {
           "content": "Theme 'assistant' recalled 246 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:15:11.691937Z",
+          "extracted_at": "2026-04-20T19:16:34.612215Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:15:11.691938Z",
-      "last_accessed": "2026-04-20T19:15:11.691938Z",
+      "created": "2026-04-20T19:16:34.612217Z",
+      "last_accessed": "2026-04-20T19:16:34.612218Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5356,13 +5356,13 @@
         {
           "content": "Theme 'user' recalled 234 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:15:11.691940Z",
+          "extracted_at": "2026-04-20T19:16:34.612220Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:15:11.691941Z",
-      "last_accessed": "2026-04-20T19:15:11.691942Z",
+      "created": "2026-04-20T19:16:34.612222Z",
+      "last_accessed": "2026-04-20T19:16:34.612223Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5373,13 +5373,13 @@
         {
           "content": "Theme 'home/clawbot' recalled 208 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:15:11.691933Z",
+          "extracted_at": "2026-04-20T19:16:34.612210Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:15:11.691934Z",
-      "last_accessed": "2026-04-20T19:15:11.691935Z",
+      "created": "2026-04-20T19:16:34.612212Z",
+      "last_accessed": "2026-04-20T19:16:34.612213Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -6736,6 +6736,28 @@
       "last_accessed": "2026-04-20T19:16:04.022469",
       "access_count": 1,
       "decay_score": 10
+    },
+    "Improvement_2026-04-20T19-15-57-598258_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T19-15-57-598258_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T19:15:57.598258",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T19:16:15.003694+00:00"
+    },
+    "Improvement_2026-04-20T19-16-14-777090_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T19-16-14-777090_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T19:16:14.777090",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T19:16:15.003999+00:00"
     }
   },
   "last_updated": "2026-04-20T19:16:05.350668",
@@ -44215,6 +44237,38 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-20T19:14:49.650229+00:00"
+    },
+    "707": {
+      "id": 707,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T19-15-57-598258_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:16:15.003861+00:00"
+    },
+    "708": {
+      "id": 708,
+      "from": "Improvement_2026-04-20T19-15-57-598258_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T19:16:15.003984+00:00"
+    },
+    "709": {
+      "id": 709,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T19-16-14-777090_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:16:15.004114+00:00"
+    },
+    "710": {
+      "id": 710,
+      "from": "Improvement_2026-04-20T19-16-14-777090_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T19:16:15.004250+00:00"
     }
   }
 }
