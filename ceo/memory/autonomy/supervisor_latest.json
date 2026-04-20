@@ -1,5 +1,5 @@
 {
-  "cycle_timestamp": "2026-04-20T19:14:03.048753+00:00",
+  "cycle_timestamp": "2026-04-20T19:14:48.376064+00:00",
   "actions_analysis": {
     "status": "no_transactions",
     "recommendations": []
@@ -10,7 +10,7 @@
   },
   "affective_analysis": {
     "status": "analyzed",
-    "timestamp": "2026-04-20T19:14:03.051596+00:00",
+    "timestamp": "2026-04-20T19:14:48.376433+00:00",
     "metrics": {
       "errorRate": {
         "current": 0.014,
@@ -39,16 +39,16 @@
   },
   "kg_pattern_analysis": {
     "status": "analyzed",
-    "total_entities": 300,
+    "total_entities": 318,
     "patterns": [
       {
         "type": "ISSUES_IN_KG",
-        "description": "35 entities contain issue-related facts",
+        "description": "37 entities contain issue-related facts",
         "entities": [
           {
             "entity": "Sir-HazeClaw-Scripts",
             "fact": "Fast Test Runner: 17 tests in 30s, 10s timeout, threaded",
-            "access_count": 22
+            "access_count": 23
           },
           {
             "entity": "hermes_agent_20260411",
@@ -58,7 +58,7 @@
           {
             "entity": "self_healing_hitl_20260411",
             "fact": "Self-healing: Each failure type has different recovery strategy - dev.to",
-            "access_count": 19
+            "access_count": 20
           },
           {
             "entity": "error_timeout_7327",
@@ -79,23 +79,23 @@
         "entities": [
           {
             "name": "innovation_research_20260411",
-            "access_count": 23
-          },
-          {
-            "name": "innovation_research_20260412",
-            "access_count": 23
+            "access_count": 24
           },
           {
             "name": "EmpireHazeClaw",
-            "access_count": 22
+            "access_count": 23
           },
           {
             "name": "empirehazeclaw-info",
-            "access_count": 22
+            "access_count": 23
           },
           {
             "name": "project_empirehazeclaw_fleet_20260410",
-            "access_count": 22
+            "access_count": 23
+          },
+          {
+            "name": "Sir-HazeClaw-Scripts",
+            "access_count": 23
           }
         ],
         "priority": "LOW"
