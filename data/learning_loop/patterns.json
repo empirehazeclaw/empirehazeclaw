@@ -13,13 +13,13 @@
       ],
       "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "success_count": 148,
+      "success_count": 149,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.95,
+      "confidence": 0.905,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-20T06:22:12.406400",
+      "last_validated": "2026-04-20T07:34:05.813834",
       "error_type": "elevated_error_rate",
       "context": {
         "source": "cross_pattern",
@@ -41,7 +41,7 @@
       "success_count": 236,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.4869818585099998,
+      "confidence": 0.4528931284142998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
       "last_validated": "2026-04-14T07:38:16.832396",
@@ -50,7 +50,7 @@
         "source": "forced_novelty",
         "script": null
       },
-      "days_since_validation": 5
+      "days_since_validation": 6
     },
     {
       "id": "pattern_20260414_074342",
@@ -65,7 +65,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.4869818585099998,
+      "confidence": 0.4528931284142998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T07:43:42.701457",
       "last_validated": "2026-04-14T07:43:42.701460",
@@ -74,7 +74,7 @@
         "source": "research",
         "script": null
       },
-      "days_since_validation": 5
+      "days_since_validation": 6
     },
     {
       "id": "pattern_20260414_125308",
@@ -243,7 +243,7 @@
       "success_count": 22,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8428189500000004,
+      "confidence": 0.7585370550000003,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-17T16:03:45.137210",
       "last_validated": "2026-04-19T16:38:14.106382",
@@ -350,7 +350,7 @@
       "success_count": 21,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.905,
+      "confidence": 0.8145,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-18T03:04:16.068954",
       "last_validated": "2026-04-19T20:05:59.832836",
@@ -399,6 +399,33 @@
     {
       "title": "memory:resolved",
       "description": "resolved",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:Fixed",
+      "description": "Fixed",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:fixed",
+      "description": "fixed",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:improved",
+      "description": "improved",
       "error_type": "memory_signal",
       "success_count": 1,
       "category": "memory_analysis",

@@ -2,17 +2,11 @@
 _Letzte Aktualisierung: 2026-04-20_
 ---
 
-## 🔄 EFFICIENCY
+## 🔄 PERFORMANCE_GAP
 
-**Efficiency:** 185.625
-- Status: healthy
-
-## 🔄 ANTIPATTERN
-
-**filler_words** (MED)
-- File: `SOUL.md`
-- Matches: 2
-- Action: monitor
+**Task Success Rate:** 0.0% (target: 80.0%)
+- Gap: 80.0%
+- Priority: HIGH
 
 ## 🔄 ERROR_RATE
 

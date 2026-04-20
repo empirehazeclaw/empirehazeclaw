@@ -263,6 +263,30 @@
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,
       "source": "memory_analysis"
+    },
+    {
+      "id": "idea_20260420_080904",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-20T08:09:04.272739",
+      "times_encountered": 1
+    },
+    {
+      "title": "WARNING: memory:\u274c FAILED \u2014 JSONDecodeError",
+      "description": "\u274c FAILED \u2014 JSONDecodeError",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "id": "idea_20260420_090434",
+      "title": "Break score plateau with novel approach",
+      "error_info": "Failed v2 validation: 2/3 tests passed, error_delta=+0.00%",
+      "why_ineffective": "Validation tests failed: 2/3",
+      "created": "2026-04-20T09:04:34.640138",
+      "times_encountered": 2
     }
   ],
   "version": "1.0"

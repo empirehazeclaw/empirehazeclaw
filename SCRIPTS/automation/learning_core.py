@@ -44,7 +44,7 @@ def main():
     results = {}
     
     # 1. Learning Loop
-    ok, out = run_step("Learning Loop", "python3 /home/clawbot/.openclaw/workspace/scripts/learning_loop_v3.py")
+    ok, out = run_step("Learning Loop", "python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_loop_v3.py")
     results["loop"] = "OK" if ok else "FAILED"
     if "Score:" in out:
         score = [l for l in out.split("\n") if "Score:" in l]
@@ -56,7 +56,7 @@ def main():
     results["sync"] = "OK" if ok else "FAILED"
     
     # 3. KG Sync
-    ok, out = run_step("KG Sync", "python3 /home/clawbot/.openclaw/workspace/scripts/learning_to_kg_sync.py --apply")
+    ok, out = run_step("KG Sync", "python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/learning_to_kg_sync.py --apply")
     results["kg_sync"] = "OK" if ok else "FAILED"
     
     # 4. Pattern Learning (from evaluation feedback)

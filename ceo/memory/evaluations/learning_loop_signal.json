@@ -1,31 +1,12 @@
 {
-  "timestamp": "2026-04-19T11:04:11.581293",
+  "timestamp": "2026-04-20T08:27:05.206043",
   "source": "evaluation_framework",
-  "type": "evaluation_feedback",
-  "data": {
-    "task_success_rate": 1.0,
-    "error_rate": 0.0,
-    "latency_p50": 102.416,
-    "efficiency": 185.625,
-    "antipattern_count": 0,
-    "antipattern_issues": [
-      {
-        "pattern_name": "filler_words",
-        "file": "SOUL.md",
-        "matches": 2,
-        "severity": "MED",
-        "description": "Uses filler words instead of being direct"
-      }
-    ],
-    "memory_files": 87,
-    "memory_clean": true
+  "metrics": {
+    "task_success_rate": 0.9990592662276576,
+    "error_rate": 0.0009407337723424271,
+    "latency_p50": 111.258,
+    "efficiency": 185.625
   },
-  "learnings": [
-    {
-      "type": "system_health",
-      "priority": "LOW",
-      "observation": "Memory is clean, no duplicates or stale facts",
-      "action": "Continue current maintenance routine"
-    }
-  ]
+  "antipattern_count": 0,
+  "recommendations": []
 }

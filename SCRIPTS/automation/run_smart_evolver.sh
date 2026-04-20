@@ -8,7 +8,7 @@ echo ""
 
 # Step 1: Analyze current system state
 echo "[1/4] Analyzing system state..."
-python3 /home/clawbot/.openclaw/workspace/scripts/evolver_signal_bridge.py --check-stagnation > /tmp/evolver_analysis.json
+python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/evolver_signal_bridge.py --check-stagnation > /tmp/evolver_analysis.json
 cat /tmp/evolver_analysis.json
 
 # Extract signals
@@ -40,12 +40,12 @@ node index.js 2>&1 | tail -30
 # Step 4: Post results to Event Bus
 echo ""
 echo "[3/4] Posting results to Event Bus..."
-python3 /home/clawbot/.openclaw/workspace/scripts/evolver_signal_bridge.py --post-evolver-results 2>&1
+python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/evolver_signal_bridge.py --post-evolver-results 2>&1
 
 # Step 5: Run stagnation breaker to ensure diversity
 echo ""
 echo "[4/4] Running stagnation breaker check..."
-python3 /home/clawbot/.openclaw/workspace/scripts/evolver_stagnation_breaker.py --check 2>&1
+python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/evolver_stagnation_breaker.py --check 2>&1
 
 echo ""
 echo "=== EVOLVER RUN COMPLETE ==="

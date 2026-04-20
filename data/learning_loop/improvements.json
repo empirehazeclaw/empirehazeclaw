@@ -1,196 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-18T12:07:40.553419",
-      "title": "[PHASE 4] Analyze error patterns from last 7 days, predict 1 specific error that will happen soon, add prevention",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[PHASE 4] Analyze error patterns from last 7 days, predict 1 specific error that will happen soon, add prevention",
-        "timestamp": "2026-04-18T12:07:38.959547",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": false,
-            "failed_crons": 1
-          },
-          {
-            "name": "meta_improvement_check",
-            "passed": true,
-            "output": "Iteration: 154"
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7705703526102207,
-        "current_score": 0.8705703526102206,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-18T12:07:46.500506",
-      "title": "Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Break score plateau with novel approach",
-        "timestamp": "2026-04-18T12:07:44.974545",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": false,
-            "failed_crons": 1
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7693892595257512,
-        "current_score": 0.8693892595257512,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-18T12:09:10.262308",
-      "title": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-        "timestamp": "2026-04-18T12:09:08.697302",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": false,
-            "failed_crons": 1
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.789591834991173,
-        "current_score": 0.889591834991173,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-18T13:04:18.884393",
-      "title": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-        "timestamp": "2026-04-18T13:04:17.235356",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": false,
-            "failed_crons": 1
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7698299302292683,
-        "current_score": 0.8698299302292682,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-18T14:06:27.965231",
-      "title": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-        "timestamp": "2026-04-18T14:06:26.260482",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": false,
-            "failed_crons": 1
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7693172922673635,
-        "current_score": 0.8693172922673634,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-18T15:05:50.586692",
       "title": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "validated": true,
@@ -1877,6 +1687,196 @@
           "min_tests": true,
           "error_threshold": true,
           "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-20T07:03:22.329649",
+      "title": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
+        "timestamp": "2026-04-20T07:03:20.725960",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": false,
+            "failed_crons": 1
+          },
+          {
+            "name": "meta_improvement_check",
+            "passed": true,
+            "output": "Iteration: 204"
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7676661664335083,
+        "current_score": 0.8676661664335082,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-20T07:34:05.816043",
+      "title": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[CROSS-PATTERN] [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
+        "timestamp": "2026-04-20T07:34:04.059585",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": false,
+            "failed_crons": 1
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7666225586261817,
+        "current_score": 0.8666225586261816,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-20T08:09:04.274527",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": false,
+      "validation_details": {
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-20T08:09:04.185411",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": false,
+            "output": ""
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": false,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7666291883910374,
+        "current_score": 0.6666291883910375,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": false
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-20T09:04:34.641768",
+      "title": "Break score plateau with novel approach",
+      "validated": false,
+      "validation_details": {
+        "improvement": "Break score plateau with novel approach",
+        "timestamp": "2026-04-20T09:04:34.561463",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": false,
+            "output": ""
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": false,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7663669673903013,
+        "current_score": 0.6663669673903013,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": false
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-20T09:08:21.487817",
+      "title": "Break score plateau with novel approach",
+      "validated": false,
+      "validation_details": {
+        "improvement": "Break score plateau with novel approach",
+        "timestamp": "2026-04-20T09:08:21.301649",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": false,
+            "output": ""
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": false,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7661038216359418,
+        "current_score": 0.6661038216359418,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": false
         }
       }
     }

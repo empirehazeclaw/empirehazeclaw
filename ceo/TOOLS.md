@@ -41,6 +41,50 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ---
 
+## 🎭 Ralph Loop Skill (2026-04-20)
+
+### Skill Location
+```
+skills/ralph_loop/
+├── SKILL.md                          # Complete Ralph Loop documentation
+└── scripts/
+    └── ralph_loop_adapter.py         # CLI tool for Ralph Loop patterns
+```
+
+### Ralph Loop Core Principle
+```
+Traditional Agent:  Observation → Reasoning → Acting → [LLM: fertig? → EXIT]
+Ralph Loop:        Observation → Reasoning → Acting → [STOP HOOK: fertig? → NEIN → re-inject]
+```
+
+### Key Concepts
+- **Stop Hook**: Intercepted exit attempts, re-injects prompt if not complete
+- **Completion Promise**: `<promise>COMPLETE</promise>` als exit signal
+- **Max-Iteration Safety**: Immer setzen, infinite loops sind gefährlich
+- **Clean Context**: Jede Iteration = fresh AI instance
+- **Learnings File**: `memory/ralph_learnings.md` für cross-iteration persistence
+
+### Usage
+```bash
+# Check-only mode
+python3 skills/ralph_loop/scripts/ralph_loop_adapter.py check --check "python3 score_checker.py"
+
+# Full Ralph Loop
+python3 skills/ralph_loop/scripts/ralph_loop_adapter.py loop <task_name> \
+    --check "python3 score_checker.py" \
+    --action "python3 learning_step.py" \
+    --max-iterations 20
+
+# Show learnings
+python3 skills/ralph_loop/scripts/ralph_loop_adapter.py learnings
+```
+
+### Relevance für Sir HazeClaw
+Bestehende Systeme die bereits Ralph-ähnlich arbeiten:
+- Learning Loop v3 (Iteration → Score Check → Plateau Detection)
+- Agent Executor (Queue-basiert, fresh instances)
+- Health Agent (Check → Report → Self-heal)
+
 ## 🎤 Voice / Audio
 
 ### Whisper (Speech-to-Text)

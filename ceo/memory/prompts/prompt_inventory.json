@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-04-17T18:54:46.311221",
+  "timestamp": "2026-04-20T06:22:55.610384",
   "version": "1.0.0",
   "prompt_types": {
     "soul": {
       "prompt_type": "soul",
       "file_path": "/home/clawbot/.openclaw/workspace/ceo/SOUL.md",
-      "char_count": 3100,
+      "char_count": 3301,
       "line_count": 72,
-      "token_estimate": 775,
-      "content_hash": "f0b76133",
-      "last_modified": "2026-04-17T15:56:15.881842",
+      "token_estimate": 825,
+      "content_hash": "80c562d5",
+      "last_modified": "2026-04-18T15:24:22.093194",
       "has_variants": false,
       "variant_count": 0,
       "quality_issues": []
@@ -53,11 +53,11 @@
     "memory": {
       "prompt_type": "memory",
       "file_path": "/home/clawbot/.openclaw/workspace/ceo/MEMORY.md",
-      "char_count": 5469,
-      "line_count": 184,
-      "token_estimate": 1367,
-      "content_hash": "1e9a4311",
-      "last_modified": "2026-04-17T18:45:04.984573",
+      "char_count": 7066,
+      "line_count": 257,
+      "token_estimate": 1766,
+      "content_hash": "ab067794",
+      "last_modified": "2026-04-19T17:37:17.842159",
       "has_variants": false,
       "variant_count": 0,
       "quality_issues": []
@@ -65,11 +65,11 @@
     "tools": {
       "prompt_type": "tools",
       "file_path": "/home/clawbot/.openclaw/workspace/ceo/TOOLS.md",
-      "char_count": 2728,
-      "line_count": 101,
-      "token_estimate": 682,
-      "content_hash": "059793f3",
-      "last_modified": "2026-04-17T16:52:26.854252",
+      "char_count": 4815,
+      "line_count": 176,
+      "token_estimate": 1203,
+      "content_hash": "61f6ef2a",
+      "last_modified": "2026-04-19T17:15:50.744265",
       "has_variants": false,
       "variant_count": 0,
       "quality_issues": []
@@ -77,11 +77,11 @@
     "heartbeat": {
       "prompt_type": "heartbeat",
       "file_path": "/home/clawbot/.openclaw/workspace/ceo/HEARTBEAT.md",
-      "char_count": 891,
-      "line_count": 35,
-      "token_estimate": 222,
-      "content_hash": "152aeff8",
-      "last_modified": "2026-04-17T15:44:22.031602",
+      "char_count": 659,
+      "line_count": 30,
+      "token_estimate": 164,
+      "content_hash": "d8c2cb0e",
+      "last_modified": "2026-04-18T15:23:33.671123",
       "has_variants": false,
       "variant_count": 0,
       "quality_issues": []
@@ -113,14 +113,16 @@
     "dreams": {
       "prompt_type": "dreams",
       "file_path": "/home/clawbot/.openclaw/workspace/ceo/DREAMS.md",
-      "char_count": 6170,
-      "line_count": 82,
-      "token_estimate": 1542,
-      "content_hash": "6fc59815",
-      "last_modified": "2026-04-17T15:44:22.031602",
+      "char_count": 12129,
+      "line_count": 168,
+      "token_estimate": 3032,
+      "content_hash": "5d3ce3c2",
+      "last_modified": "2026-04-20T06:22:15.982366",
       "has_variants": false,
       "variant_count": 0,
-      "quality_issues": []
+      "quality_issues": [
+        "EXCESSIVE_WHITESPACE"
+      ]
     }
   },
   "total_prompts": 10,

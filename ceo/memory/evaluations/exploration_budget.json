@@ -7,13 +7,15 @@
     "stagnation_threshold": 5
   },
   "current_period": {
-    "start": "2026-04-20T06:10:55.392182+00:00",
-    "total_runs": 4,
-    "exploration_runs": 0,
-    "exploitation_runs": 4,
-    "exploration_successes": 0,
-    "exploitation_successes": 4,
-    "experimental_strategies": []
+    "start": "2026-04-20T09:04:34.553013+00:00",
+    "total_runs": 2,
+    "exploration_runs": 1,
+    "exploitation_runs": 1,
+    "exploration_successes": 1,
+    "exploitation_successes": 1,
+    "experimental_strategies": [
+      "learning_loop_v3"
+    ]
   },
   "history": [
     {
@@ -118,6 +120,26 @@
       "total_runs": 1,
       "exploration_runs": 0,
       "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-20T06:10:55.392182+00:00",
+      "end": "2026-04-20T07:34:04.045235+00:00",
+      "total_runs": 5,
+      "exploration_runs": 0,
+      "exploitation_runs": 5,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-20T07:34:04.045248+00:00",
+      "end": "2026-04-20T09:04:34.553004+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
       "exploration_success_rate": 0.0,
       "exploitation_success_rate": 1.0,
       "experimental_strategies": []

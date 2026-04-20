@@ -173,6 +173,9 @@ They may be elsewhere or were cleaned up
 BACKUP STATUS: 1 verified backup, integrity OK
 ```
 
+### System Updates
+- [ ] apt upgrade (19 packages) → Braucht sudo, Nico muss manuell machen
+
 ---
 
 ## ✅ FERTIG

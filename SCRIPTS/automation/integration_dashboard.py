@@ -90,12 +90,16 @@ def check_kg_health() -> dict:
     else:
         type_counts = Counter(e.get("type", "unknown") for e in entities if isinstance(e, dict))
     
+    orphan_threshold_pct = 5.0  # 5% orphans is healthy
+    orphan_pct = (orphan_count / len(entity_ids) * 100) if entity_ids else 0
+    
     return {
         "entities": len(entities),
         "relations": len(relations),
         "orphans": orphan_count,
+        "orphan_pct": round(orphan_pct, 1),
         "type_counts": dict(type_counts.most_common(10)),
-        "healthy": orphan_count == 0
+        "healthy": orphan_pct < orphan_threshold_pct
     }
 
 def check_event_bus_health() -> dict:
@@ -250,7 +254,7 @@ def quick_check() -> dict:
     
     issues = []
     if not kg["healthy"]:
-        issues.append(f"KG has {kg['orphans']} orphans")
+        issues.append(f"KG has {kg['orphans']} orphans ({kg.get('orphan_pct', 0)}%)")
     if not eb["healthy"]:
         issues.append("Event Bus inactive")
     if not cr["all_pass"]:

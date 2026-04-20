@@ -1,6 +1,6 @@
 # MEMORY.md — Sir HazeClaw Core Memory
 
-**Letzte Aktualisierung:** 2026-04-19 17:32 UTC
+**Letzte Aktualisierung:** 2026-04-20 06:53 UTC
 
 ---
 
@@ -21,9 +21,10 @@ WICHTIG: "hast du das wirklich gelernt" → dokumentieren!
 Gateway: OpenClaw 2026.4.12 | Port 18789
 Model: MiniMax M2.7
 Workspace: /home/clawbot/.openclaw/workspace/ceo/
-Scripts: ~200 total
-Crons: 30 active (nach Deep Audit + Doc Cleanup 2026-04-18)
-KG: 479 entities, 33.8% orphans (korrekte Messung 2026-04-19)
+Scripts: ~300 total (nach Cleanup 2026-04-20: 298 scripts, war 763)
+Workspace Size: 230MB (war ~79MB, durch Cleanup aufgeräumt)
+Crons: 29 active
+KG: 479 entities, 33.8% orphans
 Learning: 100% success rate, 165 tasks
 ```
 
@@ -125,6 +126,36 @@ Cron: QMD Watchdog (alle 15min)
 
 ---
 
+## 🟢 RALPH LOOP SYSTEM (2026-04-20)
+
+```
+Ralph Loop = Iteriert bis Task fertig, nicht bis LLM denkt es ist fertig.
+Key: Stop Hook + Completion Promise + Max-Iteration Safety
+```
+
+### Scripts
+| Script | Purpose |
+|--------|---------|
+| `scripts/ralph_learning_loop.py` | Learning Loop → Score 0.80 |
+| `scripts/ralph_maintenance_loop.py` | System Maintenance |
+| `skills/ralph_loop/scripts/ralph_loop_adapter.py` | Generic adapter |
+
+### Crons (NEW)
+| Cron | Schedule | Description |
+|------|----------|-------------|
+| Ralph Learning Loop | `0 9,18 * * *` | Learning Verbesserung |
+| Ralph Maintenance Loop | `0 */6 * * *` | System Maintenance |
+
+### Ralph Maintenance Loop — TESTED ✅
+- Run 1: 3/3 checks OK, stable 1/2
+- Run 2: 3/3 checks OK, stable 2/2 → `<promise>COMPLETE</promise>`
+- Learnings: `memory/ralph_learnings.md`
+
+
+### Ralph Learning Loop — READY
+- Score: 0.767 | Target: 0.80 | Stable: 0/3
+- Wartet auf Cron um 09:00 UTC
+
 ## 🔴 ACTIVE ISSUES
 ```
 - Brave API Key rotieren (kompromittiert)
@@ -200,6 +231,20 @@ LR Floor: 0.01 → 0.005
 
 ---
 
+### 🔵 SYSTEM CLEANUP (2026-04-20)
+```
+Scripts: 297 (war 763 → 466 dead removed)
+Workspace: 230MB (war ~300MB+)
+Disk: 34GB/96GB (35%)
+Backup Docs: docs/SYSTEM_CLEANUP_PLAN_20260420.md
+Automation Scripts:
+  - scripts/system_cleanup.sh (cleanup)
+  - scripts/health_check.sh (monitoring)
+  - scripts/backup_verify.sh (backup check)
+  - SCRIPTS/automation/integration_dashboard.py (fixed orphan threshold)
+  - SCRIPTS/automation/backup_verify.py (deleted, backup_verifier.py exists)
+```
+
 ## 🔴 KG ANALYSIS ERROR + FIX (2026-04-19)
 
 ```
@@ -242,11 +287,35 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 
 ---
 
+## SESSION SAVE (21:04 UTC) — Before New Session
+
+## 🌙 DREAMING REPORT — 2026-04-20 06:47 UTC
+
+### ✅ Promotions (qualifying entries)
+
+- **2026-04-12.md** lines 1-33 — 5 recall hits
+  → ---
+
+## SESSION SAVE (21:04 UTC) — Before New Session
+
+### 🚀 Today's Major Achievements (2026-04-12 Evening)
+
+#### Learning Loop System (NEW!)
+- Creat...
+- **2026-04-13.md** lines 32-43 — 4 recall hits
+  → 1. Fixed CEO Weekly Review path: `scripts/weekly_review.py` → `SCRIPTS/tools/weekly_review.py`
+2. Fixed Opportunity Scanner timeout: 60s → 300s
+3. Lea...
+
+---
+*Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
+
+
 ## 📊 RECALL INDEX
 
 | Frage | Lese aus |
 |-------|----------|
-| Was heute passiert | `memory/2026-04-18.md` |
+| Was heute passiert | `memory/2026-04-20.md` |
 | Deep Audit | `docs/DEEP_AUDIT_REPORT_20260418.md` |
 | System Architektur | `docs/architecture/INDEX.md` |
 | Security Learning | `MEMORY.md` (dieses File) |
