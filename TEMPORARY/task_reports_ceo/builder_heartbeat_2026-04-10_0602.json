@@ -1,9 +1,0 @@
-{
-  "agent": "builder",
-  "timestamp": "2026-04-10T06:02:40+00:00",
-  "status": "alive",
-  "heartbeat_script": "executed",
-  "heartbeat_file_updated": true,
-  "workspace_path": "/home/clawbot/.openclaw/workspace/builder",
-  "notes": "Builder heartbeat completed successfully. Heartbeat JSON updated at /home/clawbot/.openclaw/workspace/system/heartbeats/builder.json"
-}

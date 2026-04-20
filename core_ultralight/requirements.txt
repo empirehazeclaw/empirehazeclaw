@@ -1,9 +1,0 @@
-# requirements_ultralight.txt
-# Stand: 2026-04-10
-# KEINE externen Dependencies für Core Scripts
-
-# evening_capture.py: nur stdlib (os, datetime, pathlib)
-# nightly_dreaming.py: nur stdlib (json, os, datetime, pathlib)
-
-# Optional für Erweiterungen:
-# psutil>=5.9.0  # für health_monitor.py (NICHT im Core)

@@ -55,3 +55,15 @@
 {"timestamp": "2026-04-19T20:50:19.442461Z", "source": "rem_harness", "feedback": "REM Theme: 'ceo' surfaced 1 times", "quality": 1.0, "processed": false}
 {"timestamp": "2026-04-19T20:50:19.442515Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
 {"timestamp": "2026-04-19T20:50:19.442556Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860193Z", "source": "rem_harness", "feedback": "REM Theme: 'assistant' surfaced 246 times", "quality": 1.2, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860513Z", "source": "rem_harness", "feedback": "REM Theme: 'user' surfaced 234 times", "quality": 1.2, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860608Z", "source": "rem_harness", "feedback": "REM Theme: 'home/clawbot' surfaced 208 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860661Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.77): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.9, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860698Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
+{"timestamp": "2026-04-20T19:08:08.860730Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.653993Z", "source": "rem_harness", "feedback": "REM Theme: 'assistant' surfaced 246 times", "quality": 1.2, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.654346Z", "source": "rem_harness", "feedback": "REM Theme: 'user' surfaced 234 times", "quality": 1.2, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.654429Z", "source": "rem_harness", "feedback": "REM Theme: 'home/clawbot' surfaced 208 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.654490Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.51): memory/2026-04-18.md:117-120", "quality": 2.5, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.654543Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.51): memory/2026-04-18.md:111-111", "quality": 2.5, "processed": false}
+{"timestamp": "2026-04-20T19:11:24.654592Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.51): memory/2026-04-18.md:104-105", "quality": 2.5, "processed": false}
