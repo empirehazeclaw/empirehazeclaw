@@ -109,13 +109,13 @@ def check_completion(score):
         
         if state["stable_runs"] >= STABLE_RUNS:
             state["completed"] = True
-            save_ralph_state(state)
+            # Note: caller saves state
             return True
     else:
         state["stable_runs"] = 0
         log(f"Score {score:.3f} < target {SCORE_TARGET}, reset stable_runs")
     
-    save_ralph_state(state)
+    # Note: caller saves state via run_ralph_cycle
     return False
 
 def run_ralph_cycle():

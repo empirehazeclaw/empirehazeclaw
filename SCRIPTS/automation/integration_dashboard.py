@@ -48,7 +48,7 @@ def get_recent_events(minutes: int = 1440) -> list:
                 evt = json.loads(line.strip())
                 if datetime.fromisoformat(evt["timestamp"]) > since:
                     events.append(evt)
-            except:
+            except (ValueError, json.JSONDecodeError):
                 pass
     return sorted(events, key=lambda x: x["timestamp"])
 
@@ -164,7 +164,7 @@ def check_cross_references() -> dict:
                         kg_refs.append(("ceo", f.name))
                     elif "core_ultralight" in content:
                         kg_refs.append(("core_ultralight", f.name))
-            except:
+            except (IOError, UnicodeDecodeError):
                 pass
     
     core_ultralight_refs = [r for r in kg_refs if r[0] == "core_ultralight"]
