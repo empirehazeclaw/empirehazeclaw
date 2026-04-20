@@ -1,38 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "Fix CEO Weekly Review: check email sending and report generation",
-      "timestamp": "2026-04-17T00:07:07.984603",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": false,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7843629743874078,
-      "current_score": 0.6843629743874078,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": false
-      }
-    },
-    {
       "improvement": "Investigate and fix Cron Watchdog failure",
       "timestamp": "2026-04-17T01:04:40.459437",
       "tests": [
@@ -3254,6 +3222,38 @@
       "version": "2.0",
       "baseline_score": 0.7859329268292683,
       "current_score": 0.8859329268292683,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "timestamp": "2026-04-20T19:11:59.645731",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.7651434466019417,
+      "current_score": 0.8651434466019416,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,

@@ -1,54 +1,54 @@
 {
-  "timestamp": "2026-04-20T06:26:30.561828",
+  "timestamp": "2026-04-20T19:11:59.248412",
   "kg_metrics": {
-    "entity_count": 519,
-    "relation_count": 738,
-    "orphan_count": 190,
-    "orphan_pct": 0.36608863198458574,
-    "relation_density": 1.4219653179190752,
-    "type_count": 40,
+    "entity_count": 279,
+    "relation_count": 691,
+    "orphan_count": 58,
+    "orphan_pct": 0.2078853046594982,
+    "relation_density": 2.4767025089605736,
+    "type_count": 31,
     "types": [
-      "decision",
-      "category",
-      "Improvement",
-      "learning",
-      "note",
-      "improvement",
-      "LearningPattern",
+      "skill",
+      "project",
+      "domain",
+      "script",
       "usecase",
-      "subtopic",
-      "meta_pattern"
+      "infrastructure",
+      "sales",
+      "transcript",
+      "success_pattern",
+      "pattern"
     ]
   },
   "learning_trajectory": {
-    "iteration": 203,
-    "score": 0.7676661664335083,
-    "pattern_count": 25
+    "iteration": 222,
+    "score": 0.7651434466019417,
+    "pattern_count": 20
   },
   "benchmark_results": [
     {
       "area": "kg_query",
       "success": true,
       "error": null,
-      "entity_count": 519
+      "entity_count": 279
     },
     {
       "area": "event_check",
       "success": true,
       "error": null,
-      "event_count": 19
+      "event_count": 0
     },
     {
       "area": "learning_read",
       "success": true,
       "error": null,
-      "score": 0.7676661664335083
+      "score": 0.7651434466019417
     },
     {
       "area": "pattern_match",
       "success": true,
       "error": null,
-      "pattern_count": 25
+      "pattern_count": 20
     }
   ],
   "signals_generated": [
