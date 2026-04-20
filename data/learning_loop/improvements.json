@@ -337,6 +337,43 @@
           "no_critical": true
         }
       }
+    },
+    {
+      "timestamp": "2026-04-20T19:12:39.891598",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-20T19:12:39.457185",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7653579268292683,
+        "current_score": 0.8653579268292683,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
     }
   ],
   "version": 2,

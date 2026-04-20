@@ -1,38 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "Investigate and fix Cron Watchdog failure",
-      "timestamp": "2026-04-17T01:04:40.459437",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": false,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7643629743874077,
-      "current_score": 0.6643629743874078,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": false
-      }
-    },
-    {
       "improvement": "Fix CEO Weekly Review: check email sending and report generation",
       "timestamp": "2026-04-17T02:04:00.975527",
       "tests": [
@@ -3254,6 +3222,38 @@
       "version": "2.0",
       "baseline_score": 0.7651434466019417,
       "current_score": 0.8651434466019416,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "Reduce KG orphans: add relations to disconnected entities",
+      "timestamp": "2026-04-20T19:12:39.457185",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.7653579268292683,
+      "current_score": 0.8653579268292683,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,

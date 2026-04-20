@@ -5339,13 +5339,13 @@
         {
           "content": "Theme 'assistant' recalled 246 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:11:24.685575Z",
+          "extracted_at": "2026-04-20T19:12:58.976651Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:11:24.685575Z",
-      "last_accessed": "2026-04-20T19:11:24.685576Z",
+      "created": "2026-04-20T19:12:58.976652Z",
+      "last_accessed": "2026-04-20T19:12:58.976652Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5356,13 +5356,13 @@
         {
           "content": "Theme 'user' recalled 234 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:11:24.685581Z",
+          "extracted_at": "2026-04-20T19:12:58.976654Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:11:24.685582Z",
-      "last_accessed": "2026-04-20T19:11:24.685583Z",
+      "created": "2026-04-20T19:12:58.976655Z",
+      "last_accessed": "2026-04-20T19:12:58.976656Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5373,13 +5373,13 @@
         {
           "content": "Theme 'home/clawbot' recalled 208 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:11:24.685563Z",
+          "extracted_at": "2026-04-20T19:12:58.976647Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:11:24.685572Z",
-      "last_accessed": "2026-04-20T19:11:24.685573Z",
+      "created": "2026-04-20T19:12:58.976648Z",
+      "last_accessed": "2026-04-20T19:12:58.976649Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5814,6 +5814,42 @@
       "last_accessed": "2026-04-20T19:12:35.336358",
       "access_count": 1,
       "decay_score": 10
+    },
+    "LearningPattern_pattern_20260420_191239": {
+      "id": "LearningPattern_pattern_20260420_191239",
+      "type": "LearningPattern",
+      "name": "pattern_20260420_191239",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "error_type": "kg_quality",
+      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-20T19:12:39.889884",
+      "last_validated": "2026-04-20T19:12:39.889886",
+      "created_at": "2026-04-20T19:12:40.115603+00:00"
+    },
+    "Improvement_2026-04-20T19-12-00-162269_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T19-12-00-162269_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T19:12:00.162269",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T19:12:40.115814+00:00"
+    },
+    "Improvement_2026-04-20T19-12-39-891598_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T19-12-39-891598_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-20T19:12:39.891598",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T19:12:40.116661+00:00"
     }
   },
   "last_updated": "2026-04-20T19:12:36.019173",
@@ -43221,6 +43257,46 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-20T19:10:51.690484+00:00"
+    },
+    "698": {
+      "id": 698,
+      "from": "LearningPattern_pattern_20260420_191239",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:12:40.115786+00:00"
+    },
+    "699": {
+      "id": 699,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T19-12-00-162269_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:12:40.116501+00:00"
+    },
+    "700": {
+      "id": 700,
+      "from": "Improvement_2026-04-20T19-12-00-162269_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T19:12:40.116639+00:00"
+    },
+    "701": {
+      "id": 701,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T19-12-39-891598_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T19:12:40.116774+00:00"
+    },
+    "702": {
+      "id": 702,
+      "from": "Improvement_2026-04-20T19-12-39-891598_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T19:12:40.116888+00:00"
     }
   }
 }
