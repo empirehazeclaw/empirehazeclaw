@@ -82,15 +82,18 @@ def run_learning_loop():
 
 def parse_score(output):
     """Extract score from learning loop output."""
-    match = re.search(r"Score:\s*(\d+\.\d+)", output)
-    if match:
-        return float(match.group(1))
-    
-    # Try JSON state
+    # Always prefer JSON state file - output parsing is unreliable
     state_file = WORKSPACE / "data/learning_loop_state.json"
     if state_file.exists():
         state = json.loads(state_file.read_text())
-        return state.get("score", 0)
+        score = state.get("score", 0)
+        if score > 0:
+            return score
+    
+    # Fallback: try regex on output
+    match = re.search(r"Score:\s*(\d+\.\d+)", output)
+    if match:
+        return float(match.group(1))
     
     return None
 

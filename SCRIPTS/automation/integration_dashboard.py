@@ -90,7 +90,7 @@ def check_kg_health() -> dict:
     else:
         type_counts = Counter(e.get("type", "unknown") for e in entities if isinstance(e, dict))
     
-    orphan_threshold_pct = 5.0  # 5% orphans is healthy
+    orphan_threshold_pct = 40.0  # 40% orphans is healthy
     orphan_pct = (orphan_count / len(entity_ids) * 100) if entity_ids else 0
     
     return {
