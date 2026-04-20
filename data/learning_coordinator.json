@@ -102,19 +102,37 @@
       "validated": 2,
       "learning_tracked": true,
       "exit_code": 0
+    },
+    {
+      "timestamp": "2026-04-20T06:21:59.341131",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
+    },
+    {
+      "timestamp": "2026-04-20T06:22:00.005984",
+      "phase": "research",
+      "success": true,
+      "notes": "2 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-20T06:22:01.297524",
+      "phase": "quality",
+      "success": true,
+      "notes": "0 issues"
+    },
+    {
+      "timestamp": "2026-04-20T06:22:02.077523",
+      "phase": "improvement",
+      "success": true,
+      "notes": "2 applied"
+    },
+    {
+      "timestamp": "2026-04-20T06:22:02.151783",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
     }
   ],
-  "last_full_cycle": {
-    "timestamp": "2026-04-18T18:06:00Z",
-    "duration_s": 4.4,
-    "system_check": "OK",
-    "hypotheses_generated": 2,
-    "quality_gates": "passed",
-    "issues_detected": 0,
-    "improvements_selected": 2,
-    "improvements_executed": 2,
-    "validated": 2,
-    "learning_tracked": true,
-    "exit_code": 0
-  }
+  "last_full_cycle": "2026-04-20T06:22:02.151797"
 }
