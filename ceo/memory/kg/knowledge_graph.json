@@ -7691,6 +7691,39 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-20T20:45:30.294882+00:00"
+    },
+    "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-": {
+      "id": "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-",
+      "type": "Improvement",
+      "name": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "validated": true,
+      "timestamp": "2026-04-20T20:46:48.940285",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T21:04:31.702269+00:00"
+    },
+    "Improvement_2026-04-20T21-04-31-474814_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-20T21-04-31-474814_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-20T21:04:31.474814",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T21:04:31.702578+00:00"
+    },
+    "Improvement_2026-04-20T22-02-43-185272_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T22-02-43-185272_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T22:02:43.185272",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T22:02:43.431403+00:00"
     }
   },
   "last_updated": "2026-04-20T20:45:26.143290",
@@ -45290,6 +45323,54 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-20T20:45:30.295117+00:00"
+    },
+    "722": {
+      "id": 722,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T21:04:31.702429+00:00"
+    },
+    "723": {
+      "id": 723,
+      "from": "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T21:04:31.702554+00:00"
+    },
+    "724": {
+      "id": 724,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T21-04-31-474814_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T21:04:31.702675+00:00"
+    },
+    "725": {
+      "id": 725,
+      "from": "Improvement_2026-04-20T21-04-31-474814_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T21:04:31.702753+00:00"
+    },
+    "726": {
+      "id": 726,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T22-02-43-185272_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T22:02:43.431533+00:00"
+    },
+    "727": {
+      "id": 727,
+      "from": "Improvement_2026-04-20T22-02-43-185272_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T22:02:43.431628+00:00"
     }
   }
 }

@@ -20,7 +20,7 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 25,
+    "successes": 26,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
@@ -28,7 +28,7 @@
     "failures": 1
   },
   "hypothesis_context_compression": {
-    "successes": 13,
+    "successes": 15,
     "failures": 1
   },
   "hypothesis_session_efficiency": {
