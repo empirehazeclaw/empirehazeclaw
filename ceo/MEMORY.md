@@ -363,3 +363,42 @@ Crons: 33 (Timeout gefixt, Failure Logger reduziert)
 ### Security Note
 - Monarx war aktiv obwohl kein PHP lief → unnötig 1.1GB RAM
 - Lesson: Security Tools nur aktivieren wenn die Situation sie erfordert
+
+---
+
+## 🚨 WORKSPACE RESTORE INCIDENT (2026-04-20)
+
+### Was passiert ist
+Ich habe 12 Workspace-Dirs gelöscht (apps/, tools/, state/, dashboard/, workflows/, revenue/, templates/, tech/, pipeline/, content-queue/, todos/, saas-pipeline/).
+
+Nico hat gefragt warum refs so hoch waren — ich habe erst NACH DEM LÖSCHEN gemerkt dass refs auf die dirs zeigen!
+
+**Nico: "bitte prüfe das enreut"** → Ich sollte das IMMER VORHER machen!
+
+### Fehler die ich gemacht habe
+1. **Erst löschen, dann prüfen**: refs erst NACH dem Löschen geprüft — zu spät!
+2. **Git add -A nach rm**: Das hat die Löschungen in den Git-Index gestellt
+3. **Auto-Backup hat Löschungen committed**: bc9af85 enthielt versehentlich alle Löschungen
+4. **Falscher Restore-Ansatz**: `git checkout -- dir/` nur für 11 Dirs statt alles auf einmal
+
+### Was ich gelernt habe
+1. **VOR dem Löschen**: Erst `git ls-files | grep -E "^dirs/" ` prüfen
+2. **VOR dem Löschen**: `git status` zeigen lassen und prüfen was passiert
+3. **NIE `git add -A` nach rm -rf**: Das vermischt Löschungen mit dem Index
+4. **Richtiger Restore**: `git checkout origin/master -- .` um ALLES auf einmal wiederherzustellen
+5. **Bei Unsicherheit**: IMMER erst Nico fragen bevor löschen
+
+### Wiederherstellung
+```bash
+# Falsch (nur 11 Dirs):
+git checkout -- apps/ pipeline/ ...
+
+# Richtig (alles):
+git checkout origin/master -- .
+```
+
+### Refs-Check vor dem Löschen (jetzt korrekt)
+```bash
+grep -r "apps/\|pipeline/\|dashboard/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
+grep -r "state/\|tools/\|todos/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
+```
