@@ -239,6 +239,32 @@
         "source": "dynamic_signal",
         "script": null
       }
+    },
+    {
+      "id": "pattern_20260420_204530",
+      "title": "Review sessions, close 1 orphaned session",
+      "category": "hypothesis_session_efficiency",
+      "error_signature": [
+        "review",
+        "sessions,",
+        "close",
+        "orphaned",
+        "session"
+      ],
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "solution": "Applied improvement: Review sessions, close 1 orphaned session",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.7,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-20T20:45:30.054974",
+      "last_validated": "2026-04-20T20:45:30.054976",
+      "error_type": "session_efficiency",
+      "context": {
+        "source": "exploration",
+        "script": null
+      }
     }
   ],
   "version": 2,

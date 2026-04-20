@@ -5339,13 +5339,13 @@
         {
           "content": "Theme 'assistant' recalled 246 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:21:04.141757Z",
+          "extracted_at": "2026-04-20T20:45:50.755198Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:21:04.141759Z",
-      "last_accessed": "2026-04-20T19:21:04.141760Z",
+      "created": "2026-04-20T20:45:50.755199Z",
+      "last_accessed": "2026-04-20T20:45:50.755200Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5356,13 +5356,13 @@
         {
           "content": "Theme 'user' recalled 234 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:21:04.141763Z",
+          "extracted_at": "2026-04-20T20:45:50.755201Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:21:04.141764Z",
-      "last_accessed": "2026-04-20T19:21:04.141765Z",
+      "created": "2026-04-20T20:45:50.755202Z",
+      "last_accessed": "2026-04-20T20:45:50.755203Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5373,13 +5373,13 @@
         {
           "content": "Theme 'home/clawbot' recalled 208 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T19:21:04.141752Z",
+          "extracted_at": "2026-04-20T20:45:50.755195Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T19:21:04.141753Z",
-      "last_accessed": "2026-04-20T19:21:04.141755Z",
+      "created": "2026-04-20T20:45:50.755196Z",
+      "last_accessed": "2026-04-20T20:45:50.755196Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -7666,6 +7666,31 @@
       "last_accessed": "2026-04-20T20:45:25.435313",
       "access_count": 1,
       "decay_score": 10
+    },
+    "LearningPattern_pattern_20260420_204530": {
+      "id": "LearningPattern_pattern_20260420_204530",
+      "type": "LearningPattern",
+      "name": "pattern_20260420_204530",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "error_type": "session_efficiency",
+      "solution": "Applied improvement: Review sessions, close 1 orphaned session",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-20T20:45:30.054974",
+      "last_validated": "2026-04-20T20:45:30.054976",
+      "created_at": "2026-04-20T20:45:30.294670+00:00"
+    },
+    "Improvement_2026-04-20T20-45-30-057039_Exploration-Review-sessions,": {
+      "id": "Improvement_2026-04-20T20-45-30-057039_Exploration-Review-sessions,",
+      "type": "Improvement",
+      "name": "[Exploration] Review sessions, close 1 orphaned session",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "timestamp": "2026-04-20T20:45:30.057039",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T20:45:30.294882+00:00"
     }
   },
   "last_updated": "2026-04-20T20:45:26.143290",
@@ -45241,6 +45266,30 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-20T20:04:55.459871+00:00"
+    },
+    "719": {
+      "id": 719,
+      "from": "LearningPattern_pattern_20260420_204530",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-20T20:45:30.294854+00:00"
+    },
+    "720": {
+      "id": 720,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T20-45-30-057039_Exploration-Review-sessions,",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T20:45:30.295001+00:00"
+    },
+    "721": {
+      "id": 721,
+      "from": "Improvement_2026-04-20T20-45-30-057039_Exploration-Review-sessions,",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T20:45:30.295117+00:00"
     }
   }
 }

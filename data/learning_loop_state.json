@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 232,
-  "score": 0.7862162601626016,
+  "iteration": 233,
+  "score": 0.7669647450110865,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -254,7 +254,8 @@
     0.7655613037447989,
     0.7657638792102206,
     0.7659781649245063,
-    0.7862162601626016
+    0.7862162601626016,
+    0.7669647450110865
   ],
   "patterns": [
     {
@@ -282,10 +283,10 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 250,
+  "novelty_injections": 251,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
-  "lr_stagnation_count": 1,
+  "lr_stagnation_count": 0,
   "pattern_source": "failure",
   "last_validation": null,
   "last_decay": "2026-04-14T10:38:45.192126",
@@ -297,7 +298,7 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Break score plateau with novel approach",
+  "last_validated_pattern": "[Exploration] Review sessions, close 1 orphaned session",
   "last_forced_novelty": "2026-04-20T19:17:30.933543",
   "recently_forced_novelty": true,
   "feedback_stats": {
@@ -305,7 +306,7 @@
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-20T20:04:55.526851",
+  "last_pattern_update": "2026-04-20T20:45:30.386017",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"

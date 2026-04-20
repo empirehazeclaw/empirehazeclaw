@@ -30,5 +30,9 @@
   "hypothesis_context_compression": {
     "successes": 13,
     "failures": 1
+  },
+  "hypothesis_session_efficiency": {
+    "successes": 2,
+    "failures": 1
   }
 }

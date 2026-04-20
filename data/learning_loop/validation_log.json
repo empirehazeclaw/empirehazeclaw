@@ -1,38 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "Reduce KG orphans: add relations to disconnected entities",
-      "timestamp": "2026-04-17T20:03:06.318610",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": true,
-          "failed_crons": 0
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7696792394608473,
-      "current_score": 0.8696792394608472,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
       "improvement": "Apply proven pattern: Reduce KG orphans: add relations to disconnected e",
       "timestamp": "2026-04-17T21:03:33.925618",
       "tests": [
@@ -3254,6 +3222,38 @@
       "version": "2.0",
       "baseline_score": 0.7659781649245063,
       "current_score": 0.8659781649245063,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "[Exploration] Review sessions, close 1 orphaned session",
+      "timestamp": "2026-04-20T20:45:29.627590",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.7862162601626016,
+      "current_score": 0.8862162601626016,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,
