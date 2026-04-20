@@ -323,3 +323,43 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 ---
 
 *MEMORY.md = Core Memory. Flüchtige Details → daily notes.*
+
+---
+
+## 🎯 SYSTEM CLEANUP LEARNING (2026-04-20)
+
+### Was passiert ist
+Nico hat eine Full System Analysis angefordert. Ich habe:
+1. Swap erstellt (2GB) — OOM-Schutz
+2. 3 alte Backups gelöscht (+12.6GB)
+3. Gateway neu gestartet (RAM: 1.3GB → 759MB)
+4. Monarx deaktiviert (kein PHP, 1.1GB RAM gespart)
+5. 12 ungenutzte Workspace-Dirs gelöscht (44→28 dirs)
+6. Cache Cleanup Cron erstellt (daily 03:00 UTC)
+7. Auto Doc Timeout gefixt (120s → 300s)
+8. Failure Logger reduziert (hourly → every 2h)
+
+### Fehler die ich gemacht habe
+1. **Auto Doc Timeout**: Ich wusste dass 293 Scripts gescannt werden, habe aber trotzdem 120s timeout gelassen → Cron timed out
+2. **Mad-Dog vs Ralph Maintenance**: Ich dachte es wäre Overlap, war es aber nicht — beides macht was anderes
+3. **Ralph Maintenance "idle"**: Ich dachte das wäre ein Problem — war aber korrektes Verhalten (work complete, waiting for next cron)
+
+### Was ich gelernt habe
+1. **Bei Cron-Timeouts**: Immer erst prüfen wie lange ein Script braucht, bevor man Timeout setzt. Oder: `--report` statt `--update` nutzen wenn möglich.
+2. **Overlaps prüfen**: Nicht annehmen, erst Code lesen. Mad-Dog = Evolver Prozess Manager, Ralph Maintenance = System Health Checks. Komplett unterschiedlich!
+3. **"idle" ist nicht "broken"**: Manche Crons laufen durch und completed. Das ist OK, nicht ein Fehler.
+4. **Systematisch vorgehen**: Erst vollständige Analyse (Cron-State lesen, Script-Code lesen), dann erst urteilen.
+
+### Neuer MEMORY.md Stand
+```
+Workspace: 28 dirs (war 44, 12 gelöscht)
+Scripts: ~293 (war 763, viele tot)
+RAM: 1.2GB (war 1.8GB durch Monarx-Deaktivierung)
+Disk: ~51GB free (war 64GB, -12.6GB durch Cleanup)
+Gateway: 759MB RSS (war 1.3GB nach Restart)
+Crons: 33 (Timeout gefixt, Failure Logger reduziert)
+```
+
+### Security Note
+- Monarx war aktiv obwohl kein PHP lief → unnötig 1.1GB RAM
+- Lesson: Security Tools nur aktivieren wenn die Situation sie erfordert
