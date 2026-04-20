@@ -351,7 +351,22 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 *Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
 
 
-## 🌙 DREAMING REPORT — 2026-04-20 19:13 UTC
+## SESSION SAVE (21:04 UTC) — Before New Session
+
+### 🚀 Today's Major Achievements (2026-04-12 Evening)
+
+#### Learning Loop System (NEW!)
+- Creat...
+- **2026-04-13.md** lines 32-43 — 4 recall hits
+  → 1. Fixed CEO Weekly Review path: `scripts/weekly_review.py` → `SCRIPTS/tools/weekly_review.py`
+2. Fixed Opportunity Scanner timeout: 60s → 300s
+3. Lea...
+
+---
+*Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
+
+
+## 🌙 DREAMING REPORT — 2026-04-20 19:15 UTC
 
 ### ✅ Promotions (qualifying entries)
 
