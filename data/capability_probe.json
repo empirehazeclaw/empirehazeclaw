@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-04-20T19:15:56.800762",
+  "timestamp": "2026-04-20T19:17:30.541689",
   "kg_metrics": {
-    "entity_count": 320,
-    "relation_count": 700,
-    "orphan_count": 94,
-    "orphan_pct": 0.29375,
-    "relation_density": 2.1875,
+    "entity_count": 340,
+    "relation_count": 704,
+    "orphan_count": 112,
+    "orphan_pct": 0.32941176470588235,
+    "relation_density": 2.070588235294118,
     "type_count": 31,
     "types": [
-      "operations",
-      "category",
-      "learning",
-      "infrastructure",
-      "project",
-      "error_pattern",
-      "marketing",
-      "script",
+      "research",
+      "system",
       "kg_synthesis",
-      "sales"
+      "project",
+      "marketing",
+      "product",
+      "learning",
+      "Improvement",
+      "LearningPattern",
+      "category"
     ]
   },
   "learning_trajectory": {
-    "iteration": 226,
+    "iteration": 228,
     "score": 0.7666353077816492,
     "pattern_count": 21
   },
@@ -30,7 +30,7 @@
       "area": "kg_query",
       "success": true,
       "error": null,
-      "entity_count": 320
+      "entity_count": 340
     },
     {
       "area": "event_check",
