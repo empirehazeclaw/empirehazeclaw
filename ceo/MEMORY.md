@@ -402,3 +402,27 @@ git checkout origin/master -- .
 grep -r "apps/\|pipeline/\|dashboard/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
 grep -r "state/\|tools/\|todos/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
 ```
+
+---
+
+## 🏗️ GIT ARCHITECTURE (2026-04-20)
+
+### Single Source of Truth
+```
+workspace/ (.git → GitHub ✅)
+├── ceo/        → normal folder (kein eigenes Git)
+├── SCRIPTS/     → normal folder
+├── memory/      → normal folder
+└── ...          → alles in EINEM Git Repo
+```
+
+### Warum das wichtig ist
+- **Vorher**: ceo/ hatte eigenes .git → Separates Repo ohne Remote
+- **Problem**: Changes in ceo/ konnten verloren gehen weil sie nicht automatisch gepusht wurden
+- **Nachher**: Alles in EINEM Git Repo → Auto-Backup tracked alles korrekt
+
+### Refs-Check vor dem Löschen
+```bash
+# IMMER VORHER prüfen!
+grep -r "dir_to_delete/" --include="*.py" --include="*.sh" --include="*.md" | wc -l
+```
