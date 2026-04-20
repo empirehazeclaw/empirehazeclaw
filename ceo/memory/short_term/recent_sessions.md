@@ -20,12 +20,11 @@ _Letzte Aktualisierung: 2026-04-13_
 
 ---
 
-## 📅 2026-04-19 — Daily Sync
+## 📅 2026-04-20 — Daily Sync
 
-### 00:05 UTC
+### 06:22 UTC
 - Memory Sync durchgeführt
-- KG: 426 entities, 668 relations
-- Loop Score: 0.784
-- Unprocessed Feedback: 6
-- Issues: 65 Lost Tasks (orphans, cannot cancel)
+- KG: 515 entities, 730 relations
+- Loop Score: 0.764
+- Unprocessed Feedback: 10
 

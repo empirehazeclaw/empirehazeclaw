@@ -29,9 +29,29 @@
 {"timestamp": "2026-04-15T06:01:11.870711Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.67): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.4, "processed": true}
 {"timestamp": "2026-04-15T06:01:11.870757Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.66): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.3, "processed": true}
 {"timestamp": "2026-04-15T06:01:11.870819Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.6): memory/2026-04-15.md:278-297", "quality": 3.0, "processed": true}
-{"timestamp": "2026-04-18T06:03:16.040552Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.77): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.9, "processed": false}
-{"timestamp": "2026-04-18T06:03:16.040823Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
-{"timestamp": "2026-04-18T06:03:16.040898Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
-{"timestamp": "2026-04-18T20:06:57.659333Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.77): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.9, "processed": false}
-{"timestamp": "2026-04-18T20:06:57.659569Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
-{"timestamp": "2026-04-18T20:06:57.659630Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
+{"timestamp": "2026-04-18T06:03:16.040552Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.77): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.9, "processed": true}
+{"timestamp": "2026-04-18T06:03:16.040823Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": true}
+{"timestamp": "2026-04-18T06:03:16.040898Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": true}
+{"timestamp": "2026-04-18T20:06:57.659333Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.77): memory/ARCHIVE/2026-04-12.md:26-75", "quality": 3.9, "processed": true}
+{"timestamp": "2026-04-18T20:06:57.659569Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": true}
+{"timestamp": "2026-04-18T20:06:57.659630Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": true}
+{"timestamp": "2026-04-19T06:04:05.330726Z", "source": "rem_harness", "feedback": "REM Theme: 'achievements' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T06:04:05.330993Z", "source": "rem_harness", "feedback": "REM Theme: 'built-in' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T06:04:05.331052Z", "source": "rem_harness", "feedback": "REM Theme: 'ceo' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T06:04:05.331093Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": true}
+{"timestamp": "2026-04-19T06:04:05.331128Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": true}
+{"timestamp": "2026-04-19T08:07:33.103255Z", "source": "rem_harness", "feedback": "REM Theme: 'achievements' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T08:07:33.103464Z", "source": "rem_harness", "feedback": "REM Theme: 'built-in' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T08:07:33.103528Z", "source": "rem_harness", "feedback": "REM Theme: 'ceo' surfaced 1 times", "quality": 1.0, "processed": true}
+{"timestamp": "2026-04-19T08:07:33.103596Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": true}
+{"timestamp": "2026-04-19T08:07:33.103638Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": true}
+{"timestamp": "2026-04-19T20:04:43.283520Z", "source": "rem_harness", "feedback": "REM Theme: 'achievements' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:04:43.283801Z", "source": "rem_harness", "feedback": "REM Theme: 'built-in' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:04:43.283871Z", "source": "rem_harness", "feedback": "REM Theme: 'ceo' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:04:43.283914Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
+{"timestamp": "2026-04-19T20:04:43.283948Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
+{"timestamp": "2026-04-19T20:50:19.442084Z", "source": "rem_harness", "feedback": "REM Theme: 'achievements' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:50:19.442390Z", "source": "rem_harness", "feedback": "REM Theme: 'built-in' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:50:19.442461Z", "source": "rem_harness", "feedback": "REM Theme: 'ceo' surfaced 1 times", "quality": 1.0, "processed": false}
+{"timestamp": "2026-04-19T20:50:19.442515Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.76): memory/ARCHIVE/2026-04-12.md:1-33", "quality": 3.8, "processed": false}
+{"timestamp": "2026-04-19T20:50:19.442556Z", "source": "rem_harness", "feedback": "REM Truth (conf=0.74): memory/ARCHIVE/2026-04-13.md:32-43", "quality": 3.7, "processed": false}
