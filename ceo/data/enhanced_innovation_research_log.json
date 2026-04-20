@@ -13,8 +13,15 @@
       "sources_used": 1,
       "findings_count": 4,
       "new_entities": 4
+    },
+    {
+      "timestamp": "2026-04-19T14:00:33.072933",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
     }
   ],
-  "last_full_research": "2026-04-18T14:04:04.987007",
-  "sources_searched": 7
+  "last_full_research": "2026-04-19T14:00:33.072947",
+  "sources_searched": 13
 }

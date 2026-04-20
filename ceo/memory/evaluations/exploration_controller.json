@@ -15,20 +15,16 @@
   "strategies": {
     "strategy_a": {
       "name": "strategy_a",
-      "q_value": 0.7227574999999999,
-      "visit_count": 3,
-      "total_reward": 2.4000000000000004,
-      "last_reward": 0.8,
-      "history": [
-        0.8,
-        0.8,
-        0.8
-      ]
+      "q_value": 0.72,
+      "visit_count": 0,
+      "total_reward": 0.0,
+      "last_reward": null,
+      "history": []
     }
   },
-  "episode_count": 3,
+  "episode_count": 0,
   "total_reward": 2.4000000000000004,
-  "last_update": "2026-04-18T11:07:26.034469+00:00",
+  "last_update": "2026-04-19T08:21:21.288713+00:00",
   "stagnation_count": 0,
   "version": "1.0"
 }

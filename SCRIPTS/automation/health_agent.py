@@ -260,7 +260,7 @@ def try_heal(layer: str, issue: Dict) -> bool:
 def heal_gateway(issue: Dict) -> bool:
     """Restart gateway."""
     try:
-        subprocess.run(["openclaw", "gateway", "restart"], timeout=30)
+        subprocess.run(["/home/clawbot/.npm-global/bin/openclaw", "gateway", "restart"], timeout=30)
         log("Gateway restarted", "INFO")
         return True
     except Exception as e:
@@ -270,7 +270,7 @@ def heal_gateway(issue: Dict) -> bool:
 def heal_process(issue: Dict) -> bool:
     """Restart service."""
     try:
-        subprocess.run(["openclaw", "gateway", "restart"], timeout=30)
+        subprocess.run(["/home/clawbot/.npm-global/bin/openclaw", "gateway", "restart"], timeout=30)
         return True
     except:
         return False
@@ -292,7 +292,7 @@ def heal_memory(issue: Dict) -> bool:
 def heal_cron(issue: Dict) -> bool:
     """Restart cron."""
     try:
-        subprocess.run(["openclaw", "gateway", "restart"], timeout=30)
+        subprocess.run(["/home/clawbot/.npm-global/bin/openclaw", "gateway", "restart"], timeout=30)
         return True
     except:
         return False
@@ -331,7 +331,7 @@ def send_alert(message: str, severity: str = "WARNING"):
     # Send via openclaw if available
     try:
         subprocess.run(
-            ["openclaw", "send", "--message", f"🦞 Health Alert [{severity}]: {message}"],
+            ["/home/clawbot/.npm-global/bin/openclaw", "send", "--message", f"🦞 Health Alert [{severity}]: {message}"],
             timeout=10
         )
     except:

@@ -13,13 +13,13 @@
       ],
       "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "success_count": 134,
+      "success_count": 145,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8268926230000004,
+      "confidence": 0.905,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:38:17.781163",
-      "last_validated": "2026-04-19T02:04:25.732820",
+      "last_validated": "2026-04-20T06:10:57.296110",
       "error_type": "elevated_error_rate",
       "context": {
         "source": "cross_pattern",
@@ -41,7 +41,7 @@
       "success_count": 236,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-13T16:46:37.522401",
       "last_validated": "2026-04-14T07:38:16.832396",
@@ -50,7 +50,7 @@
         "source": "forced_novelty",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260414_074342",
@@ -65,7 +65,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T07:43:42.701457",
       "last_validated": "2026-04-14T07:43:42.701460",
@@ -74,7 +74,7 @@
         "source": "research",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260414_125308",
@@ -90,7 +90,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:53:08.664404",
       "last_validated": "2026-04-14T12:53:08.664408",
@@ -99,7 +99,7 @@
         "source": "debug",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260414_125502",
@@ -114,7 +114,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:02.790816",
       "last_validated": "2026-04-14T12:55:02.790820",
@@ -123,7 +123,7 @@
         "source": "cross_pattern",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260414_125503",
@@ -138,7 +138,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:03.870281",
       "last_validated": "2026-04-14T12:55:03.870284",
@@ -147,7 +147,7 @@
         "source": "issue",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260414_125505",
@@ -162,7 +162,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.5236364069999998,
+      "confidence": 0.4869818585099998,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-14T12:55:05.010555",
       "last_validated": "2026-04-14T12:55:05.010558",
@@ -171,7 +171,7 @@
         "source": "research",
         "script": null
       },
-      "days_since_validation": 4
+      "days_since_validation": 5
     },
     {
       "id": "pattern_20260416_155831",
@@ -189,7 +189,7 @@
       "success_count": 7,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-16T15:58:31.046647",
       "last_validated": "2026-04-16T22:03:48.693245",
@@ -198,7 +198,7 @@
         "source": "dynamic_signal",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260416_190437",
@@ -216,7 +216,7 @@
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6054299999999999,
+      "confidence": 0.5630498999999999,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-16T19:04:37.332924",
       "last_validated": "2026-04-16T19:04:37.332928",
@@ -225,7 +225,7 @@
         "source": "dynamic_signal",
         "script": null
       },
-      "days_since_validation": 2
+      "days_since_validation": 3
     },
     {
       "id": "pattern_20260417_160345",
@@ -240,13 +240,13 @@
       ],
       "description": "Reduce KG orphans: add relations to disconnected entities",
       "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
-      "success_count": 15,
+      "success_count": 22,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.74255,
+      "confidence": 0.8428189500000004,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-17T16:03:45.137210",
-      "last_validated": "2026-04-19T01:05:03.447326",
+      "last_validated": "2026-04-19T16:38:14.106382",
       "error_type": "kg_quality",
       "context": {
         "source": "dynamic_signal",
@@ -347,13 +347,13 @@
       ],
       "description": "Break score plateau with novel approach",
       "solution": "Applied improvement: Break score plateau with novel approach",
-      "success_count": 14,
+      "success_count": 21,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.95,
+      "confidence": 0.905,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-18T03:04:16.068954",
-      "last_validated": "2026-04-19T03:05:11.593933",
+      "last_validated": "2026-04-19T20:05:59.832836",
       "error_type": "loop_optimization",
       "context": {
         "source": "dynamic_signal",

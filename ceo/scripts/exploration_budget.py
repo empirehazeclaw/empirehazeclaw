@@ -209,6 +209,8 @@ def show_status():
     
     expl_rate = expl_success / max(expl, 1) if expl > 0 else 0
     exploit_rate = exploit_success / max(exploit, 1) if exploit > 0 else 0
+    expl_pct = expl/total*100 if total > 0 else 0.0
+    exploit_pct = exploit/total*100 if total > 0 else 0.0
     
     print(f"""
 📊 Exploration Budget Status
@@ -221,8 +223,8 @@ Config:
 
 Current Period (started {period['start'][:16]}):
   Total Runs:        {total}
-  Exploration Runs:  {expl} ({expl/total*100:.1f}% if total > 0 else 0.0%)
-  Exploitation Runs: {exploit} ({exploit/total*100:.1f}% if total > 0 else 0.0%)
+  Exploration Runs:  {expl} ({expl_pct:.1f}%)
+  Exploitation Runs: {exploit} ({exploit_pct:.1f}%)
   Exploration Success Rate: {expl_rate:.1%}
   Exploitation Success Rate: {exploit_rate:.1%}
   Experimental Strategies: {', '.join(period['experimental_strategies']) or 'none'}
@@ -317,7 +319,7 @@ def main():
     parser = argparse.ArgumentParser(description="Exploration Budget Manager")
     parser.add_argument("--status", action="store_true", help="Show current budget status")
     parser.add_argument("--should-explore", action="store_true", help="Check if should explore")
-    parser.add_argument("--log-run", metavar=("TYPE", "STRATEGY"), nargs=2, help="Log a run")
+    parser.add_argument("--log-run", metavar=("TYPE", "STRATEGY", "SUCCESS"), nargs=3, help="Log a run (type=exploration|exploitation, strategy=name, success=true|false)")
     parser.add_argument("--log-success", metavar=("TYPE"), help="Log success for last run")
     parser.add_argument("--report", action="store_true", help="Generate exploration report")
     parser.add_argument("--reset", action="store_true", help="Reset budget")
@@ -333,12 +335,14 @@ def main():
     
     if args.should_explore:
         result = should_explore()
+        print(f"should_explore: {result['should_explore']}")
         print(f"\n{'🔬 EXPLORE' if result['should_explore'] else '⚡ EXPLOIT'}")
         print(f"   Exploration Rate: {result['exploration_rate']:.1%}")
         print(f"   Period Runs: {result['total_runs']} ({result['exploration_runs']} exploration)")
     
     if args.log_run:
-        log_run(args.log_run[0], args.log_run[1])
+        success = args.log_run[2].lower() == "true" if len(args.log_run) > 2 else False
+        log_run(args.log_run[0], args.log_run[1], success)
     
     if args.report:
         generate_report()

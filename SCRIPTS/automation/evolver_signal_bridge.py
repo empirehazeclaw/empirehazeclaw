@@ -28,6 +28,61 @@ WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
 EVENT_BUS = WORKSPACE / "data/events/events.jsonl"
 STATE_FILE = WORKSPACE / "data/learning_loop/kg_sync_state.json"
+EVOLVER_STATE = WORKSPACE / "skills/capability-evolver/memory/evolution/evolution_solidify_state.json"
+GENE_HISTORY = WORKSPACE / "data/evolver_gene_history.json"
+
+# Gene cooldown config
+GENE_COOLDOWN_RUNS = 3  # If gene selected in last 3 runs, skip it
+GENE_HISTORY_SIZE = 5   # Track last 5 gene selections
+
+def get_recent_genes_from_state() -> list:
+    """Get recently selected genes from authoritative evolver state file."""
+    genes = []
+    if EVOLVER_STATE.exists():
+        try:
+            with open(EVOLVER_STATE) as f:
+                state = json.load(f)
+            last_run = state.get("last_run", {})
+            gene = last_run.get("selected_gene_id", "unknown")
+            if gene and gene != "unknown":
+                genes.append(gene)
+        except:
+            pass
+    return genes
+
+def load_gene_history() -> list:
+    """Load gene selection history."""
+    history = []
+    if GENE_HISTORY.exists():
+        try:
+            with open(GENE_HISTORY) as f:
+                data = json.load(f)
+            history = data.get("recent_genes", [])
+        except:
+            pass
+    return history
+
+def save_gene_selection(gene_id: str):
+    """Save gene selection to history for cooldown tracking."""
+    if not gene_id or gene_id == "unknown":
+        return
+    
+    history = load_gene_history()
+    history.insert(0, gene_id)
+    history = history[:GENE_HISTORY_SIZE]
+    
+    with open(GENE_HISTORY, 'w') as f:
+        json.dump({
+            "recent_genes": history,
+            "last_updated": datetime.now().isoformat()
+        }, f, indent=2)
+
+def get_genes_on_cooldown() -> set:
+    """Get set of genes that are on cooldown (selected recently)."""
+    history = load_gene_history()
+    # If gene appears in last GENE_COOLDOWN_RUNS, it's on cooldown
+    cooldown_genes = set(history[:GENE_COOLDOWN_RUNS])
+    return cooldown_genes
 
 def get_recent_events(minutes: int = 240) -> list:
     since = datetime.now() - timedelta(minutes=minutes)
@@ -83,20 +138,39 @@ def analyze_stagnation() -> dict:
     signals = []
     recommendations = []
     
-    # Check Evolver stagnation
-    evolver_events = [e for e in events if e.get("source") == "capability_evolver"]
-    gene_counts = Counter()
-    for evt in evolver_events:
-        data = evt.get("data", {})
-        gene = data.get("gene", data.get("selected_gene", "unknown"))
-        gene_counts[gene] += 1
-    
-    if gene_counts:
+    # Check Evolver stagnation - use authoritative state file
+    genes_from_state = get_recent_genes_from_state()
+    if genes_from_state:
+        # Count occurrences (would be 1 if we only track latest)
+        gene_counts = Counter(genes_from_state)
         most_common_gene = gene_counts.most_common(1)[0]
         if most_common_gene[1] >= 3:
             signals.append("evolution_stagnation_detected")
             signals.append(f"gene_{most_common_gene[0]}_repeated_{most_common_gene[1]}x")
             recommendations.append(f"Switch from {most_common_gene[0]} to gene_gep_repair_from_errors")
+    else:
+        # Fallback to event bus for backward compatibility
+        evolver_events = [e for e in events if e.get("source") == "capability_evolver"]
+        gene_counts = Counter()
+        for evt in evolver_events:
+            data = evt.get("data", {})
+            gene = data.get("gene", data.get("selected_gene", "unknown"))
+            # Filter out buggy "unknown" entries
+            if gene != "unknown":
+                gene_counts[gene] += 1
+        if gene_counts:
+            most_common_gene = gene_counts.most_common(1)[0]
+            if most_common_gene[1] >= 3:
+                signals.append("evolution_stagnation_detected")
+                signals.append(f"gene_{most_common_gene[0]}_repeated_{most_common_gene[1]}x")
+                recommendations.append(f"Switch from {most_common_gene[0]} to gene_gep_repair_from_errors")
+    
+    # Gene diversity enforcement (cooldown logic)
+    cooldown_genes = get_genes_on_cooldown()
+    if cooldown_genes:
+        signals.append("gene_diversity_enforced")
+        signals.append(f"cooldown_genes: {','.join(cooldown_genes)}")
+        recommendations.append(f"Genes on cooldown (skip these): {', '.join(cooldown_genes)}")
     
     # Check KG stagnation (not growing)
     kg_events = [e for e in events if e.get("type") == "kg_update"]
@@ -119,9 +193,75 @@ def analyze_stagnation() -> dict:
         signals.append("perf_bottleneck")
         recommendations.append("Learning Loop score low - investigate")
     
-    # If KG has new types, signal capability_gap
+    # If KG has new types, signal capability_gap (weak signal - use as fallback only)
     if "LearningPattern" in kg.get("types", []) and "Improvement" in kg.get("types", []):
         signals.append("capability_gap")  # Fresh data available
+    
+    # === SMARTER FALLBACK: If no strong stagnation signals, use state-based fallbacks ===
+    # capability_gap is weak - fallback runs when it's the only/primary signal
+    stagnation_signals = [s for s in signals if s not in ["capability_gap", "gene_diversity_enforced"]]
+    if not stagnation_signals:
+        print("   [FALLBACK] No stagnation signals - using state-based fallbacks")
+        
+        # Get enriched KG state for orphan detection
+        try:
+            with open(KG_PATH) as f:
+                kg_full = json.load(f)
+            kg_ents = kg_full.get("entities", {})
+            kg_rels = kg_full.get("relations", {})
+            
+            # Proper orphan detection (Top-Level relations format)
+            linked = set()
+            for r in kg_rels.values() if isinstance(kg_rels, dict) else []:
+                if isinstance(r, dict):
+                    linked.add(r.get("from"))
+                    linked.add(r.get("to"))
+            
+            orphan_count = len(set(kg_ents.keys()) - linked) if isinstance(kg_ents, dict) else 0
+            orphan_pct = orphan_count / len(kg_ents) if isinstance(kg_ents, dict) and len(kg_ents) > 0 else 0
+            
+            if orphan_pct > 0.35:
+                signals.append("kg_relation_reconstruction")
+                recommendations.append(f"KG orphan rate {orphan_pct:.1%} exceeds 35% - need relation reconstruction")
+            
+            # Get learning state for stagnation count
+            lr_state_file = WORKSPACE / "data/learning_loop_state.json"
+            if lr_state_file.exists():
+                with open(lr_state_file) as f:
+                    lr_state = json.load(f)
+                
+                stagnation_count = lr_state.get("lr_stagnation_count", 0)
+                lr = lr_state.get("learning_rate", 0.1)
+                score = lr_state.get("score", 0.5)
+                score_history = lr_state.get("score_history", [])
+                
+                if stagnation_count >= 2:
+                    signals.append("learning_lr_reduction")
+                    recommendations.append(f"Learning stagnating ({stagnation_count}x), LR {lr:.3f} should be reduced")
+                
+                if len(score_history) >= 10:
+                    recent_range = max(score_history[-10:]) - min(score_history[-10:])
+                    if recent_range < 0.015:
+                        signals.append("learning_plateau_escape")
+                        recommendations.append(f"Score plateau detected (range={recent_range:.4f})")
+                
+                if score < 0.6:
+                    signals.append("learning_low_performance")
+                    recommendations.append(f"Learning score {score:.3f} below threshold - needs intervention")
+        except Exception as e:
+            print(f"   [FALLBACK ERROR] {e}")
+        
+        # Event diversity check
+        event_types = set(e.get("type") for e in events)
+        if len(event_types) < 5:
+            signals.append("event_type_injection")
+            recommendations.append(f"Low event diversity ({len(event_types)} types) - need more event sources")
+        
+        # If still no actionable signals, emit system diagnostic
+        actionable = [s for s in signals if s not in ["capability_gap", "event_type_injection"]]
+        if not actionable:
+            signals.append("system_diagnostic_probe")
+            recommendations.append("All metrics green - running capability probe for hidden opportunities")
     
     return {
         "signals": signals,
@@ -129,6 +269,7 @@ def analyze_stagnation() -> dict:
         "kg_state": kg,
         "learning_state": learning,
         "event_count": len(events),
+        "gene_cooldown": list(cooldown_genes),
     }
 
 def run_evolver_with_signals():
@@ -188,9 +329,13 @@ def post_evolver_results():
     with open(evolver_state) as f:
         state = json.load(f)
     
+    # Save gene to history for cooldown tracking
+    gene_id = state.get("selected_gene_id", "unknown")
+    save_gene_selection(gene_id)
+    
     # Publish to event bus
     data = {
-        "gene": state.get("gene_id", "unknown"),
+        "gene": gene_id,
         "outcome": state.get("outcome", {}).get("status", "unknown"),
         "score": state.get("outcome", {}).get("score", 0),
         "files_changed": state.get("execution_trace", {}).get("files_changed_count", 0),

@@ -25,7 +25,7 @@ except ImportError:
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 HEARTBEAT_PATH = WORKSPACE / "ceo" / "HEARTBEAT.md"
-MEMORY_DIR = WORKSPACE / "memory"
+MEMORY_DIR = WORKSPACE / "ceo/memory"
 STATE_FILE = WORKSPACE / "data" / "heartbeat_state.json"
 
 def get_gateway_status_fast():
@@ -122,7 +122,7 @@ def update_heartbeat():
 | Session Cleanup | ✅ DAILY | Cron daily |
 
 ## 📊 Quick Metrics
-- Memory: `/workspace/memory/`
+- Memory: `/workspace/ceo/memory/`
 - Scripts: `/workspace/scripts/` ({scripts} active)
 - KG Entities: ~{kg}
 

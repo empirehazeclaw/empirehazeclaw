@@ -33,23 +33,39 @@ GENE_STRATEGIES = {
 }
 
 def get_recent_genes(count: int = 10) -> list:
-    """Get recently selected genes from event bus."""
+    """Get recently selected genes from event bus + state file."""
     genes = []
-    if not EVENTS_FILE.exists():
-        return genes
     
-    cutoff = datetime.now().timestamp() - (7 * 24 * 3600)  # Last 7 days
-    with open(EVENTS_FILE) as f:
-        for line in f:
-            try:
-                evt = json.loads(line.strip())
-                ts = datetime.fromisoformat(evt["timestamp"]).timestamp()
-                if ts < cutoff:
-                    continue
-                if evt.get("type") in ["evolver_completed", "gene_selected"]:
-                    genes.append(evt.get("data", {}).get("gene", "unknown"))
-            except:
-                pass
+    # Primary: read from evolver state file (authoritative)
+    if EVOLVER_STATE.exists():
+        try:
+            with open(EVOLVER_STATE) as f:
+                state = json.load(f)
+            last_run = state.get("last_run", {})
+            gene = last_run.get("selected_gene_id", "unknown")
+            if gene != "unknown":
+                genes.append(gene)
+        except:
+            pass
+    
+    # Fallback: read from event bus (may have stale "unknown" entries)
+    if not genes and EVENTS_FILE.exists():
+        cutoff = datetime.now().timestamp() - (7 * 24 * 3600)  # Last 7 days
+        with open(EVENTS_FILE) as f:
+            for line in f:
+                try:
+                    evt = json.loads(line.strip())
+                    ts = datetime.fromisoformat(evt["timestamp"]).timestamp()
+                    if ts < cutoff:
+                        continue
+                    if evt.get("type") in ["evolver_completed", "gene_selected"]:
+                        gene = evt.get("data", {}).get("gene", "unknown")
+                        # Filter out "unknown" from old buggy events
+                        if gene != "unknown":
+                            genes.append(gene)
+                except:
+                    pass
+    
     return genes
 
 def check_stagnation() -> dict:

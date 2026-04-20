@@ -120,7 +120,7 @@ class EvolverMetaBridge:
         cross_task = [p for p in self.patterns if p.get('cross_task_valid', False)]
         if cross_task:
             signal = {
-                'signal_id': f'evolver_signal_{datetime.now().strftime(\"%Y%m%d_%H%M%S\")}',
+                'signal_id': f"evolver_signal_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                 'timestamp': datetime.now().isoformat(),
                 'type': 'meta_pattern_guidance',
                 'source': 'meta_learning_bridge',
@@ -140,7 +140,7 @@ class EvolverMetaBridge:
         low_weights = [(k, v) for k, v in self.weights.items() if v < 0.8]
         if low_weights:
             signal = {
-                'signal_id': f'evolver_signal_{datetime.now().strftime(\"%Y%m%d_%H%M%S\")}',
+                'signal_id': f"evolver_signal_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                 'timestamp': datetime.now().isoformat(),
                 'type': 'weight_optimization',
                 'source': 'meta_learning_bridge',
@@ -159,7 +159,7 @@ class EvolverMetaBridge:
         high_success = [p for p in self.patterns if p.get('success_rate', 0) >= 1.0]
         if high_success:
             signal = {
-                'signal_id': f'evolver_signal_{datetime.now().strftime(\"%Y%m%d_%H%M%S\")}',
+                'signal_id': f"evolver_signal_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
                 'timestamp': datetime.now().isoformat(),
                 'type': 'success_replication',
                 'source': 'meta_learning_bridge',

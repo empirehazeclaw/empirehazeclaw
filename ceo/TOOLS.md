@@ -98,3 +98,78 @@ bash /workspace/scripts/run_smart_evolver.sh            # Smart Evolver
 | `evolver_signal_bridge.py` | Feed signals to Evolver |
 | `evolver_stagnation_breaker.py` | Force gene diversity |
 | `integration_dashboard.py` | Unified monitoring |
+
+---
+
+## 🎯 Obsidian Integration (2026-04-19)
+
+### Vault Setup
+```
+Vault Path: /home/clawbot/obsidian-vault/
+CLI Tool:   notesmd (v0.3.5) → ~/.local/bin/notesmd
+Config:     ~/.config/obsidian/obsidian.json
+```
+
+### Vault Structure
+```
+obsidian-vault/
+├── README.md           # Index + navigation
+├── daily/              # Daily notes (TEMPLATE.md + 2026-04-19.md)
+├── notes/              # Core notes (MEMORY.md, USER.md)
+├── tasks/              # Tasks & projects
+├── system/             # System documentation
+├── sync.sh             # Git commit + push
+└── export_memory.sh    # Auto-export from MEMORY.md
+```
+
+### Sync Mechanism
+```bash
+# Manual sync
+bash /home/clawbot/obsidian-vault/sync.sh
+
+# Auto-export memory → vault (hourly via cron)
+bash /home/clawbot/obsidian-vault/export_memory.sh
+```
+
+### For Nico (Tomorrow)
+1. Install Obsidian from https://obsidian.md
+2. Clone vault: `git clone https://github.com/empirehazeclaw/obsidian-vault.git`
+3. Open vault in Obsidian
+4. Install Excalidraw plugin in Obsidian (community plugins)
+5. Done — all notes sync automatically via git hook
+
+---
+
+## 🎨 Excalidraw Integration (2026-04-19)
+
+### CLI Tool
+```bash
+excalidraw-cli --help        # Commands: create, export, reference, checkpoint
+excalidraw-cli reference     # Show element format reference
+```
+
+### Generate Diagrams
+```bash
+# Create from JSON
+excalidraw-cli create --json '[{"type":"rectangle","x":100,"y":100,"width":200,"height":100}]' output.excalidraw
+
+# Auto-generate architecture diagram
+/home/clawbot/obsidian-vault/diagrams/generate_architecture.sh
+```
+
+### Stored Diagrams
+```
+obsidian-vault/diagrams/
+├── sir-hazeclaw-architecture.excalidraw  # System architecture
+├── generate_architecture.sh              # Auto-generate script
+└── architecture.excalidraw.json          # Backup JSON
+```
+
+### Excalidraw Element Colors
+| Color | Hex | Use |
+|-------|-----|-----|
+| Blue | `#a5d8ff` | Primary / CEO |
+| Green | `#b2f2bb` | Success / Agents |
+| Orange | `#ffd8a8` | Warning / Learning |
+| Purple | `#d0bfff` | Processing / KG |
+| Teal | `#c3fae8` | Data / Event Bus |

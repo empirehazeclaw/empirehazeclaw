@@ -130,6 +130,66 @@
       "resolution": null,
       "related_learning": null,
       "status": "open"
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-04-19T07:35:27.061492+00:00",
+      "description": "LiteLLM MiniMax 404 errors at 07:25 UTC \u2014 api.minimax.io/v1/messages returning 404 Not Found (2 occurrences)",
+      "severity": "high",
+      "cause": "timeout",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-04-19T07:35:31.119314+00:00",
+      "description": "LiteLLM auth error: No api key passed in (07:24:51 UTC)",
+      "severity": "medium",
+      "cause": "dependency_missing",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-04-19T12:34:46.667772+00:00",
+      "description": "Prompt Benchmark Weekly cron failed at 2026-04-19 12:05 UTC",
+      "severity": "medium",
+      "cause": "timeout",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-04-19T14:35:17.341561+00:00",
+      "description": "Gateway restart fails: 'openclaw' command not found. health_agent.py tries 'openclaw gateway restart' but binary not in PATH or needs sudo",
+      "severity": "high",
+      "cause": "dependency_missing",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
+    },
+    {
+      "id": 14,
+      "timestamp": "2026-04-19T14:35:17.361159+00:00",
+      "description": "kg_sync consistently FAILED in learning_core.log across multiple runs (Apr 18). Pattern: loop=OK, sync=OK, kg_sync=FAILED",
+      "severity": "high",
+      "cause": "design_gap",
+      "tags": [],
+      "context": {},
+      "resolution": null,
+      "related_learning": null,
+      "status": "open"
     }
   ],
   "version": "1.0"

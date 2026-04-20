@@ -51,7 +51,7 @@ def check_cron():
     """Prüfe Cron Jobs"""
     try:
         result = subprocess.run(
-            ["openclaw", "cron", "status"],
+            ["/home/clawbot/.npm-global/bin/openclaw", "cron", "status"],
             capture_output=True, timeout=10
         )
         return "error" not in result.stdout.lower()

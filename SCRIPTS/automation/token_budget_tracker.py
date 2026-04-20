@@ -21,7 +21,7 @@ ALERT_THRESHOLD = 0.80  # 80% = Alert
 CRITICAL_THRESHOLD = 0.95  # 95% = Disable non-critical crons
 
 # State file
-STATE_FILE = Path("/home/clawbot/.openclaw/workspace/memory/token_budget.json")
+STATE_FILE = Path("/home/clawbot/.openclaw/workspace/ceo/memory/token_budget.json")
 
 # Non-critical crons (can be disabled if budget critical)
 NON_CRITICAL_CRONS = [

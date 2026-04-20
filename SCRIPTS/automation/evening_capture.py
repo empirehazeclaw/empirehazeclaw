@@ -7,7 +7,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-NOTES_DIR = Path("/home/clawbot/.openclaw/workspace/memory/notes/fleeting")
+NOTES_DIR = Path("/home/clawbot/.openclaw/workspace/ceo/memory/episodes")
 TEMPLATE = """---
 title: "{title}"
 created: {date}

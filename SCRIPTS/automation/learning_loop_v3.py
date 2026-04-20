@@ -97,6 +97,36 @@ def clean_improvements_log_patch():
         print(f"   🧹 Cleaned {removed} noise entries from improvements log")
     return removed
 
+# ============ EXPLORATION BUDGET INTEGRATION ============
+EXPLORATION_SCRIPT = Path("/home/clawbot/.openclaw/workspace/ceo/scripts/exploration_budget.py")
+
+def should_explore() -> dict:
+    """Check if next run should be exploration or exploitation."""
+    try:
+        result = subprocess.run(
+            ["python3", str(EXPLORATION_SCRIPT), "--should-explore"],
+            capture_output=True, text=True, timeout=10
+        )
+        if result.returncode == 0 and "should_explore" in result.stdout:
+            # Parse output to determine decision
+            should_exp = "should_explore: True" in result.stdout
+            return {"explore": should_exp, "source": "exploration_budget"}
+        return {"explore": False, "source": "fallback"}
+    except Exception as e:
+        return {"explore": False, "source": f"error: {e}"}
+
+def log_exploration_run(run_type: str, success: bool, strategy: str = "learning_loop_v3"):
+    """Log an exploration or exploitation run to the budget."""
+    if run_type not in ["exploration", "exploitation"]:
+        return
+    try:
+        subprocess.run(
+            ["python3", str(EXPLORATION_SCRIPT), "--log-run", run_type, strategy, str(success).lower()],
+            capture_output=True, timeout=10
+        )
+    except:
+        pass
+
 # ============ STATE MANAGEMENT ============
 
 # ============ STATE MANAGEMENT ============
@@ -116,6 +146,9 @@ def load_state():
         "feedback_processed": 0,
         "novelty_injections": 0,  # NEW: Phase 0 fix
         "consecutive_failures": 0,  # NEW: Phase 2 - rollback tracking
+        "learning_rate": 0.1,  # NEW: Plateau Fix - adaptive LR
+        "lr_stagnation_count": 0,  # NEW: Count consecutive plateau runs
+        "pattern_source": "task",  # NEW: Rotation: task|failure|success|capability
         "last_validation": None,
         "last_decay": None,
         "created": datetime.now().isoformat()
@@ -787,12 +820,17 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
         why_ineffective = f"Error delta={error_delta:+.2f}% exceeded threshold" if error_delta > ERROR_DELTA_THRESHOLD else f"Validation tests failed: {passed_tests}/{total_tests}"
         add_to_idea_bank(imp_title, error_info, why_ineffective)
 
-    # Update score based on validation (with damping)
+    # Update score based on validation (with damping, scaled by learning_rate)
     if score_delta != 0:
-        new_score = baseline_score + (score_delta * 0.3)  # Dampen
+        learning_rate = state.get("learning_rate", 0.1)
+        # Scale factor: default 0.3 at LR=0.1, lower LR = smaller adjustments
+        dampening = learning_rate * 3
+        new_score = baseline_score + (score_delta * dampening)
         state["score"] = max(0.0, min(0.95, new_score))
         state["score_history"].append(state["score"])
         state["score_history"] = state["score_history"][-50:]
+        if learning_rate < 0.08:
+            print(f"   📊 SCORE UPDATE: {baseline_score:.3f} → {state['score']:.3f} (LR={learning_rate:.3f}, damp={dampening:.2f})")
 
     # === Thompson Sampling: Update ONLY on successful validation ===
     # (Failures don't teach us which is best - just which isn't)
@@ -899,16 +937,45 @@ def calculate_loop_score() -> float:
 
     # PLATEAU DETECTION: If score hasn't improved in 10 runs, boost exploration
     score_history = state.get("score_history", [])
+    learning_rate = state.get("learning_rate", 0.1)
+    lr_stagnation_count = state.get("lr_stagnation_count", 0)
+    pattern_source = state.get("pattern_source", "task")
+    
     if len(score_history) >= 10:
         recent_scores = score_history[-10:]
         max_recent = max(recent_scores)
         min_recent = min(recent_scores)
         recent_range = max_recent - min_recent
 
-        if recent_range < 0.015:  # Plateau detected (less than 1.5% variation)
-            # Boost novelty to escape plateau (learning rate adjustment)
+        if recent_range < 0.010:  # Plateau detected (less than 1.0% variation - AGGRESSIVE)
+            lr_stagnation_count += 1
+            
+            # ADAPTIVE LR REDUCTION: If plateau for 2+ consecutive checks, reduce LR by 30%
+            if lr_stagnation_count >= 2:
+                old_lr = learning_rate
+                learning_rate = max(learning_rate * 0.7, 0.005)  # Floor at 0.005 - AGGRESSIVE
+                lr_stagnation_count = 0  # Reset after adjustment
+                print(f"   📉 ADAPTIVE LR: Reduced from {old_lr:.3f} to {learning_rate:.3f}")
+            
+            # Boost novelty to escape plateau
             novelty_factor = min(novelty_factor * 1.5, 0.7)
             print(f"   📈 PLATEAU ESCAPE: Boosting novelty to {novelty_factor:.2f} (range={recent_range:.3f})")
+            
+            # PATTERN SOURCE ROTATION: Switch to different domain
+            source_rotation = {"task": "failure", "failure": "success", "success": "capability", "capability": "task"}
+            pattern_source = source_rotation.get(pattern_source, "task")
+            print(f"   🔄 PATTERN SOURCE: Rotated to '{pattern_source}' domain")
+        else:
+            # Reset stagnation count when there's meaningful variation
+            if lr_stagnation_count > 0:
+                lr_stagnation_count = max(0, lr_stagnation_count - 1)
+    else:
+        lr_stagnation_count = 0
+
+    # Store updated values in state for next run
+    state["learning_rate"] = learning_rate
+    state["lr_stagnation_count"] = lr_stagnation_count
+    state["pattern_source"] = pattern_source
 
     # === PHASE 0 FIX: Pattern Quality ===
     # Based on pattern confidence and decay
@@ -933,8 +1000,16 @@ def calculate_loop_score() -> float:
     )
 
     # Cap at 0.95 to prevent infinity
-    return min(0.95, max(0.0, score))
-
+    final_score = min(0.95, max(0.0, score))
+    
+    # Return score AND the plateau detection values for run_full_cycle to save
+    plateau_info = {
+        "learning_rate": state["learning_rate"],
+        "lr_stagnation_count": state["lr_stagnation_count"],
+        "pattern_source": state["pattern_source"]
+    }
+    
+    return final_score, plateau_info
 
 
 # ============ PHASE 3: CROSS-PATTERN SOLUTION REPOSITORY ============
@@ -1547,6 +1622,11 @@ def run_full_cycle():
     print(f"   Detected {len(gate_issues)} issues")
     print()
 
+    # EXPLORATION: Decide if this run is exploration or exploitation
+    exploration_decision = should_explore()
+    run_type = "exploration" if exploration_decision.get("explore") else "exploitation"
+    print(f"[EXPLORATION] Decision: {run_type} ({exploration_decision.get('source', 'unknown')})")
+
     # PHASE 4: Improvement Selection + Local Optimum Detection
     print("=" * 60)
     print("🚀 PHASE 4: Improvement Selection")
@@ -1657,9 +1737,11 @@ def run_full_cycle():
     # IMPORTANT: Don't reload state here - use the state that was modified by validation_gate
     # to preserve validation_successes and cross_pattern_hits
     state_to_use = state  # Use the state object from run_full_cycle scope
-    final_score = calculate_loop_score()
+    final_score, plateau_info = calculate_loop_score()
     state_to_use["score"] = final_score
     state_to_use["score_history"].append(final_score)
+    # Apply plateau detection values (learning_rate, lr_stagnation_count, pattern_source)
+    state_to_use.update(plateau_info)
     save_state(state_to_use)
 
     duration = (datetime.now() - start_time).total_seconds()
@@ -1678,7 +1760,136 @@ def run_full_cycle():
     print(f"   Cross-pattern hits: {state['cross_pattern_hits']}")
     print("=" * 60)
 
+    # EXPLORATION: Log this run
+    success = state.get('validation_successes', 0) > 0 if state.get('validation_failures', 0) > 0 or state.get('validation_successes', 0) > 0 else False
+    if state.get('validation_failures', 0) > 0:
+        success = state.get('validation_successes', 0) > 0
+    elif state.get('validation_successes', 0) == 0 and state.get('validation_failures', 0) == 0:
+        success = True  # No validations ran = consider neutral as success
+    else:
+        success = state.get('validation_successes', 0) > 0
+    
+    log_exploration_run(run_type, success, "learning_loop_v3")
+    print(f"[EXPLORATION] Logged: {run_type}, success={success}")
+
+    # === EVENT BUS DIVERSIFICATION: Emit rich events for Evolver ===
+    try:
+        emit_learning_cycle_events(iteration, final_score, state_to_use, issues, gate_issues, duration, len(hypotheses))
+    except Exception as e:
+        print(f"   ⚠️ Event emission failed: {e}")
+
     return True
+
+
+def emit_learning_cycle_events(iteration, final_score, state, issues, gate_issues, duration, hypotheses_count=0):
+    """Emit diverse events to Event Bus for Evolver signal generation."""
+    import uuid
+    
+    EVENT_BUS = SCRIPTS_DIR / "event_bus.py"
+    
+    # 1. Loop Score Event
+    score_delta = 0
+    if len(state.get('score_history', [])) >= 2:
+        score_delta = final_score - state['score_history'][-2]
+    
+    score_event = {
+        "type": "learning_score_update",
+        "source": "learning_loop",
+        "severity": "info",
+        "data": {
+            "iteration": iteration,
+            "score": round(final_score, 4),
+            "score_delta": round(score_delta, 4),
+            "learning_rate": state.get('learning_rate', 0.1),
+            "lr_stagnation_count": state.get('lr_stagnation_count', 0),
+            "pattern_source": state.get('pattern_source', 'unknown'),
+            "validation_success_rate": state.get('validation_successes', 0) / max(1, state.get('validation_successes', 0) + state.get('validation_failures', 0))
+        }
+    }
+    
+    # 2. Issues Found Event
+    if issues or gate_issues:
+        issue_event = {
+            "type": "learning_issues_detected",
+            "source": "learning_loop",
+            "severity": "warning" if len(issues) < 3 else "error",
+            "data": {
+                "issue_count": len(issues) + len(gate_issues),
+                "issue_types": list(set(i.get('type', 'unknown') for i in issues + gate_issues)),
+                "hypotheses_generated": hypotheses_count
+            }
+        }
+    
+    # 3. Pattern Discovery Event
+    patterns_data = load_patterns()
+    pattern_count = len(patterns_data.get('patterns', []))
+    if pattern_count > 0:
+        pattern_event = {
+            "type": "learning_patterns_update",
+            "source": "learning_loop",
+            "severity": "info",
+            "data": {
+                "total_patterns": pattern_count,
+                "cross_pattern_hits": state.get('cross_pattern_hits', 0),
+                "iteration": iteration
+            }
+        }
+    
+    # 4. Plateau Detection Event
+    score_history = state.get('score_history', [])
+    if len(score_history) >= 10:
+        recent_range = max(score_history[-10:]) - min(score_history[-10:])
+        if recent_range < 0.010:  # AGGRESSIVE: trigger at 1.0% range
+            plateau_event = {
+                "type": "learning_plateau_detected",
+                "source": "learning_loop",
+                "severity": "warning",
+                "data": {
+                    "score_range": round(recent_range, 4),
+                    "score": round(final_score, 4),
+                    "lr_stagnation_count": state.get('lr_stagnation_count', 0),
+                    "learning_rate": state.get('learning_rate', 0.1)
+                }
+            }
+    
+    # 5. Cycle Completion Event (always emit)
+    completion_event = {
+        "type": "learning_cycle_completed",
+        "source": "learning_loop",
+        "severity": "info",
+        "data": {
+            "iteration": iteration,
+            "duration_seconds": round(duration, 1),
+            "feedback_processed": state.get('feedback_processed', 0),
+            "score": round(final_score, 4),
+            "validation_successes": state.get('validation_successes', 0),
+            "validation_failures": state.get('validation_failures', 0)
+        }
+    }
+    
+    # Emit all events via event_bus.py
+    events_to_emit = [score_event, completion_event]
+    if issues or gate_issues:
+        events_to_emit.append(issue_event)
+    if pattern_count > 0:
+        events_to_emit.append(pattern_event)
+    if len(score_history) >= 10 and recent_range < 0.010:
+        events_to_emit.append(plateau_event)
+    
+    for evt in events_to_emit:
+        try:
+            result = subprocess.run(
+                ['python3', str(EVENT_BUS), 'publish',
+                 '--type', evt['type'],
+                 '--source', evt['source'],
+                 '--severity', evt.get('severity', 'info'),
+                 '--data', json.dumps(evt['data'])],
+                capture_output=True, text=True, timeout=5
+            )
+            if result.returncode == 0:
+                print(f"   📡 Event emitted: {evt['type']}")
+        except Exception as e:
+            print(f"   ⚠️ Failed to emit {evt['type']}: {e}")
 
 def run_system_check() -> List[Dict]:
     """Run system health check."""

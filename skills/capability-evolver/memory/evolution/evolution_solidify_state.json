@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776571387643",
-    "created_at": "2026-04-19T04:03:07.654Z",
+    "run_id": "run_1776629197818",
+    "created_at": "2026-04-19T20:06:37.832Z",
     "parent_event_id": "evt_1776457231893",
     "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
@@ -22,7 +22,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776571387642",
+      "id": "mut_1776629197817",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -33,7 +33,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776571387642",
+    "mutation_id": "mut_1776629197817",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -65,15 +65,15 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "6bd7af136bd5d7a0e3d15b0c6f70b7eeb71d69c5",
+    "baseline_git_head": "29a1ab5b0b12f580e359b3aecee945d1b4b0f339",
     "blast_radius_estimate": {
       "files": 6,
       "lines": 480
     },
     "strategy_policy": {
-      "name": "repair",
-      "label": "Balanced",
-      "description": "Normal operation. Steady growth with stability.",
+      "name": "innovate",
+      "label": "Innovation Focus",
+      "description": "System is stable. Maximize new features and capabilities.",
       "forceInnovate": true,
       "cautiousExecution": true,
       "highRiskGene": true,
@@ -81,7 +81,7 @@
       "failureStreak": 0,
       "blastRadiusMaxFiles": 6,
       "directives": [
-        "Base strategy: Balanced (Normal operation. Steady growth with stability.)",
+        "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
         "Force strategy shift: prefer innovate over repeating repair/optimize.",
         "Selected gene is high risk for current signals; keep blast radius narrow and prefer smallest viable change.",
         "Target max files for this cycle: 6."

@@ -62,6 +62,13 @@ class LearningRuleModifier:
         if PATTERNS_FILE.exists():
             with open(PATTERNS_FILE, 'r') as f:
                 self.patterns = json.load(f).get('patterns', [])
+        
+        # Load rules from file if it exists
+        if RULES_FILE.exists():
+            with open(RULES_FILE, 'r') as f:
+                rules_data = json.load(f)
+                if 'rules' in rules_data:
+                    self.rules.update(rules_data['rules'])
     
     def save_rules(self):
         """Save rules to file."""

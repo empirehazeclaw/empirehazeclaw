@@ -1,6 +1,6 @@
 {
   "hypothesis_general": {
-    "successes": 33,
+    "successes": 36,
     "failures": 1
   },
   "cross_pattern_cross_pattern": {
@@ -12,7 +12,7 @@
     "failures": 1
   },
   "cross_pattern_elevated_error_rate": {
-    "successes": 28,
+    "successes": 39,
     "failures": 1
   },
   "hypothesis_cron_health": {
@@ -20,11 +20,11 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 16,
+    "successes": 23,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
-    "successes": 15,
+    "successes": 22,
     "failures": 1
   }
 }
