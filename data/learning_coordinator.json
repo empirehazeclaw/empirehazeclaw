@@ -1,19 +1,35 @@
 {
-  "timestamp": "2026-04-20 18:05 UTC",
-  "duration_seconds": 3.8,
-  "phase_results": {
-    "system_check": "✅ OK",
-    "research": "✅ 2 hypotheses generated",
-    "quality_gates": "✅ passed",
-    "improvements": {
-      "total": 2,
-      "validated": 1,
-      "patterns": [
-        "Self Improvement pattern (GVU Self-Play)",
-        "Autonomous Learning pattern (GVU Self-Play)"
-      ]
+  "runs": [
+    {
+      "timestamp": "2026-04-20T19:10:47.198362",
+      "phase": "system_check",
+      "success": true,
+      "notes": "[]"
     },
-    "learning_tracker": "✅"
-  },
-  "meta_improvement": "skipped (cycle 1, runs every 5)"
+    {
+      "timestamp": "2026-04-20T19:10:47.937895",
+      "phase": "research",
+      "success": true,
+      "notes": "2 hypotheses"
+    },
+    {
+      "timestamp": "2026-04-20T19:10:48.867489",
+      "phase": "quality",
+      "success": true,
+      "notes": "0 issues"
+    },
+    {
+      "timestamp": "2026-04-20T19:10:48.990348",
+      "phase": "improvement",
+      "success": true,
+      "notes": "2 applied"
+    },
+    {
+      "timestamp": "2026-04-20T19:10:49.069703",
+      "phase": "learning",
+      "success": true,
+      "notes": ""
+    }
+  ],
+  "last_full_cycle": "2026-04-20T19:10:49.069717"
 }

@@ -1,49 +1,49 @@
-# IDLE QUEUE — 2026-04-20T19:08:08.894085Z
+# IDLE QUEUE — 2026-04-20T19:09:52.165106Z
 
 ## 📋 9 Opportunities gefunden
 
 ### 1. [idle_agent] qc
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 2. [idle_agent] security
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 3. [idle_agent] qc_officer
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 4. [idle_agent] research
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 5. [idle_agent] builder
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 6. [idle_agent] security_officer
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 7. [idle_agent] data
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 8. [idle_agent] failover_state
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 
 ### 9. [idle_agent] data_manager
 - **Priority:** medium
-- **Details:** 519
+- **Details:** 521
 - **Action:** Task aus IDLE_QUEUE zuweisen
 

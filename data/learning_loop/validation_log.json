@@ -1,38 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "Investigate and fix Cron Watchdog failure",
-      "timestamp": "2026-04-16T22:03:47.713507",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": true,
-          "failed_crons": 0
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7643629743874077,
-      "current_score": 0.8643629743874077,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
       "improvement": "Investigate and fix Opportunity Scanner Daily failure",
       "timestamp": "2026-04-16T23:03:59.145698",
       "tests": [
@@ -3249,6 +3217,38 @@
       "version": "2.0",
       "baseline_score": 0.7654329268292682,
       "current_score": 0.8654329268292682,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "timestamp": "2026-04-20T19:10:03.057943",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.7656829268292683,
+      "current_score": 0.8656829268292683,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,
