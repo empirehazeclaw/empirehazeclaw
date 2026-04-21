@@ -12,14 +12,17 @@ Usage:
 
 import json
 import sys
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
 WORKSPACE = Path('/home/clawbot/.openclaw/workspace/ceo')
+PARENT_WORKSPACE = Path('/home/clawbot/.openclaw/workspace')
 PATTERNS_FILE = WORKSPACE / 'memory/meta_learning/meta_patterns.json'
 TASK_LOG = WORKSPACE / 'memory/task_log/unified_tasks.json'
 LEARNING_SIGNAL = WORKSPACE / 'memory/evaluations/learning_loop_signal.json'
 OUTPUT_DIR = WORKSPACE / 'memory/meta_learning'
+EVENT_BUS = PARENT_WORKSPACE / 'SCRIPTS/automation/event_bus.py'
 
 
 class MetaLearningController:
@@ -270,6 +273,158 @@ class MetaLearningController:
             print(f"Test accuracy: {ml.get('test_accuracy', 0):.1%}")
             print(f"Adjustments: {ml.get('adjustments_made', 0)}")
 
+    # ============ PHASE 7: EVENT BUS INTEGRATION ============
+    
+    def read_learning_loop_feedback(self, limit=10):
+        """Read recent learning_loop feedback events from Event Bus."""
+        try:
+            EVENT_FILE = Path("/home/clawbot/.openclaw/workspace/data/events/events.jsonl")
+            if not EVENT_FILE.exists():
+                return []
+            
+            events = []
+            with open(EVENT_FILE) as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    if 'learning_meta_feedback' in line:
+                        try:
+                            obj = json.loads(line)
+                            if obj.get('type') == 'learning_meta_feedback':
+                                events.append(obj)
+                        except:
+                            pass
+                    if len(events) >= limit:
+                        break
+            
+            if events:
+                print(f"   Received {len(events)} feedback events from Learning Loop")
+                for fb in events:
+                    data = fb.get('data', {})
+                    print(f"   - Iteration {data.get('iteration')}: score={data.get('score', 'N/A')}, success_rate={data.get('success_rate', 'N/A'):.2%}")
+            
+            return events
+        except Exception as e:
+            print(f"   ⚠️ Failed to read Learning Loop feedback: {e}")
+        return []
+    
+    def emit_pattern_weights(self, weights_data):
+        """Emit updated pattern weights to Event Bus for Learning Loop."""
+        try:
+            data_json = json.dumps(weights_data, default=str)
+            result = subprocess.run(
+                ['python3', str(EVENT_BUS), 'publish',
+                 '--type', 'meta_pattern_weights_updated',
+                 '--source', 'meta_controller',
+                 '--severity', 'info',
+                 '--data', data_json],
+                capture_output=True, text=True, timeout=10
+            )
+            if result.returncode == 0:
+                print(f"   📡 Event emitted: meta_pattern_weights_updated")
+                return True
+        except Exception as e:
+            print(f"   ⚠️ Failed to emit pattern weights: {e}")
+        return False
+    
+    def emit_meta_insight(self, insight_type, content, confidence=0.5):
+        """Emit meta insight to KG and Event Bus."""
+        insight_data = {
+            'type': 'meta_insight',
+            'insight_type': insight_type,
+            'content': content,
+            'confidence': confidence,
+            'timestamp': datetime.now().isoformat(),
+            'source': 'meta_learning_controller'
+        }
+        try:
+            result = subprocess.run(
+                ['python3', str(EVENT_BUS), 'publish',
+                 '--type', 'meta_insight_generated',
+                 '--source', 'meta_controller',
+                 '--severity', 'info',
+                 '--data', json.dumps(insight_data, default=str)],
+                capture_output=True, text=True, timeout=10
+            )
+            if result.returncode == 0:
+                print(f"   📡 Event emitted: meta_insight_generated ({insight_type})")
+        except Exception as e:
+            print(f"   ⚠️ Failed to emit meta insight: {e}")
+    
+    def run_cycle_with_events(self):
+        """Phase 7: Run meta-learning cycle with Event Bus integration."""
+        print("🔄 Meta Learning Controller — Phase 7 (with Event Bus)")
+        print("=" * 50)
+        print(f"Started: {datetime.now().isoformat()}")
+        
+        # PHASE 7.1: Read Learning Loop feedback from Event Bus
+        print("\n📥 Phase 7.1: Reading Learning Loop feedback...")
+        loop_feedback = self.read_learning_loop_feedback()
+        if loop_feedback:
+            print(f"   Received {len(loop_feedback)} feedback events from Learning Loop")
+            for fb in loop_feedback:
+                pattern_id = fb.get('data', {}).get('pattern_id', 'unknown')
+                success_rate = fb.get('data', {}).get('success_rate', 0)
+                print(f"   - Pattern {pattern_id}: success_rate={success_rate:.2%}")
+        else:
+            print("   No Learning Loop feedback events found")
+        
+        # Standard meta-learning cycle
+        performance = self.meta_training()
+        test_results = self.meta_testing()
+        adjustments = self.adjust_pattern_weights(performance)
+        
+        # PHASE 7.2: Emit pattern weights to Event Bus
+        print("\n📤 Phase 7.2: Emitting pattern weights to Event Bus...")
+        weights_data = {
+            'meta_iteration': self.signal.get('meta_learning', {}).get('phase', 0),
+            'timestamp': datetime.now().isoformat(),
+            'patterns_count': len(self.patterns),
+            'test_accuracy': sum(1 for r in test_results if r['correct']) / len(test_results) if test_results else 0,
+            'adjustments': adjustments,
+            'performance_summary': [{
+                'pattern_id': p['pattern_id'],
+                'success_rate': p.get('success_rate', 1.0)
+            } for p in self.patterns[:5]]
+        }
+        self.emit_pattern_weights(weights_data)
+        
+        # PHASE 7.3: Emit meta insights
+        print("\n💡 Phase 7.3: Emitting meta insights...")
+        if performance:
+            best = max(performance, key=lambda x: x.get('observed_success_rate', 0))
+            self.emit_meta_insight('best_pattern', f"Pattern {best['pattern_id']} performs best", best.get('observed_success_rate', 0.5))
+        if test_results:
+            accuracy = sum(1 for r in test_results if r['correct']) / len(test_results)
+            self.emit_meta_insight('test_accuracy', f"Meta-testing accuracy: {accuracy:.1%}", accuracy)
+        
+        # Update learning signal
+        self.signal['meta_learning'] = {
+            'phase': 7,
+            'timestamp': datetime.now().isoformat(),
+            'patterns_tested': len(self.patterns),
+            'test_accuracy': sum(1 for r in test_results if r['correct']) / len(test_results) if test_results else 0,
+            'adjustments_made': len(adjustments),
+            'loop_feedback_received': len(loop_feedback),
+            'performance': performance[:5],
+            'test_results_summary': {
+                'total': len(test_results),
+                'correct': sum(1 for r in test_results if r['correct'])
+            }
+        }
+        
+        with open(LEARNING_SIGNAL, 'w') as f:
+            json.dump(self.signal, f, indent=2, default=str)
+        
+        print(f"\n✅ Meta-Learning Cycle Complete (Phase 7)")
+        print(f"   Patterns tested: {len(self.patterns)}")
+        print(f"   Test accuracy: {self.signal['meta_learning']['test_accuracy']:.1%}")
+        print(f"   Adjustments: {len(adjustments)}")
+        print(f"   Loop feedback received: {len(loop_feedback)}")
+        
+        return self.signal['meta_learning']
+
 
 def main():
     controller = MetaLearningController()
@@ -278,6 +433,8 @@ def main():
         controller.status()
     elif '--test' in sys.argv:
         controller.meta_testing()
+    elif '--with-events' in sys.argv:
+        controller.run_cycle_with_events()
     else:
         controller.run_cycle()
 

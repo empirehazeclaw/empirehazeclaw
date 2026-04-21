@@ -2064,6 +2064,26 @@ def emit_learning_cycle_events(iteration, final_score, state, issues, gate_issue
             }
         }
     
+    # 7. Phase 7: Emit Meta Learning Feedback (pattern performance to Meta Controller)
+    meta_feedback_event = None
+    if pattern_count > 0:
+        # Send pattern performance to Meta Controller
+        # Note: cross_pattern_hits is an int (total count), not a list
+        cross_hits = state.get('cross_pattern_hits', 0)
+        success_rate = state.get('validation_successes', 0) / max(1, state.get('validation_successes', 0) + state.get('validation_failures', 0))
+        meta_feedback_event = {
+            "type": "learning_meta_feedback",
+            "source": "learning_loop",
+            "severity": "info",
+            "data": {
+                "iteration": iteration,
+                "pattern_count": pattern_count,
+                "cross_pattern_hits": cross_hits,
+                "success_rate": success_rate,
+                "score": round(final_score, 4)
+            }
+        }
+    
     # Emit all events via event_bus.py
     events_to_emit = [score_event, completion_event]
     if issues or gate_issues:
@@ -2074,6 +2094,8 @@ def emit_learning_cycle_events(iteration, final_score, state, issues, gate_issue
         events_to_emit.append(plateau_event)
     if evolver_result_event:
         events_to_emit.append(evolver_result_event)
+    if meta_feedback_event:
+        events_to_emit.append(meta_feedback_event)
     
     for evt in events_to_emit:
         try:
@@ -2518,14 +2540,58 @@ def run_quality_gates() -> List[Dict]:
 
     return issues
 
+def read_meta_pattern_weights() -> Dict:
+    """
+    Phase 7: Read latest meta_pattern_weights_updated event from Event Bus.
+    Returns meta weights if found and not stale.
+    """
+    EVENT_BUS_FILE = Path("/home/clawbot/.openclaw/workspace/data/events/events.jsonl")
+    
+    if not EVENT_BUS_FILE.exists():
+        return {}
+    
+    try:
+        events = []
+        with open(EVENT_BUS_FILE) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    events.append(json.loads(line))
+        
+        # Find latest meta_pattern_weights_updated event
+        meta_events = [e for e in events if e.get("type") == "meta_pattern_weights_updated"]
+        if not meta_events:
+            return {}
+        
+        latest = meta_events[-1]
+        data = latest.get("data", {})
+        
+        # Check if recent (within 1 hour)
+        event_time = datetime.fromisoformat(data.get('timestamp', '2020-01-01'))
+        age_seconds = (datetime.now() - event_time).total_seconds()
+        if age_seconds > 3600:
+            return {}  # Too stale
+        
+        # Extract weights
+        weights = {}
+        for p in data.get('performance_summary', []):
+            weights[p['pattern_id']] = p.get('success_rate', 1.0)
+        
+        return weights
+    except Exception as e:
+        print(f"   ⚠️ Failed to read meta weights: {e}")
+        return {}
+
 def select_improvements(issues: List[Dict], hypotheses: List[Dict]) -> List[Dict]:
     """
     Select best improvements using Multi-Armed Bandit with Thompson Sampling + UCB.
+    Phase 7: Also incorporate meta-learning pattern weights if available.
 
     Combines:
     1. Thompson Sampling: Probabilistic selection based on Beta distribution
     2. UCB1: Deterministic bonus for unexplored arms
     3. Epsilon-Greedy: Random exploration with decaying probability
+    4. Meta Weights (Phase 7): Adjust selection based on meta-learning feedback
 
     This balances exploration (try new things) vs exploitation (use what works).
     """
@@ -2534,6 +2600,11 @@ def select_improvements(issues: List[Dict], hypotheses: List[Dict]) -> List[Dict
     # Load reward history for Thompson Sampling (from separate file)
     reward_history = load_thompson_rewards()
     state = load_state()
+    
+    # Phase 7: Read meta-learning weights
+    meta_weights = read_meta_pattern_weights()
+    if meta_weights:
+        print(f"   📊 Meta-Learning weights available: {len(meta_weights)} patterns")
 
     # Annealing: decrease exploration over time
     iteration = state.get('iteration', 1)
@@ -2647,7 +2718,17 @@ def select_improvements(issues: List[Dict], hypotheses: List[Dict]) -> List[Dict
 
         # Combined score with UCB
         final_sample = thompson_sample + ucb_bonus + c.get("priority_base", 0)
-
+        
+        # Phase 7: Apply meta-learning weight adjustment
+        # Meta weights provide top-down guidance on pattern performance
+        if meta_weights:
+            pattern_id = c.get('category', '')
+            meta_multiplier = meta_weights.get(pattern_id, 1.0)
+            # Scale: 0.5 (poor) to 1.5 (excellent) based on meta feedback
+            meta_adjustment = (meta_multiplier - 0.5) * 0.3  # Max ±0.15 influence
+            final_sample += meta_adjustment
+            c['_meta_adjustment'] = round(meta_adjustment, 3)
+        
         samples.append({
             "candidate": c,
             "thompson_sample": thompson_sample,

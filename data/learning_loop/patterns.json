@@ -124,7 +124,7 @@
       "success_count": 31,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8195,
+      "confidence": 0.663795,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-20T16:37:45.463078",
       "last_validated": "2026-04-21T10:43:22.873914",
@@ -147,13 +147,13 @@
       ],
       "description": "Break score plateau with novel approach",
       "solution": "Applied improvement: Break score plateau with novel approach",
-      "success_count": 22,
+      "success_count": 25,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.855,
+      "confidence": 0.8375500000000001,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-20T17:04:49.591713",
-      "last_validated": "2026-04-21T10:39:27.318376",
+      "last_validated": "2026-04-21T11:07:46.362377",
       "error_type": "loop_optimization",
       "context": {
         "source": "dynamic_signal",
@@ -227,13 +227,13 @@
       ],
       "description": "Reduce KG orphans: add relations to disconnected entities",
       "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
-      "success_count": 10,
+      "success_count": 12,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.6683547250000004,
+      "confidence": 0.6313673272500004,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-20T19:12:39.889884",
-      "last_validated": "2026-04-21T10:43:03.420675",
+      "last_validated": "2026-04-21T10:57:58.421923",
       "error_type": "kg_quality",
       "context": {
         "source": "dynamic_signal",
@@ -309,6 +309,68 @@
       "category": "memory_analysis",
       "confidence": 0.5,
       "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:\u2705 COMPLETE",
+      "description": "\u2705 COMPLETE",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:Working",
+      "description": "Working",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:Valid",
+      "description": "Valid",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "title": "memory:valid",
+      "description": "valid",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
+    },
+    {
+      "id": "pattern_20260421_110804",
+      "title": "Test backup recovery, identify 1 bottleneck",
+      "category": "hypothesis_backup_recovery",
+      "error_signature": [
+        "test",
+        "backup",
+        "recovery,",
+        "identify",
+        "bottleneck"
+      ],
+      "description": "[Exploration] Test backup recovery, identify 1 bottleneck",
+      "solution": "Applied improvement: Test backup recovery, identify 1 bottleneck",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.7,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-21T11:08:04.573513",
+      "last_validated": "2026-04-21T11:08:04.573517",
+      "error_type": "backup_recovery",
+      "context": {
+        "source": "exploration",
+        "script": null
+      }
     }
   ],
   "version": 2,

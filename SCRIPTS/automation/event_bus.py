@@ -6,13 +6,20 @@ Provides a unified event system for all CEO subsystems.
 Events are stored in a simple JSON file and can be published/consumed by any system.
 
 Event Types:
-  - kg_update       : KG was modified
-  - pattern_discovered : New pattern found by Learning Loop
-  - improvement_applied : Improvement was validated and applied
-  - error_detected  : System error detected
-  - cron_completed   : A cron job finished
-  - sync_completed   : Cross-system sync finished
-  - stagnation_detected : Evolver or Loop in stagnation
+  - kg_update            : KG was modified
+  - pattern_discovered    : New pattern found by Learning Loop
+  - improvement_applied   : Improvement was validated and applied
+  - error_detected        : System error detected
+  - cron_completed        : A cron job finished
+  - sync_completed        : Cross-system sync finished
+  - stagnation_detected   : Evolver or Loop in stagnation
+  - learning_score_update : Learning Loop score update (Phase 5)
+  - learning_cycle_completed : Learning Loop cycle finished (Phase 5)
+  - evolver_completed     : Capability Evolver finished (Phase 4)
+  - learning_evolver_feedback : Loop feedback to Evolver (Phase 6)
+  - meta_pattern_weights_updated : Meta Controller updated weights (Phase 7)
+  - learning_meta_feedback : Learning Loop pattern performance to Meta (Phase 7)
+  - meta_insight_generated : Meta Controller generated insight (Phase 7)
 
 Usage:
   python3 event_bus.py publish --type kg_update --data '{"entity": "Test"}'
