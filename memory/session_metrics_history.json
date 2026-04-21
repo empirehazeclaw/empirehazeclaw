@@ -1,24 +1,6 @@
 {
   "history": [
     {
-      "timestamp": "2026-04-20T19:08:19.848813",
-      "error_rate": 2.86,
-      "error_count": 200,
-      "msg_count": 6988
-    },
-    {
-      "timestamp": "2026-04-20T19:10:03.662492",
-      "error_rate": 2.85,
-      "error_count": 200,
-      "msg_count": 7007
-    },
-    {
-      "timestamp": "2026-04-20T19:10:48.423118",
-      "error_rate": 2.85,
-      "error_count": 200,
-      "msg_count": 7014
-    },
-    {
       "timestamp": "2026-04-20T19:10:48.850843",
       "error_rate": 2.85,
       "error_count": 200,
@@ -599,6 +581,24 @@
       "error_rate": 2.2,
       "error_count": 272,
       "msg_count": 12380
+    },
+    {
+      "timestamp": "2026-04-21T11:47:28.374193",
+      "error_rate": 2.1,
+      "error_count": 298,
+      "msg_count": 14157
+    },
+    {
+      "timestamp": "2026-04-21T11:48:07.397783",
+      "error_rate": 2.1,
+      "error_count": 298,
+      "msg_count": 14164
+    },
+    {
+      "timestamp": "2026-04-21T11:48:14.612892",
+      "error_rate": 2.1,
+      "error_count": 298,
+      "msg_count": 14168
     }
   ]
 }

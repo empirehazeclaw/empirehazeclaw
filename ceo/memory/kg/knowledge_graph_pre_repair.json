@@ -41878,6 +41878,1483 @@
     }
   ],
   "relations": {
+    "0": {
+      "from": "Decision",
+      "to": "REDACTED",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.440065"
+    },
+    "1": {
+      "from": "DER WORKFLOW Immer wenn eine Session",
+      "to": "Decision",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.465734"
+    },
+    "2": {
+      "from": "Learning",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.494943"
+    },
+    "3": {
+      "from": "Infrastructure",
+      "to": "Learning",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.521497"
+    },
+    "4": {
+      "from": "Backups",
+      "to": "Learning",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.548021"
+    },
+    "5": {
+      "from": "ClawHub",
+      "to": "Learning",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.579776"
+    },
+    "6": {
+      "from": "RECOVERED",
+      "to": "RECOVERED LEARNINGS - 2026-04-07",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.614398"
+    },
+    "7": {
+      "from": "PRIORITY",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:03.655338"
+    },
+    "8": {
+      "from": "Knowledge",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.688127"
+    },
+    "9": {
+      "from": "Learnings",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:03.720299"
+    },
+    "10": {
+      "from": "Learnings",
+      "to": "Vercel",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:03.752637"
+    },
+    "11": {
+      "from": "Learnings",
+      "to": "RECOVERED LEARNINGS - 2026-04-07",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.786078"
+    },
+    "12": {
+      "from": "Learnings",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.817031"
+    },
+    "13": {
+      "from": "Learnings",
+      "to": "Session",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.847122"
+    },
+    "14": {
+      "from": "Learnings",
+      "to": "PRIORITY",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.880648"
+    },
+    "15": {
+      "from": "Learnings",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.913293"
+    },
+    "16": {
+      "from": "Daily",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.949408"
+    },
+    "17": {
+      "from": "Notes",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:03.986499"
+    },
+    "18": {
+      "from": "Notes",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:04.020551"
+    },
+    "19": {
+      "from": "CONSOLIDATION",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.060410"
+    },
+    "20": {
+      "from": "CONSOLIDATION",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:04.089998"
+    },
+    "21": {
+      "from": "Knowledge",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.116802"
+    },
+    "22": {
+      "from": "Knowledge",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:04.148408"
+    },
+    "23": {
+      "from": "Knowledge Hierarchy",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.182569"
+    },
+    "24": {
+      "from": "Knowledge Hierarchy",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:04.210831"
+    },
+    "25": {
+      "from": "Summary",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.244452"
+    },
+    "26": {
+      "from": "Main",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.270864"
+    },
+    "27": {
+      "from": "Main",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.295799"
+    },
+    "28": {
+      "from": "Connections",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.329483"
+    },
+    "29": {
+      "from": "Connections",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.362366"
+    },
+    "30": {
+      "from": "Tags",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.397058"
+    },
+    "31": {
+      "from": "System Test",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.428255"
+    },
+    "32": {
+      "from": "Final Test Note",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.454029"
+    },
+    "33": {
+      "from": "Final Test Note",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.75,
+      "created_at": "2026-04-09T10:11:04.477453"
+    },
+    "34": {
+      "from": "Evening Insights 2026-04-07",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.503235"
+    },
+    "35": {
+      "from": "AI Agent Trends 2026 \u2014 Research Notes",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.528402"
+    },
+    "36": {
+      "from": "NVIDIA",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.556889"
+    },
+    "37": {
+      "from": "LangChain",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.582592"
+    },
+    "38": {
+      "from": "Microsoft",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.614363"
+    },
+    "39": {
+      "from": "Monitoring",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.645530"
+    },
+    "40": {
+      "from": "OpenClaw",
+      "to": "REDACTED",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.672954"
+    },
+    "41": {
+      "from": "OpenClaw",
+      "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.697122"
+    },
+    "42": {
+      "from": "OpenClaw",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.725004"
+    },
+    "43": {
+      "from": "OpenClaw",
+      "to": "Vercel",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.762277"
+    },
+    "44": {
+      "from": "OpenClaw",
+      "to": "RECOVERED LEARNINGS - 2026-04-07",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.797438"
+    },
+    "45": {
+      "from": "OpenClaw",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.824923"
+    },
+    "46": {
+      "from": "OpenClaw",
+      "to": "Session",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.857206"
+    },
+    "47": {
+      "from": "OpenClaw",
+      "to": "PRIORITY",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.894441"
+    },
+    "48": {
+      "from": "OpenClaw",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:04.923033"
+    },
+    "49": {
+      "from": "OpenClaw",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.950745"
+    },
+    "50": {
+      "from": "OpenClaw",
+      "to": "STORAGE",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:04.978457"
+    },
+    "51": {
+      "from": "OpenClaw",
+      "to": "SKILL",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.011775"
+    },
+    "52": {
+      "from": "OpenClaw",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.044424"
+    },
+    "53": {
+      "from": "OpenClaw",
+      "to": "Summary",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.076574"
+    },
+    "54": {
+      "from": "OpenClaw",
+      "to": "Tags",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.107099"
+    },
+    "55": {
+      "from": "OpenClaw",
+      "to": "System Test",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.134413"
+    },
+    "56": {
+      "from": "OpenClaw",
+      "to": "Warum",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.168432"
+    },
+    "57": {
+      "from": "OpenClaw",
+      "to": "Quelle",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.196295"
+    },
+    "58": {
+      "from": "OpenClaw",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.224417"
+    },
+    "59": {
+      "from": "OpenClaw",
+      "to": "Quellen",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.252134"
+    },
+    "60": {
+      "from": "Gateway",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.283228"
+    },
+    "61": {
+      "from": "Gateway",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.307754"
+    },
+    "62": {
+      "from": "Agent",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.334330"
+    },
+    "63": {
+      "from": "Agent",
+      "to": "NVIDIA",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:05.359129"
+    },
+    "64": {
+      "from": "Agent",
+      "to": "OpenAI",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:05.384093"
+    },
+    "65": {
+      "from": "Agent",
+      "to": "LangChain",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:05.415368"
+    },
+    "66": {
+      "from": "Agent",
+      "to": "Microsoft",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:05.439386"
+    },
+    "67": {
+      "from": "Agent",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.462384"
+    },
+    "68": {
+      "from": "Agent",
+      "to": "Monitoring",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.490563"
+    },
+    "69": {
+      "from": "Agent",
+      "to": "Quellen",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.522535"
+    },
+    "70": {
+      "from": "Agent",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.553896"
+    },
+    "71": {
+      "from": "Agent",
+      "to": "Gateway",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:05.584423"
+    },
+    "72": {
+      "from": "Memory",
+      "to": "REDACTED",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.613000"
+    },
+    "73": {
+      "from": "Memory",
+      "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.640888"
+    },
+    "74": {
+      "from": "Memory",
+      "to": "Metadaten",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.668019"
+    },
+    "75": {
+      "from": "Memory",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.697281"
+    },
+    "76": {
+      "from": "Memory",
+      "to": "Vercel",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.728268"
+    },
+    "77": {
+      "from": "Memory",
+      "to": "RECOVERED LEARNINGS - 2026-04-07",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.756560"
+    },
+    "78": {
+      "from": "Memory",
+      "to": "RECOVERED",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.785622"
+    },
+    "79": {
+      "from": "Memory",
+      "to": "Session",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.821604"
+    },
+    "80": {
+      "from": "Memory",
+      "to": "PRIORITY",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.848945"
+    },
+    "81": {
+      "from": "Memory",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:05.875835"
+    },
+    "82": {
+      "from": "Memory",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.906381"
+    },
+    "83": {
+      "from": "Memory",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.929573"
+    },
+    "84": {
+      "from": "Memory",
+      "to": "STORAGE",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.962648"
+    },
+    "85": {
+      "from": "Memory",
+      "to": "SKILL",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:05.988317"
+    },
+    "86": {
+      "from": "Memory",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.012001"
+    },
+    "87": {
+      "from": "Memory",
+      "to": "Summary",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.037656"
+    },
+    "88": {
+      "from": "Memory",
+      "to": "Tags",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.065324"
+    },
+    "89": {
+      "from": "Memory",
+      "to": "System Test",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.089734"
+    },
+    "90": {
+      "from": "Memory",
+      "to": "Warum",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.114397"
+    },
+    "91": {
+      "from": "Memory",
+      "to": "Quelle",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.142831"
+    },
+    "92": {
+      "from": "Memory",
+      "to": "NVIDIA",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.174337"
+    },
+    "93": {
+      "from": "Memory",
+      "to": "OpenAI",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.207605"
+    },
+    "94": {
+      "from": "Memory",
+      "to": "Microsoft",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.241861"
+    },
+    "95": {
+      "from": "Memory",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.269801"
+    },
+    "96": {
+      "from": "Memory",
+      "to": "Monitoring",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.298592"
+    },
+    "97": {
+      "from": "Memory",
+      "to": "Quellen",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.323969"
+    },
+    "98": {
+      "from": "Memory",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.353278"
+    },
+    "99": {
+      "from": "Multi",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.381087"
+    },
+    "100": {
+      "from": "Multi",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.406923"
+    },
+    "101": {
+      "from": "Multi",
+      "to": "Quellen",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.433566"
+    },
+    "102": {
+      "from": "Multi",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.462190"
+    },
+    "103": {
+      "from": "Multi",
+      "to": "Security",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.491964"
+    },
+    "104": {
+      "from": "Gateway als Kernel",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.516933"
+    },
+    "105": {
+      "from": "Gateway als Kernel",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.547196"
+    },
+    "106": {
+      "from": "Gateway als Kernel",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.571082"
+    },
+    "107": {
+      "from": "Gateway als Kernel",
+      "to": "Security",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.595480"
+    },
+    "108": {
+      "from": "Gateway als Kernel",
+      "to": "Multi",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.621619"
+    },
+    "109": {
+      "from": "Related",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.647747"
+    },
+    "110": {
+      "from": "Source",
+      "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:06.673992"
+    },
+    "111": {
+      "from": "Source",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:06.699909"
+    },
+    "112": {
+      "from": "Source",
+      "to": "Vercel",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:06.726353"
+    },
+    "113": {
+      "from": "Source",
+      "to": "TOP DECISIONS",
+      "type": "co_occurs",
+      "weight": 0.6000000000000001,
+      "created_at": "2026-04-09T10:11:06.749594"
+    },
+    "114": {
+      "from": "Source",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.774899"
+    },
+    "115": {
+      "from": "Source",
+      "to": "Summary",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.799705"
+    },
+    "116": {
+      "from": "Source",
+      "to": "Tags",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.824155"
+    },
+    "117": {
+      "from": "Source",
+      "to": "System Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.850456"
+    },
+    "118": {
+      "from": "Source",
+      "to": "Warum",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.879393"
+    },
+    "119": {
+      "from": "Source",
+      "to": "Top",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:06.905198"
+    },
+    "120": {
+      "from": "Source",
+      "to": "{title}",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:06.929379"
+    },
+    "121": {
+      "from": "Key Point",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.954839"
+    },
+    "122": {
+      "from": "Key Point",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:06.977489"
+    },
+    "123": {
+      "from": "Key Point",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.001286"
+    },
+    "124": {
+      "from": "Key Point",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.026356"
+    },
+    "125": {
+      "from": "Key Point",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:07.052283"
+    },
+    "126": {
+      "from": "Related Notes",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.080281"
+    },
+    "127": {
+      "from": "Related Notes",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.8,
+      "created_at": "2026-04-09T10:11:07.103743"
+    },
+    "128": {
+      "from": "Cron",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.127435"
+    },
+    "129": {
+      "from": "Cron",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.151485"
+    },
+    "130": {
+      "from": "Cron",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.175710"
+    },
+    "131": {
+      "from": "Cron",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.203017"
+    },
+    "132": {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.227875"
+    },
+    "133": {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.253527"
+    },
+    "134": {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.280477"
+    },
+    "135": {
+      "from": "Daily Operations \u2014 2026-04-08",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.311358"
+    },
+    "136": {
+      "from": "Beides",
+      "to": "Daily",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.336375"
+    },
+    "137": {
+      "from": "Beides",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.361439"
+    },
+    "138": {
+      "from": "Beides",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.389130"
+    },
+    "139": {
+      "from": "Beides",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.417123"
+    },
+    "140": {
+      "from": "Beides",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.444266"
+    },
+    "141": {
+      "from": "System",
+      "to": "System Test",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.471102"
+    },
+    "142": {
+      "from": "Fixes",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.496749"
+    },
+    "143": {
+      "from": "Fixes",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.520526"
+    },
+    "144": {
+      "from": "Fixes",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.543819"
+    },
+    "145": {
+      "from": "Fixes",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.567664"
+    },
+    "146": {
+      "from": "Curriculum",
+      "to": "Daily",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.592475"
+    },
+    "147": {
+      "from": "Curriculum",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.616380"
+    },
+    "148": {
+      "from": "Curriculum",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.640051"
+    },
+    "149": {
+      "from": "Curriculum",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.662996"
+    },
+    "150": {
+      "from": "Curriculum",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.688329"
+    },
+    "151": {
+      "from": "[USER]",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.714624"
+    },
+    "152": {
+      "from": "[USER]",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.742292"
+    },
+    "153": {
+      "from": "[USER]",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.766338"
+    },
+    "154": {
+      "from": "Entscheidung",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.791564"
+    },
+    "155": {
+      "from": "Entscheidung",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.816892"
+    },
+    "156": {
+      "from": "Entscheidung",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.841544"
+    },
+    "157": {
+      "from": "Entscheidung",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.865817"
+    },
+    "158": {
+      "from": "Wiki",
+      "to": "Wiki Growth Workflow \u2014 Automatische Wiki-Pflege",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.889471"
+    },
+    "159": {
+      "from": "Cron Jobs",
+      "to": "Daily",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.913246"
+    },
+    "160": {
+      "from": "Cron Jobs",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:07.938952"
+    },
+    "161": {
+      "from": "Cron Jobs",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.963568"
+    },
+    "162": {
+      "from": "Cron Jobs",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:07.988858"
+    },
+    "163": {
+      "from": "Cron Jobs",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.014318"
+    },
+    "164": {
+      "from": "Fixes Durchgef",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.040848"
+    },
+    "165": {
+      "from": "Fixes Durchgef",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.064769"
+    },
+    "166": {
+      "from": "Fixes Durchgef",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.090565"
+    },
+    "167": {
+      "from": "Fixes Durchgef",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.118832"
+    },
+    "168": {
+      "from": "CEO Briefing Cron Error",
+      "to": "Daily",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.146965"
+    },
+    "169": {
+      "from": "CEO Briefing Cron Error",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.178514"
+    },
+    "170": {
+      "from": "CEO Briefing Cron Error",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.205462"
+    },
+    "171": {
+      "from": "CEO Briefing Cron Error",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.231188"
+    },
+    "172": {
+      "from": "CEO Briefing Cron Error",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.262404"
+    },
+    "173": {
+      "from": "Agent Certification System",
+      "to": "Daily",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.288340"
+    },
+    "174": {
+      "from": "Agent Certification System",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.315897"
+    },
+    "175": {
+      "from": "Agent Certification System",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.342937"
+    },
+    "176": {
+      "from": "Agent Certification System",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.369235"
+    },
+    "177": {
+      "from": "Agent Certification System",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.394743"
+    },
+    "178": {
+      "from": "TITLE_PLACEHOLDER",
+      "to": "Test",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.420246"
+    },
+    "179": {
+      "from": "Erreichte",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.451891"
+    },
+    "180": {
+      "from": "Erreichte",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.476930"
+    },
+    "181": {
+      "from": "Erreichte",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.500825"
+    },
+    "182": {
+      "from": "Erreichte",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.527114"
+    },
+    "183": {
+      "from": "Neue",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.557527"
+    },
+    "184": {
+      "from": "Neue",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.584755"
+    },
+    "185": {
+      "from": "Neue",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.615355"
+    },
+    "186": {
+      "from": "Metrics",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.640692"
+    },
+    "187": {
+      "from": "Metrics",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.665530"
+    },
+    "188": {
+      "from": "Metrics",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.690093"
+    },
+    "189": {
+      "from": "Erreichte Checkpoints",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.715932"
+    },
+    "190": {
+      "from": "Erreichte Checkpoints",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.741664"
+    },
+    "191": {
+      "from": "Erreichte Checkpoints",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.774109"
+    },
+    "192": {
+      "from": "Erreichte Checkpoints",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.804981"
+    },
+    "193": {
+      "from": "Neue Erkenntnisse",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.836868"
+    },
+    "194": {
+      "from": "Neue Erkenntnisse",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.869940"
+    },
+    "195": {
+      "from": "Neue Erkenntnisse",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.7,
+      "created_at": "2026-04-09T10:11:08.902708"
+    },
+    "196": {
+      "from": "Original",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.935041"
+    },
+    "197": {
+      "from": "Keywords",
+      "to": "Knowledge",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.961619"
+    },
+    "198": {
+      "from": "Keywords",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:08.992890"
+    },
+    "199": {
+      "from": "Keywords",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.029955"
+    },
+    "200": {
+      "from": "Keywords",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.064206"
+    },
+    "201": {
+      "from": "Keywords",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.097438"
+    },
+    "202": {
+      "from": "Connected",
+      "to": "Knowledge",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.126056"
+    },
+    "203": {
+      "from": "Connected",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.152236"
+    },
+    "204": {
+      "from": "Connected",
+      "to": "Knowledge",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.178549"
+    },
+    "205": {
+      "from": "Connected",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.203189"
+    },
+    "206": {
+      "from": "Connected",
+      "to": "Memory",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.233195"
+    },
+    "207": {
+      "from": "Connected",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.262411"
+    },
+    "208": {
+      "from": "Next",
+      "to": "Notes",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.289215"
+    },
+    "209": {
+      "from": "Next",
+      "to": "OpenClaw",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.315153"
+    },
+    "210": {
+      "from": "Next",
+      "to": "Source",
+      "type": "co_occurs",
+      "weight": 0.65,
+      "created_at": "2026-04-09T10:11:09.345738"
+    },
     "211": {
       "from": "EmpireHazeClaw",
       "to": "DSGVO-Compliance",
@@ -42197,11 +43674,32 @@
       "created": "2026-04-12T06:36:52.052980",
       "source": "orphan_connector"
     },
+    "265": {
+      "from": "innovation_research_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053025",
+      "source": "orphan_connector"
+    },
     "266": {
       "from": "innovation_research_20260411",
       "to": "Social-Media-Automation",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053034",
+      "source": "orphan_connector"
+    },
+    "267": {
+      "from": "innovation_research_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053048",
+      "source": "orphan_connector"
+    },
+    "268": {
+      "from": "innovation_research_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053057",
       "source": "orphan_connector"
     },
     "269": {
@@ -42230,6 +43728,13 @@
       "to": "research_integration_20260411",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053076",
+      "source": "orphan_connector"
+    },
+    "273": {
+      "from": "memory_frameworks_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053100",
       "source": "orphan_connector"
     },
     "274": {
@@ -42323,6 +43828,20 @@
       "created": "2026-04-12T06:36:52.053251",
       "source": "orphan_connector"
     },
+    "287": {
+      "from": "hermes_agent_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053297",
+      "source": "orphan_connector"
+    },
+    "288": {
+      "from": "hermes_agent_20260411",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053311",
+      "source": "orphan_connector"
+    },
     "289": {
       "from": "microsoft_agent_governance_20260411",
       "to": "category_research-topics",
@@ -42356,6 +43875,13 @@
       "to": "Social-Media-Automation",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053358",
+      "source": "orphan_connector"
+    },
+    "294": {
+      "from": "microsoft_agent_governance_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053368",
       "source": "orphan_connector"
     },
     "295": {
@@ -42412,6 +43938,13 @@
       "to": "multiagent_frameworks_20260411",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053416",
+      "source": "orphan_connector"
+    },
+    "303": {
+      "from": "agentic_loop_architecture_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053454",
       "source": "orphan_connector"
     },
     "304": {
@@ -42477,11 +44010,25 @@
       "created": "2026-04-12T06:36:52.053521",
       "source": "orphan_connector"
     },
+    "313": {
+      "from": "self_healing_hitl_20260411",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053557",
+      "source": "orphan_connector"
+    },
     "314": {
       "from": "self_healing_hitl_20260411",
       "to": "Social-Media-Automation",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053561",
+      "source": "orphan_connector"
+    },
+    "315": {
+      "from": "self_healing_hitl_20260411",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053571",
       "source": "orphan_connector"
     },
     "316": {
@@ -43044,11 +44591,32 @@
       "created": "2026-04-12T06:36:52.053949",
       "source": "orphan_connector"
     },
+    "396": {
+      "from": "innovation_research_20260412",
+      "to": "Telegram History Analyse - Patterns & Learnings",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053976",
+      "source": "orphan_connector"
+    },
     "397": {
       "from": "innovation_research_20260412",
       "to": "Social-Media-Automation",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053983",
+      "source": "orphan_connector"
+    },
+    "398": {
+      "from": "innovation_research_20260412",
+      "to": "OpenClaw Multi-Agent & Security Research",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.053994",
+      "source": "orphan_connector"
+    },
+    "399": {
+      "from": "innovation_research_20260412",
+      "to": "RECOVERED: Memory System Architecture",
+      "type": "related_to",
+      "created": "2026-04-12T06:36:52.054003",
       "source": "orphan_connector"
     },
     "400": {
@@ -43912,64 +45480,127 @@
       "created": "2026-04-12T06:36:52.054613",
       "source": "orphan_connector"
     },
+    "523": {
+      "from": "LearningPattern_error_reducer_error",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.970814"
+    },
+    "524": {
+      "from": "LearningPattern_analyzing_errors...",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.970901"
+    },
+    "525": {
+      "from": "LearningPattern_error_rate:_2.21%",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.970980"
+    },
+    "526": {
+      "from": "LearningPattern_total_errors:",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971058"
+    },
+    "527": {
+      "from": "LearningPattern_error_breakdown:",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971136"
+    },
+    "528": {
+      "from": "LearningPattern_error_tools:",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971232"
+    },
+    "529": {
+      "from": "LearningPattern_failure:_failed:",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971309"
+    },
+    "530": {
+      "from": "LearningPattern_failure:_failed_jobs:",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971390"
+    },
+    "531": {
+      "from": "LearningPattern_failure:_error:_message",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-16T19:05:57.971471"
+    },
     "532": {
-      "from": "LearningPattern_pattern_20260420_163745",
+      "from": "LearningPattern_pattern_20260413_163817",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971548"
     },
     "533": {
-      "from": "LearningPattern_pattern_20260420_163745",
+      "from": "LearningPattern_pattern_20260413_164637",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971625"
     },
     "534": {
-      "from": "LearningPattern_pattern_20260421_090457",
+      "from": "LearningPattern_pattern_20260414_074342",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971710"
     },
     "535": {
-      "from": "LearningPattern_pattern_20260420_204530",
+      "from": "LearningPattern_pattern_20260414_125308",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971796"
     },
     "536": {
-      "from": "LearningPattern_pattern_20260420_204530",
+      "from": "LearningPattern_pattern_20260414_125502",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971873"
     },
     "537": {
-      "from": "LearningPattern_pattern_20260420_191239",
+      "from": "LearningPattern_pattern_20260414_125503",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.971949"
     },
     "538": {
-      "from": "LearningPattern_pattern_20260421_090457",
+      "from": "LearningPattern_pattern_20260414_125505",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.972026"
     },
     "539": {
-      "from": "LearningPattern_pattern_20260421_090457",
+      "from": "LearningPattern_pattern_20260416_155831",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.972104"
     },
     "540": {
-      "from": "LearningPattern_pattern_20260421_090457",
+      "from": "LearningPattern_pattern_20260416_190437",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
@@ -44599,7 +46230,7 @@
       "created_at": "2026-04-17T03:10:13.063018"
     },
     "630": {
-      "from": "LearningPattern_pattern_20260420_163745",
+      "from": "LearningPattern_pattern_20260417_160345",
       "to": "Learning-Loop",
       "type": "part_of",
       "weight": 0.9,
