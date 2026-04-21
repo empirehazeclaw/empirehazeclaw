@@ -1,28 +1,28 @@
 {
   "patterns": [
     {
-      "id": "pattern_20260421_150410",
-      "title": "Reduce KG orphans: add relations to disconnected entities",
-      "category": "hypothesis_kg_quality",
+      "id": "pattern_20260421_170426",
+      "title": "Review last 24h API calls, find 1 inefficient call",
+      "category": "hypothesis_token_optimization",
       "error_signature": [
-        "reduce",
-        "orphans:",
-        "relations",
-        "disconnected",
-        "entities"
+        "review",
+        "last",
+        "calls,",
+        "find",
+        "inefficient"
       ],
-      "description": "Reduce KG orphans: add relations to disconnected entities",
-      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
+      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "solution": "Applied improvement: Review last 24h API calls, find 1 inefficient call",
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
       "confidence": 0.7,
       "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T15:04:10.881183",
-      "last_validated": "2026-04-21T15:04:10.881187",
-      "error_type": "kg_quality",
+      "first_seen": "2026-04-21T17:04:26.694750",
+      "last_validated": "2026-04-21T17:04:26.694753",
+      "error_type": "token_optimization",
       "context": {
-        "source": "dynamic_signal",
+        "source": "exploration",
         "script": null
       }
     }

@@ -1,8 +1,8 @@
 {
   "validations": [
     {
-      "improvement": "Reduce KG orphans: add relations to disconnected entities",
-      "timestamp": "2026-04-21T15:04:09.890497",
+      "improvement": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "timestamp": "2026-04-21T17:04:25.811945",
       "tests": [
         {
           "name": "error_reducer_check",

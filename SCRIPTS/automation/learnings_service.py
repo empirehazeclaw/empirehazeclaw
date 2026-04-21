@@ -498,6 +498,170 @@ class LearningsService:
                 return True
         return False
     
+    # ============ PHASE 1: LEARNINGS FEEDBACK LOOP ============
+    
+    def record_decision(
+        self,
+        decision_type: str,
+        strategy: str,
+        context: str,
+        confidence: float,
+        learnings_used: Optional[List[str]] = None
+    ) -> str:
+        """
+        Record that a decision was made using learnings.
+        
+        This is Phase 1 of the Improvement Plan: CLOSING THE FEEDBACK LOOP.
+        
+        When a decision is made, we record:
+        - What was decided
+        - What strategy was chosen
+        - Which learnings influenced the decision
+        
+        Later, when we know the outcome, we call record_decision_outcome().
+        """
+        decision_id = f"dec_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{len(self.index.get('decisions', []))}"
+        
+        decision = {
+            "id": decision_id,
+            "type": decision_type,
+            "strategy": strategy,
+            "context": context,
+            "confidence": confidence,
+            "learnings_used": learnings_used or [],
+            "outcome": None,  # Will be updated later
+            "timestamp": datetime.now().isoformat()
+        }
+        
+        # Ensure decisions list exists
+        if "decisions" not in self.index:
+            self.index["decisions"] = []
+        
+        self.index["decisions"].append(decision)
+        
+        # Keep only last 200 decisions
+        if len(self.index["decisions"]) > 200:
+            self.index["decisions"] = self.index["decisions"][-200:]
+        
+        # Mark learnings as used
+        if learnings_used:
+            for lid in learnings_used:
+                self.mark_learning_used(lid)
+        
+        self._save_index()
+        return decision_id
+    
+    def record_decision_outcome(
+        self,
+        decision_id: str,
+        outcome: str,  # "success" or "failure"
+        score_delta: Optional[float] = None,
+        metadata: Optional[dict] = None
+    ) -> bool:
+        """
+        Record the outcome of a decision.
+        
+        This closes the feedback loop:
+        1. Decision was made using learnings
+        2. We record the outcome
+        3. Strategy effectiveness is updated
+        4. Future decisions use this feedback
+        """
+        if "decisions" not in self.index:
+            return False
+        
+        for decision in self.index["decisions"]:
+            if decision["id"] == decision_id:
+                decision["outcome"] = outcome
+                decision["outcome_timestamp"] = datetime.now().isoformat()
+                if score_delta is not None:
+                    decision["score_delta"] = score_delta
+                if metadata:
+                    decision["metadata"] = metadata
+                
+                # Update strategy effectiveness based on outcome
+                strategy = decision.get("strategy")
+                if strategy and outcome:
+                    self.record_strategy_feedback(strategy, outcome, decision.get("context", ""))
+                
+                self._save_index()
+                return True
+        
+        return False
+    
+    def get_recommended_strategy_for_context(
+        self,
+        context: str,
+        available_strategies: Optional[List[str]] = None,
+        mark_as_used: bool = True
+    ) -> Dict:
+        """
+        Get recommended strategy AND record that we're using learnings.
+        
+        This is Phase 1 CORE: CLOSING THE FEEDBACK LOOP.
+        
+        - Gets recommended strategy from learnings
+        - Marks the relevant learnings as "used"
+        - Records the decision for future feedback
+        
+        Returns:
+            Dict with strategy, reasoning, confidence, AND learnings_used
+        """
+        recommendation = self.get_recommended_strategy(
+            context=context,
+            available_strategies=available_strategies
+        )
+        
+        # Get the actual learnings that contributed to this recommendation
+        relevant_learnings = self.get_relevant_learnings(context=context, limit=5)
+        learning_ids = [l["id"] for l in relevant_learnings if l.get("outcome") == "success"]
+        
+        # Record the decision
+        decision_id = self.record_decision(
+            decision_type="strategy_selection",
+            strategy=recommendation.get("strategy", "diversity"),
+            context=context,
+            confidence=recommendation.get("confidence", 0.5),
+            learnings_used=learning_ids if mark_as_used else []
+        )
+        
+        # Add decision_id to recommendation for later outcome tracking
+        recommendation["decision_id"] = decision_id
+        recommendation["learnings_used"] = learning_ids
+        recommendation["learnings_count"] = len(learning_ids)
+        
+        return recommendation
+    
+    def get_strategy_effectiveness_detail(self) -> Dict:
+        """
+        Get detailed strategy effectiveness with success rates.
+        
+        Returns:
+            Dict with strategy stats: attempts, successes, rate
+        """
+        strategy_stats = {}
+        
+        for decision in self.index.get("decisions", []):
+            strategy = decision.get("strategy")
+            if not strategy:
+                continue
+            
+            if strategy not in strategy_stats:
+                strategy_stats[strategy] = {"attempts": 0, "successes": 0, "total_confidence": 0}
+            
+            strategy_stats[strategy]["attempts"] += 1
+            if decision.get("outcome") == "success":
+                strategy_stats[strategy]["successes"] += 1
+            strategy_stats[strategy]["total_confidence"] += decision.get("confidence", 0)
+        
+        # Calculate rates
+        for s, stats in strategy_stats.items():
+            if stats["attempts"] > 0:
+                stats["success_rate"] = round(stats["successes"] / stats["attempts"], 3)
+                stats["avg_confidence"] = round(stats["total_confidence"] / stats["attempts"], 3)
+        
+        return strategy_stats
+    
     def get_context_for_task(self, task: str) -> Dict[str, any]:
         """
         Get learnings relevant for a specific task type.

@@ -75,21 +75,13 @@ EVENT_SCHEMA = {
     'id': str
 }
 
+# Import consumers
+import consumers.agent_completed_consumer as AgentCompletedConsumerModule
+import learnings_consumer as LearningsConsumerModule
+
 # Event Consumer Registry (Phase 8)
 class EventConsumer:
     """Base class for event consumers."""
-    def handles(self) -> List[str]:
-        """Return list of event types this consumer handles."""
-        return []
-    
-    def consume(self, event: dict) -> bool:
-        """Process event. Return True if processed, False to skip."""
-        return False
-    
-    def should_retry(self, event: dict) -> bool:
-        """Return True if this consumer should retry later."""
-        return False
-
 
 class LearningIssuesConsumer(EventConsumer):
     """Process learning_issues_detected events."""
@@ -120,7 +112,6 @@ class MetaInsightConsumer(EventConsumer):
         return ['meta_insight_generated']
     
     def consume(self, event: dict) -> bool:
-        # This would store to KG in a full implementation
         logger.info(f"Meta insight: {event.get('data', {}).get('insight_type', 'unknown')}")
         return True
 
@@ -138,12 +129,39 @@ class PatternWeightConsumer(EventConsumer):
         return True
 
 
-# Consumer Registry
+class AgentCompletedConsumerImpl(EventConsumer):
+    """Process agent_completed events — Phase 2 of Improvement Plan."""
+    def __init__(self):
+        self._consumer = AgentCompletedConsumerModule.AgentCompletedConsumer()
+    
+    def handles(self) -> List[str]:
+        return ['agent_completed', 'task_completed']
+    
+    def consume(self, event: dict) -> bool:
+        return self._consumer.consume(event)
+
+
+class LearningsConsumerImpl(EventConsumer):
+    """Process learning_discovered events — Phase 1 of Improvement Plan."""
+    def __init__(self):
+        self._consumer = LearningsConsumerModule.LearningsConsumer()
+    
+    def handles(self) -> List[str]:
+        return ['learning_discovered', 'learning_recorded']
+    
+    def consume(self, event: dict) -> bool:
+        # learning_discovered events trigger sync of learnings
+        stats = self._consumer.run()
+        return stats['learnings_synced'] > 0
+
+
 CONSUMERS: List[EventConsumer] = [
     LearningIssuesConsumer(),
     StagnationConsumer(),
     MetaInsightConsumer(),
     PatternWeightConsumer(),
+    AgentCompletedConsumerImpl(),
+    LearningsConsumerImpl(),
 ]
 
 

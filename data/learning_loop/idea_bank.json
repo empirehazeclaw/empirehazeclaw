@@ -1,14 +1,6 @@
 {
   "ideas": [
     {
-      "title": "WARNING: memory:Failed",
-      "description": "Failed",
-      "type": "memory_warning",
-      "why_ineffective": "Known failure pattern from memory/logs",
-      "why_ineffective_count": 1,
-      "source": "memory_analysis"
-    },
-    {
       "title": "WARNING: memory:failed",
       "description": "failed",
       "type": "memory_warning",
@@ -17,16 +9,16 @@
       "source": "memory_analysis"
     },
     {
-      "title": "WARNING: memory:Issue",
-      "description": "Issue",
+      "title": "WARNING: memory:Warning",
+      "description": "Warning",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,
       "source": "memory_analysis"
     },
     {
-      "title": "WARNING: memory:\u274c error",
-      "description": "\u274c error",
+      "title": "WARNING: memory:issue",
+      "description": "issue",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,

@@ -1,6 +1,6 @@
 {
   "version": "3.1",
-  "iteration": 323,
+  "iteration": 327,
   "score": 0.8097134146341464,
   "score_history": [
     0.2609459258572654,
@@ -341,6 +341,10 @@
     0.7328344979190845,
     0.8097134146341464,
     0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.8097134146341464,
     0.8097134146341464
   ],
   "patterns": [
@@ -369,7 +373,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 87,
+  "novelty_injections": 91,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -415,15 +419,15 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
-  "last_forced_novelty": "2026-04-21T12:28:55.384656",
+  "last_validated_pattern": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+  "last_forced_novelty": "2026-04-21T16:04:38.351748",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-21T15:04:11.274270",
+  "last_pattern_update": "2026-04-21T17:04:27.145954",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
@@ -435,10 +439,10 @@
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8824,
+    "dq_raw": 0.6818,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.7897,
+    "kg_health": 0.3887,
     "cron_success": 0.975
   },
   "_multi_dim": {
@@ -446,10 +450,10 @@
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8824,
+    "dq_raw": 0.6818,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.7897,
+    "kg_health": 0.3887,
     "cron_success": 0.975
   }
 }

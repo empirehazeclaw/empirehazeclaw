@@ -1,0 +1,21 @@
+{
+  "last_event_id": "evt_1776601309845",
+  "events_processed": 122,
+  "success_count": 100,
+  "failure_count": 22,
+  "last_failure": {
+    "timestamp": "2026-04-19T12:21:49.845907",
+    "agent_id": "unknown",
+    "task": "unknown",
+    "error": null
+  },
+  "failure_patterns": {},
+  "agent_stats": {
+    "unknown": {
+      "total": 122,
+      "success": 100,
+      "failure": 22,
+      "avg_duration_ms": 0.0
+    }
+  }
+}

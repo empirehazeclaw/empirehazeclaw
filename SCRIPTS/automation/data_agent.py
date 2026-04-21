@@ -156,24 +156,44 @@ def maintain_kg_quality() -> Dict:
 
 def get_cron_scripts() -> Dict[str, Tuple[str, str]]:
     """Get all scripts referenced by cron jobs. Returns {script_path: (cron_name, job_id)}."""
-    result = subprocess.run(
-        ["openclaw", "cron", "list", "--json"],
-        capture_output=True, text=True, timeout=15
-    )
-    if result.returncode != 0:
-        return {}
-    
+    # Try reading from OpenClaw's internal cron store first
+    cron_store = Path("/home/clawbot/.openclaw/cron/jobs.json")
     scripts = {}
-    data = json.loads(result.stdout)
-    for job in data.get("jobs", []):
-        msg = job.get("payload", {}).get("message", "")
-        job_name = job.get("name", "unnamed")
-        job_id = job.get("id", "")[:8]
-        
-        # Extract absolute paths
-        for p in re.findall(r'(/[^\s]+\.(?:py|sh))', msg):
-            if p.startswith("/"):
-                scripts[p] = (job_name, job_id)
+    
+    if cron_store.exists():
+        try:
+            data = json.loads(cron_store.read_text())
+            jobs = data if isinstance(data, list) else data.get('jobs', [])
+            for job in jobs:
+                msg = job.get('payload', {}).get('message', '')
+                job_name = job.get('name', 'unnamed')
+                job_id = job.get('id', '')[:8]
+                # Extract absolute paths
+                for p in re.findall(r'(/[^"\s]+\.(?:py|sh))', str(msg)):
+                    if p.startswith("/"):
+                        scripts[p] = (job_name, job_id)
+            return scripts
+        except Exception as e:
+            log(f"Failed to read cron store: {e}", "WARN")
+    
+    # Fallback: try openclaw CLI
+    try:
+        result = subprocess.run(
+            ["openclaw", "cron", "list", "--json"],
+            capture_output=True, text=True, timeout=10
+        )
+        if result.returncode != 0:
+            return {}
+        data = json.loads(result.stdout)
+        for job in data.get("jobs", []):
+            msg = job.get("payload", {}).get("message", "")
+            job_name = job.get("name", "unnamed")
+            job_id = job.get("id", "")[:8]
+            for p in re.findall(r'(/[^"\s]+\.(?:py|sh))', str(msg)):
+                if p.startswith("/"):
+                    scripts[p] = (job_name, job_id)
+    except Exception as e:
+        log(f"openclaw cron list failed: {e}", "WARN")
     
     return scripts
 

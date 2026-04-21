@@ -1,6 +1,6 @@
 # MEMORY.md — Sir HazeClaw Core Memory
 
-**Letzte Aktualisierung:** 2026-04-20 11:43 UTC
+**Letzte Aktualisierung:** 2026-04-21 15:30 UTC
 
 ---
 
@@ -594,3 +594,60 @@ grep -r "dir_to_delete/" --include="*.py" --include="*.sh" --include="*.md" | wc
 - Whisper Cache: 462MB (small.pt) — **in use**, nicht löschen
 - node-gyp Cache: 65MB — optional
 - Rustup: 1.6GB (nur für Builder relevant)
+
+---
+
+## 🚀 PHASE 1-5 IMPROVEMENT PLAN (2026-04-21)
+
+### Plan Status: PHASE 1-2 COMPLETE, 3-5 IN PROGRESS
+
+| Phase | Topic | Status | Created |
+|-------|-------|--------|---------|
+| Phase 1 | Learnings Active Consumption | ✅ DONE | learnings_consumer.py, event_bus integration |
+| Phase 2 | Event Bus Consumer Expansion | ✅ DONE | agent_completed_consumer.py registered |
+| Phase 3 | Idle Cron Recovery | 🔄 IN PROGRESS | cron_idle_detector.py created |
+| Phase 4 | KG Legacy Cleanup | 🔄 IN PROGRESS | kg_legacy_cleanup.py created |
+| Phase 5 | System Health & Monitoring | 📋 PLANNED | unified_health_dashboard.py |
+
+### Phase 1-2 Scripts Created
+```
+SCRIPTS/automation/learnings_consumer.py           # NEW - consumes learnings from files
+SCRIPTS/automation/consumers/agent_completed_consumer.py  # NEW - processes 827 agent_completed events
+SCRIPTS/automation/event_bus.py                    # MODIFIED - registered 2 new consumers
+```
+
+### Event Bus Consumer Stats (After Phase 2)
+```
+Registered: 6 consumers (was 4)
+Events processed in first run: 131
+agent_completed events: 827 (now being consumed)
+```
+
+### KG Analysis (After Phase 4)
+```
+Total entities: 637
+Orphan entities: 143 (22.4%) — within 60% threshold
+Legacy arxiv entities: 165 — candidates for cleanup
+Stale (>30 days): 0
+```
+
+### Backup Created
+```
+/home/clawbot/.openclaw/workspace/backups/pre_improvement_plan_20260421_151611/
+Size: 69MB
+Contains: SCRIPTS, ceo/, data/
+```
+
+### Openclaw Crons Issue
+```
+openclaw crons list: HÄNGT/TIMEOUT
+Gateway ok, aber cron list command braucht >30s
+→ cron_idle_detector hat fallback mit timeout handling
+```
+
+### Improvement Plan Document
+```
+docs/IMPROVEMENT_PLAN_PHASE_1_5.md (2026-04-21)
+Contains: Detailed 5-phase plan with success metrics
+```
+

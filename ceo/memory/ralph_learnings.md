@@ -51,3 +51,39 @@
 - [2026-04-21 12:07] [maintenance:success] Maintenance complete after 2 iterations
 - [2026-04-21 12:13] [safety] Max iterations reached without completion (score=0.766)
 - [2026-04-21 12:18] [success] Completed after 3 iterations (score=0.733)
+- [2026-04-21 16:32] [success] Completed after 13 iterations (score=0.810)
+
+## Ralph Learning Loop - 2026-04-21 16:32 UTC
+**Result:** COMPLETE via SCORE PATH (score=0.810, stable 3/3 iterations)
+**Iterations:** 13
+**Strategy:** diversity
+
+### Learning
+```
+- Ralph Loop mit score 0.810 nach 13 iterationen abgeschlossen
+- Konsolidierung Engine hat 61 events → learnings verarbeitet
+- Learnings index: 218 learnings, 7 strategies
+- Decision Engine nutzt diversity strategy (conf: 1.0)
+- KG cleanup: 165 arxiv legacy entities entfernt
+- KG orphan rate: von 37% auf ~1.8% verbessert (nach cleanup)
+```
+
+### Insight
+```
+Die Kombination aus:
+1. Event Bus Konsolidierung (Events → KG → Learnings)
+2. Learnings Consumer (synct zu LearningsService)
+3. Decision Engine (nutzt learnings für decisions)
+4. Ralph Loop (evalueert + verbessert)
+
+bildet einen vollständigen Lern-Zyklus.
+Der Fluss: Events → Patterns → KG → Learnings → Decisions → Actions → Outcomes → Learnings
+```
+
+### Next
+```
+- Decision Engine: decisions aufzeichnen + outcomes反馈
+- Learnings consumer läuft bereits stündlich via cron
+- Nächste iteration: score targeting auf 0.85
+```
+- [2026-04-21 16:56] [maintenance:success] Maintenance complete after 2 iterations

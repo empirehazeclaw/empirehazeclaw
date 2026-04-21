@@ -75,28 +75,33 @@ class DecisionEngine:
         """
         Get the recommended next action for a context.
         
+        PHASE 1: Now uses get_recommended_strategy_for_context()
+        which automatically records the decision and marks learnings as used.
+        
         Args:
             context: The current context (e.g., "pattern_matching")
             force_explore: If True, prefer untested strategies (for exploration)
         
         Returns:
-            Dict with action, strategy, reasoning, confidence
+            Dict with action, strategy, reasoning, confidence, decision_id
         """
         if not self.learnings:
             return {
                 "action": "explore",
                 "strategy": "diversity",
                 "confidence": 0.0,
-                "reasoning": "No learnings available - defaulting to diversity"
+                "reasoning": "No learnings available - defaulting to diversity",
+                "decision_id": None
             }
         
         # Get available strategies for context
         available = self.CONTEXT_STRATEGIES.get(context, self.CONTEXT_STRATEGIES["general"])
         
-        # Get recommendation
-        recommendation = self.learnings.get_recommended_strategy(
+        # PHASE 1 CORE: Use new method that records decision AND marks learnings used
+        recommendation = self.learnings.get_recommended_strategy_for_context(
             context=context,
-            available_strategies=available
+            available_strategies=available,
+            mark_as_used=True  # This marks learnings as "used"
         )
         
         # If force_explore, pick untested strategy
@@ -107,7 +112,9 @@ class DecisionEngine:
                 recommendation = {
                     "strategy": unexplored[0],
                     "reasoning": "Exploration mode - selecting untested strategy",
-                    "confidence": 0.3  # Lower confidence for untested
+                    "confidence": 0.3,  # Lower confidence for untested
+                    "decision_id": None,
+                    "learnings_count": 0
                 }
         
         # Determine action based on strategy
@@ -119,8 +126,34 @@ class DecisionEngine:
             "confidence": recommendation.get("confidence", 0.5),
             "reasoning": recommendation.get("reasoning", "Based on historical effectiveness"),
             "context": context,
-            "available_strategies": available
+            "available_strategies": available,
+            "decision_id": recommendation.get("decision_id"),  # For outcome tracking
+            "learnings_used": recommendation.get("learnings_count", 0)
         }
+    
+    def record_outcome(self, decision_id: str, outcome: str, score_delta: float = None) -> bool:
+        """
+        Record the outcome of a decision.
+        
+        PHASE 1: This closes the feedback loop.
+        Call this after an action is taken to record success/failure.
+        
+        Args:
+            decision_id: The decision_id from get_next_action()
+            outcome: "success" or "failure"
+            score_delta: Optional score change
+        
+        Returns:
+            True if outcome was recorded
+        """
+        if not decision_id or not self.learnings:
+            return False
+        
+        return self.learnings.record_decision_outcome(
+            decision_id=decision_id,
+            outcome=outcome,
+            score_delta=score_delta
+        )
     
     def _strategy_to_action(self, strategy: str) -> str:
         """Map strategy to concrete action."""
@@ -239,11 +272,81 @@ class DecisionEngine:
         # Sort by confidence
         scored.sort(key=lambda x: -x[1])
         
+        # PHASE 1: Record the decision
+        decision_id = None
+        learnings_used = []
+        if scored and self.learnings:
+            best_option = scored[0][0]
+            # Get learnings that influenced this decision
+            relevant = self.learnings.get_relevant_learnings(context="general", limit=3)
+            learnings_used = [l["id"] for l in relevant if l.get("outcome") == "success"]
+            decision_id = self.learnings.record_decision(
+                decision_type="option_selection",
+                strategy=best_option.get("strategy", "unknown"),
+                context="general",
+                confidence=scored[0][1],
+                learnings_used=learnings_used
+            )
+        
         return {
             "selected": scored[0][0],
             "confidence": scored[0][1],
             "reasoning": f"Highest confidence ({scored[0][1]:.2f}) among {len(options)} options",
-            "all_options": [{"option": s[0].get("name", s[0].get("id")), "confidence": s[1]} for s in scored]
+            "all_options": [{"option": s[0].get("name", s[0].get("id")), "confidence": s[1]} for s in scored],
+            "decision_id": decision_id,  # PHASE 1: For outcome tracking
+            "learnings_used": len(learnings_used)
+        }
+    
+    # ============ PHASE 1: RALPH INTEGRATION ============
+    
+    def get_strategy_for_ralph(self, pattern_source: str, current_score: float) -> Dict:
+        """
+        Ralph Loop: Get strategy recommendation that CLOSES THE LOOP.
+        
+        This is the main integration point for Ralph Learning Loop.
+        It:
+        1. Gets recommended strategy based on learnings
+        2. Records the decision
+        3. Returns decision_id for Ralph to call record_outcome() later
+        
+        Ralph should:
+            1. Call this before each iteration
+            2. Use the returned strategy
+            3. Call record_outcome() after iteration with result
+        """
+        if not self.learnings:
+            return {
+                "strategy": "diversity",
+                "reasoning": "No learnings - using diversity",
+                "confidence": 0.0,
+                "decision_id": None,
+                "source": "default"
+            }
+        
+        # Map Ralph's pattern_source to our context
+        context_map = {
+            "task": "pattern_matching",
+            "failure": "system_optimization",
+            "success": "score_optimization",
+            "capability": "learning_optimization"
+        }
+        context = context_map.get(pattern_source, "general")
+        
+        # Get recommendation with full feedback loop
+        recommendation = self.learnings.get_recommended_strategy_for_context(
+            context=context,
+            available_strategies=None,  # Use all
+            mark_as_used=True
+        )
+        
+        return {
+            "strategy": recommendation.get("strategy", "diversity"),
+            "reasoning": recommendation.get("reasoning", "Based on learnings"),
+            "confidence": recommendation.get("confidence", 0.5),
+            "decision_id": recommendation.get("decision_id"),
+            "learnings_used": recommendation.get("learnings_count", 0),
+            "context": context,
+            "source": "learnings" if recommendation.get("learnings_count", 0) > 0 else "default"
         }
     
     def get_decision_context(self, agent: str = "Sir HazeClaw") -> Dict:
@@ -266,12 +369,18 @@ class DecisionEngine:
         for context in ["pattern_matching", "score_optimization", "learning_optimization"]:
             next_actions[context] = self.get_next_action(context)
         
+        # PHASE 1: Add detailed strategy effectiveness
+        strategy_stats = self.learnings.get_strategy_effectiveness_detail()
+        
         return {
             "agent": agent,
             "recommended_actions": next_actions,
             "top_strategies": ctx.get("top_strategies", []),
             "recent_learnings": ctx.get("learnings", [])[:5],
             "strategy_effectiveness": self.learnings.index.get("strategy_effectiveness", {}),
+            "strategy_stats": strategy_stats,  # PHASE 1: Detailed stats
+            "decisions_tracked": len(self.learnings.index.get("decisions", [])),  # PHASE 1
+            "learnings_used_count": sum(1 for l in self.learnings.index.get("recent", []) if l.get("used")),
             "timestamp": datetime.utcnow().isoformat()
         }
 

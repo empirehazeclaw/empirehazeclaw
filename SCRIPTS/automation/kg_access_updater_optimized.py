@@ -70,7 +70,7 @@ def search_kg(kg, query):
         else:
             # Fact content match
             for fact in data.get('facts', []):
-                fact_content = fact.get('content', '').lower()
+                fact_content = fact.get('content', '').lower() if isinstance(fact, dict) else str(fact).lower()
                 matched_words = sum(1 for word in query_words if word in fact_content)
                 if matched_words > 0:
                     word_score = matched_words / len(query_words)
