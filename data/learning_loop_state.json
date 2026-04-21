@@ -1,6 +1,6 @@
 {
   "version": "3.1",
-  "iteration": 256,
+  "iteration": 261,
   "score": 0.7877134146341463,
   "score_history": [
     0.2609459258572654,
@@ -278,6 +278,7 @@
     0.7555284009390895,
     0.7997112625538019,
     0.8614329268292682,
+    0.7877134146341463,
     0.7877134146341463
   ],
   "patterns": [
@@ -306,13 +307,18 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 20,
+  "novelty_injections": 25,
+  "novelty_score": 0.95,
+  "novelty_history": [
+    1.0
+  ],
+  "consecutive_novelty_low": 0,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
   "pattern_source": "failure",
   "last_validation": null,
-  "last_decay": "2026-04-14T10:38:45.192126",
+  "last_decay": "2026-04-21T09:40:12.154353",
   "created": "2026-04-14T00:00:00",
   "thompson_rewards": {
     "test_category": {
@@ -320,8 +326,8 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+  "consecutive_same_pattern": 1,
+  "last_validated_pattern": "Apply proven pattern: Break score plateau with novel approach",
   "last_forced_novelty": "2026-04-21T09:09:47.572038",
   "recently_forced_novelty": true,
   "feedback_stats": {

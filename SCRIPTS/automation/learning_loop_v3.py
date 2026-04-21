@@ -145,6 +145,9 @@ def load_state():
         "validation_failures": 0,
         "feedback_processed": 0,
         "novelty_injections": 0,  # NEW: Phase 0 fix
+        "novelty_score": 1.0,  # Phase 2: Novelty tracking (1.0=max, decay by 0.1)
+        "novelty_history": [],  # Phase 2: Track novelty over iterations
+        "consecutive_novelty_low": 0,  # Phase 2: Count low novelty iterations
         "consecutive_failures": 0,  # NEW: Phase 2 - rollback tracking
         "learning_rate": 0.1,  # NEW: Plateau Fix - adaptive LR
         "lr_stagnation_count": 0,  # NEW: Count consecutive plateau runs
@@ -756,6 +759,9 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
     if validation_details["passed"]:
         state["validation_successes"] = state.get("validation_successes", 0) + 1
         state["consecutive_failures"] = 0  # Reset failure streak
+        # PHASE 2: Novelty tracking
+        state["novelty_score"] = min(1.0, state.get("novelty_score", 1.0) + 0.1)  # Boost novelty
+        state["consecutive_novelty_low"] = 0  # Reset low-novelty counter
         print(f"   ✅ VALIDATION PASSED (v2)")
         print(f"      Tests: {passed_tests}/{total_tests}")
         print(f"      Error delta: {error_delta:+.2f}% (threshold: ±{ERROR_DELTA_THRESHOLD}%)")
@@ -801,6 +807,8 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
     else:
         state["validation_failures"] = state.get("validation_failures", 0) + 1
         state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
+        # PHASE 2: Novelty decay on failure
+        state["novelty_score"] = max(0.0, state.get("novelty_score", 1.0) - 0.15)
         print(f"   ❌ VALIDATION FAILED (v2)")
         print(f"      Tests: {passed_tests}/{total_tests} passed")
         print(f"      Error delta: {error_delta:+.2f}% (threshold: ±{ERROR_DELTA_THRESHOLD}%)")
@@ -1751,9 +1759,26 @@ def run_full_cycle():
     # PHASE 6: Pattern Decay (run daily)
     run_pattern_decay()
 
-    # Calculate final score
-    # IMPORTANT: Don't reload state here - use the state that was modified by validation_gate
-    # to preserve validation_successes and cross_pattern_hits
+    state_to_use = state  # Use the state object from run_full_cycle scope
+    # PHASE 2: Novelty Tracking
+    # Track novelty history and decay
+    novelty_history = state_to_use.get("novelty_history", [])
+    novelty_history.append(state_to_use.get("novelty_score", 1.0))
+    novelty_history = novelty_history[-20:]  # Keep last 20
+    state_to_use["novelty_history"] = novelty_history
+    
+    # Calculate consecutive low novelty iterations
+    if state_to_use.get("novelty_score", 1.0) < 0.3:
+        state_to_use["consecutive_novelty_low"] = state_to_use.get("consecutive_novelty_low", 0) + 1
+    else:
+        state_to_use["consecutive_novelty_low"] = 0
+    
+    # Phase 2: Natural novelty decay (0.05 per iteration when not boosted)
+    if state_to_use.get("novelty_score", 1.0) > 0.5:
+        state_to_use["novelty_score"] = max(0.3, state_to_use.get("novelty_score", 1.0) - 0.05)
+    
+    print(f"   📊 Novelty: {state_to_use.get('novelty_score', 1.0):.2f} (low streak: {state_to_use.get('consecutive_novelty_low', 0)})")
+
     state_to_use = state  # Use the state object from run_full_cycle scope
     final_score, plateau_info = calculate_loop_score()
     state_to_use["score"] = final_score
