@@ -1,80 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-20T17:04:49.593079",
-      "title": "Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Break score plateau with novel approach",
-        "timestamp": "2026-04-20T17:04:48.919250",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7642213883677298,
-        "current_score": 0.8642213883677298,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T18:01:52.729553",
-      "title": "[Exploration] Measure context size, find 1 specific text to shorten",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[Exploration] Measure context size, find 1 specific text to shorten",
-        "timestamp": "2026-04-20T18:01:52.012055",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7655400696864111,
-        "current_score": 0.8655400696864111,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-20T18:06:36.750273",
       "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
       "validated": true,
@@ -1868,6 +1794,80 @@
         "version": "2.0",
         "baseline_score": 0.7555284009390895,
         "current_score": 0.8555284009390894,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T09:35:26.528118",
+      "title": "Apply proven pattern: Break score plateau with novel approach",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Break score plateau with novel approach",
+        "timestamp": "2026-04-21T09:35:25.966949",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7997112625538019,
+        "current_score": 0.8997112625538018,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T09:36:47.760417",
+      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+        "timestamp": "2026-04-21T09:36:47.163862",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.8614329268292682,
+        "current_score": 0.9614329268292682,
         "rules_checked": {
           "min_tests": true,
           "error_threshold": true,

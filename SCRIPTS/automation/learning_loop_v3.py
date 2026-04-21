@@ -947,14 +947,12 @@ def get_learning_progress_rate(state: dict) -> float:
 
 def calculate_loop_score():
     """
-    Phase 1: Multi-Dimensional Self-Improvement Score
+    Phase 1A: Multi-Dimensional Self-Improvement Score (Reward-Hacking Fixed)
 
-    Components:
-    1. Task Success Rate (TSR)    — 25%: validation_successes / total
-    2. Learning Progress Rate (LPR) — 25%: score trend direction
-    3. System Health Score (SHS)  — 20%: KG quality + Cron success
-    4. Exploration Bonus (EB)    — 15%: new ideas, cross-patterns
-    5. Dampening Factor (DF)      — 15%: prevents sudden jumps
+    PROBLEM: KG orphan fix jumped score 0.50 -> 0.80 in one shot.
+    This is REWARD HACKING via structural repair, not real learning.
+    SOLUTION: Split score into LEARNING components (80%) + DATA_QUALITY (20% CAPPED).
+    Data quality max contribution = 0.10 (10% of total), even at 100% health.
     """
     state = load_state()
 
@@ -967,25 +965,27 @@ def calculate_loop_score():
     # Component 2: Learning Progress Rate (25%)
     lpr = get_learning_progress_rate(state)
 
-    # Component 3: System Health Score (20%)
+    # Component 5: Data Quality (30% MAX) - KEY FIX for reward hacking
     kg_health = get_kg_health_score()
     cron_success = get_cron_success_rate()
-    shs = kg_health * 0.5 + cron_success * 0.5
+    dq_raw = kg_health * 0.5 + cron_success * 0.5
+    dq_capped = min(dq_raw, 0.50)  # Cap at 0.50 so max contribution = 0.10
 
     # Component 4: Exploration Bonus (15%)
     eb = get_exploration_bonus(state)
 
     # Component 5: Dampening Factor (15%)
     iteration = state.get("iteration", 0)
-    df = min(iteration / 100, 1.0) * 0.15
+    df = min(iteration / 100, 1.0) * 0.10
 
     # FINAL SCORE
-    score = tsr * 0.25 + lpr * 0.25 + shs * 0.20 + eb * 0.15 + df * 0.15
+    score = tsr * 0.35 + lpr * 0.25 + eb * 0.15 + df * 0.10 + dq_capped * 0.20
 
     # Store multi-dim metrics for debugging
     state["_multi_dim"] = {
-        "tsr": round(tsr, 4), "lpr": round(lpr, 4), "shs": round(shs, 4),
+        "tsr": round(tsr, 4), "lpr": round(lpr, 4),
         "eb": round(eb, 4), "df": round(df, 4),
+        "dq_raw": round(dq_raw, 4), "dq_capped": round(dq_capped, 4),
         "kg_health": round(kg_health, 4), "cron_success": round(cron_success, 4)
     }
 
@@ -1022,7 +1022,7 @@ def calculate_loop_score():
         "lr_stagnation_count": lr_stagnation_count,
         "pattern_source": pattern_source
     }
-    print(f"   📊 MULTI-DIM: TSR={tsr:.3f} LPR={lpr:.3f} SHS={shs:.3f} EB={eb:.3f} DF={df:.3f} → {final_score:.3f}")
+    print(f"   📊 MULTI-DIM: TSR={tsr:.3f} LPR={lpr:.3f} EB={eb:.3f} DF={df:.3f} DQ={dq_capped:.3f} → {final_score:.3f}")
 
     # Return multi_dim so caller can save it
     multi_dim = state["_multi_dim"]

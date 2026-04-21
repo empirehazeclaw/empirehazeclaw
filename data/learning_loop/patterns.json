@@ -121,13 +121,13 @@
       ],
       "description": "[Exploration] Measure context size, find 1 specific text to shorten",
       "solution": "Applied improvement: Measure context size, find 1 specific text to shorten",
-      "success_count": 25,
+      "success_count": 26,
       "failure_count": 0,
       "validated": true,
       "confidence": 0.95,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-20T16:37:45.463078",
-      "last_validated": "2026-04-21T09:22:20.477812",
+      "last_validated": "2026-04-21T09:36:47.758334",
       "error_type": "context_compression",
       "context": {
         "source": "exploration",
@@ -147,13 +147,13 @@
       ],
       "description": "Break score plateau with novel approach",
       "solution": "Applied improvement: Break score plateau with novel approach",
-      "success_count": 11,
+      "success_count": 12,
       "failure_count": 0,
       "validated": true,
-      "confidence": 0.8552930000000005,
+      "confidence": 0.9052930000000006,
       "initial_confidence": 0.7,
       "first_seen": "2026-04-20T17:04:49.591713",
-      "last_validated": "2026-04-21T09:17:43.915326",
+      "last_validated": "2026-04-21T09:35:26.526228",
       "error_type": "loop_optimization",
       "context": {
         "source": "dynamic_signal",
@@ -300,6 +300,15 @@
         "source": "exploration",
         "script": null
       }
+    },
+    {
+      "title": "memory:Success",
+      "description": "Success",
+      "error_type": "memory_signal",
+      "success_count": 1,
+      "category": "memory_analysis",
+      "confidence": 0.5,
+      "initial_confidence": 0.5
     }
   ],
   "version": 2,

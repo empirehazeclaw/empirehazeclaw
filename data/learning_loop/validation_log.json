@@ -1,70 +1,6 @@
 {
   "validations": [
     {
-      "improvement": "Break score plateau with novel approach",
-      "timestamp": "2026-04-18T21:05:57.704716",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7681625469114656,
-      "current_score": 0.8681625469114655,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
-      "improvement": "Apply proven pattern: Break score plateau with novel approach",
-      "timestamp": "2026-04-18T22:03:44.438536",
-      "tests": [
-        {
-          "name": "error_reducer_check",
-          "passed": true,
-          "output": "No critical errors"
-        },
-        {
-          "name": "syntax_check",
-          "passed": true,
-          "output": "No script to check"
-        },
-        {
-          "name": "cron_health",
-          "passed": false,
-          "failed_crons": 1
-        }
-      ],
-      "passed": true,
-      "error_delta": 0.0,
-      "score_delta": null,
-      "version": "2.0",
-      "baseline_score": 0.7883651223768874,
-      "current_score": 0.8883651223768874,
-      "rules_checked": {
-        "min_tests": true,
-        "error_threshold": true,
-        "no_critical": true
-      }
-    },
-    {
       "improvement": "Apply proven pattern: Break score plateau with novel approach",
       "timestamp": "2026-04-18T23:05:35.943314",
       "tests": [
@@ -3244,6 +3180,70 @@
       "version": "2.0",
       "baseline_score": 0.7555284009390895,
       "current_score": 0.8555284009390894,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "Apply proven pattern: Break score plateau with novel approach",
+      "timestamp": "2026-04-21T09:35:25.966949",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.7997112625538019,
+      "current_score": 0.8997112625538018,
+      "rules_checked": {
+        "min_tests": true,
+        "error_threshold": true,
+        "no_critical": true
+      }
+    },
+    {
+      "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "timestamp": "2026-04-21T09:36:47.163862",
+      "tests": [
+        {
+          "name": "error_reducer_check",
+          "passed": true,
+          "output": "No critical errors"
+        },
+        {
+          "name": "syntax_check",
+          "passed": true,
+          "output": "No script to check"
+        },
+        {
+          "name": "cron_health",
+          "passed": true,
+          "failed_crons": 0
+        }
+      ],
+      "passed": true,
+      "error_delta": 0.0,
+      "score_delta": null,
+      "version": "2.0",
+      "baseline_score": 0.8614329268292682,
+      "current_score": 0.9614329268292682,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,
