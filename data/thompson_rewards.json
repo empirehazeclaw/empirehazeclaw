@@ -1,6 +1,6 @@
 {
   "hypothesis_general": {
-    "successes": 43,
+    "successes": 44,
     "failures": 1
   },
   "cross_pattern_cross_pattern": {
@@ -24,7 +24,7 @@
     "failures": 1
   },
   "hypothesis_loop_optimization": {
-    "successes": 32,
+    "successes": 34,
     "failures": 1
   },
   "hypothesis_context_compression": {
@@ -40,6 +40,10 @@
     "failures": 1
   },
   "issue_issue_learning_plateau": {
+    "successes": 3,
+    "failures": 1
+  },
+  "cross_pattern_learning_plateau": {
     "successes": 2,
     "failures": 1
   }

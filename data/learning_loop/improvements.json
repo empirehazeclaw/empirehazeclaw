@@ -1,191 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-20T20:04:55.251359",
-      "title": "Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Break score plateau with novel approach",
-        "timestamp": "2026-04-20T20:04:54.867359",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7659781649245063,
-        "current_score": 0.8659781649245063,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T20:45:30.057039",
-      "title": "[Exploration] Review sessions, close 1 orphaned session",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[Exploration] Review sessions, close 1 orphaned session",
-        "timestamp": "2026-04-20T20:45:29.627590",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7862162601626016,
-        "current_score": 0.8862162601626016,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T20:46:48.940285",
-      "title": "[Exploration] Measure context size, find 1 specific text to shorten",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[Exploration] Measure context size, find 1 specific text to shorten",
-        "timestamp": "2026-04-20T20:46:48.451176",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7669647450110865,
-        "current_score": 0.8669647450110864,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T21:04:31.474814",
-      "title": "Reduce KG orphans: add relations to disconnected entities",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Reduce KG orphans: add relations to disconnected entities",
-        "timestamp": "2026-04-20T21:04:31.010771",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7669647450110865,
-        "current_score": 0.8669647450110864,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T22:02:43.185272",
-      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-        "timestamp": "2026-04-20T22:02:42.735899",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7669959703075291,
-        "current_score": 0.8669959703075291,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-20T23:03:26.717705",
       "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
       "validated": true,
@@ -1840,6 +1655,196 @@
       "validation_details": {
         "improvement": "Apply proven pattern: Break score plateau with novel approach",
         "timestamp": "2026-04-21T10:34:45.625819",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:35:32.643376",
+      "title": "Apply proven pattern: Break score plateau with novel approach",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Break score plateau with novel approach",
+        "timestamp": "2026-04-21T10:35:32.057997",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:35:38.349875",
+      "title": "[PHASE 4] Measure current context size for hourly cron, find 1 specific text that can be shortened without losing info",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[PHASE 4] Measure current context size for hourly cron, find 1 specific text that can be shortened without losing info",
+        "timestamp": "2026-04-21T10:35:37.805295",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          },
+          {
+            "name": "meta_improvement_check",
+            "passed": true,
+            "output": "Iteration: 272"
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:35:39.426230",
+      "title": "Apply proven pattern: Break score plateau with novel approach",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Break score plateau with novel approach",
+        "timestamp": "2026-04-21T10:35:38.772885",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.562004854368932,
+        "current_score": 0.662004854368932,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:35:40.411623",
+      "title": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[CROSS-PATTERN] Break score plateau with novel approach",
+        "timestamp": "2026-04-21T10:35:39.830788",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:39:27.320446",
+      "title": "Fix: Score plateau detected: range=0.0023, latest=0.560",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Fix: Score plateau detected: range=0.0023, latest=0.560",
+        "timestamp": "2026-04-21T10:39:26.740122",
         "tests": [
           {
             "name": "error_reducer_check",

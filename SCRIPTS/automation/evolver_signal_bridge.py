@@ -343,7 +343,7 @@ def post_evolver_results():
     
     import subprocess
     result = subprocess.run([
-        "python3", str(WORKSPACE / "scripts/event_bus.py"),
+        "python3", str(WORKSPACE / "SCRIPTS/automation/event_bus.py"),
         "publish",
         "--type", "evolver_completed",
         "--source", "capability_evolver",
