@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-04-21T09:09:12.691237",
+  "timestamp": "2026-04-21T09:17:42.705489",
   "kg_metrics": {
-    "entity_count": 428,
-    "relation_count": 766,
-    "orphan_count": 168,
-    "orphan_pct": 0.3925233644859813,
-    "relation_density": 1.7897196261682242,
+    "entity_count": 451,
+    "relation_count": 776,
+    "orphan_count": 186,
+    "orphan_pct": 0.4124168514412417,
+    "relation_density": 1.7206208425720622,
     "type_count": 31,
     "types": [
-      "agent",
-      "infrastructure",
-      "transcript",
       "product",
+      "research",
       "skill",
-      "person",
-      "arxiv",
-      "pattern",
-      "learning",
-      "project"
+      "infrastructure",
+      "project",
+      "kg_synthesis",
+      "category",
+      "reflection",
+      "LearningPattern",
+      "person"
     ]
   },
   "learning_trajectory": {
-    "iteration": 247,
-    "score": 0.5074258237881318,
+    "iteration": 252,
+    "score": 0.7489811139609064,
     "pattern_count": 24
   },
   "benchmark_results": [
@@ -30,7 +30,7 @@
       "area": "kg_query",
       "success": true,
       "error": null,
-      "entity_count": 428
+      "entity_count": 451
     },
     {
       "area": "event_check",
@@ -42,7 +42,7 @@
       "area": "learning_read",
       "success": true,
       "error": null,
-      "score": 0.5074258237881318
+      "score": 0.7489811139609064
     },
     {
       "area": "pattern_match",

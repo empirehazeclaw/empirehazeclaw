@@ -47052,6 +47052,936 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T09:16:11.931335+00:00"
+    },
+    "783": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "784": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "785": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "786": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "787": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "788": {
+      "from": "research_Knowledge-Gaps-Identified_20260421_091606",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "789": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_191803",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "790": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "791": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "792": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_191235",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "793": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "794": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_204525",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "795": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "796": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "797": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "798": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "799": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "800": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_190950",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "801": {
+      "from": "research_Prompt-Optimization-Enables-Stable-Algor_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "802": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "803": {
+      "from": "research_Pattern-Library:-47-patterns-discovered_20260420_190950",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "804": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "805": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "806": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "807": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_191444",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "808": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "809": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "810": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_191604",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "811": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "812": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "813": {
+      "from": "research_Learning-to-Trade-Like-an-Expert:-Cognit_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "814": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "815": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "816": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "817": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "818": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "819": {
+      "from": "research_Pattern-Library:-47-patterns-discovered_20260420_190751",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "820": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "821": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_191047",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "822": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "823": {
+      "from": "research_Pattern-Library:-48-patterns-discovered_20260420_204525",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "824": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "825": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "826": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "827": {
+      "from": "research_Pattern-Library:-47-patterns-discovered_20260420_191047",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "828": {
+      "from": "research_Pattern-Library:-48-patterns-discovered_20260420_191604",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "829": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "830": {
+      "from": "research_From-Clinical-Intent-to-Clinical-Model:-_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "831": {
+      "from": "research_Prompt-Optimization-Enables-Stable-Algor_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "832": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "833": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "834": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "835": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_191235",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "836": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_190751",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "837": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "838": {
+      "from": "research_Knowledge-Gaps-Identified_20260421_090741",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "839": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "840": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "841": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "842": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "843": {
+      "from": "research_20260421",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "844": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "845": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "846": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "847": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "848": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "849": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "850": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "851": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "852": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "853": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "854": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_204525",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "855": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "856": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "857": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "858": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "859": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "860": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "861": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "862": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "863": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "864": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "865": {
+      "from": "rem_theme_home/clawbot",
+      "to": "category_reflections",
+      "type": "categorized_as"
+    },
+    "866": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "867": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "868": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "869": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "870": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "871": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "872": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "873": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "874": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "875": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "876": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "877": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "878": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "879": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "880": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "881": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "882": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "883": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "884": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "885": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "886": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "887": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_191047",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "888": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "889": {
+      "from": "research_Pattern-Library:-48-patterns-discovered_20260420_191444",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "890": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "891": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "892": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "893": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "894": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260421_091606",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "895": {
+      "from": "research_From-Clinical-Intent-to-Clinical-Model:-_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "896": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "897": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "898": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "899": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_191444",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "900": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "901": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "902": {
+      "from": "research_Pattern-Library:-50-patterns-discovered_20260421_091606",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "903": {
+      "from": "research_Knowledge-Gaps-Identified_20260420_191604",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "904": {
+      "from": "research_Pattern-Library:-47-patterns-discovered_20260420_191235",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "905": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260421_090741",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "906": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_190751",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "907": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "908": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "909": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "910": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "911": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "912": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "913": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "914": {
+      "from": "rem_theme_assistant",
+      "to": "category_reflections",
+      "type": "categorized_as"
+    },
+    "915": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "916": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "917": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "918": {
+      "from": "YouTube-Transcript-dQw4w9WgXcQ",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "919": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "920": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "921": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "922": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "923": {
+      "from": "research_Bridging-the-Reasoning-Gap-in-Vietnamese_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "924": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "925": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "926": {
+      "from": "research_Pattern-Library:-48-patterns-discovered_20260420_191803",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "927": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_190950",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "928": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "929": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "930": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "931": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "932": {
+      "from": "research_Beyond-Static-Sandboxing:-Learned-Capabi_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "933": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "934": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "935": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "936": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "937": {
+      "from": "research_SWE-Adept:-An-LLM-Based-Agentic-Framewor_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "938": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "939": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "940": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "941": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "942": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "943": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "944": {
+      "from": "research_Kernel-Dynamics-under-Path-Entropy-Maxim_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "945": {
+      "from": "research_Rich-Entities:-3-well-developed-high-pri_20260420_191803",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "946": {
+      "from": "research_Dive-into-Claude-Code:-The-Design-Space-_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "947": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "948": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "949": {
+      "from": "rem_theme_user",
+      "to": "category_reflections",
+      "type": "categorized_as"
+    },
+    "950": {
+      "from": "research_ArtiCAD:-Articulated-CAD-Assembly-Design_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "951": {
+      "from": "research_When-Agent-Markets-Arrive_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "952": {
+      "from": "research_OOM-RL:-Out-of-Money-Reinforcement-Learn_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "953": {
+      "from": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_190950",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "954": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "955": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260421_091606",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "956": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "957": {
+      "from": "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191604",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "958": {
+      "from": "research_Pattern-Library:-49-patterns-discovered_20260421_090741",
+      "to": "category_improvements",
+      "type": "categorized_as"
+    },
+    "959": {
+      "from": "research_Structured-Prompt-Language:-Declarative-_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "960": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_191803",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "961": {
+      "from": "research_Safety,-Security,-and-Cognitive-Risks-in_20260420_190751",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "962": {
+      "from": "research_Learning-the-Stellar-Structure-Equations_20260420_191235",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "963": {
+      "from": "research_Bridging-the-Reasoning-Gap-in-Vietnamese_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "964": {
+      "from": "research_Towards-Personalizing-Secure-Programming_20260420_191444",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "965": {
+      "from": "research_Learning-to-Trade-Like-an-Expert:-Cognit_20260421_090741",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "966": {
+      "from": "research_Activity-Dependent-Plasticity-in-Morphog_20260420_191047",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "967": {
+      "from": "innovation_research_20260421",
+      "to": "category_research-topics",
+      "type": "categorized_as"
+    },
+    "968": {
+      "from": "research_Autonomous-Evolution-of-EDA-Tools:-Multi_20260420_204525",
+      "to": "category_research-topics",
+      "type": "categorized_as"
     }
   }
 }
