@@ -371,6 +371,103 @@ class LearningsService:
         tested = set(self.index["strategy_effectiveness"].keys())
         return list(all_strategies - tested)
     
+    def record_strategy_feedback(self, strategy: str, outcome: str, context: Optional[str] = None) -> Dict:
+        """
+        Record the outcome of using a strategy.
+        
+        This closes the feedback loop:
+        Strategy used → Outcome recorded → Strategy effectiveness updated → Next recommendation better
+        
+        Args:
+            strategy: The strategy that was used
+            outcome: "success" or "failure"
+            context: Optional context where strategy was used
+        
+        Returns:
+            Updated strategy effectiveness scores
+        """
+        effectiveness = self.index.setdefault("strategy_effectiveness", {})
+        
+        # Update strategy score
+        current = effectiveness.get(strategy, 0)
+        if outcome == "success":
+            effectiveness[strategy] = current + 1
+        elif outcome == "failure":
+            effectiveness[strategy] = current - 1
+        
+        # Track by context too
+        if context:
+            context_effectiveness = self.index.setdefault("context_effectiveness", {})
+            ctx_scores = context_effectiveness.setdefault(context, {})
+            current_ctx = ctx_scores.get(strategy, 0)
+            if outcome == "success":
+                ctx_scores[strategy] = current_ctx + 1
+            elif outcome == "failure":
+                ctx_scores[strategy] = current_ctx - 1
+        
+        self._save_index()
+        
+        return {
+            "strategy": strategy,
+            "outcome": outcome,
+            "new_score": effectiveness[strategy],
+            "total_strategies_tracked": len(effectiveness)
+        }
+    
+    def get_recommended_strategy(self, context: Optional[str] = None, available_strategies: Optional[List[str]] = None) -> Dict:
+        """
+        Get the recommended strategy for a context.
+        
+        Uses:
+        1. Context-specific effectiveness (if context provided)
+        2. General strategy effectiveness
+        3. Exploration bonus for untested strategies
+        
+        Args:
+            context: The context/task type
+            available_strategies: List of strategies to choose from
+        
+        Returns:
+            Dict with recommended strategy and reasoning
+        """
+        effectiveness = self.index.get("strategy_effectiveness", {})
+        context_effectiveness = self.index.get("context_effectiveness", {})
+        
+        # Start with all strategies or available ones
+        candidates = set(available_strategies) if available_strategies else set(effectiveness.keys())
+        
+        # If context provided, use context-specific scores
+        if context and context in context_effectiveness:
+            ctx_scores = context_effectiveness[context]
+            # Combine general and context-specific (weighted toward context)
+            scored = {}
+            for s in candidates:
+                general = effectiveness.get(s, 0)
+                specific = ctx_scores.get(s, 0)
+                # Weight context-specific more heavily
+                combined = general * 0.3 + specific * 0.7
+                # Add exploration bonus for untested
+                if s not in ctx_scores:
+                    combined += 0.5  # Exploration bonus
+                scored[s] = combined
+        else:
+            # Use general effectiveness
+            scored = {s: effectiveness.get(s, 0) + (0.5 if s not in effectiveness else 0) for s in candidates}
+        
+        if not scored:
+            return {"strategy": "diversity", "reasoning": "Default (no data)", "confidence": 0.0}
+        
+        # Pick best
+        best = max(scored.items(), key=lambda x: x[1])
+        
+        return {
+            "strategy": best[0],
+            "score": best[1],
+            "confidence": min(1.0, abs(best[1]) / 5),  # Normalize to 0-1
+            "reasoning": f"Score {best[1]:.2f} based on historical effectiveness",
+            "all_candidates": dict(sorted(scored.items(), key=lambda x: -x[1])[:5])
+        }
+    
     def mark_learning_used(self, learning_id: str) -> bool:
         """Mark a learning as having been used in a decision."""
         for learning in self.index["recent"]:

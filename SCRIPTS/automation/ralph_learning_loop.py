@@ -105,6 +105,29 @@ def run_learning_loop():
     except Exception as e:
         return False, str(e)
 
+def get_recommended_strategy_for_learning():
+    """Get recommended strategy from Learnings Service."""
+    if not LearningsService:
+        return None
+    try:
+        ls = LearningsService()
+        rec = ls.get_recommended_strategy(context="learning_optimization")
+        return rec.get("strategy")
+    except:
+        return None
+
+def record_strategy_feedback(learning_success: bool, strategy: str = None):
+    """Record strategy effectiveness feedback."""
+    if not LearningsService or not strategy:
+        return
+    try:
+        ls = LearningsService()
+        outcome = "success" if learning_success else "failure"
+        ls.record_strategy_feedback(strategy, outcome, context="learning_optimization")
+        log(f"Strategy feedback: {strategy} → {outcome}")
+    except Exception as e:
+        log(f"Warning: Failed to record strategy feedback: {e}")
+
 def parse_score(output):
     """Extract score from learning loop output."""
     # Always prefer JSON state file - output parsing is unreliable
@@ -182,6 +205,11 @@ def run_ralph_cycle():
         append_learning("safety", f"Max iterations reached without completion (score={state['last_score']:.3f})")
         return False, state["iterations"]
     
+    # Get recommended strategy for this iteration
+    strategy = get_recommended_strategy_for_learning()
+    if strategy:
+        log(f"Using strategy: {strategy} (recommended by Learnings Service)")
+    
     # Run learning loop
     success, output = run_learning_loop()
     state["iterations"] += 1
@@ -189,12 +217,19 @@ def run_ralph_cycle():
     if not success:
         log(f"Learning loop failed: {output[:200]}")
         append_learning("error", f"Iteration {state['iterations']}: Learning loop failed")
+        if strategy:
+            record_strategy_feedback(False, strategy)
     
     # Parse score
     score = parse_score(output)
     
     if score is not None:
         log(f"Iteration {state['iterations']}: Score={score:.3f}")
+        
+        # Record strategy feedback based on score improvement
+        if strategy and state.get("last_score"):
+            score_improved = score > state["last_score"]
+            record_strategy_feedback(score_improved, strategy)
         
         # Learning: record improvements
         if "improvement" in output.lower() or "applied" in output.lower():

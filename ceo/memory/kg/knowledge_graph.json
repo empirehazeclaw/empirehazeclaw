@@ -10282,6 +10282,78 @@
       "context": "consolidated",
       "timestamp": "2026-04-21T14:01:01.998347",
       "fact_count": 1
+    },
+    "research_Pattern-Library:-63-patterns-discovered_20260421_140342": {
+      "id": "research_Pattern-Library:-63-patterns-discovered_20260421_140342",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 63 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-21T14:03:42.452295",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 63 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-21T14:03:42.452310",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-21T14:03:42.452306",
+      "last_accessed": "2026-04-21T14:03:42.452307",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260421_140342": {
+      "id": "research_Knowledge-Gaps-Identified_20260421_140342",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-21T14:03:42.452321",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-21T14:03:42.452326",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-21T14:03:42.452323",
+      "last_accessed": "2026-04-21T14:03:42.452324",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260421_140342": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260421_140342",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-21T14:03:42.452334",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-21T14:03:42.452339",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-21T14:03:42.452336",
+      "last_accessed": "2026-04-21T14:03:42.452337",
+      "access_count": 1,
+      "decay_score": 10
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

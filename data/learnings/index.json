@@ -1361,10 +1361,16 @@
     }
   ],
   "strategy_effectiveness": {
-    "diversity": 1,
-    "adaptive_lr": 1,
+    "diversity": 2,
+    "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
     "unknown": -1
+  },
+  "context_effectiveness": {
+    "pattern_matching": {
+      "diversity": 1,
+      "adaptive_lr": -1
+    }
   }
 }
