@@ -10,7 +10,8 @@
       "lrn_20260421_124329_2"
     ],
     "gene": [
-      "lrn_20260421_124329_3"
+      "lrn_20260421_124329_3",
+      "lrn_20260421_130524_34"
     ],
     "insight": [
       "lrn_20260421_124534_4",
@@ -53,6 +54,9 @@
     ],
     "safety": [
       "lrn_20260421_125240_26"
+    ],
+    "health_issue": [
+      "lrn_20260421_130608_35"
     ]
   },
   "by_context": {
@@ -67,7 +71,8 @@
       "lrn_20260421_124534_7"
     ],
     "evolution": [
-      "lrn_20260421_124329_3"
+      "lrn_20260421_124329_3",
+      "lrn_20260421_130524_34"
     ],
     "Ralph": [
       "lrn_20260421_124534_4",
@@ -111,6 +116,9 @@
     "system_config": [
       "lrn_20260421_125319_30",
       "lrn_20260421_125319_31"
+    ],
+    "system_health": [
+      "lrn_20260421_130608_35"
     ]
   },
   "by_strategy": {
@@ -125,6 +133,9 @@
     ],
     "mutation_tuning": [
       "lrn_20260421_124329_3"
+    ],
+    "unknown": [
+      "lrn_20260421_130524_34"
     ]
   },
   "recent": [
@@ -569,12 +580,39 @@
       "timestamp": "2026-04-21T12:53:19.997151",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_130524_34",
+      "source": "Capability Evolver",
+      "category": "gene",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "strategy": "unknown",
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T13:05:24.604785",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_130608_35",
+      "source": "Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "resolved",
+      "metadata": {},
+      "timestamp": "2026-04-21T13:06:08.803427",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
     "diversity": 1,
     "adaptive_lr": 1,
     "dynamic_weights": 1,
-    "mutation_tuning": 1
+    "mutation_tuning": 1,
+    "unknown": -1
   }
 }

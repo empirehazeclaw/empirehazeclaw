@@ -1,7 +1,7 @@
 {
   "last_run": {
-    "run_id": "run_1776773215624",
-    "created_at": "2026-04-21T12:06:55.640Z",
+    "run_id": "run_1776776724487",
+    "created_at": "2026-04-21T13:05:24.502Z",
     "parent_event_id": "evt_1776457231893",
     "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
@@ -22,7 +22,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776773215622",
+      "id": "mut_1776776724485",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -33,7 +33,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776773215622",
+    "mutation_id": "mut_1776776724485",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -65,7 +65,7 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "78c1e4064db8d7c4b188b3e6298eb037b46458f0",
+    "baseline_git_head": "18a8ca60714ca591873c9363f9262df729d77e23",
     "blast_radius_estimate": {
       "files": 6,
       "lines": 480

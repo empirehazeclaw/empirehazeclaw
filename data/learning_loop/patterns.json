@@ -1,26 +1,26 @@
 {
   "patterns": [
     {
-      "id": "pattern_20260421_124220",
-      "title": "Find 1 entity with missing relations, add them",
-      "category": "hypothesis_kg_quality",
+      "id": "pattern_20260421_130504",
+      "title": "Add 1 new validation test that currently doesn't exist",
+      "category": "hypothesis_validation_depth",
       "error_signature": [
-        "find",
-        "entity",
-        "with",
-        "missing",
-        "relations,"
+        "validation",
+        "test",
+        "that",
+        "currently",
+        "doesn't"
       ],
-      "description": "[Exploration] Find 1 entity with missing relations, add them",
-      "solution": "Applied improvement: Find 1 entity with missing relations, add them",
+      "description": "[Exploration] Add 1 new validation test that currently doesn't exist",
+      "solution": "Applied improvement: Add 1 new validation test that currently doesn't exist",
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
       "confidence": 0.7,
       "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T12:42:20.111085",
-      "last_validated": "2026-04-21T12:42:20.111089",
-      "error_type": "kg_quality",
+      "first_seen": "2026-04-21T13:05:04.533554",
+      "last_validated": "2026-04-21T13:05:04.533558",
+      "error_type": "validation_depth",
       "context": {
         "source": "exploration",
         "script": null

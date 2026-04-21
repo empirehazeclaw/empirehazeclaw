@@ -1,8 +1,8 @@
 {
   "validations": [
     {
-      "improvement": "[Exploration] Find 1 entity with missing relations, add them",
-      "timestamp": "2026-04-21T12:42:19.252054",
+      "improvement": "[Exploration] Add 1 new validation test that currently doesn't exist",
+      "timestamp": "2026-04-21T13:05:03.514723",
       "tests": [
         {
           "name": "error_reducer_check",
@@ -24,8 +24,8 @@
       "error_delta": 0.0,
       "score_delta": null,
       "version": "2.0",
-      "baseline_score": 0.6367071478900476,
-      "current_score": 0.7367071478900475,
+      "baseline_score": 0.7328344979190845,
+      "current_score": 0.8328344979190845,
       "rules_checked": {
         "min_tests": true,
         "error_threshold": true,
