@@ -69,18 +69,34 @@ def check_cron():
         return True  # Assume OK if can't check
 
 def record_health_learning(issue: str, alert_sent: bool):
-    """Record health-related learnings."""
+    """Record health-related learnings and share with all agents."""
     if not LearningsService:
         return
     try:
         ls = LearningsService()
+        
+        # Record the learning
+        category = "health_issue" if not alert_sent else "health_alert"
+        outcome = "resolved" if not alert_sent else "alert_sent"
+        
         ls.record_learning(
             source="Health Monitor",
-            category="health_issue" if not alert_sent else "health_alert",
+            category=category,
             learning=issue,
             context="system_health",
-            outcome="resolved" if not alert_sent else "alert_sent"
+            outcome=outcome
         )
+        
+        # Share with all agents via federation
+        for target_agent in ["Ralph Learning", "Capability Evolver", "Meta Learning", "Sir HazeClaw"]:
+            ls.record_cross_agent_learning(
+                source_agent="Health Monitor",
+                target_agent=target_agent,
+                category=category,
+                learning=issue,
+                context="system_health"
+            )
+        
     except Exception as e:
         print(f"Warning: Failed to record health learning: {e}")
 

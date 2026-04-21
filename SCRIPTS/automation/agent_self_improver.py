@@ -109,7 +109,7 @@ class LearningStore:
         return True
     
     def record_improvement(self, improvement: Dict) -> bool:
-        """Record a successful improvement."""
+        """Record a successful improvement and share with all agents."""
         data = self.load_learnings()
         improvement.update({
             "id": f"improvement_{len(data['improvements']) + 1}",
@@ -123,6 +123,8 @@ class LearningStore:
         if LearningsService:
             try:
                 ls = LearningsService()
+                
+                # Record the improvement
                 ls.record_learning(
                     source="Self-Improver",
                     category="improvement",
@@ -130,6 +132,18 @@ class LearningStore:
                     context=improvement.get("type", "general"),
                     outcome="success"
                 )
+                
+                # Share with other agents via federation
+                desc = improvement.get("description", str(improvement))
+                imp_type = improvement.get("type", "general")
+                for target in ["Ralph Learning", "Capability Evolver", "Meta Learning", "Sir HazeClaw"]:
+                    ls.record_cross_agent_learning(
+                        source_agent="Self-Improver",
+                        target_agent=target,
+                        category="improvement",
+                        learning=desc,
+                        context=imp_type
+                    )
             except Exception as e:
                 print(f"Warning: Failed to sync to Learnings Service: {e}")
         

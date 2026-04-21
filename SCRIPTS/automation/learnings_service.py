@@ -639,6 +639,133 @@ class LearningsService:
             )
         
         return recommendations
+    
+    # ============ CROSS-AGENT FEDERATION ============
+    
+    def get_all_agents(self) -> List[str]:
+        """Get list of all agents that have contributed learnings."""
+        agents = set()
+        for learning in self.index["recent"]:
+            source = learning.get("source", "Unknown")
+            # Clean up source name
+            if "[" in source:
+                source = source.split("]")[1].strip() if "]" in source else source
+            agents.add(source)
+        return sorted(list(agents))
+    
+    def get_learning_for_agent(self, agent_name: str, context: Optional[str] = None, limit: int = 5) -> Dict:
+        """
+        Get learnings FROM other agents that would benefit this agent.
+        
+        Cross-agent federation: Agent X can learn from what Agent Y discovered.
+        
+        Args:
+            agent_name: The agent that needs learnings
+            context: Optional specific context to filter by
+            limit: Max learnings to return
+        
+        Returns:
+            Dict with learnings from other agents and recommendations
+        """
+        # Map agent → what they can learn from other agents
+        federation_map = {
+            "Ralph Learning": {
+                "from": ["Meta Learning", "Capability Evolver", "Health Monitor", "Consolidation Engine"],
+                "contexts": ["pattern", "strategy", "gene", "health_issue"]
+            },
+            "Meta Learning": {
+                "from": ["Ralph Learning", "Capability Evolver", "Self-Improver"],
+                "contexts": ["pattern", "improvement", "accuracy"]
+            },
+            "Capability Evolver": {
+                "from": ["Ralph Learning", "Learning Loop", "Health Monitor"],
+                "contexts": ["gene", "mutation", "score", "health_issue"]
+            },
+            "Self-Improver": {
+                "from": ["Ralph Learning", "Meta Learning", "Health Monitor"],
+                "contexts": ["improvement", "fix", "bug", "pattern"]
+            },
+            "Sir HazeClaw": {
+                "from": ["Ralph Learning", "Meta Learning", "Capability Evolver", "Self-Improver", "Health Monitor"],
+                "contexts": ["decision", "insight", "pattern", "strategy", "improvement"]
+            }
+        }
+        
+        federation = federation_map.get(agent_name, {
+            "from": ["Ralph Learning", "Meta Learning", "Capability Evolver"],
+            "contexts": ["general"]
+        })
+        
+        # Get learnings from other agents
+        cross_learnings = []
+        for learning in self.index["recent"]:
+            source = learning.get("source", "")
+            # Skip self
+            if source == agent_name:
+                continue
+            # Check if source is in federation list
+            clean_source = source.split("]")[-1].strip() if "]" in source else source
+            if clean_source not in federation["from"]:
+                continue
+            # Filter by context if specified
+            if context:
+                if learning.get("context") != context:
+                    continue
+            cross_learnings.append(learning)
+        
+        # Sort by confidence and recency
+        cross_learnings.sort(key=lambda x: (
+            self.get_confidence_score(x.get("id", "")),
+            x.get("timestamp", "")
+        ), reverse=True)
+        
+        return {
+            "agent": agent_name,
+            "federation_sources": federation["from"],
+            "learnings_from_others": cross_learnings[:limit],
+            "count_by_source": self._count_by_source(cross_learnings)
+        }
+    
+    def _count_by_source(self, learnings: List[dict]) -> Dict[str, int]:
+        """Count learnings by source agent."""
+        counts = defaultdict(int)
+        for l in learnings:
+            source = l.get("source", "Unknown")
+            clean = source.split("]")[-1].strip() if "]" in source else source
+            counts[clean] += 1
+        return dict(counts)
+    
+    def record_cross_agent_learning(
+        self,
+        source_agent: str,
+        target_agent: str,
+        category: str,
+        learning: str,
+        context: Optional[str] = None
+    ) -> str:
+        """
+        Explicitly share a learning from one agent to benefit another.
+        
+        Args:
+            source_agent: Who discovered this
+            target_agent: Who should benefit from this
+            category: Type of learning
+            learning: The learning text
+            context: Optional context
+        
+        Returns:
+            Learning ID
+        """
+        # Record with special notation for federation
+        full_source = f"[→{target_agent}] {source_agent}"
+        
+        return self.record_learning(
+            source=full_source,
+            category=category,
+            learning=learning,
+            context=context,
+            outcome="shared"
+        )
 
 
 # CLI Interface
