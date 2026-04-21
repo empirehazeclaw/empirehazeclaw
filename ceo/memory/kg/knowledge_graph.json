@@ -5339,13 +5339,13 @@
         {
           "content": "Theme 'assistant' recalled 466 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-21T09:08:19.684732Z",
+          "extracted_at": "2026-04-21T09:16:36.442354Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-21T09:08:19.684734Z",
-      "last_accessed": "2026-04-21T09:08:19.684735Z",
+      "created": "2026-04-21T09:16:36.442355Z",
+      "last_accessed": "2026-04-21T09:16:36.442357Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5356,13 +5356,13 @@
         {
           "content": "Theme 'user' recalled 491 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-21T09:08:19.684726Z",
+          "extracted_at": "2026-04-21T09:16:36.442348Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-21T09:08:19.684728Z",
-      "last_accessed": "2026-04-21T09:08:19.684729Z",
+      "created": "2026-04-21T09:16:36.442350Z",
+      "last_accessed": "2026-04-21T09:16:36.442351Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -8910,6 +8910,61 @@
       "last_accessed": "2026-04-21T09:16:06.706914",
       "access_count": 1,
       "decay_score": 10
+    },
+    "Improvement_2026-04-21T09-09-13-830115_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T09-09-13-830115_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T09:09:13.830115",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:16:11.930323+00:00"
+    },
+    "Improvement_2026-04-21T09-09-46-250436_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T09-09-46-250436_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T09:09:46.250436",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:16:11.930598+00:00"
+    },
+    "Improvement_2026-04-21T09-09-47-165111_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T09-09-47-165111_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T09:09:47.165111",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:16:11.930811+00:00"
+    },
+    "Improvement_2026-04-21T09-09-48-144884_PHASE-4-Analyze-error-patter": {
+      "id": "Improvement_2026-04-21T09-09-48-144884_PHASE-4-Analyze-error-patter",
+      "type": "Improvement",
+      "name": "[PHASE 4] Analyze error patterns from last 7 days, predict 1 specific error that will happen soon, a",
+      "description": "[PHASE 4] Analyze error patterns from last 7 days, predict 1 specific error that will happen soon, add prevention",
+      "validated": true,
+      "timestamp": "2026-04-21T09:09:48.144884",
+      "test_count": 4,
+      "tests_passed": 4,
+      "created_at": "2026-04-21T09:16:11.930992+00:00"
+    },
+    "Improvement_2026-04-21T09-16-11-703378_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T09-16-11-703378_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T09:16:11.703378",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:16:11.931178+00:00"
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",
@@ -46917,6 +46972,86 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T09:07:59.964455+00:00"
+    },
+    "773": {
+      "id": 773,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-09-13-830115_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:16:11.930484+00:00"
+    },
+    "774": {
+      "id": 774,
+      "from": "Improvement_2026-04-21T09-09-13-830115_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:16:11.930583+00:00"
+    },
+    "775": {
+      "id": 775,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-09-46-250436_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:16:11.930719+00:00"
+    },
+    "776": {
+      "id": 776,
+      "from": "Improvement_2026-04-21T09-09-46-250436_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:16:11.930803+00:00"
+    },
+    "777": {
+      "id": 777,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-09-47-165111_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:16:11.930891+00:00"
+    },
+    "778": {
+      "id": 778,
+      "from": "Improvement_2026-04-21T09-09-47-165111_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:16:11.930980+00:00"
+    },
+    "779": {
+      "id": 779,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-09-48-144884_PHASE-4-Analyze-error-patter",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:16:11.931074+00:00"
+    },
+    "780": {
+      "id": 780,
+      "from": "Improvement_2026-04-21T09-09-48-144884_PHASE-4-Analyze-error-patter",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:16:11.931169+00:00"
+    },
+    "781": {
+      "id": 781,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-16-11-703378_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:16:11.931256+00:00"
+    },
+    "782": {
+      "id": 782,
+      "from": "Improvement_2026-04-21T09-16-11-703378_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:16:11.931335+00:00"
     }
   }
 }
