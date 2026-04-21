@@ -107,7 +107,7 @@ Meist Discord-bezogen weil Discord nicht aktiv:
 
 ## 7.4 CRON ERROR HEALER
 
-**Script:** `/workspace/scripts/cron_error_healer.py`
+**Script:** `/SCRIPTS/automation/cron_error_healer.py`
 
 ### Was es tut
 
@@ -127,7 +127,7 @@ Der Cron Error Healer hat einige Tasks als "lost" markiert, die nicht gecancelt 
 
 ## 7.5 CRON WATCHDOG
 
-**Script:** `/workspace/scripts/cron_watchdog.py`
+**Script:** `/SCRIPTS/automation/cron_watchdog.py`
 
 **Schedule:** Every 6 hours
 

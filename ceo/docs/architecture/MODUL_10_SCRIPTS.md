@@ -8,7 +8,7 @@
 
 ## 10.1 OVERVIEW
 
-**Anzahl:** 72 aktive Scripts in `/workspace/scripts/`
+**Anzahl:** 120 aktive Scripts in `/SCRIPTS/automation/`
 
 **Kategorien:**
 - Learning & Memory
@@ -140,7 +140,7 @@
 ## 10.3 SCRIPTS ORGANISATION
 
 ```
-/workspace/scripts/
+/SCRIPTS/automation/
 ├── learning_*.py          # Learning Loop
 ├── *_tracker.py            # Tracking
 ├── *_monitor.py            # Monitoring
@@ -179,14 +179,14 @@
 ### Direkte Ausführung
 
 ```bash
-python3 /workspace/scripts/<script_name>.py
+python3 /SCRIPTS/automation/<script_name>.py
 ```
 
 ### Mit Args
 
 ```bash
-python3 /workspace/scripts/learning_loop_v3.py --score
-python3 /workspace/scripts/integration_dashboard.py --check
+python3 /SCRIPTS/automation/learning_loop_v3.py --score
+python3 /SCRIPTS/automation/integration_dashboard.py --check
 ```
 
 ---
@@ -196,7 +196,7 @@ python3 /workspace/scripts/integration_dashboard.py --check
 | Issue | Status | Notes |
 |-------|--------|-------|
 | integration_dashboard.py | ❌ | File not found (2026-04-17) |
-| Viele Scripts | ℹ️ | Nicht mehr in /workspace/scripts/ |
+| Viele Scripts | ℹ️ | Nicht mehr in /SCRIPTS/automation/ |
 
 **Note:** Das `integration_dashboard.py` Script existiert laut Workspace listing nicht mehr. Bitte Nico informieren wenn das benötigt wird.
 

@@ -1,230 +1,164 @@
-# 📋 SCRIPT INDEX — Complete Inventory
-**Updated:** 2026-04-13 07:12 UTC
-**Total Scripts:** 106 (82 active + 17 restored + 7 framework)
+# SCRIPT_INDEX.md — CEO Script Registry
 
----
+**Generated:** 2026-04-21
+**Total Scripts:** 119
 
-## 🎯 EXECUTION SCRIPTS (Self-Management)
+## Overview
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| SELF_IMPROVEMENT_ORCHESTRATOR.py | Single entry for all self-improvement | ✅ Active |
-| META_TOOLS.py | Bundled tool sequences | ✅ Active |
-| KAIROS_CONDITIONAL.py | Autonomous decisions | ✅ Active |
+| Category | Count |
+|----------|-------|
+| Python Scripts | 114
+| Bash Scripts | 5 |
+| **Total** | **119** |
 
----
+## Quick Reference
 
-## 🔧 HEALTH & MONITORING
+| Script | Type | Path |
+|--------|------|------|
+| `actor_critic.py` | python | `SCRIPTS/automation/actor_critic.py` |
+| `agent_self_improver.py` | python | `SCRIPTS/automation/agent_self_improver.py` |
+| `anomaly_detector.py` | python | `SCRIPTS/automation/anomaly_detector.py` |
+| `anti_pattern_check.py` | python | `SCRIPTS/automation/anti_pattern_check.py` |
+| `auto_session_capture.py` | python | `SCRIPTS/automation/auto_session_capture.py` |
+| `automated_backup.py` | python | `SCRIPTS/automation/automated_backup.py` |
+| `autonomous_agent.py` | python | `SCRIPTS/automation/autonomous_agent.py` |
+| `autonomy_supervisor.py` | python | `SCRIPTS/automation/autonomy_supervisor.py` |
+| `backup_manager.py` | python | `SCRIPTS/automation/backup_manager.py` |
+| `backup_verifier.py` | python | `SCRIPTS/automation/backup_verifier.py` |
+| `backup_verify.py` | python | `SCRIPTS/automation/backup_verify.py` |
+| `batch_exec.py` | python | `SCRIPTS/automation/batch_exec.py` |
+| `bug_fix_pipeline.py` | python | `SCRIPTS/automation/bug_fix_pipeline.py` |
+| `bug_fixer.py` | python | `SCRIPTS/automation/bug_fixer.py` |
+| `cache_cleanup.sh` | bash | `SCRIPTS/automation/cache_cleanup.sh` |
+| `capability_probe.py` | python | `SCRIPTS/automation/capability_probe.py` |
+| `code_generator.py` | python | `SCRIPTS/automation/code_generator.py` |
+| `common_issues_check.py` | python | `SCRIPTS/automation/common_issues_check.py` |
+| `context_compressor.py` | python | `SCRIPTS/automation/context_compressor.py` |
+| `cron_error_healer.py` | python | `SCRIPTS/automation/cron_error_healer.py` |
+| `cron_health_check.py` | python | `SCRIPTS/automation/cron_health_check.py` |
+| `cron_health_monitor.py` | python | `SCRIPTS/automation/cron_health_monitor.py` |
+| `cron_monitor.py` | python | `SCRIPTS/automation/cron_monitor.py` |
+| `cron_optimizer.py` | python | `SCRIPTS/automation/cron_optimizer.py` |
+| `cron_status_dashboard.py` | python | `SCRIPTS/automation/cron_status_dashboard.py` |
+| `cron_watchdog.py` | python | `SCRIPTS/automation/cron_watchdog.py` |
+| `daily_summary.py` | python | `SCRIPTS/automation/daily_summary.py` |
+| `data_agent.py` | python | `SCRIPTS/automation/data_agent.py` |
+| `decision_matrix.py` | python | `SCRIPTS/automation/decision_matrix.py` |
+| `decision_tracker_integration.py` | python | `SCRIPTS/automation/decision_tracker_integration.py` |
+| `deep_system_test.py` | python | `SCRIPTS/automation/deep_system_test.py` |
+| `discord_report_forwarder.py` | python | `SCRIPTS/automation/discord_report_forwarder.py` |
+| `discord_voice_bot.py` | python | `SCRIPTS/automation/discord_voice_bot.py` |
+| `doc_maintenance.py` | python | `SCRIPTS/automation/doc_maintenance.py` |
+| `edge_tts_wrapper.sh` | bash | `SCRIPTS/automation/edge_tts_wrapper.sh` |
+| `enhanced_self_healing.py` | python | `SCRIPTS/automation/enhanced_self_healing.py` |
+| `error_rate_monitor.py` | python | `SCRIPTS/automation/error_rate_monitor.py` |
+| `error_reducer.py` | python | `SCRIPTS/automation/error_reducer.py` |
+| `evening_capture.py` | python | `SCRIPTS/automation/evening_capture.py` |
+| `evening_review.py` | python | `SCRIPTS/automation/evening_review.py` |
+| `evening_summary.py` | python | `SCRIPTS/automation/evening_summary.py` |
+| `event_bus.py` | python | `SCRIPTS/automation/event_bus.py` |
+| `event_bus_inprocess.py` | python | `SCRIPTS/automation/event_bus_inprocess.py` |
+| `event_diversity_bridge.py` | python | `SCRIPTS/automation/event_diversity_bridge.py` |
+| `evolver_signal_bridge.py` | python | `SCRIPTS/automation/evolver_signal_bridge.py` |
+| `evolver_stagnation_breaker.py` | python | `SCRIPTS/automation/evolver_stagnation_breaker.py` |
+| `fast_whisper.py` | python | `SCRIPTS/automation/fast_whisper.py` |
+| `fix_diversity_gap.py` | python | `SCRIPTS/automation/fix_diversity_gap.py` |
+| `fix_reflection_gap.py` | python | `SCRIPTS/automation/fix_reflection_gap.py` |
+| `gateway_recovery.py` | python | `SCRIPTS/automation/gateway_recovery.py` |
+| `goal_advisor.py` | python | `SCRIPTS/automation/goal_advisor.py` |
+| `goal_alerts.py` | python | `SCRIPTS/automation/goal_alerts.py` |
+| `goal_checker.py` | python | `SCRIPTS/automation/goal_checker.py` |
+| `goal_tracker.py` | python | `SCRIPTS/automation/goal_tracker.py` |
+| `graceful_degradation.py` | python | `SCRIPTS/automation/graceful_degradation.py` |
+| `health_agent.py` | python | `SCRIPTS/automation/health_agent.py` |
+| `health_alert.py` | python | `SCRIPTS/automation/health_alert.py` |
+| `health_check.py` | python | `SCRIPTS/automation/health_check.py` |
+| `health_monitor.py` | python | `SCRIPTS/automation/health_monitor.py` |
+| `heartbeat_updater.py` | python | `SCRIPTS/automation/heartbeat_updater.py` |
+| `innovation_research.py` | python | `SCRIPTS/automation/innovation_research.py` |
+| `integration_dashboard.py` | python | `SCRIPTS/automation/integration_dashboard.py` |
+| `intention_planner.py` | python | `SCRIPTS/automation/intention_planner.py` |
+| `kg_access_updater.py` | python | `SCRIPTS/automation/kg_access_updater.py` |
+| `kg_access_updater_optimized.py` | python | `SCRIPTS/automation/kg_access_updater_optimized.py` |
+| `kg_auto_curator.py` | python | `SCRIPTS/automation/kg_auto_curator.py` |
+| `kg_auto_populate.py` | python | `SCRIPTS/automation/kg_auto_populate.py` |
+| `kg_auto_prune.py` | python | `SCRIPTS/automation/kg_auto_prune.py` |
+| `kg_rag_pipeline.py` | python | `SCRIPTS/automation/kg_rag_pipeline.py` |
+| `kg_updater.py` | python | `SCRIPTS/automation/kg_updater.py` |
+| `lcm_wiki_sync.py` | python | `SCRIPTS/automation/lcm_wiki_sync.py` |
+| `learning_analyzer.py` | python | `SCRIPTS/automation/learning_analyzer.py` |
+| `learning_collector.py` | python | `SCRIPTS/automation/learning_collector.py` |
+| `learning_coordinator.py` | python | `SCRIPTS/automation/learning_coordinator.py` |
+| `learning_core.py` | python | `SCRIPTS/automation/learning_core.py` |
+| `learning_enhancer.py` | python | `SCRIPTS/automation/learning_enhancer.py` |
+| `learning_executor.py` | python | `SCRIPTS/automation/learning_executor.py` |
+| `learning_feedback.py` | python | `SCRIPTS/automation/learning_feedback.py` |
+| `learning_loop_v3.py` | python | `SCRIPTS/automation/learning_loop_v3.py` |
+| `learning_to_kg_sync.py` | python | `SCRIPTS/automation/learning_to_kg_sync.py` |
+| `mcp_server.py` | python | `SCRIPTS/automation/mcp_server.py` |
+| `memory_consolidator.py` | python | `SCRIPTS/automation/memory_consolidator.py` |
+| `memory_integrity_check.py` | python | `SCRIPTS/automation/memory_integrity_check.py` |
+| `memory_log_analyzer.py` | python | `SCRIPTS/automation/memory_log_analyzer.py` |
+| `memory_sync.py` | python | `SCRIPTS/automation/memory_sync.py` |
+| `morning_brief.py` | python | `SCRIPTS/automation/morning_brief.py` |
+| `morning_data_kitchen.py` | python | `SCRIPTS/automation/morning_data_kitchen.py` |
+| `morning_status_check.py` | python | `SCRIPTS/automation/morning_status_check.py` |
+| `openrouter_monitor.py` | python | `SCRIPTS/automation/openrouter_monitor.py` |
+| `proactive_scanner.py` | python | `SCRIPTS/automation/proactive_scanner.py` |
+| `production_dashboard.py` | python | `SCRIPTS/automation/production_dashboard.py` |
+| `prompt_evolution.py` | python | `SCRIPTS/automation/prompt_evolution.py` |
+| `qmd_watchdog.py` | python | `SCRIPTS/automation/qmd_watchdog.py` |
+| `quality_judge.py` | python | `SCRIPTS/automation/quality_judge.py` |
+| `quick_fixes.py` | python | `SCRIPTS/automation/quick_fixes.py` |
+| `ralph_learning_loop.py` | python | `SCRIPTS/automation/ralph_learning_loop.py` |
+| `ralph_maintenance_loop.py` | python | `SCRIPTS/automation/ralph_maintenance_loop.py` |
+| `recursive_self_improver.py` | python | `SCRIPTS/automation/recursive_self_improver.py` |
+| `reflection_engine.py` | python | `SCRIPTS/automation/reflection_engine.py` |
+| `rem_feedback.py` | python | `SCRIPTS/automation/rem_feedback.py` |
+| `research_agent.py` | python | `SCRIPTS/automation/research_agent.py` |
+| `rollback_executor.py` | python | `SCRIPTS/automation/rollback_executor.py` |
+| `run_evolver_repair.sh` | bash | `SCRIPTS/automation/run_evolver_repair.sh` |
+| `run_loop_10.sh` | bash | `SCRIPTS/automation/run_loop_10.sh` |
+| `run_smart_evolver.sh` | bash | `SCRIPTS/automation/run_smart_evolver.sh` |
+| `self_evaluator.py` | python | `SCRIPTS/automation/self_evaluator.py` |
+| `self_healing.py` | python | `SCRIPTS/automation/self_healing.py` |
+| `session_cleanup.py` | python | `SCRIPTS/automation/session_cleanup.py` |
+| `session_context_manager.py` | python | `SCRIPTS/automation/session_context_manager.py` |
+| `session_quick_status.py` | python | `SCRIPTS/automation/session_quick_status.py` |
+| `skills_fitness_tracker.py` | python | `SCRIPTS/automation/skills_fitness_tracker.py` |
+| `stagnation_detector.py` | python | `SCRIPTS/automation/stagnation_detector.py` |
+| `system_health_monitor.py` | python | `SCRIPTS/automation/system_health_monitor.py` |
+| `system_report.py` | python | `SCRIPTS/automation/system_report.py` |
+| `thompson_contextual.py` | python | `SCRIPTS/automation/thompson_contextual.py` |
+| `token_budget_tracker.py` | python | `SCRIPTS/automation/token_budget_tracker.py` |
+| `voice_priority.py` | python | `SCRIPTS/automation/voice_priority.py` |
+| `weekly_maintenance.py` | python | `SCRIPTS/automation/weekly_maintenance.py` |
+| `weekly_review.py` | python | `SCRIPTS/automation/weekly_review.py` |
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| cron_watchdog.py | Monitor cron health + --report mode | ✅ Active |
-| health_check.py | System health check | ✅ Active |
-| system_report.py | Comprehensive status report | ✅ Active |
-| quick_check.py | Rapid system status | ✅ Active |
-| common_issues_check.py | Check for common problems | ✅ Active |
-| cron_monitor.py | Cron monitoring (restored) | ✅ Active |
-| **unified_task_logger.py** | Central task log (all types) | ✅ Active |
-| **task_data_collector.py** | Aggregate from all sources | ✅ Active |
-| **task_report.py** | Generate TSR reports | ✅ Active |
-| **session_activity_analyzer.py** | Analyze session transcripts | ✅ Active |
-| **heartbeat_task_logger.py** | Capture main session activities | ✅ Active |
-| **task_logger_cron.py** | Task logging coordinator (15min) | ✅ Active |
+## Learning & Evolution
 
----
+| Script | Purpose |
+|--------|---------|
+| `learning_loop_v3.py` | Main learning loop with multi-dimensional scoring |
+| `ralph_learning_loop.py` | Ralph-style learning with completion promises |
+| `meta_learning_controller.py` | Pattern weight optimization |
+| `capability_evolver.py` | Gene-based capability evolution |
+| `run_smart_evolver.sh` | Evolver orchestration |
 
-## 📊 ERROR HANDLING
+## System Health
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| error_reducer.py | Error analysis + fixing | ✅ Active |
-| error_rate_monitor.py | Monitor error rate | ✅ Active |
-| error_reduction_plan.py | Plan error reductions | ⚠️ Review |
-| error_reduction_strategy.py | Strategy for errors | ⚠️ Review |
-| cron_error_healer.py | Auto-heal failed crons | ✅ Active |
-| retry_with_backoff.py | Retry pattern utility (restored) | ✅ Active |
+| Script | Purpose |
+|--------|---------|
+| `health_monitor.py` | Process, memory, disk monitoring |
+| `integration_dashboard.py` | Unified system status |
+| `cron_monitor.py` | Cron job monitoring |
+| `stagnation_detector.py` | Stagnation detection |
 
----
+## Events & Communication
 
-## 🧠 MEMORY SYSTEMS
+| Script | Purpose |
+|--------|---------|
+| `event_bus.py` | Cross-system event bus |
+| `evolver_signal_bridge.py` | Evolver ↔ Loop signal bridge |
+| `learning_to_kg_sync.py` | Learning → KG synchronization |
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| memory_cleanup.py | Memory cleanup main | ✅ Active |
-| memory_freshness.py | Freshness checking | ⚠️ Merge into memory_cleanup |
-| stale_memory_cleanup.py | Stale memory cleanup | ⚠️ Merge into memory_cleanup |
-| memory_hybrid_search.py | Hybrid search | ✅ Active |
-| memory_validator.py | Validate memory integrity | ✅ Active |
-| memory_sanitizer.py | Sanitize memory | ✅ Active |
-| memory_versioning.py | Version control | ✅ Active |
-| memory_audit_log.py | Audit trail | ✅ Active |
-| memory_graceful_degradation.py | Degradation handling | ✅ Active |
-| memory_isolation_layer.py | Isolation | ✅ Active |
-
----
-
-## 📚 LEARNING & IMPROVEMENT
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| learning_coordinator.py | Learning loop coordinator | ✅ Active |
-| autonomous_improvement.py | Overnight experiments | ✅ Active |
-| capability_evolver.py | Evolve capabilities | ✅ Active |
-| reflection_loop.py | Reflection patterns | ⚠️ Replaced by deep_reflection.py |
-| deep_reflection.py | Deep reflection | ✅ Active |
-| quality_metrics.py | Quality tracking | ✅ Active |
-| code_stats.py | Code statistics | ✅ Active |
-| loop_check.py | Loop detection | ✅ Active |
-| evolve.py | Self-evolution script (restored) | ✅ Active |
-| innovation_research.py | AI innovation research (restored) | ✅ Active |
-
----
-
-## 🔍 KG (KNOWLEDGE GRAPH)
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| kg_updater.py | KG main + subcommands | ✅ Active |
-| kg_enhancer.py | KG enhancement (restored) | ✅ Active |
-| kg_lifecycle_manager.py | KG lifecycle | ✅ Active |
-| kg_relation_cleaner.py | Clean relations (restored) | ✅ Active |
-| kg_orphan_connector.py | Connect orphans | ⚠️ Review |
-| kg_dreamer.py | Dreaming/insights | ✅ Active |
-
----
-
-## 🔐 SECURITY
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| security_audit.py | Security scanning (restored) | ✅ Active |
-| security_scanner.py | Vulnerability scan | ✅ Active |
-| security_hardening.py | Hardening | ✅ Active |
-
----
-
-## 💾 BACKUP & RECOVERY
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| auto_backup.py | Automated backup | ✅ Active |
-| backup_verify.py | Verify backups | ✅ Active |
-| gateway_recovery.py | Gateway recovery | ✅ Active |
-
----
-
-## 📈 ANALYTICS & REPORTING
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| daily_summary.py | Daily activity summary (restored) | ✅ Active |
-| evening_summary.py | Evening report (restored) | ✅ Active |
-| evening_review.py | Evening review (restored) | ✅ Active |
-| morning_brief.py | Morning briefing | ✅ Active |
-| self_check.py | Self diagnostics | ✅ Active |
-| token_tracker.py | Token tracking | ✅ Active |
-| token_budget_tracker.py | Budget tracking | ⚠️ Merge into token_tracker |
-| performance_dashboard.py | Performance (restored) | ✅ Active |
-| github_stats.py | GitHub commit stats (restored) | ✅ Active |
-| openrouter_monitor.py | OpenRouter API monitor (restored) | ✅ Active |
-
----
-
-## 🔄 SESSION & CONTEXT
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| auto_session_capture.py | Auto session capture (restored) | ✅ Active |
-| session_cleanup.py | Session cleanup | ✅ Active |
-| session_compressor.py | Session compression | ✅ Active |
-| context_compressor.py | Context compression | ✅ Active |
-
----
-
-## 🧪 TESTING
-
-| Script | Purpose | Status |
-|--------|---------|--------|
-| fast_test.py | Quick test runner | ✅ Active |
-| test_framework.py | Test framework | ✅ Active |
-
----
-
-## 📊 SCRIPT METRICS
-
-| Category | Active | Review/Merge | Restored |
-|----------|--------|--------------|----------|
-| Execution | 3 | 0 | 0 |
-| Health | 6 | 0 | 1 |
-| Errors | 6 | 1 | 1 |
-| Memory | 9 | 2 | 0 |
-| Learning | 10 | 1 | 2 |
-| KG | 5 | 1 | 2 |
-| Security | 3 | 0 | 1 |
-| Backup | 3 | 0 | 0 |
-| Analytics | 10 | 1 | 4 |
-| Session | 4 | 0 | 1 |
-| Testing | 2 | 0 | 0 |
-| **TOTAL** | **61** | **6** | **12** |
-
-*Note: 17 scripts restored from archive (2026-04-13). 1 unrecoverable (apply_timeouts.py - corrupt).*
-
----
-
-## 📁 RESTORED FROM ARCHIVE (2026-04-13)
-
-### Batch 1 — 17 scripts (07:09 UTC)
-| Script | From | Category | Status |
-|--------|------|----------|--------|
-| innovation_research.py | phase2b | automation | ✅ Active |
-| kg_enhancer.py | phase2/kg | analysis | ✅ Active |
-| kg_relation_cleaner.py | phase2/kg | tools | ✅ Active |
-| cron_monitor.py | phase2 | automation | ✅ Active |
-| evolve.py | phase2 | analysis | ✅ Active |
-| openrouter_monitor.py | phase2 | automation | ✅ Active |
-| performance_dashboard.py | phase2 | analysis | ✅ Active |
-| auto_session_capture.py | phase2 | automation | ✅ Active |
-| efficiency_tracker.py | phase2b | analysis | ✅ Active |
-| security_audit.py | phase2b | tools | ✅ Active |
-| common_issues_check.py | phase2b | automation | ✅ Active |
-| retry_with_backoff.py | phase2b | tools | ✅ Active |
-| system_report.py | phase2b | automation | ✅ Active |
-| daily_summary.py | phase2b | automation | ✅ Active |
-| evening_review.py | phase2b | automation | ✅ Active |
-| evening_summary.py | phase2b | automation | ✅ Active |
-| github_stats.py | phase2b | analysis | ✅ Active |
-| apply_timeouts.py | phase2b | tools | ❌ Unrecoverable |
-
-### Batch 2 — 9 scripts (07:22 UTC)
-| Script | From | Category | Status |
-|--------|------|----------|--------|
-| batch_exec.py | phase2 | automation | ✅ Active |
-| blast_radius_estimator.py | phase2 | analysis | ✅ Active |
-| code_stats.py | phase2 | analysis | ✅ Active |
-| quick_fixes.py | phase2 | automation | ✅ Active |
-| trend_analysis.py | phase2 | analysis | ✅ Active |
-| github_backup.sh | scripts_old | tools | ✅ Active |
-| sqlite_vacuum.sh | scripts_old | tools | ✅ Active |
-| kill_day.sh | scripts_old | tools | ✅ Active |
-| AUTONOMOUS_IMPROVEMENT_IMPLEMENTATION.md | scripts_old | docs | ✅ Active |
-
----
-
-## 🗑️ NOT RESTORED (Project-Specific)
-
-| Item | Reason |
-|------|--------|
-| restaurant-ai-starter/* | Project-specific |
-| trading/* | Trading bot project |
-| social/* | Social media automation |
-| web-orchestrator/* | Web/SEO project |
-| restaurant-ai-starter/* | Project-specific |
-| website-de/* | Project-specific |
-| blog-posts/, ebooks/, pdfs/* | Content assets |
-| fleet_manager/* | Discord infrastructure |
-| corpus.txt | Project content (Etsy guide) |
-
----
-
-*Script Index maintained by Sir HazeClaw*
-*Last updated: 2026-04-18 04:57 UTC*

@@ -277,7 +277,7 @@ def normalize_entity(entity: dict) -> dict:
 
 ### 5.1 Fix MODUL_10_SCRIPTS.md
 - Update script count: 72 → 114
-- Fix all path references: `/workspace/scripts/` → `/SCRIPTS/automation/`
+- Fix all path references: `/SCRIPTS/automation/` → `/SCRIPTS/automation/`
 - Remove non-existent script references
 
 ### 5.2 Update SCRIPT_INDEX.md
@@ -305,7 +305,7 @@ docs/
 - State: `/home/clawbot/.openclaw/workspace/data/`
 
 ## Old Paths (DO NOT USE)
-- `/workspace/scripts/` ❌
+- `/SCRIPTS/automation/` ❌
 - `/workspace/SCRIPTS/` ❌
 - `/workspace/ceo/` ❌
 ```

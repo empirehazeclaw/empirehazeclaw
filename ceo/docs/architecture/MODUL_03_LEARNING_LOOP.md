@@ -60,7 +60,7 @@ Der Learning Loop ist das **Selbst-Lern-System** von Sir HazeClaw. Er:
 ### Haupt-Script
 
 ```
-/workspace/scripts/learning_loop_v3.py
+/SCRIPTS/automation/learning_loop_v3.py
 ```
 
 ### Unter-Scripts
@@ -204,7 +204,7 @@ FORCED_NOVELTY_INTERVAL = 10  # inject novelty if stuck
 ### Script
 
 ```bash
-python3 /workspace/scripts/learning_to_kg_sync.py --apply
+python3 /SCRIPTS/automation/learning_to_kg_sync.py --apply
 ```
 
 ### Was es tut

@@ -117,17 +117,17 @@ Der KG enthält verschiedene Entity-Typen:
 
 1. **Learning Loop → KG Sync** (stündlich)
    ```bash
-   python3 /workspace/scripts/learning_to_kg_sync.py --apply
+   python3 /SCRIPTS/automation/learning_to_kg_sync.py --apply
    ```
 
 2. **KG Access Updater** (alle 4h)
    ```bash
-   python3 /workspace/scripts/kg_access_updater_optimized.py
+   python3 /SCRIPTS/automation/kg_access_updater_optimized.py
    ```
 
 3. **Manuell**
    ```bash
-   python3 /workspace/scripts/kg_updater.py
+   python3 /SCRIPTS/automation/kg_updater.py
    ```
 
 ### Wie der KG gelesen wird

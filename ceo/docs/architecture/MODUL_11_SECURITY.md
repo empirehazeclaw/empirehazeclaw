@@ -24,7 +24,7 @@
 
 ### 11.2.1 Security Audit
 
-**Script:** `bash /workspace/scripts/security-audit.sh`
+**Script:** `bash /SCRIPTS/automation/security-audit.sh`
 
 **Schedule:** Daily 8:00 UTC
 

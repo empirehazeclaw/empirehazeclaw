@@ -77,7 +77,7 @@ Die Autonomy Engine ist das **Selbstmanagement-System**. Besteht aus:
 
 ### 5.2.3 Cron Error Healer
 
-**Script:** `/workspace/scripts/cron_error_healer.py`
+**Script:** `/SCRIPTS/automation/cron_error_healer.py`
 
 **Was es tut:**
 1. Erkennt Cron Errors
@@ -91,7 +91,7 @@ Die Autonomy Engine ist das **Selbstmanagement-System**. Besteht aus:
 
 ### 5.2.4 Smart Evolver
 
-**Script:** `bash /workspace/scripts/run_smart_evolver.sh`
+**Script:** `bash /SCRIPTS/automation/run_smart_evolver.sh`
 
 **Cron:**
 ```json
@@ -113,7 +113,7 @@ Die Autonomy Engine ist das **Selbstmanagement-System**. Besteht aus:
 
 ### 5.2.5 Stagnation Breaker
 
-**Script:** `/workspace/scripts/evolver_stagnation_breaker.py`
+**Script:** `/SCRIPTS/automation/evolver_stagnation_breaker.py`
 
 **Was es tut:**
 1. Erkennt wenn System in local optimum
@@ -197,7 +197,7 @@ Status: All clear — no alert needed
 
 ## 5.6 SELF HEALING
 
-**Script:** `/workspace/scripts/self_healing.py`
+**Script:** `/SCRIPTS/automation/self_healing.py`
 
 **Was es abdeckt:**
 - Gateway Down → Auto-Restart
@@ -209,7 +209,7 @@ Status: All clear — no alert needed
 
 ## 5.7 GRACEFUL DEGRADATION
 
-**Script:** `/workspace/scripts/graceful_degradation.py`
+**Script:** `/SCRIPTS/automation/graceful_degradation.py`
 
 **Was es tut:**
 1. Erkennt wenn System überlastet

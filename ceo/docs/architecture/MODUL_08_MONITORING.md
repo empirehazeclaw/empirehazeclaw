@@ -23,7 +23,7 @@ Das Monitoring System überwacht die **System-Gesundheit**. Besteht aus:
 
 ### Gateway Recovery
 
-**Script:** `/workspace/scripts/gateway_recovery.py`
+**Script:** `/SCRIPTS/automation/gateway_recovery.py`
 
 **Cron:** Every 15 minutes
 
@@ -53,7 +53,7 @@ systemctl status openclaw
 
 ### Health Check Hourly
 
-**Script:** `/workspace/scripts/health_check.py`
+**Script:** `/SCRIPTS/automation/health_check.py`
 
 **Cron:** Every 3 hours
 
@@ -73,7 +73,7 @@ systemctl status openclaw
 
 ### Integration Dashboard
 
-**Script:** `/workspace/scripts/integration_dashboard.py`
+**Script:** `/SCRIPTS/automation/integration_dashboard.py`
 
 **Cron:** 8:00 & 20:00 UTC
 
@@ -103,7 +103,7 @@ systemctl status openclaw
 
 ### Bug Fix Pipeline
 
-**Script:** `/workspace/scripts/bug_fix_pipeline.py`
+**Script:** `/SCRIPTS/automation/bug_fix_pipeline.py`
 
 **Cron:** Every 35 minutes
 
@@ -118,7 +118,7 @@ systemctl status openclaw
 
 ### Memory Log Analyzer
 
-**Script:** `/workspace/scripts/memory_log_analyzer.py`
+**Script:** `/SCRIPTS/automation/memory_log_analyzer.py`
 
 **Was es tut:**
 - Analysiert Memory Logs
@@ -129,7 +129,7 @@ systemctl status openclaw
 
 ### Common Issues Check
 
-**Script:** `/workspace/scripts/common_issues_check.py`
+**Script:** `/SCRIPTS/automation/common_issues_check.py`
 
 **Checks:**
 - Cron Errors
@@ -155,7 +155,7 @@ systemctl status openclaw
 
 ### OpenRouter Monitor
 
-**Script:** `/workspace/scripts/openrouter_monitor.py`
+**Script:** `/SCRIPTS/automation/openrouter_monitor.py`
 
 **Was es tut:**
 - API Response Times
@@ -166,7 +166,7 @@ systemctl status openclaw
 
 ### Error Rate Monitor
 
-**Script:** `/workspace/scripts/error_rate_monitor.py`
+**Script:** `/SCRIPTS/automation/error_rate_monitor.py`
 
 **Was es tut:**
 - Track Error Rate
@@ -179,7 +179,7 @@ systemctl status openclaw
 
 ### Security Audit
 
-**Script:** `bash /workspace/scripts/security-audit.sh`
+**Script:** `bash /SCRIPTS/automation/security-audit.sh`
 
 **Cron:** Daily 8:00 UTC
 

@@ -63,23 +63,23 @@ Der Event Bus ist das **Kommunikations-System** zwischen allen Komponenten. Erm�
 ### Haupt-Script
 
 ```bash
-python3 /workspace/scripts/event_bus.py
+python3 /SCRIPTS/automation/event_bus.py
 ```
 
 ### Commands
 
 ```bash
 # Stats
-python3 /workspace/scripts/event_bus.py stats
+python3 /SCRIPTS/automation/event_bus.py stats
 
 # List events
-python3 /workspace/scripts/event_bus.py list --type kg_update
+python3 /SCRIPTS/automation/event_bus.py list --type kg_update
 
 # Publish event
-python3 /workspace/scripts/event_bus.py publish --type test --source test
+python3 /SCRIPTS/automation/event_bus.py publish --type test --source test
 
 # Publish heartbeat
-python3 /workspace/scripts/event_bus.py publish --type system_heartbeat --source test --severity info
+python3 /SCRIPTS/automation/event_bus.py publish --type system_heartbeat --source test --severity info
 ```
 
 ---
@@ -132,19 +132,19 @@ python3 /workspace/scripts/event_bus.py publish --type system_heartbeat --source
 
 Der KG wird bei relevanten Events aktualisiert:
 ```bash
-python3 /workspace/scripts/learning_to_kg_sync.py --apply
+python3 /SCRIPTS/automation/learning_to_kg_sync.py --apply
 ```
 
 ### Event Bus → Evolver
 
 ```bash
-python3 /workspace/scripts/evolver_signal_bridge.py
+python3 /SCRIPTS/automation/evolver_signal_bridge.py
 ```
 
 ### Event Bus → Stagnation Detector
 
 ```bash
-python3 /workspace/scripts/stagnation_detector.py --check all
+python3 /SCRIPTS/automation/stagnation_detector.py --check all
 ```
 
 ---
@@ -154,7 +154,7 @@ python3 /workspace/scripts/stagnation_detector.py --check all
 ### Script
 
 ```bash
-python3 /workspace/scripts/stagnation_detector.py --check all
+python3 /SCRIPTS/automation/stagnation_detector.py --check all
 ```
 
 ### Was es prüft
@@ -185,7 +185,7 @@ python3 /workspace/scripts/stagnation_detector.py --check all
 ### Script
 
 ```bash
-python3 /workspace/scripts/evolver_signal_bridge.py
+python3 /SCRIPTS/automation/evolver_signal_bridge.py
 ```
 
 ### Was es tut
@@ -199,7 +199,7 @@ python3 /workspace/scripts/evolver_signal_bridge.py
 
 ```bash
 # Smart Evolver mit Signal Bridge
-bash /workspace/scripts/run_smart_evolver.sh
+bash /SCRIPTS/automation/run_smart_evolver.sh
 ```
 
 ---

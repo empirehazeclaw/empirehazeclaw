@@ -123,38 +123,38 @@ Autonomy Supervisor (5min)
 
 ```bash
 # Zentrale pub/sub Instanz
-python3 /workspace/scripts/event_bus.py stats
-python3 /workspace/scripts/event_bus.py list --type kg_update
+python3 /SCRIPTS/automation/event_bus.py stats
+python3 /SCRIPTS/automation/event_bus.py list --type kg_update
 ```
 
 ### Learning → KG Sync
 
 ```bash
-python3 /workspace/scripts/learning_to_kg_sync.py --apply
+python3 /SCRIPTS/automation/learning_to_kg_sync.py --apply
 ```
 
 ### Evolver Signal Bridge
 
 ```bash
-python3 /workspace/scripts/evolver_signal_bridge.py
+python3 /SCRIPTS/automation/evolver_signal_bridge.py
 ```
 
 ### Stagnation Breaker
 
 ```bash
-python3 /workspace/scripts/evolver_stagnation_breaker.py
+python3 /SCRIPTS/automation/evolver_stagnation_breaker.py
 ```
 
 ### Smart Evolver
 
 ```bash
-bash /workspace/scripts/run_smart_evolver.sh
+bash /SCRIPTS/automation/run_smart_evolver.sh
 ```
 
 ### Integration Dashboard
 
 ```bash
-python3 /workspace/scripts/integration_dashboard.py
+python3 /SCRIPTS/automation/integration_dashboard.py
 ```
 
 ---

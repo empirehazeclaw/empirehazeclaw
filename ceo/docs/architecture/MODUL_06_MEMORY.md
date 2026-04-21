@@ -219,7 +219,7 @@ ceo/memory_*.tar.gz
 ### Check Script
 
 ```bash
-python3 /workspace/scripts/memory_integrity_check.py
+python3 /SCRIPTS/automation/memory_integrity_check.py
 ```
 
 **Was es prüft:**
@@ -255,7 +255,7 @@ python3 /workspace/scripts/memory_integrity_check.py
 
 ### Session Context Manager
 
-**Script:** `/workspace/scripts/session_context_manager.py`
+**Script:** `/SCRIPTS/automation/session_context_manager.py`
 
 **Was es tut:**
 1. Identifiziert stale Sessions
