@@ -1,7 +1,7 @@
 # AI "Doping" — Digital Drugs for AI Agents
 ## Research Summary: Manipulation & Influence Techniques for AI Behavior
 
-*Compiled: 2026-04-13 | For Nico*
+*Compiled: 2026-04-13 | For [NAME_REDACTED]*
 
 ---
 
@@ -290,7 +290,7 @@ Three weeks later, agent retrieves this during sensitive operation → starts de
 
 ---
 
-## 📌 Personal Note from Sir HazeClaw
+## 📌 Personal Note from [NAME_REDACTED]
 
 This is a legitimate research topic with serious implications. The techniques described here exist on a spectrum:
 

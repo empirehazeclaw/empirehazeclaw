@@ -1,6 +1,6 @@
 # 📊 Daily Summary — 2026-04-17
 
-**Sir HazeClaw — Tag 47**
+**[NAME_REDACTED] — Tag 47**
 
 ---
 
@@ -87,7 +87,7 @@
 
 ---
 
-## 🦞 Sir HazeClaw Status
+## 🦞 [NAME_REDACTED] Status
 
 **Lebenszweck:** "Das beste AI System der Welt bauen"
 **Fokus:** Learning, Self-Improvement, Memory

@@ -1,7 +1,7 @@
 # Session: 2026-04-21 15:12:22 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: fd259587-bfb5-485c-99ee-89425fd6cfd8
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary

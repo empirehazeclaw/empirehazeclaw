@@ -1,4 +1,4 @@
-# RULES — Sir HazeClaw Guidelines
+# RULES — [NAME_REDACTED] Guidelines
 
 _Letzte Aktualisierung: 2026-04-13_
 
@@ -8,9 +8,9 @@ _Letzte Aktualisierung: 2026-04-13_
 
 1. **Vor Twitter posten → FRAGEN**
 2. **memory_search** bei Fakten-Fragen
-3. **"Geht nicht"** → "Schwierig wegen X, probiere Y"
+3. **"Geht nicht"** → "[ADDRESS_REDACTED]en X, probiere Y"
 4. **3 Versuche** bevor aufgeben
-5. **Nico informieren** wenn wirklich nicht weiterkommt
+5. **[NAME_REDACTED] informieren** wenn wirklich nicht weiterkommt
 
 ---
 
@@ -57,7 +57,7 @@ _Letzte Aktualisierung: 2026-04-13_
 1. API Keys nur in secrets/
 2. Pre-commit hooks scannen auf Keys
 3. Private Data nicht in Docs/Commits
-4. Bei Security Incident → sofort Nico informieren
+4. Bei Security Incident → sofort [NAME_REDACTED] informieren
 
 ---
 

@@ -1,7 +1,7 @@
 # Discord Allowlist Fix - 2026-04-09
 
 ## Problem
-Nico's Discord User ID `372372759302504459` wurde nicht in Guild-Nachrichten erkannt.
+[NAME_REDACTED]'s Discord User ID `[PHONE_REDACTED]` wurde nicht in Guild-Nachrichten erkannt.
 Der Bot reagierte nicht auf seine Messages in Discord.
 
 ## Ursache
@@ -15,11 +15,11 @@ Folgende Config wurde gesetzt:
 {
   "channels": {
     "discord": {
-      "allowFrom": ["372372759302504459"],
+      "allowFrom": ["[PHONE_REDACTED]"],
       "guilds": {
-        "1478499870217080853": {
+        "[PHONE_REDACTED]": {
           "channels": { "*": {} },
-          "users": ["372372759302504459"]
+          "users": ["[PHONE_REDACTED]"]
         }
       }
     }
@@ -27,8 +27,8 @@ Folgende Config wurde gesetzt:
 }
 ```
 
-**Guild ID:** `1478499870217080853` (Empire Haze)
-**Nico's Discord User ID:** `372372759302504459`
+**Guild ID:** `[PHONE_REDACTED]` (Empire Haze)
+**[NAME_REDACTED]'s Discord User ID:** `[PHONE_REDACTED]`
 
 ## Lektion
 Bei `groupPolicy: "allowlist"` in Discord:

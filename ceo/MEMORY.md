@@ -8,7 +8,7 @@
 
 ### 🔵 USER PROFILE
 ```
-Name: Nico | Telegram: 5392634979 | Sprache: Deutsch
+Name: Nico | Telegram: [PHONE_REDACTED] | Sprache: Deutsch
 Background: KFZ Mechatroniker → Ingenieur Werkstoffkunde
 Started: Ende Februar 2026
 Communication: Direkt, kurz, Ergebnis-fokussiert
@@ -426,7 +426,7 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 *Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
 
 
-## 🌙 DREAMING REPORT — 2026-04-21 09:17 UTC
+## 🌙 DREAMING REPORT — 2026-04-21 17:54 UTC
 
 *No promotions qualifying this cycle (minRecallCount=3)*
 

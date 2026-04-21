@@ -1,7 +1,7 @@
 # INTENTION ENGINE — Phase 3 Implementation Plan
 
 _Created: 2026-04-17_
-_Author: Sir HazeClaw 🦞_
+_Author: [NAME_REDACTED] 🦞_
 _Status: IMPLEMENTATION_PLAN — PENDING REVIEW_
 
 ---
@@ -53,7 +53,7 @@ INTENTION ENGINE
     {"done": true, "text": "Proactive Scanner"},
     {"done": false, "text": "Intention Engine"}
   ],
-  "context": "Workspace muss stabil sein für Nico"
+  "context": "Workspace muss stabil sein für [NAME_REDACTED]"
 }
 ```
 

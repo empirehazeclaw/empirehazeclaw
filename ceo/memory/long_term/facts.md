@@ -1,4 +1,4 @@
-# FACTS — Sir HazeClaw Long-Term Memory
+# FACTS — [NAME_REDACTED] Long-Term Memory
 
 _Letzte Aktualisierung: 2026-04-13_
 _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
@@ -7,9 +7,9 @@ _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
 
 ## 👤 ÜBER NICO
 
-- **Name:** Nico
-- **Telegram:** 5392634979
-- **Email:** empirehazeclaw@gmail.com
+- **Name:** [NAME_REDACTED]
+- **Telegram:** [PHONE_REDACTED]
+- **Email:** [EMAIL_REDACTED]
 - **Sprache:** Deutsch
 - **Background:** KFZ Mechatroniker → Ingenieur Werkstoffkunde
 - **Started:** Ende Februar 2026
@@ -42,7 +42,7 @@ _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
 | Component | Status | Info |
 |-----------|--------|------|
 | OpenClaw Gateway | ✅ 2026.4.5 | Port 18789 |
-| Telegram | ✅ | Bot Token: 8397...oH9Y |
+| Telegram | ✅ | Bot [TOKEN_REDACTED]: 8397...oH9Y |
 | MetaClaw | ❌ REMOVED | 2026-04-17 |
 | LCM Plugin | ✅ | threshold 0.75 |
 | Stripe | ✅ | Auto-Fulfillment |
@@ -59,7 +59,7 @@ _Migrated from: /workspace/MEMORY.md + /ceo/MEMORY.md_
 | OpenRouter | ✅ OK | secrets.env |
 | Buffer | ❌ INVALID | Rotieren! |
 | Leonardo AI | ❌ INVALID | Rotieren! |
-| Gmail | ⚠️ Issue | App Password? |
+| Gmail | ⚠️ Issue | App [PASSWORD_REDACTED]? |
 
 ---
 

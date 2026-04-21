@@ -4,7 +4,7 @@
     "epsilon": 0.1,
     "epsilon_decay": 0.995,
     "epsilon_min": 0.01,
-    "temperature": 0.9702989999999999,
+    "temperature": 0.[PHONE_REDACTED],
     "temperature_decay": 0.99,
     "temperature_min": 0.1,
     "learning_rate": 0.1,
@@ -23,7 +23,7 @@
     }
   },
   "episode_count": 0,
-  "total_reward": 2.4000000000000004,
+  "total_reward": 2.[PHONE_REDACTED],
   "last_update": "2026-04-19T08:21:21.288713+00:00",
   "stagnation_count": 0,
   "version": "1.0"

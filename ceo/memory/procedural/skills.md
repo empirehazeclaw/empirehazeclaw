@@ -1,4 +1,4 @@
-# SKILLS — Sir HazeClaw Capabilities
+# SKILLS — [NAME_REDACTED] Capabilities
 
 _Letzte Aktualisierung: 2026-04-13_
 

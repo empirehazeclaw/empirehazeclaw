@@ -1,4 +1,4 @@
-# HEARTBEAT.md — Sir HazeClaw Status
+# HEARTBEAT.md — [AGENT_NAME] Status
 
 ## Last Update: 2026-04-18 15:24 UTC
 
@@ -26,4 +26,4 @@
 Only report: ERROR, WARNING, or real improvement/learning.
 
 ---
-*Sir HazeClaw — Lean & Stable (v6)*
+*[AGENT_NAME] — Lean & Stable (v6)*

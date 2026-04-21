@@ -1,7 +1,7 @@
 # Session: 2026-04-20 11:53:33 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 7e5ccb07-a123-420b-97b3-548223c811e4
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -174,10 +174,10 @@ find /home/clawbot/.openclaw/workspace/backups -name "*.tar.gz" -mtime +7 -delet
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "61924",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 10:46 UTC"
 }
 ```
@@ -185,9 +185,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -225,7 +225,7 @@ hf_tobil_qmd-query-expansion-1.7B-q4_k_m.gguf.ipull
 
 ### QMD Watchdog Cron ✅
 ```
-905d55f0-7e24-4a5d-9e01-f2f2784f2b0a QMD Watchdog every 20m — OK
+[ID_REDACTED] QMD Watchdog every 20m — OK
 ```
 
 ---
@@ -260,7 +260,7 @@ user: System (untrusted): [2026-04-20 10:47:15 UTC] Exec completed (briny-sh, co
 Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979"
+  "chat_id": "telegram:[PHONE_REDACTED]"
 }
 ```
 
@@ -272,10 +272,10 @@ NO_REPLY
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "61933",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 10:48 UTC"
 }
 ```
@@ -283,9 +283,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -299,7 +299,7 @@ assistant: **Fertig. Zusammenfassung:**
 | tmp Files | **-~100KB** ✅ |
 | **Total freed** | **~1.9GB** |
 
-QMD läuft weiter mit dem 314MB embedding Model — `qmd search` und `qmd vsearch` funktionieren einwandfrei. Nur HyDE query expansion (das 1.7B model) ist weg, aber das брал auf 2 CPU-Cores auch >10s pro Query.
+QMD läuft weiter mit dem 314MB embedding Model — `qmd search` und `qmd vsearch` funktionieren einwandfrei. Nur HyDE query expansion (das 1.7B model) [ADDRESS_REDACTED], aber das брал auf 2 CPU-Cores auch >10s pro Query.
 
 **Was noch ansteht:**
 - Alte tar.gz Backups? Keine gefunden >7 Tage — alles frisch
@@ -308,10 +308,10 @@ QMD läuft weiter mit dem 314MB embedding Model — `qmd search` und `qmd vsearc
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "61939",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 10:50 UTC"
 }
 ```
@@ -319,9 +319,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -345,22 +345,22 @@ assistant: **Alle Crons gefixt und aktiviert ✅**
 - Die 3 idlen Crons waren enabled, aber ihre `nextRun` Zeit war noch nicht erreicht — sie hatten einfach noch nie getriggert wurde
 
 **Alle 5 Crons laufen jetzt ✅**
-user: System (untrusted): [2026-04-20 10:51:13 UTC] Exec completed (cool-gul, code 0) :: 3b4beaef-3a0d-45f9-bf62-3fda1b72aff7 Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d 24h ago error isolated ceo - bcdfba01-1a74-4b09-bb53-bd4cdbfe7d6f Run auto documen…
-System (untrusted): [2026-04-20 10:51:14 UTC] Exec completed (briny-sh, code 0) :: idle isolated ceo - === CACHE CLEANUP CRON === 01f50e14-c49a-4c78-b8c8-b4c13166588d Cache Cleanup Daily cron 0 3 * * * @ UTC (exact) in 16h - idle isolated ceo - === KG ORPHAN CLE…
-System (untrusted): [2026-04-20 10:52:45 UTC] Exec completed (marine-o, code 0) :: l:3b4beaef-3a0d-45f9-bf62-3fda1b72aff7:1776682352911:1" } === RUNNING AUTO DOC === Config warnings:\n- plugins.entries.voice-call: plugin voice-call: duplicate plugin id detected;…
-System (untrusted): [2026-04-20 10:53:17 UTC] Exec completed (nova-pin, code 0) :: === CHECK RUN STATUS === 3b4beaef-3a0d-45f9-bf62-3fda1b72aff7 Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d <1m ago ok isolated ceo -
-System (untrusted): [2026-04-20 10:53:50 UTC] Exec failed (tidal-sa, signal SIGTERM) :: nance Su... cron 0 4 * * 0 @ UTC (exact) in 6d 1d ago ok isolated ceo - 3b4beaef-3a0d-45f9-bf62-3fda1b72aff7 Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d 1m ago ok …
+user: System (untrusted): [2026-04-20 10:51:13 UTC] Exec completed (cool-gul, code 0) :: [ID_REDACTED] Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d 24h ago error isolated ceo - [ID_REDACTED] Run auto documen…
+System (untrusted): [2026-04-20 10:51:14 UTC] Exec completed (briny-sh, code 0) :: idle isolated ceo - === CACHE CLEANUP CRON === [ID_REDACTED] Cache Cleanup Daily cron 0 3 * * * @ UTC (exact) in 16h - idle isolated ceo - === KG ORPHAN CLE…
+System (untrusted): [2026-04-20 10:52:45 UTC] Exec completed (marine-o, code 0) :: l:[ID_REDACTED]:[PHONE_REDACTED]:1" } === RUNNING AUTO DOC === Config warnings:\n- plugins.entries.voice-call: plugin voice-call: duplicate plugin id detected;…
+System (untrusted): [2026-04-20 10:53:17 UTC] Exec completed (nova-pin, code 0) :: === CHECK RUN STATUS === [ID_REDACTED] Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d <1m ago ok isolated ceo -
+System (untrusted): [2026-04-20 10:53:50 UTC] Exec failed (tidal-sa, signal SIGTERM) :: nance Su... cron 0 4 * * 0 @ UTC (exact) in 6d 1d ago ok isolated ceo - [ID_REDACTED] Prompt Benchmark Weekly cron 0 11 * * 0 @ UTC (exact) in 6d 1m ago ok …
 System (untrusted): [2026-04-20 10:54:53 UTC] Exec failed (kind-bre, signal SIGTERM) :: eMode": "now", "payload": { "kind": "agentTurn", "message": "find /home/clawbot/.cache/qmd -type f -mtime +7 -delete 2>/dev/null; find /home/clawbot/.cache/whisper -type f -mtime …
 System (untrusted): [2026-04-20 10:55:39 UTC] Exec failed (lucky-ri, signal SIGTERM) :: ^^^^^^^^^^^^^^ File "/usr/lib/python3.12/json/decoder.py", line 337, in decode obj, end = self.raw_decode(s, idx=_w(s, 0).end()) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "/usr/…
-System (untrusted): [2026-04-20 10:56:12 UTC] Exec completed (crisp-oc, code 0) :: ance Loop cron 0 */6 * * * @ UTC (stagg... in 1h - running isolated ceo - 01f50e14-c49a-4c78-b8c8-b4c13166588d Cache Cleanup Daily cron 0 3 * * * @ UTC (exact) in 16h - idle isola…
+System (untrusted): [2026-04-20 10:56:12 UTC] Exec completed (crisp-oc, code 0) :: ance Loop cron 0 */6 * * * @ UTC (stagg... in 1h - running isolated ceo - [ID_REDACTED] Cache Cleanup Daily cron 0 3 * * * @ UTC (exact) in 16h - idle isola…
 System (untrusted): [2026-04-20 10:57:04 UTC] Exec failed (lucky-ri, signal SIGKILL)
-System (untrusted): [2026-04-20 10:57:43 UTC] Exec failed (grand-fa, signal SIGTERM) :: { "ok": true, "enqueued": true, "runId": "manual:kg-orphan-cleaner-daily:1776682649535:5" } kg-orphan-cleaner-daily KG Orphan Cleaner Daily cron 0 3 * * * @ UTC (exact) in 16h - r…
+System (untrusted): [2026-04-20 10:57:43 UTC] Exec failed (grand-fa, signal SIGTERM) :: { "ok": true, "enqueued": true, "runId": "manual:kg-orphan-cleaner-daily:[PHONE_REDACTED]:5" } kg-orphan-cleaner-daily KG Orphan Cleaner Daily cron 0 3 * * * @ UTC (exact) in 16h - r…
 System (untrusted): [2026-04-20 10:58:11 UTC] Exec completed (grand-gu, code 0) :: kg-orphan-cleaner-daily KG Orphan Cleaner Daily cron 0 3 * * * @ UTC (exact) in 16h <1m ago ok isolated ceo -
 
 Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979"
+  "chat_id": "telegram:[PHONE_REDACTED]"
 }
 ```
 
@@ -372,10 +372,10 @@ NO_REPLY
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "61980",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 11:43 UTC"
 }
 ```
@@ -383,9 +383,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

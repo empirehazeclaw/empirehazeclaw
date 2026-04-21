@@ -1,7 +1,7 @@
 # Session: 2026-04-14 16:38:03 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 269e031b-6d24-48db-9a9b-03aee851d28b
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -10,8 +10,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53466",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-14 16:12 UTC"
 }
 ```
@@ -19,9 +19,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -54,7 +54,7 @@ assistant: ---
 | Problem | Lösung |
 |---------|--------|
 | Timestamps wurden ersetzt ❌ | Phone Pattern gefixt ✅ |
-| Random Token Replacement | Consistent Mapping (`{{PERSON_1}}`) |
+| Random [TOKEN_REDACTED] Replacement | Consistent Mapping (`{{PERSON_1}}`) |
 | Keine Sensitivity Levels | L1/L2/L3 |
 | Keine Whitelist | Custom Whitelist Support |
 | Keine Verification | Auto-verify nach sanitize |
@@ -75,7 +75,7 @@ node index.js --verify
 
 ### 📊 Research Quellen
 
-- Arxiv 2411.05978 (Amazon) — Consistent Token Mapping
+- Arxiv 2411.05978 (Amazon) — Consistent [TOKEN_REDACTED] Mapping
 - AWS Comprehend — Context-aware Detection  
 - Tonic.ai, RedactChat — Production Best Practices
 
@@ -86,8 +86,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53485",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-14 16:21 UTC"
 }
 ```
@@ -95,9 +95,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -133,8 +133,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53493",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-14 16:34 UTC"
 }
 ```
@@ -142,9 +142,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -155,8 +155,8 @@ Das war ein Fehler meinerseits. Ich hatte nur **dry-run** getestet aber nie tats
 
 **Das Archiv enthält noch:**
 - API Keys (Stripe, MiniMax, etc.)
-- Bot Token
-- Emails (empirehazeclaw@gmail.com)
+- Bot [TOKEN_REDACTED]
+- Emails ([EMAIL_REDACTED])
 - Telegram IDs
 - Dein Name
 - Alle Secrets
@@ -173,8 +173,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53496",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-14 16:35 UTC"
 }
 ```
@@ -182,9 +182,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

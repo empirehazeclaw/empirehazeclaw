@@ -71,7 +71,7 @@ Phase 2 des System Improvement Master Plan fokussiert auf:
 
 **Option A: Hierarchical (Recommended)**
 ```
-Sir HazeClaw (Orchestrator)
+[NAME_REDACTED] (Orchestrator)
 ├── Data Agent (Scanning, KG)
 ├── Maintenance Agent (Health, Cleanup)
 └── Research Agent (Web, Learning)

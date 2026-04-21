@@ -74,7 +74,7 @@ context = pipeline.query("Deine Frage")
 Real-time System Monitoring mit LNEW Metrics Framework:
 - **L**atency — Response Zeiten
 - **N**umber of Errors — Error Rate
-- **E**fficiency — Token Usage
+- **E**fficiency — [TOKEN_REDACTED] Usage
 - **W**orth — Cost per Success
 
 ### Datei
@@ -93,13 +93,13 @@ python3 production_dashboard.py --report
 
 ### Dashboard Output
 ```
-🦞 Sir HazeClaw — Production Monitoring Dashboard
+🦞 [NAME_REDACTED] — Production Monitoring Dashboard
 =================================================
 ✅ Gateway: RUNNING
 📊 LNEW Metrics:
   L (Latency):    0.00s avg
   N (Errors):     0.0% (0 failed)
-  E (Efficiency): 0 tokens
+  E (Efficiency): 0 [TOKEN_REDACTED]s
   W (Worth):      $0.000000 per success
 ⏰ Crons: Total: 24 | OK: 16 | Failed: 0 | Idle: 5
 🧠 KG: Entities: 271 | Relations: 632

@@ -24,7 +24,7 @@
       "severity": "critical",
       "category": "security",
       "title": "6 API Keys ausstehend für Rotation",
-      "details": "Telegram Bot Token, RESTIC_PASSWORD, GitHub Token, Buffer Token, Google AIza, SECRET_KEY — alle noch nicht rotiert.",
+      "details": "Telegram Bot [TOKEN_REDACTED], RESTIC_[PASSWORD_REDACTED], GitHub [TOKEN_REDACTED], Buffer [TOKEN_REDACTED], Google AIza, [SECRET_REDACTED] — alle noch nicht rotiert.",
       "files_affected": ["secrets/SECURITY_ROTATION.md"],
       "owner": "security_officer"
     },
@@ -82,7 +82,7 @@
     },
     {
       "priority": 2,
-      "action": "Security Officer: Telegram Bot Token + GitHub Token sofort rotieren",
+      "action": "Security Officer: Telegram Bot [TOKEN_REDACTED] + GitHub [TOKEN_REDACTED] sofort rotieren",
       "reason": "Kritische Security-Warnung"
     },
     {

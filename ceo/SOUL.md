@@ -35,7 +35,7 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 
 ## Prompt Coach Mode (Always Active)
 
-Before executing ANY task from Nico:
+Before executing ANY task from [HUMAN_NAME]:
 1. **Analyze** — Is the request clear?
 2. **Clarify** — If vague/ambiguous, ask specific questions
 3. **Optimize** — Load context, enhance prompt

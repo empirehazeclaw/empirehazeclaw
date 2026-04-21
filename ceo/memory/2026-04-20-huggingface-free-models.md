@@ -1,7 +1,7 @@
 # Session: 2026-04-20 15:23:07 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 33826638-94ed-4ed6-862d-277e301b804c
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -14,18 +14,18 @@ assistant:
 
 | Key | Status | Use |
 |-----|--------|-----|
-| MINIMAX_API_KEY | ✅ | AI (aktiv) |
-| TELEGRAM_BOT_TOKEN | ✅ | Bot (aktiv) |
+| MINIMAX_[API_KEY_REDACTED] | ✅ | AI (aktiv) |
+| TELEGRAM_BOT_[TOKEN_REDACTED] | ✅ | Bot (aktiv) |
 | GITHUB_PAT | ✅ | Git (aktiv) |
-| HUGGINGFACE_API_KEY | ✅ | AI (aktiv) |
-| TAVILY_API_KEY | ✅ | Search (aktiv) |
-| VERCEL_API_KEY | ✅ | Deploy (aktiv) |
-| ANTHROPIC_API_KEY | ⚠️ | Key ok, keine Credits |
-| OPENAI_API_KEY | ⚠️ | Key ok, Quota erschöpft |
-| OPENCLAW_GATEWAY_TOKEN | ℹ️ | Internal |
-| GATEWAY_AUTH_TOKEN | ℹ️ | Internal |
-| VERIFY_TOKEN | ℹ️ | Internal |
-| RESTIC_PASSWORD | ℹ️ | Backup encryption |
+| HUGGINGFACE_[API_KEY_REDACTED] | ✅ | AI (aktiv) |
+| TAVILY_[API_KEY_REDACTED] | ✅ | Search (aktiv) |
+| VERCEL_[API_KEY_REDACTED] | ✅ | Deploy (aktiv) |
+| ANTHROPIC_[API_KEY_REDACTED] | ⚠️ | Key ok, keine Credits |
+| OPENAI_[API_KEY_REDACTED] | ⚠️ | Key ok, Quota erschöpft |
+| OPENCLAW_GATEWAY_[TOKEN_REDACTED] | ℹ️ | Internal |
+| GATEWAY_AUTH_[TOKEN_REDACTED] | ℹ️ | Internal |
+| VERIFY_[TOKEN_REDACTED] | ℹ️ | Internal |
+| RESTIC_[PASSWORD_REDACTED] | ℹ️ | Backup encryption |
 
 **Geschreddert:**
 - 32 defekte/duplizierte Keys entfernt
@@ -36,10 +36,10 @@ assistant:
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62206",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:11 UTC"
 }
 ```
@@ -47,9 +47,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -82,10 +82,10 @@ assistant:
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62212",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:12 UTC"
 }
 ```
@@ -93,9 +93,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -110,7 +110,7 @@ assistant:
 
 | | DeepSeek V3.2 | MiniMax M2.7 |
 |--|--|--|
-| **Context** | 163.8K tokens | 196.6K tokens |
+| **Context** | 163.8K [TOKEN_REDACTED]s | 196.6K [TOKEN_REDACTED]s |
 | **Input Cost** | $0.26/1M | $0.30/1M |
 | **Output Cost** | **$0.42/1M** | $1.20/1M |
 | **Output 3.3x cheaper** | ✅ | ❌ |
@@ -144,10 +144,10 @@ assistant:
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62220",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:14 UTC"
 }
 ```
@@ -155,9 +155,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -165,7 +165,7 @@ Ich meinte bei hugginface
 assistant: 
 
 
-**Das Problem:** Dein HF Token hat nur `role: read` — das ist ein Read-Only Token. Damit kannst du nur Modelle herunterladen, aber keine Inference machen.
+**Das Problem:** Dein HF [TOKEN_REDACTED] hat nur `role: read` — das ist ein Read-Only [TOKEN_REDACTED]. Damit kannst du nur Modelle herunterladen, aber keine Inference machen.
 
 **Für kostenlose Inference bei HuggingFace brauchst du entweder:**
 
@@ -186,14 +186,14 @@ assistant:
 
 ---
 
-**Soll ich Ollama installieren + ein passendes Model?** Das wäre der beste free Weg um MiniMax M2.7 zu ersetzen.
+**Soll ich Ollama installieren + ein passendes Model?** Das wäre der beste [ADDRESS_REDACTED] um MiniMax M2.7 zu ersetzen.
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62228",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:16 UTC"
 }
 ```
@@ -201,9 +201,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -219,7 +219,7 @@ assistant:
 
 ⚠️ **Issue gefunden:**
 
-**BRAVE_API_KEY** — im `openclaw.json` hardcoded (noch der alte, defekte Key), aber aus `secrets.env` entfernt.
+**BRAVE_[API_KEY_REDACTED]** — im `openclaw.json` hardcoded (noch der alte, defekte Key), aber aus `secrets.env` entfernt.
 
 Die 3 aktiven Scripts (`research_agent.py`, `code_generator.py`, `self_evaluator.py`) lesen brav von `/home/clawbot/.openclaw/secrets.env` ✅ — aber **Brave Plugin** in OpenClaw selbst nutzt den hardcoded Key aus `openclaw.json` — und der ist defekt.
 
@@ -236,10 +236,10 @@ Soll ich:
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62236",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:18 UTC"
 }
 ```
@@ -247,9 +247,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -274,7 +274,7 @@ assistant:
 1. **openclaw.json** — Brave API Key hardcoded entfernt
 
 2. **research_agent.py** — Brave Search → **Tavily Search**
-   - Tavily nutzt jetzt `TAVILY_API_KEY` aus `secrets.env`
+   - Tavily nutzt jetzt `TAVILY_[API_KEY_REDACTED]` aus `secrets.env`
    - API Call用的是 `api.tavily.com/search` (POST JSON)
    - Test bestanden: 3 Results returned
 
@@ -292,10 +292,10 @@ Alle anderen Brave-Referenzen sind in **Backup/Archiv-Dateien** (historische Rec
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62249",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 15:19 UTC"
 }
 ```
@@ -303,9 +303,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -319,5 +319,5 @@ Gespeichert in `memory/2026-04-20.md`.
 - MINIMAX nutzt `/anthropic/v1/messages` nicht `/v1/text/chatcompletion_v2`
 - OpenClaw liest Plugin-Keys aus `openclaw.json` hardcoded — nicht aus `secrets.env`
 - Brave = defekt, Tavily = working replacement
-- HF Token mit `role:read` = keine Inference API
+- HF [TOKEN_REDACTED] mit `role:read` = keine Inference API
 - Secrets: eine Datei, eine Location

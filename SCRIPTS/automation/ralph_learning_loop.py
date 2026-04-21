@@ -57,7 +57,7 @@ def load_ralph_state():
         "started_at": None,
         "last_score": 0,
         "stable_runs": 0,
-        "completed": False
+        "completed": False  # Learning NEVER completes - it's continuous
     }
 
 def save_ralph_state(state):
@@ -305,6 +305,12 @@ def main():
     # Full Ralph Loop
     log("Starting Ralph Learning Loop")
     state = load_ralph_state()
+    
+    if state.get("completed"):
+        log(f"Already completed! (score={state.get('last_score', 'N/A'):.3f})")
+        print(f"\n{RALPH_MARKER}\n")
+        print(f"Already complete (score={state.get('last_score', 0):.3f})")
+        sys.exit(0)
     
     if state["started_at"] is None:
         state["started_at"] = datetime.now().isoformat()

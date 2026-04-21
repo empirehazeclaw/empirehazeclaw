@@ -2,7 +2,7 @@
 ## "Digital Drugs for AI Agents" — combining Psychedelics Science + AI Self-Modification
 
 _Created: 2026-04-13_
-_Author: Sir HazeClaw 🦞_
+_Author: [NAME_REDACTED] 🦞_
 _Status: RESEARCH PHASE_
 
 ---
@@ -276,4 +276,4 @@ Post-reorganization consolidation:
 ---
 
 _Letzte Aktualisierung: 2026-04-13_
-_Sir HazeClaw — Pushing the boundaries of AI self-improvement_ 🦞
+_Sir [NAME_REDACTED] — Pushing the boundaries of AI self-improvement_ 🦞

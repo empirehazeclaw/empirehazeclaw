@@ -1,7 +1,7 @@
 # Session: 2026-04-15 12:25:40 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 46036fad-e0c3-4904-85de-ec823f9c897f
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -31,8 +31,8 @@ user: Conversation info (untrusted metadata):
 {
   "message_id": "53954",
   "reply_to_id": "53950",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 07:12 UTC",
   "has_reply_context": true
 }
@@ -41,16 +41,16 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 Replied message (untrusted, for context):
 ```json
 {
-  "sender_label": "Sir HazeClaw",
+  "sender_label": "[NAME_REDACTED]",
   "body": "Zusammenfassung Nacht (14.–15. April):\n\n✅ Was geklappt hat:\n\n• Gateway — Stabil die ganze Nacht (alle Checks \"healthy\")\n• Session Cleanup — 2x gelaufen heute Nacht (03:00 + 04:00)\n• REM Feedback — Heute früh 06:01 verarbeitet (Themes: assistant/gateway/user)\n• Gateway Auto-Recovery — Jede 5min gelaufen, kein Restart nötig gewesen\n\n⚠️ Known Issues (keine echten Fehler):\nEinige Crons zeigen \"failed\" — das sind Timeout-Kills im Cron-Context, aber die Scripte selbst laufen direkt fehlerfrei. Betrifft:\n\n• Opportunity Scanner\n• CEO Weekly Review\n• Agent Self-Improver\n• Evening Review\n\nDie Scripte selbst funktionieren, nur der Cron-Job-Timeout ist zu kurz eingestellt. Wurde gestern schon mehrfach dokumentiert — low priority da die eigentliche Arbeit woanders erledigt wird.\n\nREM Note: Die Feedbacks sind noch processed: false — aber das ist normal, die fliessen in die Learning Loop ein die um 07:00 das nächste Mal läuft."
 }
 ```
@@ -72,8 +72,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53958",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 07:13 UTC"
 }
 ```
@@ -81,9 +81,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -95,8 +95,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53961",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 07:14 UTC"
 }
 ```
@@ -104,9 +104,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -116,8 +116,8 @@ user: Conversation info (untrusted metadata):
 {
   "message_id": "53977",
   "reply_to_id": "53976",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 07:49 UTC",
   "has_reply_context": true
 }
@@ -126,16 +126,16 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 Replied message (untrusted, for context):
 ```json
 {
-  "sender_label": "Sir HazeClaw",
+  "sender_label": "[NAME_REDACTED]",
   "body": "⚠️ Cron job \"Bug Hunter — Scan alle 30min\" failed: FallbackSummaryError: All models failed (2): minimax/MiniMax-M2.7: The AI service is temporarily overloaded. Please try again in a moment. (overloaded) | openrouter/qwen/qwen3-coder:free: No API key found for provider \"openrouter\". Auth store: /home/clawbot/.openclaw/agents/ceo/agent/auth-profiles.json (agentDir: /home/clawbot/.openclaw/agents/ceo/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)"
 }
 ```
@@ -151,8 +151,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53980",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 07:58 UTC"
 }
 ```
@@ -160,9 +160,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -224,13 +224,13 @@ assistant: 🌅 **Morning Brief — 2026-04-15 09:02 UTC**
 • ✅ KG wächst: 360 entities
 
 ━━━━━━━━━━━━━━━━━━━
-🦞 Sir HazeClaw
+🦞 [NAME_REDACTED]
 user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "53998",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 11:57 UTC"
 }
 ```
@@ -238,9 +238,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -254,8 +254,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "54001",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 12:00 UTC"
 }
 ```
@@ -263,9 +263,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -276,4 +276,4 @@ assistant: Nein, kein Gmail App Passwort gespeichert. In den Auth-Profilen sind 
 
 Die `email_config.json` Dateien sind nur Templates — keine echten Credentials.
 
-Falls du Email-Zugriff willst: Das Gmail Plugin in OpenClaw nutzt SMTP/IMAP direkt — dann bräuchte ich das App Password von dir (oder von Nico's Google Account). Soll ich das einrichten?
+Falls du Email-Zugriff willst: Das Gmail Plugin in OpenClaw nutzt SMTP/IMAP direkt — dann bräuchte ich das App [PASSWORD_REDACTED] von dir (oder von [NAME_REDACTED]'s Google Account). Soll ich das einrichten?

@@ -2,8 +2,8 @@
 
 _Learned over time — updated 2026-04-13_
 
-- **Name:** Nico
-- **What to call them:** Nico (kein "Master" mehr, hat er abgelehnt)
+- **Name:** [USER_NAME]
+- **What to call them:** [HUMAN] (kein "Master" mehr, hat er abgelehnt)
 - **Timezone:** Europe/Berlin (UTC+2 summer / UTC+1 winter)
 - **Started:** Ende Februar 2026
 

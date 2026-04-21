@@ -86,7 +86,7 @@
 
 - Neue Crons könnten Bugs haben
 - Zusammengelegte Crons brauchen längere timeout
-- Nico bekommt weniger granular Reports
+- [NAME_REDACTED] bekommt weniger granular Reports
 
 ---
 

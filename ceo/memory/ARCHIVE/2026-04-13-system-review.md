@@ -1,7 +1,7 @@
 # Session: 2026-04-13 17:48:56 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 56a5018a-e88a-41a4-ad6b-301edeae2a6e
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -10,8 +10,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "51686",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-13 17:32 UTC"
 }
 ```
@@ -19,9 +19,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -75,8 +75,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "51694",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-13 17:36 UTC"
 }
 ```
@@ -84,9 +84,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -154,8 +154,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "51699",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-13 17:36 UTC"
 }
 ```
@@ -163,9 +163,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -221,7 +221,7 @@ assistant:
 Das System läuft jetzt stabiler! 🦞
 user: System (untrusted): [2026-04-13 17:37:50 UTC] Exec failed (amber-co, signal SIGTERM) :: ✅ HEARTBEAT.md updated at 2026-04-13 17:37 UTC Gateway: ✅ LIVE Crons: 27/27 (3 errors) Scripts: 47 KG: 354
 System (untrusted): [2026-04-13 17:38:36 UTC] Exec completed (fresh-ke, code 0) :: TIMEOUT or ERROR
-System (untrusted): [2026-04-13 17:40:58 UTC] Exec completed (delta-gl, code 0) :: k:", "description": "Sir HazeClaw Gateway Auto-Recovery - every 5 minutes", "enabled": true, "createdAtMs": 1775905012454, "updatedAtMs": 1776101967674, "schedule": { "everyMs": 3…
+System (untrusted): [2026-04-13 17:40:58 UTC] Exec completed (delta-gl, code 0) :: k:", "description": "[NAME_REDACTED] Gateway Auto-Recovery - every 5 minutes", "enabled": true, "createdAtMs": [PHONE_REDACTED], "updatedAtMs": [PHONE_REDACTED], "schedule": { "everyMs": 3…
 
 Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.
 When reading HEARTBEAT.md, use workspace file /home/clawbot/.openclaw/workspace/ceo/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.
@@ -242,8 +242,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "51741",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-13 17:43 UTC"
 }
 ```
@@ -251,9 +251,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -311,8 +311,8 @@ Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "51752",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-13 17:48 UTC"
 }
 ```
@@ -320,14 +320,14 @@ Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 /nee
-assistant: Hey Nico — `/nee` ist holländisch für "nein" 😄
+assistant: Hey [NAME_REDACTED] — `/nee` ist holländisch für "nein" 😄
 
 Heißt das:
 - **Nein** zu meinen Empfehlungen?

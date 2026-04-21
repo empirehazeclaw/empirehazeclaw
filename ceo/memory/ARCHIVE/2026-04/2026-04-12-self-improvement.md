@@ -43,8 +43,8 @@
 
 ## 🚨 Open Issues
 
-1. OpenRouter Key → Nico muss neuen generieren
-2. Modal Token → Nico muss neuen generieren
+1. OpenRouter Key → [NAME_REDACTED] muss neuen generieren
+2. Modal [TOKEN_REDACTED] → [NAME_REDACTED] muss neuen generieren
 3. 4 error crons → need fixing
 
 ---

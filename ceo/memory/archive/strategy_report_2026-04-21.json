@@ -1,0 +1,62 @@
+{
+  "total_strategies": 8,
+  "total_learnings": 500,
+  "strategies": {
+    "top": [
+      [
+        "diversity",
+        7
+      ],
+      [
+        "test_strategy",
+        5
+      ],
+      [
+        "test_feedback",
+        5
+      ],
+      [
+        "dynamic_weights",
+        1
+      ],
+      [
+        "mutation_tuning",
+        1
+      ]
+    ],
+    "bottom": [
+      [
+        "dynamic_weights",
+        1
+      ],
+      [
+        "mutation_tuning",
+        1
+      ],
+      [
+        "repair",
+        1
+      ],
+      [
+        "adaptive_lr",
+        0
+      ],
+      [
+        "unknown",
+        -7
+      ]
+    ],
+    "all": {
+      "diversity": 7,
+      "adaptive_lr": 0,
+      "dynamic_weights": 1,
+      "mutation_tuning": 1,
+      "unknown": -7,
+      "test_strategy": 5,
+      "test_feedback": 5,
+      "repair": 1
+    }
+  },
+  "contexts": {},
+  "date": "2026-04-21"
+}

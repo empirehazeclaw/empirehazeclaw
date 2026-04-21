@@ -1,23 +1,10 @@
 {
   "usage": {
-    "gene_gep_repair_from_errors": 4
+    "gene_gep_innovate_from_opportunity": 1,
+    "gene_gep_explore_new_territory": 1,
+    "gene_gep_diversity_sampling": 1
   },
   "history": [
-    {
-      "gene": "gene_gep_repair_from_errors",
-      "timestamp": "2026-04-11T16:29:51.981138"
-    },
-    {
-      "gene": "gene_gep_repair_from_errors",
-      "timestamp": "2026-04-11T16:29:57.279760"
-    },
-    {
-      "gene": "gene_gep_repair_from_errors",
-      "timestamp": "2026-04-11T16:29:57.311012"
-    },
-    {
-      "gene": "gene_gep_repair_from_errors",
-      "timestamp": "2026-04-11T16:29:57.342272"
-    }
+    {"gene": "gene_gep_innovate_from_opportunity", "timestamp": "2026-04-21T17:56:00.000000"}
   ]
 }

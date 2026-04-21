@@ -50,7 +50,9 @@ def check_evolvers_stagnation(events: list) -> dict:
     for evt in evolver_events:
         data = evt.get("data", {})
         gene = data.get("gene", data.get("selected_gene", "unknown"))
-        gene_counts[gene] += 1
+        # Filter out buggy "unknown" entries
+        if gene and gene != "unknown":
+            gene_counts[gene] += 1
     
     stagnant_genes = {g: c for g, c in gene_counts.items() if c >= 3}
     

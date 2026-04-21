@@ -1,31 +1,4 @@
 {
-  "patterns": [
-    {
-      "id": "pattern_20260421_175312",
-      "title": "Add 1 new validation test that currently doesn't exist",
-      "category": "hypothesis_validation_depth",
-      "error_signature": [
-        "validation",
-        "test",
-        "that",
-        "currently",
-        "doesn't"
-      ],
-      "description": "[Exploration] Add 1 new validation test that currently doesn't exist",
-      "solution": "Applied improvement: Add 1 new validation test that currently doesn't exist",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.7,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T17:53:12.100303",
-      "last_validated": "2026-04-21T17:53:12.100306",
-      "error_type": "validation_depth",
-      "context": {
-        "source": "exploration",
-        "script": null
-      }
-    }
-  ],
+  "patterns": [],
   "version": "1.0"
 }

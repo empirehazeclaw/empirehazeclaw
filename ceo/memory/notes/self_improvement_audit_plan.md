@@ -2,7 +2,7 @@
 
 _Created: 2026-04-17_
 _Updated: 2026-04-17_
-_Author: Sir HazeClaw 🦞_
+_Author: [NAME_REDACTED] 🦞_
 _Status: IMPLEMENTATION_PLAN — PENDING REVIEW_
 
 ---

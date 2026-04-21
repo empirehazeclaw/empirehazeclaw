@@ -8,7 +8,7 @@
 
 ### 2. Wrong Paths Break Everything
 - `error_reducer.py` war in `SCRIPTS/automation/` aber Scripts suchten in `scripts/`
-- Learning loop plateau für 50+ iterations wegen fehlendem symlink
+- Learning loop plateau für 50+ [ADDRESS_REDACTED]en fehlendem symlink
 - **Rule:** Immer Pfade verifizieren wenn etwas "not found" ist
 
 ### 3. Thresholds That Are Too Strict Kill Data
@@ -62,7 +62,7 @@
 
 ---
 
-## 🧠 What Sir HazeClaw Learned
+## 🧠 What [NAME_REDACTED] Learned
 
 - **Technical:** SQLite vacuum, KG orphan detection, learning loop validation
 - **Process:** Subagent analysis workflow, Tavily research integration

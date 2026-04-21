@@ -82,14 +82,14 @@ def route_tool_decision(state: AgentState) -> str:
 
 **Pattern (cipherbuilds.ai):**
 ```bash
-# Check session token count every 3 hours
+# Check session [TOKEN_REDACTED] count every 3 hours
 # If over threshold: extract state → kill session → restart
 0 */3 * * * /scripts/session-lifecycle-check.sh
 ```
 
 **Our opportunity:** 
 - Implement session health check every 3h
-- Auto-restart if token count > threshold
+- Auto-restart if [TOKEN_REDACTED] count > threshold
 
 ---
 
@@ -204,4 +204,4 @@ def route_tool_decision(state: AgentState) -> str:
 ---
 
 _Created: 2026-04-17 18:35 UTC_
-_Author: Sir HazeClaw 🦞_
+_Author: [NAME_REDACTED] 🦞_

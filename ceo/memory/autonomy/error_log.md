@@ -1,4 +1,4 @@
-# ERROR LOG — Sir HazeClaw Autonomy Engine
+# ERROR LOG — [NAME_REDACTED] Autonomy Engine
 
 *Alle Fehler werden hier protokolliert für Mustererkennung*
 

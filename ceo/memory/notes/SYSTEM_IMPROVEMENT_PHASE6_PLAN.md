@@ -1,4 +1,4 @@
-# 🚀 Sir HazeClaw — Phase 6: Advanced Autonomy & Performance
+# 🚀 [NAME_REDACTED] — Phase 6: Advanced Autonomy & Performance
 
 **Erstellt:** 2026-04-17 18:40 UTC  
 **Status:** READY_TO_START  
@@ -37,7 +37,7 @@
 **Current Problem:**
 - Context Window wächst unkontrolliert
 - Keine automatische Session-Rotation
-- Tokens verschwendet durch alte Kontexte
+- [TOKEN_REDACTED]s verschwendet durch alte Kontexte
 
 **Best Practices (2026):**
 - **Semantic Context Window**: Nur relevante History behalten
@@ -46,13 +46,13 @@
 - **Session Boundaries**: Klare Session-Punkte bei Topic-Wechsel
 
 **Tasks:**
-- [ ] 6.1.1: Session Analyzer Script (was verbraucht wie viel tokens?)
+- [ ] 6.1.1: Session Analyzer Script (was verbraucht wie viel [TOKEN_REDACTED]s?)
 - [ ] 6.1.2: Context Pruner (alte, irrelevante Messages entfernen)
 - [ ] 6.1.3: Intent Tracker (User Goals tracken über Session)
-- [ ] 6.1.4: Auto-Rotation bei Token-Threshold
+- [ ] 6.1.4: Auto-Rotation bei [TOKEN_REDACTED]-Threshold
 
 **Expected Impact:**
-- Token Reduction: ~30%
+- [TOKEN_REDACTED] Reduction: ~30%
 - Response Speed: +20%
 - Context Relevance: 60% → 85%
 
@@ -143,10 +143,10 @@
 **Current Problem:**
 - 3 Agents existieren (Health, Research, Data)
 - Aber: Keine echte Orchestration
-- Sir HazeClaw macht immernoch alles selbst
+- [NAME_REDACTED] macht immernoch alles selbst
 
 **Best Practices (2026):**
-- **Hierarchical Orchestration**: Sir HazeClaw als Orchestrator, Agents als Worker
+- **Hierarchical Orchestration**: [NAME_REDACTED] als Orchestrator, Agents als Worker
 - **Task Delegation Protocol**: Wer macht was, mit klaren Schnittstellen
 - **Result Aggregation**: Ergebnisse zusammnführen
 - **Shared Memory via KG**: Alle Agents teilen Wissen
@@ -160,7 +160,7 @@
 - [ ] 6.5.5: Fallback Mechanism (was wenn Agent nicht antwortet?)
 
 **Expected Impact:**
-- Sir HazeClaw Load: -40%
+- [NAME_REDACTED] Load: -40%
 - Task Parallelization: 1 → 4 threads
 - System Autonomy: 70% → 90%
 
@@ -176,7 +176,7 @@ Week 4: 6.5 (Multi-Agent Orchestration)
 ```
 
 **Warum diese Reihenfolge?**
-1. **6.1 zuerst**: Weniger Token-Burn = weniger Kosten + schneller
+1. **6.1 zuerst**: Weniger [TOKEN_REDACTED]-Burn = weniger Kosten + schneller
 2. **6.4 früh**: Saubere Memory = bessere Decisions
 3. **6.2 dann**: Bessere Prompts = bessere Outputs für alles danach
 4. **6.3 vor 6.5**: Evaluation muss funktionieren bevor wir Agents messen
@@ -192,7 +192,7 @@ Week 4: 6.5 (Multi-Agent Orchestration)
       │
       ▼
 ┌─────────────────┐
-│ Intent Tracker  │ ← Was will Nico?
+│ Intent Tracker  │ ← Was will [NAME_REDACTED]?
 └────────┬────────┘
          │
          ▼
@@ -205,7 +205,7 @@ Week 4: 6.5 (Multi-Agent Orchestration)
          │
          ▼
 ┌─────────────────┐
-│ Token Budget    │ ← Wieviel haben wir noch?
+│ [TOKEN_REDACTED] Budget    │ ← Wieviel haben wir noch?
 │ Monitor         │
 └────────┬────────┘
          │
@@ -226,7 +226,7 @@ Week 4: 6.5 (Multi-Agent Orchestration)
 
 | Script | Purpose | Priority |
 |--------|---------|----------|
-| `session_context_analyzer.py` | Analyze session for token waste | P1 |
+| `session_context_analyzer.py` | Analyze session for [TOKEN_REDACTED] waste | P1 |
 | `intent_tracker.py` | Track user goals across session | P1 |
 | `context_pruner.py` | Remove irrelevant history | P2 |
 | `session_rotator.py` | Auto-rotate at threshold | P2 |
@@ -235,10 +235,10 @@ Week 4: 6.5 (Multi-Agent Orchestration)
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| Avg Tokens/Session | ~50K | 30K |
+| Avg [TOKEN_REDACTED]s/Session | ~50K | 30K |
 | Context Relevance | 60% | 85% |
 | Session Length | ~2h | 4h (smarter) |
-| Token Efficiency | 70% | 90% |
+| [TOKEN_REDACTED] Efficiency | 70% | 90% |
 
 ---
 
@@ -260,7 +260,7 @@ Bevor eine Phase als "Complete" markiert wird:
 |------|--------|-------------|------------|
 | Over-Engineering | MED | HIGH | Eine Phase nach der anderen |
 | Context Window during changes | HIGH | MED | Immer Backup vorher |
-| Token Budget Issues | MED | MED | 6.1 zuerst = Token Reduction |
+| [TOKEN_REDACTED] Budget Issues | MED | MED | 6.1 zuerst = [TOKEN_REDACTED] Reduction |
 | Multi-Agent complexity | HIGH | MED | KISS: Keep it simple |
 | Stagnation (kein Fortschritt) | MED | MED | Weekly Review + Adjustment |
 
@@ -270,7 +270,7 @@ Bevor eine Phase als "Complete" markiert wird:
 
 | Phase | Metric | Current | Target | Deadline |
 |-------|--------|---------|--------|----------|
-| 6.1 | Token Reduction | 0% | 30% | 2026-04-24 |
+| 6.1 | [TOKEN_REDACTED] Reduction | 0% | 30% | 2026-04-24 |
 | 6.2 | Prompt Quality | 65% | 85% | 2026-05-01 |
 | 6.3 | Learning Loop Score | 0.76 | 0.85 | 2026-05-01 |
 | 6.4 | Memory Quality | 60% | 85% | 2026-04-24 |

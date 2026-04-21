@@ -79,7 +79,7 @@ python3 skills/ralph_loop/scripts/ralph_loop_adapter.py loop <task_name> \
 python3 skills/ralph_loop/scripts/ralph_loop_adapter.py learnings
 ```
 
-### Relevance für Sir HazeClaw
+### Relevance für [AGENT_NAME]
 Bestehende Systeme die bereits Ralph-ähnlich arbeiten:
 - Learning Loop v3 (Iteration → Score Check → Plateau Detection)
 - Agent Executor (Queue-basiert, fresh instances)
@@ -129,8 +129,8 @@ bash /workspace/scripts/run_smart_evolver.sh            # Smart Evolver
 
 ### Backup Locations
 - `backups/weekly_backup_*/` — Automated weekly (Sonntag 04:00 UTC)
-- `backups/post_integration_20260416_210413/` — Post-Integration Full
-- `backups/integration_backup_20260416_185449/` — Pre-Integration Backup
+- `backups/post_integration_[POSTAL_CODE]416_[POSTAL_CODE]3/` — Post-Integration Full
+- `backups/integration_backup_[POSTAL_CODE]416_[POSTAL_CODE]9/` — Pre-Integration Backup
 - `backups/core_ultralight_kg_stale_*.json` — Old KG (stale, kann gelöscht werden)
 
 ### New Scripts (2026-04-16)
@@ -149,7 +149,7 @@ bash /workspace/scripts/run_smart_evolver.sh            # Smart Evolver
 
 ### Vault Setup
 ```
-Vault Path: /home/clawbot/obsidian-vault/
+Vault Path: /home/[AGENT_NAME]/obsidian-vault/
 CLI Tool:   notesmd (v0.3.5) → ~/.local/bin/notesmd
 Config:     ~/.config/obsidian/obsidian.json
 ```
@@ -169,13 +169,13 @@ obsidian-vault/
 ### Sync Mechanism
 ```bash
 # Manual sync
-bash /home/clawbot/obsidian-vault/sync.sh
+bash /home/[AGENT_NAME]/obsidian-vault/sync.sh
 
 # Auto-export memory → vault (hourly via cron)
-bash /home/clawbot/obsidian-vault/export_memory.sh
+bash /home/[AGENT_NAME]/obsidian-vault/export_memory.sh
 ```
 
-### For Nico (Tomorrow)
+### For [HUMAN_NAME] (Tomorrow)
 1. Install Obsidian from https://obsidian.md
 2. Clone vault: `git clone https://github.com/empirehazeclaw/obsidian-vault.git`
 3. Open vault in Obsidian
@@ -198,7 +198,7 @@ excalidraw-cli reference     # Show element format reference
 excalidraw-cli create --json '[{"type":"rectangle","x":100,"y":100,"width":200,"height":100}]' output.excalidraw
 
 # Auto-generate architecture diagram
-/home/clawbot/obsidian-vault/diagrams/generate_architecture.sh
+/home/[AGENT_NAME]/obsidian-vault/diagrams/generate_architecture.sh
 ```
 
 ### Stored Diagrams

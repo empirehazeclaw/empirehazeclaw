@@ -41,7 +41,7 @@ _For: KPI Review + Retrospective (goal_003)_
 
 ---
 
-### 🦞 Sir HazeClaw Performance
+### 🦞 [NAME_REDACTED] Performance
 
 **Autonomy Level:** ~85% (nach heute)
 
@@ -66,7 +66,7 @@ _For: KPI Review + Retrospective (goal_003)_
 
 ---
 
-### 💬 Feedback an Sir HazeClaw
+### 💬 Feedback an [NAME_REDACTED]
 
 Was lief gut? Was könnte besser sein?
 

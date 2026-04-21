@@ -1,4 +1,4 @@
-# 🧠 MEMORY INDEX — Sir HazeClaw
+# 🧠 MEMORY INDEX — [NAME_REDACTED]
 
 ## System Overview
 - **Letzte Aktualisierung:** 2026-04-13
@@ -16,7 +16,7 @@ ceo/memory/
 │   ├── current.md        # Aktuelle Session
 │   └── recent_sessions.md # Letzte 7 Tage
 ├── long_term/            # Semantic Memory — Fakten & Learnings
-│   ├── facts.md          # Fakten über Nico, System, Business
+│   ├── facts.md          # Fakten über [NAME_REDACTED], System, Business
 │   ├── preferences.md    # Preferences & Learnings
 │   └── patterns.md       # Erkannte Patterns
 ├── episodes/             # Episodic Memory — Key Events
@@ -49,7 +49,7 @@ ceo/memory/
 |-------|----------|
 | "Was ist gerade passiert?" | `short_term/current.md` |
 | "Was haben wir letzte Woche gemacht?" | `short_term/recent_sessions.md` |
-| "Was weiß ich über Nico?" | `long_term/facts.md` |
+| "Was weiß ich über [NAME_REDACTED]?" | `long_term/facts.md` |
 | "Was habe ich gelernt?" | `long_term/preferences.md` |
 | "Welche Patterns gibt es?" | `long_term/patterns.md` |
 | "Was ist wichtiges passiert?" | `episodes/timeline.md` |

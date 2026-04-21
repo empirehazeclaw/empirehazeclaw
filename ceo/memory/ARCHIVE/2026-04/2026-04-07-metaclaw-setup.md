@@ -1,7 +1,7 @@
 # Session: 2026-04-07 13:55:33 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 5f34b6a0-9f77-49a0-9b70-c0997503e927
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -21,8 +21,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "36970",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-07 13:45 UTC"
 }
 ```
@@ -30,9 +30,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -79,8 +79,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "36977",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-07 13:47 UTC"
 }
 ```
@@ -88,9 +88,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -116,7 +116,7 @@ Die Config ist leer — keine API Keys eingetragen:
 ```yaml
 llm:
   api_base: ''
-  api_key: ''
+  [API_KEY_REDACTED]: ''
   model_id: ''
   provider: custom
 ```
@@ -130,7 +130,7 @@ Ich muss die Config mit MiniMax Daten füllen:
 ```yaml
 llm:
   api_base: https://api.minimax.io/anthropic/v1
-  api_key: (von secrets.env)
+  [API_KEY_REDACTED]: (von secrets.env)
   model_id: MiniMax-M2.7
   provider: minimax
 ```
@@ -152,7 +152,7 @@ Config ist leer — muss mit MiniMax API Keys gefüllt werden:
 ```yaml
 llm:
   api_base: https://api.minimax.io/anthropic/v1
-  api_key: (aus secrets.env)
+  [API_KEY_REDACTED]: (aus secrets.env)
   model_id: MiniMax-M2.7
   provider: minimax
 ```
@@ -168,8 +168,8 @@ Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "36987",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Tue 2026-04-07 13:49 UTC"
 }
 ```
@@ -177,9 +177,9 @@ Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

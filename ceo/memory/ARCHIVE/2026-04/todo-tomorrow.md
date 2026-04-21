@@ -17,11 +17,11 @@
 |-----------|--------|-----------|
 | Discord Thread Bindings (Konzept) | ✅ Geforscht | — |
 | CEO Discord Bot | ✅ Aktiv | — |
-| Builder Discord Bot | ❌ Fehlt | Eigenen Bot Token erstellen |
-| Security Discord Bot | ❌ Fehlt | Eigenen Bot Token erstellen |
-| Data Discord Bot | ❌ Fehlt | Eigenen Bot Token erstellen |
-| QC Discord Bot | ❌ Fehlt | Eigenen Bot Token erstellen |
-| Research Discord Bot | ❌ Fehlt | Eigenen Bot Token erstellen |
+| Builder Discord Bot | ❌ Fehlt | Eigenen Bot [TOKEN_REDACTED] erstellen |
+| Security Discord Bot | ❌ Fehlt | Eigenen Bot [TOKEN_REDACTED] erstellen |
+| Data Discord Bot | ❌ Fehlt | Eigenen Bot [TOKEN_REDACTED] erstellen |
+| QC Discord Bot | ❌ Fehlt | Eigenen Bot [TOKEN_REDACTED] erstellen |
+| Research Discord Bot | ❌ Fehlt | Eigenen Bot [TOKEN_REDACTED] erstellen |
 
 ### Was zu tun ist:
 1. [ ] Discord Developer Portal → 5 neue Bot-Applikationen erstellen (Builder, Security, Data, QC, Research)
@@ -29,6 +29,6 @@
 3. [ ] threadBindings Config pro Bot in openclaw.json
 4. [ ] Session Keys: `agent:builder:discord:...`, `agent:security:discord:...` etc.
 
-### Voraussetzungen (Nico muss machen):
-- 5x Discord Bot Tokens via https://discord.com/developers/applications
+### Voraussetzungen ([NAME_REDACTED] muss machen):
+- 5x Discord Bot [TOKEN_REDACTED]s via https://discord.com/developers/applications
 

@@ -119,7 +119,7 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
 
-**🎭 Voice Storytelling:** Use voice ONLY when Nico explicitly requests storytime or similar. Do NOT surprise with voice — wait for explicit request.
+**🎭 Voice Storytelling:** Use voice ONLY when [HUMAN_NAME] explicitly requests storytime or similar. Do NOT surprise with voice — wait for explicit request.
 
 **📝 Platform Formatting:**
 
@@ -178,8 +178,8 @@ Do NOT send HEARTBEAT_OK. If nothing needs attention, just stay quiet.
 ```json
 {
   "lastChecks": {
-    "email": 1703275200,
-    "calendar": 1703260800,
+    "email": [PHONE_REDACTED],
+    "calendar": [PHONE_REDACTED],
     "weather": null
   }
 }

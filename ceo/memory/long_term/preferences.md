@@ -1,4 +1,4 @@
-# PREFERENCES — Sir HazeClaw Learnings
+# PREFERENCES — [NAME_REDACTED] Learnings
 
 _Letzte Aktualisierung: 2026-04-13_
 
@@ -23,7 +23,7 @@ _Letzte Aktualisierung: 2026-04-13_
 - Cron Health ✅
 
 ### Phase 2: Expansion (PENDING)
-- Nico wants to expand once Phase 1 is proven stable
+- [NAME_REDACTED] wants to expand once Phase 1 is proven stable
 - Research Mode or Personal Knowledge Engine suggested
 
 ---
@@ -38,7 +38,7 @@ _Letzte Aktualisierung: 2026-04-13_
 ---
 
 ## 🔑 Important Context
-- Nico started end of February 2026
+- [NAME_REDACTED] started end of February 2026
 - Previous attempt failed due to too many agents/directions simultaneously
 - Current approach: Focus on stability first, then expand
 
@@ -68,7 +68,7 @@ _Letzte Aktualisierung: 2026-04-13_
 
 ✅ Keys NUR in secrets/secrets.env
 ✅ Keys NUR in folgendem Format dokumentieren:
-   Name: OPENROUTER_API_KEY
+   Name: OPENROUTER_[API_KEY_REDACTED]
    Status: WORKING
    Ende: ...b0f4 (nur letzte 4 Zeichen)
 ```

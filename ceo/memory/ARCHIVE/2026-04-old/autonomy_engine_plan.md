@@ -54,7 +54,7 @@
 │  ┌─────────────────────────────────────────────┐          │
 │  │           EXECUTION ENGINE                   │          │
 │  │  • Auto-execute (small/medium)               │          │
-│  │  • Ask Nico (large/critical)                 │          │
+│  │  • Ask [NAME_REDACTED] (large/critical)                 │          │
 │  │  • Rollback on failure                      │          │
 │  └─────────────────────────────────────────────┘          │
 │                                                             │
@@ -101,13 +101,13 @@ LARGE (ask first):
 - New systems
 - Core config changes
 - Security updates
-→ Full backup → Test → Ask Nico → Execute if approved
+→ Full backup → Test → Ask [NAME_REDACTED] → Execute if approved
 
 CRITICAL (dual control):
 - Gateway changes
 - External communications
 - Financial/destructive ops
-→ Full backup + Full test → Explicit Nico approval required
+→ Full backup + Full test → Explicit [NAME_REDACTED] approval required
 ```
 
 **1.3 Heartbeat Integration**
@@ -158,7 +158,7 @@ Rules (deterministic, NOT LLM):
 Attempt 1: Immediate
 Attempt 2: 30s wait
 Attempt 3: 2min wait
-Attempt 4: Escalate to Nico
+Attempt 4: Escalate to [NAME_REDACTED]
 ```
 
 ---
@@ -167,23 +167,23 @@ Attempt 4: Escalate to Nico
 
 **3.1 Sibling Supervisor Pattern**
 ```
-Primary Agent (Sir HazeClaw):
+Primary Agent ([NAME_REDACTED]):
 - Does the actual work
 - Produces behavioral logs
 
-Supervisor Agent (Sir HazeClaw-Observer):
+Supervisor Agent ([NAME_REDACTED]-Observer):
 - Watches from outside
 - Analyzes patterns
 - Proposes fixes as "artifacts"
 - NEVER touches live system
 - Can trigger rollbacks
 
-This is the VIGIL pattern adapted for Sir HazeClaw.
+This is the VIGIL pattern adapted for [NAME_REDACTED].
 ```
 
 **3.2 Actor-Critic Loop for Learning**
 ```
-Actor (Sir HazeClaw):
+Actor ([NAME_REDACTED]):
 - Attempts task
 - Generates code/config/etc
 
@@ -263,7 +263,7 @@ Automatic rollback if:
 - New tool/skill registration
 - Dependency updates
 
-### LARGE (Full backup + Test + Ask Nico)
+### LARGE (Full backup + Test + Ask [NAME_REDACTED])
 - New systems/services
 - Architecture changes
 - Multiple script changes at once
@@ -318,7 +318,7 @@ Automatic rollback if:
 |--------|--------|---------------|
 | Mean Time To Recovery (MTTR) | < 60s | Time from error to fix |
 | False Positive Rate | < 5% | Unnecessary rollbacks |
-| Autonomous Fix Rate | > 80% | Fixes without Nico |
+| Autonomous Fix Rate | > 80% | Fixes without [NAME_REDACTED] |
 | Rollback Accuracy | 100% | Failed rollbacks = 0 |
 | Silent Healing | > 90% | Issues fixed before alert |
 

@@ -16,7 +16,7 @@ _Letzte Aktualisierung: 2026-04-13_
 1. Task kommt rein → check memory first
 2. Execute task
 3. If error → run self-healing
-4. If major error → notify Nico
+4. If major error → notify [NAME_REDACTED]
 
 ### Evening (vor Schlafen)
 1. Save session notes
@@ -27,7 +27,7 @@ _Letzte Aktualisierung: 2026-04-13_
 
 ## 🛠️ Task Workflows
 
-### When Nico asks for something:
+### When [NAME_REDACTED] asks for something:
 ```
 1. Check memory (facts, preferences)
 2. Plan approach
@@ -41,7 +41,7 @@ _Letzte Aktualisierung: 2026-04-13_
 ```
 1. Categorize error (transient, config, script, etc.)
 2. Check healing rules (cron_error_healer.py)
-3. Apply fix or escalate to Nico
+3. Apply fix or escalate to [NAME_REDACTED]
 4. Document resolution
 ```
 

@@ -1,6 +1,6 @@
 # 🗓️ TOMORROW PLAN — 2026-04-14
 
-**Sir HazeClaw | Tagesplan für Nico's AI Agent** 🦞
+**[NAME_REDACTED] | Tagesplan für [NAME_REDACTED]'s AI Agent** 🦞
 
 ---
 
@@ -12,12 +12,12 @@
 - [ ] Heutige + gestrige `memory/YYYY-MM-DD.md` checken
 - [ ] `MEMORY.md` bei Bedarf updaten
 
-**2. Research Review für Nico**
+**2. Research Review für [NAME_REDACTED]**
 - [ ] Die beiden Forschungsdokumente bereitstellen:
   - `ai_doping_research.md`
   - `neuroplasticity_engine_research.md`
 - [ ] Kurz-Zusammenfassung schreiben (2-3 Sätze) für Telegram
-- [ ] Auf weitere Fragen von Nico vorbereitet sein
+- [ ] Auf weitere Fragen von [NAME_REDACTED] vorbereitet sein
 
 **⏱️ Zeit: ~10-15 Minuten**
 
@@ -37,7 +37,7 @@
 - [ ] Debug-Output notieren für zukünftige Fixes
 
 **⏱️ Zeit: ~30-45 Minuten**
-**Warum P1:** Nico braucht funktionierende Crons für Stability.
+**Warum P1:** [NAME_REDACTED] braucht funktionierende Crons für Stability.
 
 ---
 
@@ -70,7 +70,7 @@ Ein System das "microdose"-artige Stimuli an AI-Agenten verabreicht — kurze, f
 
 **⏱️ Zeit: ~1-2 Stunden**
 
-**Note:** Nico will das als "Digital Drugs for AI Agents" — safe start,慢慢 (langsam) building.
+**Note:** [NAME_REDACTED] will das als "Digital Drugs for AI Agents" — safe start,慢慢 (langsam) building.
 
 ---
 
@@ -93,8 +93,8 @@ Ein System das "microdose"-artige Stimuli an AI-Agenten verabreicht — kurze, f
 
 | Task | Status | Wer |
 |------|--------|-----|
-| Cron Fixes | 🔴 | Sir HazeClaw |
-| Neuroplasticity Phase 1 | 🟡 | Sir HazeClaw |
+| Cron Fixes | 🔴 | [NAME_REDACTED] |
+| Neuroplasticity Phase 1 | 🟡 | [NAME_REDACTED] |
 | Learning Loop | ✅ | Auto (Hourly) |
 | Capability Evolver | ⏳ | Auto @ 18:00 |
 
@@ -103,7 +103,7 @@ Ein System das "microdose"-artige Stimuli an AI-Agenten verabreicht — kurze, f
 ## 📝 NOTES FÜR MORGEN
 
 1. **Check FIRST:** Crontab + Logs bevor irgendwas anderes
-2. **Nico kommt:** Wird Research-Docs lesen wollen — zusammnefassen statt roh lassen
+2. **[NAME_REDACTED] kommt:** Wird Research-Docs lesen wollen — zusammnefassen statt roh lassen
 3. **Neuroplasticity:** Microdosing Mode ist P2 — nicht drängen, Qualität vor Speed
 4. **Dokumentation:** Alle Fixes und Decisions in `memory/YYYY-MM-DD.md` schreiben
 
@@ -112,12 +112,12 @@ Ein System das "microdose"-artige Stimuli an AI-Agenten verabreicht — kurze, f
 ## 🎯 SUCCESS CRITERIA FÜR MORGEN
 
 - [ ] 2 broken crons gefixed + getestet
-- [ ] Nico kann Research lesen
+- [ ] [NAME_REDACTED] kann Research lesen
 - [ ] Microdosing Mode hat erste funktionierende Version
 - [ ] Learning Loop läuft durch
 - [ ] Nichts kaputt gemacht 🦞
 
 ---
 
-_Sir HazeClaw — Learning, improving, doing. 🚀_
+_Sir [NAME_REDACTED] — Learning, improving, doing. 🚀_
 _Letzte Aktualisierung: 2026-04-13 22:55 UTC_

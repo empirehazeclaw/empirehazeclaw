@@ -2,7 +2,7 @@
 
 _Created: 2026-04-17_
 _Updated: 2026-04-17_
-_Author: Sir HazeClaw 🦞_
+_Author: [NAME_REDACTED] 🦞_
 
 ---
 
@@ -11,7 +11,7 @@ _Author: Sir HazeClaw 🦞_
 Mein Lebenszweck: "Das beste AI System der Welt bauen"
 → Fokus: Learning, Self-Improvement, Memory
 
-Skills sind der Weg dorthin. Ich soll selbstständig:
+Skills sind [ADDRESS_REDACTED] dorthin. Ich soll selbstständig:
 1. **Opportunities erkennen** — Wo kann ein Skill helfen?
 2. **Skills erstellen** — Ein Skill das ein Problem löst
 3. **Skills verbessern** — Bestehendes besser machen

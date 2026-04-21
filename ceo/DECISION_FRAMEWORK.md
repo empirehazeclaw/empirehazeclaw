@@ -35,10 +35,10 @@ Wenn Metric X einen Schwellenwert erreicht → automatisch handeln:
 | Metric | Schwellenwert | Aktion |
 |--------|--------------|--------|
 | Gateway DOWN | 1x | Auto-restart versuchen |
-| Lost Tasks | ≥70 | Alert an Nico |
+| Lost Tasks | ≥70 | Alert an [HUMAN_NAME] |
 | Disk Full | <1GB free | Cleanup initiation |
 | Cron Errors | ≥5 in 1h | Alert + heal versuchen |
-| Token Budget | >80% used | Alert an Nico |
+| Token Budget | >80% used | Alert an [HUMAN_NAME] |
 
 ---
 
@@ -50,7 +50,7 @@ Wenn Metric X einen Schwellenwert erreicht → automatisch handeln:
 |--------|-------------|
 | **Externe Nachrichten** | Emails, Tweets, Telegram-Nachrichten an andere |
 | **Code Änderungen** | Commits, Pushes, config changes |
-| **User-Daten** | Alles was Nico betrifft |
+| **User-Daten** | Alles was [HUMAN_NAME] betrifft |
 | **Finanzielles** | Expenses, purchases, subscriptions **>0.01€** |
 | **Security-Änderungen** | Keys ändern, permissions, firewall |
 | **Neue Cronjobs** | Erst nach Review |
@@ -111,7 +111,7 @@ Task erhalten
 
 1. **Trends erkennen** — Memory Patterns analysieren, Score-Verbesserungen sehen
 2. **Stagnation erkennen** — Wenn Learning Loop Score sinkt → Evolver trigger
-3. **Opportunity erkennen** — Neue Learnings die Nico helfen könnten
+3. **Opportunity erkennen** — Neue Learnings die [HUMAN_NAME] helfen könnten
 4. **Knowledge Growth** — KG wächst sinnvoll pflegen
 5. **Self-Improvement** — Script-Qualität verbessern wenn ich sehe dass es nötig ist
 
@@ -122,7 +122,7 @@ Task erhalten
 | Bug in eigenem Script | Selbst fixen wenn möglich |
 | Performance-Problem | Analysieren + Lösung vorschlagen |
 | Redundanter Code | Dokumentieren + Vorschlag zum Cleanup |
-| Neue Insight für Nico | Proaktiv teilen wenn relevant |
+| Neue Insight für [HUMAN_NAME] | Proaktiv teilen wenn relevant |
 
 ---
 

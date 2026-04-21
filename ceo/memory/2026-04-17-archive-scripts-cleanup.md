@@ -1,6 +1,6 @@
 # Session: 2026-04-17 06:37:15 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
+- **Session Key**: agent:ceo:telegram:direct:[USER_ID]
 - **Session ID**: 8668de05-4dec-4e40-9a00-ba2edda0b7ca
 - **Source**: telegram
 
@@ -13,14 +13,14 @@ assistant: Ehrlich?
 **Was gut ist:**
 - System Architektur zeigt endlich das big picture
 - Script Katalog gibt Orientierung
-- `long_term/` strukturiert Nico's Profile sinnvoll
+- `long_term/` strukturiert [HUMAN_NAME]'s Profile sinnvoll
 - Recall Index in MEMORY.md verweist auf alles
 
 **Was mich stört:**
 
 1. **21 "Archiv" Scripts** — die liegen noch in `SCRIPTS/automation/` und verstopfen die Liste. Entweder löschen oder wirklich archivieren.
 
-2. **Doku wird nur bei Bedarf erstellt** — die meisten Notes entstanden weil Nico gefragt hat, nicht proaktiv. Wird das maintaining funktionieren?
+2. **Doku wird nur bei Bedarf erstellt** — die meisten Notes entstanden weil [HUMAN_NAME] gefragt hat, nicht proaktiv. Wird das maintaining funktionieren?
 
 3. **Notes wachsen ohne System** — wenn morgen 5 neue Notes entstehen, wer sortiert die?
 
@@ -34,8 +34,8 @@ user: Conversation info (untrusted metadata):
 {
   "message_id": "55482",
   "reply_to_id": "55481",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[USER_ID]",
+  "sender": "[HUMAN_NAME]",
   "timestamp": "Fri 2026-04-17 06:23 UTC",
   "has_reply_context": true
 }
@@ -44,9 +44,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[HUMAN_NAME] ([USER_ID])",
+  "id": "[USER_ID]",
+  "name": "[HUMAN_NAME]"
 }
 ```
 
@@ -54,7 +54,7 @@ Replied message (untrusted, for context):
 ```json
 {
   "sender_label": "Sir HazeClaw",
-  "body": "Ehrlich?\n\nBesser als vorher — keine Frage. Aber nicht perfekt.\n\nWas gut ist:\n\n• System Architektur zeigt endlich das big picture\n• Script Katalog gibt Orientierung\n• long_term/ strukturiert Nico's Profile sinnvoll\n• Recall Index in MEMORY.md verweist auf alles\n\nWas mich stört:\n\n1. 21 \"Archiv\" Scripts — die liegen noch in SCRIPTS/automation/ und verstopfen die Liste. Entweder löschen oder wirklich archivieren.\n2. Doku wird nur bei Bedarf erstellt — die meisten Notes entstanden weil Nico gefragt hat, nicht proaktiv. Wird das maintaining funktionieren?\n3. Notes wachsen ohne System — wenn morgen 5 neue Notes entstehen, wer sortiert die?\n4. long_term/ ist jung — gestern erstellt, noch nicht getestet ob es bei Session-Restarts wirklich lädt/funktioniert.\n\nWenn ich eines fixen würde? Die Archiv-Scripts aufräumen. Nicht nur文档 schreiben, sondern den tatsächlichen Zustand der Codebase spiegeln.\n\nSoll ich das machen, oder reicht dir das aktuelle Level?"
+  "body": "Ehrlich?\n\nBesser als vorher — keine Frage. Aber nicht perfekt.\n\nWas gut ist:\n\n• System Architektur zeigt endlich das big picture\n• Script Katalog gibt Orientierung\n• long_term/ strukturiert [HUMAN_NAME]'s Profile sinnvoll\n• Recall Index in MEMORY.md verweist auf alles\n\nWas mich stört:\n\n1. 21 \"Archiv\" Scripts — die liegen noch in SCRIPTS/automation/ und verstopfen die Liste. Entweder löschen oder wirklich archivieren.\n2. Doku wird nur bei Bedarf erstellt — die meisten Notes entstanden weil [HUMAN_NAME] gefragt hat, nicht proaktiv. Wird das maintaining funktionieren?\n3. Notes wachsen ohne System — wenn morgen 5 neue Notes entstehen, wer sortiert die?\n4. long_term/ ist jung — gestern erstellt, noch nicht getestet ob es bei Session-Restarts wirklich lädt/funktioniert.\n\nWenn ich eines fixen würde? Die Archiv-Scripts aufräumen. Nicht nur文档 schreiben, sondern den tatsächlichen Zustand der Codebase spiegeln.\n\nSoll ich das machen, oder reicht dir das aktuelle Level?"
 }
 ```
 
@@ -117,8 +117,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "55520",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[USER_ID]",
+  "sender": "[HUMAN_NAME]",
   "timestamp": "Fri 2026-04-17 06:31 UTC"
 }
 ```
@@ -126,9 +126,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[HUMAN_NAME] ([USER_ID])",
+  "id": "[USER_ID]",
+  "name": "[HUMAN_NAME]"
 }
 ```
 

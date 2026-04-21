@@ -1,7 +1,7 @@
 # Session: 2026-04-10 14:14:25 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 46f7526c-5f5e-41c9-b533-1c69954dc4bb
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -12,8 +12,8 @@ Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41625",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:07 UTC"
 }
 ```
@@ -21,9 +21,9 @@ Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -38,7 +38,7 @@ assistant: **📊 TIEFENANALYSE — 2 Tage (8.-10. April 2026)**
 | Event | Status |
 |-------|--------|
 | Gateway Update | v2026.4.5 → **v2026.4.9** (SSRF CVE gepatcht) |
-| Buffer Token | 🚨 **INVALID** (401 Unauthorized) |
+| Buffer [TOKEN_REDACTED] | 🚨 **INVALID** (401 Unauthorized) |
 | Leonardo AI Key | 🚨 **INVALID** (HTML statt JSON) |
 | Knowledge Graph | ⚠️ **0 Relations** (kaputt) |
 
@@ -58,8 +58,8 @@ assistant: **📊 TIEFENANALYSE — 2 Tage (8.-10. April 2026)**
 ### Fixes angewandt
 | Fix | Status |
 |-----|--------|
-| Buffer Token | ✅ **DEPRECATED** in social_pipeline.py |
-| OpenRouter API Keys | ✅ **Getauscht** (API_KEY → API_KEY_2) |
+| Buffer [TOKEN_REDACTED] | ✅ **DEPRECATED** in social_pipeline.py |
+| OpenRouter API Keys | ✅ **Getauscht** ([API_KEY_REDACTED] → [API_KEY_REDACTED]_2) |
 | Discord User Allowlist | ✅ **Gefixt** |
 | Discord Multi-Agent | ✅ **6/6 Agenten aktiv** |
 
@@ -97,7 +97,7 @@ assistant: **📊 TIEFENANALYSE — 2 Tage (8.-10. April 2026)**
 | # | Issue | Severity |
 |---|-------|----------|
 | 1 | Security: Small models sandbox=off | 🔴 CRITICAL |
-| 2 | Gateway token 14 chars | 🟡 MED |
+| 2 | Gateway [TOKEN_REDACTED] 14 chars | 🟡 MED |
 | 3 | OpenClaw Dreaming nicht aktiviert | 🟡 MED |
 
 ---
@@ -117,8 +117,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41631",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:08 UTC"
 }
 ```
@@ -126,9 +126,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -151,7 +151,7 @@ Die 2-Tage-Analyse (was *passiert ist*) stimmt. Das aktuelle System nach deinem 
 
 **Was noch nicht gefixt ist:**
 - 🔴 Security: sandbox=off (small models)
-- 🟡 Gateway token 14 chars
+- 🟡 Gateway [TOKEN_REDACTED] 14 chars
 - 🟡 Dreaming nicht aktiviert
 
 Soll ich eine dieser Baustellen angehen?
@@ -168,8 +168,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41638",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:10 UTC"
 }
 ```
@@ -177,9 +177,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -204,8 +204,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41644",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:11 UTC"
 }
 ```
@@ -213,9 +213,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -228,8 +228,8 @@ user: Conversation info (untrusted metadata):
 {
   "message_id": "41647",
   "reply_to_id": "41637",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:11 UTC",
   "has_reply_context": true
 }
@@ -238,9 +238,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -248,7 +248,7 @@ Replied message (untrusted, for context):
 ```json
 {
   "sender_label": "Clawmaster",
-  "body": "Ja, stimmt. Hier der aktuelle Stand:\n\n| Metrik    | Wert                         |\n| --------- | ---------------------------- |\n| Gateway   | ✅ Running (v2026.4.9)        |\n| Agents    | 1 (nur CEO)                  |\n| Sessions  | 16 active                    |\n| Heartbeat | 30m (nur CEO)                |\n| Cron Jobs | 0 enabled (alle deaktiviert) |\n\nDie 2-Tage-Analyse (was passiert ist) stimmt. Das aktuelle System nach deinem Restart-Command:\n\n• ✅ Alle 13 Cron-Jobs sind disabled\n• ✅ Alle Agenten aus openclaw.json entfernt (nur CEO übrig)\n• ⚠️ Gateway Config Warnings: lossless-claw stale plugin\n\nWas noch nicht gefixt ist:\n\n• 🔴 Security: sandbox=off (small models)\n• 🟡 Gateway token 14 chars\n• 🟡 Dreaming nicht aktiviert\n\nSoll ich eine dieser Baustellen angehen?"
+  "body": "Ja, stimmt. Hier der aktuelle Stand:\n\n| Metrik    | Wert                         |\n| --------- | ---------------------------- |\n| Gateway   | ✅ Running (v2026.4.9)        |\n| Agents    | 1 (nur CEO)                  |\n| Sessions  | 16 active                    |\n| Heartbeat | 30m (nur CEO)                |\n| Cron Jobs | 0 enabled (alle deaktiviert) |\n\nDie 2-Tage-Analyse (was passiert ist) stimmt. Das aktuelle System nach deinem Restart-Command:\n\n• ✅ Alle 13 Cron-Jobs sind disabled\n• ✅ Alle Agenten aus openclaw.json entfernt (nur CEO übrig)\n• ⚠️ Gateway Config Warnings: lossless-claw stale plugin\n\nWas noch nicht gefixt ist:\n\n• 🔴 Security: sandbox=off (small models)\n• 🟡 Gateway [TOKEN_REDACTED] 14 chars\n• 🟡 Dreaming nicht aktiviert\n\nSoll ich eine dieser Baustellen angehen?"
 }
 ```
 
@@ -269,8 +269,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41652",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:12 UTC"
 }
 ```
@@ -278,9 +278,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -294,8 +294,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "41655",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Fri 2026-04-10 14:13 UTC"
 }
 ```
@@ -303,9 +303,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

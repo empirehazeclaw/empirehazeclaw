@@ -1,4 +1,4 @@
-# ACTION LOG — Sir HazeClaw Autonomy Engine
+# ACTION LOG — [NAME_REDACTED] Autonomy Engine
 
 *Alle autonomen Aktionen werden hier protokolliert*
 
@@ -17,8 +17,8 @@ Beispiel: AUTONOMY-20260413-2353-SMALL-001
 - TINY (kein Backup)
 - SMALL (auto-backup)
 - MEDIUM (snapshot + test)
-- LARGE (Nico fragen)
-- CRITICAL (Nico explicit approval)
+- LARGE ([NAME_REDACTED] fragen)
+- CRITICAL ([NAME_REDACTED] explicit approval)
 
 ---
 
@@ -63,7 +63,7 @@ Beispiel: AUTONOMY-20260413-2353-SMALL-001
 - **Result:** ROLLED_BACK
 - **Rollback Reason:** Test failed - syntax error
 - **Actor:** PRIMARY
-- **Notes:** Auto-rollback triggered, Nico alerted
+- **Notes:** Auto-rollback triggered, [NAME_REDACTED] alerted
 ```
 
 ---

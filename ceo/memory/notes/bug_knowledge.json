@@ -17,7 +17,25 @@
       "count": 1,
       "category": "REAL_ERROR",
       "status": "NEW"
+    },
+    {
+      "hash": "2dff8e3b600a",
+      "first_seen": "2026-04-21T20:32:43.511509+00:00",
+      "line": "[2026-04-21 20:04:52]   \u2717 Pattern Learning: Traceback (most recent call last):",
+      "file": "/home/clawbot/.openclaw/workspace/logs/learning_core.log",
+      "count": 1,
+      "category": "REAL_ERROR",
+      "status": "NEW"
+    },
+    {
+      "hash": "11fc016181ae",
+      "first_seen": "2026-04-21T20:32:43.511552+00:00",
+      "line": "[2026-04-21 20:04:52]   \u2717 Signal Bridge: Traceback (most recent call last):",
+      "file": "/home/clawbot/.openclaw/workspace/logs/learning_core.log",
+      "count": 1,
+      "category": "REAL_ERROR",
+      "status": "NEW"
     }
   ],
-  "last_updated": "2026-04-21T17:53:00.967969+00:00"
+  "last_updated": "2026-04-21T22:32:29.015635+00:00"
 }

@@ -2,14 +2,14 @@
 
 **Erstellt:** 2026-04-17 18:18 UTC  
 **Status:** DESIGN_PLAN — Ready for Implementation  
-**Author:** Sir HazeClaw 🦞
+**Author:** [NAME_REDACTED] 🦞
 
 ---
 
 ## 🎯 Warum Multi-Agent?
 
 **Aktuelles Problem:**
-- Sir HazeClaw macht ALLES: Monitoring, Learning, Research, Maintenance, Communication
+- [NAME_REDACTED] macht ALLES: Monitoring, Learning, Research, Maintenance, Communication
 - Bei komplexen Tasks wird es eng im Context Window
 - Manche Tasks blockieren andere (z.B. Web Research dauert lange)
 
@@ -26,7 +26,7 @@
 
 ```
 ┌─────────────────────────────────────────────┐
-│         Sir HazeClaw (Orchestrator)          │
+│         [NAME_REDACTED] (Orchestrator)          │
 │              🦞 Chief of Staff               │
 │                                              │
 │  • Goal Management                           │
@@ -61,7 +61,7 @@
 ### Option B: Functional (Simpler)
 
 ```
-Sir HazeClaw (Generalist + Orchestrator)
+[NAME_REDACTED] (Generalist + Orchestrator)
 ├── Health Agent (dedicated monitoring)
 ├── Research Agent (web + knowledge)
 └── Data Agent (analysis + KG)
@@ -73,7 +73,7 @@ Sir HazeClaw (Generalist + Orchestrator)
 
 ## 📋 Agent Spezifikationen
 
-### 1. Sir HazeClaw (Orchestrator) — EXISTS
+### 1. [NAME_REDACTED] (Orchestrator) — EXISTS
 
 **Role:** Chief of Staff  
 **Responsibilities:**
@@ -308,7 +308,7 @@ kg.update(entity, {
 **Voraussetzung:** Phase 1 fertig
 
 **Warum?**
-- Entlastet Sir HazeClaw von Web Research
+- Entlastet [NAME_REDACTED] von Web Research
 - Stündliche Innovation Research möglich
 - Knowledge growth automatisiert
 
@@ -346,7 +346,7 @@ kg.update(entity, {
 | Risiko | Impact | Probability | Mitigation |
 |--------|--------|-------------|------------|
 | Over-engineering | MED | HIGH | Start with Health Agent only, prove value |
-| Token Budget | HIGH | MED | Strict event filtering, no redundant tasks |
+| [TOKEN_REDACTED] Budget | HIGH | MED | Strict event filtering, no redundant tasks |
 | Agent Confusion | MED | MED | Clear role definition, no overlap |
 | KG Fragmentation | MED | MED | Entity ownership + confidence scoring |
 | Circular Events | HIGH | LOW | Event depth limit, kill switch |

@@ -1,4 +1,4 @@
-# 🚀 Sir HazeClaw — System Improvement Master Plan
+# 🚀 [NAME_REDACTED] — System Improvement Master Plan
 
 **Erstellt:** 2026-04-17  
 **Basierend auf:** Industry Best Practices 2025-2026  
@@ -52,7 +52,7 @@
 ### 2. Multi-Agent Architecture
 
 **Current Gap:**
-- Nur 1 Agent (Sir HazeClaw)
+- Nur 1 Agent ([NAME_REDACTED])
 - Keine Spezialisten-Rolle
 
 **Best Practices (2025):**
@@ -63,7 +63,7 @@
 **Recommendations:**
 ```
 2.1 → Role Specialization
-      - Sir HazeClaw (Generalist/Orchestrator)
+      - [NAME_REDACTED] (Generalist/Orchestrator)
       - Data Agent (Scanning, Analysis)
       - Maintenance Agent (Cleanup, Health)
       - Research Agent (Web, Learning)
@@ -83,7 +83,7 @@
 **Best Practices (2025):**
 - **Self-Healing AI**: Observability → Diagnosis → Repair → Validation
 - **Belt-and-Suspenders**: Cron + Manual Recovery
-- **Automated Cycling**: Session/Rotation bei Token-Threshold
+- **Automated Cycling**: Session/Rotation bei [TOKEN_REDACTED]-Threshold
 
 **Recommendations:**
 ```
@@ -93,7 +93,7 @@
       - Recovery Playbook System
 
 3.2 → Session Lifecycle Management
-      - Token Budget Monitoring
+      - [TOKEN_REDACTED] Budget Monitoring
       - Automatic Session Rotation
       - State Extraction vor Kill
 ```
@@ -112,7 +112,7 @@
 **Recommendations:**
 ```
 4.1 → Production Monitoring Dashboard
-      - Real-time: Latency, Error Rate, Token Usage
+      - Real-time: Latency, Error Rate, [TOKEN_REDACTED] Usage
       - Task Success Tracking
       - Cost-per-Task
 
@@ -231,20 +231,20 @@ Query → Query Decomposition → [Vector Search + KG Lookup] → Context Fusion
 ```
 L = Latency (p50, p95, p99)
 N = Number of Errors (rate)
-E = Efficiency (tokens per task)
+E = Efficiency ([TOKEN_REDACTED]s per task)
 W = Worth (cost per successful task)
 ```
 
 **Real-time Dashboard Components:**
 ```
 ┌─────────────────────────────────────┐
-│ Sir HazeClaw System Dashboard       │
+│ [NAME_REDACTED] System Dashboard       │
 ├─────────────────────────────────────┤
 │ Uptime: 99.9%    Latency: 1.2s     │
 │ Errors: 0.3%      Tasks: 1,247/day  │
 │ Cost: $0.02/task  Score: 0.783      │
 ├─────────────────────────────────────┤
-│ [Token Usage Graph]                 │
+│ [[TOKEN_REDACTED] Usage Graph]                 │
 │ [Error Rate Trend]                  │
 │ [Task Success Rate]                 │
 └─────────────────────────────────────┘
@@ -257,7 +257,7 @@ W = Worth (cost per successful task)
 **Proposed Design:**
 ```
 ┌─────────────────────────────────────────────┐
-│           Sir HazeClaw (Orchestrator)        │
+│           [NAME_REDACTED] (Orchestrator)        │
 │  ┌─────────────┐  ┌─────────────┐            │
 │  │ Goal Mgmt   │  │ Memory     │            │
 │  └─────────────┘  └─────────────┘            │
@@ -302,7 +302,7 @@ W = Worth (cost per successful task)
 | Risk | Impact | Probability | Mitigation |
 |------|--------|-------------|------------|
 | Over-engineering | MED | HIGH | Focus on Quick Wins first |
-| Token Budget Overrun | HIGH | MED | Strict monitoring, limits |
+| [TOKEN_REDACTED] Budget Overrun | HIGH | MED | Strict monitoring, limits |
 | Multi-Agent Complexity | HIGH | MED | Start simple, iterate |
 | Knowledge Fragmentation | MED | MED | Centralized KG, clear ownership |
 

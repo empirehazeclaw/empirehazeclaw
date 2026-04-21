@@ -1,7 +1,7 @@
 # 🎤 Discord Voice Integration Plan
 
 **Erstellt:** 2026-04-17
-**Ziel:** Echte Voice-Communication mit Sir HazeClaw
+**Ziel:** Echte Voice-Communication mit [NAME_REDACTED]
 
 ---
 

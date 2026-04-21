@@ -1,7 +1,7 @@
 # Memory System Tiefen-Analyse
 
 **Datum:** 2026-04-14 21:56 UTC
-**Analysiert von:** Sir HazeClaw
+**Analysiert von:** [NAME_REDACTED]
 
 ---
 
@@ -9,7 +9,7 @@
 
 ```
 ceo/memory/
-├── short_term/           ✅ Richtig platziert
+├── short_term/           ✅ [ADDRESS_REDACTED]iert
 │   ├── current.md        ⚠️ VERALTET (13.04.)
 │   └── recent_sessions.md ⚠️ 13.04. (2 Tage alt)
 ├── long_term/            ✅ OK
@@ -52,7 +52,7 @@ knownIssues:
 - Opportunity Scanner Daily cron error
 - CEO Weekly Review cron error
 - Agent Self-Improver cron error
-- Token Budget Tracker cron error
+- [TOKEN_REDACTED] Budget Tracker cron error
 - GitHub Backup Daily cron error
 - REM Feedback Integration cron error
 ```
@@ -105,7 +105,7 @@ ts = kg.get('updated_at', 'N/A')  # → 'N/A'
 
 ### Hybrid Search ✅
 ```
-Result: 3 Treffer für "Nico preferences"
+Result: 3 Treffer für "[NAME_REDACTED] preferences"
 - /ceo/IDENTITY.md (score: 0.555)
 - /USER.md (score: 0.535)
 - /ceo/USER.md (score: 0.529)
@@ -121,7 +121,7 @@ ABER: `updated_at` Feld fehlt
 ### Cron Errors (beim Check)
 ```
 GitHub Backup Daily: timeout (→ 600s erhöht)
-Token Budget Tracker: timeout (→ 300s erhöht)
+[TOKEN_REDACTED] Budget Tracker: timeout (→ 300s erhöht)
 Agent Self-Improver: timeout (→ 300s erhöht)
 REM Feedback: delivery error (→ mode=none)
 Opportunity Scanner: delivery error (→ mode=none)
@@ -185,4 +185,4 @@ Opportunity Scanner: delivery error (→ mode=none)
 ---
 
 *Analyse erstellt: 2026-04-14 21:56 UTC*
-*Sir HazeClaw — Memory System Audit*
+*[NAME_REDACTED] — Memory System Audit*

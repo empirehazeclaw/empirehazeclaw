@@ -1,7 +1,7 @@
 # Session: 2026-04-20 18:16:37 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 70093087-d3f8-4c61-8f3e-4f79b659e85c
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -9,10 +9,10 @@
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62522",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 18:07 UTC"
 }
 ```
@@ -20,9 +20,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -33,11 +33,11 @@ Kannst du mir sagen, was du brauchst oder meinst?
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62529",
   "reply_to_id": "62521",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 18:09 UTC",
   "has_reply_context": true
 }
@@ -46,16 +46,16 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 Replied message (untrusted, for context):
 ```json
 {
-  "sender_label": "Sir HazeClaw",
+  "sender_label": "[NAME_REDACTED]",
   "body": "✅ Doctor --fix angewendet:\n\n| Fix                | Result                        |\n| ------------------ | ----------------------------- |\n| npm packages       | ✅ 27 dependencies installiert |\n| orphan transcripts | ✅ 56 archiviert               |\n| shell completion   | ✅ installiert                 |\n\nopenclaw crons list hängt weiter — das ist ein Gateway Bug (nicht von doctor fixbar).\n\nWas noch offen ist:\n\n• Agent \"main\" ohne list entry (nicht kritisch)\n• MEMORY.md 30% truncated (können wir erhöhen wenn nötig)\n\nSoll ich die Cron-Liste via API direkt auslesen oder ist das okay so? 🦞"
 }
 ```
@@ -73,7 +73,7 @@ assistant: **34 Crons aktiv, 1 deaktiviert:**
 | Learning Coordinator | 18:00 UTC | ✅ |
 | Run gateway recovery check | alle 15min | ✅ |
 | Run auto documentation | Mo 09:00 | ✅ |
-| Token Budget Tracker | 00:00 UTC | ✅ |
+| [TOKEN_REDACTED] Budget Tracker | 00:00 UTC | ✅ |
 | Memory Dreaming Promotion | 04:40 UTC | ✅ |
 | KG Access Updater | alle 4h | ✅ |
 | GitHub Backup Daily | 23:00 UTC | ✅ |
@@ -108,7 +108,7 @@ user: System (untrusted): [2026-04-20 18:09:35 UTC] Exec failed (calm-clo, signa
 Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979"
+  "chat_id": "telegram:[PHONE_REDACTED]"
 }
 ```
 
@@ -118,14 +118,14 @@ assistant: NO_REPLY
 user: [Queued messages while agent was busy]
 
 ---
-Queued #1 (from Nico)
+Queued #1 (from [NAME_REDACTED])
 Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62538",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 18:10 UTC"
 }
 ```
@@ -133,9 +133,9 @@ Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

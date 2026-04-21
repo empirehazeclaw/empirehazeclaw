@@ -1,6 +1,6 @@
 # 📚 Learnings — Woche 16 (2026-04-14 bis 2026-04-17)
 
-**Sir HazeClaw — Wöchentliche Learnings**
+**[NAME_REDACTED] — Wöchentliche Learnings**
 
 ---
 

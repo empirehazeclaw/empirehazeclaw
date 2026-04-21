@@ -1,19 +1,19 @@
 {
-  "kg_entities": 622,
-  "kg_relations": 807,
-  "broken_relations": 0,
+  "kg_entities": 902,
+  "kg_relations": 817,
+  "broken_relations": 165,
   "entity_types": {
-    "arxiv": 165,
-    "Improvement": 160,
-    "Learning": 112,
-    "kg_synthesis": 37,
+    "Learning": 532,
+    "Improvement": 164,
+    "kg_synthesis": 40,
     "research": 22,
+    "LearningPattern": 21,
     "error_pattern": 20,
     "success_pattern": 19,
-    "LearningPattern": 19,
+    "arxiv": 15,
     "concept": 7,
     "category": 7
   },
-  "health_percent": 100.0,
+  "health_percent": 79.8,
   "date": "2026-04-21"
 }

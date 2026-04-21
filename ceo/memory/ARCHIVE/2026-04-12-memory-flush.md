@@ -1,7 +1,7 @@
 # Session: 2026-04-12 17:32:01 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: b667a7d5-b7ca-4e2d-af9d-f1257193bc8e
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -67,8 +67,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "49577",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Sun 2026-04-12 17:15 UTC"
 }
 ```
@@ -76,9 +76,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -140,14 +140,14 @@ Retention Policy:
 
 ---
 
-**Nico:** Dein Workspace ist jetzt sauber und strukturiert. Alle Audio-Files, Logs und temporären Daten sind in TEMPORARY/ mit Auto-Cleanup. Die Scripts sind nach Funktion sortiert. 🚀
+**[NAME_REDACTED]:** Dein Workspace ist jetzt sauber und strukturiert. Alle Audio-Files, Logs und temporären Daten sind in TEMPORARY/ mit Auto-Cleanup. Die Scripts sind nach Funktion sortiert. 🚀
 user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "49620",
   "reply_to_id": "49617",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Sun 2026-04-12 17:22 UTC",
   "has_reply_context": true
 }
@@ -156,16 +156,16 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 Replied message (untrusted, for context):
 ```json
 {
-  "sender_label": "Sir HazeClaw",
+  "sender_label": "[NAME_REDACTED]",
   "body": "✅ WORKSPACE RESTRUCTURING COMPLETE!\n\nWas gemacht wurde:\n\nNeue Struktur:\n\nworkspace/\n├── SCRIPTS/           (28 Scripts reorganisiert)\n│   ├── automation/    (10 Cron-triggered)\n│   ├── analysis/      (5 Self-improvement)\n│   ├── self_healing/  (7 Error recovery + cleanup)\n│   └── tools/         (7 Utilities)\n├── DOCS/              (Navigation Index + Research)\n├── TEMPORARY/          (Auto-Cleanup mit Retention)\n│   ├── audio/         (55 Audio-Files)\n│   ├── logs/          (14 Tage)\n│   ├── memory/        (30 Tage)\n│   └── task_reports/  (7 Tage)\n└── CEO/               (Sauber - keine Audio-Files mehr)\n\nResultat:\n\n| Metric                  | Vorher   | Nachher       |\n| ----------------------- | -------- | ------------- |\n| Root MDs                | 32       | 13            |\n| Audio-Files in CEO      | 40       | 0             |\n| Script-Organisation     | gemischt | kategorisiert |\n| TEMPORARY vs PERSISTENT | unklar   | klar getrennt |\n\nCommits:\n\n• 9d63373 — Major Restructuring\n• aac20c9 — TODO Update\n• 2f5d73e — HEARTBEAT Update\n\n───\n\nAuto-Cleanup läuft ab jetzt:\n\npython3 SCRIPTS/self_healing/cleanup_temporary.py\n\nRetention Policy:\n\n• logs/: 14 Tage\n• memory/: 30 Tage\n• audio/: 7 Tage\n• task_reports/: 7 Tage\n\n───\n\nNico: Dein Workspace ist jetzt sauber und strukturiert. Alle Audio-Files, Logs und temporären Daten sind in TEMPORARY/ mit Auto-Cleanup. Die Scripts sind nach Funktion sortiert. 🚀"
 }
 ```
@@ -221,8 +221,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "49646",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Sun 2026-04-12 17:25 UTC"
 }
 ```
@@ -230,9 +230,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -311,8 +311,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "49670",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Sun 2026-04-12 17:28 UTC"
 }
 ```
@@ -320,9 +320,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -337,7 +337,7 @@ assistant:
 | Feature | Details |
 |---------|---------|
 | API Key Detection | OpenAI, OpenRouter, Stripe, AWS, GitHub |
-| Forbidden Files | .env, .pem, .key, passwords.txt |
+| Forbidden Files | .env, .pem, .key, [PASSWORD_REDACTED]s.txt |
 | Workspace Validation | Root structure checks |
 | Auto-cleanup | Runs cleanup if TEMPORARY needs it |
 
@@ -366,13 +366,13 @@ assistant:
 | Neue Tools | 4 |
 | Docs erstellt | 3 |
 
-**Nico:** Dein System ist jetzt sauber, strukturiert und sicher. Der Pre-commit Hook verhindert, dass versehentlich API Keys committed werden. 🚀
+**[NAME_REDACTED]:** Dein System ist jetzt sauber, strukturiert und sicher. Der Pre-commit Hook verhindert, dass versehentlich API Keys committed werden. 🚀
 user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "49681",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Sun 2026-04-12 17:30 UTC"
 }
 ```
@@ -380,9 +380,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 

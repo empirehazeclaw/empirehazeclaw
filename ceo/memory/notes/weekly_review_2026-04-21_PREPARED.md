@@ -1,6 +1,6 @@
 # 📋 Weekly Review — 2026-04-21
 
-**Für:** Nico | **Erstellt:** 2026-04-17 (proaktiv vorbereitet)
+**Für:** [NAME_REDACTED] | **Erstellt:** 2026-04-17 (proaktiv vorbereitet)
 
 ---
 
@@ -8,7 +8,7 @@
 
 - **Wann:** Monday 2026-04-21
 - **Dauer:** ~30 min
-- **Wer:** Nico + Sir HazeClaw
+- **Wer:** [NAME_REDACTED] + [NAME_REDACTED]
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-## 🦞 Sir HazeClaw Performance diese Woche
+## 🦞 [NAME_REDACTED] Performance diese Woche
 
 **Was lief gut:**
 - Proaktiv Vorschläge gemacht
@@ -79,7 +79,7 @@
 
 ---
 
-## 💬 Feedback an Sir HazeClaw
+## 💬 Feedback an [NAME_REDACTED]
 
 **Was läuft gut?**
 -

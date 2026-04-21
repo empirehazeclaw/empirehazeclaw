@@ -26,7 +26,7 @@
 
 ### Fixes Durchgeführt
 1. **CEO Briefing Cron** — Fallback `gpt-4o-mini` hinzugefügt (vorher nur MiniMax → circular)
-2. **University Self-Improvement** — Delivery target von @heartbeat → 5392634979
+2. **University Self-Improvement** — Delivery target von @heartbeat → [PHONE_REDACTED]
 3. **GitHub Backup** — Funktioniert bereits! Git direct push, 158 files gerade gepusht
 
 ### CEO Briefing Cron Error — Gelöst
@@ -36,7 +36,7 @@
 
 ### University Self-Improvement Loop — Gelöst
 - Problem: Telegram recipient @heartbeat not found
-- Fix: Delivery target geändert zu 5392634979 ([USER]'s Telegram ID)
+- Fix: Delivery target geändert zu [PHONE_REDACTED] ([USER]'s Telegram ID)
 - Nächster Lauf: Sonntag 18:00 UTC
 
 ---
@@ -88,7 +88,7 @@
 
 ## 🎓 learnings heute
 
-1. **GitHub Backup nutzt Git direct** — nicht `gh` CLI. Token ist im Remote URL gespeichert.
+1. **GitHub Backup nutzt Git direct** — nicht `gh` CLI. [TOKEN_REDACTED] ist im Remote URL gespeichert.
 2. **Cron Fallbacks** — Wenn Primary + Fallback dasselbe Model sind, ist das kein echtes Fallback.
 3. **Delivery Target** — Telegram @heartbeat ist kein gültiger Chat-ID. Immer numerische IDs nutzen.
 4. **Wiki Wachstum** — Das System ist nur so gut wie die Notes die wir erstellen. Needs active curation.
@@ -129,7 +129,7 @@
 ## 🔜 Nächste Schritte
 
 - [ ] Wiki-index.md aufräumen (alte Test-Notes entfernen)
-- [ ] Security Keys rotieren (Buffer, Leonardo, Google AIza, SECRET_KEY) — **[USER] manuell**
+- [ ] Security Keys rotieren (Buffer, Leonardo, Google AIza, [SECRET_REDACTED]) — **[USER] manuell**
 - [ ] Twitter OAuth erneuern
 - [ ] Reddit API Keys beantragen
 - [ ] Resend Pro kaufen

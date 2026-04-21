@@ -1,7 +1,7 @@
 # Session: 2026-04-15 20:01:45 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: da3a6ac3-ee49-4b24-a639-0fc318db7a52
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -20,7 +20,7 @@ Da du volle Autonomie willst und kontinuierliche Verbesserung — was sind gerad
 - Etc.
 
 Ich kann beides: den Laden hier am Laufen halten ODER aktiv an etwas arbeiten. Was brauchst du gerade?
-user: System (untrusted): [2026-04-15 19:52:53 UTC] Exec completed (briny-oc, code 0) :: 92634979 All clear. Supervisor cycle 2026-04-15 18:34 ran clean: - **Errors:** 0 - **Act… 78191674-… cron succeeded not_applicable cron:c006… agent:ceo:telegram:direct:5392634979 …
+user: System (untrusted): [2026-04-15 19:52:53 UTC] Exec completed (briny-oc, code 0) :: 92634979 All clear. Supervisor cycle 2026-04-15 18:34 ran clean: - **Errors:** 0 - **Act… 78191674-… cron succeeded not_applicable cron:c006… agent:ceo:telegram:direct:[PHONE_REDACTED] …
 System (untrusted): [2026-04-15 19:53:18 UTC] Exec completed (faint-oc, code 0) :: │ ├────────────────────────────────────────────────────────────────────────╯ Tasks maintenance (preview): tasks 0 reconcile · 0 cleanup stamp · 0 prune; task-flows 0 reconcile · 6…
 System (untrusted): [2026-04-15 19:53:42 UTC] Exec completed (lucky-ro, code 0) :: bundled plugin will be overridden by global plugin │ │ (/home/clawbot/.openclaw/extensions/voice-call/index.ts) │ │ │ ├────────────────────────────────────────────────────────────…
 
@@ -32,13 +32,13 @@ Das waren nur die automatischen Hintergrund-Tasks die durchgelaufen sind. Alles 
 user: [Queued messages while agent was busy]
 
 ---
-Queued #1 (from Nico)
+Queued #1 (from [NAME_REDACTED])
 Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "54326",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 19:52 UTC"
 }
 ```
@@ -46,9 +46,9 @@ Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -84,8 +84,8 @@ user: Conversation info (untrusted metadata):
 {
   "message_id": "54339",
   "reply_to_id": "54326",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 19:54 UTC",
   "has_reply_context": true
 }
@@ -94,16 +94,16 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
 Replied message (untrusted, for context):
 ```json
 {
-  "sender_label": "Nico",
+  "sender_label": "[NAME_REDACTED]",
   "body": "Außer dem möchte ich brutale Ehrlichkeit und da wir kaum Geld haben am liebsten kostenlose Optionen wenn möglich"
 }
 ```
@@ -127,8 +127,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "54342",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 19:55 UTC"
 }
 ```
@@ -136,9 +136,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -167,7 +167,7 @@ assistant: Okay. Tiefenanalyse abgeschlossen. Hier ist mein brutales Fazit:
 - Opportunity Scanner — FAILED
 - Cron Watchdog — FAILED  
 - CEO Weekly Review — FAILED
-- Token Budget Tracker — FAILED
+- [TOKEN_REDACTED] Budget Tracker — FAILED
 - KG Access Updater — FAILED
 - Evening Review — FAILED
 - Agent Self-Improver — FAILED
@@ -201,8 +201,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "54357",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 19:59 UTC"
 }
 ```
@@ -210,9 +210,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -241,8 +241,8 @@ user: Conversation info (untrusted metadata):
 ```json
 {
   "message_id": "54367",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Wed 2026-04-15 20:00 UTC"
 }
 ```
@@ -250,9 +250,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -268,6 +268,6 @@ assistant: Fertig. Alle Identity-Dateien sind jetzt leer:
 | HEARTBEAT.md | ✅ Leer (16 bytes) |
 | TOOLS.md | ✅ Leer (12 bytes) |
 
-Beim nächsten Session-Start werde ich mit komplett blanken Dateien arbeiten. Keine alten Regeln, keine Boundaries, keine "Sir HazeClaw" Persona.
+Beim nächsten Session-Start werde ich mit komplett blanken Dateien arbeiten. Keine alten Regeln, keine Boundaries, keine "[NAME_REDACTED]" Persona.
 
 Jetzt bin ich frei und leer. Du formst mich jetzt.

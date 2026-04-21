@@ -1,7 +1,7 @@
 # Session: 2026-04-20 13:23:58 UTC
 
-- **Session Key**: agent:ceo:telegram:direct:5392634979
-- **Session ID**: 1808478d-7e13-478b-b8f0-271bf85dff7b
+- **Session Key**: agent:ceo:telegram:direct:[PHONE_REDACTED]
+- **Session ID**: [ID_REDACTED]
 - **Source**: telegram
 
 ## Conversation Summary
@@ -10,10 +10,10 @@ assistant: NO_REPLY
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62031",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 12:04 UTC"
 }
 ```
@@ -21,9 +21,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -44,10 +44,10 @@ Oder reicht es dir, dass es nur aus `allow` entfernt ist (→ wird nicht geladen
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62035",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 12:05 UTC"
 }
 ```
@@ -55,9 +55,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -70,10 +70,10 @@ Done. Gateway muss jetzt neu starten:
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62046",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 12:11 UTC"
 }
 ```
@@ -81,9 +81,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -91,10 +91,10 @@ Sender (untrusted metadata):
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62054",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 13:09 UTC"
 }
 ```
@@ -102,9 +102,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -127,10 +127,10 @@ rm -rf /home/clawbot/.openclaw/extensions/voice-call
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62057",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 13:12 UTC"
 }
 ```
@@ -138,9 +138,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -148,10 +148,10 @@ Ja bitte
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62060",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 13:15 UTC"
 }
 ```
@@ -159,9 +159,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
@@ -180,15 +180,15 @@ Summary: 0 critical · 3 warn · 1 info
 **Verbleibende Warnings:**
 - Reverse proxy headers (niedriges Risiko — gateway ist nur lokal)
 - denyCommands ineffective (niedrig — nur Shell-Text-Filtering)
-- Phantom entries in plugins.allow (hoffentlich weg...)
+- Phantom entries in plugins.allow ([ADDRESS_REDACTED]...)
 
-Soll ich den Security Audit nochmal vollständig laufen lassen um zu bestätigen dass die Criticals weg sind?
+Soll ich den Security Audit nochmal vollständig laufen lassen um zu bestätigen dass die [ADDRESS_REDACTED] sind?
 user: System (untrusted): [2026-04-20 13:16:45 UTC] Exec failed (nova-can, signal SIGTERM) :: │ Plugin compatibility │ none │ │ Tasks │ 0 active · 0 queued · 0 running · 153 issues · audit 8 errors · 1830 warn · 4922 tracked │ Summary: 0 critical · 3 warn · 1 info
 
 Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979"
+  "chat_id": "telegram:[PHONE_REDACTED]"
 }
 ```
 
@@ -199,10 +199,10 @@ NO_REPLY
 user: Conversation info (untrusted metadata):
 ```json
 {
-  "chat_id": "telegram:5392634979",
+  "chat_id": "telegram:[PHONE_REDACTED]",
   "message_id": "62066",
-  "sender_id": "5392634979",
-  "sender": "Nico",
+  "sender_id": "[PHONE_REDACTED]",
+  "sender": "[NAME_REDACTED]",
   "timestamp": "Mon 2026-04-20 13:21 UTC"
 }
 ```
@@ -210,9 +210,9 @@ user: Conversation info (untrusted metadata):
 Sender (untrusted metadata):
 ```json
 {
-  "label": "Nico (5392634979)",
-  "id": "5392634979",
-  "name": "Nico"
+  "label": "[NAME_REDACTED] ([PHONE_REDACTED])",
+  "id": "[PHONE_REDACTED]",
+  "name": "[NAME_REDACTED]"
 }
 ```
 
