@@ -50,8 +50,9 @@ def run_script(cmd_type: str, cmd: str, timeout: int = 60) -> tuple[bool, str, f
     start = datetime.now()
     try:
         if cmd_type == "bash":
+            shell_cmd = f"bash {cmd}"
             result = subprocess.run(
-                cmd, shell=True, capture_output=True, text=True, timeout=timeout
+                shell_cmd, shell=True, capture_output=True, text=True, timeout=timeout
             )
         else:
             result = subprocess.run(
@@ -86,7 +87,6 @@ def check_script_path(cmd_type: str, cmd: str) -> tuple[bool, str]:
     for variant in [
         script_path,
         str(WORKSPACE / script_path),
-        f"/home/clawbot/.openclaw{cmd}",
     ]:
         if Path(variant).exists():
             return True, f"found at {variant}"
@@ -116,7 +116,7 @@ def test_cron(cron, fast=False):
         return {"name": name, "status": "PATH_ERROR", "reason": path_msg, "duration": 0, "cmd": f"{cmd_type} {cmd}"}
     
     # Run
-    timeout = 30 if fast else 120
+    timeout = 60 if fast else 120
     success, output, duration = run_script(cmd_type, cmd, timeout=timeout)
     
     return {
