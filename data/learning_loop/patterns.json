@@ -1,31 +1,4 @@
 {
-  "patterns": [
-    {
-      "id": "pattern_20260421_121812",
-      "title": "Review last 24h API calls, find 1 inefficient call",
-      "category": "hypothesis_token_optimization",
-      "error_signature": [
-        "review",
-        "last",
-        "calls,",
-        "find",
-        "inefficient"
-      ],
-      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
-      "solution": "Applied improvement: Review last 24h API calls, find 1 inefficient call",
-      "success_count": 1,
-      "failure_count": 0,
-      "validated": true,
-      "confidence": 0.7,
-      "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T12:18:12.114969",
-      "last_validated": "2026-04-21T12:18:12.114972",
-      "error_type": "token_optimization",
-      "context": {
-        "source": "exploration",
-        "script": null
-      }
-    }
-  ],
+  "patterns": [],
   "version": "1.0"
 }
