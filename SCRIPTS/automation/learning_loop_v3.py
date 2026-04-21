@@ -149,6 +149,8 @@ def load_state():
         "novelty_history": [],  # Phase 2: Track novelty over iterations
         "consecutive_novelty_low": 0,  # Phase 2: Count low novelty iterations
         "consecutive_failures": 0,  # NEW: Phase 2 - rollback tracking
+        "prediction_history": [],  # Phase 4: ICM-inspired prediction tracking
+        "prediction_error": 0.0,  # Phase 4: Curiosity = prediction error
         "learning_rate": 0.1,  # NEW: Plateau Fix - adaptive LR
         "lr_stagnation_count": 0,  # NEW: Count consecutive plateau runs
         "pattern_source": "task",  # NEW: Rotation: task|failure|success|capability
@@ -762,6 +764,22 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
         # PHASE 2: Novelty tracking
         state["novelty_score"] = min(1.0, state.get("novelty_score", 1.0) + 0.1)  # Boost novelty
         state["consecutive_novelty_low"] = 0  # Reset low-novelty counter
+        
+        # PHASE 4: ICM-inspired prediction tracking
+        # Store prediction before improvement to compare after
+        predicted_error_delta = improvement.get("expected_impact", "MEDIUM")
+        actual_error_delta = error_delta
+        # Convert string to numeric prediction
+        prediction_map = {"HIGH": -0.05, "MEDIUM": -0.02, "LOW": 0.0}
+        predicted = prediction_map.get(predicted_error_delta, -0.02)
+        # Prediction error = |predicted - actual| (high = surprised)
+        prediction_error = abs(predicted - actual_error_delta)
+        state["prediction_error"] = min(prediction_error, 1.0)
+        state["prediction_history"].append(prediction_error)
+        state["prediction_history"] = state["prediction_history"][-20:]
+        if prediction_error > 0.03:
+            print(f"   🧠 ICM: prediction_error={prediction_error:.3f} (surprised by outcome)")
+        
         print(f"   ✅ VALIDATION PASSED (v2)")
         print(f"      Tests: {passed_tests}/{total_tests}")
         print(f"      Error delta: {error_delta:+.2f}% (threshold: ±{ERROR_DELTA_THRESHOLD}%)")
@@ -929,14 +947,32 @@ def get_cron_success_rate() -> float:
         return 0.5
 
 def get_exploration_bonus(state: dict) -> float:
-    """Exploration Bonus: Rewards trying genuinely new things."""
+    """
+    Phase 4: ICM-Inspired Exploration Bonus
+    
+    ICM (Intrinsic Curiosity Module) insight: curiosity = prediction error.
+    When our predictions are wrong, we get intrinsic reward for exploring.
+    
+    Components:
+    1. patterns_discovered (50% weight)
+    2. cross_pattern_hits (30% weight)
+    3. novelty_injections (20% weight)
+    4. PREDICTION ERROR (ICM bonus) - NEW in Phase 4
+    """
     ideas_tried = state.get("patterns_discovered", 0)
     cross_hits = state.get("cross_pattern_hits", 0)
     novel_actions = state.get("novelty_injections", 0)
+    prediction_error = state.get("prediction_error", 0.0)
+    
     ideas_score = min(ideas_tried / 20, 1.0) * 0.5
     cross_score = min(cross_hits / 30, 1.0) * 0.3
     novel_score = min(novel_actions / 10, 1.0) * 0.2
-    return ideas_score + cross_score + novel_score
+    
+    # Phase 4: ICM-inspired curiosity bonus
+    # prediction_error ranges 0.0-1.0, capped at 0.3 contribution
+    curiosity_bonus = min(prediction_error, 1.0) * 0.3
+    
+    return ideas_score + cross_score + novel_score + curiosity_bonus
 
 def get_learning_progress_rate(state: dict) -> float:
     """Learning Progress Rate: Measures if score is trending up or down."""

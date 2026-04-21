@@ -20,7 +20,7 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 29,
+    "successes": 30,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
@@ -36,6 +36,10 @@
     "failures": 1
   },
   "hypothesis_feedback_integration": {
+    "successes": 2,
+    "failures": 1
+  },
+  "issue_issue_learning_plateau": {
     "successes": 2,
     "failures": 1
   }

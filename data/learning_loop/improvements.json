@@ -1,80 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-20T19:13:54.381444",
-      "title": "Reduce KG orphans: add relations to disconnected entities",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Reduce KG orphans: add relations to disconnected entities",
-        "timestamp": "2026-04-20T19:13:53.556223",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7661829268292683,
-        "current_score": 0.8661829268292682,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-20T19:14:49.406831",
-      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-        "timestamp": "2026-04-20T19:14:48.894870",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7664210220673635,
-        "current_score": 0.8664210220673635,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-20T19:15:57.598258",
       "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
       "validated": true,
@@ -1860,6 +1786,80 @@
             "name": "meta_improvement_check",
             "passed": true,
             "output": "Iteration: 263"
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7877134146341463,
+        "current_score": 0.8877134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T09:47:33.030366",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-21T09:47:32.452704",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.787754854368932,
+        "current_score": 0.887754854368932,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T09:47:36.671067",
+      "title": "Fix: Score plateau detected: range=0.0000, latest=0.788",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Fix: Score plateau detected: range=0.0000, latest=0.788",
+        "timestamp": "2026-04-21T09:47:36.076068",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
           }
         ],
         "passed": true,
