@@ -883,132 +883,150 @@ def get_current_error_rate() -> float:
         pass
     return 2.0  # Default fallback
 
-def calculate_loop_score() -> float:
+def get_kg_health_score() -> float:
+    """KG Health: Lower orphans = higher score. Max 1.0 at 0% orphans."""
+    try:
+        kg_path = Path(str(WORKSPACE) + "/ceo/memory/kg/knowledge_graph.json")
+        if not kg_path.exists():
+            return 0.5
+        with open(kg_path) as f:
+            kg = json.load(f)
+        entities = kg.get("entities", {})
+        if not entities:
+            return 0.5
+        linked = set()
+        for r in kg.get("relations", {}).values():
+            linked.add(r.get("from"))
+            linked.add(r.get("to"))
+        orphan_count = len(entities) - len(linked & set(entities.keys()))
+        orphan_rate = orphan_count / len(entities) if entities else 0
+        return max(0.0, 1.0 - orphan_rate)
+    except Exception:
+        return 0.5
+
+def get_cron_success_rate() -> float:
+    """Cron Success Rate from jobs.json. Returns 0.0-1.0."""
+    try:
+        jobs_path = Path("/home/clawbot/.openclaw/cron/jobs.json")
+        if not jobs_path.exists():
+            return 0.5
+        with open(jobs_path) as f:
+            d = json.load(f)
+        jobs = d if isinstance(d, list) else d.get("jobs", [])
+        if not jobs:
+            return 0.5
+        ok = sum(1 for j in jobs if j.get("state", {}).get("lastStatus") != "error")
+        return ok / len(jobs)
+    except Exception:
+        return 0.5
+
+def get_exploration_bonus(state: dict) -> float:
+    """Exploration Bonus: Rewards trying genuinely new things."""
+    ideas_tried = state.get("patterns_discovered", 0)
+    cross_hits = state.get("cross_pattern_hits", 0)
+    novel_actions = state.get("novelty_injections", 0)
+    ideas_score = min(ideas_tried / 20, 1.0) * 0.5
+    cross_score = min(cross_hits / 30, 1.0) * 0.3
+    novel_score = min(novel_actions / 10, 1.0) * 0.2
+    return ideas_score + cross_score + novel_score
+
+def get_learning_progress_rate(state: dict) -> float:
+    """Learning Progress Rate: Measures if score is trending up or down."""
+    history = state.get("score_history", [])
+    if len(history) < 10:
+        return 0.5
+    recent_avg = sum(history[-5:]) / 5
+    older_avg = sum(history[-10:-5]) / 5
+    delta = recent_avg - older_avg
+    if delta > 0.02:
+        return min(0.8 + delta * 5, 1.0)
+    elif delta < -0.02:
+        return max(0.2 + delta * 5, 0.0)
+    else:
+        return 0.5 + delta * 12.5
+
+def calculate_loop_score():
     """
-    Calculates the loop's self-improvement score.
+    Phase 1: Multi-Dimensional Self-Improvement Score
 
-    Phase 0 Fixed Formula (from PLATEAU_BREAKTHROUGH_PLAN):
-    - base_score: Foundation (40%)
-    - validation_success_rate: Validation weight (30%)
-    - novelty_factor: New learning bonus (20%)
-    - pattern_quality: Pattern quality (10%)
-
-    Key fixes vs original:
-    1. NO neutral base inflation (removed 0.5 neutral defaults)
-    2. Novelty now tracked explicitly
-    3. Pattern quality tracked explicitly
-    4. Damping applied in score update (max 0.05 per iteration)
+    Components:
+    1. Task Success Rate (TSR)    — 25%: validation_successes / total
+    2. Learning Progress Rate (LPR) — 25%: score trend direction
+    3. System Health Score (SHS)  — 20%: KG quality + Cron success
+    4. Exploration Bonus (EB)    — 15%: new ideas, cross-patterns
+    5. Dampening Factor (DF)      — 15%: prevents sudden jumps
     """
     state = load_state()
 
-    # Validation success rate (only count if we have actual validations)
+    # Component 1: Task Success Rate (25%)
     val_success = state.get("validation_successes", 0)
     val_fail = state.get("validation_failures", 0)
     val_total = val_success + val_fail
+    tsr = val_success / val_total if val_total > 0 else 0.0
 
-    if val_total > 0:
-        validation_success_rate = val_success / val_total
-    else:
-        validation_success_rate = 0.0  # No credit without real validations
+    # Component 2: Learning Progress Rate (25%)
+    lpr = get_learning_progress_rate(state)
 
-    # Cross-pattern rate (only count if we have actual attempts)
-    cross_hits = state.get("cross_pattern_hits", 0)
-    cross_miss = state.get("cross_pattern_misses", 0)
-    cross_total = cross_hits + cross_miss
+    # Component 3: System Health Score (20%)
+    kg_health = get_kg_health_score()
+    cron_success = get_cron_success_rate()
+    shs = kg_health * 0.5 + cron_success * 0.5
 
-    if cross_total > 0:
-        cross_rate = cross_hits / cross_total
-    else:
-        cross_rate = 0.0  # No credit without attempts
+    # Component 4: Exploration Bonus (15%)
+    eb = get_exploration_bonus(state)
 
-    # Feedback processed (count-based, no neutral boost)
-    feedback_proc = state.get("feedback_processed", 0)
-    feedback_factor = min(feedback_proc / 30, 1.0) * 0.2
-
-    # Iteration bonus (loop is running)
+    # Component 5: Dampening Factor (15%)
     iteration = state.get("iteration", 0)
-    iteration_factor = min(iteration / 20, 1.0) * 0.1  # Max 0.1 from iterations
+    df = min(iteration / 100, 1.0) * 0.15
 
-    # === PHASE 0 FIX: Novelty Factor ===
-    # Novelty: +0.05 per new pattern, +0.02 per cross-pattern hit
-    novelty_injections = state.get("novelty_injections", 0)
-    cross_pattern_hits = state.get("cross_pattern_hits", 0)
-    novelty_factor = min(novelty_injections * 0.05 + cross_pattern_hits * 0.02, 0.6)  # Cap at 0.6 (was 0.5)
+    # FINAL SCORE
+    score = tsr * 0.25 + lpr * 0.25 + shs * 0.20 + eb * 0.15 + df * 0.15
 
-    # PLATEAU DETECTION: If score hasn't improved in 10 runs, boost exploration
+    # Store multi-dim metrics for debugging
+    state["_multi_dim"] = {
+        "tsr": round(tsr, 4), "lpr": round(lpr, 4), "shs": round(shs, 4),
+        "eb": round(eb, 4), "df": round(df, 4),
+        "kg_health": round(kg_health, 4), "cron_success": round(cron_success, 4)
+    }
+
+    # PLATEAU DETECTION (still needed for LR adjustment)
     score_history = state.get("score_history", [])
     learning_rate = state.get("learning_rate", 0.1)
     lr_stagnation_count = state.get("lr_stagnation_count", 0)
     pattern_source = state.get("pattern_source", "task")
-    
+
     if len(score_history) >= 10:
         recent_scores = score_history[-10:]
-        max_recent = max(recent_scores)
-        min_recent = min(recent_scores)
-        recent_range = max_recent - min_recent
-
-        if recent_range < 0.010:  # Plateau detected (less than 1.0% variation - AGGRESSIVE)
+        recent_range = max(recent_scores) - min(recent_scores)
+        if recent_range < 0.010:
             lr_stagnation_count += 1
-            
-            # ADAPTIVE LR REDUCTION: If plateau for 2+ consecutive checks, reduce LR by 30%
             if lr_stagnation_count >= 2:
                 old_lr = learning_rate
-                learning_rate = max(learning_rate * 0.7, 0.005)  # Floor at 0.005 - AGGRESSIVE
-                lr_stagnation_count = 0  # Reset after adjustment
-                print(f"   📉 ADAPTIVE LR: Reduced from {old_lr:.3f} to {learning_rate:.3f}")
-            
-            # Boost novelty to escape plateau
-            novelty_factor = min(novelty_factor * 1.5, 0.7)
-            print(f"   📈 PLATEAU ESCAPE: Boosting novelty to {novelty_factor:.2f} (range={recent_range:.3f})")
-            
-            # PATTERN SOURCE ROTATION: Switch to different domain
+                learning_rate = max(learning_rate * 0.7, 0.005)
+                lr_stagnation_count = 0
+                print(f"   📉 ADAPTIVE LR: {old_lr:.3f} → {learning_rate:.3f}")
             source_rotation = {"task": "failure", "failure": "success", "success": "capability", "capability": "task"}
             pattern_source = source_rotation.get(pattern_source, "task")
-            print(f"   🔄 PATTERN SOURCE: Rotated to '{pattern_source}' domain")
-        else:
-            # Reset stagnation count when there's meaningful variation
-            if lr_stagnation_count > 0:
-                lr_stagnation_count = max(0, lr_stagnation_count - 1)
+        elif lr_stagnation_count > 0:
+            lr_stagnation_count = max(0, lr_stagnation_count - 1)
     else:
         lr_stagnation_count = 0
 
-    # Store updated values in state for next run
     state["learning_rate"] = learning_rate
     state["lr_stagnation_count"] = lr_stagnation_count
     state["pattern_source"] = pattern_source
 
-    # === PHASE 0 FIX: Pattern Quality ===
-    # Based on pattern confidence and decay
-    patterns_data = load_patterns()
-    patterns = patterns_data.get("patterns", [])
-    if patterns:
-        avg_confidence = sum(p.get("confidence", 0) for p in patterns) / len(patterns)
-        pattern_quality = avg_confidence * 0.1  # Scale to 0-0.1
-    else:
-        pattern_quality = 0.0
-
-    # === PHASE 0 FIX: New Formula ===
-    # base_score * 0.4 + validation_success_rate * 0.3 + novelty_factor * 0.2 + pattern_quality * 0.1
-    base_score = 0.5  # Neutral foundation
-    score = (
-        base_score * 0.4 +
-        validation_success_rate * 0.3 +
-        novelty_factor * 0.2 +
-        pattern_quality +
-        feedback_factor +
-        iteration_factor
-    )
-
-    # Cap at 0.95 to prevent infinity
     final_score = min(0.95, max(0.0, score))
-    
-    # Return score AND the plateau detection values for run_full_cycle to save
     plateau_info = {
-        "learning_rate": state["learning_rate"],
-        "lr_stagnation_count": state["lr_stagnation_count"],
-        "pattern_source": state["pattern_source"]
+        "learning_rate": learning_rate,
+        "lr_stagnation_count": lr_stagnation_count,
+        "pattern_source": pattern_source
     }
-    
+    print(f"   📊 MULTI-DIM: TSR={tsr:.3f} LPR={lpr:.3f} SHS={shs:.3f} EB={eb:.3f} DF={df:.3f} → {final_score:.3f}")
+
+    # Return multi_dim so caller can save it
+    multi_dim = state["_multi_dim"]
+    plateau_info["multi_dim"] = multi_dim
     return final_score, plateau_info
 
 
@@ -1740,8 +1758,11 @@ def run_full_cycle():
     final_score, plateau_info = calculate_loop_score()
     state_to_use["score"] = final_score
     state_to_use["score_history"].append(final_score)
-    # Apply plateau detection values (learning_rate, lr_stagnation_count, pattern_source)
+    # Apply plateau detection values AND multi-dim metrics
     state_to_use.update(plateau_info)
+    # Save multi-dim metrics
+    if "multi_dim" in plateau_info:
+        state_to_use["_multi_dim"] = plateau_info["multi_dim"]
     save_state(state_to_use)
 
     duration = (datetime.now() - start_time).total_seconds()

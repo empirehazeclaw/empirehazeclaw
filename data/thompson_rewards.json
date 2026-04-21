@@ -4,7 +4,7 @@
     "failures": 1
   },
   "cross_pattern_cross_pattern": {
-    "successes": 62,
+    "successes": 63,
     "failures": 1
   },
   "issue_error": {
@@ -20,7 +20,7 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 26,
+    "successes": 27,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
@@ -32,7 +32,11 @@
     "failures": 1
   },
   "hypothesis_session_efficiency": {
-    "successes": 3,
+    "successes": 4,
+    "failures": 1
+  },
+  "hypothesis_feedback_integration": {
+    "successes": 2,
     "failures": 1
   }
 }

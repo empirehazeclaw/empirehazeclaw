@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 240,
-  "score": 0.7661569268292683,
+  "iteration": 244,
+  "score": 0.503301731652834,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -262,7 +262,11 @@
     0.7657221442205726,
     0.7657221442205726,
     0.7659395355249204,
-    0.7661569268292683
+    0.7661569268292683,
+    0.6081284304272052,
+    0.5016846042585107,
+    0.500301731652834,
+    0.503301731652834
   ],
   "patterns": [
     {
@@ -290,7 +294,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 4,
+  "novelty_injections": 8,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
@@ -304,8 +308,8 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 1,
-  "last_validated_pattern": "[CROSS-PATTERN] Break score plateau with novel approach",
+  "consecutive_same_pattern": 0,
+  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
   "last_forced_novelty": null,
   "recently_forced_novelty": false,
   "feedback_stats": {
@@ -319,5 +323,23 @@
     "SUCCESS_DOC: Documented learning loop in KG"
   ],
   "last_update": "2026-04-18T04:04:06.205949Z",
-  "total_improvements": 1
+  "total_improvements": 1,
+  "multi_dim": {
+    "tsr": 0.9756,
+    "lpr": 0.0,
+    "shs": 0.7832,
+    "eb": 0.535,
+    "df": 0.15,
+    "kg_health": 0.6253,
+    "cron_success": 0.9412
+  },
+  "_multi_dim": {
+    "tsr": 0.9756,
+    "lpr": 0.0,
+    "shs": 0.7832,
+    "eb": 0.535,
+    "df": 0.15,
+    "kg_health": 0.6253,
+    "cron_success": 0.9412
+  }
 }
