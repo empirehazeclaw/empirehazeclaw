@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 287,
-  "score": 0.6358956062087451,
+  "iteration": 290,
+  "score": 0.5597134146341464,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -305,7 +305,10 @@
     0.8120048543689321,
     0.8097134146341464,
     0.7316049211535046,
-    0.6358956062087451
+    0.6358956062087451,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464
   ],
   "patterns": [
     {
@@ -333,12 +336,12 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 51,
+  "novelty_injections": 54,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
-    0.6499999999999997,
-    0.5999999999999996,
-    0.5499999999999996,
+    0.4999999999999996,
+    0.4999999999999996,
+    0.4999999999999996,
     0.4999999999999996,
     0.4999999999999996,
     0.4999999999999996,
@@ -379,7 +382,7 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Test backup recovery, identify 1 bottleneck",
+  "last_validated_pattern": "Apply proven pattern: Break score plateau with novel approach",
   "last_forced_novelty": "2026-04-21T10:59:54.723365",
   "recently_forced_novelty": true,
   "feedback_stats": {
@@ -396,24 +399,24 @@
   "total_improvements": 1,
   "multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.3047,
+    "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9706,
+    "dq_raw": 0.9714,
     "dq_capped": 0.5,
     "fb": 0.44,
     "kg_health": 1.0,
-    "cron_success": 0.9412
+    "cron_success": 0.9429
   },
   "_multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.3047,
+    "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9706,
+    "dq_raw": 0.9714,
     "dq_capped": 0.5,
     "fb": 0.44,
     "kg_health": 1.0,
-    "cron_success": 0.9412
+    "cron_success": 0.9429
   }
 }

@@ -1,117 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-21T08:42:45.703577",
-      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-        "timestamp": "2026-04-21T08:42:45.088121",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7657221442205726,
-        "current_score": 0.8657221442205726,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-21T08:44:35.142795",
-      "title": "[CROSS-PATTERN] Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[CROSS-PATTERN] Break score plateau with novel approach",
-        "timestamp": "2026-04-21T08:44:34.583263",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7657221442205726,
-        "current_score": 0.8657221442205726,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-21T08:44:49.961073",
-      "title": "[CROSS-PATTERN] Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[CROSS-PATTERN] Break score plateau with novel approach",
-        "timestamp": "2026-04-21T08:44:49.272994",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7659395355249204,
-        "current_score": 0.8659395355249204,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-21T08:59:57.287974",
       "title": "[CROSS-PATTERN] Break score plateau with novel approach",
       "validated": true,
@@ -1873,6 +1762,117 @@
         "version": "2.0",
         "baseline_score": 0.7316049211535046,
         "current_score": 0.8316049211535046,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T11:30:13.629120",
+      "title": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[Exploration] Review sessions, close 1 orphaned session",
+        "timestamp": "2026-04-21T11:30:12.912377",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.6358956062087451,
+        "current_score": 0.7358956062087451,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T11:30:37.778648",
+      "title": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+        "timestamp": "2026-04-21T11:30:37.101744",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T11:35:25.406657",
+      "title": "Apply proven pattern: Break score plateau with novel approach",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Break score plateau with novel approach",
+        "timestamp": "2026-04-21T11:35:24.700411",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
         "rules_checked": {
           "min_tests": true,
           "error_threshold": true,
