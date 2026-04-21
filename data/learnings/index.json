@@ -9,6 +9,18 @@
     ],
     "gene": [
       "lrn_20260421_124329_3"
+    ],
+    "insight": [
+      "lrn_20260421_124534_4",
+      "lrn_20260421_124534_6"
+    ],
+    "fix": [
+      "lrn_20260421_124534_5",
+      "lrn_20260421_124534_7",
+      "lrn_20260421_124534_9"
+    ],
+    "bug": [
+      "lrn_20260421_124534_8"
     ]
   },
   "by_context": {
@@ -17,10 +29,24 @@
       "lrn_20260421_124329_2"
     ],
     "score_optimization": [
-      "lrn_20260421_124329_1"
+      "lrn_20260421_124329_1",
+      "lrn_20260421_124534_7"
     ],
     "evolution": [
       "lrn_20260421_124329_3"
+    ],
+    "Ralph": [
+      "lrn_20260421_124534_4",
+      "lrn_20260421_124534_8"
+    ],
+    "event_bus": [
+      "lrn_20260421_124534_5"
+    ],
+    "cron_optimization": [
+      "lrn_20260421_124534_6"
+    ],
+    "error_handling": [
+      "lrn_20260421_124534_9"
     ]
   },
   "by_strategy": {
@@ -87,6 +113,84 @@
       "outcome": "success",
       "metadata": {},
       "timestamp": "2026-04-21T12:43:29.239131",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_4",
+      "source": "Sir HazeClaw",
+      "category": "insight",
+      "learning": "Ralph Learning never stops on score target - it should ONLY stop on novelty exhaustion",
+      "context": "Ralph",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.633236",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_5",
+      "source": "Sir HazeClaw",
+      "category": "fix",
+      "learning": "Consumer duplicates in Event Bus solved by tracking processed event IDs",
+      "context": "event_bus",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.669041",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_6",
+      "source": "Sir HazeClaw",
+      "category": "insight",
+      "learning": "Cron timeout should be 300s not 120s for isolated sessions - spawn overhead",
+      "context": "cron_optimization",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.701480",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_7",
+      "source": "Sir HazeClaw",
+      "category": "fix",
+      "learning": "Learning Loop Score 0.80 target was causing reward hacking - now fixed",
+      "context": "score_optimization",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.738960",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_8",
+      "source": "Sir HazeClaw",
+      "category": "bug",
+      "learning": "Ralph state sync bug - check_completion returned updated state but caller had separate copy",
+      "context": "Ralph",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.778386",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124534_9",
+      "source": "Sir HazeClaw",
+      "category": "fix",
+      "learning": "Bare except: causes silent failures - replaced with specific exception handlers",
+      "context": "error_handling",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:45:34.817038",
       "used": false,
       "useful": null
     }

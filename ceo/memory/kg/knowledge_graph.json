@@ -9414,6 +9414,60 @@
       "context": "evolution",
       "timestamp": "2026-04-21T12:43:29.239131",
       "fact_count": 1
+    },
+    "lrn_20260421_124534_4": {
+      "type": "Learning",
+      "category": "insight",
+      "source": "Sir HazeClaw",
+      "learning": "Ralph Learning never stops on score target - it should ONLY stop on novelty exhaustion",
+      "context": "Ralph",
+      "timestamp": "2026-04-21T12:45:34.633236",
+      "fact_count": 1
+    },
+    "lrn_20260421_124534_5": {
+      "type": "Learning",
+      "category": "fix",
+      "source": "Sir HazeClaw",
+      "learning": "Consumer duplicates in Event Bus solved by tracking processed event IDs",
+      "context": "event_bus",
+      "timestamp": "2026-04-21T12:45:34.669041",
+      "fact_count": 1
+    },
+    "lrn_20260421_124534_6": {
+      "type": "Learning",
+      "category": "insight",
+      "source": "Sir HazeClaw",
+      "learning": "Cron timeout should be 300s not 120s for isolated sessions - spawn overhead",
+      "context": "cron_optimization",
+      "timestamp": "2026-04-21T12:45:34.701480",
+      "fact_count": 1
+    },
+    "lrn_20260421_124534_7": {
+      "type": "Learning",
+      "category": "fix",
+      "source": "Sir HazeClaw",
+      "learning": "Learning Loop Score 0.80 target was causing reward hacking - now fixed",
+      "context": "score_optimization",
+      "timestamp": "2026-04-21T12:45:34.738960",
+      "fact_count": 1
+    },
+    "lrn_20260421_124534_8": {
+      "type": "Learning",
+      "category": "bug",
+      "source": "Sir HazeClaw",
+      "learning": "Ralph state sync bug - check_completion returned updated state but caller had separate copy",
+      "context": "Ralph",
+      "timestamp": "2026-04-21T12:45:34.778386",
+      "fact_count": 1
+    },
+    "lrn_20260421_124534_9": {
+      "type": "Learning",
+      "category": "fix",
+      "source": "Sir HazeClaw",
+      "learning": "Bare except: causes silent failures - replaced with specific exception handlers",
+      "context": "error_handling",
+      "timestamp": "2026-04-21T12:45:34.817038",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

@@ -489,3 +489,23 @@ if __name__ == "__main__":
     
     else:
         parser.print_help()
+
+# Heartbeat Integration
+def heartbeat_check():
+    """Called by heartbeat to review and act on learnings."""
+    ls = LearningsService()
+    
+    # Get insights for myself
+    ctx = ls.get_agent_context("Sir HazeClaw")
+    
+    # Log if there are new recommendations
+    if ctx.get('recommendations'):
+        print(f"💡 Learnings Insight: {ctx['recommendations'][0]}")
+    
+    # Get learnings I should act on
+    learnings = ls.get_relevant_learnings(context="decision", limit=3)
+    
+    return {
+        "new_insights": len(learnings),
+        "top_recommendations": ctx.get('recommendations', [])[:2],
+    }
