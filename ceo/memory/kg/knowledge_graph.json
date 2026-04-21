@@ -9387,6 +9387,33 @@
       "context": "pattern_matching",
       "timestamp": "2026-04-21T12:40:47.187889",
       "fact_count": 1
+    },
+    "lrn_20260421_124329_1": {
+      "type": "Learning",
+      "category": "success",
+      "source": "Ralph Learning",
+      "learning": "Higher learning rate improves score",
+      "context": "score_optimization",
+      "timestamp": "2026-04-21T12:43:29.165175",
+      "fact_count": 1
+    },
+    "lrn_20260421_124329_2": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Meta Learning",
+      "learning": "Pattern weights need frequent updates",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T12:43:29.195452",
+      "fact_count": 1
+    },
+    "lrn_20260421_124329_3": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene mutation rate 0.1 is optimal",
+      "context": "evolution",
+      "timestamp": "2026-04-21T12:43:29.239131",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

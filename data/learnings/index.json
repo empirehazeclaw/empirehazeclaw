@@ -1,17 +1,40 @@
 {
   "by_category": {
     "success": [
-      "lrn_20260421_124047_0"
+      "lrn_20260421_124047_0",
+      "lrn_20260421_124329_1"
+    ],
+    "pattern": [
+      "lrn_20260421_124329_2"
+    ],
+    "gene": [
+      "lrn_20260421_124329_3"
     ]
   },
   "by_context": {
     "pattern_matching": [
-      "lrn_20260421_124047_0"
+      "lrn_20260421_124047_0",
+      "lrn_20260421_124329_2"
+    ],
+    "score_optimization": [
+      "lrn_20260421_124329_1"
+    ],
+    "evolution": [
+      "lrn_20260421_124329_3"
     ]
   },
   "by_strategy": {
     "diversity": [
       "lrn_20260421_124047_0"
+    ],
+    "adaptive_lr": [
+      "lrn_20260421_124329_1"
+    ],
+    "dynamic_weights": [
+      "lrn_20260421_124329_2"
+    ],
+    "mutation_tuning": [
+      "lrn_20260421_124329_3"
     ]
   },
   "recent": [
@@ -27,9 +50,51 @@
       "timestamp": "2026-04-21T12:40:47.187889",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_124329_1",
+      "source": "Ralph Learning",
+      "category": "success",
+      "learning": "Higher learning rate improves score",
+      "context": "score_optimization",
+      "strategy": "adaptive_lr",
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:43:29.165175",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124329_2",
+      "source": "Meta Learning",
+      "category": "pattern",
+      "learning": "Pattern weights need frequent updates",
+      "context": "pattern_matching",
+      "strategy": "dynamic_weights",
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:43:29.195452",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_124329_3",
+      "source": "Capability Evolver",
+      "category": "gene",
+      "learning": "Gene mutation rate 0.1 is optimal",
+      "context": "evolution",
+      "strategy": "mutation_tuning",
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:43:29.239131",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
-    "diversity": 1
+    "diversity": 1,
+    "adaptive_lr": 1,
+    "dynamic_weights": 1,
+    "mutation_tuning": 1
   }
 }

@@ -57,7 +57,15 @@ class LearningsService:
         """Load or create learnings index."""
         if LEARNINGS_INDEX.exists():
             with open(LEARNINGS_INDEX) as f:
-                return json.load(f)
+                data = json.load(f)
+            # Convert to defaultdict for backwards compatibility
+            return {
+                "by_category": defaultdict(list, data.get("by_category", {})),
+                "by_context": defaultdict(list, data.get("by_context", {})),
+                "by_strategy": defaultdict(list, data.get("by_strategy", {})),
+                "recent": data.get("recent", []),
+                "strategy_effectiveness": data.get("strategy_effectiveness", {}),
+            }
         return {
             "by_category": defaultdict(list),
             "by_context": defaultdict(list),
