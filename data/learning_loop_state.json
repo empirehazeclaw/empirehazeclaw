@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 244,
-  "score": 0.503301731652834,
+  "iteration": 245,
+  "score": 0.506301731652834,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -266,7 +266,8 @@
     0.6081284304272052,
     0.5016846042585107,
     0.500301731652834,
-    0.503301731652834
+    0.503301731652834,
+    0.506301731652834
   ],
   "patterns": [
     {
@@ -294,7 +295,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 8,
+  "novelty_injections": 9,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
@@ -308,7 +309,7 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 0,
+  "consecutive_same_pattern": 1,
   "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
   "last_forced_novelty": null,
   "recently_forced_novelty": false,
@@ -328,7 +329,7 @@
     "tsr": 0.9756,
     "lpr": 0.0,
     "shs": 0.7832,
-    "eb": 0.535,
+    "eb": 0.555,
     "df": 0.15,
     "kg_health": 0.6253,
     "cron_success": 0.9412
@@ -337,7 +338,7 @@
     "tsr": 0.9756,
     "lpr": 0.0,
     "shs": 0.7832,
-    "eb": 0.535,
+    "eb": 0.555,
     "df": 0.15,
     "kg_health": 0.6253,
     "cron_success": 0.9412
