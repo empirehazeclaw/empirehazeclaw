@@ -327,7 +327,14 @@ class LearningsService:
             x["timestamp"]
         ), reverse=True)
         
-        return candidates[:limit]
+        # Add confidence scores to results
+        results = []
+        for l in candidates[:limit]:
+            l_with_conf = l.copy()
+            l_with_conf["confidence"] = self.get_confidence_score(l.get("id", ""))
+            results.append(l_with_conf)
+        
+        return results
     
     def get_strategy_insights(self) -> Dict[str, any]:
         """
@@ -665,6 +672,13 @@ if __name__ == "__main__":
     # Get insights
     sub.add_parser("insights", help="Get strategy insights")
     
+    # Prune old learnings
+    p = sub.add_parser("prune", help="Prune old learnings")
+    p.add_argument("--days", type=int, default=30)
+    
+    # Sync KG ↔ Learnings
+    sub.add_parser("sync-kg", help="Bidirectional KG ↔ Learnings sync")
+    
     args = parser.parse_args()
     
     if args.cmd == "record":
@@ -713,6 +727,25 @@ if __name__ == "__main__":
         print(f"\nUntested Strategies:")
         for s in insights['untested_strategies']:
             print(f"  - {s}")
+    
+    elif args.cmd == "prune":
+        days = getattr(args, 'days', 30)
+        print(f"Pruning learnings older than {days} days...")
+        result = ls.prune_old_learnings(days=days, dry_run=False)
+        print(f"Removed: {result['count']} learnings")
+        print(f"Remaining: {result['remaining']}")
+        if result.get('by_category'):
+            print("By category:")
+            for cat, cnt in dict(result['by_category']).items():
+                print(f"  {cat}: {cnt}")
+    
+    elif args.cmd == "sync-kg":
+        print("Syncing Learnings → KG...")
+        result = ls.sync_to_kg(dry_run=False)
+        print(f"Synced: {result}")
+        print("Syncing KG → Learnings...")
+        result = ls.sync_from_kg(dry_run=False)
+        print(f"Synced: {result}")
     
     else:
         parser.print_help()

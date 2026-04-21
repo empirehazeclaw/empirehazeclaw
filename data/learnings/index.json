@@ -107,7 +107,8 @@
     "health_issue": [
       "lrn_20260421_130608_35",
       "lrn_20260421_132608_45",
-      "lrn_20260421_134609_46"
+      "lrn_20260421_134609_46",
+      "lrn_20260421_140716_87"
     ]
   },
   "by_context": {
@@ -181,7 +182,8 @@
     "system_health": [
       "lrn_20260421_130608_35",
       "lrn_20260421_132608_45",
-      "lrn_20260421_134609_46"
+      "lrn_20260421_134609_46",
+      "lrn_20260421_140716_87"
     ],
     "consolidated": [
       "lrn_20260421_140100_47",
@@ -1372,6 +1374,19 @@
       "outcome": "failure",
       "metadata": {},
       "timestamp": "2026-04-21T14:05:09.412075",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_140716_87",
+      "source": "Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "resolved",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:07:16.219048",
       "used": false,
       "useful": null
     }
