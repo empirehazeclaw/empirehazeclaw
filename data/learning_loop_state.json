@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 261,
-  "score": 0.7877134146341463,
+  "iteration": 263,
+  "score": 0.787754854368932,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -279,7 +279,9 @@
     0.7997112625538019,
     0.8614329268292682,
     0.7877134146341463,
-    0.7877134146341463
+    0.7877134146341463,
+    0.7877134146341463,
+    0.787754854368932
   ],
   "patterns": [
     {
@@ -307,10 +309,12 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 25,
-  "novelty_score": 0.95,
+  "novelty_injections": 27,
+  "novelty_score": 0.8499999999999999,
   "novelty_history": [
-    1.0
+    1.0,
+    0.95,
+    0.8999999999999999
   ],
   "consecutive_novelty_low": 0,
   "consecutive_failures": 0,
@@ -326,9 +330,9 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 1,
-  "last_validated_pattern": "Apply proven pattern: Break score plateau with novel approach",
-  "last_forced_novelty": "2026-04-21T09:09:47.572038",
+  "consecutive_same_pattern": 0,
+  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
+  "last_forced_novelty": "2026-04-21T09:45:11.219624",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
@@ -343,7 +347,7 @@
   "last_update": "2026-04-18T04:04:06.205949Z",
   "total_improvements": 1,
   "multi_dim": {
-    "tsr": 0.9756,
+    "tsr": 0.9757,
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
@@ -353,7 +357,7 @@
     "cron_success": 0.9706
   },
   "_multi_dim": {
-    "tsr": 0.9756,
+    "tsr": 0.9757,
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,

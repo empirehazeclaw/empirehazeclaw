@@ -34,6 +34,8 @@ MAX_ITERATIONS_PER_GOAL = 20  # Safety limit
 SCORE_TARGET = 0.80  # Target score for completion
 SCORE_STABLE_THRESHOLD = 0.005  # Score variation threshold for stability
 STABLE_RUNS = 3  # Number of stable runs to confirm completion
+NOVELTY_FLOOR = 0.3  # Phase 2: Low novelty threshold
+NOVELTY_STABLE_RUNS = 3  # Phase 2: Consecutive low novelty to complete
 
 def log(msg):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -97,26 +99,49 @@ def parse_score(output):
     
     return None
 
-def check_completion(score):
-    """Check if Ralph Loop completion criteria are met."""
+def check_completion(score, novelty_score=None, consecutive_novelty_low=0):
+    """
+    Check if Ralph Loop completion criteria are met.
+    
+    Phase 3 (Ralph Completion): Two paths to completion:
+    1. SCORE PATH: Score >= 0.80 stable for 3 runs (traditional)
+    2. NOVELTY PATH: Novelty < 0.30 for 3 consecutive runs = "nothing new to learn"
+    
+    This is Ralph-style: completion promise signals "done" not score-target.
+    """
     if score is None:
         return False
     
     state = load_ralph_state()
     state["last_score"] = score
     
-    # Score target reached?
+    # PATH 1: Score target reached (traditional Ralph)
     if score >= SCORE_TARGET:
         state["stable_runs"] += 1
+        state["low_novelty_streak"] = 0  # Reset novelty streak on good score
         log(f"Stable run {state['stable_runs']}/{STABLE_RUNS} (score={score:.3f})")
         
         if state["stable_runs"] >= STABLE_RUNS:
             state["completed"] = True
-            # Note: caller saves state
+            log("COMPLETE via SCORE PATH!")
             return True
     else:
         state["stable_runs"] = 0
         log(f"Score {score:.3f} < target {SCORE_TARGET}, reset stable_runs")
+    
+    # PATH 2: Novelty-based completion (Ralph-style)
+    # If novelty is LOW for too long, we've exhausted learning opportunities
+    if novelty_score is not None and novelty_score < NOVELTY_FLOOR:
+        state["low_novelty_streak"] = state.get("low_novelty_streak", 0) + 1
+        log(f"Low novelty streak: {state['low_novelty_streak']}/{NOVELTY_STABLE_RUNS} (novelty={novelty_score:.2f})")
+        
+        if state["low_novelty_streak"] >= NOVELTY_STABLE_RUNS:
+            state["completed"] = True
+            log("COMPLETE via NOVELTY PATH! (nothing new to learn)")
+            append_learning("novelty_completion", f"Completed via novelty path after {state['iterations']} iterations")
+            return True
+    else:
+        state["low_novelty_streak"] = 0
     
     # Note: caller saves state via run_ralph_cycle
     return False
@@ -151,8 +176,17 @@ def run_ralph_cycle():
             for imp in improvements[:3]:
                 append_learning("improvement", imp.strip())
         
-        # Check completion
-        if check_completion(score):
+        # Phase 3: Get novelty data from state file
+        state_file = WORKSPACE / "data/learning_loop_state.json"
+        novelty_score = None
+        consecutive_novelty_low = 0
+        if state_file.exists():
+            ll_state = json.loads(state_file.read_text())
+            novelty_score = ll_state.get("novelty_score", 1.0)
+            consecutive_novelty_low = ll_state.get("consecutive_novelty_low", 0)
+        
+        # Check completion (Phase 3: supports both score and novelty paths)
+        if check_completion(score, novelty_score, consecutive_novelty_low):
             log("COMPLETE! Ralph Loop succeeded.")
             append_learning("success", f"Completed after {state['iterations']} iterations (score={score:.3f})")
             print(f"\n{RALPH_MARKER}\n")
@@ -189,12 +223,16 @@ def main():
     
     if "--check" in sys.argv:
         score = None
+        novelty_score = None
+        consecutive_novelty_low = 0
         state_file = WORKSPACE / "data/learning_loop_state.json"
         if state_file.exists():
             state = json.loads(state_file.read_text())
             score = state.get("score", 0)
+            novelty_score = state.get("novelty_score", 1.0)
+            consecutive_novelty_low = state.get("consecutive_novelty_low", 0)
         
-        if check_completion(score):
+        if check_completion(score, novelty_score, consecutive_novelty_low):
             print(RALPH_MARKER)
             print("Status: COMPLETE")
         else:
