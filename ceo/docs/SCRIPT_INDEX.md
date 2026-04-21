@@ -162,3 +162,14 @@
 | `evolver_signal_bridge.py` | Evolver ↔ Loop signal bridge |
 | `learning_to_kg_sync.py` | Learning → KG synchronization |
 
+
+## Learnings & Feedback
+
+| Script | Purpose |
+|--------|---------|
+| `learnings_service.py` | Unified Learnings API (Single Source of Truth) |
+| `sir_hazeclaw_learnings.py` | My personal learnings review agent |
+| `ralph_learning_loop.py` | Ralph Learning with learnings integration |
+| `learning_to_kg_sync.py` | Syncs learnings to Knowledge Graph |
+
+
