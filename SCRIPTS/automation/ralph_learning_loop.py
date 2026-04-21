@@ -33,6 +33,13 @@ RALPH_MARKER = "<promise>COMPLETE</promise>"
 MAX_ITERATIONS_PER_GOAL = 50  # Safety limit
 SCORE_TARGET = 0.70  # Target score for completion
 SCORE_STABLE_THRESHOLD = 0.005  # Score variation threshold for stability
+
+# Learnings Service
+sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None  # Fallback
 STABLE_RUNS = 3  # Number of stable runs to confirm completion
 NOVELTY_FLOOR = 0.3  # Phase 2: Low novelty threshold
 NOVELTY_STABLE_RUNS = 3  # Phase 2: Consecutive low novelty to complete
@@ -57,7 +64,7 @@ def save_ralph_state(state):
     RALPH_STATE.write_text(json.dumps(state, indent=2))
 
 def append_learning(category, finding):
-    """Append a learning to the ralph learnings file."""
+    """Append a learning to the ralph learnings file AND to Learnings Service."""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     entry = f"- [{timestamp}] [{category}] {finding}"
     
@@ -69,6 +76,22 @@ def append_learning(category, finding):
     content += entry + "\n"
     RALPH_LEARNINGS.write_text(content)
     log(f"Learning: [{category}] {finding[:80]}...")
+    
+    # Also record to Learnings Service for other systems to use
+    if LearningsService:
+        try:
+            ls = LearningsService()
+            # Determine outcome from category
+            outcome = "success" if category == "success" else "failure" if category == "error" else None
+            ls.record_learning(
+                source="Ralph Learning",
+                category=category,
+                learning=finding,
+                context="learning_optimization",
+                outcome=outcome
+            )
+        except Exception as e:
+            log(f"Warning: Failed to record to Learnings Service: {e}")
 
 def run_learning_loop():
     """Run the actual learning loop (v3)."""

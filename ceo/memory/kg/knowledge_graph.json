@@ -9353,6 +9353,40 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-21T12:06:03.699871+00:00"
+    },
+    "LearningPattern_pattern_20260421_122901": {
+      "id": "LearningPattern_pattern_20260421_122901",
+      "type": "LearningPattern",
+      "name": "pattern_20260421_122901",
+      "description": "Fix: Score plateau detected: range=0.0023, latest=0.560",
+      "error_type": "learning_plateau",
+      "solution": "Applied improvement: Fix: Score plateau detected: range=0.0023, latest=0.560",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-21T12:29:01.197971",
+      "last_validated": "2026-04-21T12:29:01.197974",
+      "created_at": "2026-04-21T12:35:58.892903+00:00"
+    },
+    "Improvement_2026-04-21T12-29-01-201338_Fix:-Score-plateau-detected:-r": {
+      "id": "Improvement_2026-04-21T12-29-01-201338_Fix:-Score-plateau-detected:-r",
+      "type": "Improvement",
+      "name": "Fix: Score plateau detected: range=0.0023, latest=0.560",
+      "description": "Fix: Score plateau detected: range=0.0023, latest=0.560",
+      "validated": true,
+      "timestamp": "2026-04-21T12:29:01.201338",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T12:35:58.893080+00:00"
+    },
+    "lrn_20260421_124047_0": {
+      "type": "Learning",
+      "category": "success",
+      "source": "Ralph Learning",
+      "learning": "Score improved when pattern diversity is high",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T12:40:47.187889",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",
@@ -47291,6 +47325,30 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T12:06:03.700067+00:00"
+    },
+    "1038": {
+      "id": 1038,
+      "from": "LearningPattern_pattern_20260421_122901",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-21T12:35:58.893056+00:00"
+    },
+    "1039": {
+      "id": 1039,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T12-29-01-201338_Fix:-Score-plateau-detected:-r",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T12:35:58.893200+00:00"
+    },
+    "1040": {
+      "id": 1040,
+      "from": "Improvement_2026-04-21T12-29-01-201338_Fix:-Score-plateau-detected:-r",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T12:35:58.893291+00:00"
     }
   }
 }

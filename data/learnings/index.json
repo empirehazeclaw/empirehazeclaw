@@ -1,0 +1,35 @@
+{
+  "by_category": {
+    "success": [
+      "lrn_20260421_124047_0"
+    ]
+  },
+  "by_context": {
+    "pattern_matching": [
+      "lrn_20260421_124047_0"
+    ]
+  },
+  "by_strategy": {
+    "diversity": [
+      "lrn_20260421_124047_0"
+    ]
+  },
+  "recent": [
+    {
+      "id": "lrn_20260421_124047_0",
+      "source": "Ralph Learning",
+      "category": "success",
+      "learning": "Score improved when pattern diversity is high",
+      "context": "pattern_matching",
+      "strategy": "diversity",
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:40:47.187889",
+      "used": false,
+      "useful": null
+    }
+  ],
+  "strategy_effectiveness": {
+    "diversity": 1
+  }
+}

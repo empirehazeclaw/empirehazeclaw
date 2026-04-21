@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 313,
-  "score": 0.562004854368932,
+  "iteration": 320,
+  "score": 0.7328344979190845,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -331,7 +331,14 @@
     0.5597134146341464,
     0.5597134146341464,
     0.5597134146341464,
-    0.562004854368932
+    0.562004854368932,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.562004854368932,
+    0.5597134146341464,
+    0.6367071478900476,
+    0.7328344979190845
   ],
   "patterns": [
     {
@@ -359,7 +366,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 77,
+  "novelty_injections": 84,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -405,8 +412,8 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Analyze error patterns, predict 1 specific upcoming error",
-  "last_forced_novelty": "2026-04-21T12:25:40.029990",
+  "last_validated_pattern": "[Exploration] Find 1 entity with missing relations, add them",
+  "last_forced_novelty": "2026-04-21T12:28:55.384656",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
@@ -421,25 +428,25 @@
   "last_update": "2026-04-18T04:04:06.205949Z",
   "total_improvements": 1,
   "multi_dim": {
-    "tsr": 0.9757,
-    "lpr": 0.0,
-    "eb": 0.59,
+    "tsr": 0.9756,
+    "lpr": 0.6925,
+    "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9714,
+    "dq_raw": 0.9847,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 1.0,
-    "cron_success": 0.9429
+    "kg_health": 0.998,
+    "cron_success": 0.9714
   },
   "_multi_dim": {
-    "tsr": 0.9757,
-    "lpr": 0.0,
-    "eb": 0.59,
+    "tsr": 0.9756,
+    "lpr": 0.6925,
+    "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9714,
+    "dq_raw": 0.9847,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 1.0,
-    "cron_success": 0.9429
+    "kg_health": 0.998,
+    "cron_success": 0.9714
   }
 }

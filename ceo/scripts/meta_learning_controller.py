@@ -24,6 +24,13 @@ LEARNING_SIGNAL = WORKSPACE / 'memory/evaluations/learning_loop_signal.json'
 OUTPUT_DIR = WORKSPACE / 'memory/meta_learning'
 EVENT_BUS = PARENT_WORKSPACE / 'SCRIPTS/automation/event_bus.py'
 
+# Learnings Service
+sys.path.insert(0, str(PARENT_WORKSPACE / 'SCRIPTS/automation'))
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None  # Fallback if not available
+
 
 class MetaLearningController:
     """Orchestrates meta-learning cycles."""
@@ -32,7 +39,35 @@ class MetaLearningController:
         self.patterns = []
         self.tasks = []
         self.signal = {}
+        self.learnings = LearningsService() if LearningsService else None
         self.load_data()
+    
+    def get_learning_context(self) -> dict:
+        """Get learnings relevant for Meta Learning decisions."""
+        if not self.learnings:
+            return {"learnings": [], "strategy_insights": {}}
+        
+        # Get learnings for meta learning
+        context = self.learnings.get_context_for_task("pattern_matching")
+        
+        # Record that we're using these learnings
+        for l in context.get("learnings", []):
+            self.learnings.mark_learning_used(l["id"])
+        
+        return context
+    
+    def record_meta_learning(self, pattern: dict, outcome: str):
+        """Record a meta learning result."""
+        if not self.learnings:
+            return
+        
+        self.learnings.record_learning(
+            source="Meta Learning",
+            category="pattern",
+            learning=f"Pattern {pattern.get('trigger')} -> {outcome}",
+            context="pattern_matching",
+            outcome=outcome
+        )
     
     def load_data(self):
         """Load required data."""
