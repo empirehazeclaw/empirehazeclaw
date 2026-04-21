@@ -471,11 +471,16 @@ class AutonomySupervisor:
         entities_with_issues = []
         for name, entity in entities_list:
             for fact in entity.get("facts", []):
-                content = fact.get("content", "").lower()
+                if isinstance(fact, dict):
+                    content = fact.get("content", "").lower()
+                    fact_content = fact.get("content", "")
+                else:
+                    content = str(fact).lower()
+                    fact_content = str(fact)
                 if any(kw in content for kw in issue_keywords):
                     entities_with_issues.append({
                         "entity": name,
-                        "fact": fact.get("content", "")[:100],
+                        "fact": fact_content[:100],
                         "access_count": entity.get("access_count", 0)
                     })
                     break  # Only count entity once

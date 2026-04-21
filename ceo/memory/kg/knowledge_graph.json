@@ -9913,6 +9913,375 @@
       "facts": [
         "Source: KG Consolidation"
       ]
+    },
+    "lrn_20260421_132608_45": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T13:26:08.299206",
+      "fact_count": 1
+    },
+    "lrn_20260421_134609_46": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T13:46:09.780864",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_47": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260420_163745",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.232670",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_48": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260420_170449",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.284235",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_49": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260420_191239",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.331730",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_50": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260420_204530",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.377237",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_51": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260421_090457",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.423233",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_52": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260421_120603",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.475004",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_53": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260421_122901",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.527786",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_54": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: pattern_20260421_130504",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.573633",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_55": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern weights need frequent updates | Source: Meta Learning",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.617622",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_56": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Ralph Learning never stops on score target - it should ONLY stop on novelty exhaustion | Context: Ralph",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.664584",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_57": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Cron timeout should be 300s not 120s for isolated sessions - spawn overhead | Context: cron_optimization",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.711424",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_58": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: .ipull = HuggingFace temporary download format, bedeutet unvollst\u00e4ndiger Download | Context: system_config",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.777434",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_59": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: QMD l\u00e4uft mit `qmd search` (BM25) auch ohne Query Expansion model - 1.2GB gespart | Context: system_config",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.820486",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_60": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Cron 'error' Status heisst NICHT Script kaputt - nur letzter Run tempor\u00e4r fehlgeschlagen | Context: cron_health",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.861979",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_61": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260420_163745 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.905624",
+      "fact_count": 1
+    },
+    "lrn_20260421_140100_62": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260420_163745 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:00.951347",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_63": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260420_170449 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.001811",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_64": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260420_191239 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.044478",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_65": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260420_204530 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.087750",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_66": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260421_090457 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.131332",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_67": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260421_120603 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.174780",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_68": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260421_122901 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.220329",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_69": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern from KG: pattern_20260421_130504 | Source: KG Consolidation",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.260837",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_70": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_score_update:learning_loop | Appearances: 45 in last 24h | First seen: 2026-04-21T14:01:00.183258",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.305972",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_71": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_score_update | Appearances: 45 in last 24h | First seen: 2026-04-21T14:01:00.183270",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.345863",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_72": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_cycle_completed:learning_loop | Appearances: 45 in last 24h | First seen: 2026-04-21T14:01:00.183287",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.393637",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_73": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_cycle_completed | Appearances: 45 in last 24h | First seen: 2026-04-21T14:01:00.183294",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.435702",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_74": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_issues_detected:learning_loop | Appearances: 20 in last 24h | First seen: 2026-04-21T14:01:00.183304",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.479829",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_75": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_issues_detected | Appearances: 20 in last 24h | First seen: 2026-04-21T14:01:00.183311",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.523323",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_76": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_patterns_update:learning_loop | Appearances: 16 in last 24h | First seen: 2026-04-21T14:01:00.183318",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.569541",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_77": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_patterns_update | Appearances: 16 in last 24h | First seen: 2026-04-21T14:01:00.183324",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.612515",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_78": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: evolver_completed:capability_evolver | Appearances: 10 in last 24h | First seen: 2026-04-21T14:01:00.183330",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.658647",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_79": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: evolver_completed | Appearances: 10 in last 24h | First seen: 2026-04-21T14:01:00.183340",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.704449",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_80": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: meta_pattern_weights_updated:meta_controller | Appearances: 13 in last 24h | First seen: 2026-04-21T14:01:00.183347",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.750309",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_81": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: meta_pattern_weights_updated | Appearances: 13 in last 24h | First seen: 2026-04-21T14:01:00.183397",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.798097",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_82": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_meta_feedback:learning_loop | Appearances: 9 in last 24h | First seen: 2026-04-21T14:01:00.183403",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.844363",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_83": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: learning_meta_feedback | Appearances: 9 in last 24h | First seen: 2026-04-21T14:01:00.183409",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.889714",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_84": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: meta_insight_generated:meta_controller | Appearances: 24 in last 24h | First seen: 2026-04-21T14:01:00.183415",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.937951",
+      "fact_count": 1
+    },
+    "lrn_20260421_140101_85": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "Consolidation Engine",
+      "learning": "From KG: Pattern: meta_insight_generated | Appearances: 24 in last 24h | First seen: 2026-04-21T14:01:00.183421",
+      "context": "consolidated",
+      "timestamp": "2026-04-21T14:01:01.998347",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",
