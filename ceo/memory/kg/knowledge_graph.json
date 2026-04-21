@@ -10622,6 +10622,85 @@
       "context": "testing",
       "timestamp": "2026-04-21T14:47:49.795184",
       "fact_count": 1
+    },
+    "LearningPattern_pattern_20260421_150410": {
+      "id": "LearningPattern_pattern_20260421_150410",
+      "type": "LearningPattern",
+      "name": "pattern_20260421_150410",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "error_type": "kg_quality",
+      "solution": "Applied improvement: Reduce KG orphans: add relations to disconnected entities",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-21T15:04:10.881183",
+      "last_validated": "2026-04-21T15:04:10.881187",
+      "created_at": "2026-04-21T15:04:11.182550+00:00"
+    },
+    "Improvement_2026-04-21T15-04-10-882778_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-21T15-04-10-882778_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-21T15:04:10.882778",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T15:04:11.182810+00:00"
+    },
+    "lrn_20260421_150434_113": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-21T15:04:34.071648",
+      "fact_count": 1
+    },
+    "lrn_20260421_150718_114": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T15:07:18.272751",
+      "fact_count": 1
+    },
+    "lrn_20260421_150718_115": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T15:07:18.314042",
+      "fact_count": 1
+    },
+    "lrn_20260421_150718_116": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Capability Evolver] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T15:07:18.351888",
+      "fact_count": 1
+    },
+    "lrn_20260421_150718_117": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T15:07:18.387029",
+      "fact_count": 1
+    },
+    "lrn_20260421_150718_118": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T15:07:18.419605",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",
@@ -48632,6 +48711,30 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T14:04:44.140535+00:00"
+    },
+    "1047": {
+      "id": 1047,
+      "from": "LearningPattern_pattern_20260421_150410",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-21T15:04:11.182782+00:00"
+    },
+    "1048": {
+      "id": 1048,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T15-04-10-882778_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T15:04:11.182958+00:00"
+    },
+    "1049": {
+      "id": 1049,
+      "from": "Improvement_2026-04-21T15-04-10-882778_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T15:04:11.183113+00:00"
     }
   }
 }

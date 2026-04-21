@@ -1,0 +1,83 @@
+#!/bin/bash
+# GitHub Backup Script
+# Commits and pushes workspace changes to GitHub
+# Run: 0 23 * * * bash /home/clawbot/.openclaw/workspace/scripts/github_backup.sh
+
+set -e
+
+WORKSPACE="/home/clawbot/.openclaw/workspace"
+GIT_DIR="$WORKSPACE/.git"
+REMOTE="origin"
+
+cd "$WORKSPACE"
+
+# Clean up old rollback backups (they contain API keys and are too large)
+if [ -d "ceo/_backup_rollbacks" ]; then
+    echo "🧹 Cleaning up old rollback backups..."
+    rm -rf ceo/_backup_rollbacks/* 2>/dev/null || true
+fi
+
+# Get current branch
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+# Check if git repo exists
+if [ ! -d "$GIT_DIR" ]; then
+    echo "❌ Not a git repository. Run: cd $WORKSPACE && git init"
+    exit 1
+fi
+
+# Configure git (if needed)
+git config user.email "clawbot@empirehazeclaw.com" 2>/dev/null || true
+git config user.name "ClawBot" 2>/dev/null || true
+
+# Find all files to add (exclude archives, node_modules, sqlite, logs, backups)
+# Use find to get the list, then filter with grep -v
+FILES=$(find . -type f \
+    ! -path "./.git/*" \
+    ! -path "./archive/*" \
+    ! -path "./.archive/*" \
+    ! -path "./node_modules/*" \
+    ! -path "./skills/semantic-search/node_modules/*" \
+    ! -path "./ceo/_backup_rollbacks/*" \
+    ! -path "./ceo/_backup_rollbacks/*/*" \
+    ! -path "./ceo/_backup_rollbacks/*/*/*" \
+    ! -path "*/_backup_rollbacks/*" \
+    ! -path "*/backup/*" \
+    ! -path "*/backups/*" \
+    ! -path "*/.backup/*" \
+    ! -path "./.backup*" \
+    ! -name "*_backup_*" \
+    ! -name "*.backup*" \
+    ! -name "*.sqlite" \
+    ! -name "*.sqlite.backup*" \
+    ! -path "./logs/*" \
+    ! -path "./.logs/*" \
+    ! -path "./secrets/*" \
+    ! -path "./.secrets" \
+    ! -name "*.log" \
+    ! -name ".DS_Store" \
+    2>/dev/null)
+
+# Check if there are files to add
+if [ -z "$FILES" ]; then
+    echo "✅ No files to commit"
+    exit 0
+fi
+
+# Add all tracked + new files
+echo "$FILES" | xargs git add -- 2>/dev/null || true
+
+# Check if there are changes
+if git diff --staged --quiet 2>/dev/null; then
+    echo "✅ No changes to commit"
+    exit 0
+fi
+
+# Commit with timestamp (skip pre-commit hook for backups)
+TIMESTAMP=$(date -u "+%Y-%m-%d %H:%M UTC")
+git commit -m "Auto-backup: $TIMESTAMP" --no-verify
+
+# Push to GitHub
+git push "$REMOTE" "$BRANCH" 2>&1
+
+echo "✅ GitHub backup complete: $TIMESTAMP"

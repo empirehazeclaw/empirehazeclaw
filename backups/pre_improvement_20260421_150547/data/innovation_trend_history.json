@@ -1,0 +1,22 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2026-04-19T14:54:24.227662",
+      "entity_growth": {
+        "recent_new": 49,
+        "total": 473,
+        "growth_rate": 0.10359408033826638,
+        "period_days": 7
+      },
+      "top_types": {
+        "Improvement": 96,
+        "success_pattern": 58,
+        "topic": 47,
+        "research": 37,
+        "error_pattern": 20
+      },
+      "rising_topic_count": 1
+    }
+  ],
+  "last_updated": "2026-04-19T14:54:24.227681"
+}

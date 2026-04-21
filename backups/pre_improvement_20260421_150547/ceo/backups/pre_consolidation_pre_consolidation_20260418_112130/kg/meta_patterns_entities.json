@@ -1,0 +1,328 @@
+{
+  "entities": [
+    {
+      "id": "meta_pattern_000",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to health_agent show consistent su",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"health_agent\"}",
+        "action": "{\"approach\": \"delegate_to_health_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "matching_tasks": 104,
+        "sample_task_ids": [
+          1,
+          3,
+          4,
+          5,
+          8
+        ],
+        "discovered_at": "2026-04-18T11:20:25.290346"
+      },
+      "relations": [
+        {
+          "type": "improves",
+          "target": "agent:health_agent"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_001",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to research_agent show consistent ",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"research_agent\"}",
+        "action": "{\"approach\": \"delegate_to_research_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "matching_tasks": 4,
+        "sample_task_ids": [
+          2,
+          7,
+          81,
+          86
+        ],
+        "discovered_at": "2026-04-18T11:20:25.291120"
+      },
+      "relations": [
+        {
+          "type": "improves",
+          "target": "agent:research_agent"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_002",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to data_agent show consistent succ",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"data_agent\"}",
+        "action": "{\"approach\": \"delegate_to_data_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "matching_tasks": 98,
+        "sample_task_ids": [
+          6,
+          9,
+          11,
+          12,
+          15
+        ],
+        "discovered_at": "2026-04-18T11:20:25.291918"
+      },
+      "relations": [
+        {
+          "type": "improves",
+          "target": "agent:data_agent"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_003",
+      "type": "meta_pattern",
+      "name": "health_check tasks perform well with their dedicat",
+      "properties": {
+        "trigger": "{\"subtype\": \"health_check\"}",
+        "action": "{\"approach\": \"health_check_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": true,
+        "matching_tasks": 84,
+        "sample_task_ids": [
+          80,
+          82,
+          83,
+          84,
+          87
+        ],
+        "discovered_at": "2026-04-18T11:20:25.292717"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_004",
+      "type": "meta_pattern",
+      "name": "learning_sync tasks perform well with their dedica",
+      "properties": {
+        "trigger": "{\"subtype\": \"learning_sync\"}",
+        "action": "{\"approach\": \"learning_sync_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.1,
+        "cross_task_valid": false,
+        "matching_tasks": 61,
+        "sample_task_ids": [
+          85,
+          88,
+          90,
+          91,
+          94
+        ],
+        "discovered_at": "2026-04-18T11:20:25.293487"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_005",
+      "type": "meta_pattern",
+      "name": "subagent_task tasks perform well with their dedica",
+      "properties": {
+        "trigger": "{\"subtype\": \"subagent_task\"}",
+        "action": "{\"approach\": \"subagent_task_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.1,
+        "cross_task_valid": false,
+        "matching_tasks": 79,
+        "sample_task_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "discovered_at": "2026-04-18T11:20:25.294268"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_006",
+      "type": "meta_pattern",
+      "name": "Fast tasks (<60s) have highest success with direct",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"fast\"}",
+        "action": "{\"approach\": \"fast_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 1.0,
+        "cross_task_valid": true,
+        "matching_tasks": 154,
+        "sample_task_ids": [
+          4,
+          5,
+          6,
+          7,
+          14
+        ],
+        "discovered_at": "2026-04-18T11:20:25.295037"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_007",
+      "type": "meta_pattern",
+      "name": "Medium tasks (<60s) have highest success with dire",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"medium\"}",
+        "action": "{\"approach\": \"medium_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.3,
+        "cross_task_valid": false,
+        "matching_tasks": 130,
+        "sample_task_ids": [
+          3,
+          8,
+          9,
+          10,
+          11
+        ],
+        "discovered_at": "2026-04-18T11:20:25.295842"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_008",
+      "type": "meta_pattern",
+      "name": "Slow tasks (>5min) may benefit from more monitorin",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"slow\"}",
+        "action": "{\"approach\": \"monitored_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.3,
+        "cross_task_valid": false,
+        "matching_tasks": 4,
+        "sample_task_ids": [
+          1,
+          2,
+          80,
+          81
+        ],
+        "discovered_at": "2026-04-18T11:20:25.296612"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_009",
+      "type": "meta_pattern",
+      "name": "Direct execution works well for main-agent tasks",
+      "properties": {
+        "trigger": "{\"delegated_to\": null}",
+        "action": "{\"approach\": \"direct_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.7,
+        "cross_task_valid": false,
+        "matching_tasks": 82,
+        "sample_task_ids": [
+          159,
+          160,
+          161,
+          162,
+          163
+        ],
+        "discovered_at": "2026-04-18T11:20:25.297343"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_010",
+      "type": "meta_pattern",
+      "name": "subagent_task tasks (206) work best with delegated",
+      "properties": {
+        "trigger": "{\"task_type\": \"subagent_task\"}",
+        "action": "{}",
+        "success_rate": 100.0,
+        "generalization_score": 1.0,
+        "cross_task_valid": true,
+        "matching_tasks": 206,
+        "sample_task_ids": [],
+        "discovered_at": "2026-04-18T11:20:25.301373"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_011",
+      "type": "meta_pattern",
+      "name": "main_session tasks (82) work best with direct exec",
+      "properties": {
+        "trigger": "{\"task_type\": \"main_session\"}",
+        "action": "{}",
+        "success_rate": 100.0,
+        "generalization_score": 1.0,
+        "cross_task_valid": true,
+        "matching_tasks": 82,
+        "sample_task_ids": [],
+        "discovered_at": "2026-04-18T11:20:25.301379"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task"
+        }
+      ]
+    },
+    {
+      "id": "meta_pattern_012",
+      "type": "meta_pattern",
+      "name": "Priority Medium priority tasks: 288 samples, 100% ",
+      "properties": {
+        "trigger": "{\"priority\": \"MEDIUM\"}",
+        "action": "{}",
+        "success_rate": 100.0,
+        "generalization_score": 0.8,
+        "cross_task_valid": false,
+        "matching_tasks": 288,
+        "sample_task_ids": [],
+        "discovered_at": "2026-04-18T11:20:25.301404"
+      },
+      "relations": []
+    },
+    {
+      "id": "meta_pattern_013",
+      "type": "meta_pattern",
+      "name": "Fast delegated tasks (<60s): 72 samples, 100% succ",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"fast\", \"delegated\": true}",
+        "action": "{}",
+        "success_rate": 100.0,
+        "generalization_score": 1.0,
+        "cross_task_valid": true,
+        "matching_tasks": 72,
+        "sample_task_ids": [],
+        "discovered_at": "2026-04-18T11:20:25.301410"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-04-18T11:20:25.301491",
+  "total": 14
+}

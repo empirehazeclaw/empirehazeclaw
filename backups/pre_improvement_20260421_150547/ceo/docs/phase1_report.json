@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-04-18T11:11:56.220239+00:00",
+  "components": {},
+  "metrics": {
+    "total_failures": 6,
+    "by_severity": "low",
+    "total_postmortems": 6,
+    "contrastive_pairs": 0,
+    "causal_chains": 8
+  },
+  "status": "\u2705 COMPLETE"
+}

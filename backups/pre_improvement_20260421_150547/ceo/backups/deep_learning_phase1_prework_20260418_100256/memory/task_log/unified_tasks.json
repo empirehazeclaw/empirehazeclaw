@@ -1,0 +1,3541 @@
+{
+  "tasks": [
+    {
+      "task_id": 1,
+      "timestamp": "2026-04-18T04:52:11.319000",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_1",
+        "delegated_to": "health_agent",
+        "duration_ms": 2436859,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 2,
+      "timestamp": "2026-04-18T04:52:11.319498",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "research by research_agent",
+      "metadata": {
+        "task_id": "task_2",
+        "delegated_to": "research_agent",
+        "duration_ms": 2433607,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 3,
+      "timestamp": "2026-04-18T04:52:11.319862",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_5",
+        "delegated_to": "health_agent",
+        "duration_ms": 155826,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 4,
+      "timestamp": "2026-04-18T04:52:11.320329",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_6",
+        "delegated_to": "health_agent",
+        "duration_ms": 47913,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 5,
+      "timestamp": "2026-04-18T04:52:11.320714",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "test_1",
+        "delegated_to": "health_agent",
+        "duration_ms": 0,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 6,
+      "timestamp": "2026-04-18T04:52:11.321245",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "test_2",
+        "delegated_to": "data_agent",
+        "duration_ms": 0,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 7,
+      "timestamp": "2026-04-18T04:52:11.321617",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "research by research_agent",
+      "metadata": {
+        "task_id": "test_3",
+        "delegated_to": "research_agent",
+        "duration_ms": 0,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 8,
+      "timestamp": "2026-04-18T04:52:11.322041",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_8",
+        "delegated_to": "health_agent",
+        "duration_ms": 65573,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 9,
+      "timestamp": "2026-04-18T04:52:11.322391",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_9",
+        "delegated_to": "data_agent",
+        "duration_ms": 65611,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 10,
+      "timestamp": "2026-04-18T04:52:11.322791",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_10",
+        "delegated_to": "health_agent",
+        "duration_ms": 187564,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 11,
+      "timestamp": "2026-04-18T04:52:11.323264",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_11",
+        "delegated_to": "data_agent",
+        "duration_ms": 187591,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 12,
+      "timestamp": "2026-04-18T04:52:11.323645",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_12",
+        "delegated_to": "data_agent",
+        "duration_ms": 61257,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 13,
+      "timestamp": "2026-04-18T04:52:11.323980",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_13",
+        "delegated_to": "health_agent",
+        "duration_ms": 61374,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 14,
+      "timestamp": "2026-04-18T04:52:11.324365",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_14",
+        "delegated_to": "health_agent",
+        "duration_ms": 17715,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 15,
+      "timestamp": "2026-04-18T04:52:11.325068",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_15",
+        "delegated_to": "data_agent",
+        "duration_ms": 17742,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 16,
+      "timestamp": "2026-04-18T04:52:11.325521",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_16",
+        "delegated_to": "data_agent",
+        "duration_ms": 70512,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 17,
+      "timestamp": "2026-04-18T04:52:11.325968",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_17",
+        "delegated_to": "health_agent",
+        "duration_ms": 70660,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 18,
+      "timestamp": "2026-04-18T04:52:11.326419",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_18",
+        "delegated_to": "data_agent",
+        "duration_ms": 213529,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 19,
+      "timestamp": "2026-04-18T04:52:11.326858",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_19",
+        "delegated_to": "health_agent",
+        "duration_ms": 213659,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 20,
+      "timestamp": "2026-04-18T04:52:11.327320",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_20",
+        "delegated_to": "data_agent",
+        "duration_ms": 37743,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 21,
+      "timestamp": "2026-04-18T04:52:11.327738",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_21",
+        "delegated_to": "health_agent",
+        "duration_ms": 37888,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 22,
+      "timestamp": "2026-04-18T04:52:11.328246",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_22",
+        "delegated_to": "health_agent",
+        "duration_ms": 232343,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 23,
+      "timestamp": "2026-04-18T04:52:11.328686",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_23",
+        "delegated_to": "data_agent",
+        "duration_ms": 232388,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 24,
+      "timestamp": "2026-04-18T04:52:11.329272",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_24",
+        "delegated_to": "health_agent",
+        "duration_ms": 61651,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 25,
+      "timestamp": "2026-04-18T04:52:11.329746",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_25",
+        "delegated_to": "data_agent",
+        "duration_ms": 61697,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 26,
+      "timestamp": "2026-04-18T04:52:11.330236",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_26",
+        "delegated_to": "health_agent",
+        "duration_ms": 14436,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 27,
+      "timestamp": "2026-04-18T04:52:11.330746",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_27",
+        "delegated_to": "data_agent",
+        "duration_ms": 14473,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 28,
+      "timestamp": "2026-04-18T04:52:11.331204",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_28",
+        "delegated_to": "data_agent",
+        "duration_ms": 15605,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 29,
+      "timestamp": "2026-04-18T04:52:11.331710",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_29",
+        "delegated_to": "health_agent",
+        "duration_ms": 15730,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 30,
+      "timestamp": "2026-04-18T04:52:11.332199",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_30",
+        "delegated_to": "data_agent",
+        "duration_ms": 174106,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 31,
+      "timestamp": "2026-04-18T04:52:11.332737",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_31",
+        "delegated_to": "health_agent",
+        "duration_ms": 174234,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 32,
+      "timestamp": "2026-04-18T04:52:11.333311",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_32",
+        "delegated_to": "data_agent",
+        "duration_ms": 37297,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 33,
+      "timestamp": "2026-04-18T04:52:11.333939",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_33",
+        "delegated_to": "health_agent",
+        "duration_ms": 37431,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 34,
+      "timestamp": "2026-04-18T04:52:11.334475",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_34",
+        "delegated_to": "health_agent",
+        "duration_ms": 19058,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 35,
+      "timestamp": "2026-04-18T04:52:11.335105",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_35",
+        "delegated_to": "data_agent",
+        "duration_ms": 19088,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 36,
+      "timestamp": "2026-04-18T04:52:11.335763",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_36",
+        "delegated_to": "data_agent",
+        "duration_ms": 35919,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 37,
+      "timestamp": "2026-04-18T04:52:11.336522",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_37",
+        "delegated_to": "health_agent",
+        "duration_ms": 36036,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 38,
+      "timestamp": "2026-04-18T04:52:11.337264",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_38",
+        "delegated_to": "data_agent",
+        "duration_ms": 211287,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 39,
+      "timestamp": "2026-04-18T04:52:11.337963",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_39",
+        "delegated_to": "health_agent",
+        "duration_ms": 211433,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 40,
+      "timestamp": "2026-04-18T04:52:11.338723",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_40",
+        "delegated_to": "health_agent",
+        "duration_ms": 137820,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 41,
+      "timestamp": "2026-04-18T04:52:11.339469",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_41",
+        "delegated_to": "data_agent",
+        "duration_ms": 137854,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 42,
+      "timestamp": "2026-04-18T04:52:11.340216",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_42",
+        "delegated_to": "health_agent",
+        "duration_ms": 70543,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 43,
+      "timestamp": "2026-04-18T04:52:11.340998",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_43",
+        "delegated_to": "data_agent",
+        "duration_ms": 70578,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 44,
+      "timestamp": "2026-04-18T04:52:11.341783",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_44",
+        "delegated_to": "health_agent",
+        "duration_ms": 20230,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 45,
+      "timestamp": "2026-04-18T04:52:11.342581",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_45",
+        "delegated_to": "data_agent",
+        "duration_ms": 19211,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 46,
+      "timestamp": "2026-04-18T04:52:11.343386",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_46",
+        "delegated_to": "health_agent",
+        "duration_ms": 189283,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 47,
+      "timestamp": "2026-04-18T04:52:11.344343",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_47",
+        "delegated_to": "data_agent",
+        "duration_ms": 189315,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 48,
+      "timestamp": "2026-04-18T04:52:11.345153",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_48",
+        "delegated_to": "data_agent",
+        "duration_ms": 58280,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 49,
+      "timestamp": "2026-04-18T04:52:11.345991",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_49",
+        "delegated_to": "health_agent",
+        "duration_ms": 58431,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 50,
+      "timestamp": "2026-04-18T04:52:11.346885",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_50",
+        "delegated_to": "health_agent",
+        "duration_ms": 284588,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 51,
+      "timestamp": "2026-04-18T04:52:11.347766",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_51",
+        "delegated_to": "data_agent",
+        "duration_ms": 284624,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 52,
+      "timestamp": "2026-04-18T04:52:11.348654",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_52",
+        "delegated_to": "health_agent",
+        "duration_ms": 87681,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 53,
+      "timestamp": "2026-04-18T04:52:11.349528",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_53",
+        "delegated_to": "data_agent",
+        "duration_ms": 87727,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 54,
+      "timestamp": "2026-04-18T04:52:11.350433",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_54",
+        "delegated_to": "health_agent",
+        "duration_ms": 44348,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 55,
+      "timestamp": "2026-04-18T04:52:11.351337",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_55",
+        "delegated_to": "data_agent",
+        "duration_ms": 41542,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 56,
+      "timestamp": "2026-04-18T04:52:11.352311",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_56",
+        "delegated_to": "health_agent",
+        "duration_ms": 39111,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 57,
+      "timestamp": "2026-04-18T04:52:11.353338",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_57",
+        "delegated_to": "data_agent",
+        "duration_ms": 39143,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 58,
+      "timestamp": "2026-04-18T04:52:11.354141",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_58",
+        "delegated_to": "health_agent",
+        "duration_ms": 261849,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 59,
+      "timestamp": "2026-04-18T04:52:11.354820",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_59",
+        "delegated_to": "data_agent",
+        "duration_ms": 261876,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 60,
+      "timestamp": "2026-04-18T04:52:11.355624",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_60",
+        "delegated_to": "health_agent",
+        "duration_ms": 110824,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 61,
+      "timestamp": "2026-04-18T04:52:11.356334",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_61",
+        "delegated_to": "data_agent",
+        "duration_ms": 109449,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 62,
+      "timestamp": "2026-04-18T04:52:11.356997",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_62",
+        "delegated_to": "health_agent",
+        "duration_ms": 260942,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 63,
+      "timestamp": "2026-04-18T04:52:11.357753",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_63",
+        "delegated_to": "data_agent",
+        "duration_ms": 260970,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 64,
+      "timestamp": "2026-04-18T04:52:11.358500",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_64",
+        "delegated_to": "health_agent",
+        "duration_ms": 117723,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 65,
+      "timestamp": "2026-04-18T04:52:11.359326",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_65",
+        "delegated_to": "data_agent",
+        "duration_ms": 117775,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 66,
+      "timestamp": "2026-04-18T04:52:11.360031",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_66",
+        "delegated_to": "data_agent",
+        "duration_ms": 282852,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 67,
+      "timestamp": "2026-04-18T04:52:11.360900",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_67",
+        "delegated_to": "health_agent",
+        "duration_ms": 282997,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 68,
+      "timestamp": "2026-04-18T04:52:11.361767",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_68",
+        "delegated_to": "health_agent",
+        "duration_ms": 58171,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 69,
+      "timestamp": "2026-04-18T04:52:11.362529",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_69",
+        "delegated_to": "data_agent",
+        "duration_ms": 58213,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 70,
+      "timestamp": "2026-04-18T04:52:11.363484",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_70",
+        "delegated_to": "health_agent",
+        "duration_ms": 280333,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 71,
+      "timestamp": "2026-04-18T04:52:11.364453",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_71",
+        "delegated_to": "data_agent",
+        "duration_ms": 280369,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 72,
+      "timestamp": "2026-04-18T04:52:11.365326",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_72",
+        "delegated_to": "health_agent",
+        "duration_ms": 132073,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 73,
+      "timestamp": "2026-04-18T04:52:11.366154",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_73",
+        "delegated_to": "data_agent",
+        "duration_ms": 132113,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 74,
+      "timestamp": "2026-04-18T04:52:11.367034",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_74",
+        "delegated_to": "health_agent",
+        "duration_ms": 16053,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 75,
+      "timestamp": "2026-04-18T04:52:11.367972",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_75",
+        "delegated_to": "data_agent",
+        "duration_ms": 16094,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 76,
+      "timestamp": "2026-04-18T04:52:11.368858",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_76",
+        "delegated_to": "health_agent",
+        "duration_ms": 13665,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 77,
+      "timestamp": "2026-04-18T04:52:11.369908",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_77",
+        "delegated_to": "data_agent",
+        "duration_ms": 13706,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 78,
+      "timestamp": "2026-04-18T04:52:11.370863",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "task_id": "task_78",
+        "delegated_to": "data_agent",
+        "duration_ms": 216253,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 79,
+      "timestamp": "2026-04-18T04:52:11.371869",
+      "type": "subagent_task",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "task_id": "task_79",
+        "delegated_to": "health_agent",
+        "duration_ms": 216373,
+        "priority": "MEDIUM"
+      },
+      "subtype": "subagent_task"
+    },
+    {
+      "task_id": 80,
+      "timestamp": "2026-04-17T19:47:48.683218",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_1",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T19:07:11.823605",
+        "duration_ms": 2436859
+      }
+    },
+    {
+      "task_id": 81,
+      "timestamp": "2026-04-17T19:47:49.320069",
+      "type": "subagent_task",
+      "subtype": "research",
+      "outcome": "success",
+      "details": "research by research_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_2",
+        "delegated_to": "research_agent",
+        "created_at": "2026-04-17T19:07:15.712763",
+        "duration_ms": 2433607
+      }
+    },
+    {
+      "task_id": 82,
+      "timestamp": "2026-04-17T19:47:49.551964",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_5",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T19:45:13.725028",
+        "duration_ms": 155826
+      }
+    },
+    {
+      "task_id": 83,
+      "timestamp": "2026-04-17T19:47:49.704014",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_6",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T19:47:01.790021",
+        "duration_ms": 47913
+      }
+    },
+    {
+      "task_id": 84,
+      "timestamp": "2026-04-17T19:59:14.399122",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "test_1",
+        "delegated_to": "health_agent",
+        "created_at": null,
+        "duration_ms": 0
+      }
+    },
+    {
+      "task_id": 85,
+      "timestamp": "2026-04-17T19:59:14.448029",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "test_2",
+        "delegated_to": "data_agent",
+        "created_at": null,
+        "duration_ms": 0
+      }
+    },
+    {
+      "task_id": 86,
+      "timestamp": "2026-04-17T19:59:14.912710",
+      "type": "subagent_task",
+      "subtype": "research",
+      "outcome": "success",
+      "details": "research by research_agent",
+      "metadata": {
+        "orchestrator_task_id": "test_3",
+        "delegated_to": "research_agent",
+        "created_at": null,
+        "duration_ms": 0
+      }
+    },
+    {
+      "task_id": 87,
+      "timestamp": "2026-04-17T20:03:24.023504",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_8",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T20:02:18.450031",
+        "duration_ms": 65573
+      }
+    },
+    {
+      "task_id": 88,
+      "timestamp": "2026-04-17T20:03:24.081436",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_9",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T20:02:18.470124",
+        "duration_ms": 65611
+      }
+    },
+    {
+      "task_id": 89,
+      "timestamp": "2026-04-17T20:18:23.572934",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_10",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T20:15:16.008274",
+        "duration_ms": 187564
+      }
+    },
+    {
+      "task_id": 90,
+      "timestamp": "2026-04-17T20:18:23.620308",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_11",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T20:15:16.028331",
+        "duration_ms": 187591
+      }
+    },
+    {
+      "task_id": 91,
+      "timestamp": "2026-04-17T20:35:50.059082",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_12",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T20:34:48.801481",
+        "duration_ms": 61257
+      }
+    },
+    {
+      "task_id": 92,
+      "timestamp": "2026-04-17T20:35:50.205977",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_13",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T20:34:48.831299",
+        "duration_ms": 61374
+      }
+    },
+    {
+      "task_id": 93,
+      "timestamp": "2026-04-17T20:45:56.549387",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_14",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T20:45:38.834090",
+        "duration_ms": 17715
+      }
+    },
+    {
+      "task_id": 94,
+      "timestamp": "2026-04-17T20:45:56.594781",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_15",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T20:45:38.852113",
+        "duration_ms": 17742
+      }
+    },
+    {
+      "task_id": 95,
+      "timestamp": "2026-04-17T21:03:52.722293",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_16",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T21:02:42.209332",
+        "duration_ms": 70512
+      }
+    },
+    {
+      "task_id": 96,
+      "timestamp": "2026-04-17T21:03:52.875771",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_17",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T21:02:42.215482",
+        "duration_ms": 70660
+      }
+    },
+    {
+      "task_id": 97,
+      "timestamp": "2026-04-17T21:18:50.194004",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_18",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T21:15:16.664958",
+        "duration_ms": 213529
+      }
+    },
+    {
+      "task_id": 98,
+      "timestamp": "2026-04-17T21:18:50.340856",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_19",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T21:15:16.681779",
+        "duration_ms": 213659
+      }
+    },
+    {
+      "task_id": 99,
+      "timestamp": "2026-04-17T21:34:00.299718",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_20",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T21:33:22.556127",
+        "duration_ms": 37743
+      }
+    },
+    {
+      "task_id": 100,
+      "timestamp": "2026-04-17T21:34:00.450992",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_21",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T21:33:22.562985",
+        "duration_ms": 37888
+      }
+    },
+    {
+      "task_id": 101,
+      "timestamp": "2026-04-17T21:49:04.712442",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_22",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T21:45:12.368515",
+        "duration_ms": 232343
+      }
+    },
+    {
+      "task_id": 102,
+      "timestamp": "2026-04-17T21:49:04.767006",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_23",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T21:45:12.378416",
+        "duration_ms": 232388
+      }
+    },
+    {
+      "task_id": 103,
+      "timestamp": "2026-04-17T22:05:54.615575",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_24",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T22:04:52.964013",
+        "duration_ms": 61651
+      }
+    },
+    {
+      "task_id": 104,
+      "timestamp": "2026-04-17T22:05:54.670672",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_25",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T22:04:52.973197",
+        "duration_ms": 61697
+      }
+    },
+    {
+      "task_id": 105,
+      "timestamp": "2026-04-17T22:15:52.727919",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_26",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T22:15:38.291846",
+        "duration_ms": 14436
+      }
+    },
+    {
+      "task_id": 106,
+      "timestamp": "2026-04-17T22:15:52.773427",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_27",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T22:15:38.299651",
+        "duration_ms": 14473
+      }
+    },
+    {
+      "task_id": 107,
+      "timestamp": "2026-04-17T22:33:22.753369",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_28",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T22:33:07.147935",
+        "duration_ms": 15605
+      }
+    },
+    {
+      "task_id": 108,
+      "timestamp": "2026-04-17T22:33:22.887515",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_29",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T22:33:07.156748",
+        "duration_ms": 15730
+      }
+    },
+    {
+      "task_id": 109,
+      "timestamp": "2026-04-17T22:48:23.248081",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_30",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T22:45:29.141967",
+        "duration_ms": 174106
+      }
+    },
+    {
+      "task_id": 110,
+      "timestamp": "2026-04-17T22:48:23.385818",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_31",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T22:45:29.151330",
+        "duration_ms": 174234
+      }
+    },
+    {
+      "task_id": 111,
+      "timestamp": "2026-04-17T23:05:15.375046",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_32",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T23:04:38.077147",
+        "duration_ms": 37297
+      }
+    },
+    {
+      "task_id": 112,
+      "timestamp": "2026-04-17T23:05:15.531244",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_33",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T23:04:38.099652",
+        "duration_ms": 37431
+      }
+    },
+    {
+      "task_id": 113,
+      "timestamp": "2026-04-17T23:15:48.321289",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_34",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T23:15:29.263033",
+        "duration_ms": 19058
+      }
+    },
+    {
+      "task_id": 114,
+      "timestamp": "2026-04-17T23:15:48.365988",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_35",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T23:15:29.277829",
+        "duration_ms": 19088
+      }
+    },
+    {
+      "task_id": 115,
+      "timestamp": "2026-04-17T23:33:32.262626",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_36",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T23:32:56.343230",
+        "duration_ms": 35919
+      }
+    },
+    {
+      "task_id": 116,
+      "timestamp": "2026-04-17T23:33:32.392266",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_37",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T23:32:56.355921",
+        "duration_ms": 36036
+      }
+    },
+    {
+      "task_id": 117,
+      "timestamp": "2026-04-17T23:48:43.558389",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_38",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-17T23:45:12.270995",
+        "duration_ms": 211287
+      }
+    },
+    {
+      "task_id": 118,
+      "timestamp": "2026-04-17T23:48:43.715252",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_39",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-17T23:45:12.281925",
+        "duration_ms": 211433
+      }
+    },
+    {
+      "task_id": 119,
+      "timestamp": "2026-04-18T00:06:41.543948",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_40",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T00:04:23.723076",
+        "duration_ms": 137820
+      }
+    },
+    {
+      "task_id": 120,
+      "timestamp": "2026-04-18T00:06:41.593698",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_41",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T00:04:23.739117",
+        "duration_ms": 137854
+      }
+    },
+    {
+      "task_id": 121,
+      "timestamp": "2026-04-18T00:16:38.120659",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_42",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T00:15:27.577095",
+        "duration_ms": 70543
+      }
+    },
+    {
+      "task_id": 122,
+      "timestamp": "2026-04-18T00:16:38.166316",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_43",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T00:15:27.587749",
+        "duration_ms": 70578
+      }
+    },
+    {
+      "task_id": 123,
+      "timestamp": "2026-04-18T00:33:27.697183",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_44",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T00:33:07.466624",
+        "duration_ms": 20230
+      }
+    },
+    {
+      "task_id": 124,
+      "timestamp": "2026-04-18T00:33:27.741408",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_45",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T00:33:08.530197",
+        "duration_ms": 19211
+      }
+    },
+    {
+      "task_id": 125,
+      "timestamp": "2026-04-18T00:48:28.413743",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_46",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T00:45:19.130081",
+        "duration_ms": 189283
+      }
+    },
+    {
+      "task_id": 126,
+      "timestamp": "2026-04-18T00:48:28.463314",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_47",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T00:45:19.147532",
+        "duration_ms": 189315
+      }
+    },
+    {
+      "task_id": 127,
+      "timestamp": "2026-04-18T01:05:21.450825",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_48",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T01:04:23.169926",
+        "duration_ms": 58280
+      }
+    },
+    {
+      "task_id": 128,
+      "timestamp": "2026-04-18T01:05:21.609516",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_49",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T01:04:23.178497",
+        "duration_ms": 58431
+      }
+    },
+    {
+      "task_id": 129,
+      "timestamp": "2026-04-18T01:20:10.236808",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_50",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T01:15:25.648489",
+        "duration_ms": 284588
+      }
+    },
+    {
+      "task_id": 130,
+      "timestamp": "2026-04-18T01:20:10.284622",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_51",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T01:15:25.660215",
+        "duration_ms": 284624
+      }
+    },
+    {
+      "task_id": 131,
+      "timestamp": "2026-04-18T01:36:13.698102",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_52",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T01:34:46.016289",
+        "duration_ms": 87681
+      }
+    },
+    {
+      "task_id": 132,
+      "timestamp": "2026-04-18T01:36:13.750976",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_53",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T01:34:46.023817",
+        "duration_ms": 87727
+      }
+    },
+    {
+      "task_id": 133,
+      "timestamp": "2026-04-18T01:46:14.279141",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_54",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T01:45:29.930485",
+        "duration_ms": 44348
+      }
+    },
+    {
+      "task_id": 134,
+      "timestamp": "2026-04-18T01:46:14.318803",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_55",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T01:45:32.776160",
+        "duration_ms": 41542
+      }
+    },
+    {
+      "task_id": 135,
+      "timestamp": "2026-04-18T02:04:34.273349",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_56",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T02:03:55.161587",
+        "duration_ms": 39111
+      }
+    },
+    {
+      "task_id": 136,
+      "timestamp": "2026-04-18T02:04:34.319924",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_57",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T02:03:55.176030",
+        "duration_ms": 39143
+      }
+    },
+    {
+      "task_id": 137,
+      "timestamp": "2026-04-18T02:19:34.635669",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_58",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T02:15:12.786188",
+        "duration_ms": 261849
+      }
+    },
+    {
+      "task_id": 138,
+      "timestamp": "2026-04-18T02:19:34.679578",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_59",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T02:15:12.803468",
+        "duration_ms": 261876
+      }
+    },
+    {
+      "task_id": 139,
+      "timestamp": "2026-04-18T02:34:34.778959",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_60",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T02:32:43.954885",
+        "duration_ms": 110824
+      }
+    },
+    {
+      "task_id": 140,
+      "timestamp": "2026-04-18T02:34:34.826357",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_61",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T02:32:45.377350",
+        "duration_ms": 109449
+      }
+    },
+    {
+      "task_id": 141,
+      "timestamp": "2026-04-18T02:49:33.785439",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_62",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T02:45:12.843343",
+        "duration_ms": 260942
+      }
+    },
+    {
+      "task_id": 142,
+      "timestamp": "2026-04-18T02:49:33.837856",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_63",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T02:45:12.867374",
+        "duration_ms": 260970
+      }
+    },
+    {
+      "task_id": 143,
+      "timestamp": "2026-04-18T03:05:00.909246",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_64",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T03:03:03.185580",
+        "duration_ms": 117723
+      }
+    },
+    {
+      "task_id": 144,
+      "timestamp": "2026-04-18T03:05:00.969447",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_65",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T03:03:03.193983",
+        "duration_ms": 117775
+      }
+    },
+    {
+      "task_id": 145,
+      "timestamp": "2026-04-18T03:20:05.028396",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_66",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T03:15:22.175808",
+        "duration_ms": 282852
+      }
+    },
+    {
+      "task_id": 146,
+      "timestamp": "2026-04-18T03:20:05.183703",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_67",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T03:15:22.185817",
+        "duration_ms": 282997
+      }
+    },
+    {
+      "task_id": 147,
+      "timestamp": "2026-04-18T03:35:05.086987",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_68",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T03:34:06.915667",
+        "duration_ms": 58171
+      }
+    },
+    {
+      "task_id": 148,
+      "timestamp": "2026-04-18T03:35:05.141212",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_69",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T03:34:06.927521",
+        "duration_ms": 58213
+      }
+    },
+    {
+      "task_id": 149,
+      "timestamp": "2026-04-18T03:50:04.140036",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_70",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T03:45:23.806785",
+        "duration_ms": 280333
+      }
+    },
+    {
+      "task_id": 150,
+      "timestamp": "2026-04-18T03:50:04.190010",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_71",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T03:45:23.820343",
+        "duration_ms": 280369
+      }
+    },
+    {
+      "task_id": 151,
+      "timestamp": "2026-04-18T04:05:23.259945",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_72",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T04:03:11.186552",
+        "duration_ms": 132073
+      }
+    },
+    {
+      "task_id": 152,
+      "timestamp": "2026-04-18T04:05:23.308304",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_73",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T04:03:11.194949",
+        "duration_ms": 132113
+      }
+    },
+    {
+      "task_id": 153,
+      "timestamp": "2026-04-18T04:15:41.430462",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_74",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T04:15:25.377185",
+        "duration_ms": 16053
+      }
+    },
+    {
+      "task_id": 154,
+      "timestamp": "2026-04-18T04:15:41.478841",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_75",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T04:15:25.384794",
+        "duration_ms": 16094
+      }
+    },
+    {
+      "task_id": 155,
+      "timestamp": "2026-04-18T04:33:51.887870",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_76",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T04:33:38.222623",
+        "duration_ms": 13665
+      }
+    },
+    {
+      "task_id": 156,
+      "timestamp": "2026-04-18T04:33:51.936489",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_77",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T04:33:38.229897",
+        "duration_ms": 13706
+      }
+    },
+    {
+      "task_id": 157,
+      "timestamp": "2026-04-18T04:48:53.173342",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_78",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T04:45:16.920041",
+        "duration_ms": 216253
+      }
+    },
+    {
+      "task_id": 158,
+      "timestamp": "2026-04-18T04:48:53.304309",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "orchestrator_task_id": "task_79",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T04:45:16.931076",
+        "duration_ms": 216373
+      }
+    },
+    {
+      "task_id": 159,
+      "timestamp": "2026-04-18T04:55:31.089737",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Everything looks good. The unified task logger has:\n- 158 total tasks\n- 79 synced from orchestrator ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 160,
+      "timestamp": "2026-04-18T04:55:31.092196",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "There's a syntax error. Let me check and fix it.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 161,
+      "timestamp": "2026-04-18T04:55:31.094497",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "There's still a syntax error. Let me look at the file again:\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 162,
+      "timestamp": "2026-04-18T04:55:31.098472",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "The current session has 126 lines. Let me analyze it properly. The problem is likely that my pattern",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 163,
+      "timestamp": "2026-04-18T05:02:54.255654",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check what's happening with this task. It's a cron job calling task_logger_cron.py. Let me re",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 164,
+      "timestamp": "2026-04-18T05:02:54.258570",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Let me run the multi-agent orchestrator for health_check and learning_sync as instructed.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 165,
+      "timestamp": "2026-04-18T05:02:54.264726",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me just append the new section to the file instead.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 166,
+      "timestamp": "2026-04-18T05:03:55.415868",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_80",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T05:02:30.718816",
+        "duration_ms": 84697
+      }
+    },
+    {
+      "task_id": 167,
+      "timestamp": "2026-04-18T05:03:55.464368",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_81",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T05:02:30.729983",
+        "duration_ms": 84734
+      }
+    },
+    {
+      "task_id": 168,
+      "timestamp": "2026-04-18T05:15:46.018086",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check what's happening with the cron task and what needs to be done. Let me look at recent me",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 169,
+      "timestamp": "2026-04-18T05:15:46.020094",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me check the memory directory and recent files for context, and look at what the task logger is ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 170,
+      "timestamp": "2026-04-18T05:15:46.026787",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Now I have enough data. Let me also check the learning loop state and any other critical areas.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 171,
+      "timestamp": "2026-04-18T05:18:53.874092",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_82",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T05:15:19.865056",
+        "duration_ms": 214009
+      }
+    },
+    {
+      "task_id": 172,
+      "timestamp": "2026-04-18T05:18:53.921847",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_83",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T05:15:19.875808",
+        "duration_ms": 214046
+      }
+    },
+    {
+      "task_id": 173,
+      "timestamp": "2026-04-18T05:32:51.064279",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check the task logger and see what's happening with the scheduled tasks.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 174,
+      "timestamp": "2026-04-18T05:32:51.066746",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Let me run the multi-agent orchestrator delegation cycle for health_check and learning_sync.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 175,
+      "timestamp": "2026-04-18T05:33:57.813122",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_84",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T05:32:33.698442",
+        "duration_ms": 84114
+      }
+    },
+    {
+      "task_id": 176,
+      "timestamp": "2026-04-18T05:33:57.860096",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_85",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T05:32:33.722322",
+        "duration_ms": 84137
+      }
+    },
+    {
+      "task_id": 177,
+      "timestamp": "2026-04-18T05:46:05.128352",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Both tasks delegated successfully to their respective agents. No failures, no fallbacks. I should no",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 178,
+      "timestamp": "2026-04-18T05:46:05.131756",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "There's a bug in the script - `entities` is not defined in `analyze_kg_patterns`. Let me check the f",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 179,
+      "timestamp": "2026-04-18T05:46:05.135470",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "The issue is that `entities` is not defined in the `analyze_kg_patterns` method. It seems like it sh",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 180,
+      "timestamp": "2026-04-18T05:46:05.138486",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me also check for any other occurrences of `entities` that might need fixing.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 181,
+      "timestamp": "2026-04-18T05:48:55.675335",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_86",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T05:45:46.357046",
+        "duration_ms": 189318
+      }
+    },
+    {
+      "task_id": 182,
+      "timestamp": "2026-04-18T05:48:55.803841",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_87",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T05:45:46.378220",
+        "duration_ms": 189425
+      }
+    },
+    {
+      "task_id": 183,
+      "timestamp": "2026-04-18T06:05:01.639271",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me check the task logger cron script and see what's happening. I should read the relevant files ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 184,
+      "timestamp": "2026-04-18T06:05:01.643519",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Now I need to report to Nico via Telegram since there are issues.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 185,
+      "timestamp": "2026-04-18T06:05:01.652499",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Now I have enough data. Let me also check the learning loop state and any other critical areas.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 186,
+      "timestamp": "2026-04-18T06:05:01.659013",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Now let me create a script to fix the KG Access Updater timeout issue. Let me check what the script ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 187,
+      "timestamp": "2026-04-18T06:05:01.689485",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "Now I have a good picture of what's happening. Let me assess the current state and create a comprehe",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 188,
+      "timestamp": "2026-04-18T06:06:54.431736",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_88",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T06:03:47.956094",
+        "duration_ms": 186475
+      }
+    },
+    {
+      "task_id": 189,
+      "timestamp": "2026-04-18T06:06:54.474632",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_89",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T06:03:52.013394",
+        "duration_ms": 182461
+      }
+    },
+    {
+      "task_id": 190,
+      "timestamp": "2026-04-18T06:15:37.025820",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "The KG file seems corrupted or empty. Let me check it more carefully and also look at the backup.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 191,
+      "timestamp": "2026-04-18T06:15:37.028515",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "The KG is at `memory/kg/knowledge_graph.json` - it's 329KB and was modified at 06:06 today. The back",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 192,
+      "timestamp": "2026-04-18T06:15:37.033399",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Good, now let me verify the restored KG is healthy.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 193,
+      "timestamp": "2026-04-18T06:15:37.040309",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Let me execute both tasks sequentially as requested. I need to delegate to two subagents and then re",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 194,
+      "timestamp": "2026-04-18T06:15:37.042881",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "Need to use direct python3 without the flag syntax, or run via bash -c. Let me use the direct path a",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 195,
+      "timestamp": "2026-04-18T06:15:37.045508",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Both tasks delegated successfully. No fallback needed - both agents handled their tasks directly.\n \n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 196,
+      "timestamp": "2026-04-18T06:16:55.119433",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_90",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T06:15:18.927323",
+        "duration_ms": 96192
+      }
+    },
+    {
+      "task_id": 197,
+      "timestamp": "2026-04-18T06:16:55.256673",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_91",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T06:15:18.946279",
+        "duration_ms": 96310
+      }
+    },
+    {
+      "task_id": 198,
+      "timestamp": "2026-04-18T06:45:40.067645",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check what's happening with this task logger cron job.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 199,
+      "timestamp": "2026-04-18T06:45:40.073565",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "\u26a0\ufe0f Cron Delegation Failed\n\n`multi_agent_orchestrator.py` blocked by exec preflight \u2014 can't pass `--a",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 200,
+      "timestamp": "2026-04-18T06:45:40.079902",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "Excellent! The fix works! After removing the .pyc cache, the pipeline ran with the fixed code and th",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 201,
+      "timestamp": "2026-04-18T06:45:40.083848",
+      "type": "main_session",
+      "subtype": "decision",
+      "outcome": "success",
+      "details": "Good. Let me also clear any other potential .pyc caches that might cause issues: **Getestet und best",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 202,
+      "timestamp": "2026-04-18T06:45:40.089721",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "I see two issues:\n\n1. Agent Delegation Cron failed with \"Message failed\" - but the summary says it a",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 203,
+      "timestamp": "2026-04-18T06:45:40.094681",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "The KG is corrupted again (455 list / 9 relations). This happened between my last test and now. The ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 204,
+      "timestamp": "2026-04-18T06:45:40.100935",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "The KG was modified at 06:43:29 - which is recently, about 23 minutes ago. That's after the 07:20 pi",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 205,
+      "timestamp": "2026-04-18T06:49:48.078737",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_92",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T06:45:20.480494",
+        "duration_ms": 267598
+      }
+    },
+    {
+      "task_id": 206,
+      "timestamp": "2026-04-18T06:49:48.130958",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_93",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T06:45:20.501044",
+        "duration_ms": 267629
+      }
+    },
+    {
+      "task_id": 207,
+      "timestamp": "2026-04-18T06:59:49.188269",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_94",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T06:58:47.877216",
+        "duration_ms": 61311
+      }
+    },
+    {
+      "task_id": 208,
+      "timestamp": "2026-04-18T06:59:49.236792",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_95",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T06:58:47.892783",
+        "duration_ms": 61344
+      }
+    },
+    {
+      "task_id": 209,
+      "timestamp": "2026-04-18T07:03:30.082624",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "Ah, the exec tool is refusing to run the cron command because it looks like it's using some complex ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 210,
+      "timestamp": "2026-04-18T07:03:30.086750",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Both tasks delegated successfully - Health Agent and Data Agent handled them. No failures, no fallba",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 211,
+      "timestamp": "2026-04-18T07:03:30.091467",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "2 tasks processed successfully. No failures, queue depth is 2 (not >5). Nothing to report.\n \n\n\u2705 No i",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 212,
+      "timestamp": "2026-04-18T07:03:30.097498",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "Excellent! The fix works! KG is now 455 dict / 629 relations. \n\nBut wait - it says 455 entities, not",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 213,
+      "timestamp": "2026-04-18T07:03:30.103865",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "I see the latest run (first entry) shows \"ok\" status now. The issue at 06:39 (ts: 1776494045378) was",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 214,
+      "timestamp": "2026-04-18T07:05:17.064586",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_96",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T07:03:12.359814",
+        "duration_ms": 124704
+      }
+    },
+    {
+      "task_id": 215,
+      "timestamp": "2026-04-18T07:05:17.209855",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_97",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T07:03:12.373371",
+        "duration_ms": 124836
+      }
+    },
+    {
+      "task_id": 216,
+      "timestamp": "2026-04-18T07:15:58.389458",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_98",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T07:15:15.426083",
+        "duration_ms": 42963
+      }
+    },
+    {
+      "task_id": 217,
+      "timestamp": "2026-04-18T07:15:58.442322",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_99",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T07:15:18.654889",
+        "duration_ms": 39787
+      }
+    },
+    {
+      "task_id": 218,
+      "timestamp": "2026-04-18T07:34:24.054103",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check the task logger cron output and see what's happening.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 219,
+      "timestamp": "2026-04-18T07:34:24.059931",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "I see the latest run (first entry) shows \"ok\" status now. The issue at 06:39 (ts: 1776494045378) was",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 220,
+      "timestamp": "2026-04-18T07:34:24.063577",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "The KG is still intact after the pipeline run. Let me also run the integration dashboard check to ma",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 221,
+      "timestamp": "2026-04-18T07:34:24.070561",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "I see there are still 4 error crons:\n1. KG Access Updater - error (last ran 4h ago)\n2. Smart Evolver",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 222,
+      "timestamp": "2026-04-18T07:34:24.075956",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Let me start by running the meta learning pipeline script to see what's happening.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 223,
+      "timestamp": "2026-04-18T07:34:44.298698",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_100",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T07:34:01.007237",
+        "duration_ms": 43291
+      }
+    },
+    {
+      "task_id": 224,
+      "timestamp": "2026-04-18T07:34:44.359793",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_101",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T07:34:01.032826",
+        "duration_ms": 43326
+      }
+    },
+    {
+      "task_id": 225,
+      "timestamp": "2026-04-18T07:45:57.411913",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check the task logger to see what's happening.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 226,
+      "timestamp": "2026-04-18T07:45:57.415256",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "Let me try python3.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 227,
+      "timestamp": "2026-04-18T07:45:57.418943",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "The script ran and shows no transactions, no errors, 0 alerts, and 0 proposals. Let me read the late",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 228,
+      "timestamp": "2026-04-18T07:45:57.422095",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "The supervisor shows:\n- alert_needed: false \u2014 no critical issues\n- No transactions, no errors\n- 2 cr",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 229,
+      "timestamp": "2026-04-18T07:49:46.161475",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_102",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T07:45:33.381022",
+        "duration_ms": 252780
+      }
+    },
+    {
+      "task_id": 230,
+      "timestamp": "2026-04-18T07:49:46.202878",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_103",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T07:45:33.398805",
+        "duration_ms": 252804
+      }
+    },
+    {
+      "task_id": 231,
+      "timestamp": "2026-04-18T08:04:18.498072",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me check today's memory files and run the task logger cron.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 232,
+      "timestamp": "2026-04-18T08:04:18.502963",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me gather all the information for the morning summary. I'll check multiple things in parallel.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 233,
+      "timestamp": "2026-04-18T08:04:18.506612",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "Let me check a few more things - the learning loop state is likely in a different location, and I sh",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 234,
+      "timestamp": "2026-04-18T08:04:18.513582",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Now I have enough data to build a morning summary. Let me compile:\n\n**Gateway Memory:**\n- openclaw-g",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 235,
+      "timestamp": "2026-04-18T08:04:18.523563",
+      "type": "main_session",
+      "subtype": "kg_update",
+      "outcome": "success",
+      "details": "KG is healthy (456 entities, 629 relations, dict format) and integration dashboard shows all healthy",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 236,
+      "timestamp": "2026-04-18T08:06:26.678494",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_104",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T08:03:21.877692",
+        "duration_ms": 184800
+      }
+    },
+    {
+      "task_id": 237,
+      "timestamp": "2026-04-18T08:06:26.726029",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_105",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T08:03:21.892463",
+        "duration_ms": 184833
+      }
+    },
+    {
+      "task_id": 238,
+      "timestamp": "2026-04-18T08:16:25.972986",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_106",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T08:15:14.072199",
+        "duration_ms": 71900
+      }
+    },
+    {
+      "task_id": 239,
+      "timestamp": "2026-04-18T08:16:26.035607",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_107",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T08:15:14.089502",
+        "duration_ms": 71946
+      }
+    },
+    {
+      "task_id": 240,
+      "timestamp": "2026-04-18T08:33:40.791681",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me check the task logger cron to see what's happening. Ich schau mir das Task Logger Cron an:\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 241,
+      "timestamp": "2026-04-18T08:33:40.803240",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "python3 works. Let me try python3 directly.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 242,
+      "timestamp": "2026-04-18T08:33:40.812631",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "This is a cron job triggering a multi-agent orchestrator delegation cycle. I need to run two health ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 243,
+      "timestamp": "2026-04-18T08:33:40.833607",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me check the latest results file to see if alert_needed is true.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 244,
+      "timestamp": "2026-04-18T08:34:21.902463",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_108",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T08:33:05.364677",
+        "duration_ms": 76537
+      }
+    },
+    {
+      "task_id": 245,
+      "timestamp": "2026-04-18T08:34:22.045838",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_109",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T08:33:05.399503",
+        "duration_ms": 76646
+      }
+    },
+    {
+      "task_id": 246,
+      "timestamp": "2026-04-18T08:45:36.322486",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "This is a heartbeat cron job - task_logger_cron.py. Let me check if there's anything to report or if",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 247,
+      "timestamp": "2026-04-18T08:45:36.325674",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "This is a cron job that runs a multi-agent orchestrator to delegate health_check and learning_sync t",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 248,
+      "timestamp": "2026-04-18T08:45:36.328644",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Both tasks delegated successfully to their respective agents (Health Agent for health_check, Data Ag",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 249,
+      "timestamp": "2026-04-18T08:45:36.332828",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "The supervisor ran but there's no output to read the full results. Let me check the latest.json file",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 250,
+      "timestamp": "2026-04-18T08:49:33.784828",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_110",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T08:45:14.235578",
+        "duration_ms": 259549
+      }
+    },
+    {
+      "task_id": 251,
+      "timestamp": "2026-04-18T08:49:33.968786",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_111",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T08:45:14.249964",
+        "duration_ms": 259718
+      }
+    },
+    {
+      "task_id": 252,
+      "timestamp": "2026-04-18T09:04:30.140933",
+      "type": "main_session",
+      "subtype": "script_execution",
+      "outcome": "success",
+      "details": "I need to run it differently - just `python` not `python3` as a complex invocation.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 253,
+      "timestamp": "2026-04-18T09:04:30.143907",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Let me try with just the file path.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 254,
+      "timestamp": "2026-04-18T09:04:30.147449",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "All three scripts ran successfully. Let me compile the summary:\n\n- System Status: All OK (security, ",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 255,
+      "timestamp": "2026-04-18T09:04:30.153383",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "Let me execute the agent executor script to check for pending tasks.\n",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 256,
+      "timestamp": "2026-04-18T09:06:36.402740",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_112",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T09:02:40.804787",
+        "duration_ms": 235597
+      }
+    },
+    {
+      "task_id": 257,
+      "timestamp": "2026-04-18T09:06:36.558595",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_113",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T09:02:40.820440",
+        "duration_ms": 235738
+      }
+    },
+    {
+      "task_id": 258,
+      "timestamp": "2026-04-18T09:15:29.128426",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "This is a heartbeat/cron task running. Let me check what task_logger_cron.py does and see if there's",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 259,
+      "timestamp": "2026-04-18T09:15:29.132672",
+      "type": "main_session",
+      "subtype": "message_response",
+      "outcome": "success",
+      "details": "Both tasks delegated successfully. Both agents handled their tasks (Health Agent for health_check, D",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 260,
+      "timestamp": "2026-04-18T09:15:29.141412",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "Supervisor cycle ran cleanly. No issues. Let me check the latest output file to see details.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 261,
+      "timestamp": "2026-04-18T09:16:34.943595",
+      "type": "subagent_task",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "health_check by health_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_114",
+        "delegated_to": "health_agent",
+        "created_at": "2026-04-18T09:15:14.929684",
+        "duration_ms": 80013
+      }
+    },
+    {
+      "task_id": 262,
+      "timestamp": "2026-04-18T09:16:34.997340",
+      "type": "subagent_task",
+      "subtype": "learning_sync",
+      "outcome": "success",
+      "details": "learning_sync by data_agent",
+      "metadata": {
+        "source": "orchestrator",
+        "orchestrator_task_id": "task_115",
+        "delegated_to": "data_agent",
+        "created_at": "2026-04-18T09:15:14.950853",
+        "duration_ms": 80046
+      }
+    },
+    {
+      "task_id": 263,
+      "timestamp": "2026-04-18T09:33:50.884985",
+      "type": "main_session",
+      "subtype": "health_check",
+      "outcome": "success",
+      "details": "This is a cron job execution - a task logger cron. Let me check what this script does and execute it",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 264,
+      "timestamp": "2026-04-18T09:33:50.889650",
+      "type": "main_session",
+      "subtype": "file_operation",
+      "outcome": "success",
+      "details": "The exec tool is blocking this. Let me try with just the python file directly.",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    },
+    {
+      "task_id": 265,
+      "timestamp": "2026-04-18T09:33:50.895241",
+      "type": "main_session",
+      "subtype": "learning_integration",
+      "outcome": "success",
+      "details": "The bug scanner ran successfully. There are 3 errors found but they're all known issues - only 1 uni",
+      "metadata": {
+        "source": "session_analyzer"
+      }
+    }
+  ],
+  "last_task_id": 265,
+  "synced_sources": [
+    "orchestrator"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-04-17T18:54:46.311221",
+  "version": "1.0.0",
+  "prompt_types": {
+    "soul": {
+      "prompt_type": "soul",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/SOUL.md",
+      "char_count": 3100,
+      "line_count": 72,
+      "token_estimate": 775,
+      "content_hash": "f0b76133",
+      "last_modified": "2026-04-17T15:56:15.881842",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "agents": {
+      "prompt_type": "agents",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/AGENTS.md",
+      "char_count": 8547,
+      "line_count": 229,
+      "token_estimate": 2136,
+      "content_hash": "dff4abc2",
+      "last_modified": "2026-04-17T15:44:22.031602",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "user": {
+      "prompt_type": "user",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/USER.md",
+      "char_count": 2383,
+      "line_count": 65,
+      "token_estimate": 595,
+      "content_hash": "25659d1b",
+      "last_modified": "2026-04-16T21:09:23.686598",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "identity": {
+      "prompt_type": "identity",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/IDENTITY.md",
+      "char_count": 1076,
+      "line_count": 34,
+      "token_estimate": 269,
+      "content_hash": "519a66d6",
+      "last_modified": "2026-04-17T15:44:22.032603",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "memory": {
+      "prompt_type": "memory",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/MEMORY.md",
+      "char_count": 5469,
+      "line_count": 184,
+      "token_estimate": 1367,
+      "content_hash": "1e9a4311",
+      "last_modified": "2026-04-17T18:45:04.984573",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "tools": {
+      "prompt_type": "tools",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/TOOLS.md",
+      "char_count": 2728,
+      "line_count": 101,
+      "token_estimate": 682,
+      "content_hash": "059793f3",
+      "last_modified": "2026-04-17T16:52:26.854252",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "heartbeat": {
+      "prompt_type": "heartbeat",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/HEARTBEAT.md",
+      "char_count": 891,
+      "line_count": 35,
+      "token_estimate": 222,
+      "content_hash": "152aeff8",
+      "last_modified": "2026-04-17T15:44:22.031602",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "prompt_coach": {
+      "prompt_type": "prompt_coach",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/PROMPT_COACH.md",
+      "char_count": 6374,
+      "line_count": 253,
+      "token_estimate": 1593,
+      "content_hash": "2d16b4c6",
+      "last_modified": "2026-04-15T21:05:23.465447",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "decision_framework": {
+      "prompt_type": "decision_framework",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/DECISION_FRAMEWORK.md",
+      "char_count": 5917,
+      "line_count": 210,
+      "token_estimate": 1479,
+      "content_hash": "ceb43e40",
+      "last_modified": "2026-04-17T15:13:59.358827",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    },
+    "dreams": {
+      "prompt_type": "dreams",
+      "file_path": "/home/clawbot/.openclaw/workspace/ceo/DREAMS.md",
+      "char_count": 6170,
+      "line_count": 82,
+      "token_estimate": 1542,
+      "content_hash": "6fc59815",
+      "last_modified": "2026-04-17T15:44:22.031602",
+      "has_variants": false,
+      "variant_count": 0,
+      "quality_issues": []
+    }
+  },
+  "total_prompts": 10,
+  "total_variants": 0
+}

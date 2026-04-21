@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-04-17T20:02:03.370128",
+  "total_entities": 279,
+  "total_relations": 4649,
+  "quality_distribution": {
+    "high": 133,
+    "medium": 146,
+    "low": 0
+  },
+  "orphans": {
+    "count": 163,
+    "percentage": 58.4,
+    "by_category": {
+      "other": 54,
+      "success_patterns": 19,
+      "error_patterns": 20,
+      "category_entries": 6,
+      "improvement_tracking": 64
+    }
+  },
+  "stale_30_days": 0,
+  "recommendations": [
+    {
+      "action": "review_learning_loop_artifacts",
+      "priority": "HIGH",
+      "reason": "58.4% orphan rate \u2014 mostly learning loop generated entities",
+      "count": 163
+    },
+    {
+      "action": "cleanup_success_error_patterns",
+      "priority": "LOW",
+      "reason": "Temporary pattern tracking entries can be cleaned up",
+      "count": 39
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "last_run": "2026-04-17T03:06:21.783885",
+  "actions_taken": [],
+  "last_issues": [],
+  "last_results": [
+    {
+      "name": "Gateway",
+      "ok": true,
+      "msg": "Gateway OK"
+    },
+    {
+      "name": "Tasks",
+      "ok": true,
+      "msg": "Tasks OK (lost=2, failed=12)"
+    },
+    {
+      "name": "Disk",
+      "ok": true,
+      "msg": "Disk OK (29% used, 69.0GB free)"
+    },
+    {
+      "name": "Logs",
+      "ok": true,
+      "msg": "Logs OK"
+    },
+    {
+      "name": "DBs",
+      "ok": true,
+      "msg": "DBs OK"
+    },
+    {
+      "name": "Crons",
+      "ok": false,
+      "msg": "3 cron errors detected"
+    }
+  ],
+  "last_actions": []
+}

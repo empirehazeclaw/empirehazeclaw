@@ -1,0 +1,90 @@
+{
+  "audit": [
+    {
+      "original": "5392634979",
+      "token": "{{USER_ID_1}}",
+      "pattern": "telegram_id",
+      "timestamp": "2026-04-14T16:35:19.627Z"
+    },
+    {
+      "original": "1744622400",
+      "token": "{{USER_ID_2}}",
+      "pattern": "telegram_id",
+      "timestamp": "2026-04-14T16:35:19.631Z"
+    },
+    {
+      "original": "4968577130441",
+      "token": "{{PHONE_1}}",
+      "pattern": "phone",
+      "timestamp": "2026-04-14T16:35:19.663Z"
+    },
+    {
+      "original": "499430708759511",
+      "token": "{{PHONE_2}}",
+      "pattern": "phone",
+      "timestamp": "2026-04-14T16:35:19.666Z"
+    },
+    {
+      "original": "490244776163",
+      "token": "{{PHONE_3}}",
+      "pattern": "phone",
+      "timestamp": "2026-04-14T16:35:19.668Z"
+    },
+    {
+      "original": "empirehazeclaw.com",
+      "token": "{{PRIMARY_DOMAIN}}",
+      "pattern": "domain",
+      "timestamp": "2026-04-14T16:35:19.672Z"
+    },
+    {
+      "original": "empirehazeclaw.info",
+      "token": "{{PRIMARY_DOMAIN}}",
+      "pattern": "domain",
+      "timestamp": "2026-04-14T16:35:19.672Z"
+    },
+    {
+      "original": "empirehazeclaw.store",
+      "token": "{{PRIMARY_DOMAIN}}",
+      "pattern": "domain",
+      "timestamp": "2026-04-14T16:35:19.674Z"
+    },
+    {
+      "original": "empirehazeclaw.de",
+      "token": "{{PRIMARY_DOMAIN}}",
+      "pattern": "domain",
+      "timestamp": "2026-04-14T16:35:19.676Z"
+    },
+    {
+      "original": "empirehazeclaw@gmail.com",
+      "token": "{{EMAIL_1}}",
+      "pattern": "email",
+      "timestamp": "2026-04-14T16:35:19.680Z"
+    },
+    {
+      "original": "8397732232:AAEIZqzMVSC-N6YVp0ef4Et1-v_tIproH9Y",
+      "token": "{{BOT_TOKEN}}",
+      "pattern": "bot_token",
+      "timestamp": "2026-04-14T16:35:19.683Z"
+    },
+    {
+      "original": "8397732232:AAEK9VmvNz1gtlBfeiogP8_bDIFWnfZq-HM",
+      "token": "{{BOT_TOKEN}}",
+      "pattern": "bot_token",
+      "timestamp": "2026-04-14T16:35:19.683Z"
+    },
+    {
+      "original": "530582165",
+      "token": "{{USER_ID_3}}",
+      "pattern": "telegram_id",
+      "timestamp": "2026-04-14T16:35:19.689Z"
+    },
+    {
+      "original": "8397732232",
+      "token": "{{USER_ID_4}}",
+      "pattern": "telegram_id",
+      "timestamp": "2026-04-14T16:35:19.689Z"
+    }
+  ],
+  "errors": [],
+  "timestamp": "2026-04-14T16:35:19.696Z"
+}

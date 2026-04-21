@@ -60,7 +60,8 @@
     "gene": [
       "lrn_20260421_124329_3",
       "lrn_20260421_130524_34",
-      "lrn_20260421_140509_86"
+      "lrn_20260421_140509_86",
+      "lrn_20260421_150434_113"
     ],
     "insight": [
       "lrn_20260421_124534_4",
@@ -118,7 +119,12 @@
       "lrn_20260421_144718_106",
       "lrn_20260421_144718_107",
       "lrn_20260421_144718_108",
-      "lrn_20260421_144718_109"
+      "lrn_20260421_144718_109",
+      "lrn_20260421_150718_114",
+      "lrn_20260421_150718_115",
+      "lrn_20260421_150718_116",
+      "lrn_20260421_150718_117",
+      "lrn_20260421_150718_118"
     ],
     "test": [
       "lrn_20260421_143146_93",
@@ -163,7 +169,8 @@
     "evolution": [
       "lrn_20260421_124329_3",
       "lrn_20260421_130524_34",
-      "lrn_20260421_140509_86"
+      "lrn_20260421_140509_86",
+      "lrn_20260421_150434_113"
     ],
     "Ralph": [
       "lrn_20260421_124534_4",
@@ -222,7 +229,12 @@
       "lrn_20260421_144718_106",
       "lrn_20260421_144718_107",
       "lrn_20260421_144718_108",
-      "lrn_20260421_144718_109"
+      "lrn_20260421_144718_109",
+      "lrn_20260421_150718_114",
+      "lrn_20260421_150718_115",
+      "lrn_20260421_150718_116",
+      "lrn_20260421_150718_117",
+      "lrn_20260421_150718_118"
     ],
     "consolidated": [
       "lrn_20260421_140100_47",
@@ -298,7 +310,8 @@
     ],
     "unknown": [
       "lrn_20260421_130524_34",
-      "lrn_20260421_140509_86"
+      "lrn_20260421_140509_86",
+      "lrn_20260421_150434_113"
     ]
   },
   "recent": [
@@ -1770,6 +1783,84 @@
       "timestamp": "2026-04-21T14:47:49.795184",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_150434_113",
+      "source": "Capability Evolver",
+      "category": "gene",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "strategy": "unknown",
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:04:34.071648",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_150718_114",
+      "source": "Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "resolved",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:07:18.272751",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_150718_115",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:07:18.314042",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_150718_116",
+      "source": "[\u2192Capability Evolver] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:07:18.351888",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_150718_117",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:07:18.387029",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_150718_118",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T15:07:18.419605",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
@@ -1777,13 +1868,8 @@
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
-    "unknown": -2,
+    "unknown": -3,
     "test_strategy": 5,
     "test_feedback": 5
-  },
-  "context_effectiveness": {
-    "testing": {
-      "diversity": 1
-    }
   }
 }

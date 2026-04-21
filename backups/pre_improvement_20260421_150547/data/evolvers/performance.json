@@ -1,0 +1,15 @@
+{
+  "evolutions": [
+    {
+      "gene": "gene_gep_repair_from_errors",
+      "success": false,
+      "date": "2026-04-11T16:25:44.316287",
+      "blast_actual": 88.0,
+      "blast_estimated": 20.0
+    }
+  ],
+  "gene_usage": {
+    "gene_gep_repair_from_errors": 1
+  },
+  "stagnation_signals": []
+}

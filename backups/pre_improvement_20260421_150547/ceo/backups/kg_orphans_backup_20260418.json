@@ -1,0 +1,1488 @@
+{
+  "deleted_entities": {
+    "System Status": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: [internal-path]",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-09T06:00:01.138334",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-09T06:00:01.138335",
+      "last_accessed": "2026-04-09T06:00:01.138336",
+      "access_count": 0,
+      "decay_score": 1,
+      "id": "System Status"
+    },
+    "Was NICHT verloren ging": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: [internal-path]",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-09T06:00:01.138357",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-09T06:00:01.138357",
+      "last_accessed": "2026-04-09T06:00:01.138358",
+      "access_count": 0,
+      "decay_score": 1,
+      "id": "Was NICHT verloren ging"
+    },
+    "Was verloren ging": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: [internal-path]",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-09T06:00:01.138354",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-09T06:00:01.138355",
+      "last_accessed": "2026-04-09T06:00:01.138356",
+      "access_count": 0,
+      "decay_score": 1,
+      "id": "Was verloren ging"
+    },
+    "Weg": {
+      "type": "subtopic",
+      "category": "auto-extracted",
+      "facts": [
+        {
+          "content": "Source: [internal-path]",
+          "confidence": 0.6,
+          "extracted_at": "2026-04-09T06:00:01.137893",
+          "category": "auto"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-09T06:00:01.137894",
+      "last_accessed": "2026-04-09T06:00:01.137895",
+      "access_count": 0,
+      "decay_score": 1,
+      "id": "Weg"
+    },
+    "efficiency_improvement_20260412_133154_2828": {
+      "id": "efficiency_improvement_20260412_133154_2828",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:31:54.459277",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_133159_1862": {
+      "id": "efficiency_improvement_20260412_133159_1862",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:31:59.621003",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_133204_7566": {
+      "id": "efficiency_improvement_20260412_133204_7566",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:32:04.793897",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_142137_8634": {
+      "id": "efficiency_improvement_20260412_142137_8634",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T14:21:37.907477",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_142143_4950": {
+      "id": "efficiency_improvement_20260412_142143_4950",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T14:21:43.088456",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_142148_7716": {
+      "id": "efficiency_improvement_20260412_142148_7716",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T14:21:48.261550",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_152143_2991": {
+      "id": "efficiency_improvement_20260412_152143_2991",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T15:21:43.431661",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_152148_1411": {
+      "id": "efficiency_improvement_20260412_152148_1411",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T15:21:48.594915",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_152153_6288": {
+      "id": "efficiency_improvement_20260412_152153_6288",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T15:21:53.753331",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_152415_3625": {
+      "id": "efficiency_improvement_20260412_152415_3625",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T15:24:15.719010",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_162136_8630": {
+      "id": "efficiency_improvement_20260412_162136_8630",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T16:21:36.089963",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "efficiency_improvement_20260412_172143_2144": {
+      "id": "efficiency_improvement_20260412_172143_2144",
+      "type": "improvement",
+      "name": "Reduce token waste through optimization",
+      "description": "Token optimization applied via autonomous improvement",
+      "category": "efficiency",
+      "approach": "Apply token_optimization patterns",
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T17:21:43.336460",
+      "tags": [
+        "autonomous",
+        "efficiency",
+        "token-optimization"
+      ]
+    },
+    "error_None_1565": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:28:52.763085+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:28:52.763085+00:00",
+      "last_accessed": "2026-04-12T13:28:52.763085+00:00",
+      "access_count": 0,
+      "decay_score": 1,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:28:52.763085+00:00",
+        "fix_applied": "Unknown error: unknown"
+      },
+      "id": "error_None_1565"
+    },
+    "error_None_7413": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:28:57.871522+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:28:57.871522+00:00",
+      "last_accessed": "2026-04-12T13:28:57.871522+00:00",
+      "access_count": 0,
+      "decay_score": 1,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:28:57.871522+00:00",
+        "fix_applied": "Unknown error: unknown"
+      },
+      "id": "error_None_7413"
+    },
+    "error_None_8219": {
+      "type": "error_pattern",
+      "category": "error",
+      "facts": [
+        {
+          "content": "Error: None - None",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-12T13:29:02.985979+00:00"
+        }
+      ],
+      "priority": "HIGH",
+      "created": "2026-04-12T13:29:02.985979+00:00",
+      "last_accessed": "2026-04-12T13:29:02.985979+00:00",
+      "access_count": 0,
+      "decay_score": 1,
+      "properties": {
+        "error_type": null,
+        "error_message": null,
+        "occurrence_count": 1,
+        "first_seen": "2026-04-12T13:29:02.985979+00:00",
+        "fix_applied": "Unknown error: unknown"
+      },
+      "id": "error_None_8219"
+    },
+    "error_pattern_20260412_2049": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-12T20:49:47.022282Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T20:49:47.022288Z",
+      "last_accessed": "2026-04-12T20:49:47.022290Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260412_2049"
+    },
+    "error_pattern_20260412_2100": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-12T21:00:56.505100Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T21:00:56.505105Z",
+      "last_accessed": "2026-04-12T21:00:56.505106Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260412_2100"
+    },
+    "error_pattern_20260412_2103": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-12T21:03:51.741421Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T21:03:51.741428Z",
+      "last_accessed": "2026-04-12T21:03:51.741429Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260412_2103"
+    },
+    "error_pattern_20260412_2203": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-12T22:03:48.111556Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T22:03:48.111566Z",
+      "last_accessed": "2026-04-12T22:03:48.111567Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260412_2203"
+    },
+    "error_pattern_20260412_2303": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-12T23:03:46.743364Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-12T23:03:46.743371Z",
+      "last_accessed": "2026-04-12T23:03:46.743373Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260412_2303"
+    },
+    "error_pattern_20260413_0003": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T00:03:47.435123Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T00:03:47.435129Z",
+      "last_accessed": "2026-04-13T00:03:47.435131Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0003"
+    },
+    "error_pattern_20260413_0103": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T01:03:48.926294Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T01:03:48.926302Z",
+      "last_accessed": "2026-04-13T01:03:48.926303Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0103"
+    },
+    "error_pattern_20260413_0203": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T02:03:49.347279Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T02:03:49.347286Z",
+      "last_accessed": "2026-04-13T02:03:49.347287Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0203"
+    },
+    "error_pattern_20260413_0303": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T03:03:47.729487Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T03:03:47.729495Z",
+      "last_accessed": "2026-04-13T03:03:47.729496Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0303"
+    },
+    "error_pattern_20260413_0403": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T04:03:49.318250Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T04:03:49.318256Z",
+      "last_accessed": "2026-04-13T04:03:49.318257Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0403"
+    },
+    "error_pattern_20260413_0503": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"id\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T05:03:46.724590Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T05:03:46.724596Z",
+      "last_accessed": "2026-04-13T05:03:46.724597Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0503"
+    },
+    "error_pattern_20260413_0603": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T06:03:49.131833Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T06:03:49.131843Z",
+      "last_accessed": "2026-04-13T06:03:49.131845Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0603"
+    },
+    "error_pattern_20260413_0703": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T07:03:59.404380Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T07:03:59.404390Z",
+      "last_accessed": "2026-04-13T07:03:59.404391Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0703"
+    },
+    "error_pattern_20260413_0803": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T08:03:59.386898Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T08:03:59.386914Z",
+      "last_accessed": "2026-04-13T08:03:59.386915Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0803"
+    },
+    "error_pattern_20260413_0903": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T09:03:59.087240Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T09:03:59.087245Z",
+      "last_accessed": "2026-04-13T09:03:59.087246Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_0903"
+    },
+    "error_pattern_20260413_1004": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T10:04:17.556678Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T10:04:17.556687Z",
+      "last_accessed": "2026-04-13T10:04:17.556688Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_1004"
+    },
+    "error_pattern_20260413_1104": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T11:04:17.341894Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T11:04:17.341900Z",
+      "last_accessed": "2026-04-13T11:04:17.341901Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_1104"
+    },
+    "error_pattern_20260413_1205": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T12:05:01.289918Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T12:05:01.289927Z",
+      "last_accessed": "2026-04-13T12:05:01.289929Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_1205"
+    },
+    "error_pattern_20260413_1303": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T13:03:48.809407Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T13:03:48.809414Z",
+      "last_accessed": "2026-04-13T13:03:48.809415Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_1303"
+    },
+    "error_pattern_20260413_1403": {
+      "type": "error_pattern",
+      "category": "system",
+      "facts": [
+        {
+          "content": "Auto-detected error pattern: {\"timestamp\":",
+          "confidence": 1,
+          "extracted_at": "2026-04-13T14:03:50.755495Z",
+          "category": "error"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-13T14:03:50.755502Z",
+      "last_accessed": "2026-04-13T14:03:50.755503Z",
+      "access_count": 1,
+      "decay_score": 1,
+      "id": "error_pattern_20260413_1403"
+    },
+    "improvement_safety_20260412_072131_9576": {
+      "id": "improvement_safety_20260412_072131_9576",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T07:21:31.234148",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_072136_2291": {
+      "id": "improvement_safety_20260412_072136_2291",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T07:21:36.385277",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_072141_8342": {
+      "id": "improvement_safety_20260412_072141_8342",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T07:21:41.550395",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_082139_6265": {
+      "id": "improvement_safety_20260412_082139_6265",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T08:21:39.445311",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_082144_1478": {
+      "id": "improvement_safety_20260412_082144_1478",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T08:21:44.591734",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_082149_2615": {
+      "id": "improvement_safety_20260412_082149_2615",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T08:21:49.732275",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_092141_6455": {
+      "id": "improvement_safety_20260412_092141_6455",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T09:21:41.544046",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_092146_5872": {
+      "id": "improvement_safety_20260412_092146_5872",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T09:21:46.686962",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_092151_3496": {
+      "id": "improvement_safety_20260412_092151_3496",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T09:21:51.843989",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_102130_3082": {
+      "id": "improvement_safety_20260412_102130_3082",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T10:21:30.576226",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_102135_3996": {
+      "id": "improvement_safety_20260412_102135_3996",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T10:21:35.718092",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_102140_9127": {
+      "id": "improvement_safety_20260412_102140_9127",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T10:21:40.858764",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_112130_3855": {
+      "id": "improvement_safety_20260412_112130_3855",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T11:21:30.044855",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_112135_4305": {
+      "id": "improvement_safety_20260412_112135_4305",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T11:21:35.205544",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_112140_5553": {
+      "id": "improvement_safety_20260412_112140_5553",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T11:21:40.354971",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_122131_4042": {
+      "id": "improvement_safety_20260412_122131_4042",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T12:21:31.772098",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_122136_4830": {
+      "id": "improvement_safety_20260412_122136_4830",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T12:21:36.925133",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_122142_5093": {
+      "id": "improvement_safety_20260412_122142_5093",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T12:21:42.105511",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_132407_3576": {
+      "id": "improvement_safety_20260412_132407_3576",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:24:07.987384",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_132428_9362": {
+      "id": "improvement_safety_20260412_132428_9362",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:24:28.697198",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_132433_8915": {
+      "id": "improvement_safety_20260412_132433_8915",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:24:33.867787",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_132439_4179": {
+      "id": "improvement_safety_20260412_132439_4179",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T13:24:39.055162",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_152420_3809": {
+      "id": "improvement_safety_20260412_152420_3809",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T15:24:20.886805",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_162141_5230": {
+      "id": "improvement_safety_20260412_162141_5230",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T16:21:41.236948",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_safety_20260412_172148_9086": {
+      "id": "improvement_safety_20260412_172148_9086",
+      "type": "improvement",
+      "name": "Prevent destructive operations",
+      "description": "Autonomous improvement: Add safeguards to dangerous commands",
+      "category": "safety",
+      "approach": "Add safeguards to dangerous commands",
+      "methods": [
+        "Identify rm/trash operations",
+        "Add confirmation prompts",
+        "Log destructive actions"
+      ],
+      "expected_impact": 10,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T17:21:48.518383",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "safety"
+      ]
+    },
+    "improvement_workflow_20260412_162146_7963": {
+      "id": "improvement_workflow_20260412_162146_7963",
+      "type": "improvement",
+      "name": "Optimize daily workflow rhythm",
+      "description": "Autonomous improvement: Morning \u2192 Learning \u2192 Evening pattern",
+      "category": "workflow",
+      "approach": "Morning \u2192 Learning \u2192 Evening pattern",
+      "methods": [
+        "Analyze current cron schedule",
+        "Identify gaps or overlaps",
+        "Suggest optimization"
+      ],
+      "expected_impact": 5,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T16:21:46.422499",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "workflow"
+      ]
+    },
+    "improvement_workflow_20260412_172153_2350": {
+      "id": "improvement_workflow_20260412_172153_2350",
+      "type": "improvement",
+      "name": "Optimize daily workflow rhythm",
+      "description": "Autonomous improvement: Morning \u2192 Learning \u2192 Evening pattern",
+      "category": "workflow",
+      "approach": "Morning \u2192 Learning \u2192 Evening pattern",
+      "methods": [
+        "Analyze current cron schedule",
+        "Identify gaps or overlaps",
+        "Suggest optimization"
+      ],
+      "expected_impact": 5,
+      "source": "autonomous_improvement",
+      "created": "2026-04-12T17:21:53.668724",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "workflow"
+      ]
+    },
+    "kg_growth_20260412_152426_2579": {
+      "id": "kg_growth_20260412_152426_2579",
+      "type": "skill",
+      "name": "Autonomous Improvement System",
+      "description": "Karpathy-style self-improvement loop - cycle 2579",
+      "source": "internal",
+      "created": "2026-04-12T15:24:26.036656",
+      "tags": [
+        "autonomous",
+        "improvement",
+        "karpathy",
+        "self-healing"
+      ],
+      "last_accessed": "2026-04-18T08:01:01.526381+00:00",
+      "access_count": 14
+    },
+    "meta_pattern_000": {
+      "id": "meta_pattern_000",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to health_agent show consistent su",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"health_agent\"}",
+        "action": "{\"approach\": \"delegate_to_health_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517448",
+        "meta_patterns": [
+          "meta_pattern_000"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.000954"
+      },
+      "relations": [
+        {
+          "type": "optimized_by",
+          "target": "agent:health_agent"
+        }
+      ]
+    },
+    "meta_pattern_001": {
+      "id": "meta_pattern_001",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to research_agent show consistent ",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"research_agent\"}",
+        "action": "{\"approach\": \"delegate_to_research_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517477",
+        "meta_patterns": [
+          "meta_pattern_001"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.000978"
+      },
+      "relations": [
+        {
+          "type": "optimized_by",
+          "target": "agent:research_agent"
+        }
+      ]
+    },
+    "meta_pattern_002": {
+      "id": "meta_pattern_002",
+      "type": "meta_pattern",
+      "name": "Tasks delegated to data_agent show consistent succ",
+      "properties": {
+        "trigger": "{\"delegated_to\": \"data_agent\"}",
+        "action": "{\"approach\": \"delegate_to_data_agent\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517496",
+        "meta_patterns": [
+          "meta_pattern_002"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.000992"
+      },
+      "relations": [
+        {
+          "type": "optimized_by",
+          "target": "agent:data_agent"
+        }
+      ]
+    },
+    "meta_pattern_003": {
+      "id": "meta_pattern_003",
+      "type": "meta_pattern",
+      "name": "health_check tasks perform well with their dedicat",
+      "properties": {
+        "trigger": "{\"subtype\": \"health_check\"}",
+        "action": "{\"approach\": \"health_check_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.2,
+        "cross_task_valid": true,
+        "synced_at": "2026-04-18T06:57:25.517513",
+        "meta_patterns": [
+          "meta_pattern_003"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.001005"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task_domain"
+        }
+      ]
+    },
+    "meta_pattern_004": {
+      "id": "meta_pattern_004",
+      "type": "meta_pattern",
+      "name": "learning_sync tasks perform well with their dedica",
+      "properties": {
+        "trigger": "{\"subtype\": \"learning_sync\"}",
+        "action": "{\"approach\": \"learning_sync_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.1,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517530",
+        "meta_patterns": [
+          "meta_pattern_004"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.001017"
+      },
+      "relations": []
+    },
+    "meta_pattern_005": {
+      "id": "meta_pattern_005",
+      "type": "meta_pattern",
+      "name": "subagent_task tasks perform well with their dedica",
+      "properties": {
+        "trigger": "{\"subtype\": \"subagent_task\"}",
+        "action": "{\"approach\": \"subagent_task_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.1,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517546",
+        "meta_patterns": [
+          "meta_pattern_005"
+        ],
+        "pattern_count": 1,
+        "meta_learned": true,
+        "updated_at": "2026-04-18T08:20:20.001037"
+      },
+      "relations": []
+    },
+    "meta_pattern_006": {
+      "id": "meta_pattern_006",
+      "type": "meta_pattern",
+      "name": "Fast tasks (<60s) have highest success with direct",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"fast\"}",
+        "action": "{\"approach\": \"fast_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 1.0,
+        "cross_task_valid": true,
+        "synced_at": "2026-04-18T06:57:25.517563"
+      },
+      "relations": [
+        {
+          "type": "applies_to",
+          "target": "cross_task_domain"
+        }
+      ]
+    },
+    "meta_pattern_007": {
+      "id": "meta_pattern_007",
+      "type": "meta_pattern",
+      "name": "Medium tasks (<60s) have highest success with dire",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"medium\"}",
+        "action": "{\"approach\": \"medium_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.3,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517579"
+      },
+      "relations": []
+    },
+    "meta_pattern_008": {
+      "id": "meta_pattern_008",
+      "type": "meta_pattern",
+      "name": "Slow tasks (>5min) may benefit from more monitorin",
+      "properties": {
+        "trigger": "{\"duration_bucket\": \"slow\"}",
+        "action": "{\"approach\": \"monitored_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.3,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517602"
+      },
+      "relations": []
+    },
+    "meta_pattern_009": {
+      "id": "meta_pattern_009",
+      "type": "meta_pattern",
+      "name": "Direct execution works well for main-agent tasks",
+      "properties": {
+        "trigger": "{\"delegated_to\": null}",
+        "action": "{\"approach\": \"direct_execution\"}",
+        "success_rate": 1.0,
+        "generalization_score": 0.7,
+        "cross_task_valid": false,
+        "synced_at": "2026-04-18T06:57:25.517619"
+      },
+      "relations": []
+    },
+    "pattern_discovery_20260412_152426_2579": {
+      "id": "pattern_discovery_20260412_152426_2579",
+      "type": "pattern",
+      "name": "Blast Radius Estimation",
+      "description": "Estimating impact of changes before execution",
+      "source": "internal",
+      "created": "2026-04-12T15:24:26.071859",
+      "tags": [
+        "estimation",
+        "planning",
+        "safety"
+      ]
+    }
+  },
+  "deleted_at": "2026-04-18T08:21:30.124261",
+  "reason": "Orphan cleanup - junk entities without value",
+  "total_deleted": 78
+}

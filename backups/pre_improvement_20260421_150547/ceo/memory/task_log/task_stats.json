@@ -1,0 +1,88 @@
+{
+  "by_type": {
+    "message_response": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "decision": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "subagent_task": {
+      "success": 79,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 79
+    },
+    "cron_task": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "script_execution": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "learning_integration": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "health_check": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "research": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "file_operation": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    },
+    "external_action": {
+      "success": 0,
+      "failure": 0,
+      "partial": 0,
+      "skipped": 0,
+      "total": 0
+    }
+  },
+  "by_day": {
+    "2026-04-18": {
+      "success": 79,
+      "failure": 0,
+      "total": 79
+    }
+  },
+  "success_rate_by_type": {
+    "subagent_task": 1.0
+  },
+  "last_updated": "2026-04-18T04:52:11.372683",
+  "total_tasks": 79,
+  "total_successes": 79,
+  "total_failures": 0
+}

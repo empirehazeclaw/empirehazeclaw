@@ -1,0 +1,93 @@
+{
+  "weights": {
+    "duration_fast": 1.0,
+    "duration_medium": 1.0,
+    "duration_slow": 1.0,
+    "delegated_health": 1.0,
+    "delegated_research": 1.0,
+    "delegated_data": 1.0,
+    "direct_execution": 0.8,
+    "subtype_health_check": 1.0,
+    "subtype_learning_sync": 1.0,
+    "subtype_subagent_task": 1.0,
+    "default": 0.7
+  },
+  "history": [
+    {
+      "timestamp": "2026-04-18T05:30:10.063324",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T05:30:27.648190",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T05:43:16.790152",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:01:21.671098",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:20:21.043552",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:27:19.250742",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:30:19.932243",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:33:39.503793",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:48:44.877263",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:50:55.947861",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T06:57:25.505023",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T07:20:20.029601",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T07:33:37.854740",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T08:20:19.977680",
+      "patterns_processed": 10,
+      "weights_updated": true
+    },
+    {
+      "timestamp": "2026-04-18T09:20:18.083926",
+      "patterns_processed": 10,
+      "weights_updated": true
+    }
+  ],
+  "updated_at": "2026-04-18T09:20:18.083933"
+}

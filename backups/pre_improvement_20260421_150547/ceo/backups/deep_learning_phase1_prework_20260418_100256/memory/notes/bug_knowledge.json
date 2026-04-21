@@ -1,0 +1,14 @@
+{
+  "known_bugs": [
+    {
+      "hash": "a4868d10535b",
+      "first_seen": "2026-04-18T07:30:13.343556+00:00",
+      "line": "[2026-04-18 07:03:55]   \u2717 KG Sync: Traceback (most recent call last):",
+      "file": "/home/clawbot/.openclaw/workspace/logs/learning_core.log",
+      "count": 1,
+      "category": "REAL_ERROR",
+      "status": "NEW"
+    }
+  ],
+  "last_updated": "2026-04-18T09:35:15.537778+00:00"
+}

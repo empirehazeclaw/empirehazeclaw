@@ -1,0 +1,118 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-04-18T05:57:14.450731",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-18T14:04:04.986971",
+      "mode": "daily",
+      "sources_used": 1,
+      "findings_count": 4,
+      "new_entities": 4
+    },
+    {
+      "timestamp": "2026-04-19T14:00:33.072933",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-20T06:21:59.251502",
+      "mode": "full",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-20T14:03:17.382485",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 19,
+      "new_entities": 19
+    },
+    {
+      "timestamp": "2026-04-20T19:07:51.181479",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:09:50.577698",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:10:47.099621",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:12:35.371373",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:14:44.548721",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:16:04.147037",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T19:18:03.545894",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-20T20:45:25.463605",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-21T09:07:41.299157",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-21T09:16:06.742842",
+      "mode": "daily",
+      "sources_used": 6,
+      "findings_count": 18,
+      "new_entities": 18
+    },
+    {
+      "timestamp": "2026-04-21T14:03:42.492164",
+      "mode": "daily",
+      "sources_used": 1,
+      "findings_count": 3,
+      "new_entities": 3
+    }
+  ],
+  "last_full_research": "2026-04-21T14:03:42.492179",
+  "sources_searched": 86
+}

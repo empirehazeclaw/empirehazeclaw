@@ -1,0 +1,92 @@
+[
+  {
+    "id": "goal_001",
+    "title": "Workspace Stabilit\u00e4t Phase 1-4",
+    "created_at": "2026-04-17T14:47:18.547037+00:00",
+    "deadline": "2026-04-20",
+    "priority": "HIGH",
+    "status": "completed",
+    "context": "MEMORY.md, TOOLS.md, Decision Framework, Proactive Scanner, Intention Engine",
+    "milestones": [
+      {
+        "text": "Intention Engine aufbauen",
+        "done": true
+      }
+    ],
+    "updated_at": "2026-04-17T18:15:35.791486+00:00",
+    "completed_at": "2026-04-17T15:49:00+00:00"
+  },
+  {
+    "id": "goal_002",
+    "title": "Phase 5 Self-Reflection Engine",
+    "created_at": "2026-04-17T14:47:18.641643+00:00",
+    "deadline": "2026-04-25",
+    "priority": "MEDIUM",
+    "status": "completed",
+    "context": "Reflection Generator, Critique Store, KG Integration",
+    "milestones": [
+      {
+        "text": "Reflection Generator",
+        "done": true
+      },
+      {
+        "text": "Critique Store (local + KG)",
+        "done": true
+      },
+      {
+        "text": "KG Integration",
+        "done": true
+      },
+      {
+        "text": "Contextual Thompson Sampling",
+        "done": true
+      }
+    ],
+    "updated_at": "2026-04-17T14:47:18.641662+00:00",
+    "completed_at": "2026-04-17T15:52:00+00:00"
+  },
+  {
+    "id": "goal_003",
+    "title": "KPI Review + Retrospective",
+    "created_at": "2026-04-17T14:58:24.229208+00:00",
+    "deadline": "2026-04-21",
+    "priority": "MEDIUM",
+    "status": "completed",
+    "context": "Weekly Review mit Nico, KPI Check, Learnings dokumentieren",
+    "milestones": [
+      {
+        "text": "Weekly Review vorbereiten",
+        "done": true
+      },
+      {
+        "text": "Learnings dokumentieren",
+        "done": true
+      }
+    ],
+    "updated_at": "2026-04-17T14:58:40.608116+00:00",
+    "completed_at": "2026-04-17T15:52:00+00:00"
+  },
+  {
+    "id": "goal_004",
+    "title": "Phase 2: B2 Self-Healing + B1 Multi-Agent Design",
+    "created_at": "2026-04-17T18:18:08.509396+00:00",
+    "deadline": "2026-04-24",
+    "priority": "HIGH",
+    "status": "completed",
+    "context": "",
+    "milestones": [],
+    "updated_at": "2026-04-17T18:21:46.583214+00:00"
+  },
+  {
+    "id": "goal_005",
+    "title": "Phase 3: Agent Deployment + C2/C3",
+    "created_at": "2026-04-17T18:25:35.684851+00:00",
+    "deadline": "2026-05-01",
+    "priority": "HIGH",
+    "status": "completed",
+    "context": "",
+    "milestones": [],
+    "updated_at": "2026-04-19T08:17:07.010892+00:00",
+    "completed_at": "2026-04-19T08:17:07.010873+00:00"
+  }
+]

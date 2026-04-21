@@ -1,0 +1,34 @@
+{
+  "last_full_cycle": "2026-04-21T12:07:38.330383",
+  "cycles_run": 131,
+  "script_issues": [
+    {
+      "type": "not_executable",
+      "script": "/home/clawbot/.openclaw/workspace/SCRIPTS/automation/cache_cleanup.sh",
+      "cron": "Cache Cleanup Daily",
+      "job_id": "01f50e14",
+      "detail": "Shell script not executable",
+      "severity": "LOW"
+    }
+  ],
+  "doc_issues": [],
+  "cron_issues": {
+    "total_crons": 34,
+    "redundancy_groups": 0,
+    "redundancies": [],
+    "healthy": true
+  },
+  "kg_health": {
+    "entity_count": 486,
+    "connected_count": 486,
+    "orphan_count": 0,
+    "orphan_pct": 0.0,
+    "healthy": true,
+    "threshold": 0.8,
+    "recommendation": "Orphan rate 0.0% within acceptable range"
+  },
+  "last_script_check": "2026-04-21T12:07:29.777441",
+  "last_doc_audit": "2026-04-21T12:07:29.778211",
+  "last_cron_check": "2026-04-21T12:07:38.330113",
+  "last_updated": "2026-04-21T11:59:28.051103"
+}

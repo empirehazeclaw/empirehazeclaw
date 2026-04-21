@@ -1,0 +1,38 @@
+{
+  "ontology": [
+    "timeout",
+    "api_error",
+    "validation_error",
+    "permission_denied",
+    "resource_exhausted",
+    "network_failure",
+    "dependency_missing",
+    "invalid_input",
+    "logic_error",
+    "unknown",
+    "design_gap",
+    "bias_confirmed",
+    "context_truncation",
+    "model_weakness",
+    "tool_failure",
+    "orchestration_error"
+  ],
+  "descriptions": {
+    "timeout": "Operation exceeded time limit",
+    "api_error": "External API returned error",
+    "validation_error": "Input validation failed",
+    "permission_denied": "Access permission issue",
+    "resource_exhausted": "Memory/CPU/disk limits hit",
+    "network_failure": "Network connectivity issue",
+    "dependency_missing": "Required dependency not found",
+    "invalid_input": "Input data malformed or out of range",
+    "logic_error": "Internal logic produced wrong result",
+    "unknown": "Cause could not be determined",
+    "design_gap": "System design missed a use case",
+    "bias_confirmed": "Model bias observed in output",
+    "context_truncation": "Context window overflow",
+    "model_weakness": "Model capability limitation",
+    "tool_failure": "Tool/script execution failed",
+    "orchestration_error": "Multi-step coordination failed"
+  }
+}

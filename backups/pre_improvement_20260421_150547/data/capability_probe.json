@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-04-21T09:17:42.705489",
+  "kg_metrics": {
+    "entity_count": 451,
+    "relation_count": 776,
+    "orphan_count": 186,
+    "orphan_pct": 0.4124168514412417,
+    "relation_density": 1.7206208425720622,
+    "type_count": 31,
+    "types": [
+      "product",
+      "research",
+      "skill",
+      "infrastructure",
+      "project",
+      "kg_synthesis",
+      "category",
+      "reflection",
+      "LearningPattern",
+      "person"
+    ]
+  },
+  "learning_trajectory": {
+    "iteration": 252,
+    "score": 0.7489811139609064,
+    "pattern_count": 24
+  },
+  "benchmark_results": [
+    {
+      "area": "kg_query",
+      "success": true,
+      "error": null,
+      "entity_count": 451
+    },
+    {
+      "area": "event_check",
+      "success": true,
+      "error": null,
+      "event_count": 0
+    },
+    {
+      "area": "learning_read",
+      "success": true,
+      "error": null,
+      "score": 0.7489811139609064
+    },
+    {
+      "area": "pattern_match",
+      "success": true,
+      "error": null,
+      "pattern_count": 24
+    }
+  ],
+  "signals_generated": [],
+  "recommendations": [],
+  "overall_status": "needs_attention"
+}

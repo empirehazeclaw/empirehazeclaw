@@ -1,0 +1,234 @@
+{
+  "last_run": "2026-04-21T09:17:16.920560",
+  "usage": {},
+  "dead_skills": [],
+  "skills_count": 28,
+  "alive": 28,
+  "dead": 0,
+  "analysis": [
+    {
+      "id": "log-aggregator",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "prompt-coach",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 8,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "semantic-search",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "_library",
+      "score": 1.0,
+      "files": 27,
+      "days_since_modified": 9,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "coding",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "loop-prevention",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "backup-advisor",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "backend-api",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "self-improvement",
+      "score": 1.0,
+      "files": 6,
+      "days_since_modified": 9,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "research",
+      "score": 1.0,
+      "files": 9,
+      "days_since_modified": 9,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "capability-evolver",
+      "score": 1.0,
+      "files": 121,
+      "days_since_modified": 0,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "hyperparameter-tuner",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "ralph_loop",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 0,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "system-manager",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "git-manager",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "test-generator",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "guardrails",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "bug-hunter",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "frontend",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "repo-analyzer",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "content-creator",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "memory_cleaner",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 3,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "code-review",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "debug-helper",
+      "score": 1.0,
+      "files": 4,
+      "days_since_modified": 5,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "memory-sanitizer",
+      "score": 1.0,
+      "files": 2,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "voice-agent",
+      "score": 1.0,
+      "files": 13,
+      "days_since_modified": 3,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "youtube-transcript",
+      "score": 1.0,
+      "files": 1,
+      "days_since_modified": 6,
+      "usage_estimate": 0,
+      "status": "alive"
+    },
+    {
+      "id": "qa-enforcer",
+      "score": 1.0,
+      "files": 3,
+      "days_since_modified": 10,
+      "usage_estimate": 0,
+      "status": "alive"
+    }
+  ]
+}

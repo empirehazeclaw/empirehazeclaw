@@ -1,0 +1,38 @@
+============================================================
+🦞 CAPABILITY EVOLUTION REPORT
+Generated: 2026-04-10T21:15:11.830996
+============================================================
+
+🟡 MEDIUM (8 issues)
+----------------------------------------
+  📄 /home/clawbot/.openclaw/workspace/scripts/self_check.py
+     Error Handling: subprocess.run without try/except
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/dream_reflection.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/daily_summary.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/evening_summary.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/quick_check.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/morning_brief.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/common_issues_check.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/discord_report_forwarder.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
