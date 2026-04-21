@@ -1,227 +1,335 @@
 #!/usr/bin/env python3
 """
-Memory Consolidator — Sir HazeClaw Phase 2
-=========================================
-Consolidates fragmented memory files.
+Memory Consolidator — Phase 7 of Learning-Memory Symbiosis
+==========================================================
+
+Consolidates learnings into persistent memory files:
+- Daily: Learnings summary → MEMORY.md
+- Weekly: KG health report
+- Monthly: Strategy effectiveness report
+- Archive: Old learnings to memory/archive/
+
+Based on Claude Diary Pattern (rlancemartin.github.io)
 
 Usage:
-    python3 memory_consolidator.py --scan      # Scan and categorize
-    python3 memory_consolidator.py --archive   # Archive old files
-    python3 memory_consolidator.py --index      # Rebuild INDEX.md
-    python3 memory_consolidator.py --full       # Full consolidation
-
-Phase B4: Memory Consolidation Automation
+    python3 memory_consolidator.py daily
+    python3 memory_consolidator.py weekly
+    python3 memory_consolidator.py monthly
+    python3 memory_consolidator.py archive
+    python3 memory_consolidator.py all
 """
 
-import os
-import sys
 import json
-import shutil
+import sys
 from datetime import datetime, timedelta
 from pathlib import Path
-from collections import defaultdict
+from collections import Counter, defaultdict
+from typing import Dict, List
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 MEMORY_DIR = WORKSPACE / "ceo/memory"
-NOTES_DIR = MEMORY_DIR / "notes"
-ARCHIVE_DIR = MEMORY_DIR / "ARCHIVE"
-INDEX_FILE = MEMORY_DIR / "notes/INDEX.md"
+ARCHIVE_DIR = MEMORY_DIR / "archive"
+MEMORY_MD = MEMORY_DIR / "MEMORY.md"
+KG_PATH = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
+LEARNINGS_INDEX = WORKSPACE / "data/learnings/index.json"
 
-# Age thresholds (days)
-OLD_THRESHOLD = 30  # Archive files older than this
-STALE_THRESHOLD = 7   # Delete temp files older than this
+sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
 
-# File categories
-KEPT_EXTENSIONS = ['.md', '.json', '.emb.json']
-IGNORED_PATTERNS = ['.git', '__pycache__', 'node_modules', '.dreams']
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None
 
-# Priority files to KEEP in place (not archived)
-PRIORITY_FILES = {
-    'MEMORY.md',
-    'USER.md',
-    'SOUL.md',
-    'IDENTITY.md',
-    'AGENTS.md',
-    'TOOLS.md',
-    'HEARTBEAT.md',
-    'notes/INDEX.md',
-    'notes/system_improvement_master_plan.md',
-    'notes/memory_optimization_plan.md',
-    'notes/intention_engine_plan.md',
-    'notes/weekly_review_template.md',
-    'notes/SYSTEM_IMPROVEMENT_PHASE1_DOC.md',
-    'daily_summary_2026-04-17.md',
-    '2026-04-17.md',
-}
 
-def get_file_age(path: Path) -> int:
-    """Get file age in days."""
-    try:
-        mtime = datetime.fromtimestamp(path.stat().st_mtime)
-        return (datetime.now() - mtime).days
-    except:
-        return 0
-
-def should_archive(path: Path) -> tuple[bool, str]:
-    """Check if file should be archived."""
-    name = path.name
+class MemoryConsolidator:
+    """
+    Consolidates learnings into persistent memory.
     
-    # Never archive priority files
-    rel = str(path.relative_to(MEMORY_DIR))
+    Implements the Claude Diary Pattern:
+    Session → Observations → Pattern Analysis → Rules Update
+    """
     
-    # Never archive priority files
-    if rel in PRIORITY_FILES or path.name in PRIORITY_FILES:
-        return False, "priority_file"
+    def __init__(self):
+        self.learnings = LearningsService() if LearningsService else None
+        self.today = datetime.utcnow().strftime("%Y-%m-%d")
+        self.now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     
-    # Never archive recent files
-    age = get_file_age(path)
-    if age < OLD_THRESHOLD:
-        return False, "recent"
+    def _load_kg(self):
+        """Load KG."""
+        try:
+            with open(KG_PATH) as f:
+                return json.load(f)
+        except:
+            return {"entities": {}, "relations": {}}
     
-    # Archive old notes/ARCHIVE files
-    if 'notes' in str(path) or 'ARCHIVE' in str(path):
-        return True, "old_note"
-    
-    # Archive old daily logs
-    if '20' in name[:10]:  # Date pattern like 2026-04-17.md
-        return True, "old_daily"
-    
-    return False, "keep"
-
-def scan_memory() -> dict:
-    """Scan all memory files and categorize."""
-    categories = {
-        'priority': [],      # Keep in place
-        'to_archive': [],    # Move to ARCHIVE
-        'to_delete': [],     # Delete old temp files
-        'recent': [],        # Keep, recently modified
-    }
-    
-    for path in MEMORY_DIR.rglob("*.md"):
-        # Skip ignored patterns
-        if any(p in str(path) for p in IGNORED_PATTERNS):
-            continue
+    def consolidate_daily(self) -> Dict:
+        """
+        Daily consolidation: Learnings → MEMORY.md
         
-        rel = str(path.relative_to(MEMORY_DIR))
-        age = get_file_age(path)
+        Extracts key learnings from the day and adds to MEMORY.md
+        """
+        if not self.learnings:
+            return {"error": "LearningsService unavailable"}
         
-        should_arch, reason = should_archive(path)
-        
-        info = {
-            'path': rel,
-            'age_days': age,
-            'reason': reason,
-            'size_kb': path.stat().st_size // 1024
+        result = {
+            "learnings_summary": [],
+            "strategies": {},
+            "patterns": [],
+            "issues": []
         }
         
-        if should_arch:
-            categories['to_archive'].append(info)
-        elif age > STALE_THRESHOLD and ('temp' in rel.lower() or 'tmp' in rel.lower()):
-            categories['to_delete'].append(info)
-        elif reason == "priority_file":
-            categories['priority'].append(info)
-        else:
-            categories['recent'].append(info)
+        # Get learnings from last 24 hours
+        cutoff = datetime.utcnow() - timedelta(hours=24)
+        recent = []
+        for l in self.learnings.index["recent"]:
+            try:
+                lt = datetime.fromisoformat(l.get("timestamp", "2020-01-01"))
+                if lt > cutoff:
+                    recent.append(l)
+            except:
+                pass
+        
+        # Summarize by category
+        categories = Counter(l.get("category") for l in recent)
+        result["learnings_summary"] = [
+            {"category": cat, "count": cnt}
+            for cat, cnt in categories.most_common(5)
+        ]
+        
+        # Get top strategies
+        strategies = self.learnings.index.get("strategy_effectiveness", {})
+        top = sorted(strategies.items(), key=lambda x: -x[1])[:5]
+        result["strategies"] = {s: v for s, v in top}
+        
+        # Get recent patterns
+        patterns = [l for l in recent if l.get("category") == "pattern"]
+        result["patterns"] = [p.get("learning", "")[:80] for p in patterns[:5]]
+        
+        # Get issues/failures
+        failures = [l for l in recent if l.get("outcome") == "failure"]
+        result["issues"] = [f.get("learning", "")[:80] for f in failures[:3]]
+        
+        # Format for MEMORY.md
+        md_section = self._format_daily_section(result)
+        
+        # Append to MEMORY.md
+        MEMORY_MD.parent.mkdir(parents=True, exist_ok=True)
+        with open(MEMORY_MD, "a") as f:
+            f.write("\n" + md_section)
+        
+        result["written_to"] = str(MEMORY_MD)
+        return result
     
-    return categories
+    def _format_daily_section(self, data: Dict) -> str:
+        """Format daily consolidation as markdown."""
+        lines = [
+            f"\n## {self.today} — Daily Learnings Summary",
+            "",
+            f"_Consolidated: {self.now}_",
+            "",
+        ]
+        
+        # Strategies
+        if data.get("strategies"):
+            lines.append("### Strategy Effectiveness")
+            for s, v in data["strategies"].items():
+                verdict = "EFFECTIVE" if v > 0 else "INEFFECTIVE" if v < 0 else "NEUTRAL"
+                lines.append(f"- **{s}**: {v} ({verdict})")
+            lines.append("")
+        
+        # Patterns
+        if data.get("patterns"):
+            lines.append("### Patterns Discovered")
+            for p in data["patterns"]:
+                lines.append(f"- {p}")
+            lines.append("")
+        
+        # Issues
+        if data.get("issues"):
+            lines.append("### Issues Resolved")
+            for i in data["issues"]:
+                lines.append(f"- {i}")
+            lines.append("")
+        
+        # Category summary
+        if data.get("learnings_summary"):
+            lines.append("### Learnings by Category")
+            for c in data["learnings_summary"]:
+                lines.append(f"- {c['category']}: {c['count']}")
+            lines.append("")
+        
+        return "\n".join(lines)
+    
+    def consolidate_weekly(self) -> Dict:
+        """
+        Weekly consolidation: KG health report
+        """
+        kg = self._load_kg()
+        entities = kg.get("entities", {})
+        relations = kg.get("relations", {})
+        
+        # Count by type
+        types = Counter(e.get("type", "unknown") for e in entities.values())
+        
+        # Check for broken relations
+        entity_names = set(entities.keys())
+        broken_relations = []
+        for rid, rel in relations.items():
+            if rel.get("from") not in entity_names or rel.get("to") not in entity_names:
+                broken_relations.append(rid)
+        
+        result = {
+            "kg_entities": len(entities),
+            "kg_relations": len(relations),
+            "broken_relations": len(broken_relations),
+            "entity_types": dict(types.most_common(10)),
+            "health_percent": round((len(relations) - len(broken_relations)) / max(len(relations), 1) * 100, 1),
+            "date": self.today
+        }
+        
+        # Write to archive
+        ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+        report_file = ARCHIVE_DIR / f"kg_health_{self.today}.json"
+        with open(report_file, "w") as f:
+            json.dump(result, f, indent=2)
+        
+        result["written_to"] = str(report_file)
+        return result
+    
+    def consolidate_monthly(self) -> Dict:
+        """
+        Monthly consolidation: Strategy effectiveness report
+        """
+        if not self.learnings:
+            return {"error": "LearningsService unavailable"}
+        
+        # Get all strategy effectiveness data
+        strategies = self.learnings.index.get("strategy_effectiveness", {})
+        context_eff = self.learnings.index.get("context_effectiveness", {})
+        
+        result = {
+            "total_strategies": len(strategies),
+            "total_learnings": len(self.learnings.index["recent"]),
+            "strategies": {},
+            "contexts": {},
+            "date": self.today
+        }
+        
+        # Rank strategies
+        ranked = sorted(strategies.items(), key=lambda x: -x[1])
+        result["strategies"] = {
+            "top": ranked[:5],
+            "bottom": ranked[-5:] if len(ranked) > 5 else ranked,
+            "all": strategies
+        }
+        
+        # Context effectiveness
+        result["contexts"] = dict(context_eff)
+        
+        # Write to archive
+        ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+        report_file = ARCHIVE_DIR / f"strategy_report_{self.today}.json"
+        with open(report_file, "w") as f:
+            json.dump(result, f, indent=2, default=str)
+        
+        result["written_to"] = str(report_file)
+        return result
+    
+    def archive_old_learnings(self, days: int = 30) -> Dict:
+        """
+        Archive learnings older than specified days.
+        """
+        if not self.learnings:
+            return {"error": "LearningsService unavailable"}
+        
+        cutoff = datetime.utcnow() - timedelta(days=days)
+        archived = []
+        
+        for l in self.learnings.index["recent"]:
+            try:
+                lt = datetime.fromisoformat(l.get("timestamp", "2020-01-01"))
+                if lt < cutoff:
+                    archived.append(l)
+            except:
+                pass
+        
+        # Write archive
+        ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+        archive_file = ARCHIVE_DIR / f"learnings_archive_{self.today}.json"
+        
+        with open(archive_file, "w") as f:
+            json.dump({
+                "archived_at": self.now,
+                "count": len(archived),
+                "learnings": archived
+            }, f, indent=2, default=str)
+        
+        # Prune from active
+        prune_result = self.learnings.prune_old_learnings(days=days, dry_run=False)
+        
+        return {
+            "archived_count": len(archived),
+            "archived_to": str(archive_file),
+            "pruned_count": prune_result.get("count", 0),
+            "remaining": prune_result.get("remaining", 0)
+        }
+    
+    def run_all(self) -> Dict:
+        """Run all consolidation tasks."""
+        print("=" * 50)
+        print("MEMORY CONSOLIDATION - Full Run")
+        print("=" * 50)
+        
+        results = {}
+        
+        print("\n[1/4] Daily consolidation (→ MEMORY.md)...")
+        results["daily"] = self.consolidate_daily()
+        print(f"    Written: {results['daily'].get('written_to', 'N/A')}")
+        
+        print("\n[2/4] Weekly consolidation (KG health)...")
+        results["weekly"] = self.consolidate_weekly()
+        print(f"    KG Health: {results['weekly'].get('health_percent', 0)}%")
+        
+        print("\n[3/4] Monthly consolidation (Strategy report)...")
+        results["monthly"] = self.consolidate_monthly()
+        print(f"    Strategies tracked: {results['monthly'].get('total_strategies', 0)}")
+        
+        print("\n[4/4] Archiving old learnings...")
+        results["archive"] = self.archive_old_learnings(days=30)
+        print(f"    Archived: {results['archive'].get('archived_count', 0)}")
+        
+        print("\n" + "=" * 50)
+        print("Consolidation complete!")
+        print("=" * 50)
+        
+        return results
 
-def build_index_content(files: list) -> str:
-    """Build INDEX.md content from file list."""
-    lines = [
-        "# 📚 Memory System Index",
-        f"_Generated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}_",
-        "",
-        "## 📁 Directory Structure",
-        "",
-        "```",
-        "ceo/memory/",
-        "├── short_term/       # Current session data",
-        "├── long_term/       # Facts, patterns, preferences",
-        "├── episodes/        # Timeline of events",
-        "├── procedural/      # Skills, rules, workflows",
-        "├── kg/             # Knowledge Graph",
-        "├── search/         # Semantic search index",
-        "├── notes/          # Plans, guides, learnings",
-        "├── autonomy/       # Action/error logs",
-        "└── ARCHIVE/        # Old files (auto-archived)",
-        "```",
-        "",
-        f"## 📊 Statistics",
-        "",
-        f"| Metric | Value |",
-        f"|--------|-------|",
-        f"| Total .md files | {len(files)} |",
-        f"| Active notes | {len(list(NOTES_DIR.glob('*.md')))} |",
-        f"| Archived files | {len(list(ARCHIVE_DIR.rglob('*.md')))} |",
-        "",
-    ]
-    return "\n".join(lines)
 
 def main():
-    import argparse
-    parser = argparse.ArgumentParser(description='Memory Consolidator')
-    parser.add_argument('--scan', action='store_true', help='Scan and categorize')
-    parser.add_argument('--archive', action='store_true', help='Archive old files')
-    parser.add_argument('--index', action='store_true', help='Rebuild INDEX.md')
-    parser.add_argument('--full', action='store_true', help='Full consolidation')
-    args = parser.parse_args()
+    if len(sys.argv) < 2:
+        print("Usage: memory_consolidator.py [daily|weekly|monthly|archive|all]")
+        sys.exit(1)
     
-    if args.scan or args.full:
-        print("🔍 Scanning memory files...")
-        cats = scan_memory()
-        
-        print(f"\n📊 Memory Scan Results:")
-        print(f"   Priority (keep): {len(cats['priority'])}")
-        print(f"   To archive: {len(cats['to_archive'])}")
-        print(f"   To delete: {len(cats['to_delete'])}")
-        print(f"   Recent (keep): {len(cats['recent'])}")
-        
-        if cats['to_archive']:
-            print(f"\n📦 Files to archive ({OLD_THRESHOLD}+ days old):")
-            for f in cats['to_archive'][:10]:
-                print(f"   - {f['path']} ({f['age_days']} days)")
-        
-        if cats['to_delete']:
-            print(f"\n🗑️ Files to delete (old temp files):")
-            for f in cats['to_delete'][:5]:
-                print(f"   - {f['path']}")
+    cmd = sys.argv[1]
+    consolidator = MemoryConsolidator()
     
-    if args.index or args.full:
-        print("\n📝 Building INDEX.md...")
-        cats = scan_memory()
-        all_files = cats['priority'] + cats['recent'] + cats['to_archive']
-        content = build_index_content(all_files)
-        INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
-        with open(INDEX_FILE, 'w') as f:
-            f.write(content)
-        print(f"✅ INDEX.md updated ({len(all_files)} files indexed)")
+    if cmd == "daily":
+        result = consolidator.consolidate_daily()
+    elif cmd == "weekly":
+        result = consolidator.consolidate_weekly()
+    elif cmd == "monthly":
+        result = consolidator.consolidate_monthly()
+    elif cmd == "archive":
+        result = consolidator.archive_old_learnings()
+    elif cmd == "all":
+        result = consolidator.run_all()
+    else:
+        print(f"Unknown command: {cmd}")
+        print("Usage: memory_consolidator.py [daily|weekly|monthly|archive|all]")
+        sys.exit(1)
     
-    if args.archive or args.full:
-        print("\n📦 Archiving old files...")
-        cats = scan_memory()
-        archived = 0
-        for f in cats['to_archive']:
-            src = MEMORY_DIR / f['path']
-            # Build target path preserving structure
-            parts = f['path'].split('/')
-            if 'notes' in parts:
-                # Move notes to ARCHIVE/notes/
-                target_parts = ['ARCHIVE'] + parts
-            else:
-                # Move daily logs to ARCHIVE/YYYY-MM/
-                date_prefix = f['path'][:10] if f['path'][0].isdigit() else 'unknown'
-                target_parts = ['ARCHIVE', date_prefix] + parts[-1:]
-            
-            target = MEMORY_DIR / '/'.join(target_parts)
-            target.parent.mkdir(parents=True, exist_ok=True)
-            
-            try:
-                shutil.move(str(src), str(target))
-                archived += 1
-            except Exception as e:
-                print(f"   ⚠️ Failed to archive {f['path']}: {e}")
-        
-        print(f"✅ Archived {archived} files")
+    print(json.dumps(result, indent=2, default=str))
+
 
 if __name__ == "__main__":
     main()
