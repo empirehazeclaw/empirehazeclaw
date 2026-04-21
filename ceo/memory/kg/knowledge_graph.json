@@ -10354,6 +10354,40 @@
       "last_accessed": "2026-04-21T14:03:42.452337",
       "access_count": 1,
       "decay_score": 10
+    },
+    "LearningPattern_pattern_20260421_140443": {
+      "id": "LearningPattern_pattern_20260421_140443",
+      "type": "LearningPattern",
+      "name": "pattern_20260421_140443",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "error_type": "context_compression",
+      "solution": "Applied improvement: Measure context size, find 1 specific text to shorten",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-21T14:04:43.767940",
+      "last_validated": "2026-04-21T14:04:43.767943",
+      "created_at": "2026-04-21T14:04:44.140196+00:00"
+    },
+    "Improvement_2026-04-21T14-04-43-770358_Exploration-Measure-context-": {
+      "id": "Improvement_2026-04-21T14-04-43-770358_Exploration-Measure-context-",
+      "type": "Improvement",
+      "name": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "validated": true,
+      "timestamp": "2026-04-21T14:04:43.770358",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T14:04:44.140356+00:00"
+    },
+    "lrn_20260421_140509_86": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-21T14:05:09.412075",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",
@@ -48340,6 +48374,30 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T13:05:04.872588+00:00"
+    },
+    "1044": {
+      "id": 1044,
+      "from": "LearningPattern_pattern_20260421_140443",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-21T14:04:44.140338+00:00"
+    },
+    "1045": {
+      "id": 1045,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T14-04-43-770358_Exploration-Measure-context-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T14:04:44.140451+00:00"
+    },
+    "1046": {
+      "id": 1046,
+      "from": "Improvement_2026-04-21T14-04-43-770358_Exploration-Measure-context-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T14:04:44.140535+00:00"
     }
   }
 }

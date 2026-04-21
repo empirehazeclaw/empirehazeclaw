@@ -1,6 +1,6 @@
 {
   "version": "3.1",
-  "iteration": 321,
+  "iteration": 322,
   "score": 0.8097134146341464,
   "score_history": [
     0.2609459258572654,
@@ -339,6 +339,7 @@
     0.5597134146341464,
     0.6367071478900476,
     0.7328344979190845,
+    0.8097134146341464,
     0.8097134146341464
   ],
   "patterns": [
@@ -367,7 +368,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 85,
+  "novelty_injections": 86,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -413,7 +414,7 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Add 1 new validation test that currently doesn't exist",
+  "last_validated_pattern": "[Exploration] Measure context size, find 1 specific text to shorten",
   "last_forced_novelty": "2026-04-21T12:28:55.384656",
   "recently_forced_novelty": true,
   "feedback_stats": {
@@ -421,7 +422,7 @@
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-21T13:05:04.959614",
+  "last_pattern_update": "2026-04-21T14:04:44.229635",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
@@ -433,10 +434,10 @@
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9535,
+    "dq_raw": 0.8986,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.9349,
+    "kg_health": 0.8249,
     "cron_success": 0.9722
   },
   "_multi_dim": {
@@ -444,10 +445,10 @@
     "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9535,
+    "dq_raw": 0.8986,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.9349,
+    "kg_health": 0.8249,
     "cron_success": 0.9722
   }
 }

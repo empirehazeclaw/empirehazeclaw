@@ -59,7 +59,8 @@
     ],
     "gene": [
       "lrn_20260421_124329_3",
-      "lrn_20260421_130524_34"
+      "lrn_20260421_130524_34",
+      "lrn_20260421_140509_86"
     ],
     "insight": [
       "lrn_20260421_124534_4",
@@ -131,7 +132,8 @@
     ],
     "evolution": [
       "lrn_20260421_124329_3",
-      "lrn_20260421_130524_34"
+      "lrn_20260421_130524_34",
+      "lrn_20260421_140509_86"
     ],
     "Ralph": [
       "lrn_20260421_124534_4",
@@ -237,7 +239,8 @@
       "lrn_20260421_124329_3"
     ],
     "unknown": [
-      "lrn_20260421_130524_34"
+      "lrn_20260421_130524_34",
+      "lrn_20260421_140509_86"
     ]
   },
   "recent": [
@@ -1358,6 +1361,19 @@
       "timestamp": "2026-04-21T14:01:01.998347",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_140509_86",
+      "source": "Capability Evolver",
+      "category": "gene",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "strategy": "unknown",
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:05:09.412075",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
@@ -1365,12 +1381,6 @@
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
-    "unknown": -1
-  },
-  "context_effectiveness": {
-    "pattern_matching": {
-      "diversity": 1,
-      "adaptive_lr": -1
-    }
+    "unknown": -2
   }
 }

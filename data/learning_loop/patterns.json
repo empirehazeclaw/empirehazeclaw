@@ -1,26 +1,26 @@
 {
   "patterns": [
     {
-      "id": "pattern_20260421_130504",
-      "title": "Add 1 new validation test that currently doesn't exist",
-      "category": "hypothesis_validation_depth",
+      "id": "pattern_20260421_140443",
+      "title": "Measure context size, find 1 specific text to shorten",
+      "category": "hypothesis_context_compression",
       "error_signature": [
-        "validation",
-        "test",
-        "that",
-        "currently",
-        "doesn't"
+        "measure",
+        "context",
+        "size,",
+        "find",
+        "specific"
       ],
-      "description": "[Exploration] Add 1 new validation test that currently doesn't exist",
-      "solution": "Applied improvement: Add 1 new validation test that currently doesn't exist",
+      "description": "[Exploration] Measure context size, find 1 specific text to shorten",
+      "solution": "Applied improvement: Measure context size, find 1 specific text to shorten",
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
       "confidence": 0.7,
       "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T13:05:04.533554",
-      "last_validated": "2026-04-21T13:05:04.533558",
-      "error_type": "validation_depth",
+      "first_seen": "2026-04-21T14:04:43.767940",
+      "last_validated": "2026-04-21T14:04:43.767943",
+      "error_type": "context_compression",
       "context": {
         "source": "exploration",
         "script": null
