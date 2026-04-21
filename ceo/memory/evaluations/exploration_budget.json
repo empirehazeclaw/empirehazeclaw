@@ -7,12 +7,12 @@
     "stagnation_threshold": 5
   },
   "current_period": {
-    "start": "2026-04-21T16:04:38.341943+00:00",
-    "total_runs": 4,
+    "start": "2026-04-21T17:53:01.388017+00:00",
+    "total_runs": 2,
     "exploration_runs": 0,
-    "exploitation_runs": 4,
+    "exploitation_runs": 2,
     "exploration_successes": 0,
-    "exploitation_successes": 4,
+    "exploitation_successes": 2,
     "experimental_strategies": []
   },
   "history": [
@@ -389,6 +389,16 @@
       "experimental_strategies": [
         "learning_loop_v3"
       ]
+    },
+    {
+      "start": "2026-04-21T16:04:38.341943+00:00",
+      "end": "2026-04-21T17:53:01.388009+00:00",
+      "total_runs": 4,
+      "exploration_runs": 0,
+      "exploitation_runs": 4,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
     }
   ],
   "version": "1.0"

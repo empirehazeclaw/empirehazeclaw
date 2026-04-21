@@ -1,0 +1,19 @@
+{
+  "type": "evaluation",
+  "timestamp": "2026-04-17T18:57:54.212526",
+  "source": "evaluation_framework",
+  "metrics": {
+    "task_success_rate": 0.763,
+    "error_rate": 0.03,
+    "latency_p50": 0,
+    "efficiency": 185.625
+  },
+  "antipattern_count": 1,
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "area": "task_success",
+      "recommendation": "Focus on improving task completion rate"
+    }
+  ]
+}

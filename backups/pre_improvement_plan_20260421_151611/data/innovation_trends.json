@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-19T14:54:24.227935",
+  "entity_growth": {
+    "recent_new": 49,
+    "total": 473,
+    "growth_rate": 0.10359408033826638,
+    "period_days": 7
+  },
+  "rising_topics": [
+    {
+      "entity_id": "research_20260412",
+      "type": "research",
+      "relation_count": 4,
+      "created": "2026-04-12"
+    }
+  ],
+  "type_distribution": {
+    "Improvement": 96,
+    "success_pattern": 58,
+    "topic": 47,
+    "research": 37,
+    "error_pattern": 20,
+    "concept": 18,
+    "LearningPattern": 18,
+    "note": 15,
+    "arxiv": 15,
+    "subtopic": 14
+  },
+  "alerts": [],
+  "insights": [
+    "High creation rate: 49 new entities in last 7 days"
+  ]
+}

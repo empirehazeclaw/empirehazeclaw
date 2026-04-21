@@ -1,0 +1,14 @@
+=== ROLLBACK POINTS ===
+Timestamp: 2026-04-19 15:31 UTC
+
+TO ROLLBACK:
+1. Extract workspace.tar.gz to restore all files
+2. Extract scripts.tar.gz to restore scripts
+3. KG: knowledge_graph.json snapshot available
+4. MEMORY.md: backed up
+5. active_goal.json: backed up
+6. Crons: crons_snapshot.json or crons_list.txt
+
+TO RESTORE FROM BACKUP:
+tar -xzf workspace.tar.gz -C /
+

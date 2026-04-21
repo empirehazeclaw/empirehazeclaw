@@ -87,3 +87,4 @@ Der Fluss: Events → Patterns → KG → Learnings → Decisions → Actions �
 - Nächste iteration: score targeting auf 0.85
 ```
 - [2026-04-21 16:56] [maintenance:success] Maintenance complete after 2 iterations
+- [2026-04-21 17:53] [success] Completed after 14 iterations (score=0.810)

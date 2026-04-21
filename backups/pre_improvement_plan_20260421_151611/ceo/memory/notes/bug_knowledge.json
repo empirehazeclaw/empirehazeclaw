@@ -1,0 +1,23 @@
+{
+  "known_bugs": [
+    {
+      "hash": "a4868d10535b",
+      "first_seen": "2026-04-18T07:30:13.343556+00:00",
+      "line": "[2026-04-18 07:03:55]   \u2717 KG Sync: Traceback (most recent call last):",
+      "file": "/home/clawbot/.openclaw/workspace/logs/learning_core.log",
+      "count": 1,
+      "category": "REAL_ERROR",
+      "status": "NEW"
+    },
+    {
+      "hash": "f58aaac2c1d6",
+      "first_seen": "2026-04-18T12:34:21.481511+00:00",
+      "line": "\u274c Agent Executor Cron: last run failed",
+      "file": "/home/clawbot/.openclaw/workspace/logs/system_maintenance.log",
+      "count": 1,
+      "category": "REAL_ERROR",
+      "status": "NEW"
+    }
+  ],
+  "last_updated": "2026-04-21T15:03:02.607546+00:00"
+}

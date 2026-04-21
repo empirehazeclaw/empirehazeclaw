@@ -1,26 +1,26 @@
 {
   "patterns": [
     {
-      "id": "pattern_20260421_170426",
-      "title": "Review last 24h API calls, find 1 inefficient call",
-      "category": "hypothesis_token_optimization",
+      "id": "pattern_20260421_175312",
+      "title": "Add 1 new validation test that currently doesn't exist",
+      "category": "hypothesis_validation_depth",
       "error_signature": [
-        "review",
-        "last",
-        "calls,",
-        "find",
-        "inefficient"
+        "validation",
+        "test",
+        "that",
+        "currently",
+        "doesn't"
       ],
-      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
-      "solution": "Applied improvement: Review last 24h API calls, find 1 inefficient call",
+      "description": "[Exploration] Add 1 new validation test that currently doesn't exist",
+      "solution": "Applied improvement: Add 1 new validation test that currently doesn't exist",
       "success_count": 1,
       "failure_count": 0,
       "validated": true,
       "confidence": 0.7,
       "initial_confidence": 0.7,
-      "first_seen": "2026-04-21T17:04:26.694750",
-      "last_validated": "2026-04-21T17:04:26.694753",
-      "error_type": "token_optimization",
+      "first_seen": "2026-04-21T17:53:12.100303",
+      "last_validated": "2026-04-21T17:53:12.100306",
+      "error_type": "validation_depth",
       "context": {
         "source": "exploration",
         "script": null

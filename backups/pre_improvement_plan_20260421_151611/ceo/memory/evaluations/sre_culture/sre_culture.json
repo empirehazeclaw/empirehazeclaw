@@ -1,0 +1,105 @@
+{
+  "incidents": [
+    {
+      "id": "INC-0001",
+      "description": "API timeout in production",
+      "severity": "high",
+      "category": "performance",
+      "timestamp": "2026-04-18T11:09:27.299951+00:00",
+      "status": "learning_captured",
+      "learnings": [
+        "Timeout handling could be improved",
+        "Document incident for future reference",
+        "Add monitoring/alerting if not present",
+        "Review similar patterns in other systems"
+      ],
+      "systems_affected": [],
+      "duration_minutes": null,
+      "detection_method": "unknown",
+      "resolution": "TBD",
+      "blameless_analysis": {
+        "timestamp": "2026-04-18T11:09:27.432508+00:00",
+        "questions_addressed": 6
+      }
+    }
+  ],
+  "pre_mortems": [
+    {
+      "id": "PRE-0001",
+      "plan": "Deploy new learning algorithm",
+      "timestamp": "2026-04-18T11:09:27.257049+00:00",
+      "risks": [],
+      "assumptions": [],
+      "preparedness": "unknown",
+      "risk_categories": [
+        "Technical failure (timeout, crash, error)",
+        "Data loss or corruption",
+        "Security breach or permission issue",
+        "Integration failure with external systems",
+        "Resource exhaustion (memory, CPU, disk)",
+        "User-facing impact",
+        " cascading failures"
+      ]
+    }
+  ],
+  "post_mortems": [
+    {
+      "id": "POST-0001",
+      "failure_id": "INC-0001",
+      "incident_desc": null,
+      "timestamp": "2026-04-18T11:09:27.337481+00:00",
+      "status": "blameless_analysis_complete",
+      "root_cause": "TBD",
+      "contributing_factors": [],
+      "impact": "TBD",
+      "action_items": [],
+      "lessons": [],
+      "what_went_well": [],
+      "what_could_improve": [],
+      "template": {
+        "timeline": "Document when failure started, when detected, when resolved",
+        "impact_assessment": "What systems/users were affected? Duration?",
+        "root_cause_analysis": "Why did this happen? Use 5 Whys.",
+        "contributing_factors": "What conditions made this possible?",
+        "action_items": [
+          "Immediate fix:",
+          "Short-term (1 week):",
+          "Long-term (1 month):",
+          "Prevention measures:"
+        ],
+        "detection": "How was this detected? Was it proactive?",
+        "response": "How fast was response? What worked?",
+        "sre_principles": [
+          "Focus on systems, not individuals",
+          "Blame is not the goal",
+          "Every incident is a learning opportunity",
+          "Automate recovery where possible",
+          "Document for future reference"
+        ]
+      }
+    }
+  ],
+  "slo_breaches": [
+    {
+      "id": "BREACH-0001",
+      "task_type": "fast_task",
+      "actual": 0.85,
+      "target": 0.95,
+      "delta": 0.09999999999999998,
+      "timestamp": "2026-04-18T11:09:27.386797+00:00",
+      "status": "action_required",
+      "root_cause": "TBD",
+      "corrective_actions": [
+        "Review recent changes",
+        "Monitor trend",
+        "Consider optimization"
+      ],
+      "preventive_actions": [
+        "Add monitoring",
+        "Document known issues"
+      ]
+    }
+  ],
+  " learnings": [],
+  "version": "1.0"
+}

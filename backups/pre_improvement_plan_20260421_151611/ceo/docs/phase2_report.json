@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-18T10:40:42.305932+00:00",
+  "phase": 2,
+  "status": "COMPLETE",
+  "components": {
+    "kg_causal_updater": true,
+    "dependency_tracker": true
+  },
+  "metrics": {
+    "kg_causal_output": "\n\ud83d\udcca Causal KG Statistics\n==================================================\n  Failures in KG:      2\n  Root Causes:          2\n  Causal Chains:        0\n  'causes' Relations:   2\n\n  By Severity:\n    low        2\n\n  By Cause:\n    timeout                   1\n    design_gap                1\n",
+    "dep_tracker_output": "\n\ud83d\udcca Dependency Statistics\n==================================================\n  Total Components: 232\n  Total Edges:      669\n\n  By Type:\n    unknown         175\n    script          57\n\n  Edge Types:\n    imports         420\n    references_file 246\n    executes        3\n\n  Most Depended Upon:\n     59x datetime\n     58x json\n     46x pathlib\n     46x sys\n     46x Path\n\n  Most Dependencies:\n     29x meta_learning_pipeline.py\n     23x prompt_evolution_engine.py\n     18x phase1_integrator.py\n     16x e"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "experiences": [
+    {
+      "id": "EXP-00001",
+      "description": "Phase 4 integration test experience",
+      "type": "test",
+      "importance": 0.7,
+      "context": {},
+      "outcome": null,
+      "tags": [],
+      "created_at": "2026-04-18T10:55:56.052706+00:00",
+      "last_accessed": "2026-04-18T10:55:56.052706+00:00",
+      "access_count": 1,
+      "reinforcement": 15,
+      "decay_count": 0,
+      "consolidated": true,
+      "current_importance": 1.0,
+      "merged_from": 3,
+      "outcomes": [],
+      "last_consolidated": "2026-04-18T11:07:31.021818+00:00"
+    },
+    {
+      "id": "EXP-00002",
+      "description": "Phase 4 integration test experience",
+      "type": "test",
+      "importance": 0.7,
+      "context": {},
+      "outcome": null,
+      "tags": [],
+      "created_at": "2026-04-18T10:56:55.356765+00:00",
+      "last_accessed": "2026-04-18T10:56:55.356765+00:00",
+      "access_count": 1,
+      "reinforcement": 4,
+      "decay_count": 0,
+      "consolidated": false,
+      "current_importance": 0.9555
+    },
+    {
+      "id": "EXP-00003",
+      "description": "Phase 4 integration test experience",
+      "type": "test",
+      "importance": 0.7,
+      "context": {},
+      "outcome": null,
+      "tags": [],
+      "created_at": "2026-04-18T10:59:56.202796+00:00",
+      "last_accessed": "2026-04-18T10:59:56.202796+00:00",
+      "access_count": 1,
+      "reinforcement": 3,
+      "decay_count": 0,
+      "consolidated": false,
+      "current_importance": 0.882
+    },
+    {
+      "id": "EXP-00004",
+      "description": "Phase 4 integration test experience",
+      "type": "test",
+      "importance": 0.7,
+      "context": {},
+      "outcome": null,
+      "tags": [],
+      "created_at": "2026-04-18T11:07:30.817763+00:00",
+      "last_accessed": "2026-04-18T11:07:30.817763+00:00",
+      "access_count": 1,
+      "reinforcement": 2,
+      "decay_count": 0,
+      "consolidated": false,
+      "current_importance": 0.8085
+    }
+  ],
+  "index": {
+    "test": [
+      "EXP-00001",
+      "EXP-00002",
+      "EXP-00003",
+      "EXP-00004"
+    ]
+  },
+  "consolidation_log": [
+    {
+      "timestamp": "2026-04-18T10:56:55.530218+00:00",
+      "before_count": 2,
+      "after_count": 2,
+      "consolidated": 1
+    },
+    {
+      "timestamp": "2026-04-18T10:59:56.356938+00:00",
+      "before_count": 3,
+      "after_count": 3,
+      "consolidated": 2
+    },
+    {
+      "timestamp": "2026-04-18T11:07:31.021829+00:00",
+      "before_count": 4,
+      "after_count": 4,
+      "consolidated": 3
+    }
+  ],
+  "version": "1.0"
+}

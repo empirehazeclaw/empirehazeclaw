@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-04-18T11:15:00+00:00",
+  "phase": 3,
+  "name": "Active Experimentation",
+  "status": "COMPLETE",
+  "components": {
+    "exploration_budget": {
+      "script": "exploration_budget.py",
+      "status": "OK"
+    },
+    "strategy_mutator": {
+      "script": "strategy_mutator.py",
+      "status": "OK"
+    },
+    "exploration_controller": {
+      "script": "exploration_controller.py",
+      "status": "OK"
+    }
+  },
+  "metrics": {
+    "exploration_rate": 0.10,
+    "current_period_runs": 3,
+    "exploration_runs": 3,
+    "exploitation_runs": 0,
+    "experimental_strategies": ["test_strategy"],
+    "mutations_created": 1
+  },
+  "strategy_mutations": [
+    {
+      "id": "MUT-0001",
+      "strategy": "test_strategy",
+      "timestamp": "2026-04-18T10:50:00+00:00",
+      "type": "exploration"
+    }
+  ],
+  "config": {
+    "adaptive_decay": 0.95,
+    "rate_range": [0.02, 0.20],
+    "stagnation_threshold": 5
+  }
+}

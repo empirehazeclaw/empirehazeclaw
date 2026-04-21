@@ -1,0 +1,278 @@
+{
+  "rewards": {
+    "hypothesis_cron_health": {
+      "_total": {
+        "alpha": 1,
+        "beta": 14.0,
+        "success": 0,
+        "total": 18
+      },
+      "morning_weekday_cron_health": {
+        "alpha": 1,
+        "beta": 14.0,
+        "success": 0,
+        "total": 18,
+        "_consecutive_failures": 9
+      },
+      "_consecutive_failures": 9
+    },
+    "hypothesis_general": {
+      "_total": {
+        "alpha": 21,
+        "beta": 1,
+        "success": 20,
+        "total": 20
+      },
+      "morning_weekday_error_prediction": {
+        "alpha": 3,
+        "beta": 1,
+        "success": 2,
+        "total": 2,
+        "_consecutive_failures": 0
+      },
+      "morning_weekday_token_optimization": {
+        "alpha": 6,
+        "beta": 1,
+        "success": 5,
+        "total": 5,
+        "_consecutive_failures": 0
+      },
+      "morning_weekday_backup_recovery": {
+        "alpha": 4,
+        "beta": 1,
+        "success": 3,
+        "total": 3,
+        "_consecutive_failures": 0
+      },
+      "_consecutive_failures": 0,
+      "morning_weekday_feedback_integration": {
+        "alpha": 3,
+        "beta": 1,
+        "success": 2,
+        "total": 2,
+        "_consecutive_failures": 0
+      },
+      "morning_weekday_kg_quality": {
+        "alpha": 3,
+        "beta": 1,
+        "success": 2,
+        "total": 2,
+        "_consecutive_failures": 0
+      },
+      "morning_weekday_session_efficiency": {
+        "alpha": 4,
+        "beta": 1,
+        "success": 3,
+        "total": 3,
+        "_consecutive_failures": 0
+      },
+      "morning_weekday_context_compression": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      },
+      "afternoon_weekday_validation_depth": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      },
+      "afternoon_weekday_token_optimization": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      }
+    },
+    "cross_pattern_elevated_error_rate": {
+      "_total": {
+        "alpha": 34,
+        "beta": 1,
+        "success": 33,
+        "total": 33
+      },
+      "_consecutive_failures": 0,
+      "morning_weekday_elevated_error_rate": {
+        "alpha": 29,
+        "beta": 1,
+        "success": 28,
+        "total": 28,
+        "_consecutive_failures": 0
+      },
+      "afternoon_weekday_elevated_error_rate": {
+        "alpha": 6,
+        "beta": 1,
+        "success": 5,
+        "total": 5,
+        "_consecutive_failures": 0
+      }
+    },
+    "hypothesis_token_optimization": {
+      "_total": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1
+      },
+      "_consecutive_failures": 0,
+      "afternoon_weekday_token_optimization": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      }
+    },
+    "hypothesis_feedback_integration": {
+      "_total": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1
+      },
+      "_consecutive_failures": 0,
+      "afternoon_weekday_feedback_integration": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      }
+    },
+    "hypothesis_kg_quality": {
+      "_total": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1
+      },
+      "_consecutive_failures": 0,
+      "afternoon_weekday_kg_quality": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      }
+    },
+    "hypothesis_loop_optimization": {
+      "_total": {
+        "alpha": 6,
+        "beta": 1,
+        "success": 5,
+        "total": 5
+      },
+      "_consecutive_failures": 0,
+      "afternoon_weekday_loop_optimization": {
+        "alpha": 6,
+        "beta": 1,
+        "success": 5,
+        "total": 5,
+        "_consecutive_failures": 0
+      }
+    },
+    "cross_pattern_cross_pattern": {
+      "_total": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1
+      },
+      "_consecutive_failures": 0,
+      "afternoon_weekday_cross_pattern": {
+        "alpha": 2,
+        "beta": 1,
+        "success": 1,
+        "total": 1,
+        "_consecutive_failures": 0
+      }
+    }
+  },
+  "contexts": {
+    "morning_weekday_cron_health": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "cron_health"
+    },
+    "morning_weekday_error_prediction": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "error_prediction"
+    },
+    "morning_weekday_token_optimization": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "token_optimization"
+    },
+    "morning_weekday_backup_recovery": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "backup_recovery"
+    },
+    "morning_weekday_elevated_error_rate": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "elevated_error_rate"
+    },
+    "morning_weekday_feedback_integration": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "feedback_integration"
+    },
+    "morning_weekday_kg_quality": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "kg_quality"
+    },
+    "morning_weekday_session_efficiency": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "session_efficiency"
+    },
+    "morning_weekday_context_compression": {
+      "time_of_day": "morning",
+      "day_bucket": "weekday",
+      "task_complexity": "context_compression"
+    },
+    "afternoon_weekday_elevated_error_rate": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "elevated_error_rate"
+    },
+    "afternoon_weekday_validation_depth": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "validation_depth"
+    },
+    "afternoon_weekday_token_optimization": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "token_optimization"
+    },
+    "afternoon_weekday_feedback_integration": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "feedback_integration"
+    },
+    "afternoon_weekday_kg_quality": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "kg_quality"
+    },
+    "afternoon_weekday_loop_optimization": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "loop_optimization"
+    },
+    "afternoon_weekday_cross_pattern": {
+      "time_of_day": "afternoon",
+      "day_bucket": "weekday",
+      "task_complexity": "cross_pattern"
+    }
+  },
+  "version": "1.0"
+}

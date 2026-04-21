@@ -5,7 +5,8 @@
       "lrn_20260421_124329_1",
       "lrn_20260421_125240_27",
       "lrn_20260421_125319_33",
-      "lrn_20260421_163207_276"
+      "lrn_20260421_163207_276",
+      "lrn_20260421_175312_500"
     ],
     "pattern": [
       "lrn_20260421_124329_2",
@@ -1472,7 +1473,8 @@
       "lrn_20260421_144749_112"
     ],
     "learning_optimization": [
-      "lrn_20260421_163207_276"
+      "lrn_20260421_163207_276",
+      "lrn_20260421_175312_500"
     ]
   },
   "by_strategy": {
@@ -1497,19 +1499,6 @@
     ]
   },
   "recent": [
-    {
-      "id": "lrn_20260421_162914_207",
-      "source": "Consolidation Engine",
-      "category": "pattern",
-      "learning": "From KG: Pattern: learning_patterns_update | Appearances: 16 in last 24h | First seen: 2026-04-21T16:29:13.255847",
-      "context": "consolidated",
-      "strategy": null,
-      "outcome": "success",
-      "metadata": {},
-      "timestamp": "2026-04-21T16:29:14.611510",
-      "used": false,
-      "useful": null
-    },
     {
       "id": "lrn_20260421_162914_208",
       "source": "Consolidation Engine",
@@ -8118,10 +8107,23 @@
       "timestamp": "2026-04-21T17:52:52.347519",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_175312_500",
+      "source": "Ralph Learning",
+      "category": "success",
+      "learning": "Completed after 14 iterations (score=0.810)",
+      "context": "learning_optimization",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T17:53:12.482421",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
-    "diversity": 9,
+    "diversity": 8,
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,

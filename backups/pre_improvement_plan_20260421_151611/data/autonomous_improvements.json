@@ -1,0 +1,100 @@
+{
+  "attempts": [],
+  "improvements": [
+    {
+      "timestamp": "2026-04-12T03:04:51.920432",
+      "script": "apply_timeouts",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    },
+    {
+      "timestamp": "2026-04-12T05:05:02.600774",
+      "script": "session_compressor",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Bare except clause",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    },
+    {
+      "timestamp": "2026-04-12T06:04:55.308938",
+      "script": "email_sequence",
+      "issues": [
+        "mkdir ohne -p (nicht idempotent)",
+        "Empty pass statement"
+      ],
+      "result": "success"
+    }
+  ],
+  "discards": [
+    {
+      "timestamp": "2026-04-11T23:14:47.867704",
+      "script": "auto_backup",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T04:04:55.095883",
+      "script": "common_issues_check",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T18:22:53.321907",
+      "script": "morning_brief",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T19:22:58.148799",
+      "script": "kg_updater",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-12T20:22:53.512056",
+      "script": "error_rate_monitor",
+      "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-13T09:04:47.429803",
+      "script": "health_check",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-13T18:05:03.925116",
+      "script": "error_rate_monitor",
+      "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-14T09:05:38.565832",
+      "script": "decision_tracker_integration",
+      "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-14T18:05:08.236403",
+      "script": "graceful_degradation",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-15T09:06:44.694604",
+      "script": "cron_error_healer",
+      "reason": "test_failed"
+    },
+    {
+      "timestamp": "2026-04-15T09:07:41.296040",
+      "script": "morning_brief",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-16T18:07:19.717003",
+      "script": "kg_updater",
+      "reason": "no_improvement"
+    },
+    {
+      "timestamp": "2026-04-17T18:05:42.757017",
+      "script": "decision_tracker_integration",
+      "reason": "test_failed"
+    }
+  ]
+}

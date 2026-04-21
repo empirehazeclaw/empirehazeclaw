@@ -1,0 +1,61 @@
+============================================================
+🦞 CAPABILITY EVOLUTION REPORT
+Generated: 2026-04-13T23:22:16.004347
+============================================================
+
+🟡 MEDIUM (12 issues)
+----------------------------------------
+  📄 /home/clawbot/.openclaw/workspace/scripts/error_rate_monitor.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/evening_review.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/heartbeat_updater.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/daily_summary.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/cron_watchdog.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/evening_summary.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/learning_analyzer.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/morning_brief.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/weekly_review.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/gateway_recovery.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/common_issues_check.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+  📄 /home/clawbot/.openclaw/workspace/scripts/kg_updater.py
+     Error Handling: Bare except clause - may catch system exceptions
+     → Fix: Wrap in try/except with specific exception type
+
+
+🟢 LOW (1 issues)
+----------------------------------------
+  📄 /home/clawbot/.openclaw/workspace/scripts/kg_lifecycle_manager.py
+     Analysis: Could not parse: [Errno 40] Too many levels of symbolic links: '/home/clawbot/.openclaw/workspace/scripts/kg_lifecycle_manager.py'
+     → Fix: Review and improve

@@ -1,0 +1,378 @@
+{
+  "timestamp": "2026-04-18T05:08:15.310375",
+  "source": "improve_learning_score",
+  "metrics": {
+    "task_success_rate": 1.0,
+    "error_rate": 0.0,
+    "latency_p50": 70.66,
+    "total_tasks": 165
+  },
+  "positive_signals": [
+    "TSR at 100% for 162 consecutive tasks",
+    "Zero errors in current cycle",
+    "All task types at 100% success rate",
+    "Main session activities captured",
+    "System stable overnight"
+  ],
+  "score_factors": {
+    "task_success": "+0.015",
+    "error_rate": "+0.010",
+    "latency": "-0.009",
+    "net_estimated": "+0.016"
+  },
+  "meta_learning": {
+    "phase": 3,
+    "timestamp": "2026-04-18T07:33:37.848488",
+    "patterns_tested": 14,
+    "test_accuracy": 1.0,
+    "adjustments_made": 4,
+    "performance": [
+      {
+        "pattern_id": "meta_pattern_010",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 213,
+        "expected_success_rate": 100.0,
+        "generalization": 1.0
+      },
+      {
+        "pattern_id": "meta_pattern_011",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 213,
+        "expected_success_rate": 100.0,
+        "generalization": 0.975
+      },
+      {
+        "pattern_id": "meta_pattern_012",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 213,
+        "expected_success_rate": 100.0,
+        "generalization": 0.8
+      },
+      {
+        "pattern_id": "meta_pattern_013",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 103,
+        "expected_success_rate": 100.0,
+        "generalization": 1.0
+      },
+      {
+        "pattern_id": "meta_pattern_000",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 88,
+        "expected_success_rate": 1.0,
+        "generalization": 0.2
+      }
+    ],
+    "test_results_summary": {
+      "total": 20,
+      "correct": 20
+    }
+  },
+  "meta_learning_timestamp": "2026-04-18T07:33:35.106859",
+  "learnings": [
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_003",
+      "observation": "health_check tasks perform well with their dedicated approach",
+      "action": "Use trigger {'subtype': 'health_check'} for similar tasks",
+      "confidence": 0.2
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_003",
+      "observation": "health_check tasks perform well with their dedicated approach",
+      "action": "Use trigger {'subtype': 'health_check'} for similar tasks",
+      "confidence": 0.2
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_003",
+      "observation": "health_check tasks perform well with their dedicated approach",
+      "action": "Use trigger {'subtype': 'health_check'} for similar tasks",
+      "confidence": 0.2
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_003",
+      "observation": "health_check tasks perform well with their dedicated approach",
+      "action": "Use trigger {'subtype': 'health_check'} for similar tasks",
+      "confidence": 0.2
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (164) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (168) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (168) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (168) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (168) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (170) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (170) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (170) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (174) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_006",
+      "observation": "Fast tasks (<60s) have highest success with direct execution",
+      "action": "Use trigger {'duration_bucket': 'fast'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_010",
+      "observation": "subagent_task tasks (174) work best with delegated execution",
+      "action": "Use trigger {'task_type': 'subagent_task'} for similar tasks",
+      "confidence": 1.0
+    },
+    {
+      "type": "meta_pattern",
+      "priority": "HIGH",
+      "pattern_id": "meta_pattern_013",
+      "observation": "Fast delegated tasks (<60s): 64 samples, 100% success",
+      "action": "Use trigger {'duration_bucket': 'fast', 'delegated': True} for similar tasks",
+      "confidence": 1.0
+    }
+  ]
+}

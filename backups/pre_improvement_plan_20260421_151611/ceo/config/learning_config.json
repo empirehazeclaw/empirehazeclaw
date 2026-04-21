@@ -1,0 +1,53 @@
+{
+  "learning_unified": {
+    "version": "1.0",
+    "created": "2026-04-18",
+    "entry_point": "scripts/learning_unified.py",
+    "description": "Single entry point for all learning operations"
+  },
+  "event_bus": {
+    "version": "1.0",
+    "created": "2026-04-18",
+    "entry_point": "scripts/learning_events.py",
+    "description": "Event-driven learning architecture"
+  },
+  "data_sources": {
+    "learning_loop_state": "memory/evaluations/learning_loop_state.json",
+    "learning_loop_signal": "memory/evaluations/learning_loop_signal.json",
+    "failures": "memory/evaluations/failures.json",
+    "exploration_budget": "memory/evaluations/exploration_budget.json",
+    "experience_memory": "memory/evaluations/experience_memory.json",
+    "strategy_mutations": "memory/evaluations/strategy_mutations.json",
+    "sre_culture": "memory/evaluations/sre_culture/sre_culture.json",
+    "knowledge_graph": "memory/kg/knowledge_graph.json"
+  },
+  "event_types": {
+    "task_completed": "Task execution completed",
+    "failure_detected": "A failure was detected",
+    "exploration_triggered": "Exploration run triggered",
+    "strategy_mutated": "Strategy mutation created",
+    "slo_breached": "SLO threshold breached",
+    "meta_learned": "New meta-learning pattern discovered",
+    "kg_synced": "Knowledge graph synchronized"
+  },
+  "consolidation_status": {
+    "phase_1_kg_schema": "COMPLETE",
+    "phase_2_learning_unified": "COMPLETE",
+    "phase_3_event_bus": "COMPLETE",
+    "phase_4_kg_optimization": "PENDING",
+    "phase_5_evolver_integration": "PENDING",
+    "phase_6_migration": "PENDING"
+  },
+  "tsr_targets": {
+    "current": 1.0,
+    "minimum_acceptable": 0.80,
+    "target": 0.85
+  },
+  "exploration_config": {
+    "rate": 0.10,
+    "target_rate": 0.10,
+    "min_rate": 0.02,
+    "max_rate": 0.20,
+    "stagnation_threshold": 5
+  }
+}

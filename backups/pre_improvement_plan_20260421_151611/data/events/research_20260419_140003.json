@@ -1,0 +1,10 @@
+{
+  "type": "research.completed",
+  "source": "research_agent",
+  "timestamp": "2026-04-19T14:00:03.848352",
+  "data": {
+    "topic": "token efficiency llm",
+    "hypotheses_count": 1,
+    "kg_entity_id": "research_token_efficiency_llm_20260419"
+  }
+}

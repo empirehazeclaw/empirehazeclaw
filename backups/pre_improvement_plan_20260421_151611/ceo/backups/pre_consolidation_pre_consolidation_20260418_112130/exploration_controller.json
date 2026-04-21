@@ -1,0 +1,34 @@
+{
+  "config": {
+    "method": "softmax",
+    "epsilon": 0.1,
+    "epsilon_decay": 0.995,
+    "epsilon_min": 0.01,
+    "temperature": 0.9702989999999999,
+    "temperature_decay": 0.99,
+    "temperature_min": 0.1,
+    "learning_rate": 0.1,
+    "discount_factor": 0.9,
+    "stagnation_window": 10,
+    "stagnation_threshold": 0.05
+  },
+  "strategies": {
+    "strategy_a": {
+      "name": "strategy_a",
+      "q_value": 0.7227574999999999,
+      "visit_count": 3,
+      "total_reward": 2.4000000000000004,
+      "last_reward": 0.8,
+      "history": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  },
+  "episode_count": 3,
+  "total_reward": 2.4000000000000004,
+  "last_update": "2026-04-18T11:07:26.034469+00:00",
+  "stagnation_count": 0,
+  "version": "1.0"
+}

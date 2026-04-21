@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "pattern_match_threshold": 0.7,
+    "generalization_min_score": 0.5,
+    "weight_adjustment_rate": 0.1,
+    "feedback_loop_enabled": true,
+    "meta_learning_enabled": true,
+    "self_modification_enabled": true,
+    "max_weight_delta": 0.2,
+    "min_pattern_confidence": 0.8,
+    "cross_task_validation_required": true
+  },
+  "updated_at": "2026-04-19T16:01:07.277521",
+  "updated_by": "learning_rule_modifier"
+}

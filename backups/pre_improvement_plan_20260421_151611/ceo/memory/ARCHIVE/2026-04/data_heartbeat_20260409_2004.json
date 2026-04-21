@@ -1,0 +1,9 @@
+{
+  "agent": "data_manager",
+  "task": "heartbeat",
+  "timestamp": "2026-04-09T20:04:35.508660Z",
+  "status": "alive",
+  "workspace": "/home/clawbot/.openclaw/workspace/data",
+  "heartbeat_log": "/home/clawbot/.openclaw/workspace/system/heartbeats/data_manager.json",
+  "notes": "Heartbeat executed successfully. Minor deprecation warning in heartbeat.py (datetime.utcnow() deprecated)."
+}

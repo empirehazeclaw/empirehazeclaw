@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-04-20T10:52:57.162356",
+  "source": "evaluation_framework",
+  "type": "evaluation_feedback",
+  "data": {
+    "task_success_rate": 0.9990884229717412,
+    "error_rate": 0.0009115770282588879,
+    "latency_p50": 111.258,
+    "efficiency": 185.625,
+    "antipattern_count": 0,
+    "antipattern_issues": [
+      {
+        "pattern_name": "filler_words",
+        "file": "SOUL.md",
+        "matches": 2,
+        "severity": "MED",
+        "description": "Uses filler words instead of being direct"
+      }
+    ],
+    "memory_files": 87,
+    "memory_clean": true
+  },
+  "learnings": [
+    {
+      "type": "system_health",
+      "priority": "LOW",
+      "observation": "Memory is clean, no duplicates or stale facts",
+      "action": "Continue current maintenance routine"
+    }
+  ],
+  "meta_learning": {
+    "phase": 7,
+    "timestamp": "2026-04-21T14:33:31.107916",
+    "patterns_tested": 10,
+    "test_accuracy": 1.0,
+    "adjustments_made": 0,
+    "loop_feedback_received": 9,
+    "performance": [
+      {
+        "pattern_id": "meta_pattern_002",
+        "observed_success_rate": 0.9970501474926253,
+        "matching_tasks": 339,
+        "expected_success_rate": 1.0,
+        "generalization": 0.2
+      },
+      {
+        "pattern_id": "meta_pattern_006",
+        "observed_success_rate": 0.9989775051124744,
+        "matching_tasks": 978,
+        "expected_success_rate": 1.0,
+        "generalization": 1.0
+      },
+      {
+        "pattern_id": "meta_pattern_000",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 233,
+        "expected_success_rate": 1.0,
+        "generalization": 0.2
+      },
+      {
+        "pattern_id": "meta_pattern_001",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 4,
+        "expected_success_rate": 1.0,
+        "generalization": 0.2
+      },
+      {
+        "pattern_id": "meta_pattern_003",
+        "observed_success_rate": 1.0,
+        "matching_tasks": 415,
+        "expected_success_rate": 1.0,
+        "generalization": 0.2
+      }
+    ],
+    "test_results_summary": {
+      "total": 20,
+      "correct": 20
+    }
+  }
+}

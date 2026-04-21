@@ -1,0 +1,66 @@
+{
+  "hypothesis_general": {
+    "successes": 53,
+    "failures": 1
+  },
+  "cross_pattern_cross_pattern": {
+    "successes": 67,
+    "failures": 1
+  },
+  "issue_error": {
+    "successes": 2,
+    "failures": 1
+  },
+  "cross_pattern_elevated_error_rate": {
+    "successes": 43,
+    "failures": 1
+  },
+  "hypothesis_cron_health": {
+    "successes": 9,
+    "failures": 1
+  },
+  "hypothesis_kg_quality": {
+    "successes": 41,
+    "failures": 1
+  },
+  "hypothesis_loop_optimization": {
+    "successes": 35,
+    "failures": 1
+  },
+  "hypothesis_context_compression": {
+    "successes": 33,
+    "failures": 1
+  },
+  "hypothesis_session_efficiency": {
+    "successes": 10,
+    "failures": 1
+  },
+  "hypothesis_feedback_integration": {
+    "successes": 5,
+    "failures": 1
+  },
+  "issue_issue_learning_plateau": {
+    "successes": 11,
+    "failures": 1
+  },
+  "cross_pattern_learning_plateau": {
+    "successes": 3,
+    "failures": 1
+  },
+  "hypothesis_backup_recovery": {
+    "successes": 2,
+    "failures": 1
+  },
+  "hypothesis_error_prediction": {
+    "successes": 3,
+    "failures": 1
+  },
+  "hypothesis_validation_depth": {
+    "successes": 5,
+    "failures": 1
+  },
+  "hypothesis_token_optimization": {
+    "successes": 3,
+    "failures": 1
+  }
+}
