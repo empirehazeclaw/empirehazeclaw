@@ -56,6 +56,9 @@ EVENT_INDEX = EVENT_DIR / "event_index.json"
 EVENT_LOCK = EVENT_DIR / "events.lock"
 MAX_EVENTS = 10000  # Keep last 10k events
 
+# Consumer state - track processed event IDs to avoid duplicates
+CONSUMER_STATE_FILE = EVENT_DIR / "consumer_state.json"
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
@@ -359,15 +362,31 @@ def process_unconsumed_events(limit: int = 100) -> int:
             if event_type not in consumer_map:
                 consumer_map[event_type] = consumer
     
+    # Load processed event IDs
+    processed_file = CONSUMER_STATE_FILE
+    if processed_file.exists():
+        processed_ids = set(json.loads(processed_file.read_text()).get('processed_ids', []))
+    else:
+        processed_ids = set()
+    
     # Process each event type
     for event_type, consumer in consumer_map.items():
         events = list_events(event_type=event_type, limit=limit)
         for event in events:
+            event_id = event.get('id')
+            if event_id in processed_ids:
+                continue  # Already processed
             try:
                 if consumer.consume(event):
                     processed += 1
+                    processed_ids.add(event_id)
             except Exception as e:
                 logger.error(f"Consumer {consumer.__class__.__name__} failed: {e}")
+    
+    # Save processed IDs (limit to last 1000 to prevent unbounded growth)
+    if len(processed_ids) > 1000:
+        processed_ids = set(list(processed_ids)[-1000:])
+    CONSUMER_STATE_FILE.write_text(json.dumps({'processed_ids': list(processed_ids)}))
     
     return processed
 
