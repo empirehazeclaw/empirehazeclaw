@@ -20,7 +20,7 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 36,
+    "successes": 37,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
@@ -40,7 +40,7 @@
     "failures": 1
   },
   "issue_issue_learning_plateau": {
-    "successes": 6,
+    "successes": 7,
     "failures": 1
   },
   "cross_pattern_learning_plateau": {
@@ -48,6 +48,10 @@
     "failures": 1
   },
   "hypothesis_backup_recovery": {
+    "successes": 2,
+    "failures": 1
+  },
+  "hypothesis_error_prediction": {
     "successes": 2,
     "failures": 1
   }

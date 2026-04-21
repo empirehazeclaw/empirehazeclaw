@@ -1,4 +1,31 @@
 {
-  "patterns": [],
+  "patterns": [
+    {
+      "id": "pattern_20260421_120603",
+      "title": "Find 1 entity with missing relations, add them",
+      "category": "hypothesis_kg_quality",
+      "error_signature": [
+        "find",
+        "entity",
+        "with",
+        "missing",
+        "relations,"
+      ],
+      "description": "[Exploration] Find 1 entity with missing relations, add them",
+      "solution": "Applied improvement: Find 1 entity with missing relations, add them",
+      "success_count": 1,
+      "failure_count": 0,
+      "validated": true,
+      "confidence": 0.7,
+      "initial_confidence": 0.7,
+      "first_seen": "2026-04-21T12:06:03.335032",
+      "last_validated": "2026-04-21T12:06:03.335035",
+      "error_type": "kg_quality",
+      "context": {
+        "source": "exploration",
+        "script": null
+      }
+    }
+  ],
   "version": "1.0"
 }
