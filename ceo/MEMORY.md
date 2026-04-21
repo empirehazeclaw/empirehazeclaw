@@ -411,13 +411,6 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 *Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
 
 
-## 🌙 DREAMING REPORT — 2026-04-20 20:46 UTC
-
-### ✅ Promotions (qualifying entries)
-
-- **2026-04-12.md** lines 1-33 — 5 recall hits
-  → ---
-
 ## SESSION SAVE (21:04 UTC) — Before New Session
 
 ### 🚀 Today's Major Achievements (2026-04-12 Evening)
@@ -431,6 +424,11 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 
 ---
 *Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
+
+
+## 🌙 DREAMING REPORT — 2026-04-21 05:02 UTC
+
+*No promotions qualifying this cycle (minRecallCount=3)*
 
 
 ## 📊 RECALL INDEX

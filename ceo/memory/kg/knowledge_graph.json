@@ -13,8 +13,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445896",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 27,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 30,
       "decay_score": 1
     },
     "Managed-AI-Hosting": {
@@ -30,8 +30,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445920",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26,
       "decay_score": 1
     },
     "Social-Media-Automation": {
@@ -47,8 +47,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445936",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 10,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 13,
       "decay_score": 1
     },
     "GOG-CLI": {
@@ -81,8 +81,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445958",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 25,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 28,
       "decay_score": 1
     },
     "Email-Outreach": {
@@ -98,8 +98,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445973",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26,
       "decay_score": 1
     },
     "Outreach-Dummy-Problem": {
@@ -166,8 +166,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.446022",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 27,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 30,
       "decay_score": 1
     },
     "Objection-DSGVO": {
@@ -200,8 +200,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-06T06:44:59.322042",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 9,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 12,
       "decay_score": 1
     },
     "skill_health_monitoring_20260410": {
@@ -217,8 +217,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:05.588034",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 24
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 27
     },
     "skill_backup_automation_20260410": {
       "type": "skill",
@@ -233,8 +233,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.401249",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26
     },
     "skill_morning_brief_20260410": {
       "type": "skill",
@@ -249,8 +249,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.449528",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26
     },
     "system_health_monitoring_20260410": {
       "type": "system",
@@ -265,8 +265,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:33:04.124829",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 22
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 25
     },
     "system_backup_system_20260410": {
       "type": "system",
@@ -374,8 +374,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:42.326285",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26
     },
     "project_empirehazeclaw_fleet_20260410": {
       "type": "project",
@@ -390,8 +390,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:46.923434",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 27
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 30
     },
     "concept_continuous_improvement_20260410": {
       "type": "concept",
@@ -547,8 +547,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 28
     },
     "skill_qa_enforcer": {
       "type": "skill",
@@ -563,8 +563,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 24
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 27
     },
     "skill_backup_advisor": {
       "type": "skill",
@@ -579,8 +579,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 16
     },
     "reflection_deep_20260410": {
       "type": "reflection",
@@ -688,8 +688,8 @@
           "source": "self_eval.py"
         }
       ],
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 27
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 30
     },
     "Self-Improvement-Patterns": {
       "type": "pattern",
@@ -734,8 +734,8 @@
           "source": "test_framework.py"
         }
       ],
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 26
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 29
     },
     "Bad-Patterns-SirHazeClaw": {
       "type": "pattern",
@@ -1148,8 +1148,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-11T17:31:00.854162+00:00",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 23,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 26,
       "decay_score": 1,
       "properties": {
         "type": "success_pattern",
@@ -2357,8 +2357,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.972417",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed",
@@ -2436,8 +2436,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973015",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN",
@@ -2482,8 +2482,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.973376",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e",
@@ -2506,8 +2506,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973542",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e",
@@ -2541,8 +2541,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973799",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit",
@@ -2620,8 +2620,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.974420",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN",
@@ -2655,8 +2655,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.974682",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r": {
       "id": "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r",
@@ -2734,8 +2734,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975313",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN",
@@ -2769,8 +2769,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975577",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch",
@@ -2782,8 +2782,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975664",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 12
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch",
@@ -2795,8 +2795,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975759",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed",
@@ -2830,8 +2830,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.976032",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit",
@@ -2865,8 +2865,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.976319",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit",
@@ -3007,8 +3007,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:03:45.258112",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 10
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 13
     },
     "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
@@ -3020,8 +3020,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:09.016597",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 10
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 13
     },
     "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
@@ -3033,8 +3033,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:36.507316",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 10
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 13
     },
     "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
@@ -3046,8 +3046,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T17:04:36.977902",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 10
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 13
     },
     "innovation_research_20260417": {
       "type": "research",
@@ -3162,8 +3162,8 @@
         "agent",
         "AI_agent_self-improvement"
       ],
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "research_AI_safety_alignment_20260420": {
       "type": "research",
@@ -3207,8 +3207,8 @@
         "agent",
         "AI_safety_alignment"
       ],
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation": {
       "id": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
@@ -3242,8 +3242,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T08:09:04.504099+00:00",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 9
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 12
     },
     "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel": {
       "id": "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel",
@@ -3346,8 +3346,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T12:04:39.089014+00:00",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
@@ -3359,8 +3359,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T13:04:00.022291+00:00",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11
     },
     "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317": {
       "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317",
@@ -3622,8 +3622,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T14:03:17.354887",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 9,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 12,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317": {
@@ -3899,8 +3899,8 @@
         "agent",
         "AI_agent_self-improvement"
       ],
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 7
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 10
     },
     "LearningPattern_pattern_20260420_163745": {
       "id": "LearningPattern_pattern_20260420_163745",
@@ -4263,8 +4263,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:07:51.153770",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190751": {
@@ -4695,8 +4695,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:09:50.549810",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190950": {
@@ -5127,8 +5127,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:10:47.068311",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 8,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 11,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191047": {
@@ -5337,15 +5337,15 @@
       "category": "theme_pattern",
       "facts": [
         {
-          "content": "Theme 'assistant' recalled 246 times",
+          "content": "Theme 'assistant' recalled 466 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T20:45:50.755198Z",
+          "extracted_at": "2026-04-21T06:05:01.361448Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T20:45:50.755199Z",
-      "last_accessed": "2026-04-20T20:45:50.755200Z",
+      "created": "2026-04-21T06:05:01.361450Z",
+      "last_accessed": "2026-04-21T06:05:01.361452Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5354,15 +5354,15 @@
       "category": "theme_pattern",
       "facts": [
         {
-          "content": "Theme 'user' recalled 234 times",
+          "content": "Theme 'user' recalled 491 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-20T20:45:50.755201Z",
+          "extracted_at": "2026-04-21T06:05:01.361441Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-20T20:45:50.755202Z",
-      "last_accessed": "2026-04-20T20:45:50.755203Z",
+      "created": "2026-04-21T06:05:01.361443Z",
+      "last_accessed": "2026-04-21T06:05:01.361445Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5643,8 +5643,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:12:35.336296",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 7,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 10,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191235": {
@@ -6111,8 +6111,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:14:44.515445",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 6,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 9,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191444": {
@@ -6565,8 +6565,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:16:04.022376",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 5,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 8,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191604": {
@@ -7019,8 +7019,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:18:03.505710",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 4,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 7,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191803": {
@@ -7495,8 +7495,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T20:45:25.435269",
-      "last_accessed": "2026-04-20T20:45:27.453511+00:00",
-      "access_count": 2,
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 5,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_204525": {
@@ -7690,7 +7690,9 @@
       "timestamp": "2026-04-20T20:45:30.057039",
       "test_count": 3,
       "tests_passed": 3,
-      "created_at": "2026-04-20T20:45:30.294882+00:00"
+      "created_at": "2026-04-20T20:45:30.294882+00:00",
+      "last_accessed": "2026-04-21T08:02:12.118612+00:00",
+      "access_count": 3
     },
     "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-": {
       "id": "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-",
@@ -7724,6 +7726,116 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-20T22:02:43.431403+00:00"
+    },
+    "Improvement_2026-04-20T23-03-26-717705_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-20T23-03-26-717705_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-20T23:03:26.717705",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-20T23:03:26.953541+00:00"
+    },
+    "Improvement_2026-04-21T00-05-02-437074_PHASE-4-Test-GitHub-backup-r": {
+      "id": "Improvement_2026-04-21T00-05-02-437074_PHASE-4-Test-GitHub-backup-r",
+      "type": "Improvement",
+      "name": "[PHASE 4] Test GitHub backup recovery time, identify 1 specific bottleneck, fix or document it",
+      "description": "[PHASE 4] Test GitHub backup recovery time, identify 1 specific bottleneck, fix or document it",
+      "validated": true,
+      "timestamp": "2026-04-21T00:05:02.437074",
+      "test_count": 4,
+      "tests_passed": 4,
+      "created_at": "2026-04-21T00:05:02.754472+00:00"
+    },
+    "Improvement_2026-04-21T01-02-57-684927_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T01-02-57-684927_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T01:02:57.684927",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T01:02:57.897650+00:00"
+    },
+    "Improvement_2026-04-21T02-03-12-647827_Break-score-plateau-with-novel": {
+      "id": "Improvement_2026-04-21T02-03-12-647827_Break-score-plateau-with-novel",
+      "type": "Improvement",
+      "name": "Break score plateau with novel approach",
+      "description": "Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T02:03:12.647827",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T02:03:12.878798+00:00"
+    },
+    "Improvement_2026-04-21T03-04-19-388825_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T03-04-19-388825_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T03:04:19.388825",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T03:04:19.629289+00:00"
+    },
+    "Improvement_2026-04-21T04-03-29-567199_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T04-03-29-567199_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T04:03:29.567199",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T04:03:29.816492+00:00"
+    },
+    "Improvement_2026-04-21T05-03-10-381026_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T05-03-10-381026_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T05:03:10.381026",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T05:03:10.633453+00:00"
+    },
+    "Improvement_2026-04-21T06-08-02-892041_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T06-08-02-892041_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T06:08:02.892041",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T06:08:03.146871+00:00"
+    },
+    "Improvement_2026-04-21T07-03-30-926812_PHASE-4-Add-1-new-validation": {
+      "id": "Improvement_2026-04-21T07-03-30-926812_PHASE-4-Add-1-new-validation",
+      "type": "Improvement",
+      "name": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check mem",
+      "description": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
+      "validated": true,
+      "timestamp": "2026-04-21T07:03:30.926812",
+      "test_count": 4,
+      "tests_passed": 4,
+      "created_at": "2026-04-21T07:03:31.177208+00:00"
+    },
+    "Improvement_2026-04-21T08-06-44-066663_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T08-06-44-066663_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T08:06:44.066663",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T08:06:44.302929+00:00"
     }
   },
   "last_updated": "2026-04-20T20:45:26.143290",
@@ -45371,6 +45483,166 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-20T22:02:43.431628+00:00"
+    },
+    "728": {
+      "id": 728,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-20T23-03-26-717705_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-20T23:03:26.953709+00:00"
+    },
+    "729": {
+      "id": 729,
+      "from": "Improvement_2026-04-20T23-03-26-717705_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-20T23:03:26.953807+00:00"
+    },
+    "730": {
+      "id": 730,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T00-05-02-437074_PHASE-4-Test-GitHub-backup-r",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T00:05:02.754672+00:00"
+    },
+    "731": {
+      "id": 731,
+      "from": "Improvement_2026-04-21T00-05-02-437074_PHASE-4-Test-GitHub-backup-r",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T00:05:02.754940+00:00"
+    },
+    "732": {
+      "id": 732,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T01-02-57-684927_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T01:02:57.897832+00:00"
+    },
+    "733": {
+      "id": 733,
+      "from": "Improvement_2026-04-21T01-02-57-684927_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T01:02:57.897962+00:00"
+    },
+    "734": {
+      "id": 734,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T02-03-12-647827_Break-score-plateau-with-novel",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T02:03:12.878980+00:00"
+    },
+    "735": {
+      "id": 735,
+      "from": "Improvement_2026-04-21T02-03-12-647827_Break-score-plateau-with-novel",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T02:03:12.879102+00:00"
+    },
+    "736": {
+      "id": 736,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T03-04-19-388825_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T03:04:19.629444+00:00"
+    },
+    "737": {
+      "id": 737,
+      "from": "Improvement_2026-04-21T03-04-19-388825_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T03:04:19.629526+00:00"
+    },
+    "738": {
+      "id": 738,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T04-03-29-567199_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T04:03:29.816616+00:00"
+    },
+    "739": {
+      "id": 739,
+      "from": "Improvement_2026-04-21T04-03-29-567199_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T04:03:29.816695+00:00"
+    },
+    "740": {
+      "id": 740,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T05-03-10-381026_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T05:03:10.633628+00:00"
+    },
+    "741": {
+      "id": 741,
+      "from": "Improvement_2026-04-21T05-03-10-381026_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T05:03:10.633771+00:00"
+    },
+    "742": {
+      "id": 742,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T06-08-02-892041_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T06:08:03.147088+00:00"
+    },
+    "743": {
+      "id": 743,
+      "from": "Improvement_2026-04-21T06-08-02-892041_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T06:08:03.147228+00:00"
+    },
+    "744": {
+      "id": 744,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T07-03-30-926812_PHASE-4-Add-1-new-validation",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T07:03:31.177353+00:00"
+    },
+    "745": {
+      "id": 745,
+      "from": "Improvement_2026-04-21T07-03-30-926812_PHASE-4-Add-1-new-validation",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T07:03:31.177436+00:00"
+    },
+    "746": {
+      "id": 746,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-06-44-066663_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T08:06:44.303059+00:00"
+    },
+    "747": {
+      "id": 747,
+      "from": "Improvement_2026-04-21T08-06-44-066663_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T08:06:44.303200+00:00"
     }
   }
 }

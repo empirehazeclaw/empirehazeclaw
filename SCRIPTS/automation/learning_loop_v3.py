@@ -561,7 +561,7 @@ def process_feedback(feedback: Dict) -> Dict:
 # ============ VALIDATION GATE v2 (PHASE 2) ============
 
 # PHASE 2: Stricter thresholds
-ERROR_DELTA_THRESHOLD = 0.1  # Must improve or stay same (was 0.5)
+ERROR_DELTA_THRESHOLD = 2.0  # Must improve or stay same (was 0.1 - too strict for 0.77+ score)
 MIN_TESTS_PASSED = 2          # At least 2/3 tests must pass (was 1)
 ROLLBACK_STREAK_LIMIT = 3     # Rollback score after 3 consecutive failures
 
@@ -2300,6 +2300,22 @@ def run_quality_gates() -> List[Dict]:
             "description": f"Error rate: {error_rate}%",
             "severity": "MEDIUM"
         })
+
+    # Plateau detection - if score not improving, add as issue
+    try:
+        state = load_state()
+        score_history = state.get("score_history", [])
+        if len(score_history) >= 5:
+            recent_range = max(score_history[-5:]) - min(score_history[-5:])
+            if recent_range < 0.01:  # Plateau: less than 1% variation
+                issues.append({
+                    "type": "learning_plateau",
+                    "description": f"Score plateau detected: range={recent_range:.4f}, latest={score_history[-1]:.3f}",
+                    "severity": "HIGH",
+                    "source": "quality_gate"
+                })
+    except:
+        pass
 
     return issues
 

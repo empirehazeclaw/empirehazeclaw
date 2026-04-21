@@ -113,6 +113,17 @@ def run_maintenance_cycle():
     """Run one maintenance cycle."""
     state = load_state()
     
+    # Reset if completed (new maintenance window)
+    if state["completed"]:
+        log("Resetting state for new maintenance window")
+        state = {
+            "iterations": 0,
+            "checks_passed": 0,
+            "stable_runs": 0,
+            "completed": False,
+            "issues": []
+        }
+    
     if state["iterations"] >= MAX_ITERATIONS:
         log(f"MAX ITERATIONS ({MAX_ITERATIONS}) reached!")
         append_learning("safety", f"Max iterations reached, {len(state['issues'])} issues pending")

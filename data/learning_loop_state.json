@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 236,
-  "score": 0.7669959703075291,
+  "iteration": 240,
+  "score": 0.7661569268292683,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -258,7 +258,11 @@
     0.7669647450110865,
     0.7669647450110865,
     0.7669959703075291,
-    0.7669959703075291
+    0.7669959703075291,
+    0.7657221442205726,
+    0.7657221442205726,
+    0.7659395355249204,
+    0.7661569268292683
   ],
   "patterns": [
     {
@@ -286,7 +290,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 254,
+  "novelty_injections": 4,
   "consecutive_failures": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
@@ -300,10 +304,10 @@
       "failures": 1
     }
   },
-  "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-  "last_forced_novelty": "2026-04-20T19:17:30.933543",
-  "recently_forced_novelty": true,
+  "consecutive_same_pattern": 1,
+  "last_validated_pattern": "[CROSS-PATTERN] Break score plateau with novel approach",
+  "last_forced_novelty": null,
+  "recently_forced_novelty": false,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
