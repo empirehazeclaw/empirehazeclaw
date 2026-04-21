@@ -6,33 +6,42 @@ Test Symbiosis — Phase 8 of Learning-Memory Symbiosis
 Comprehensive test suite for all Learning-Memory integration.
 
 Tests:
-1. Bidirectional KG ↔ Learnings Sync
-2. Consolidation Engine (Events → KG → Learnings)
-3. Strategy Effectiveness Feedback Loop
-4. Decision Engine API
-5. Memory Decay & Confidence Scoring
-6. Cross-Agent Learning Federation
-7. Memory Consolidator
+1. Learnings Service (Core)
+2. Bidirectional KG ↔ Learnings Sync
+3. Consolidation Engine (Events → KG → Learnings)
+4. Strategy Effectiveness Feedback Loop
+5. Decision Engine API
+6. Meta Learning Controller
+7. Event Bus
+8. KG Integrity
+9. Ralph Learning Loop State
+10. Cron Status
+11. Memory Consolidator
+12. Cross-Agent Federation
+13. Integration
 
 Usage:
     python3 test_symbiosis.py
-    python3 test_symbiosis.py --phase 1
     python3 test_symbiosis.py --quick
 """
 
 import sys
 import json
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
 WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
 
+# Add paths
 sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
+sys.path.insert(0, str(WORKSPACE / 'ceo/scripts'))
 
 # Import all modules
 from learnings_service import LearningsService
 from consolidation_engine import ConsolidationEngine
 from decision_engine import DecisionEngine
+import event_bus as event_bus_module
 
 
 class TestResult:
@@ -204,6 +213,126 @@ def test_decision_engine(result):
         result.record("Decision Engine", False, str(e))
 
 
+def test_meta_learning_controller(result):
+    """Test Meta Learning Controller."""
+    print("\n🧠 META LEARNING CONTROLLER")
+    print("-" * 40)
+    
+    try:
+        from meta_learning_controller import MetaLearningController
+        mlc = MetaLearningController()
+        
+        # Test: status() method
+        status = mlc.status()
+        result.record("MetaLearningController loads", True, "Controller ready")
+        
+        # Test: patterns exist
+        data = mlc.load_data()
+        result.record("load_data()", data is not None)
+        
+    except Exception as e:
+        result.record("Meta Learning Controller", False, str(e))
+
+
+def test_event_bus(result):
+    """Test Event Bus."""
+    print("\n📡 EVENT BUS")
+    print("-" * 40)
+    
+    try:
+        # event_bus_module uses functions, not a class
+        stats = event_bus_module.stats()
+        result.record("Event Bus stats()", "total_events" in stats, f"events={stats.get('total_events')}")
+        
+        # Test: publish_event
+        test_event = event_bus_module.publish_event(
+            event_type="test_event",
+            source="test_symbiosis",
+            data={"test": True},
+            severity="debug"
+        )
+        result.record("publish_event()", test_event.get("id") is not None, f"id={test_event.get('id')}")
+        
+    except Exception as e:
+        result.record("Event Bus", False, str(e))
+
+
+def test_kg_integrity(result):
+    """Test KG Integrity."""
+    print("\n🔗 KG INTEGRITY")
+    print("-" * 40)
+    
+    try:
+        kg_path = WORKSPACE / "ceo/memory/kg/knowledge_graph.json"
+        kg = json.loads(kg_path.read_text())
+        entities = kg.get("entities", {})
+        relations = kg.get("relations", {})
+        
+        # Check for broken relations
+        broken = 0
+        for rid, rel in relations.items():
+            if rel.get("from") not in entities or rel.get("to") not in entities:
+                broken += 1
+        
+        health = round((len(relations) - broken) / max(len(relations), 1) * 100, 1)
+        
+        result.record("KG loads", True, f"entities={len(entities)}")
+        result.record("KG relations", len(relations) > 0, f"relations={len(relations)}")
+        result.record("KG health", health >= 99, f"health={health}%")
+        result.record("No broken relations", broken == 0, f"broken={broken}")
+        
+    except Exception as e:
+        result.record("KG Integrity", False, str(e))
+
+
+def test_ralph_learning_loop(result):
+    """Test Ralph Learning Loop State."""
+    print("\n🔄 RALPH LEARNING LOOP")
+    print("-" * 40)
+    
+    try:
+        from ralph_learning_loop import load_ralph_state
+        state = load_ralph_state()
+        
+        result.record("Ralph state loads", "iterations" in state)
+        result.record("Ralph iterations tracked", state.get("iterations", 0) >= 0)
+        
+        # Check learning loop state too
+        ll_path = WORKSPACE / "data/learning_loop_state.json"
+        if ll_path.exists():
+            ll_state = json.loads(ll_path.read_text())
+            result.record("Learning Loop state exists", True, f"score={ll_state.get('score')}")
+        else:
+            result.record("Learning Loop state exists", False, "file not found")
+        
+    except Exception as e:
+        result.record("Ralph Learning Loop", False, str(e))
+
+
+def test_cron_status(result):
+    """Test Cron Status."""
+    print("\n⏰ CRON STATUS")
+    print("-" * 40)
+    
+    try:
+        result_proc = subprocess.run(
+            ['/home/clawbot/.npm-global/bin/openclaw', 'cron', 'list'],
+            capture_output=True, text=True, timeout=10
+        )
+        
+        lines = result_proc.stdout.strip().split('\n')
+        job_lines = [l for l in lines if l.strip() and not l.startswith('ID ')]
+        
+        result.record("Cron list accessible", len(job_lines) > 0, f"jobs={len(job_lines)}")
+        
+        # Check for errors
+        error_jobs = [l for l in job_lines if 'error' in l.lower()]
+        result.record("No cron errors", len(error_jobs) == 0, f"errors={len(error_jobs)}")
+        
+    except Exception as e:
+        result.record("Cron Status", False, str(e))
+
+
 def test_cross_agent_federation(result):
     """Test Phase 6: Cross-Agent Learning Federation."""
     print("\n🔗 PHASE 6: Cross-Agent Federation")
@@ -308,6 +437,11 @@ def main():
     test_consolidation_engine(result)
     test_strategy_feedback(result)
     test_decision_engine(result)
+    test_meta_learning_controller(result)
+    test_event_bus(result)
+    test_kg_integrity(result)
+    test_ralph_learning_loop(result)
+    test_cron_status(result)
     test_cross_agent_federation(result)
     test_memory_consolidator(result)
     test_integration(result)

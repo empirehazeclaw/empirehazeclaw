@@ -108,7 +108,22 @@
       "lrn_20260421_130608_35",
       "lrn_20260421_132608_45",
       "lrn_20260421_134609_46",
-      "lrn_20260421_140716_87"
+      "lrn_20260421_140716_87",
+      "lrn_20260421_142713_88",
+      "lrn_20260421_142713_89",
+      "lrn_20260421_142713_90",
+      "lrn_20260421_142713_91",
+      "lrn_20260421_142713_92"
+    ],
+    "test": [
+      "lrn_20260421_143146_93",
+      "lrn_20260421_143155_94",
+      "lrn_20260421_143200_96",
+      "lrn_20260421_143209_97"
+    ],
+    "integration_test": [
+      "lrn_20260421_143155_95",
+      "lrn_20260421_143209_98"
     ]
   },
   "by_context": {
@@ -183,7 +198,12 @@
       "lrn_20260421_130608_35",
       "lrn_20260421_132608_45",
       "lrn_20260421_134609_46",
-      "lrn_20260421_140716_87"
+      "lrn_20260421_140716_87",
+      "lrn_20260421_142713_88",
+      "lrn_20260421_142713_89",
+      "lrn_20260421_142713_90",
+      "lrn_20260421_142713_91",
+      "lrn_20260421_142713_92"
     ],
     "consolidated": [
       "lrn_20260421_140100_47",
@@ -225,6 +245,14 @@
       "lrn_20260421_140101_83",
       "lrn_20260421_140101_84",
       "lrn_20260421_140101_85"
+    ],
+    "testing": [
+      "lrn_20260421_143146_93",
+      "lrn_20260421_143155_94",
+      "lrn_20260421_143155_95",
+      "lrn_20260421_143200_96",
+      "lrn_20260421_143209_97",
+      "lrn_20260421_143209_98"
     ]
   },
   "by_strategy": {
@@ -1389,13 +1417,163 @@
       "timestamp": "2026-04-21T14:07:16.219048",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260421_142713_88",
+      "source": "Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "resolved",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:27:13.458912",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_142713_89",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:27:13.494151",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_142713_90",
+      "source": "[\u2192Capability Evolver] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:27:13.537509",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_142713_91",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:27:13.571058",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_142713_92",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "category": "health_issue",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:27:13.610021",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143146_93",
+      "source": "Test Suite",
+      "category": "test",
+      "learning": "Test learning for validation",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:31:46.940442",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143155_94",
+      "source": "[\u2192Ralph Learning] Test Agent",
+      "category": "test",
+      "learning": "Cross-agent test learning",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:31:55.420071",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143155_95",
+      "source": "Integration Test",
+      "category": "integration_test",
+      "learning": "Testing complete flow",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:31:55.492122",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143200_96",
+      "source": "Test Suite",
+      "category": "test",
+      "learning": "Test learning for validation",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:32:00.387173",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143209_97",
+      "source": "[\u2192Ralph Learning] Test Agent",
+      "category": "test",
+      "learning": "Cross-agent test learning",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "shared",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:32:09.671971",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_143209_98",
+      "source": "Integration Test",
+      "category": "integration_test",
+      "learning": "Testing complete flow",
+      "context": "testing",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T14:32:09.743546",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
-    "diversity": 2,
+    "diversity": 4,
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
-    "unknown": -2
+    "unknown": -2,
+    "test_strategy": 2,
+    "test_feedback": 2
+  },
+  "context_effectiveness": {
+    "testing": {
+      "diversity": 1
+    }
   }
 }
