@@ -30,10 +30,18 @@ import sys
 import json
 import subprocess
 import re
+import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from collections import defaultdict
+
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(name)s | %(levelname)s | %(message)s'
+)
+logger = logging.getLogger('learning_loop_v3')
 
 # Memory & Log Analyzer for enhanced learning (imported after WORKSPACE is defined below)
 
@@ -124,8 +132,17 @@ def log_exploration_run(run_type: str, success: bool, strategy: str = "learning_
             ["python3", str(EXPLORATION_SCRIPT), "--log-run", run_type, strategy, str(success).lower()],
             capture_output=True, timeout=10
         )
-    except:
-        pass
+    except subprocess.TimeoutExpired:
+
+        logger.warning("Subprocess timeout")
+
+    except FileNotFoundError:
+
+        logger.debug("Script not found")
+
+    except Exception as e:
+
+        logger.error(f"Subprocess error: {e}")
 
 # ============ STATE MANAGEMENT ============
 
@@ -168,7 +185,13 @@ def load_state():
             with open(LOOP_STATE) as f:
                 data = json.load(f)
                 return {**defaults, **data}
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            return defaults
+        except FileNotFoundError:
+            return defaults
+        except Exception as e:
+            logger.error(f"Load error: {e}")
             return defaults
     return defaults
 
@@ -187,7 +210,13 @@ def load_thompson_rewards() -> Dict:
         try:
             with open(THOMPSON_FILE) as f:
                 return json.load(f)
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            return {}
+        except FileNotFoundError:
+            return {}
+        except Exception as e:
+            logger.error(f"Data load error: {e}")
             return {}
     return {}
 
@@ -201,9 +230,15 @@ def load_patterns():
     """Load pattern database."""
     if PATTERNS_FILE.exists():
         try:
-            with open(PATTERNS_FILE) as f:
+            with open(...) as f:
                 return json.load(f)
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            pass
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logger.error(f"JSON load error: {e}")
             pass
     return {"patterns": [], "version": "1.0"}
 
@@ -225,9 +260,15 @@ def load_improvements():
     """Load improvements log."""
     if IMPROVEMENTS_FILE.exists():
         try:
-            with open(IMPROVEMENTS_FILE) as f:
+            with open(...) as f:
                 return json.load(f)
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            pass
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logger.error(f"JSON load error: {e}")
             pass
     return {"improvements": [], "version": "1.0"}
 
@@ -241,9 +282,15 @@ def load_validation_log():
     """Load validation log."""
     if VALIDATION_LOG.exists():
         try:
-            with open(VALIDATION_LOG) as f:
+            with open(...) as f:
                 return json.load(f)
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            pass
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logger.error(f"JSON load error: {e}")
             pass
     return {"validations": [], "version": "1.0"}
 
@@ -259,9 +306,15 @@ def load_idea_bank():
     """Load idea bank - ineffective ideas that didn't work."""
     if IDEA_BANK_FILE.exists():
         try:
-            with open(IDEA_BANK_FILE) as f:
+            with open(...) as f:
                 return json.load(f)
-        except:
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON decode error: {e}")
+            pass
+        except FileNotFoundError:
+            pass
+        except Exception as e:
+            logger.error(f"JSON load error: {e}")
             pass
     return {"ideas": [], "version": "1.0"}
 
@@ -406,10 +459,11 @@ def collect_feedback() -> Dict[str, List]:
                 queue["feedback"] = queue["feedback"][-5:]  # Keep last 5
                 with open(FEEDBACK_QUEUE, 'w') as f:
                     json.dump(queue, f, indent=2)
-        except:
+        except Exception as e:
+            logger.error(f"Error: {e}")
             pass
-
-    # 2. Cron results - check recent failures/successes
+    
+    # Cron results - check recent failures/successes
     try:
         result = subprocess.run(
             ['python3', str(SCRIPTS_DIR / 'cron_monitor.py'), '--report'],
@@ -431,9 +485,10 @@ def collect_feedback() -> Dict[str, List]:
                     "timestamp": datetime.now().isoformat()
                 })
         feedback["cron"] = cron_feedback[-5:]
-    except:
+    except Exception as e:
+        logger.error(f"Error: {e}")
         pass
-
+    
     # 3. KG updates - what patterns are being accessed?
     try:
         if KG_PATH.exists():
@@ -452,9 +507,10 @@ def collect_feedback() -> Dict[str, List]:
                         "timestamp": datetime.now().isoformat()
                     })
             feedback["kg"] = kg_feedback[-5:]
-    except:
+    except Exception as e:
+        logger.error(f"Error: {e}")
         pass
-
+    
     # 4. System metrics - error rate, session count
     try:
         result = subprocess.run(
@@ -471,10 +527,9 @@ def collect_feedback() -> Dict[str, List]:
                         "value": error_rate,
                         "timestamp": datetime.now().isoformat()
                     })
-    except:
-        pass
-
-    # 5. Self-evaluation - check if last improvement worked
+    except Exception as e:
+                logger.error(f"Error: {e}")
+            # 5. Self-evaluation - check if last improvement worked
     state = load_state()
     improvements = load_improvements()
     if improvements.get("improvements"):
@@ -637,11 +692,17 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
                     "passed": passed,
                     "output": "OK" if passed else "Syntax error"
                 })
-            except:
+            except SyntaxError as e:
                 validation_details["tests"].append({
                     "name": "syntax_check",
                     "passed": False,
-                    "error": "Check failed"
+                    "error": f"SyntaxError: {str(e)[:50]}"
+                })
+            except Exception as e:
+                validation_details["tests"].append({
+                    "name": "syntax_check",
+                    "passed": False,
+                    "error": f"Check failed: {type(e).__name__}"
                 })
     else:
         # No script = skip syntax check (pass by default)
@@ -664,11 +725,11 @@ def validation_gate(improvement: Dict, previous_state: Dict) -> Tuple[bool, Dict
             "passed": passed,
             "failed_crons": failed_count
         })
-    except:
+    except Exception as e:
         validation_details["tests"].append({
             "name": "cron_health",
             "passed": False,
-            "error": "Cron check failed"
+            "error": f"Cron check failed: {type(e).__name__}"
         })
 
     # Test 4: Meta-improvement validation (NEW: for forced novelty)
@@ -910,8 +971,10 @@ def get_current_error_rate() -> float:
                 match = re.search(r'Error Rate: ([0-9.]+)%', line)
                 if match:
                     return float(match.group(1))
-    except:
-        pass
+    except Exception as e:
+
+        logger.debug(f"Silent error (OK): {e}")
+
     return 2.0  # Default fallback
 
 def get_kg_health_score() -> float:
@@ -2128,10 +2191,10 @@ def run_system_check() -> List[Dict]:
                 "description": "Gateway health check failed",
                 "severity": "HIGH"
             })
-    except:
+    except Exception as e:
         issues.append({
             "type": "gateway",
-            "description": "Gateway unreachable",
+            "description": f"Gateway check error: {type(e).__name__}",
             "severity": "HIGH"
         })
 
@@ -2149,8 +2212,10 @@ def run_system_check() -> List[Dict]:
                             "description": f"Disk at {use_pct}%",
                             "severity": "HIGH"
                         })
-    except:
-        pass
+    except Exception as e:
+
+        logger.debug(f"Silent error (OK): {e}")
+
 
     return issues
 
@@ -2504,10 +2569,10 @@ def run_quality_gates() -> List[Dict]:
                     "description": f"Self-Eval score: {score}/100",
                     "severity": "HIGH" if score < 70 else "MEDIUM"
                 })
-    except:
+    except Exception as e:
+        logger.error(f"Error: {e}")
         pass
-
-    # Error rate
+    
     error_rate = get_current_error_rate()
     if error_rate > 5:
         issues.append({
@@ -2535,8 +2600,10 @@ def run_quality_gates() -> List[Dict]:
                     "severity": "HIGH",
                     "source": "quality_gate"
                 })
-    except:
-        pass
+    except Exception as e:
+
+        logger.debug(f"Silent error (OK): {e}")
+
 
     return issues
 
@@ -2704,7 +2771,11 @@ def select_improvements(issues: List[Dict], hypotheses: List[Dict]) -> List[Dict
         # Thompson Sampling: Sample from Beta distribution
         try:
             thompson_sample = random.betavariate(alpha, beta)
-        except:
+        except (ValueError, ZeroDivisionError) as e:
+            logger.debug(f"Thompson sampling error: {e}, using default 0.5")
+            thompson_sample = 0.5
+        except Exception as e:
+            logger.warning(f"Thompson sampling unexpected error: {e}")
             thompson_sample = 0.5
 
         # UCB1 bonus: encourages exploration of less-tried arms
