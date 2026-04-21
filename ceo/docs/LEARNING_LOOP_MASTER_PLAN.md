@@ -1,6 +1,6 @@
 # Learning Loop v3 — Master Plan (2026-04-21)
 
-## Status: PHASE 1A COMPLETE | PHASE 2 IN PROGRESS
+## Status: ALL PHASES 1-4 COMPLETE | PHASE 5 IN PROGRESS
 
 ---
 
@@ -36,7 +36,9 @@ DQ capped at 0.50 → max contribution = 0.10 (10% of total)
 
 ---
 
-## PHASE 2: Novelty Tracking (IN PROGRESS)
+## PHASE 2: Novelty Tracking (✅ COMPLETE)
+
+**Commit:** `2c82140`
 
 **Goal:** Loop continues based on NOVELTY, not score target
 
@@ -48,46 +50,77 @@ New Loop:     while novelty > NOVELTY_FLOOR and iterations < MAX
 ```
 
 **What counts as novelty:**
-1. New improvement pattern applied
-2. New capability discovered
-3. Prediction error from last iteration (ICM pattern)
-4. Cross-pattern match found
+1. New improvement pattern applied → +0.1 novelty
+2. Validation failure → -0.15 novelty
+3. Natural decay → -0.05 per iteration
 
-**Implementation:**
-- `novelty_history[]` — tracks novelty per iteration
-- `novelty_decay` — novelty decreases 0.1 per iteration
-- `NOVELTY_FLOOR` — stop if novelty < 0.1 for 3 iterations
-- `<promise>COMPLETE</promise>` signal support
-
-**Metrics to track:**
-- `novelty_score`: 1.0 for new pattern, 0.5 for new capability
-- `prediction_error`: how wrong was our last prediction
-- `entropy`: uncertainty of recent actions
+**State fields added:**
+- `novelty_score` — 1.0 max, +0.1 on success, -0.15 on failure
+- `novelty_history[]` — last 20 iterations
+- `consecutive_novelty_low` — count when novelty < 0.30
 
 ---
 
-## PHASE 3: Ralph-Style Completion (PLANNED)
+## PHASE 3: Ralph-Style Completion (✅ COMPLETE)
+
+**Commit:** `829c676`
 
 **Goal:** Replace score-target stopping with completion promise
 
-```
-Stop conditions (OR):
-1. `<promise>COMPLETE</promise>` found in output
-2. Max iterations reached
-3. Novelty < FLOOR for MIN_ITERATIONS
-```
+**Dual-path completion:**
+1. **Score Path:** Score ≥ 0.80 stable for 3 runs
+2. **Novelty Path:** Novelty < 0.30 for 3 consecutive runs
+
+**Ralph state tracks:**
+- `stable_runs` — consecutive runs at target
+- `low_novelty_streak` — consecutive low-novelty runs
+- `completed` — boolean flag
 
 ---
 
-## PHASE 4: ICM-Inspired Curiosity Bonus (FUTURE)
+## PHASE 4: ICM Curiosity Bonus (✅ COMPLETE)
 
-**Goal:** Intrinsic reward for prediction errors
+**Commit:** `a7a22bb`
 
+**Goal:** Intrinsic reward for prediction errors (curiosity = surprise)
+
+**Implementation:**
+```python
+prediction_error = |predicted_impact - actual_outcome|
+curiosity_bonus = min(prediction_error, 1.0) * 0.30
+EB_total = ideas_score + cross_score + novel_score + curiosity_bonus
 ```
-curiosity = |predicted_outcome - actual_outcome|
-if curiosity > THRESHOLD:
-    add EXLORATION_BONUS
-```
+
+**New state fields:**
+- `prediction_history[]` — last 20 predictions
+- `prediction_error` — current prediction error magnitude
+
+**Effect:** When agent is surprised by outcome (high error delta vs expected), it gets bonus curiosity.
+
+---
+
+## PHASE 5: External Feedback Integration (IN PROGRESS)
+
+**Goal:** Make Nico's direct feedback a first-class score input
+
+**Problem:** Feedback queue is rarely used. "direct" source has only 2 old entries from 2026-04-13.
+
+**Solution:** Enhance feedback collection + add feedback component to score
+
+**Key insight (from research):**
+> "Business outcome metrics from document processing speed and customer data accuracy feed back into objective evaluation"
+> — Datagrid.com
+
+Direct feedback from Nico = highest weight signal. Must flow into score.
+
+**Planned implementation:**
+1. Add Telegram polling for direct messages to Sir HazeClaw
+2. Track `feedback_rate` = signals collected / iteration
+3. Add `feedback_score` to multi-dim score (weight: 5%)
+
+**Metrics to track:**
+- `feedback_rate` — how much feedback per iteration
+- `feedback_signals_total` — cumulative signals processed
 
 ---
 
@@ -95,10 +128,11 @@ if curiosity > THRESHOLD:
 
 | Pattern | Source | Applied |
 |---------|--------|---------|
-| Ralph Loop | understandingdata.com | Phase 3 |
+| Ralph Loop | understandingdata.com | Phase 3 ✅ |
 | Reward Hacking Fix | arxiv/medium | Phase 1A ✅ |
-| ICM (Intrinsic Curiosity) | Pathak et al. 2017 | Phase 4 |
-| EMPG (Entropy-Modulated) | arxiv 2509.09265 | Phase 4 |
+| ICM (Intrinsic Curiosity) | Pathak et al. 2017 | Phase 4 ✅ |
+| EMPG (Entropy-Modulated) | arxiv 2509.09265 | Phase 4 ✅ |
+| Dual-Component Reflection | Datagrid.com | Phase 5 |
 
 ---
 
@@ -108,7 +142,8 @@ if curiosity > THRESHOLD:
 2. **Ralph pattern** — completion signal > score target
 3. **Novelty > Score** — loop should continue while learning, not while score low
 4. **ICM pattern** — curiosity as intrinsic reward
+5. **External feedback** — direct input from human = highest trust signal
 
 ---
 
-_Last updated: 2026-04-21 09:37 UTC_
+_Last updated: 2026-04-21 10:31 UTC_

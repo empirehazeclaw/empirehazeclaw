@@ -151,6 +151,8 @@ def load_state():
         "consecutive_failures": 0,  # NEW: Phase 2 - rollback tracking
         "prediction_history": [],  # Phase 4: ICM-inspired prediction tracking
         "prediction_error": 0.0,  # Phase 4: Curiosity = prediction error
+        "feedback_score": 0.5,  # Phase 5: External feedback integration (0.0-1.0)
+        "feedback_signals_total": 0,  # Phase 5: Cumulative feedback signals
         "learning_rate": 0.1,  # NEW: Plateau Fix - adaptive LR
         "lr_stagnation_count": 0,  # NEW: Count consecutive plateau runs
         "pattern_source": "task",  # NEW: Rotation: task|failure|success|capability
@@ -989,6 +991,32 @@ def get_learning_progress_rate(state: dict) -> float:
     else:
         return 0.5 + delta * 12.5
 
+def get_feedback_score(state: dict) -> float:
+    """
+    Phase 5: External Feedback Score
+    
+    Measures how much actionable feedback the loop received.
+    - More feedback signals = higher score
+    - Direct feedback from Nico has highest weight (1.0)
+    - Score decays if no new feedback
+    
+    Range: 0.0 to 1.0
+    """
+    feedback_signals = state.get("feedback_signals_total", 0)
+    feedback_score = state.get("feedback_score", 0.5)
+    
+    # Increment feedback count if we have recent signals
+    # (will be updated in collect_feedback)
+    recent_signals = min(feedback_signals, 50)
+    
+    # Score based on feedback volume: 0 signals = 0.3, 10+ = 0.7
+    base_score = min(recent_signals / 20.0 + 0.3, 0.7)
+    
+    # Blend with current (for smoothness)
+    blended = feedback_score * 0.7 + base_score * 0.3
+    
+    return min(blended, 0.7)  # Cap at 0.7 to limit influence
+
 def calculate_loop_score():
     """
     Phase 1A: Multi-Dimensional Self-Improvement Score (Reward-Hacking Fixed)
@@ -1018,18 +1046,23 @@ def calculate_loop_score():
     # Component 4: Exploration Bonus (15%)
     eb = get_exploration_bonus(state)
 
-    # Component 5: Dampening Factor (15%)
+    # Component 5: Dampening Factor (10%)
     iteration = state.get("iteration", 0)
     df = min(iteration / 100, 1.0) * 0.10
+    
+    # Component 6: Feedback Score (5%) - Phase 5: external feedback integration
+    fb = get_feedback_score(state)
 
     # FINAL SCORE
-    score = tsr * 0.35 + lpr * 0.25 + eb * 0.15 + df * 0.10 + dq_capped * 0.20
+    # Formula: TSR*0.35 + LPR*0.25 + EB*0.15 + DF*0.10 + DQ*0.20 + FB*0.05
+    score = tsr * 0.35 + lpr * 0.25 + eb * 0.15 + df * 0.10 + dq_capped * 0.20 + fb * 0.05
 
     # Store multi-dim metrics for debugging
     state["_multi_dim"] = {
         "tsr": round(tsr, 4), "lpr": round(lpr, 4),
         "eb": round(eb, 4), "df": round(df, 4),
         "dq_raw": round(dq_raw, 4), "dq_capped": round(dq_capped, 4),
+        "fb": round(fb, 4),
         "kg_health": round(kg_health, 4), "cron_success": round(cron_success, 4)
     }
 
@@ -1066,7 +1099,7 @@ def calculate_loop_score():
         "lr_stagnation_count": lr_stagnation_count,
         "pattern_source": pattern_source
     }
-    print(f"   📊 MULTI-DIM: TSR={tsr:.3f} LPR={lpr:.3f} EB={eb:.3f} DF={df:.3f} DQ={dq_capped:.3f} → {final_score:.3f}")
+    print(f"   📊 MULTI-DIM: TSR={tsr:.3f} LPR={lpr:.3f} EB={eb:.3f} DF={df:.3f} DQ={dq_capped:.3f} FB={fb:.3f} → {final_score:.3f}")
 
     # Return multi_dim so caller can save it
     multi_dim = state["_multi_dim"]
@@ -1595,6 +1628,11 @@ def run_full_cycle():
     feedback = collect_feedback()
     processed_feedback = process_feedback(feedback)
     state["feedback_processed"] += processed_feedback["total_processed"]
+    
+    # Phase 5: Update feedback score
+    total_signals = sum(len(v) for v in feedback.values())
+    state["feedback_signals_total"] = state.get("feedback_signals_total", 0) + total_signals
+    state["feedback_score"] = min(state.get("feedback_signals_total", 0) / 50.0 + 0.3, 0.7)
     print()
 
     # PHASE 0.5: Memory & Log Analysis (NEW!)
