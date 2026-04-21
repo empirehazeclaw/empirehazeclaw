@@ -9727,6 +9727,192 @@
       "context": "system_health",
       "timestamp": "2026-04-21T13:06:08.803427",
       "fact_count": 1
+    },
+    "lrn_20260421_131333_36": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260420_163745",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:33.971602",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_37": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260420_163745",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.128382",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_38": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260420_170449",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.166643",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_39": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260420_191239",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.208298",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_40": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260420_204530",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.244673",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_41": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260421_090457",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.277906",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_42": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260421_120603",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.315529",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_43": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260421_122901",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.355873",
+      "fact_count": 1
+    },
+    "lrn_20260421_131354_44": {
+      "type": "Learning",
+      "category": "pattern",
+      "source": "KG Consolidation",
+      "learning": "Pattern from KG: pattern_20260421_130504",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T13:13:54.398686",
+      "fact_count": 1
+    },
+    "learning_lrn_20260421_124329_2": {
+      "type": "LearningPattern",
+      "name": "Pattern weights need frequent updates",
+      "facts": [
+        "Source: Meta Learning"
+      ]
+    },
+    "insight_lrn_20260421_124534_4": {
+      "type": "Insight",
+      "name": "Ralph Learning never stops on score target - it should ONLY stop on novelty exhaustion",
+      "facts": [
+        "Context: Ralph"
+      ]
+    },
+    "insight_lrn_20260421_124534_6": {
+      "type": "Insight",
+      "name": "Cron timeout should be 300s not 120s for isolated sessions - spawn overhead",
+      "facts": [
+        "Context: cron_optimization"
+      ]
+    },
+    "insight_lrn_20260421_125319_30": {
+      "type": "Insight",
+      "name": ".ipull = HuggingFace temporary download format, bedeutet unvollst\u00e4ndiger Download",
+      "facts": [
+        "Context: system_config"
+      ]
+    },
+    "insight_lrn_20260421_125319_31": {
+      "type": "Insight",
+      "name": "QMD l\u00e4uft mit `qmd search` (BM25) auch ohne Query Expansion model - 1.2GB gespart",
+      "facts": [
+        "Context: system_config"
+      ]
+    },
+    "insight_lrn_20260421_125319_32": {
+      "type": "Insight",
+      "name": "Cron 'error' Status heisst NICHT Script kaputt - nur letzter Run tempor\u00e4r fehlgeschlagen",
+      "facts": [
+        "Context: cron_health"
+      ]
+    },
+    "learning_lrn_20260421_131333_36": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260420_163745",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_37": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260420_163745",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_38": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260420_170449",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_39": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260420_191239",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_40": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260420_204530",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_41": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260421_090457",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_42": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260421_120603",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_43": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260421_122901",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
+    },
+    "learning_lrn_20260421_131354_44": {
+      "type": "LearningPattern",
+      "name": "Pattern from KG: pattern_20260421_130504",
+      "facts": [
+        "Source: KG Consolidation"
+      ]
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

@@ -80,6 +80,136 @@ class LearningsService:
         with open(LEARNINGS_INDEX, 'w') as f:
             json.dump(self.index, f, indent=2)
     
+    # ============ BIDIRECTIONAL KG SYNC ============
+    
+    def sync_from_kg(self, dry_run: bool = False) -> Dict:
+        """Sync KG entities to Learnings (Semantic → Procedural)."""
+        self.kg = self._load_kg()
+        synced = {"patterns": 0, "genes": 0, "strategies": 0}
+        existing_ids = {l.get("id") for l in self.index["recent"]}
+        
+        # Collect items to sync first (avoid dict size change during iteration)
+        to_sync = []
+        for entity_id, entity in self.kg.get("entities", {}).items():
+            entity_type = entity.get("type", "")
+            
+            if entity_type == "LearningPattern" and f"kg_{entity_id}" not in existing_ids:
+                to_sync.append(("pattern", entity.get("name", entity_id), "pattern_matching"))
+            elif "gene" in entity_id.lower() and f"kg_{entity_id}" not in existing_ids:
+                to_sync.append(("gene", entity.get("name", entity_id), "evolution"))
+        
+        # Now apply sync
+        for cat, name, ctx in to_sync:
+            if not dry_run:
+                self.record_learning(
+                    source="KG Consolidation",
+                    category=cat,
+                    learning=f"{cat.title()} from KG: {name}",
+                    context=ctx,
+                    outcome="success"
+                )
+            synced[cat + "s"] += 1
+        
+        return synced
+    
+    def sync_to_kg(self, dry_run: bool = False) -> Dict:
+        """Sync Learnings to KG (Procedural → Semantic)."""
+        self.kg = self._load_kg()
+        synced = {"patterns": 0, "insights": 0}
+        existing = set(self.kg.get("entities", {}).keys())
+        
+        for learning in self.index["recent"]:
+            if learning.get("outcome") != "success":
+                continue
+            
+            lid = learning.get("id", "")
+            cat = learning.get("category", "")
+            
+            if cat == "pattern" and f"learning_{lid}" not in existing:
+                self.kg.setdefault("entities", {})[f"learning_{lid}"] = {
+                    "type": "LearningPattern",
+                    "name": learning.get("learning", "")[:100],
+                    "facts": [f"Source: {learning.get('source', 'Unknown')}"]
+                }
+                synced["patterns"] += 1
+            elif cat == "insight" and f"insight_{lid}" not in existing:
+                self.kg.setdefault("entities", {})[f"insight_{lid}"] = {
+                    "type": "Insight",
+                    "name": learning.get("learning", "")[:100],
+                    "facts": [f"Context: {learning.get('context', 'general')}"]
+                }
+                synced["insights"] += 1
+        
+        if not dry_run and (synced["patterns"] > 0 or synced["insights"] > 0):
+            KG_PATH.parent.mkdir(parents=True, exist_ok=True)
+            with open(KG_PATH, 'w') as f:
+                json.dump(self.kg, f, indent=2)
+        
+        return synced
+    
+    def prune_old_learnings(self, days: int = 30, dry_run: bool = False) -> Dict:
+        """Remove learnings older than specified days (memory decay)."""
+        cutoff = datetime.utcnow() - timedelta(days=days)
+        remaining = []
+        removed = {"count": 0, "by_category": defaultdict(int)}
+        
+        for learning in self.index["recent"]:
+            try:
+                learning_date = datetime.fromisoformat(learning.get("timestamp", "2020-01-01"))
+                if learning_date > cutoff:
+                    remaining.append(learning)
+                else:
+                    removed["count"] += 1
+                    removed["by_category"][learning.get("category", "unknown")] += 1
+            except:
+                remaining.append(learning)
+        
+        if not dry_run:
+            self.index["recent"] = remaining
+            self._rebuild_indexes()
+            self._save_index()
+        
+        removed["remaining"] = len(remaining)
+        return removed
+    
+    def _rebuild_indexes(self):
+        """Rebuild all indexes from recent learnings."""
+        self.index["by_category"] = defaultdict(list)
+        self.index["by_context"] = defaultdict(list)
+        self.index["by_strategy"] = defaultdict(list)
+        
+        for learning in self.index["recent"]:
+            self.index["by_category"][learning.get("category", "unknown")].append(learning.get("id", ""))
+            self.index["by_context"][learning.get("context", "general")].append(learning.get("id", ""))
+            if learning.get("strategy"):
+                self.index["by_strategy"][learning.get("strategy")].append(learning.get("id", ""))
+    
+    def get_confidence_score(self, learning_id: str) -> float:
+        """Get confidence score for a learning (0.0-1.0) based on recency + outcome."""
+        for learning in self.index["recent"]:
+            if learning.get("id") == learning_id:
+                base, recency, outcome_mult = 0.5, 0.5, 1.0
+                try:
+                    days_old = (datetime.utcnow() - datetime.fromisoformat(learning.get("timestamp", "2020-01-01"))).days
+                    recency = pow(0.95, days_old)
+                except:
+                    pass
+                if learning.get("outcome") == "success":
+                    outcome_mult = 1.5
+                elif learning.get("outcome") == "failure":
+                    outcome_mult = 0.5
+                return min(1.0, round(base * recency * outcome_mult, 3))
+        return 0.0
+    
+    def get_learning_with_confidence(self, learning_id: str) -> Optional[Dict]:
+        """Get learning with confidence score attached."""
+        for learning in self.index["recent"]:
+            if learning.get("id") == learning_id:
+                result = learning.copy()
+                result["confidence"] = self.get_confidence_score(learning_id)
+                return result
+        return None
+    
     def record_learning(
         self,
         source: str,
