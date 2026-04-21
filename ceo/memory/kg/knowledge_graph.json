@@ -10496,6 +10496,132 @@
       "context": "testing",
       "timestamp": "2026-04-21T14:32:09.743546",
       "fact_count": 1
+    },
+    "lrn_20260421_144323_99": {
+      "type": "Learning",
+      "category": "test",
+      "source": "Test Suite",
+      "learning": "Test learning for validation",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:43:23.224826",
+      "fact_count": 1
+    },
+    "lrn_20260421_144331_100": {
+      "type": "Learning",
+      "category": "test",
+      "source": "[\u2192Ralph Learning] Test Agent",
+      "learning": "Cross-agent test learning",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:43:31.853814",
+      "fact_count": 1
+    },
+    "lrn_20260421_144331_101": {
+      "type": "Learning",
+      "category": "integration_test",
+      "source": "Integration Test",
+      "learning": "Testing complete flow",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:43:31.940604",
+      "fact_count": 1
+    },
+    "lrn_20260421_144635_102": {
+      "type": "Learning",
+      "category": "test",
+      "source": "Test Suite",
+      "learning": "Test learning for validation",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:46:35.889762",
+      "fact_count": 1
+    },
+    "lrn_20260421_144646_103": {
+      "type": "Learning",
+      "category": "test",
+      "source": "[\u2192Ralph Learning] Test Agent",
+      "learning": "Cross-agent test learning",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:46:46.086437",
+      "fact_count": 1
+    },
+    "lrn_20260421_144646_104": {
+      "type": "Learning",
+      "category": "integration_test",
+      "source": "Integration Test",
+      "learning": "Testing complete flow",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:46:46.157527",
+      "fact_count": 1
+    },
+    "lrn_20260421_144718_105": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T14:47:18.288760",
+      "fact_count": 1
+    },
+    "lrn_20260421_144718_106": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T14:47:18.325306",
+      "fact_count": 1
+    },
+    "lrn_20260421_144718_107": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Capability Evolver] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T14:47:18.359171",
+      "fact_count": 1
+    },
+    "lrn_20260421_144718_108": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T14:47:18.393049",
+      "fact_count": 1
+    },
+    "lrn_20260421_144718_109": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-21T14:47:18.431556",
+      "fact_count": 1
+    },
+    "lrn_20260421_144739_110": {
+      "type": "Learning",
+      "category": "test",
+      "source": "Test Suite",
+      "learning": "Test learning for validation",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:47:39.519800",
+      "fact_count": 1
+    },
+    "lrn_20260421_144749_111": {
+      "type": "Learning",
+      "category": "test",
+      "source": "[\u2192Ralph Learning] Test Agent",
+      "learning": "Cross-agent test learning",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:47:49.725374",
+      "fact_count": 1
+    },
+    "lrn_20260421_144749_112": {
+      "type": "Learning",
+      "category": "integration_test",
+      "source": "Integration Test",
+      "learning": "Testing complete flow",
+      "context": "testing",
+      "timestamp": "2026-04-21T14:47:49.795184",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

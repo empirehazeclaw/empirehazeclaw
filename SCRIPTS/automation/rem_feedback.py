@@ -32,7 +32,7 @@ def run_rem_harness() -> Tuple[str, bool]:
             ["openclaw", "memory", "rem-harness", "--agent", "ceo", "--json"],
             capture_output=True,
             text=True,
-            timeout=120
+            timeout=30
         )
         if result.returncode == 0:
             return result.stdout, True
@@ -193,7 +193,7 @@ def main():
         try:
             result = subprocess.run(
                 ["openclaw", "memory", "rem-harness", "--agent", "ceo"],
-                capture_output=True, text=True, timeout=120
+                capture_output=True, text=True, timeout=30
             )
             output = result.stdout + result.stderr
             success = result.returncode == 0
