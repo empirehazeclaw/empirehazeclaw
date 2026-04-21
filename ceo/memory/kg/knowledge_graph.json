@@ -5339,13 +5339,13 @@
         {
           "content": "Theme 'assistant' recalled 466 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-21T06:05:01.361448Z",
+          "extracted_at": "2026-04-21T09:08:19.684732Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-21T06:05:01.361450Z",
-      "last_accessed": "2026-04-21T06:05:01.361452Z",
+      "created": "2026-04-21T09:08:19.684734Z",
+      "last_accessed": "2026-04-21T09:08:19.684735Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -5356,13 +5356,13 @@
         {
           "content": "Theme 'user' recalled 491 times",
           "confidence": 1.0,
-          "extracted_at": "2026-04-21T06:05:01.361441Z",
+          "extracted_at": "2026-04-21T09:08:19.684726Z",
           "source": "rem_harness"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-21T06:05:01.361443Z",
-      "last_accessed": "2026-04-21T06:05:01.361445Z",
+      "created": "2026-04-21T09:08:19.684728Z",
+      "last_accessed": "2026-04-21T09:08:19.684729Z",
       "access_count": 1,
       "decay_score": 1.0
     },
@@ -8326,6 +8326,152 @@
         "coordinator",
         "daily"
       ]
+    },
+    "LearningPattern_pattern_20260421_090457": {
+      "id": "LearningPattern_pattern_20260421_090457",
+      "type": "LearningPattern",
+      "name": "pattern_20260421_090457",
+      "description": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "error_type": "feedback_integration",
+      "solution": "Applied improvement: Analyze last 10 feedback entries, identify 1 processing gap",
+      "confidence": 0.7,
+      "validated": true,
+      "source": "learning_loop",
+      "first_seen": "2026-04-21T09:04:57.642308",
+      "last_validated": "2026-04-21T09:04:57.642312",
+      "created_at": "2026-04-21T09:07:51.365844+00:00"
+    },
+    "Improvement_2026-04-21T08-37-54-387571_Exploration-Review-sessions,": {
+      "id": "Improvement_2026-04-21T08-37-54-387571_Exploration-Review-sessions,",
+      "type": "Improvement",
+      "name": "[Exploration] Review sessions, close 1 orphaned session",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "timestamp": "2026-04-21T08:37:54.387571",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366046+00:00"
+    },
+    "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T08:42:12.332770",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366312+00:00"
+    },
+    "Improvement_2026-04-21T08-42-45-703577_Apply-proven-pattern:-Measure-": {
+      "id": "Improvement_2026-04-21T08-42-45-703577_Apply-proven-pattern:-Measure-",
+      "type": "Improvement",
+      "name": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "description": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "timestamp": "2026-04-21T08:42:45.703577",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366472+00:00"
+    },
+    "Improvement_2026-04-21T08-44-35-142795_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T08-44-35-142795_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T08:44:35.142795",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366627+00:00"
+    },
+    "Improvement_2026-04-21T08-44-49-961073_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T08-44-49-961073_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T08:44:49.961073",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366829+00:00"
+    },
+    "Improvement_2026-04-21T08-59-57-287974_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T08-59-57-287974_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T08:59:57.287974",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.366986+00:00"
+    },
+    "Improvement_2026-04-21T09-04-57-644446_Exploration-Analyze-last-10-": {
+      "id": "Improvement_2026-04-21T09-04-57-644446_Exploration-Analyze-last-10-",
+      "type": "Improvement",
+      "name": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "description": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "validated": true,
+      "timestamp": "2026-04-21T09:04:57.644446",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.367193+00:00"
+    },
+    "Improvement_2026-04-21T09-05-14-352278_Exploration-Review-sessions,": {
+      "id": "Improvement_2026-04-21T09-05-14-352278_Exploration-Review-sessions,",
+      "type": "Improvement",
+      "name": "[Exploration] Review sessions, close 1 orphaned session",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "timestamp": "2026-04-21T09:05:14.352278",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.367361+00:00"
+    },
+    "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-21T09:06:00.353665",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.367517+00:00"
+    },
+    "Improvement_2026-04-21T09-07-19-843289_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-21T09-07-19-843289_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-21T09:07:19.843289",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.367708+00:00"
+    },
+    "Improvement_2026-04-21T09-07-51-097830_Exploration-Review-sessions,": {
+      "id": "Improvement_2026-04-21T09-07-51-097830_Exploration-Review-sessions,",
+      "type": "Improvement",
+      "name": "[Exploration] Review sessions, close 1 orphaned session",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "timestamp": "2026-04-21T09:07:51.097830",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:51.367867+00:00"
+    },
+    "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl": {
+      "id": "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl",
+      "type": "Improvement",
+      "name": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "description": "[CROSS-PATTERN] Break score plateau with novel approach",
+      "validated": true,
+      "timestamp": "2026-04-21T09:07:59.648711",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-21T09:07:59.964020+00:00"
     }
   },
   "last_updated": "2026-04-21T09:07:41.983743",
@@ -46133,6 +46279,206 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-21T08:06:44.303200+00:00"
+    },
+    "748": {
+      "id": 748,
+      "from": "LearningPattern_pattern_20260421_090457",
+      "to": "Learning-Loop",
+      "type": "part_of",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366013+00:00"
+    },
+    "749": {
+      "id": 749,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-37-54-387571_Exploration-Review-sessions,",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366190+00:00"
+    },
+    "750": {
+      "id": 750,
+      "from": "Improvement_2026-04-21T08-37-54-387571_Exploration-Review-sessions,",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.366301+00:00"
+    },
+    "751": {
+      "id": 751,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366390+00:00"
+    },
+    "752": {
+      "id": 752,
+      "from": "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.366466+00:00"
+    },
+    "753": {
+      "id": 753,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-42-45-703577_Apply-proven-pattern:-Measure-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366547+00:00"
+    },
+    "754": {
+      "id": 754,
+      "from": "Improvement_2026-04-21T08-42-45-703577_Apply-proven-pattern:-Measure-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.366622+00:00"
+    },
+    "755": {
+      "id": 755,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-44-35-142795_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366742+00:00"
+    },
+    "756": {
+      "id": 756,
+      "from": "Improvement_2026-04-21T08-44-35-142795_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.366822+00:00"
+    },
+    "757": {
+      "id": 757,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-44-49-961073_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.366906+00:00"
+    },
+    "758": {
+      "id": 758,
+      "from": "Improvement_2026-04-21T08-44-49-961073_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.366982+00:00"
+    },
+    "759": {
+      "id": 759,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T08-59-57-287974_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367088+00:00"
+    },
+    "760": {
+      "id": 760,
+      "from": "Improvement_2026-04-21T08-59-57-287974_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.367188+00:00"
+    },
+    "761": {
+      "id": 761,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-04-57-644446_Exploration-Analyze-last-10-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367281+00:00"
+    },
+    "762": {
+      "id": 762,
+      "from": "Improvement_2026-04-21T09-04-57-644446_Exploration-Analyze-last-10-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.367357+00:00"
+    },
+    "763": {
+      "id": 763,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-05-14-352278_Exploration-Review-sessions,",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367437+00:00"
+    },
+    "764": {
+      "id": 764,
+      "from": "Improvement_2026-04-21T09-05-14-352278_Exploration-Review-sessions,",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.367513+00:00"
+    },
+    "765": {
+      "id": 765,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367621+00:00"
+    },
+    "766": {
+      "id": 766,
+      "from": "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.367702+00:00"
+    },
+    "767": {
+      "id": 767,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-07-19-843289_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367785+00:00"
+    },
+    "768": {
+      "id": 768,
+      "from": "Improvement_2026-04-21T09-07-19-843289_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.367863+00:00"
+    },
+    "769": {
+      "id": 769,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-07-51-097830_Exploration-Review-sessions,",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:51.367970+00:00"
+    },
+    "770": {
+      "id": 770,
+      "from": "Improvement_2026-04-21T09-07-51-097830_Exploration-Review-sessions,",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:51.368052+00:00"
+    },
+    "771": {
+      "id": 771,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-21T09:07:59.964321+00:00"
+    },
+    "772": {
+      "id": 772,
+      "from": "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-21T09:07:59.964455+00:00"
     }
   }
 }
