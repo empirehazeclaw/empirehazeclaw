@@ -9468,6 +9468,222 @@
       "context": "error_handling",
       "timestamp": "2026-04-21T12:45:34.817038",
       "fact_count": 1
+    },
+    "lrn_20260421_125240_10": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.302475",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_11": {
+      "type": "Learning",
+      "category": "error",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Iteration 2: Learning loop failed",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.332808",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_12": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 5 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.365202",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_13": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 6 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.399473",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_14": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 7 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.434420",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_15": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 8 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.466547",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_16": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 9 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.502127",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_17": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 10 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.535179",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_18": {
+      "type": "Learning",
+      "category": "maintenance:safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.569288",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_19": {
+      "type": "Learning",
+      "category": "maintenance:safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.604654",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_20": {
+      "type": "Learning",
+      "category": "maintenance:safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.643282",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_21": {
+      "type": "Learning",
+      "category": "maintenance:safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.676270",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_22": {
+      "type": "Learning",
+      "category": "maintenance:safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "timestamp": "2026-04-21T12:52:40.714711",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_23": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.749714",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_24": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.781936",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_25": {
+      "type": "Learning",
+      "category": "maintenance:success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "timestamp": "2026-04-21T12:52:40.820857",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_26": {
+      "type": "Learning",
+      "category": "safety",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Max iterations reached without completion (score=0.766)",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T12:52:40.862968",
+      "fact_count": 1
+    },
+    "lrn_20260421_125240_27": {
+      "type": "Learning",
+      "category": "success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Completed after 3 iterations (score=0.733)",
+      "context": "pattern_matching",
+      "timestamp": "2026-04-21T12:52:40.899255",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_28": {
+      "type": "Learning",
+      "category": "fix",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Cron 'idle' Status bedeutet NICHT dass Script kaputt ist - nextRun war noch nicht erreicht",
+      "context": "cron_health",
+      "timestamp": "2026-04-21T12:53:19.798985",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_29": {
+      "type": "Learning",
+      "category": "fix",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Cron Fix: `openclaw cron enable` + manueller Run = Crons laufen wieder",
+      "context": "cron_health",
+      "timestamp": "2026-04-21T12:53:19.832204",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_30": {
+      "type": "Learning",
+      "category": "insight",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": ".ipull = HuggingFace temporary download format, bedeutet unvollst\u00e4ndiger Download",
+      "context": "system_config",
+      "timestamp": "2026-04-21T12:53:19.867551",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_31": {
+      "type": "Learning",
+      "category": "insight",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "QMD l\u00e4uft mit `qmd search` (BM25) auch ohne Query Expansion model - 1.2GB gespart",
+      "context": "system_config",
+      "timestamp": "2026-04-21T12:53:19.903382",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_32": {
+      "type": "Learning",
+      "category": "insight",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Cron 'error' Status heisst NICHT Script kaputt - nur letzter Run tempor\u00e4r fehlgeschlagen",
+      "context": "cron_health",
+      "timestamp": "2026-04-21T12:53:19.949324",
+      "fact_count": 1
+    },
+    "lrn_20260421_125319_33": {
+      "type": "Learning",
+      "category": "success",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "learning": "Alle 3 idlen Crons (Ralph Maintenance, Cache Cleanup, KG Orphan) erfolgreich aktiviert",
+      "context": "cron_health",
+      "timestamp": "2026-04-21T12:53:19.997151",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-21T09:16:07.450875",

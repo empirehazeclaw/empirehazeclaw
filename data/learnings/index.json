@@ -2,7 +2,9 @@
   "by_category": {
     "success": [
       "lrn_20260421_124047_0",
-      "lrn_20260421_124329_1"
+      "lrn_20260421_124329_1",
+      "lrn_20260421_125240_27",
+      "lrn_20260421_125319_33"
     ],
     "pattern": [
       "lrn_20260421_124329_2"
@@ -12,21 +14,53 @@
     ],
     "insight": [
       "lrn_20260421_124534_4",
-      "lrn_20260421_124534_6"
+      "lrn_20260421_124534_6",
+      "lrn_20260421_125319_30",
+      "lrn_20260421_125319_31",
+      "lrn_20260421_125319_32"
     ],
     "fix": [
       "lrn_20260421_124534_5",
       "lrn_20260421_124534_7",
-      "lrn_20260421_124534_9"
+      "lrn_20260421_124534_9",
+      "lrn_20260421_125319_28",
+      "lrn_20260421_125319_29"
     ],
     "bug": [
       "lrn_20260421_124534_8"
+    ],
+    "maintenance:success": [
+      "lrn_20260421_125240_10",
+      "lrn_20260421_125240_12",
+      "lrn_20260421_125240_13",
+      "lrn_20260421_125240_14",
+      "lrn_20260421_125240_15",
+      "lrn_20260421_125240_16",
+      "lrn_20260421_125240_17",
+      "lrn_20260421_125240_23",
+      "lrn_20260421_125240_24",
+      "lrn_20260421_125240_25"
+    ],
+    "error": [
+      "lrn_20260421_125240_11"
+    ],
+    "maintenance:safety": [
+      "lrn_20260421_125240_18",
+      "lrn_20260421_125240_19",
+      "lrn_20260421_125240_20",
+      "lrn_20260421_125240_21",
+      "lrn_20260421_125240_22"
+    ],
+    "safety": [
+      "lrn_20260421_125240_26"
     ]
   },
   "by_context": {
     "pattern_matching": [
       "lrn_20260421_124047_0",
-      "lrn_20260421_124329_2"
+      "lrn_20260421_124329_2",
+      "lrn_20260421_125240_26",
+      "lrn_20260421_125240_27"
     ],
     "score_optimization": [
       "lrn_20260421_124329_1",
@@ -47,6 +81,36 @@
     ],
     "error_handling": [
       "lrn_20260421_124534_9"
+    ],
+    "maintenance": [
+      "lrn_20260421_125240_10",
+      "lrn_20260421_125240_12",
+      "lrn_20260421_125240_13",
+      "lrn_20260421_125240_14",
+      "lrn_20260421_125240_15",
+      "lrn_20260421_125240_16",
+      "lrn_20260421_125240_17",
+      "lrn_20260421_125240_23",
+      "lrn_20260421_125240_24",
+      "lrn_20260421_125240_25"
+    ],
+    "general": [
+      "lrn_20260421_125240_11",
+      "lrn_20260421_125240_18",
+      "lrn_20260421_125240_19",
+      "lrn_20260421_125240_20",
+      "lrn_20260421_125240_21",
+      "lrn_20260421_125240_22"
+    ],
+    "cron_health": [
+      "lrn_20260421_125319_28",
+      "lrn_20260421_125319_29",
+      "lrn_20260421_125319_32",
+      "lrn_20260421_125319_33"
+    ],
+    "system_config": [
+      "lrn_20260421_125319_30",
+      "lrn_20260421_125319_31"
     ]
   },
   "by_strategy": {
@@ -191,6 +255,318 @@
       "outcome": "success",
       "metadata": {},
       "timestamp": "2026-04-21T12:45:34.817038",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_10",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.302475",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_11",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "error",
+      "learning": "Iteration 2: Learning loop failed",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.332808",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_12",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 5 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.365202",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_13",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 6 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.399473",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_14",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 7 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.434420",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_15",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 8 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.466547",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_16",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 9 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.502127",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_17",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 10 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.535179",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_18",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:safety",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.569288",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_19",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:safety",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.604654",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_20",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:safety",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.643282",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_21",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:safety",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.676270",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_22",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:safety",
+      "learning": "Max iterations reached, 0 issues pending",
+      "context": "general",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.714711",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_23",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.749714",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_24",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.781936",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_25",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "maintenance:success",
+      "learning": "Maintenance complete after 2 iterations",
+      "context": "maintenance",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.820857",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_26",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "safety",
+      "learning": "Max iterations reached without completion (score=0.766)",
+      "context": "pattern_matching",
+      "strategy": null,
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.862968",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125240_27",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "success",
+      "learning": "Completed after 3 iterations (score=0.733)",
+      "context": "pattern_matching",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:52:40.899255",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_28",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "fix",
+      "learning": "Cron 'idle' Status bedeutet NICHT dass Script kaputt ist - nextRun war noch nicht erreicht",
+      "context": "cron_health",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.798985",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_29",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "fix",
+      "learning": "Cron Fix: `openclaw cron enable` + manueller Run = Crons laufen wieder",
+      "context": "cron_health",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.832204",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_30",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "insight",
+      "learning": ".ipull = HuggingFace temporary download format, bedeutet unvollst\u00e4ndiger Download",
+      "context": "system_config",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.867551",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_31",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "insight",
+      "learning": "QMD l\u00e4uft mit `qmd search` (BM25) auch ohne Query Expansion model - 1.2GB gespart",
+      "context": "system_config",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.903382",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_32",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "insight",
+      "learning": "Cron 'error' Status heisst NICHT Script kaputt - nur letzter Run tempor\u00e4r fehlgeschlagen",
+      "context": "cron_health",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.949324",
+      "used": false,
+      "useful": null
+    },
+    {
+      "id": "lrn_20260421_125319_33",
+      "source": "[MIGRATED] Ralph Maintenance",
+      "category": "success",
+      "learning": "Alle 3 idlen Crons (Ralph Maintenance, Cache Cleanup, KG Orphan) erfolgreich aktiviert",
+      "context": "cron_health",
+      "strategy": null,
+      "outcome": "success",
+      "metadata": {},
+      "timestamp": "2026-04-21T12:53:19.997151",
       "used": false,
       "useful": null
     }
