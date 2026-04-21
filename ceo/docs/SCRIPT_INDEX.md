@@ -168,6 +168,10 @@
 | Script | Purpose | Status |
 |--------|---------|--------|
 | `learnings_service.py` | Unified Learnings API (Single Source of Truth) | ✅ Active |
+| `consolidation_engine.py` | Events → KG → Learnings (Consolidation Pathways) | ✅ Active |
+| `decision_engine.py` | "What should I do?" Decision API | ✅ Active |
+| `memory_consolidator.py` | Persistent memory files (Daily/Weekly/Monthly) | ✅ Active |
+| `test_symbiosis.py` | Validation suite for all Learning-Memory phases | ✅ Active |
 | `sir_hazeclaw_learnings.py` | My personal learnings review agent | ✅ Active |
 | `ralph_learning_loop.py` | Ralph Learning with learnings integration | ✅ Active |
 | `learning_to_kg_sync.py` | Syncs learnings to Knowledge Graph | ✅ Active |
