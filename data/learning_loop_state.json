@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 275,
-  "score": 0.5597134146341464,
+  "iteration": 279,
+  "score": 0.8097134146341464,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -293,7 +293,11 @@
     0.562004854368932,
     0.5597134146341464,
     0.5597134146341464,
-    0.5597134146341464
+    0.5597134146341464,
+    0.7346870042031731,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464
   ],
   "patterns": [
     {
@@ -321,7 +325,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 39,
+  "novelty_injections": 43,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     1.0,
@@ -338,6 +342,10 @@
     0.4999999999999996,
     0.4999999999999996,
     0.4999999999999996,
+    0.4999999999999996,
+    0.4999999999999996,
+    0.4999999999999996,
+    0.4999999999999996,
     0.4999999999999996
   ],
   "consecutive_novelty_low": 0,
@@ -346,6 +354,9 @@
   "prediction_error": 0.0,
   "feedback_score": 0.5,
   "feedback_signals_total": 0,
+  "last_evolver_result": null,
+  "evolver_genes_used": [],
+  "evolver_mutations_applied": 0,
   "learning_rate": 0.1,
   "lr_stagnation_count": 0,
   "pattern_source": "failure",
@@ -359,8 +370,8 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "Fix: Score plateau detected: range=0.0023, latest=0.560",
-  "last_forced_novelty": "2026-04-21T10:35:37.804667",
+  "last_validated_pattern": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+  "last_forced_novelty": "2026-04-21T10:42:32.829687",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
@@ -376,7 +387,7 @@
   "total_improvements": 1,
   "multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.0,
+    "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
     "dq_raw": 0.9853,
@@ -387,7 +398,7 @@
   },
   "_multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.0,
+    "lpr": 1.0,
     "eb": 0.575,
     "df": 0.1,
     "dq_raw": 0.9853,

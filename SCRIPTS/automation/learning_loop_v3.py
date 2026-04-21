@@ -153,6 +153,9 @@ def load_state():
         "prediction_error": 0.0,  # Phase 4: Curiosity = prediction error
         "feedback_score": 0.5,  # Phase 5: External feedback integration (0.0-1.0)
         "feedback_signals_total": 0,  # Phase 5: Cumulative feedback signals
+        "last_evolver_result": None,  # Phase 6: Capability Evolver integration
+        "evolver_genes_used": [],  # Phase 6: Track gene selections for diversity
+        "evolver_mutations_applied": 0,  # Phase 6: Count mutations from evolver
         "learning_rate": 0.1,  # NEW: Plateau Fix - adaptive LR
         "lr_stagnation_count": 0,  # NEW: Count consecutive plateau runs
         "pattern_source": "task",  # NEW: Rotation: task|failure|success|capability
@@ -1600,7 +1603,52 @@ def update_consecutive_tracking(state: Dict, pattern_id: str):
     save_state(state)
 
 
+def read_latest_evolver_result() -> dict:
+    """
+    Phase 6: Read latest evolver_completed event from Event Bus.
+    Returns the evolver result if found and not yet processed.
+    """
+    EVENT_BUS_FILE = Path("/home/clawbot/.openclaw/workspace/data/events/events.jsonl")
+    
+    if not EVENT_BUS_FILE.exists():
+        return None
+    
+    try:
+        events = []
+        with open(EVENT_BUS_FILE) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    events.append(json.loads(line))
+        
+        # Find latest evolver_completed event
+        evolver_events = [e for e in events if e.get("type") == "evolver_completed"]
+        if not evolver_events:
+            return None
+        
+        latest = evolver_events[-1]
+        data = latest.get("data", {})
+        
+        # Load current state to check if already processed
+        current_state = load_state()
+        last_evolver = current_state.get("last_evolver_result") or {}
+        if last_evolver.get("event_id") == latest.get("id"):
+            return None  # Already processed
+        
+        return {
+            "event_id": latest.get("id"),
+            "gene": data.get("gene", "unknown"),
+            "outcome": data.get("outcome", "unknown"),
+            "score": data.get("score", 0),
+            "files_changed": data.get("files_changed", 0),
+            "applied": data.get("outcome") == "success"
+        }
+    except Exception as e:
+        print(f"   ⚠️ Failed to read evolver result: {e}")
+        return None
+
 # ============ MAIN LOOP ============
+
 
 def run_full_cycle():
     """Run the complete Learning Loop v3 MAXIMAL cycle."""
@@ -1633,6 +1681,16 @@ def run_full_cycle():
     total_signals = sum(len(v) for v in feedback.values())
     state["feedback_signals_total"] = state.get("feedback_signals_total", 0) + total_signals
     state["feedback_score"] = min(state.get("feedback_signals_total", 0) / 50.0 + 0.3, 0.7)
+    print()
+    
+    # Phase 6: Capability Evolver Integration
+    # Read latest evolver result from Event Bus and apply learnings
+    evolver_result = read_latest_evolver_result()
+    if evolver_result:
+        state["last_evolver_result"] = evolver_result
+        if evolver_result.get("applied"):
+            state["evolver_mutations_applied"] = state.get("evolver_mutations_applied", 0) + 1
+            print(f"   🧬 Evolver mutation applied: {evolver_result.get('gene', 'unknown')}")
     print()
 
     # PHASE 0.5: Memory & Log Analysis (NEW!)
@@ -1983,9 +2041,28 @@ def emit_learning_cycle_events(iteration, final_score, state, issues, gate_issue
             "feedback_processed": state.get('feedback_processed', 0),
             "score": round(final_score, 4),
             "validation_successes": state.get('validation_successes', 0),
-            "validation_failures": state.get('validation_failures', 0)
+            "validation_failures": state.get('validation_failures', 0),
+            # Phase 6: Evolver integration data
+            "evolver_mutations_applied": state.get('evolver_mutations_applied', 0),
+            "last_evolver_gene": state.get('last_evolver_result', {}).get('gene') if state.get('last_evolver_result') else None
         }
     }
+    
+    # 6. Phase 6: Emit Evolver Result Event (for bidirectional sync)
+    evolver_result_event = None
+    if state.get('last_evolver_result'):
+        evolver_result_event = {
+            "type": "learning_evolver_feedback",
+            "source": "learning_loop",
+            "severity": "info",
+            "data": {
+                "loop_score": round(final_score, 4),
+                "loop_iteration": iteration,
+                "evolver_gene": state.get('last_evolver_result', {}).get('gene'),
+                "evolver_outcome": state.get('last_evolver_result', {}).get('outcome'),
+                "feedback": "positive" if final_score > 0.5 else "neutral"
+            }
+        }
     
     # Emit all events via event_bus.py
     events_to_emit = [score_event, completion_event]
@@ -1995,6 +2072,8 @@ def emit_learning_cycle_events(iteration, final_score, state, issues, gate_issue
         events_to_emit.append(pattern_event)
     if len(score_history) >= 10 and recent_range < 0.010:
         events_to_emit.append(plateau_event)
+    if evolver_result_event:
+        events_to_emit.append(evolver_result_event)
     
     for evt in events_to_emit:
         try:

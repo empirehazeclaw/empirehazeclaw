@@ -1,159 +1,6 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-20T23:03:26.717705",
-      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-        "timestamp": "2026-04-20T23:03:26.200927",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7669959703075291,
-        "current_score": 0.8669959703075291,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-21T00:05:02.437074",
-      "title": "[PHASE 4] Test GitHub backup recovery time, identify 1 specific bottleneck, fix or document it",
-      "validated": true,
-      "validation_details": {
-        "improvement": "[PHASE 4] Test GitHub backup recovery time, identify 1 specific bottleneck, fix or document it",
-        "timestamp": "2026-04-21T00:05:01.803774",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          },
-          {
-            "name": "meta_improvement_check",
-            "passed": true,
-            "output": "Iteration: 238"
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7669959703075291,
-        "current_score": 0.8669959703075291,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-21T01:02:57.684927",
-      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
-        "timestamp": "2026-04-21T01:02:57.221516",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7657306205149852,
-        "current_score": 0.8657306205149852,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
-      "timestamp": "2026-04-21T02:03:12.647827",
-      "title": "Break score plateau with novel approach",
-      "validated": true,
-      "validation_details": {
-        "improvement": "Break score plateau with novel approach",
-        "timestamp": "2026-04-21T02:03:12.143263",
-        "tests": [
-          {
-            "name": "error_reducer_check",
-            "passed": true,
-            "output": "No critical errors"
-          },
-          {
-            "name": "syntax_check",
-            "passed": true,
-            "output": "No script to check"
-          },
-          {
-            "name": "cron_health",
-            "passed": true,
-            "failed_crons": 0
-          }
-        ],
-        "passed": true,
-        "error_delta": 0.0,
-        "score_delta": null,
-        "version": "2.0",
-        "baseline_score": 0.7659124920466596,
-        "current_score": 0.8659124920466595,
-        "rules_checked": {
-          "min_tests": true,
-          "error_threshold": true,
-          "no_critical": true
-        }
-      }
-    },
-    {
       "timestamp": "2026-04-21T03:04:19.388825",
       "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
       "validated": true,
@@ -1868,6 +1715,159 @@
         "version": "2.0",
         "baseline_score": 0.5597134146341464,
         "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:42:33.446372",
+      "title": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
+      "validated": true,
+      "validation_details": {
+        "improvement": "[PHASE 4] Add 1 new validation test to validation_gate that currently doesn't exist (e.g., check memory usage < threshold)",
+        "timestamp": "2026-04-21T10:42:32.830579",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          },
+          {
+            "name": "meta_improvement_check",
+            "passed": true,
+            "output": "Iteration: 276"
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.5597134146341464,
+        "current_score": 0.6597134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:42:55.104316",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-21T10:42:54.518326",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.7346870042031731,
+        "current_score": 0.8346870042031731,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:43:03.423482",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-21T10:43:02.741269",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.8097134146341464,
+        "current_score": 0.9097134146341463,
+        "rules_checked": {
+          "min_tests": true,
+          "error_threshold": true,
+          "no_critical": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-21T10:43:22.875957",
+      "title": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+      "validated": true,
+      "validation_details": {
+        "improvement": "Apply proven pattern: Measure context size, find 1 specific text to shor",
+        "timestamp": "2026-04-21T10:43:22.287171",
+        "tests": [
+          {
+            "name": "error_reducer_check",
+            "passed": true,
+            "output": "No critical errors"
+          },
+          {
+            "name": "syntax_check",
+            "passed": true,
+            "output": "No script to check"
+          },
+          {
+            "name": "cron_health",
+            "passed": true,
+            "failed_crons": 0
+          }
+        ],
+        "passed": true,
+        "error_delta": 0.0,
+        "score_delta": null,
+        "version": "2.0",
+        "baseline_score": 0.8097134146341464,
+        "current_score": 0.9097134146341463,
         "rules_checked": {
           "min_tests": true,
           "error_threshold": true,

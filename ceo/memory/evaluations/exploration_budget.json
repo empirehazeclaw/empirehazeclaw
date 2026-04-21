@@ -8,11 +8,11 @@
   },
   "current_period": {
     "start": "2026-04-21T10:34:41.921329+00:00",
-    "total_runs": 7,
+    "total_runs": 11,
     "exploration_runs": 1,
-    "exploitation_runs": 6,
+    "exploitation_runs": 10,
     "exploration_successes": 1,
-    "exploitation_successes": 6,
+    "exploitation_successes": 10,
     "experimental_strategies": [
       "learning_loop_v3"
     ]
