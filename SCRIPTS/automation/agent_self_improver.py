@@ -15,6 +15,7 @@ Author: Sir HazeClaw
 Date: 2026-04-13
 """
 
+import sys
 import json
 import os
 from datetime import datetime
@@ -34,6 +35,13 @@ try:
     from memory_log_analyzer import MemoryLogAnalyzer
 except ImportError:
     MemoryLogAnalyzer = None
+
+# Import unified Learnings Service
+sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None
 
 # Safety limits
 MAX_CHANGES_PER_CYCLE = 1
@@ -110,6 +118,21 @@ class LearningStore:
         })
         data["improvements"].append(improvement)
         self.save_learnings(data)
+        
+        # Also sync to unified Learnings Service
+        if LearningsService:
+            try:
+                ls = LearningsService()
+                ls.record_learning(
+                    source="Self-Improver",
+                    category="improvement",
+                    learning=improvement.get("description", str(improvement)),
+                    context=improvement.get("type", "general"),
+                    outcome="success"
+                )
+            except Exception as e:
+                print(f"Warning: Failed to sync to Learnings Service: {e}")
+        
         return True
     
     def get_patterns_for_context(self, context: str, limit: int = 5) -> List[Dict]:

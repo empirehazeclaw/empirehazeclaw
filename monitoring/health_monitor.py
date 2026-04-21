@@ -5,9 +5,19 @@ Sendet Alerts bei Problemen
 """
 
 import os
+import sys
 import requests
 import subprocess
 from datetime import datetime
+from pathlib import Path
+
+# Learnings Service
+WORKSPACE = Path("/home/clawbot/.openclaw/workspace")
+sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None
 
 TELEGRAM_CHAT_ID = "5392634979"
 TELEGRAM_TOKEN = "8397732232:AAEK9VmvNz1gtlBfeiogP8_bDIFWnfZq-HM"
@@ -58,17 +68,35 @@ def check_cron():
     except:
         return True  # Assume OK if can't check
 
+def record_health_learning(issue: str, alert_sent: bool):
+    """Record health-related learnings."""
+    if not LearningsService:
+        return
+    try:
+        ls = LearningsService()
+        ls.record_learning(
+            source="Health Monitor",
+            category="health_issue" if not alert_sent else "health_alert",
+            learning=issue,
+            context="system_health",
+            outcome="resolved" if not alert_sent else "alert_sent"
+        )
+    except Exception as e:
+        print(f"Warning: Failed to record health learning: {e}")
+
 def run_health_check():
     """Haupt-Check"""
     issues = []
     
     # Gateway
     if not check_gateway():
-        issues.append("❌ Gateway nicht erreichbar!")
+        issues.append("Gateway nicht erreichbar!")
+        record_health_learning("Gateway down detected", alert_sent=True)
     
     # Disk
     if not check_disk():
-        issues.append("⚠️ Disk über 90%!")
+        issues.append("Disk über 90%!")
+        record_health_learning("Disk space > 90%", alert_sent=True)
     
     # Cron (nur wichtige)
     # Hier könnten wir mehr Checks machen
@@ -78,6 +106,7 @@ def run_health_check():
         send_alert(msg, urgent=True)
         print(f"ALERT: {msg}")
     else:
+        record_health_learning("Health check passed", alert_sent=False)
         print(f"✅ Alles OK - {datetime.now().isoformat()}")
 
 if __name__ == "__main__":

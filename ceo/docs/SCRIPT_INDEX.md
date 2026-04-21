@@ -165,11 +165,14 @@
 
 ## Learnings & Feedback
 
-| Script | Purpose |
-|--------|---------|
-| `learnings_service.py` | Unified Learnings API (Single Source of Truth) |
-| `sir_hazeclaw_learnings.py` | My personal learnings review agent |
-| `ralph_learning_loop.py` | Ralph Learning with learnings integration |
-| `learning_to_kg_sync.py` | Syncs learnings to Knowledge Graph |
+| Script | Purpose | Status |
+|--------|---------|--------|
+| `learnings_service.py` | Unified Learnings API (Single Source of Truth) | ✅ Active |
+| `sir_hazeclaw_learnings.py` | My personal learnings review agent | ✅ Active |
+| `ralph_learning_loop.py` | Ralph Learning with learnings integration | ✅ Active |
+| `learning_to_kg_sync.py` | Syncs learnings to Knowledge Graph | ✅ Active |
+| `evolver_signal_bridge.py` | Capability Evolver learns from results | ✅ Active |
+| `agent_self_improver.py` | Self-Improver syncs improvements | ✅ Active |
+| `monitoring/health_monitor.py` | Health Monitor records incidents | ✅ Active |
 
 

@@ -31,6 +31,13 @@ STATE_FILE = WORKSPACE / "data/learning_loop/kg_sync_state.json"
 EVOLVER_STATE = WORKSPACE / "skills/capability-evolver/memory/evolution/evolution_solidify_state.json"
 GENE_HISTORY = WORKSPACE / "data/evolver_gene_history.json"
 
+# Learnings Service
+sys.path.insert(0, str(WORKSPACE / 'SCRIPTS/automation'))
+try:
+    from learnings_service import LearningsService
+except:
+    LearningsService = None
+
 # Gene cooldown config
 GENE_COOLDOWN_RUNS = 3  # If gene selected in last 3 runs, skip it
 GENE_HISTORY_SIZE = 5   # Track last 5 gene selections
@@ -171,6 +178,20 @@ def analyze_stagnation() -> dict:
         signals.append("gene_diversity_enforced")
         signals.append(f"cooldown_genes: {','.join(cooldown_genes)}")
         recommendations.append(f"Genes on cooldown (skip these): {', '.join(cooldown_genes)}")
+    
+    # Learn from past evolver learnings to inform strategy
+    if LearningsService:
+        try:
+            ls = LearningsService()
+            insights = ls.get_agent_context("Capability Evolver")
+            for rec in insights.get('recommendations', [])[:2]:
+                recommendations.append(f"Learning: {rec}")
+            # Get top performing genes from learnings
+            for strat in insights.get('top_strategies', [])[:3]:
+                if strat.get('score', 0) > 0:
+                    recommendations.append(f"Effective gene strategy: {strat['strategy']}")
+        except Exception as e:
+            print(f"Warning: Failed to query learnings: {e}")
     
     # Check KG stagnation (not growing)
     kg_events = [e for e in events if e.get("type") == "kg_update"]
@@ -319,7 +340,7 @@ def run_evolver_with_signals():
     return result.returncode == 0
 
 def post_evolver_results():
-    """After Evolver runs, post results to Event Bus."""
+    """After Evolver runs, post results to Event Bus AND record learnings."""
     # Read evolver output from memory/evolution
     evolver_state = WORKSPACE / "skills/capability-evolver/memory/evolution/evolution_solidify_state.json"
     if not evolver_state.exists():
@@ -332,6 +353,26 @@ def post_evolver_results():
     # Save gene to history for cooldown tracking
     gene_id = state.get("selected_gene_id", "unknown")
     save_gene_selection(gene_id)
+    
+    # Record learning about gene selection
+    if LearningsService:
+        try:
+            ls = LearningsService()
+            outcome = state.get("outcome", {}).get("status", "unknown")
+            score = state.get("outcome", {}).get("score", 0)
+            
+            # Record the gene selection
+            ls.record_learning(
+                source="Capability Evolver",
+                category="gene",
+                learning=f"Gene {gene_id} selected, outcome: {outcome}, score: {score}",
+                context="evolution",
+                strategy=gene_id,
+                outcome="success" if score > 0 else "failure"
+            )
+            print(f"📚 Recorded evolver learning: {gene_id} -> {outcome}")
+        except Exception as e:
+            print(f"Warning: Failed to record evolver learning: {e}")
     
     # Publish to event bus
     data = {
