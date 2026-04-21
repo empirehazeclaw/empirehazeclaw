@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 298,
-  "score": 0.7330797460503186,
+  "iteration": 308,
+  "score": 0.7326094574990388,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -316,7 +316,17 @@
     0.562004854368932,
     0.5597134146341464,
     0.6370995449000222,
-    0.7330797460503186
+    0.7330797460503186,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.7326094574990388
   ],
   "patterns": [
     {
@@ -344,7 +354,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 62,
+  "novelty_injections": 72,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -390,8 +400,8 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Find 1 entity with missing relations, add them",
-  "last_forced_novelty": "2026-04-21T11:48:13.846214",
+  "last_validated_pattern": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+  "last_forced_novelty": "2026-04-21T12:18:06.463944",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
@@ -407,24 +417,24 @@
   "total_improvements": 1,
   "multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.6935,
+    "lpr": 0.6916,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9571,
+    "dq_raw": 0.9714,
     "dq_capped": 0.5,
     "fb": 0.44,
     "kg_health": 1.0,
-    "cron_success": 0.9143
+    "cron_success": 0.9429
   },
   "_multi_dim": {
     "tsr": 0.9756,
-    "lpr": 0.6935,
+    "lpr": 0.6916,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.9571,
+    "dq_raw": 0.9714,
     "dq_capped": 0.5,
     "fb": 0.44,
     "kg_health": 1.0,
-    "cron_success": 0.9143
+    "cron_success": 0.9429
   }
 }

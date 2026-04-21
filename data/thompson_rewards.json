@@ -1,6 +1,6 @@
 {
   "hypothesis_general": {
-    "successes": 49,
+    "successes": 51,
     "failures": 1
   },
   "cross_pattern_cross_pattern": {
@@ -20,7 +20,7 @@
     "failures": 1
   },
   "hypothesis_kg_quality": {
-    "successes": 37,
+    "successes": 39,
     "failures": 1
   },
   "hypothesis_loop_optimization": {
@@ -32,7 +32,7 @@
     "failures": 1
   },
   "hypothesis_session_efficiency": {
-    "successes": 6,
+    "successes": 9,
     "failures": 1
   },
   "hypothesis_feedback_integration": {
@@ -40,7 +40,7 @@
     "failures": 1
   },
   "issue_issue_learning_plateau": {
-    "successes": 7,
+    "successes": 8,
     "failures": 1
   },
   "cross_pattern_learning_plateau": {
@@ -52,6 +52,14 @@
     "failures": 1
   },
   "hypothesis_error_prediction": {
+    "successes": 2,
+    "failures": 1
+  },
+  "hypothesis_validation_depth": {
+    "successes": 2,
+    "failures": 1
+  },
+  "hypothesis_token_optimization": {
     "successes": 2,
     "failures": 1
   }

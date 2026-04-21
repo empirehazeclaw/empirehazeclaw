@@ -1,9 +1,10 @@
 {
-  "iterations": 20,
+  "iterations": 3,
   "goal": "learning_loop",
-  "started_at": "2026-04-20T07:34:02.593148",
-  "last_score": 0.7659781649245063,
-  "stable_runs": 0,
-  "completed": false,
-  "last_updated": "2026-04-21T12:00:37.358882"
+  "started_at": "2026-04-21T12:18:02.098862",
+  "last_score": 0.7326094574990388,
+  "stable_runs": 3,
+  "completed": true,
+  "low_novelty_streak": 0,
+  "last_updated": "2026-04-21T12:18:02.098879"
 }

@@ -49,3 +49,5 @@
 - [2026-04-21 00:07] [maintenance:success] Maintenance complete after 2 iterations
 - [2026-04-21 09:09] [maintenance:success] Maintenance complete after 2 iterations
 - [2026-04-21 12:07] [maintenance:success] Maintenance complete after 2 iterations
+- [2026-04-21 12:13] [safety] Max iterations reached without completion (score=0.766)
+- [2026-04-21 12:18] [success] Completed after 3 iterations (score=0.733)

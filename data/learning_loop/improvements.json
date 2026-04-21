@@ -1,12 +1,12 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-21T12:06:03.338085",
-      "title": "[Exploration] Find 1 entity with missing relations, add them",
+      "timestamp": "2026-04-21T12:18:12.116837",
+      "title": "[Exploration] Review last 24h API calls, find 1 inefficient call",
       "validated": true,
       "validation_details": {
-        "improvement": "[Exploration] Find 1 entity with missing relations, add them",
-        "timestamp": "2026-04-21T12:06:02.385953",
+        "improvement": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+        "timestamp": "2026-04-21T12:18:11.363423",
         "tests": [
           {
             "name": "error_reducer_check",
@@ -28,8 +28,8 @@
         "error_delta": 0.0,
         "score_delta": null,
         "version": "2.0",
-        "baseline_score": 0.6370995449000222,
-        "current_score": 0.7370995449000222,
+        "baseline_score": 0.8097134146341464,
+        "current_score": 0.9097134146341463,
         "rules_checked": {
           "min_tests": true,
           "error_threshold": true,
