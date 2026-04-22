@@ -1,0 +1,60 @@
+{
+  "slos": {
+    "fast_task": {
+      "target": 0.95,
+      "metric": "success_rate",
+      "window": "1h"
+    },
+    "complex_task": {
+      "target": 0.85,
+      "metric": "success_rate",
+      "window": "24h"
+    },
+    "delegation": {
+      "target": 0.9,
+      "metric": "success_rate",
+      "window": "1h"
+    },
+    "research": {
+      "target": 0.8,
+      "metric": "success_rate",
+      "window": "24h"
+    },
+    "default": {
+      "target": 0.9,
+      "metric": "success_rate",
+      "window": "1h"
+    },
+    "test_task": {
+      "target": 0.9,
+      "metric": "success_rate",
+      "window": "1h",
+      "defined_at": "2026-04-18T11:07:35.759367+00:00",
+      "updated_at": "2026-04-18T11:07:35.759383+00:00"
+    }
+  },
+  "history": [
+    {
+      "timestamp": "2026-04-18T11:05:26.295526+00:00",
+      "task_type": "test_task",
+      "success": true,
+      "duration": null,
+      "value": null
+    },
+    {
+      "timestamp": "2026-04-18T11:06:00.731719+00:00",
+      "task_type": "test_task",
+      "success": true,
+      "duration": null,
+      "value": null
+    },
+    {
+      "timestamp": "2026-04-18T11:07:35.797488+00:00",
+      "task_type": "test_task",
+      "success": true,
+      "duration": null,
+      "value": null
+    }
+  ],
+  "version": "1.0"
+}

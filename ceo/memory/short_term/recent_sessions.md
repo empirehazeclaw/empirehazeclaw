@@ -20,11 +20,11 @@ _Letzte Aktualisierung: 2026-04-13_
 
 ---
 
-## 📅 2026-04-21 — Daily Sync
+## 📅 2026-04-22 — Daily Sync
 
 ### 00:05 UTC
 - Memory Sync durchgeführt
-- KG: 386 entities, 723 relations
+- KG: 661 entities, 829 relations
 - Loop Score: N/A
-- Unprocessed Feedback: 82
+- Unprocessed Feedback: 142
 

@@ -9,8 +9,16 @@
       "source": "memory_analysis"
     },
     {
-      "title": "WARNING: memory:Warning",
-      "description": "Warning",
+      "title": "WARNING: memory:Alert",
+      "description": "Alert",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:Bug",
+      "description": "Bug",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,
@@ -19,6 +27,22 @@
     {
       "title": "WARNING: memory:issue",
       "description": "issue",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:\u274c ERROR",
+      "description": "\u274c ERROR",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:broken",
+      "description": "broken",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,

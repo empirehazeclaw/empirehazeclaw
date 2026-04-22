@@ -56,7 +56,7 @@
       "category": "system",
       "facts": [
         {
-          "content": "Google Workspace CLI f\u00fcr Gmail, Calendar, Drive. Nutzen wir f\u00fcr Email-Outreach. Token in secrets.env gespeichert.",
+          "content": "Google Workspace CLI f\u00fcr Gmail, Calendar, Drive. Nutzen wir f\u00fcr Email-Outreach. [TOKEN_REDACTED] in secrets.env gespeichert.",
           "confidence": 0.9,
           "extracted_at": "2026-04-06T06:42:36.445952",
           "category": "system"
@@ -1695,7 +1695,7 @@
       "category": "person",
       "facts": [
         {
-          "content": "Master - der Boss von Sir HazeClaw",
+          "content": "Master - der Boss von [NAME_REDACTED]",
           "confidence": 0.9,
           "extracted_at": "2026-04-10T20:35:33.625292",
           "category": "person"
@@ -1742,7 +1742,7 @@
       "category": "project",
       "facts": [
         {
-          "content": "Das Projekt von Nico und Sir HazeClaw",
+          "content": "Das Projekt von [NAME_REDACTED] und [NAME_REDACTED]",
           "confidence": 0.9,
           "extracted_at": "2026-04-10T20:35:46.923434",
           "category": "project"
@@ -1984,7 +1984,7 @@
       "last_accessed": "2026-04-11T23:14:56.264504",
       "access_count": 1
     },
-    "Sir-HazeClaw-Scripts": {
+    "Sir-[NAME_REDACTED]-Scripts": {
       "type": "category",
       "facts": [
         {
@@ -2211,7 +2211,7 @@
       "category": "multi_agent_frameworks",
       "facts": [
         {
-          "content": "Multi-Agent Frameworks 2026: LangGraph (state machine, cyclic self-correcting graphs), Microsoft Agent Framework (AutoGen+SemanticKernel merged, GA Q1 2026), EvoAI (self-evolving, 3 evolution modes, 46% token reduction via FIX/DERIVED/CAPTURED)",
+          "content": "Multi-Agent Frameworks 2026: LangGraph (state machine, cyclic self-correcting graphs), Microsoft Agent Framework (AutoGen+SemanticKernel merged, GA Q1 2026), EvoAI (self-evolving, 3 evolution modes, 46% [TOKEN_REDACTED] reduction via FIX/DERIVED/CAPTURED)",
           "confidence": 0.85,
           "extracted_at": "2026-04-11T10:00:29.502760",
           "category": "multi_agent"
@@ -2280,7 +2280,7 @@
       "category": "ai_agent_security",
       "facts": [
         {
-          "content": "Microsoft Agent Governance Toolkit (Open Source, MIT): Runtime Security Governance f\u00fcr autonome AI Agents. Erste OpenSource Loesung f\u00fcr agent governance - relevantes Thema f\u00fcr Empire HazeClaw.",
+          "content": "Microsoft Agent Governance Toolkit (Open Source, MIT): Runtime Security Governance f\u00fcr autonome AI Agents. Erste OpenSource Loesung f\u00fcr agent governance - relevantes Thema f\u00fcr Empire [NAME_REDACTED].",
           "confidence": 0.9,
           "extracted_at": "2026-04-11T14:01:25.824963",
           "category": "innovation_research"
@@ -2304,7 +2304,7 @@
       "category": "ai_agent_efficiency",
       "facts": [
         {
-          "content": "NVIDIA AI-Q Blueprint for agentic search: Hybrid approach mit frontier + open models. Cutting query costs in half bei besserer accuracy als DeepResearch Bench. Token efficiency durch modulares Design.",
+          "content": "NVIDIA AI-Q Blueprint for agentic search: Hybrid approach mit frontier + open models. Cutting query costs in half bei besserer accuracy als DeepResearch Bench. [TOKEN_REDACTED] efficiency durch modulares Design.",
           "confidence": 0.8,
           "extracted_at": "2026-04-11T14:01:25.824971",
           "category": "innovation_research"
@@ -2314,7 +2314,7 @@
       "created": "2026-04-11T14:01:25.824972",
       "tags": [
         "nvidia",
-        "token-efficiency",
+        "[TOKEN_REDACTED]-efficiency",
         "cost-reduction",
         "hybrid-models"
       ],
@@ -2356,24 +2356,24 @@
       "last_accessed": "2026-04-13T21:30:32.418934",
       "access_count": 2
     },
-    "token_optimization_20260411": {
+    "[TOKEN_REDACTED]_optimization_20260411": {
       "type": "research",
-      "category": "token_optimization",
+      "category": "[TOKEN_REDACTED]_optimization",
       "facts": [
         {
-          "content": "AGENTS.md Optimization: 5x performance boost, 70% token reduction - SmartScope",
+          "content": "AGENTS.md Optimization: 5x performance boost, 70% [TOKEN_REDACTED] reduction - SmartScope",
           "confidence": 0.9,
           "extracted_at": "2026-04-11T16:06:58.094389",
-          "category": "token_savings"
+          "category": "[TOKEN_REDACTED]_savings"
         },
         {
           "content": "Prompt caching + RAG + model routing = 80% cost reduction - Fast.io",
           "confidence": 0.9,
           "extracted_at": "2026-04-11T16:06:58.094408",
-          "category": "token_savings"
+          "category": "[TOKEN_REDACTED]_savings"
         },
         {
-          "content": "Trim instructions, compress context, structured formats, cache, batch = 40-60% token savings",
+          "content": "Trim instructions, compress context, structured formats, cache, batch = 40-60% [TOKEN_REDACTED] savings",
           "confidence": 0.9,
           "extracted_at": "2026-04-11T16:06:58.094409",
           "category": "techniques"
@@ -2382,7 +2382,7 @@
       "priority": "HIGH",
       "created": "2026-04-11T16:06:58.094410",
       "tags": [
-        "token_optimization",
+        "[TOKEN_REDACTED]_optimization",
         "efficiency",
         "cost_reduction",
         "2026"
@@ -2429,7 +2429,7 @@
       "facts": [
         {
           "content": "Success pattern for file_read",
-          "confidence": 0.8657515757027927,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:31:00.683156+00:00"
         }
       ],
@@ -2442,10 +2442,10 @@
         "type": "success_pattern",
         "action_type": "file_read",
         "context": {},
-        "tokens_used": 150,
-        "efficiency": 1.3333333333333333,
+        "[TOKEN_REDACTED]s_used": 150,
+        "efficiency": 1.[PHONE_REDACTED],
         "discovered_at": "2026-04-11T17:31:00.683156+00:00",
-        "confidence": 0.8657515757027927
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_exec_command_7091": {
@@ -2454,7 +2454,7 @@
       "facts": [
         {
           "content": "Success pattern for exec_command",
-          "confidence": 0.889315050087022,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:31:00.730865+00:00"
         }
       ],
@@ -2467,10 +2467,10 @@
         "type": "success_pattern",
         "action_type": "exec_command",
         "context": {},
-        "tokens_used": 300,
-        "efficiency": 1.6666666666666667,
+        "[TOKEN_REDACTED]s_used": 300,
+        "efficiency": 1.[PHONE_REDACTED],
         "discovered_at": "2026-04-11T17:31:00.730865+00:00",
-        "confidence": 0.889315050087022
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "error_timeout_7327": {
@@ -2502,7 +2502,7 @@
       "facts": [
         {
           "content": "Success pattern for kg_update",
-          "confidence": 0.8706835137293726,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:31:00.854162+00:00"
         }
       ],
@@ -2515,10 +2515,10 @@
         "type": "success_pattern",
         "action_type": "kg_update",
         "context": {},
-        "tokens_used": 200,
+        "[TOKEN_REDACTED]s_used": 200,
         "efficiency": 0.75,
         "discovered_at": "2026-04-11T17:31:00.854162+00:00",
-        "confidence": 0.8706835137293726
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_1_3828": {
@@ -2527,7 +2527,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7858576186780266,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:32:37.403967+00:00"
         }
       ],
@@ -2544,10 +2544,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T17:32:37.403967+00:00",
-        "confidence": 0.7858576186780266
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_1_1941": {
@@ -2556,7 +2556,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7694968577130441,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:38:15.801261+00:00"
         }
       ],
@@ -2573,10 +2573,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T17:38:15.801261+00:00",
-        "confidence": 0.7694968577130441
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_2_7388": {
@@ -2585,7 +2585,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.892163734430049,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:38:21.043521+00:00"
         }
       ],
@@ -2602,10 +2602,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T17:38:21.043521+00:00",
-        "confidence": 0.892163734430049
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_3_3745": {
@@ -2614,7 +2614,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7777934220599604,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T17:38:26.299906+00:00"
         }
       ],
@@ -2631,10 +2631,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T17:38:26.299906+00:00",
-        "confidence": 0.7777934220599604
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_1_7792": {
@@ -2643,7 +2643,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7931101076747589,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T19:21:01.034408+00:00"
         }
       ],
@@ -2660,10 +2660,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T19:21:01.034408+00:00",
-        "confidence": 0.7931101076747589
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_2_8849": {
@@ -2672,7 +2672,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7040389352349861,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T19:21:06.328391+00:00"
         }
       ],
@@ -2689,10 +2689,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T19:21:06.328391+00:00",
-        "confidence": 0.7040389352349861
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_3_5652": {
@@ -2701,7 +2701,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7222698186362126,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T19:21:11.573012+00:00"
         }
       ],
@@ -2718,10 +2718,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T19:21:11.573012+00:00",
-        "confidence": 0.7222698186362126
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "research_20260411": {
@@ -2767,7 +2767,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7808920031963408,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T20:21:31.808704+00:00"
         }
       ],
@@ -2784,10 +2784,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T20:21:31.808704+00:00",
-        "confidence": 0.7808920031963408
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_2_8119": {
@@ -2796,7 +2796,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.7507068927788318,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T20:21:37.059690+00:00"
         }
       ],
@@ -2813,10 +2813,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T20:21:37.059690+00:00",
-        "confidence": 0.7507068927788318
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "success_improvement_cycle_3_2470": {
@@ -2825,7 +2825,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7506527557615735,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-11T20:21:42.325374+00:00"
         }
       ],
@@ -2842,10 +2842,10 @@
           "actual_impact": 2,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-11T20:21:42.325374+00:00",
-        "confidence": 0.7506527557615735
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "error_None_9521": {
@@ -3376,7 +3376,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.8115555366049403,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T05:21:29.658793+00:00"
         }
       ],
@@ -3393,10 +3393,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T05:21:29.658793+00:00",
-        "confidence": 0.8115555366049403
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "improvement_safety_20260412_052134_6661": {
@@ -3426,7 +3426,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.9431379978933189,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T05:21:34.794920+00:00"
         }
       ],
@@ -3443,10 +3443,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T05:21:34.794920+00:00",
-        "confidence": 0.9431379978933189
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "improvement_safety_20260412_052139_1784": {
@@ -3476,7 +3476,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.9405990600598323,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T05:21:39.929582+00:00"
         }
       ],
@@ -3493,10 +3493,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T05:21:39.929582+00:00",
-        "confidence": 0.9405990600598323
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "improvement_safety_20260412_062129_9062": {
@@ -3526,7 +3526,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_1",
-          "confidence": 0.7575464696557844,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T06:21:29.849922+00:00"
         }
       ],
@@ -3543,10 +3543,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T06:21:29.849922+00:00",
-        "confidence": 0.7575464696557844
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "improvement_safety_20260412_062134_7665": {
@@ -3576,7 +3576,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_2",
-          "confidence": 0.8126441619547985,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T06:21:35.063982+00:00"
         }
       ],
@@ -3593,10 +3593,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T06:21:35.063982+00:00",
-        "confidence": 0.8126441619547985
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "improvement_safety_20260412_062140_5805": {
@@ -3626,7 +3626,7 @@
       "facts": [
         {
           "content": "Success pattern for improvement_cycle_3",
-          "confidence": 0.7391449044449216,
+          "confidence": 0.[PHONE_REDACTED],
           "extracted_at": "2026-04-12T06:21:40.203998+00:00"
         }
       ],
@@ -3643,10 +3643,10 @@
           "actual_impact": 3,
           "decision": "KEEP"
         },
-        "tokens_used": 0,
+        "[TOKEN_REDACTED]s_used": 0,
         "efficiency": 0,
         "discovered_at": "2026-04-12T06:21:40.203998+00:00",
-        "confidence": 0.7391449044449216
+        "confidence": 0.[PHONE_REDACTED]
       }
     },
     "category_reflections": {
@@ -3692,7 +3692,7 @@
       "description": "\ud83d\udd0d ERROR REDUCER \u2014 Real Error Analysis (v2)",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669064",
@@ -3706,7 +3706,7 @@
       "description": "\ud83d\udd0d Analyzing errors...",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669082",
@@ -3720,7 +3720,7 @@
       "description": "\ud83d\udcc8 Real Error Rate: 2.21%",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669087",
@@ -3734,7 +3734,7 @@
       "description": "Total real errors: 75",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669091",
@@ -3748,7 +3748,7 @@
       "description": "\ud83d\udea8 Error Breakdown:",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669094",
@@ -3762,7 +3762,7 @@
       "description": "\ud83d\udd27 Top Error Tools:",
       "error_type": "general_error",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669103",
@@ -3776,7 +3776,7 @@
       "description": "Cron failure: \u26a0\ufe0f Failed: 4",
       "error_type": "cron_failure",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669107",
@@ -3792,7 +3792,7 @@
       "description": "Cron failure: \u274c FAILED JOBS:",
       "error_type": "cron_failure",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669110",
@@ -3808,7 +3808,7 @@
       "description": "Cron failure: \u274c Error: `\u26a0\ufe0f \u2709\ufe0f Message failed`",
       "error_type": "cron_failure",
       "solution": null,
-      "confidence": 0.40217849999999994,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": false,
       "source": "error_learning",
       "first_seen": "2026-04-13T13:48:51.669113",
@@ -3822,7 +3822,7 @@
       "description": "[CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
       "error_type": "elevated_error_rate",
       "solution": "Applied improvement: [CROSS-PATTERN] \ud83d\udcc8 Real Error Rate: 2.21%",
-      "confidence": 0.8202339500000003,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-13T16:38:17.781163",
@@ -3836,7 +3836,7 @@
       "description": "[PHASE 4] Explore: feedback_integration",
       "error_type": "feedback_integration",
       "solution": "Applied improvement: [PHASE 4] Explore: feedback_integration",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-13T16:46:37.522401",
@@ -3850,7 +3850,7 @@
       "description": "Context Compression",
       "error_type": "context_compression",
       "solution": "Applied improvement: Context Compression",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-14T07:43:42.701457",
@@ -3864,7 +3864,7 @@
       "description": "[DEBUG] Test improvement",
       "error_type": "general",
       "solution": "Applied improvement: [DEBUG] Test improvement",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-14T12:53:08.664404",
@@ -3878,7 +3878,7 @@
       "description": "[CROSS-PATTERN] Test",
       "error_type": "cross_pattern",
       "solution": "Applied improvement: [CROSS-PATTERN] Test",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-14T12:55:02.790816",
@@ -3892,7 +3892,7 @@
       "description": "[ISSUE] Test",
       "error_type": "issue",
       "solution": "Applied improvement: [ISSUE] Test",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-14T12:55:03.870281",
@@ -3906,7 +3906,7 @@
       "description": "[HYPOTHESIS] Test",
       "error_type": "general",
       "solution": "Applied improvement: [HYPOTHESIS] Test",
-      "confidence": 0.6054299999999999,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-14T12:55:05.010555",
@@ -3920,7 +3920,7 @@
       "description": "Investigate and fix Opportunity Scanner Daily failure",
       "error_type": "cron_health",
       "solution": "Applied improvement: Investigate and fix Opportunity Scanner Daily failure",
-      "confidence": 0.8500000000000001,
+      "confidence": 0.[PHONE_REDACTED],
       "validated": true,
       "source": "learning_loop",
       "first_seen": "2026-04-16T15:58:31.046647",
@@ -3952,11 +3952,11 @@
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.972231"
     },
-    "Improvement_2026-04-14T13-34-20-320944_Fix-Token-Budget-Tracker:-chec": {
-      "id": "Improvement_2026-04-14T13-34-20-320944_Fix-Token-Budget-Tracker:-chec",
+    "Improvement_2026-04-14T13-34-20-320944_Fix-[TOKEN_REDACTED]-Budget-Tracker:-chec": {
+      "id": "Improvement_2026-04-14T13-34-20-320944_Fix-[TOKEN_REDACTED]-Budget-Tracker:-chec",
       "type": "Improvement",
-      "name": "Fix Token Budget Tracker: check API response and timeout handling",
-      "description": "Fix Token Budget Tracker: check API response and timeout handling",
+      "name": "Fix [TOKEN_REDACTED] Budget Tracker: check API response and timeout handling",
+      "description": "Fix [TOKEN_REDACTED] Budget Tracker: check API response and timeout handling",
       "validated": false,
       "timestamp": "2026-04-14T13:34:20.320944",
       "test_count": 3,
@@ -4720,8 +4720,8 @@
     "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A": {
       "id": "Improvement_2026-04-17T18-07-49-814771_PHASE-4-Review-last-24h-of-A",
       "type": "Improvement",
-      "name": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize",
-      "description": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many tokens, optimize or cache it",
+      "name": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many [TOKEN_REDACTED]s, optimize",
+      "description": "[PHASE 4] Review last 24h of API calls, identify 1 specific call that used too many [TOKEN_REDACTED]s, optimize or cache it",
       "validated": true,
       "timestamp": "2026-04-17T18:07:49.814771",
       "test_count": 4,
@@ -35677,14 +35677,14 @@
       "from": "Learnings",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:03.720299"
     },
     {
       "from": "Learnings",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:03.752637"
     },
     {
@@ -35894,63 +35894,63 @@
       "from": "OpenClaw",
       "to": "REDACTED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.672954"
     },
     {
       "from": "OpenClaw",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.697122"
     },
     {
       "from": "OpenClaw",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.725004"
     },
     {
       "from": "OpenClaw",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.762277"
     },
     {
       "from": "OpenClaw",
       "to": "RECOVERED LEARNINGS - 2026-04-07",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.797438"
     },
     {
       "from": "OpenClaw",
       "to": "RECOVERED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.824923"
     },
     {
       "from": "OpenClaw",
       "to": "Session",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.857206"
     },
     {
       "from": "OpenClaw",
       "to": "PRIORITY",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.894441"
     },
     {
       "from": "OpenClaw",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.923033"
     },
     {
@@ -36118,70 +36118,70 @@
       "from": "Memory",
       "to": "REDACTED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.613000"
     },
     {
       "from": "Memory",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.640888"
     },
     {
       "from": "Memory",
       "to": "Metadaten",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.668019"
     },
     {
       "from": "Memory",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.697281"
     },
     {
       "from": "Memory",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.728268"
     },
     {
       "from": "Memory",
       "to": "RECOVERED LEARNINGS - 2026-04-07",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.756560"
     },
     {
       "from": "Memory",
       "to": "RECOVERED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.785622"
     },
     {
       "from": "Memory",
       "to": "Session",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.821604"
     },
     {
       "from": "Memory",
       "to": "PRIORITY",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.848945"
     },
     {
       "from": "Memory",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.875835"
     },
     {
@@ -36384,28 +36384,28 @@
       "from": "Source",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.673992"
     },
     {
       "from": "Source",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.699909"
     },
     {
       "from": "Source",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.726353"
     },
     {
       "from": "Source",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.749594"
     },
     {
@@ -37387,14 +37387,14 @@
       "from": "Learnings",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:03.720299"
     },
     "10": {
       "from": "Learnings",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:03.752637"
     },
     "11": {
@@ -37604,63 +37604,63 @@
       "from": "OpenClaw",
       "to": "REDACTED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.672954"
     },
     "41": {
       "from": "OpenClaw",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.697122"
     },
     "42": {
       "from": "OpenClaw",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.725004"
     },
     "43": {
       "from": "OpenClaw",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.762277"
     },
     "44": {
       "from": "OpenClaw",
       "to": "RECOVERED LEARNINGS - 2026-04-07",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.797438"
     },
     "45": {
       "from": "OpenClaw",
       "to": "RECOVERED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.824923"
     },
     "46": {
       "from": "OpenClaw",
       "to": "Session",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.857206"
     },
     "47": {
       "from": "OpenClaw",
       "to": "PRIORITY",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.894441"
     },
     "48": {
       "from": "OpenClaw",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:04.923033"
     },
     "49": {
@@ -37828,70 +37828,70 @@
       "from": "Memory",
       "to": "REDACTED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.613000"
     },
     "73": {
       "from": "Memory",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.640888"
     },
     "74": {
       "from": "Memory",
       "to": "Metadaten",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.668019"
     },
     "75": {
       "from": "Memory",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.697281"
     },
     "76": {
       "from": "Memory",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.728268"
     },
     "77": {
       "from": "Memory",
       "to": "RECOVERED LEARNINGS - 2026-04-07",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.756560"
     },
     "78": {
       "from": "Memory",
       "to": "RECOVERED",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.785622"
     },
     "79": {
       "from": "Memory",
       "to": "Session",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.821604"
     },
     "80": {
       "from": "Memory",
       "to": "PRIORITY",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.848945"
     },
     "81": {
       "from": "Memory",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:05.875835"
     },
     "82": {
@@ -38094,28 +38094,28 @@
       "from": "Source",
       "to": "TOP 10 Decisions aus Telegram History (Feb-Apr 2026)",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.673992"
     },
     "111": {
       "from": "Source",
       "to": "Telegram History Analyse - Patterns & Learnings",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.699909"
     },
     "112": {
       "from": "Source",
       "to": "Vercel",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.726353"
     },
     "113": {
       "from": "Source",
       "to": "TOP DECISIONS",
       "type": "co_occurs",
-      "weight": 0.6000000000000001,
+      "weight": 0.[PHONE_REDACTED],
       "created_at": "2026-04-09T10:11:06.749594"
     },
     "114": {
@@ -39030,7 +39030,7 @@
     },
     "244": {
       "from": "agent_sir_hazeclaw_20260410",
-      "to": "Sir-HazeClaw-Scripts",
+      "to": "Sir-[NAME_REDACTED]-Scripts",
       "type": "created"
     },
     "245": {
@@ -39397,28 +39397,28 @@
       "source": "orphan_connector"
     },
     "305": {
-      "from": "token_optimization_20260411",
+      "from": "[TOKEN_REDACTED]_optimization_20260411",
       "to": "category_research-topics",
       "type": "categorized_as",
       "created": "2026-04-12T06:36:52.053477",
       "source": "orphan_connector"
     },
     "306": {
-      "from": "token_optimization_20260411",
+      "from": "[TOKEN_REDACTED]_optimization_20260411",
       "to": "innovation_research_20260411",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053481",
       "source": "orphan_connector"
     },
     "307": {
-      "from": "token_optimization_20260411",
+      "from": "[TOKEN_REDACTED]_optimization_20260411",
       "to": "memory_frameworks_20260411",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053482",
       "source": "orphan_connector"
     },
     "308": {
-      "from": "token_optimization_20260411",
+      "from": "[TOKEN_REDACTED]_optimization_20260411",
       "to": "multiagent_frameworks_20260411",
       "type": "related_to",
       "created": "2026-04-12T06:36:52.053483",
@@ -41064,7 +41064,7 @@
     },
     "543": {
       "from": "Learning-Loop",
-      "to": "Improvement_2026-04-14T13-34-20-320944_Fix-Token-Budget-Tracker:-chec",
+      "to": "Improvement_2026-04-14T13-34-20-320944_Fix-[TOKEN_REDACTED]-Budget-Tracker:-chec",
       "type": "created",
       "weight": 0.9,
       "created_at": "2026-04-16T19:05:57.972410"

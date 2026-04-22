@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-04-17T18:57:54.215552",
+  "tests_run": 1,
+  "patterns_found": [
+    {
+      "pattern_name": "filler_words",
+      "file": "SOUL.md",
+      "matches": 2,
+      "severity": "MED",
+      "description": "Uses filler words instead of being direct"
+    }
+  ],
+  "severity_counts": {
+    "HIGH": 0,
+    "MED": 1,
+    "LOW": 0
+  }
+}

@@ -7,7 +7,7 @@
     "stagnation_threshold": 5
   },
   "current_period": {
-    "start": "2026-04-21T22:05:15.896936+00:00",
+    "start": "2026-04-22T17:03:23.061339+00:00",
     "total_runs": 1,
     "exploration_runs": 1,
     "exploitation_runs": 0,
@@ -425,6 +425,132 @@
       "experimental_strategies": [
         "learning_loop_v3"
       ]
+    },
+    {
+      "start": "2026-04-21T22:05:15.896936+00:00",
+      "end": "2026-04-22T00:05:47.948622+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-22T00:05:47.948634+00:00",
+      "end": "2026-04-22T02:03:46.073526+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T02:03:46.073535+00:00",
+      "end": "2026-04-22T03:04:00.352361+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T03:04:00.352374+00:00",
+      "end": "2026-04-22T04:04:43.644115+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T04:04:43.644129+00:00",
+      "end": "2026-04-22T06:06:07.169113+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T06:06:07.169125+00:00",
+      "end": "2026-04-22T08:06:35.563810+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T08:06:35.563824+00:00",
+      "end": "2026-04-22T09:07:13.752446+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T09:07:13.752461+00:00",
+      "end": "2026-04-22T11:04:28.521121+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-22T11:04:28.521133+00:00",
+      "end": "2026-04-22T12:04:45.561070+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T12:04:45.561087+00:00",
+      "end": "2026-04-22T14:05:38.614155+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-22T14:05:38.614169+00:00",
+      "end": "2026-04-22T16:03:10.351370+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-22T16:03:10.351381+00:00",
+      "end": "2026-04-22T17:03:23.061331+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
     }
   ],
   "version": "1.0"

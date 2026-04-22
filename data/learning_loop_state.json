@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 339,
-  "score": 0.562004854368932,
+  "iteration": 359,
+  "score": 0.5597134146341464,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -357,7 +357,27 @@
     0.5597134146341464,
     0.5597134146341464,
     0.5597134146341464,
-    0.562004854368932
+    0.562004854368932,
+    0.5597134146341464,
+    0.6366472728580083,
+    0.7327970760240597,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.7327861262654506,
+    0.6366338594037112,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.562004854368932,
+    0.5597134146341464,
+    0.5597134146341464
   ],
   "patterns": [
     {
@@ -385,7 +405,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 103,
+  "novelty_injections": 123,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -432,14 +452,14 @@
   },
   "consecutive_same_pattern": 0,
   "last_validated_pattern": "[Exploration] Test backup recovery, identify 1 bottleneck",
-  "last_forced_novelty": "2026-04-21T22:05:15.907094",
+  "last_forced_novelty": "2026-04-22T15:04:12.366746",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-21T22:05:17.423787",
+  "last_pattern_update": "2026-04-22T17:03:24.526198",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
@@ -447,25 +467,25 @@
   "last_update": "2026-04-18T04:04:06.205949Z",
   "total_improvements": 1,
   "multi_dim": {
-    "tsr": 0.9757,
+    "tsr": 0.9756,
     "lpr": 0.0,
-    "eb": 0.59,
+    "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8875,
+    "dq_raw": 0.8264,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.775,
-    "cron_success": 1.0
+    "kg_health": 0.6777,
+    "cron_success": 0.975
   },
   "_multi_dim": {
-    "tsr": 0.9757,
+    "tsr": 0.9756,
     "lpr": 0.0,
-    "eb": 0.59,
+    "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8875,
+    "dq_raw": 0.8264,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.775,
-    "cron_success": 1.0
+    "kg_health": 0.6777,
+    "cron_success": 0.975
   }
 }

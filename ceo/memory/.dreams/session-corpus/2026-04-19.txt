@@ -508,3 +508,6 @@
 [ceo/sessions/0ef3867a-0b96-4f9f-8b92-46a6df48d8d2.jsonl.deleted.2026-04-20T18-05-10.404Z#L28] User: Fangen mit punk 1 an
 [ceo/sessions/0ef3867a-0b96-4f9f-8b92-46a6df48d8d2.jsonl.deleted.2026-04-20T18-05-10.404Z#L41] User: Ok testen und dann weiter mit Phase 2
 [ceo/sessions/0ef3867a-0b96-4f9f-8b92-46a6df48d8d2.jsonl.deleted.2026-04-20T18-05-10.404Z#L46] User: Ok testen und dann weiter mit Phase 2
+[ceo/sessions/36627dce-ffb7-4d6a-9b9e-f69978ab0807.jsonl#L5] User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Comprehensive test of all fixes made today (2026-04-19). ## Context We fixed several issues today. Test each one. ## Fixes to
+[ceo/sessions/36627dce-ffb7-4d6a-9b9e-f69978ab0807.jsonl#L12] Assistant: Let me retry the Python scripts with direct invocation:
+[ceo/sessions/36627dce-ffb7-4d6a-9b9e-f69978ab0807.jsonl#L22] Assistant: ## Test Results — 2026-04-19 Fixes --- ### ✅ Test 1: evolver_signal_bridge.py — gene_id field fix **Command:** `python3 /home/clawbot/.openclaw/workspace/scripts/evolver_signal_bridge.py --check-stagnation` **Output:** ```json {"signals": ["capability_gap"], "recommend

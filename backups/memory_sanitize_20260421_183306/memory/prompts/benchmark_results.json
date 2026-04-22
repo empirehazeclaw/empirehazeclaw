@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-04-20T10:52:51.267415",
+  "tests_run": 4,
+  "tests_passed": 4,
+  "tests_failed": 0,
+  "results": {
+    "soul_direct_response": {
+      "test_id": "soul_direct_response",
+      "passed": true,
+      "score": 0.6,
+      "notes": "Benchmark score: 0.60"
+    },
+    "soul_proactive": {
+      "test_id": "soul_proactive",
+      "passed": true,
+      "score": 0.5,
+      "notes": "Benchmark score: 0.50"
+    },
+    "soul_evidence": {
+      "test_id": "soul_evidence",
+      "passed": true,
+      "score": 0.5,
+      "notes": "Benchmark score: 0.50"
+    },
+    "agents_trigger_rule": {
+      "test_id": "agents_trigger_rule",
+      "passed": true,
+      "score": 0.5,
+      "notes": "Benchmark score: 0.50"
+    }
+  }
+}

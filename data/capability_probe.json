@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-04-21T17:54:58.786817",
+  "timestamp": "2026-04-22T02:03:07.864282",
   "kg_metrics": {
-    "entity_count": 897,
-    "relation_count": 817,
-    "orphan_count": 564,
-    "orphan_pct": 0.6287625418060201,
-    "relation_density": 0.9108138238573021,
-    "type_count": 34,
+    "entity_count": 675,
+    "relation_count": 835,
+    "orphan_count": 165,
+    "orphan_pct": 0.24444444444444444,
+    "relation_density": 1.237037037037037,
+    "type_count": 33,
     "types": [
-      "sales",
-      "metrics",
-      "reflection",
-      "Agent",
-      "domain",
-      "skill",
+      "agent",
+      "system",
       "transcript",
-      "Learning",
-      "concept",
-      "project"
+      "business",
+      "category",
+      "Insight",
+      "rem_insight",
+      "metrics",
+      "learning",
+      "error_pattern"
     ]
   },
   "learning_trajectory": {
-    "iteration": 329,
-    "score": 0.8097134146341464,
+    "iteration": 342,
+    "score": 0.7327970760240597,
     "pattern_count": 1
   },
   "benchmark_results": [
@@ -30,19 +30,19 @@
       "area": "kg_query",
       "success": true,
       "error": null,
-      "entity_count": 897
+      "entity_count": 675
     },
     {
       "area": "event_check",
       "success": true,
       "error": null,
-      "event_count": 15
+      "event_count": 6
     },
     {
       "area": "learning_read",
       "success": true,
       "error": null,
-      "score": 0.8097134146341464
+      "score": 0.7327970760240597
     },
     {
       "area": "pattern_match",
@@ -51,7 +51,13 @@
       "pattern_count": 1
     }
   ],
-  "signals_generated": [],
-  "recommendations": [],
-  "overall_status": "needs_attention"
+  "signals_generated": [
+    "exploration_opportunity_signal",
+    "kg_ripe_for_synthesis",
+    "dense_knowledge_synthesis"
+  ],
+  "recommendations": [
+    "Deep exploration mode \u2014 diversify strategy"
+  ],
+  "overall_status": "healthy"
 }
