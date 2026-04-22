@@ -9292,7 +9292,7 @@
     }
   ],
   "strategy_effectiveness": {
-    "diversity": 21,
+    "diversity": 20,
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
@@ -9301,5 +9301,10 @@
     "test_feedback": 5,
     "repair": 3,
     "intensification": 1
+  },
+  "context_effectiveness": {
+    "learning_optimization": {
+      "diversity": -1
+    }
   }
 }
