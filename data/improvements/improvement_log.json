@@ -1,63 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 1,
-      "timestamp": "2026-04-12T14:21:37.838629",
-      "metrics_before": {
-        "error_rate": 1.53,
-        "sessions_today": 248,
-        "friction_events": 0,
-        "kg_entities": 300,
-        "skills_count": 26,
-        "scripts_without_timeout": 0,
-        "timestamp": "2026-04-12T14:21:37.838638",
-        "session_count": 478
-      },
-      "hypothesis": {
-        "id": "hyp_142137_5",
-        "category": "efficiency",
-        "priority": "MEDIUM",
-        "description": "Reduce token waste through optimization",
-        "approach": "Apply token_optimization patterns",
-        "expected_impact": 20,
-        "effort": "MEDIUM",
-        "methods": [
-          "Analyze token usage per session",
-          "Apply compression to prompts",
-          "Use caching where possible"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_142137_5",
-        "timestamp": "2026-04-12T14:21:37.884889",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.53,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 300,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T14:21:37.884898",
-          "session_count": 478
-        },
-        "metrics_after": {
-          "error_rate": 1.53,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 301,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T14:21:37.953266",
-          "session_count": 478
-        },
-        "actual_impact": 3,
-        "change_made": "efficiency_patterns_applied, kg_added:1",
-        "error": null
-      },
-      "kept": true
-    },
-    {
       "cycle": 2,
       "timestamp": "2026-04-12T14:21:43.023861",
       "metrics_before": {
@@ -2086,6 +2029,42 @@
         }
       ],
       "validated": 1
+    },
+    {
+      "timestamp": "2026-04-22T18:09:57.077670",
+      "improvements": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u274c script_fix: Failed (will try different approach) | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 kg_growth: +50% improvement | \u2705 speed_improve: +50% improvement",
+          "validated": true
+        }
+      ],
+      "validated": 2
     }
   ],
   "hypotheses": [],

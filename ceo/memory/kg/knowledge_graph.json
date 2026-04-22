@@ -12530,14 +12530,14 @@
       "category": "ai_agent_innovation",
       "facts": [
         {
-          "content": "## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI agent\nURL: https://github.com/NousResearch/hermes-agent\n",
+          "content": "## arXiv: Bridging the Reasoning Gap in Vietnamese with Small Language Models via Test-Tim\nThe democratization of ubiquitous AI hinges on deploying sophisticated reasoning capabilities on resource-constrained devices. However, Small Language Models (SLMs) often face a \"reasoning gap\", parti\n\n## arXiv: Self-adaptive Multi-Access Edge Architectures: A Robotics Case\nThe growth of compute-intensive AI tasks highlights the need to mitigate the processing costs and improve performance and energy efficiency. This necessitates the integration of intelligent agents as \n\n## arXiv: Prompt Optimization Enables Stable Algorithmic Collusion in LLM Agents\nLLM agents in markets present algorithmic collusion risks. While prior work shows LLM agents reach supracompetitive prices through tacit coordination, existing research focuses on hand-crafted prompts\n\n## arXiv: From Clinical Intent to Clinical Model: An Autonomous Coding-Agent Framework for\nClinical AI development has traditionally followed a collaborative paradigm that depends on close interaction between clinicians and specialized AI teams. This paradigm imposes a practical challenge: \n\n## arXiv: Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC\nThis paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely ad\n\n## arXiv: SWE-Adept: An LLM-Based Agentic Framework for Deep Codebase Analysis and Structu\nLarge language models (LLMs) exhibit strong performance on self-contained programming tasks. However, they still struggle with repository-level software engineering (SWE), which demands (1) deep codeb\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving AI ag...",
           "confidence": 0.8,
-          "extracted_at": "2026-04-22T18:02:42.214203",
+          "extracted_at": "2026-04-22T18:09:55.051805",
           "category": "innovation_research"
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-22T18:02:42.214212",
+      "created": "2026-04-22T18:09:55.051816",
       "tags": [
         "innovation",
         "research",
@@ -12553,7 +12553,7 @@
         {
           "content": "Research completed: 3 queries, 2 hypotheses generated",
           "confidence": 0.9,
-          "extracted_at": "2026-04-22T18:02:42.300573",
+          "extracted_at": "2026-04-22T18:09:55.144473",
           "category": "research"
         }
       ],
@@ -12576,7 +12576,7 @@
         }
       ],
       "priority": "MEDIUM",
-      "created": "2026-04-22T18:02:42.300590",
+      "created": "2026-04-22T18:09:55.144482",
       "tags": [
         "research",
         "coordinator",
@@ -12591,9 +12591,74 @@
       "context": "evolution",
       "timestamp": "2026-04-22T18:07:12.640934",
       "fact_count": 1
+    },
+    "Improvement_2026-04-22T18-10-53-551875_Fix:-Score-plateau-detected:-r": {
+      "id": "Improvement_2026-04-22T18-10-53-551875_Fix:-Score-plateau-detected:-r",
+      "type": "Improvement",
+      "name": "Fix: Score plateau detected: range=0.0023, latest=0.562",
+      "description": "Fix: Score plateau detected: range=0.0023, latest=0.562",
+      "validated": true,
+      "timestamp": "2026-04-22T18:10:53.551875",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-22T18:10:53.977257+00:00"
+    },
+    "lrn_20260422_181129_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T18:11:29.902686",
+      "fact_count": 1
+    },
+    "lrn_20260422_181202_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T18:12:02.990744",
+      "fact_count": 1
+    },
+    "lrn_20260422_181223_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T18:12:23.982154",
+      "fact_count": 1
+    },
+    "lrn_20260422_181224_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T18:12:24.117389",
+      "fact_count": 1
+    },
+    "lrn_20260422_181739_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T18:17:39.780268",
+      "fact_count": 1
+    },
+    "lrn_20260422_182151_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T18:21:51.324670",
+      "fact_count": 1
     }
   },
-  "last_updated": "2026-04-22T18:02:42.214216",
+  "last_updated": "2026-04-22T18:09:55.051821",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -51137,6 +51202,22 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-22T17:03:24.452414+00:00"
+    },
+    "1114": {
+      "id": 1114,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-22T18-10-53-551875_Fix:-Score-plateau-detected:-r",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-22T18:10:53.977410+00:00"
+    },
+    "1115": {
+      "id": 1115,
+      "from": "Improvement_2026-04-22T18-10-53-551875_Fix:-Score-plateau-detected:-r",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-22T18:10:53.977540+00:00"
     }
   }
 }
