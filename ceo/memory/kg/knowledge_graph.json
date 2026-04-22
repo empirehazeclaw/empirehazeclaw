@@ -12768,6 +12768,118 @@
       "context": "evolution",
       "timestamp": "2026-04-22T20:32:06.464924",
       "fact_count": 1
+    },
+    "lrn_20260422_203740_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T20:37:40.695242",
+      "fact_count": 1
+    },
+    "lrn_20260422_205741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T20:57:41.201531",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-22T21-03-48-083088_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-22T21-03-48-083088_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-22T21:03:48.083088",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-22T21:03:48.466408+00:00"
+    },
+    "lrn_20260422_210406_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T21:04:06.088996",
+      "fact_count": 1
+    },
+    "lrn_20260422_211741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T21:17:41.506390",
+      "fact_count": 1
+    },
+    "lrn_20260422_213740_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T21:37:40.641829",
+      "fact_count": 1
+    },
+    "lrn_20260422_215740_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T21:57:40.820245",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-22T22-03-36-656449_Exploration-Review-last-24h-": {
+      "id": "Improvement_2026-04-22T22-03-36-656449_Exploration-Review-last-24h-",
+      "type": "Improvement",
+      "name": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "validated": true,
+      "timestamp": "2026-04-22T22:03:36.656449",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-22T22:03:36.988410+00:00"
+    },
+    "lrn_20260422_220357_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T22:03:57.013337",
+      "fact_count": 1
+    },
+    "lrn_20260422_221742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T22:17:42.665297",
+      "fact_count": 1
+    },
+    "lrn_20260422_223739_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T22:37:39.221885",
+      "fact_count": 1
+    },
+    "lrn_20260422_225739_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-22T22:57:39.926261",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-22T18:09:55.051821",
@@ -51362,6 +51474,38 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-22T20:03:49.183631+00:00"
+    },
+    "1120": {
+      "id": 1120,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-22T21-03-48-083088_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-22T21:03:48.466630+00:00"
+    },
+    "1121": {
+      "id": 1121,
+      "from": "Improvement_2026-04-22T21-03-48-083088_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-22T21:03:48.466781+00:00"
+    },
+    "1122": {
+      "id": 1122,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-22T22-03-36-656449_Exploration-Review-last-24h-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-22T22:03:36.988560+00:00"
+    },
+    "1123": {
+      "id": 1123,
+      "from": "Improvement_2026-04-22T22-03-36-656449_Exploration-Review-last-24h-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-22T22:03:36.988656+00:00"
     }
   }
 }
