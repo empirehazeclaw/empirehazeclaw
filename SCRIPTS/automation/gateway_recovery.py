@@ -2,11 +2,12 @@
 """
 Sir HazeClaw Gateway Auto-Recovery
 
-Gateway's /health endpoint (port 18789) returns {"ok":true,"status":"live"}
-EVEN during draining — it never shows a "draining" status.
+Gateway's /health endpoint returns {"ok":true,"status":"live"|"draining"|"stopped"}.
+The `status` field is the authoritative drain indicator — "draining" means a restart
+is in progress and we should NOT intervene.
 
-Therefore the only reliable way to detect restart-in-progress is:
-  1. Old gateway PID is still alive  → drain/restart in progress (DON'T restart again)
+The only reliable way to detect restart-in-progress is:
+  1. Old gateway PID is still alive + status='draining' → restart in progress (DON'T restart)
   2. Old gateway PID is gone + no new health → truly DOWN (restart needed)
   3. Old gateway PID is gone + new health → recovered
 
@@ -76,16 +77,36 @@ def get_openclaw_pids():
     return []
 
 
-def is_gateway_healthy():
-    """Check if gateway is responding to /health."""
+def get_gateway_status():
+    """
+    Returns ('live'|'draining'|'stopped'|None, full_response_dict|None).
+    The /health endpoint NEVER lies — "ok" is always true during drain.
+    The status field is the authoritative drain indicator.
+    """
     try:
         result = subprocess.run(
-            ['curl', '-s', '-f', HEALTH_URL],
+            ['curl', '-s', HEALTH_URL],
             capture_output=True, text=True, timeout=5
         )
-        return result.returncode == 0 and 'ok' in result.stdout.lower()
-    except (subprocess.CalledProcessError, OSError, FileNotFoundError):
-        return False
+        if result.returncode != 0:
+            return 'stopped', None
+        data = json.loads(result.stdout)
+        status = data.get('status', 'live')
+        return status, data
+    except (subprocess.CalledProcessError, OSError, FileNotFoundError, json.JSONDecodeError):
+        return 'stopped', None
+
+
+def is_gateway_live():
+    """Returns True only if gateway is LIVE (not draining, not stopped)."""
+    status, _ = get_gateway_status()
+    return status == 'live'
+
+
+def is_gateway_draining():
+    """Returns True if gateway is in the process of draining/restarting."""
+    status, _ = get_gateway_status()
+    return status == 'draining'
 
 
 def wait_for_pid_gone(pid, timeout=90, interval=3):
@@ -100,11 +121,12 @@ def wait_for_pid_gone(pid, timeout=90, interval=3):
     return False
 
 
-def wait_for_health(timeout=90, interval=3):
-    """Wait for /health to return OK. Returns True if healthy, False if timeout."""
+def wait_for_live(timeout=90, interval=3):
+    """Wait for /health to return status='live'. Returns True if live, False if timeout."""
     deadline = time.time() + timeout
     while time.time() < deadline:
-        if is_gateway_healthy():
+        status, _ = get_gateway_status()
+        if status == 'live':
             return True
         time.sleep(interval)
     return False
@@ -137,13 +159,14 @@ def restart_gateway_service():
 
 def run_recovery():
     """
-    Recovery logic based on PID + health, NOT health-status string.
+    Recovery logic based on PID + explicit status field from /health.
 
     State machine:
-      - PIDs > 0 AND health = True  → healthy, reset counters
-      - PIDs > 0 AND health = False → draining/restarting (wait, don't restart)
-      - PIDs = 0 AND health = True  → new gateway just started (wait for stable)
-      - PIDs = 0 AND health = False → DOWN, restart needed
+      - PIDs > 0 AND status='live' → healthy, reset counters
+      - PIDs > 0 AND status='draining' → restart in progress (wait, DON'T restart)
+      - PIDs > 0 AND health fails → draining/restarting (wait, don't restart)
+      - PIDs = 0 AND status='live' → new gateway starting (wait for stable)
+      - PIDs = 0 AND health fails → DOWN, restart needed
     """
     state = load_state()
     state["last_check"] = datetime.now().isoformat()
@@ -152,22 +175,22 @@ def run_recovery():
     log("Running gateway health check")
 
     pids = get_openclaw_pids()
-    healthy = is_gateway_healthy()
+    status, health_data = get_gateway_status()
+    draining = is_gateway_draining()
 
-    if pids and healthy:
-        # Normal: gateway running and healthy
-        print(f"✅ Gateway healthy (PID(s): {pids})")
-        log(f"Gateway healthy, PIDs={pids}")
+    if pids and status == 'live':
+        # Normal: gateway running and LIVE
+        print(f"✅ Gateway LIVE (PID(s): {pids})")
+        log(f"Gateway live, PIDs={pids}")
         state["consecutive_failures"] = 0
         state["alert_sent"] = False
         state["restart_in_progress"] = False
         save_state(state)
         return True
 
-    if pids and not healthy:
-        # Gateway process running but not responding — likely restarting/draining
-        # DON'T kill or restart — wait for it to finish
-        print(f"⏳ Gateway PID(s) {pids} alive but not responding — drain in progress...")
+    if pids and draining:
+        # Gateway is draining — restart in progress, DON'T interfere
+        print(f"⏳ Gateway PID(s) {pids} — status='draining' (restart in progress, waiting)")
         log(f"Gateway draining, PIDs={pids}, waiting up to {DRAIN_TIMEOUT}s")
         state["restart_in_progress"] = True
         save_state(state)
@@ -177,10 +200,10 @@ def run_recovery():
         if all_gone:
             print("✅ Old gateway exited, waiting for new gateway to start...")
             log("Old gateway exited, waiting for new gateway")
-            # Now wait for new gateway to come up
-            if wait_for_health(timeout=DRAIN_TIMEOUT):
-                print("✅ New gateway is healthy!")
-                log("New gateway healthy after restart")
+            if wait_for_live(timeout=DRAIN_TIMEOUT):
+                pids_new = get_openclaw_pids()
+                print(f"✅ New gateway is LIVE (PID(s): {pids_new})")
+                log(f"New gateway live after restart, PIDs={pids_new}")
                 state["consecutive_failures"] = 0
                 state["restart_in_progress"] = False
                 save_state(state)
@@ -194,61 +217,56 @@ def run_recovery():
             killed = kill_gateway_processes()
             log(f"Force killed {killed} process(es)")
             time.sleep(2)
-
-        # Fall through to restart
         save_state(state)
 
-    if not pids and healthy:
-        # No PID but healthy — new gateway starting up (orphan from previous attempt?)
-        print("⏳ Gateway starting up (no PID tracked)...")
-        log("Gateway starting, waiting for stable PID")
-        if wait_for_health(timeout=DRAIN_TIMEOUT):
-            pids_new = get_openclaw_pids()
-            print(f"✅ Gateway stable (PID(s): {pids_new})")
-            log(f"Gateway stable, PIDs={pids_new}")
-            state["consecutive_failures"] = 0
-            state["restart_in_progress"] = False
+    if not pids:
+        # No PID tracked — check if a new gateway started without us noticing
+        if status == 'live':
+            print("⏳ Gateway starting up (no PID tracked yet)...")
+            log("Gateway starting, waiting for stable PID")
+            if wait_for_live(timeout=DRAIN_TIMEOUT):
+                pids_new = get_openclaw_pids()
+                print(f"✅ Gateway stable (PID(s): {pids_new})")
+                log(f"Gateway stable, PIDs={pids_new}")
+                state["consecutive_failures"] = 0
+                state["restart_in_progress"] = False
+                save_state(state)
+                return True
+        # DOWN: no PID and not live
+        print(f"❌ Gateway DOWN (PIDs={pids}, status={status})")
+        log(f"Gateway DOWN, PIDs={pids}, status={status}", "WARN")
+        state["consecutive_failures"] += 1
+        state["restart_in_progress"] = True
+
+        if pids:
+            print(f"🔪 Killing stale PIDs: {pids}")
+            log(f"Killing stale PIDs: {pids}")
+            kill_gateway_processes()
+            time.sleep(2)
+
+        print(f"🔄 Restarting (attempt {state['consecutive_failures']}/{MAX_RETRIES})...")
+        log(f"Restart attempt {state['consecutive_failures']}")
+
+        if restart_gateway_service():
+            state["last_restart"] = datetime.now().isoformat()
+            state["recovery_count_today"] += 1
             save_state(state)
-            return True
 
-    # DOWN: no PID and not healthy
-    print(f"❌ Gateway DOWN (PIDs={pids}, healthy={healthy})")
-    log(f"Gateway DOWN, PIDs={pids}", "WARN")
-    state["consecutive_failures"] += 1
-    state["restart_in_progress"] = True
+            print("✅ Restart command sent, waiting for new gateway...")
+            if wait_for_live(timeout=DRAIN_TIMEOUT):
+                pids_new = get_openclaw_pids()
+                print(f"✅ Gateway recovered (PID(s): {pids_new})")
+                log(f"Gateway recovered, PIDs={pids_new}")
+                state["consecutive_failures"] = 0
+                state["restart_in_progress"] = False
+                save_state(state)
+                return True
 
-    # Ensure old PIDs are gone before restarting
-    if pids:
-        print(f"🔪 Killing stale PIDs: {pids}")
-        log(f"Killing stale PIDs: {pids}")
-        kill_gateway_processes()
-        time.sleep(2)
+            print(f"⚠️ Gateway still not live after {DRAIN_TIMEOUT}s")
+            log("Restart command sent but gateway not live within timeout", "ERROR")
+        else:
+            log("Restart command failed", "ERROR")
 
-    # Try restart
-    print(f"🔄 Restarting (attempt {state['consecutive_failures']}/{MAX_RETRIES})...")
-    log(f"Restart attempt {state['consecutive_failures']}")
-
-    if restart_gateway_service():
-        state["last_restart"] = datetime.now().isoformat()
-        state["recovery_count_today"] += 1
-        save_state(state)
-
-        print("✅ Restart command sent, waiting for new gateway...")
-        if wait_for_health(timeout=DRAIN_TIMEOUT):
-            pids_new = get_openclaw_pids()
-            print(f"✅ Gateway recovered (PID(s): {pids_new})")
-            log(f"Gateway recovered, PIDs={pids_new}")
-            state["consecutive_failures"] = 0
-            state["restart_in_progress"] = False
-            save_state(state)
-            return True
-
-        print(f"⚠️ Gateway still not healthy after {DRAIN_TIMEOUT}s")
-        log("Restart command sent but gateway not healthy within timeout", "ERROR")
-    else:
-        log("Restart command failed", "ERROR")
-
-    # Still failing
     if state["consecutive_failures"] >= ALERT_THRESHOLD and not state.get("alert_sent"):
         print("🚨 Sending alert to Master...")
         msg = (f"Gateway DOWN: {state['consecutive_failures']} consecutive failures. "
@@ -274,14 +292,16 @@ def send_telegram_alert(message):
 
 def check_only():
     pids = get_openclaw_pids()
-    healthy = is_gateway_healthy()
-    if pids and healthy:
-        print(f"✅ Gateway: HEALTHY (PIDs: {pids})")
+    status, data = get_gateway_status()
+    if status == 'live' and pids:
+        print(f"✅ Gateway: LIVE (PIDs: {pids})")
+    elif status == 'draining':
+        print(f"⏳ Gateway: DRAINING (PIDs: {pids}) — restart in progress, do NOT干预")
     elif pids:
-        print(f"⏳ Gateway: ALIVE but not responding (PIDs: {pids}) — draining/restarting")
+        print(f"⚠️ Gateway: UNKNOWN status={status} (PIDs: {pids})")
     else:
-        print(f"❌ Gateway: DOWN (no PID, healthy={healthy})")
-    return bool(pids and healthy)
+        print(f"❌ Gateway: DOWN (no PID, status={status})")
+    return status == 'live' and bool(pids)
 
 
 def force_restart():
@@ -295,7 +315,7 @@ def force_restart():
     print("   Sending restart command...")
     if restart_gateway_service():
         print("   ✅ Restart command sent, waiting...")
-        if wait_for_health(timeout=DRAIN_TIMEOUT):
+        if wait_for_live(timeout=DRAIN_TIMEOUT):
             pids_new = get_openclaw_pids()
             print(f"✅ Gateway recovered (PIDs: {pids_new})")
             return True
@@ -307,11 +327,11 @@ def force_restart():
 def show_status():
     state = load_state()
     pids = get_openclaw_pids()
-    healthy = is_gateway_healthy()
+    status, data = get_gateway_status()
 
     print("📊 Gateway Auto-Recovery Status")
     print(f"   Gateway PIDs:   {pids or 'none'}")
-    print(f"   /health:       {'✅ OK' if healthy else '❌ FAIL'}")
+    print(f"   /health status: {status}")
     print(f"   Consecutive Failures: {state['consecutive_failures']}")
     print(f"   Last Check:    {state['last_check'] or 'never'}")
     print(f"   Last Restart:  {state['last_restart'] or 'never'}")
@@ -319,10 +339,12 @@ def show_status():
     print(f"   Restart In Progress:  {state.get('restart_in_progress', False)}")
     print(f"   Alert Sent:    {state['alert_sent']}")
     print()
-    if pids and healthy:
+    if status == 'live' and pids:
         print("   Gateway: ✅ LIVE")
-    elif pids and not healthy:
-        print("   Gateway: ⏳ DRAINING/RESTARTING")
+    elif status == 'draining':
+        print("   Gateway: ⏳ DRAINING (restart in progress)")
+    elif pids:
+        print(f"   Gateway: ⚠️ UNKNOWN ({status})")
     else:
         print("   Gateway: ❌ DOWN")
 
