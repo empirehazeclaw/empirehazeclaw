@@ -12582,6 +12582,15 @@
         "coordinator",
         "daily"
       ]
+    },
+    "lrn_20260422_180712_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-22T18:07:12.640934",
+      "fact_count": 1
     }
   },
   "last_updated": "2026-04-22T18:02:42.214216",

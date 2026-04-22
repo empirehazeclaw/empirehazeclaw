@@ -50,11 +50,11 @@ def main():
     
     # 1. Nightly Maintenance (Session Cleanup + Context Manager)
     log("--- Nightly Maintenance ---")
-    run_step("Session Cleanup", "python3 /home/clawbot/.openclaw/workspace/scripts/session_cleanup.py")
+    run_step("Session Cleanup", "python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/session_cleanup.py")
     run_step("Session Context Manager", "python3 /home/clawbot/.openclaw/workspace/SCRIPTS/automation/session_context_manager.py")
     
     # 2. Smart Evolver
-    ok, out = run_step("Smart Evolver", "bash /home/clawbot/.openclaw/workspace/scripts/run_smart_evolver.sh", timeout=300)
+    ok, out = run_step("Smart Evolver", "bash /home/clawbot/.openclaw/workspace/SCRIPTS/automation/run_smart_evolver.sh", timeout=300)
     results["evolver"] = "OK" if ok else "FAILED"
     
     # 3. Auto Backup

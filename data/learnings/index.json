@@ -707,7 +707,8 @@
       "lrn_20260422_140604_500",
       "lrn_20260422_150438_500",
       "lrn_20260422_160338_500",
-      "lrn_20260422_170342_500"
+      "lrn_20260422_170342_500",
+      "lrn_20260422_180712_500"
     ],
     "insight": [
       "lrn_20260421_124534_4",
@@ -1407,7 +1408,8 @@
       "lrn_20260422_140604_500",
       "lrn_20260422_150438_500",
       "lrn_20260422_160338_500",
-      "lrn_20260422_170342_500"
+      "lrn_20260422_170342_500",
+      "lrn_20260422_180712_500"
     ],
     "Ralph": [
       "lrn_20260421_124534_4",
@@ -2754,23 +2756,11 @@
       "lrn_20260422_140604_500",
       "lrn_20260422_150438_500",
       "lrn_20260422_160338_500",
-      "lrn_20260422_170342_500"
+      "lrn_20260422_170342_500",
+      "lrn_20260422_180712_500"
     ]
   },
   "recent": [
-    {
-      "id": "lrn_20260421_180856_500",
-      "source": "[\u2192Ralph Learning] Health Monitor",
-      "category": "health_issue",
-      "learning": "Health check passed",
-      "context": "system_health",
-      "strategy": null,
-      "outcome": "shared",
-      "metadata": {},
-      "timestamp": "2026-04-21T18:08:56.043038",
-      "used": false,
-      "useful": null
-    },
     {
       "id": "lrn_20260421_180856_500",
       "source": "[\u2192Capability Evolver] Health Monitor",
@@ -9289,6 +9279,19 @@
       "timestamp": "2026-04-22T17:57:41.719889",
       "used": false,
       "useful": null
+    },
+    {
+      "id": "lrn_20260422_180712_500",
+      "source": "Capability Evolver",
+      "category": "gene",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "strategy": "unknown",
+      "outcome": "failure",
+      "metadata": {},
+      "timestamp": "2026-04-22T18:07:12.640934",
+      "used": false,
+      "useful": null
     }
   ],
   "strategy_effectiveness": {
@@ -9296,15 +9299,10 @@
     "adaptive_lr": 0,
     "dynamic_weights": 1,
     "mutation_tuning": 1,
-    "unknown": -34,
+    "unknown": -35,
     "test_strategy": 5,
     "test_feedback": 5,
     "repair": 3,
     "intensification": 1
-  },
-  "context_effectiveness": {
-    "learning_optimization": {
-      "diversity": -1
-    }
   }
 }
