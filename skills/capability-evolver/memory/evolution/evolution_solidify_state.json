@@ -1,8 +1,8 @@
 {
   "last_run": {
-    "run_id": "run_1776895436908",
-    "created_at": "2026-04-22T22:03:56.921Z",
-    "parent_event_id": "evt_1776457231893",
+    "run_id": "run_1776981874418",
+    "created_at": "2026-04-23T22:04:34.435Z",
+    "parent_event_id": "evt_1776945993582",
     "selected_gene_id": "gene_gep_innovate_from_opportunity",
     "selected_capsule_id": "capsule_1775939760071",
     "selector": {
@@ -22,7 +22,7 @@
     ],
     "mutation": {
       "type": "Mutation",
-      "id": "mut_1776895436906",
+      "id": "mut_1776981874416",
       "category": "innovate",
       "trigger_signals": [
         "evolution_stagnation_detected",
@@ -33,7 +33,7 @@
       "expected_effect": "explore new strategy combinations to escape local optimum",
       "risk_level": "medium"
     },
-    "mutation_id": "mut_1776895436906",
+    "mutation_id": "mut_1776981874416",
     "personality_state": {
       "type": "PersonalityState",
       "rigor": 0.7,
@@ -65,7 +65,7 @@
     "reused_source_node": null,
     "reused_chain_id": null,
     "baseline_untracked": [],
-    "baseline_git_head": "20a9e2b8ae91c2491b3b4a6e15a24e1e0b87c59e",
+    "baseline_git_head": "de150e8a58248e72d8c782ec4d15a9903baff91e",
     "blast_radius_estimate": {
       "files": 6,
       "lines": 480
@@ -77,8 +77,8 @@
       "forceInnovate": true,
       "cautiousExecution": true,
       "highRiskGene": true,
-      "repairStreak": 0,
-      "failureStreak": 0,
+      "repairStreak": 1,
+      "failureStreak": 1,
       "blastRadiusMaxFiles": 6,
       "directives": [
         "Base strategy: Innovation Focus (System is stable. Maximize new features and capabilities.)",
@@ -96,10 +96,14 @@
     "hub_lessons": []
   },
   "last_solidify": {
-    "run_id": "run_1776457363441",
-    "rejected": true,
-    "reason": "loop_bridge_disabled_autoreject_no_rollback",
-    "timestamp": "2026-04-17T20:22:43.479Z"
+    "run_id": "run_1776945978588",
+    "at": "2026-04-23T12:06:33.582Z",
+    "event_id": "evt_1776945993582",
+    "capsule_id": null,
+    "outcome": {
+      "status": "failed",
+      "score": 0.76
+    }
   },
-  "solidify_count": 28
+  "solidify_count": 30
 }

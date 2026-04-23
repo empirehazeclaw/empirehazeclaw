@@ -143,3 +143,10 @@ A chronological record of evolution decisions and outcomes.
   2. Search existing Genes and Capsules for partial matches (avoid reinventing)
   3. Design a minimal, testable implementation plan (prefer small increments)
 - Result: 固化：gene_gep_repair_from_errors 命中信号 evolution_stagnation_detected, stable_success_plateau，变更 5 文件 / 105 行。
+### [2026-04-23 12:06:34] INNOVATE - failed
+- Gene: gene_gep_innovate_from_opportunity | Score: 0.76 | Scope: 82 files, 92593 lines
+- Signals: [perf_bottleneck]
+- Strategy:
+  1. Extract opportunity signals and identify the specific user need or system gap
+  2. Search existing Genes and Capsules for partial matches (avoid reinventing)
+  3. Design a minimal, testable implementation plan (prefer small increments)

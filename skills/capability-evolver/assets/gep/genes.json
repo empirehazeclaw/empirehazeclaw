@@ -502,14 +502,37 @@
             "evolution_stagnation_detected",
             "stable_success_plateau"
           ]
+        },
+        {
+          "at": "2026-04-23T00:07:26.812Z",
+          "outcome": "success",
+          "mode": "none",
+          "reason_class": "unknown",
+          "retryable": false,
+          "learning_signals": [
+            "evolution_stagnation_detected",
+            "stable_success_plateau"
+          ]
+        },
+        {
+          "at": "2026-04-23T12:06:34.006Z",
+          "outcome": "failed",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "retryable": false,
+          "learning_signals": [
+            "problem:performance",
+            "action:optimize",
+            "risk:validation"
+          ]
         }
       ],
       "epigenetic_marks": [
         {
           "context": "linux/x64/v22.22.2",
-          "boost": 0.5,
-          "reason": "reinforced_by_success",
-          "created_at": "2026-04-17T20:20:31.973Z"
+          "boost": 0.4,
+          "reason": "suppressed_by_failure",
+          "created_at": "2026-04-23T12:06:34.006Z"
         }
       ],
       "schema_version": "1.6.0",
@@ -522,6 +545,16 @@
           "learning_signals": [
             "problem:stagnation",
             "action:innovate",
+            "risk:validation"
+          ]
+        },
+        {
+          "at": "2026-04-23T12:06:34.006Z",
+          "mode": "hard",
+          "reason_class": "constraint_destructive",
+          "learning_signals": [
+            "problem:performance",
+            "action:optimize",
             "risk:validation"
           ]
         }

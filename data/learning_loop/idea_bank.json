@@ -1,14 +1,6 @@
 {
   "ideas": [
     {
-      "title": "WARNING: memory:failed",
-      "description": "failed",
-      "type": "memory_warning",
-      "why_ineffective": "Known failure pattern from memory/logs",
-      "why_ineffective_count": 1,
-      "source": "memory_analysis"
-    },
-    {
       "title": "WARNING: memory:Alert",
       "description": "Alert",
       "type": "memory_warning",
@@ -41,8 +33,32 @@
       "source": "memory_analysis"
     },
     {
+      "title": "WARNING: memory:failed",
+      "description": "failed",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
       "title": "WARNING: memory:broken",
       "description": "broken",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:Broken",
+      "description": "Broken",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:alert",
+      "description": "alert",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,

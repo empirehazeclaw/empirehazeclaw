@@ -13,8 +13,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445896",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 40,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 42,
       "decay_score": 1
     },
     "Managed-AI-Hosting": {
@@ -30,8 +30,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445920",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38,
       "decay_score": 1
     },
     "Social-Media-Automation": {
@@ -47,8 +47,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445936",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 23,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 25,
       "decay_score": 1
     },
     "GOG-CLI": {
@@ -81,8 +81,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445958",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 38,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 40,
       "decay_score": 1
     },
     "Email-Outreach": {
@@ -98,8 +98,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.445973",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38,
       "decay_score": 1
     },
     "Outreach-Dummy-Problem": {
@@ -166,8 +166,8 @@
       ],
       "priority": "HIGH",
       "created": "2026-04-06T06:42:36.446022",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 40,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 42,
       "decay_score": 1
     },
     "Objection-DSGVO": {
@@ -200,8 +200,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-06T06:44:59.322042",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 22,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 24,
       "decay_score": 1
     },
     "skill_health_monitoring_20260410": {
@@ -217,8 +217,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:05.588034",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 37
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 39
     },
     "skill_backup_automation_20260410": {
       "type": "skill",
@@ -233,8 +233,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.401249",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38
     },
     "skill_morning_brief_20260410": {
       "type": "skill",
@@ -249,8 +249,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:25:10.449528",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38
     },
     "system_health_monitoring_20260410": {
       "type": "system",
@@ -265,8 +265,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:33:04.124829",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 35
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 37
     },
     "system_backup_system_20260410": {
       "type": "system",
@@ -374,8 +374,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:42.326285",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38
     },
     "project_empirehazeclaw_fleet_20260410": {
       "type": "project",
@@ -390,8 +390,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10T20:35:46.923434",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 40
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 42
     },
     "concept_continuous_improvement_20260410": {
       "type": "concept",
@@ -547,8 +547,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 38
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 40
     },
     "skill_qa_enforcer": {
       "type": "skill",
@@ -563,8 +563,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 37
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 39
     },
     "skill_backup_advisor": {
       "type": "skill",
@@ -579,8 +579,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-10",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 26
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 28
     },
     "reflection_deep_20260410": {
       "type": "reflection",
@@ -734,8 +734,8 @@
           "source": "test_framework.py"
         }
       ],
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 39
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 41
     },
     "Bad-Patterns-SirHazeClaw": {
       "type": "pattern",
@@ -1148,8 +1148,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-11T17:31:00.854162+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 36,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 38,
       "decay_score": 1,
       "properties": {
         "type": "success_pattern",
@@ -2357,8 +2357,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.972417",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-14T13-34-36-660432_PHASE-4-Analyze-last-10-feed",
@@ -2436,8 +2436,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973015",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-14T13-34-51-137132_CROSS-PATTERN-CROSS-PATTERN",
@@ -2482,8 +2482,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.973376",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T15-03-50-905081_Fix-CEO-Weekly-Review:-check-e",
@@ -2506,8 +2506,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973542",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e": {
       "id": "Improvement_2026-04-14T17-04-01-492924_Fix-CEO-Weekly-Review:-check-e",
@@ -2541,8 +2541,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.973799",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-14T20-04-37-742535_Investigate-and-fix-Opportunit",
@@ -2620,8 +2620,8 @@
       "test_count": 4,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.974420",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T03-05-40-140719_CROSS-PATTERN-CROSS-PATTERN",
@@ -2655,8 +2655,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.974682",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r": {
       "id": "Improvement_2026-04-15T06-03-58-779754_PHASE-4-Test-GitHub-backup-r",
@@ -2734,8 +2734,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975313",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN": {
       "id": "Improvement_2026-04-15T13-04-09-940343_CROSS-PATTERN-CROSS-PATTERN",
@@ -2769,8 +2769,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975577",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T22-04-19-211266_Investigate-and-fix-Cron-Watch",
@@ -2782,8 +2782,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975664",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 25
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 27
     },
     "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch": {
       "id": "Improvement_2026-04-15T23-05-15-515608_Investigate-and-fix-Cron-Watch",
@@ -2795,8 +2795,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.975759",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed": {
       "id": "Improvement_2026-04-16T00-04-32-713776_PHASE-4-Analyze-last-10-feed",
@@ -2830,8 +2830,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-16T19:05:57.976032",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T03-04-06-928315_Investigate-and-fix-Opportunit",
@@ -2865,8 +2865,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-16T19:05:57.976319",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit": {
       "id": "Improvement_2026-04-16T17-03-50-960314_Investigate-and-fix-Opportunit",
@@ -3007,8 +3007,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:03:45.258112",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 25
     },
     "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-08-901194_Reduce-KG-orphans:-add-relatio",
@@ -3020,8 +3020,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:09.016597",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 25
     },
     "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T16-42-36-384724_Reduce-KG-orphans:-add-relatio",
@@ -3033,8 +3033,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T16:42:36.507316",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 25
     },
     "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-17T17-04-36-864746_Reduce-KG-orphans:-add-relatio",
@@ -3046,8 +3046,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-17T17:04:36.977902",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 23
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 25
     },
     "innovation_research_20260417": {
       "type": "research",
@@ -3162,8 +3162,8 @@
         "agent",
         "AI_agent_self-improvement"
       ],
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "research_AI_safety_alignment_20260420": {
       "type": "research",
@@ -3207,8 +3207,8 @@
         "agent",
         "AI_safety_alignment"
       ],
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation": {
       "id": "Improvement_2026-04-20T07-03-22-329649_PHASE-4-Add-1-new-validation",
@@ -3242,8 +3242,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T08:09:04.504099+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 22
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 24
     },
     "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel": {
       "id": "Improvement_2026-04-20T09-04-34-641768_Break-score-plateau-with-novel",
@@ -3346,8 +3346,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T12:04:39.089014+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-20T13-03-59-793021_Reduce-KG-orphans:-add-relatio",
@@ -3359,8 +3359,8 @@
       "test_count": 3,
       "tests_passed": 2,
       "created_at": "2026-04-20T13:04:00.022291+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23
     },
     "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317": {
       "id": "research_Self-adaptive-Multi-Access-Edge-Architec_20260420_140317",
@@ -3622,8 +3622,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T14:03:17.354887",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 22,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 24,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_140317": {
@@ -3899,8 +3899,8 @@
         "agent",
         "AI_agent_self-improvement"
       ],
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 20
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 22
     },
     "LearningPattern_pattern_20260420_163745": {
       "id": "LearningPattern_pattern_20260420_163745",
@@ -4263,8 +4263,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:07:51.153770",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190751": {
@@ -4695,8 +4695,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:09:50.549810",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_190950": {
@@ -5127,8 +5127,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:10:47.068311",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 21,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 23,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191047": {
@@ -5643,8 +5643,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:12:35.336296",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 20,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 22,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191235": {
@@ -6111,8 +6111,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:14:44.515445",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 19,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 21,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191444": {
@@ -6565,8 +6565,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:16:04.022376",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 18,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 20,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191604": {
@@ -7019,8 +7019,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T19:18:03.505710",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 17,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 19,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_191803": {
@@ -7495,8 +7495,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-20T20:45:25.435269",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 15,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 17,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260420_204525": {
@@ -7691,8 +7691,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-20T20:45:30.294882+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 13
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 15
     },
     "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-": {
       "id": "Improvement_2026-04-20T20-46-48-940285_Exploration-Measure-context-",
@@ -8097,8 +8097,8 @@
       ],
       "priority": "MEDIUM",
       "created": "2026-04-21T09:07:41.262816",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 11,
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 13,
       "decay_score": 10
     },
     "research_Puppets-or-partners?-Governing-cyborg-pr_20260421_090741": {
@@ -8351,8 +8351,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-21T09:07:51.366046+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 9
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-": {
       "id": "Improvement_2026-04-21T08-42-12-332770_Apply-proven-pattern:-Measure-",
@@ -8430,8 +8430,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-21T09:07:51.367361+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 9
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio": {
       "id": "Improvement_2026-04-21T09-06-00-353665_Reduce-KG-orphans:-add-relatio",
@@ -8465,8 +8465,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-21T09:07:51.367867+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 9
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 11
     },
     "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl": {
       "id": "Improvement_2026-04-21T09-07-59-648711_CROSS-PATTERN-Break-score-pl",
@@ -10735,8 +10735,8 @@
       "test_count": 3,
       "tests_passed": 3,
       "created_at": "2026-04-21T20:04:51.946669+00:00",
-      "last_accessed": "2026-04-22T20:03:29.578060+00:00",
-      "access_count": 6
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 8
     },
     "Improvement_2026-04-21T20-04-55-772394_PHASE-4-Review-last-24h-of-A": {
       "id": "Improvement_2026-04-21T20-04-55-772394_PHASE-4-Review-last-24h-of-A",
@@ -12740,7 +12740,9 @@
       "timestamp": "2026-04-22T20:03:48.806627",
       "test_count": 3,
       "tests_passed": 3,
-      "created_at": "2026-04-22T20:03:49.183300+00:00"
+      "created_at": "2026-04-22T20:03:49.183300+00:00",
+      "last_accessed": "2026-04-23T20:03:22.971894+00:00",
+      "access_count": 2
     },
     "lrn_20260422_200410_500": {
       "type": "Learning",
@@ -12880,9 +12882,697 @@
       "context": "system_health",
       "timestamp": "2026-04-22T22:57:39.926261",
       "fact_count": 1
+    },
+    "lrn_20260423_120635_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T12:06:35.787004",
+      "fact_count": 1
+    },
+    "lrn_20260423_120659_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T12:06:59.817012",
+      "fact_count": 1
+    },
+    "lrn_20260423_120719_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T12:07:19.430041",
+      "fact_count": 1
+    },
+    "lrn_20260423_121744_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T12:17:44.451298",
+      "fact_count": 1
+    },
+    "lrn_20260423_123759_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T12:37:59.392785",
+      "fact_count": 1
+    },
+    "lrn_20260423_125743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T12:57:43.281474",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T13-03-58-075273_Exploration-Review-last-24h-": {
+      "id": "Improvement_2026-04-23T13-03-58-075273_Exploration-Review-last-24h-",
+      "type": "Improvement",
+      "name": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "validated": true,
+      "timestamp": "2026-04-23T13:03:58.075273",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T13:03:58.418887+00:00"
+    },
+    "lrn_20260423_130423_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T13:04:23.406720",
+      "fact_count": 1
+    },
+    "lrn_20260423_131744_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T13:17:44.921629",
+      "fact_count": 1
+    },
+    "lrn_20260423_133743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T13:37:43.944403",
+      "fact_count": 1
+    },
+    "lrn_20260423_135741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T13:57:41.955745",
+      "fact_count": 1
+    },
+    "lrn_20260423_135742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T13:57:42.006168",
+      "fact_count": 1
+    },
+    "research_Pattern-Library:-79-patterns-discovered_20260423_140317": {
+      "id": "research_Pattern-Library:-79-patterns-discovered_20260423_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Pattern Library: 79 patterns discovered",
+          "confidence": 0.88,
+          "extracted_at": "2026-04-23T14:03:17.768972",
+          "category": "research_finding"
+        },
+        {
+          "content": "Cross-task pattern mining found 79 patterns. Types: success_patterns, error_patterns, meta_patterns.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-23T14:03:17.768984",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-23T14:03:17.768980",
+      "last_accessed": "2026-04-23T14:03:17.768982",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Knowledge-Gaps-Identified_20260423_140317": {
+      "id": "research_Knowledge-Gaps-Identified_20260423_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Knowledge Gaps Identified",
+          "confidence": 0.75,
+          "extracted_at": "2026-04-23T14:03:17.768993",
+          "category": "research_finding"
+        },
+        {
+          "content": "Underrepresented types: principle, methodology, framework. Consider expanding into these knowledge areas.",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-23T14:03:17.768998",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-23T14:03:17.768995",
+      "last_accessed": "2026-04-23T14:03:17.768996",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "research_Rich-Entities:-3-well-developed-high-pri_20260423_140317": {
+      "id": "research_Rich-Entities:-3-well-developed-high-pri_20260423_140317",
+      "type": "kg_synthesis",
+      "category": "research",
+      "facts": [
+        {
+          "content": "Rich Entities: 3 well-developed high-priority concepts",
+          "confidence": 0.82,
+          "extracted_at": "2026-04-23T14:03:17.769015",
+          "category": "research_finding"
+        },
+        {
+          "content": "These entities have deep fact coverage: ['', '', '']",
+          "confidence": 0.7,
+          "extracted_at": "2026-04-23T14:03:17.769019",
+          "category": "context"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-23T14:03:17.769016",
+      "last_accessed": "2026-04-23T14:03:17.769017",
+      "access_count": 1,
+      "decay_score": 10
+    },
+    "Improvement_2026-04-23T14-04-58-079452_PHASE-4-Analyze-last-10-feed": {
+      "id": "Improvement_2026-04-23T14-04-58-079452_PHASE-4-Analyze-last-10-feed",
+      "type": "Improvement",
+      "name": "[PHASE 4] Analyze last 10 feedback entries, identify 1 gap in processing, fix that specific gap",
+      "description": "[PHASE 4] Analyze last 10 feedback entries, identify 1 gap in processing, fix that specific gap",
+      "validated": true,
+      "timestamp": "2026-04-23T14:04:58.079452",
+      "test_count": 4,
+      "tests_passed": 4,
+      "created_at": "2026-04-23T14:04:58.422478+00:00"
+    },
+    "lrn_20260423_140524_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T14:05:24.913561",
+      "fact_count": 1
+    },
+    "lrn_20260423_141743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T14:17:43.954493",
+      "fact_count": 1
+    },
+    "lrn_20260423_143741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Ralph Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T14:37:41.984492",
+      "fact_count": 1
+    },
+    "lrn_20260423_143742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T14:37:42.120401",
+      "fact_count": 1
+    },
+    "lrn_20260423_145742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T14:57:42.473474",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T15-04-12-886675_Reduce-KG-orphans:-add-relatio": {
+      "id": "Improvement_2026-04-23T15-04-12-886675_Reduce-KG-orphans:-add-relatio",
+      "type": "Improvement",
+      "name": "Reduce KG orphans: add relations to disconnected entities",
+      "description": "Reduce KG orphans: add relations to disconnected entities",
+      "validated": true,
+      "timestamp": "2026-04-23T15:04:12.886675",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T15:04:13.303594+00:00"
+    },
+    "lrn_20260423_150433_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T15:04:33.741011",
+      "fact_count": 1
+    },
+    "lrn_20260423_151745_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T15:17:45.303188",
+      "fact_count": 1
+    },
+    "lrn_20260423_153743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T15:37:43.313655",
+      "fact_count": 1
+    },
+    "lrn_20260423_155742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T15:57:42.586667",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T16-04-49-492444_Fix:-Score-plateau-detected:-r": {
+      "id": "Improvement_2026-04-23T16-04-49-492444_Fix:-Score-plateau-detected:-r",
+      "type": "Improvement",
+      "name": "Fix: Score plateau detected: range=0.0023, latest=0.810",
+      "description": "Fix: Score plateau detected: range=0.0023, latest=0.810",
+      "validated": true,
+      "timestamp": "2026-04-23T16:04:49.492444",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T16:04:49.906449+00:00"
+    },
+    "lrn_20260423_160516_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T16:05:16.483493",
+      "fact_count": 1
+    },
+    "lrn_20260423_161745_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T16:17:45.766988",
+      "fact_count": 1
+    },
+    "lrn_20260423_163742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T16:37:42.970064",
+      "fact_count": 1
+    },
+    "lrn_20260423_163743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T16:37:43.019856",
+      "fact_count": 1
+    },
+    "lrn_20260423_165744_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T16:57:44.848398",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T17-04-17-790978_Exploration-Review-last-24h-": {
+      "id": "Improvement_2026-04-23T17-04-17-790978_Exploration-Review-last-24h-",
+      "type": "Improvement",
+      "name": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "description": "[Exploration] Review last 24h API calls, find 1 inefficient call",
+      "validated": true,
+      "timestamp": "2026-04-23T17:04:17.790978",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T17:04:18.237799+00:00"
+    },
+    "lrn_20260423_170437_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T17:04:37.177160",
+      "fact_count": 1
+    },
+    "lrn_20260423_171746_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T17:17:46.498023",
+      "fact_count": 1
+    },
+    "lrn_20260423_173741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T17:37:41.944848",
+      "fact_count": 1
+    },
+    "lrn_20260423_175742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T17:57:42.919564",
+      "fact_count": 1
+    },
+    "innovation_research_20260423": {
+      "type": "research",
+      "category": "ai_agent_innovation",
+      "facts": [
+        {
+          "content": "## arXiv: Bridging the Reasoning Gap in Vietnamese with Small Language Models via Test-Tim\nThe democratization of ubiquitous AI hinges on deploying sophisticated reasoning capabilities on resource-constrained devices. However, Small Language Models (SLMs) often face a \"reasoning gap\", parti\n\n## arXiv: MIRROR: A Hierarchical Benchmark for Metacognitive Calibration in Large Language\nWe introduce MIRROR, a benchmark comprising eight experiments across four metacognitive levels that evaluates whether large language models can use self-knowledge to make better decisions. We evaluate\n\n## arXiv: Toward Safe Autonomous Robotic Endovascular Interventions using World Models\nAutonomous mechanical thrombectomy (MT) presents substantial challenges due to highly variable vascular geometries and the requirements for accurate, real-time control. While reinforcement learning (R\n\n## arXiv: Prompt Optimization Enables Stable Algorithmic Collusion in LLM Agents\nLLM agents in markets present algorithmic collusion risks. While prior work shows LLM agents reach supracompetitive prices through tacit coordination, existing research focuses on hand-crafted prompts\n\n## arXiv: Autonomous Evolution of EDA Tools: Multi-Agent Self-Evolved ABC\nThis paper introduces the first \\emph{self-evolving} logic synthesis framework, which leverages Large Language Model (LLM) agents to autonomously improve the source code of \\textsc{ABC}, the widely ad\n\n## arXiv: Soft-Label Governance for Distributional Safety in Multi-Agent Systems\nMulti-agent AI systems exhibit emergent risks that no single agent produces in isolation. Existing safety frameworks rely on binary classifications of agent behavior, discarding the uncertainty inhere\n\n## HN: How TRM Labs Scaled Security with Self-Improving AI Vulnerability Agents\nURL: https://www.trmlabs.com/resources/blog/scaling-security-in-the-age-of-ai-how-trm-labs-built-self-improving-vulnerability-agents-with-reinforcement-learning\n\n## HN: Hermes Agent: The self-improving A...",
+          "confidence": 0.8,
+          "extracted_at": "2026-04-23T18:05:53.966811",
+          "category": "innovation_research"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-23T18:05:53.966819",
+      "tags": [
+        "innovation",
+        "research",
+        "ai_agent",
+        "2026",
+        "arxiv"
+      ]
+    },
+    "research_20260423": {
+      "type": "research",
+      "category": "learning_coordinator",
+      "facts": [
+        {
+          "content": "Research completed: 3 queries, 2 hypotheses generated",
+          "confidence": 0.9,
+          "extracted_at": "2026-04-23T18:05:54.048402",
+          "category": "research"
+        }
+      ],
+      "hypotheses": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "category": "self_improvement",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement self_improvement techniques from research",
+          "expected_impact": "HIGH"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "category": "autonomous_learning",
+          "source": "research",
+          "priority": "MEDIUM",
+          "approach": "Investigate and implement autonomous_learning techniques from research",
+          "expected_impact": "MEDIUM"
+        }
+      ],
+      "priority": "MEDIUM",
+      "created": "2026-04-23T18:05:54.048411",
+      "tags": [
+        "research",
+        "coordinator",
+        "daily"
+      ]
+    },
+    "Improvement_2026-04-23T18-07-04-783851_Exploration-Analyze-error-pa": {
+      "id": "Improvement_2026-04-23T18-07-04-783851_Exploration-Analyze-error-pa",
+      "type": "Improvement",
+      "name": "[Exploration] Analyze error patterns, predict 1 specific upcoming error",
+      "description": "[Exploration] Analyze error patterns, predict 1 specific upcoming error",
+      "validated": true,
+      "timestamp": "2026-04-23T18:07:04.783851",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T18:07:05.242780+00:00"
+    },
+    "lrn_20260423_180800_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T18:08:00.164459",
+      "fact_count": 1
+    },
+    "lrn_20260423_180824_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T18:08:24.388388",
+      "fact_count": 1
+    },
+    "lrn_20260423_181742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T18:17:42.193365",
+      "fact_count": 1
+    },
+    "lrn_20260423_183742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T18:37:42.443387",
+      "fact_count": 1
+    },
+    "lrn_20260423_185743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T18:57:43.435774",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T19-03-14-887415_Fix:-Score-plateau-detected:-r": {
+      "id": "Improvement_2026-04-23T19-03-14-887415_Fix:-Score-plateau-detected:-r",
+      "type": "Improvement",
+      "name": "Fix: Score plateau detected: range=0.0023, latest=0.810",
+      "description": "Fix: Score plateau detected: range=0.0023, latest=0.810",
+      "validated": true,
+      "timestamp": "2026-04-23T19:03:14.887415",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T19:03:15.295774+00:00"
+    },
+    "lrn_20260423_190334_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T19:03:34.561470",
+      "fact_count": 1
+    },
+    "lrn_20260423_191741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T19:17:41.754937",
+      "fact_count": 1
+    },
+    "lrn_20260423_193742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T19:37:42.882583",
+      "fact_count": 1
+    },
+    "lrn_20260423_195743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T19:57:43.969450",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T20-03-40-650037_Exploration-Review-sessions,": {
+      "id": "Improvement_2026-04-23T20-03-40-650037_Exploration-Review-sessions,",
+      "type": "Improvement",
+      "name": "[Exploration] Review sessions, close 1 orphaned session",
+      "description": "[Exploration] Review sessions, close 1 orphaned session",
+      "validated": true,
+      "timestamp": "2026-04-23T20:03:40.650037",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T20:03:41.029719+00:00"
+    },
+    "lrn_20260423_200359_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T20:03:59.271880",
+      "fact_count": 1
+    },
+    "lrn_20260423_201741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T20:17:41.294202",
+      "fact_count": 1
+    },
+    "lrn_20260423_203743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T20:37:43.572721",
+      "fact_count": 1
+    },
+    "lrn_20260423_205743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T20:57:43.686615",
+      "fact_count": 1
+    },
+    "lrn_20260423_210530_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T21:05:30.470360",
+      "fact_count": 1
+    },
+    "lrn_20260423_211742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Meta Learning] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T21:17:42.997446",
+      "fact_count": 1
+    },
+    "lrn_20260423_211743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T21:17:43.040181",
+      "fact_count": 1
+    },
+    "lrn_20260423_213742_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T21:37:42.768925",
+      "fact_count": 1
+    },
+    "lrn_20260423_215743_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T21:57:43.683846",
+      "fact_count": 1
+    },
+    "Improvement_2026-04-23T22-04-12-736408_Exploration-Analyze-last-10-": {
+      "id": "Improvement_2026-04-23T22-04-12-736408_Exploration-Analyze-last-10-",
+      "type": "Improvement",
+      "name": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "description": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "validated": true,
+      "timestamp": "2026-04-23T22:04:12.736408",
+      "test_count": 3,
+      "tests_passed": 3,
+      "created_at": "2026-04-23T22:04:13.083803+00:00"
+    },
+    "lrn_20260423_220434_500": {
+      "type": "Learning",
+      "category": "gene",
+      "source": "Capability Evolver",
+      "learning": "Gene unknown selected, outcome: unknown, score: 0",
+      "context": "evolution",
+      "timestamp": "2026-04-23T22:04:34.525206",
+      "fact_count": 1
+    },
+    "lrn_20260423_221741_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T22:17:41.952126",
+      "fact_count": 1
+    },
+    "lrn_20260423_223744_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T22:37:44.204070",
+      "fact_count": 1
+    },
+    "lrn_20260423_225746_500": {
+      "type": "Learning",
+      "category": "health_issue",
+      "source": "[\u2192Sir HazeClaw] Health Monitor",
+      "learning": "Health check passed",
+      "context": "system_health",
+      "timestamp": "2026-04-23T22:57:46.631576",
+      "fact_count": 1
     }
   },
-  "last_updated": "2026-04-22T18:09:55.051821",
+  "last_updated": "2026-04-23T18:05:53.966822",
   "created": "2026-04-05T15:11:33.367596",
   "relationships": [
     {
@@ -51506,6 +52196,150 @@
       "type": "validates",
       "weight": 0.8,
       "created_at": "2026-04-22T22:03:36.988656+00:00"
+    },
+    "1124": {
+      "id": 1124,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T13-03-58-075273_Exploration-Review-last-24h-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T13:03:58.419069+00:00"
+    },
+    "1125": {
+      "id": 1125,
+      "from": "Improvement_2026-04-23T13-03-58-075273_Exploration-Review-last-24h-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T13:03:58.419200+00:00"
+    },
+    "1126": {
+      "id": 1126,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T14-04-58-079452_PHASE-4-Analyze-last-10-feed",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T14:04:58.422678+00:00"
+    },
+    "1127": {
+      "id": 1127,
+      "from": "Improvement_2026-04-23T14-04-58-079452_PHASE-4-Analyze-last-10-feed",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T14:04:58.422812+00:00"
+    },
+    "1128": {
+      "id": 1128,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T15-04-12-886675_Reduce-KG-orphans:-add-relatio",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T15:04:13.303823+00:00"
+    },
+    "1129": {
+      "id": 1129,
+      "from": "Improvement_2026-04-23T15-04-12-886675_Reduce-KG-orphans:-add-relatio",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T15:04:13.303982+00:00"
+    },
+    "1130": {
+      "id": 1130,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T16-04-49-492444_Fix:-Score-plateau-detected:-r",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T16:04:49.906667+00:00"
+    },
+    "1131": {
+      "id": 1131,
+      "from": "Improvement_2026-04-23T16-04-49-492444_Fix:-Score-plateau-detected:-r",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T16:04:49.906815+00:00"
+    },
+    "1132": {
+      "id": 1132,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T17-04-17-790978_Exploration-Review-last-24h-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T17:04:18.237951+00:00"
+    },
+    "1133": {
+      "id": 1133,
+      "from": "Improvement_2026-04-23T17-04-17-790978_Exploration-Review-last-24h-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T17:04:18.238051+00:00"
+    },
+    "1134": {
+      "id": 1134,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T18-07-04-783851_Exploration-Analyze-error-pa",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T18:07:05.242994+00:00"
+    },
+    "1135": {
+      "id": 1135,
+      "from": "Improvement_2026-04-23T18-07-04-783851_Exploration-Analyze-error-pa",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T18:07:05.243208+00:00"
+    },
+    "1136": {
+      "id": 1136,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T19-03-14-887415_Fix:-Score-plateau-detected:-r",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T19:03:15.295998+00:00"
+    },
+    "1137": {
+      "id": 1137,
+      "from": "Improvement_2026-04-23T19-03-14-887415_Fix:-Score-plateau-detected:-r",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T19:03:15.296175+00:00"
+    },
+    "1138": {
+      "id": 1138,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T20-03-40-650037_Exploration-Review-sessions,",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T20:03:41.029873+00:00"
+    },
+    "1139": {
+      "id": 1139,
+      "from": "Improvement_2026-04-23T20-03-40-650037_Exploration-Review-sessions,",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T20:03:41.029971+00:00"
+    },
+    "1140": {
+      "id": 1140,
+      "from": "Learning-Loop",
+      "to": "Improvement_2026-04-23T22-04-12-736408_Exploration-Analyze-last-10-",
+      "type": "created",
+      "weight": 0.9,
+      "created_at": "2026-04-23T22:04:13.084022+00:00"
+    },
+    "1141": {
+      "id": 1141,
+      "from": "Improvement_2026-04-23T22-04-12-736408_Exploration-Analyze-last-10-",
+      "to": "Learning-Loop",
+      "type": "validates",
+      "weight": 0.8,
+      "created_at": "2026-04-23T22:04:13.084186+00:00"
     }
   }
 }

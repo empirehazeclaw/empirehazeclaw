@@ -1,7 +1,7 @@
 {
   "version": "3.1",
-  "iteration": 366,
-  "score": 0.8097134146341464,
+  "iteration": 376,
+  "score": 0.5597134146341464,
   "score_history": [
     0.2609459258572654,
     0.2709459258572654,
@@ -384,7 +384,17 @@
     0.6366381366531683,
     0.7327913658960349,
     0.8097134146341464,
-    0.8097134146341464
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.7327896950954665,
+    0.6366360899224712,
+    0.5597134146341464
   ],
   "patterns": [
     {
@@ -412,7 +422,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 130,
+  "novelty_injections": 140,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -458,15 +468,15 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Review last 24h API calls, find 1 inefficient call",
-  "last_forced_novelty": "2026-04-22T18:05:13.060350",
+  "last_validated_pattern": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+  "last_forced_novelty": "2026-04-23T18:04:05.446891",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-22T22:03:37.069509",
+  "last_pattern_update": "2026-04-23T22:04:13.154934",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
@@ -475,24 +485,24 @@
   "total_improvements": 1,
   "multi_dim": {
     "tsr": 0.9756,
-    "lpr": 1.0,
+    "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8028,
+    "dq_raw": 0.7963,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.6557,
-    "cron_success": 0.95
+    "kg_health": 0.6176,
+    "cron_success": 0.975
   },
   "_multi_dim": {
     "tsr": 0.9756,
-    "lpr": 1.0,
+    "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.8028,
+    "dq_raw": 0.7963,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.6557,
-    "cron_success": 0.95
+    "kg_health": 0.6176,
+    "cron_success": 0.975
   }
 }
