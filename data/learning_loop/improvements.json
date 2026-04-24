@@ -1,12 +1,12 @@
 {
   "improvements": [
     {
-      "timestamp": "2026-04-23T22:04:12.736408",
-      "title": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
+      "timestamp": "2026-04-24T22:03:05.897620",
+      "title": "Reduce KG orphans: add relations to disconnected entities",
       "validated": true,
       "validation_details": {
-        "improvement": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
-        "timestamp": "2026-04-23T22:04:11.752718",
+        "improvement": "Reduce KG orphans: add relations to disconnected entities",
+        "timestamp": "2026-04-24T22:03:04.883205",
         "tests": [
           {
             "name": "error_reducer_check",
@@ -28,8 +28,8 @@
         "error_delta": 0.0,
         "score_delta": null,
         "version": "2.0",
-        "baseline_score": 0.6366360899224712,
-        "current_score": 0.7366360899224712,
+        "baseline_score": 0.562004854368932,
+        "current_score": 0.662004854368932,
         "rules_checked": {
           "min_tests": true,
           "error_threshold": true,

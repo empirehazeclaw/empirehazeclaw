@@ -91,3 +91,24 @@ _Consolidated: 2026-04-21 23:03 UTC_
 - maintenance: 32
 - gene: 8
 - success: 2
+
+
+## 2026-04-23 — Daily Learnings Summary
+
+_Consolidated: 2026-04-23 23:05 UTC_
+
+### Strategy Effectiveness
+- **diversity**: 21 (EFFECTIVE)
+- **test_strategy**: 5 (EFFECTIVE)
+- **test_feedback**: 5 (EFFECTIVE)
+- **repair**: 3 (EFFECTIVE)
+- **dynamic_weights**: 1 (EFFECTIVE)
+
+### Issues Resolved
+- Gene unknown selected, outcome: unknown, score: 0
+- Gene unknown selected, outcome: unknown, score: 0
+- Gene unknown selected, outcome: unknown, score: 0
+
+### Learnings by Category
+- health_issue: 180
+- gene: 12

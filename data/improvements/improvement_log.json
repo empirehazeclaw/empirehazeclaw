@@ -1,63 +1,6 @@
 {
   "improvements": [
     {
-      "cycle": 3,
-      "timestamp": "2026-04-12T14:21:48.199312",
-      "metrics_before": {
-        "error_rate": 1.53,
-        "sessions_today": 248,
-        "friction_events": 0,
-        "kg_entities": 304,
-        "skills_count": 26,
-        "scripts_without_timeout": 0,
-        "timestamp": "2026-04-12T14:21:48.199323",
-        "session_count": 478
-      },
-      "hypothesis": {
-        "id": "hyp_142148_5",
-        "category": "efficiency",
-        "priority": "MEDIUM",
-        "description": "Reduce token waste through optimization",
-        "approach": "Apply token_optimization patterns",
-        "expected_impact": 20,
-        "effort": "MEDIUM",
-        "methods": [
-          "Analyze token usage per session",
-          "Apply compression to prompts",
-          "Use caching where possible"
-        ]
-      },
-      "applied": {
-        "hypothesis_id": "hyp_142148_5",
-        "timestamp": "2026-04-12T14:21:48.243247",
-        "success": true,
-        "metrics_before": {
-          "error_rate": 1.53,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 304,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T14:21:48.243255",
-          "session_count": 478
-        },
-        "metrics_after": {
-          "error_rate": 1.53,
-          "sessions_today": 248,
-          "friction_events": 0,
-          "kg_entities": 305,
-          "skills_count": 26,
-          "scripts_without_timeout": 0,
-          "timestamp": "2026-04-12T14:21:48.296479",
-          "session_count": 478
-        },
-        "actual_impact": 3,
-        "change_made": "efficiency_patterns_applied, kg_added:1",
-        "error": null
-      },
-      "kept": true
-    },
-    {
       "cycle": 1,
       "timestamp": "2026-04-12T15:21:43.365102",
       "metrics_before": {
@@ -2041,6 +1984,42 @@
           "success": false,
           "output": "\ud83d\udca1 Insights: | \u274c script_fix: Failed (will try different approach) | \u274c script_fix: Failed (will try di",
           "validated": false
+        }
+      ],
+      "validated": 1
+    },
+    {
+      "timestamp": "2026-04-24T18:05:35.865376",
+      "improvements": [
+        {
+          "title": "Apply Self Improvement pattern",
+          "script": null,
+          "expected_impact": "HIGH",
+          "reason": "Investigate and implement self_improvement techniq",
+          "source": "research"
+        },
+        {
+          "title": "Apply Autonomous Learning pattern",
+          "script": null,
+          "expected_impact": "MEDIUM",
+          "reason": "Investigate and implement autonomous_learning tech",
+          "source": "research"
+        }
+      ],
+      "results": [
+        {
+          "improvement": "Apply Self Improvement pattern",
+          "script": "self_play_improver.py",
+          "success": false,
+          "output": "\ud83d\udca1 Insights: | \u274c script_fix: Failed (will try different approach) | \u274c script_fix: Failed (will try di",
+          "validated": false
+        },
+        {
+          "improvement": "Apply Autonomous Learning pattern",
+          "script": "self_play_improver.py",
+          "success": true,
+          "output": "\ud83d\udca1 Insights: | \u2705 kg_growth: +50% improvement | \u274c script_fix: Failed (will try different approach)",
+          "validated": true
         }
       ],
       "validated": 1

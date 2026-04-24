@@ -1,36 +1,36 @@
 {
-  "timestamp": "2026-04-22T02:03:07.864282",
+  "timestamp": "2026-04-24T02:03:05.934074",
   "kg_metrics": {
-    "entity_count": 675,
-    "relation_count": 835,
-    "orphan_count": 165,
-    "orphan_pct": 0.24444444444444444,
-    "relation_density": 1.237037037037037,
+    "entity_count": 909,
+    "relation_count": 908,
+    "orphan_count": 359,
+    "orphan_pct": 0.3949394939493949,
+    "relation_density": 0.9988998899889989,
     "type_count": 33,
     "types": [
-      "agent",
+      "improvement",
+      "infrastructure",
+      "research",
+      "person",
       "system",
-      "transcript",
-      "business",
-      "category",
-      "Insight",
+      "reflection",
+      "success_pattern",
+      "Learning",
       "rem_insight",
-      "metrics",
-      "learning",
-      "error_pattern"
+      "sales"
     ]
   },
   "learning_trajectory": {
-    "iteration": 342,
-    "score": 0.7327970760240597,
-    "pattern_count": 1
+    "iteration": 379,
+    "score": 0.562004854368932,
+    "pattern_count": 0
   },
   "benchmark_results": [
     {
       "area": "kg_query",
       "success": true,
       "error": null,
-      "entity_count": 675
+      "entity_count": 909
     },
     {
       "area": "event_check",
@@ -42,22 +42,16 @@
       "area": "learning_read",
       "success": true,
       "error": null,
-      "score": 0.7327970760240597
+      "score": 0.562004854368932
     },
     {
       "area": "pattern_match",
       "success": true,
       "error": null,
-      "pattern_count": 1
+      "pattern_count": 0
     }
   ],
-  "signals_generated": [
-    "exploration_opportunity_signal",
-    "kg_ripe_for_synthesis",
-    "dense_knowledge_synthesis"
-  ],
-  "recommendations": [
-    "Deep exploration mode \u2014 diversify strategy"
-  ],
-  "overall_status": "healthy"
+  "signals_generated": [],
+  "recommendations": [],
+  "overall_status": "needs_attention"
 }

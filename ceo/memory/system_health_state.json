@@ -1,6 +1,6 @@
 {
-  "last_full_cycle": "2026-04-23T18:08:33.300817",
-  "cycles_run": 7,
+  "last_full_cycle": "2026-04-24T12:07:59.898605",
+  "cycles_run": 10,
   "script_issues": [
     {
       "type": "not_executable",
@@ -19,15 +19,15 @@
     "healthy": true
   },
   "kg_health": {
-    "entity_count": 866,
-    "connected_count": 544,
-    "orphan_count": 322,
-    "orphan_pct": 0.371824480369515,
+    "entity_count": 973,
+    "connected_count": 561,
+    "orphan_count": 412,
+    "orphan_pct": 0.4234326824254882,
     "healthy": true,
     "threshold": 0.8,
-    "recommendation": "Orphan rate 37.2% within acceptable range"
+    "recommendation": "Orphan rate 42.3% within acceptable range"
   },
-  "last_script_check": "2026-04-23T18:08:24.595845",
-  "last_doc_audit": "2026-04-23T18:08:24.597425",
-  "last_cron_check": "2026-04-23T18:08:33.300805"
+  "last_script_check": "2026-04-24T12:07:51.657094",
+  "last_doc_audit": "2026-04-24T12:07:51.659547",
+  "last_cron_check": "2026-04-24T12:07:59.898591"
 }

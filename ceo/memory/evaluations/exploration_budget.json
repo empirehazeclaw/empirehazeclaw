@@ -7,12 +7,12 @@
     "stagnation_threshold": 5
   },
   "current_period": {
-    "start": "2026-04-23T22:04:11.728701+00:00",
-    "total_runs": 1,
+    "start": "2026-04-24T21:04:33.043555+00:00",
+    "total_runs": 2,
     "exploration_runs": 0,
-    "exploitation_runs": 1,
+    "exploitation_runs": 2,
     "exploration_successes": 0,
-    "exploitation_successes": 1,
+    "exploitation_successes": 2,
     "experimental_strategies": []
   },
   "history": [
@@ -641,6 +641,162 @@
     {
       "start": "2026-04-23T20:03:39.697410+00:00",
       "end": "2026-04-23T22:04:11.728688+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-23T22:04:11.728701+00:00",
+      "end": "2026-04-23T23:04:50.367862+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-23T23:04:50.367873+00:00",
+      "end": "2026-04-24T01:06:02.450922+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-24T01:06:02.450937+00:00",
+      "end": "2026-04-24T03:03:40.530446+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-24T03:03:40.530465+00:00",
+      "end": "2026-04-24T04:03:59.365424+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T04:03:59.365439+00:00",
+      "end": "2026-04-24T06:07:24.037282+00:00",
+      "total_runs": 2,
+      "exploration_runs": 1,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 1.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": [
+        "learning_loop_v3"
+      ]
+    },
+    {
+      "start": "2026-04-24T06:07:24.037294+00:00",
+      "end": "2026-04-24T08:04:01.430411+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T08:04:01.430427+00:00",
+      "end": "2026-04-24T09:06:11.995303+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T09:06:11.995320+00:00",
+      "end": "2026-04-24T10:06:33.361491+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T10:06:33.361507+00:00",
+      "end": "2026-04-24T12:05:49.458860+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T12:05:49.458870+00:00",
+      "end": "2026-04-24T14:06:06.802897+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T14:06:06.802908+00:00",
+      "end": "2026-04-24T16:03:49.626254+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T16:03:49.626266+00:00",
+      "end": "2026-04-24T17:04:37.479619+00:00",
+      "total_runs": 1,
+      "exploration_runs": 0,
+      "exploitation_runs": 1,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T17:04:37.479628+00:00",
+      "end": "2026-04-24T18:07:11.058516+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T18:07:11.058528+00:00",
+      "end": "2026-04-24T20:04:02.601753+00:00",
+      "total_runs": 2,
+      "exploration_runs": 0,
+      "exploitation_runs": 2,
+      "exploration_success_rate": 0.0,
+      "exploitation_success_rate": 1.0,
+      "experimental_strategies": []
+    },
+    {
+      "start": "2026-04-24T20:04:02.601766+00:00",
+      "end": "2026-04-24T21:04:33.043542+00:00",
       "total_runs": 1,
       "exploration_runs": 0,
       "exploitation_runs": 1,

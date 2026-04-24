@@ -4,7 +4,15 @@
     "email": 1745313780,
     "calendar": 1745313780,
     "weather": null,
-    "task_logger": 1745433821
+    "task_logger": 1745435121,
+    "failure_logger": "2026-04-24T10:07:00Z"
   },
-  "last_updated": "2026-04-23T18:03:41.000000"
+  "last_updated": "2026-04-24T06:45:21.000000",
+  "issues": {
+    "learning_loop_score_drop": {
+      "detected": "2026-04-24T07:33:00Z",
+      "score": "0.812 \u2192 0.5597 over 8 iterations",
+      "action": "Learning Loop may need attention - score dropped significantly"
+    }
+  }
 }

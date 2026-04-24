@@ -232,7 +232,8 @@ def enrich_kg(dry_run=False):
     print(f"\n📋 Top 10 Important Entities:")
     for i, e in enumerate(entities_sorted[:10]):
         importance = calculate_entity_importance(e)
-        print(f"   {i+1}. {e.get('id')[:40]}: score={importance}, facts={len(e.get('facts', []))}")
+        entity_id = e.get('id') or 'unknown'
+        print(f"   {i+1}. {entity_id[:40]}: score={importance}, facts={len(e.get('facts', []))}")
     
     if dry_run:
         print("\n🧪 DRY RUN - No changes applied")

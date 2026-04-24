@@ -1,12 +1,8 @@
 {
-  "last_check": "2026-04-22T06:04:16.434600",
-  "issues": [
-    "Too many backups: 6 (max: 5)"
-  ],
-  "backups_checked": 6,
-  "valid_count": 6,
+  "last_check": "2026-04-24T06:09:15.133199",
+  "issues": [],
+  "backups_checked": 5,
+  "valid_count": 5,
   "invalid_count": 0,
-  "warnings": [
-    "Auto-removed 1 old backups"
-  ]
+  "warnings": []
 }

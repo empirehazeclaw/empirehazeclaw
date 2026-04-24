@@ -1,6 +1,6 @@
 {
   "version": "3.1",
-  "iteration": 376,
+  "iteration": 402,
   "score": 0.5597134146341464,
   "score_history": [
     0.2609459258572654,
@@ -394,6 +394,32 @@
     0.8097134146341464,
     0.7327896950954665,
     0.6366360899224712,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.562004854368932,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.562004854368932,
+    0.5597134146341464,
+    0.6366367425789431,
+    0.7327904945996443,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8097134146341464,
+    0.8120048543689321,
+    0.8097134146341464,
+    0.7327902396557106,
+    0.6366364302726238,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.5597134146341464,
+    0.562004854368932,
     0.5597134146341464
   ],
   "patterns": [
@@ -422,7 +448,7 @@
   "validation_successes": 200,
   "validation_failures": 5,
   "feedback_processed": 0,
-  "novelty_injections": 140,
+  "novelty_injections": 166,
   "novelty_score": 0.4999999999999996,
   "novelty_history": [
     0.4999999999999996,
@@ -468,15 +494,15 @@
     }
   },
   "consecutive_same_pattern": 0,
-  "last_validated_pattern": "[Exploration] Analyze last 10 feedback entries, identify 1 processing gap",
-  "last_forced_novelty": "2026-04-23T18:04:05.446891",
+  "last_validated_pattern": "Reduce KG orphans: add relations to disconnected entities",
+  "last_forced_novelty": "2026-04-24T21:04:33.055099",
   "recently_forced_novelty": true,
   "feedback_stats": {
     "count": 46,
     "avg_quality": 2.7375,
     "last_update": "2026-04-19T15:32:20.476077Z"
   },
-  "last_pattern_update": "2026-04-23T22:04:13.154934",
+  "last_pattern_update": "2026-04-24T22:03:06.385130",
   "patterns_discovered": 3,
   "applied_improvements": [
     "SUCCESS_DOC: Documented learning loop in KG"
@@ -488,10 +514,10 @@
     "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.7963,
+    "dq_raw": 0.7587,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.6176,
+    "kg_health": 0.5423,
     "cron_success": 0.975
   },
   "_multi_dim": {
@@ -499,10 +525,10 @@
     "lpr": 0.0,
     "eb": 0.575,
     "df": 0.1,
-    "dq_raw": 0.7963,
+    "dq_raw": 0.7587,
     "dq_capped": 0.5,
     "fb": 0.44,
-    "kg_health": 0.6176,
+    "kg_health": 0.5423,
     "cron_success": 0.975
   }
 }

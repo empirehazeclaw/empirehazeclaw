@@ -1,30 +1,6 @@
 {
   "ideas": [
     {
-      "title": "WARNING: memory:Alert",
-      "description": "Alert",
-      "type": "memory_warning",
-      "why_ineffective": "Known failure pattern from memory/logs",
-      "why_ineffective_count": 1,
-      "source": "memory_analysis"
-    },
-    {
-      "title": "WARNING: memory:Bug",
-      "description": "Bug",
-      "type": "memory_warning",
-      "why_ineffective": "Known failure pattern from memory/logs",
-      "why_ineffective_count": 1,
-      "source": "memory_analysis"
-    },
-    {
-      "title": "WARNING: memory:issue",
-      "description": "issue",
-      "type": "memory_warning",
-      "why_ineffective": "Known failure pattern from memory/logs",
-      "why_ineffective_count": 1,
-      "source": "memory_analysis"
-    },
-    {
       "title": "WARNING: memory:\u274c ERROR",
       "description": "\u274c ERROR",
       "type": "memory_warning",
@@ -59,6 +35,14 @@
     {
       "title": "WARNING: memory:alert",
       "description": "alert",
+      "type": "memory_warning",
+      "why_ineffective": "Known failure pattern from memory/logs",
+      "why_ineffective_count": 1,
+      "source": "memory_analysis"
+    },
+    {
+      "title": "WARNING: memory:bug",
+      "description": "bug",
       "type": "memory_warning",
       "why_ineffective": "Known failure pattern from memory/logs",
       "why_ineffective_count": 1,

@@ -1,6 +1,6 @@
 # MEMORY.md — Sir HazeClaw Core Memory
 
-**Letzte Aktualisierung:** 2026-04-21 15:30 UTC
+**Letzte Aktualisierung:** 2026-04-23 23:05 UTC
 
 ---
 
@@ -426,7 +426,7 @@ SCRIPTE DIE ICH GEPRÜFT HABE:
 *Memory-core short-term-promotion criteria: minScore=0.8, minRecallCount=3*
 
 
-## 🌙 DREAMING REPORT — 2026-04-22 05:04 UTC
+## 🌙 DREAMING REPORT — 2026-04-24 05:03 UTC
 
 *No promotions qualifying this cycle (minRecallCount=3)*
 
@@ -651,3 +651,14 @@ docs/IMPROVEMENT_PLAN_PHASE_1_5.md (2026-04-21)
 Contains: Detailed 5-phase plan with success metrics
 ```
 
+
+## Promoted From Short-Term Memory (2026-04-24)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:3:5 -->
+- **Date:** 2026-04-18 **Session:** Subagent Task Scan (depth 1/1) **Task:** Process TODO.md priorities [score=0.847 recalls=0 avg=0.620 source=memory/2026-04-18.md:3-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:15:17 -->
+- Searched: ~/.openclaw/config/ → NOT FOUND Env vars: Only DISCORD_BOT_[TOKEN_REDACTED] found Scripts grep: No hardcoded API keys found [score=0.847 recalls=0 avg=0.620 source=memory/2026-04-18.md:15-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:19:21 -->
+- ⚠️ Buffer/Leonardo/Telegram [TOKEN_REDACTED]s: NOT in workspace Likely in system config or external secrets manager → Further investigation needed outside workspace scope [score=0.847 recalls=0 avg=0.620 source=memory/2026-04-18.md:19-21]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-18.md:26:26 -->
+- Status: ✅ FULLY HEALTHY [score=0.801 recalls=0 avg=0.620 source=memory/2026-04-18.md:26-26]
